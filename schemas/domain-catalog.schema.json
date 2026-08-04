@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Lawyeah Domain Boundary Catalog",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "catalogVersion", "license", "jurisdiction", "domains"],
+  "properties": {
+    "schemaVersion": {"const": 2},
+    "catalogVersion": {"type": "string", "pattern": "^[0-9]{4}\\.[0-9]{2}$"},
+    "license": {"const": "Apache-2.0"},
+    "jurisdiction": {"const": "CN-mainland"},
+    "domains": {
+      "type": "array",
+      "minItems": 22,
+      "maxItems": 22,
+      "items": {"$ref": "#/$defs/domain"}
+    }
+  },
+  "$defs": {
+    "text": {"type": "string", "minLength": 1},
+    "textList": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {"$ref": "#/$defs/text"}
+    },
+    "domainId": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "relatedDomain": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "relation", "boundary"],
+      "properties": {
+        "id": {"$ref": "#/$defs/domainId"},
+        "relation": {"enum": ["related-to", "excludes"]},
+        "boundary": {"$ref": "#/$defs/text"}
+      }
+    },
+    "domain": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "displayName",
+        "priority",
+        "jurisdiction",
+        "purpose",
+        "inScope",
+        "outOfScope",
+        "primaryDeliverables",
+        "ownershipRule",
+        "relatedDomains",
+        "status"
+      ],
+      "properties": {
+        "id": {"$ref": "#/$defs/domainId"},
+        "displayName": {"$ref": "#/$defs/text"},
+        "priority": {"enum": ["P0", "P1", "P2"]},
+        "jurisdiction": {"const": "CN-mainland"},
+        "purpose": {"$ref": "#/$defs/text"},
+        "inScope": {"$ref": "#/$defs/textList"},
+        "outOfScope": {"$ref": "#/$defs/textList"},
+        "primaryDeliverables": {"$ref": "#/$defs/textList"},
+        "ownershipRule": {"$ref": "#/$defs/text"},
+        "relatedDomains": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {"$ref": "#/$defs/relatedDomain"}
+        },
+        "status": {"enum": ["planned", "active", "deprecated"]}
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+interface:
+  display_name: "{{ATOMIC_DISPLAY_NAME}}"
+  short_description: "{{ATOMIC_SHORT_DESCRIPTION}}"
+  default_prompt: "Use ${{ATOMIC_SKILL_ID}} to {{DEFAULT_TASK}}."
+
+policy:
+  allow_implicit_invocation: true
+
+dependencies:
+  tools: {{OPENAI_TOOL_DEPENDENCIES}}

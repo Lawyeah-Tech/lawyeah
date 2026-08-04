@@ -1,23 +1,20 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Lawyeah MCP Capability Dependencies",
+  "title": "Lawyeah MCP Decision-Node Dependency",
   "type": "object",
   "additionalProperties": false,
-  "required": ["required", "recommended", "optional", "unavailableBehavior"],
+  "required": ["id", "purpose", "capability", "level", "unavailableBehavior"],
   "properties": {
-    "required": {"$ref": "#/$defs/capabilityList"},
-    "recommended": {"$ref": "#/$defs/capabilityList"},
-    "optional": {"$ref": "#/$defs/capabilityList"},
-    "unavailableBehavior": {"const": "degrade-by-decision-node"}
-  },
-  "$defs": {
-    "capabilityList": {
-      "type": "array",
-      "uniqueItems": true,
-      "items": {
-        "type": "string",
-        "pattern": "^[a-z][a-z0-9]*(?:[._-][a-z0-9]+)*$"
-      }
-    }
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "purpose": {"type": "string", "minLength": 1},
+    "capability": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9]*(?:[._-][a-z0-9]+)*$"
+    },
+    "level": {"enum": ["required", "recommended", "optional"]},
+    "unavailableBehavior": {"type": "string", "minLength": 1}
   }
 }

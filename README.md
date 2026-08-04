@@ -4,7 +4,9 @@ Lawyeah 面向中国大陆执业律师、律师助理和企业法务建设可安
 
 ## 核心原则
 
-- 一个领域包只注册一个顶层 `SKILL.md`，其余流程、场景知识和组合方案按任务渐进加载。
+- 一个领域包包含一个窄触发的能力导航 Skill 和多个可独立触发的原子 Skill；具体任务无需先经过导航 Skill。
+- 领域包是安装、版本和卸载单位，`pack.json` 是能力范围、Skill 清单、关系和 MCP 依赖的结构化事实源。
+- 原子 Skill 对应完整用户目标和可验收专业成果，不按工作步骤拆分，也不预设固定 Skill 组合。
 - 不发布跨领域的通用法律 Skill；相似能力在各领域内结合具体规则、证据和程序重新实现。
 - Skill 方法可以独立工作，Lawyeah MCP 按判断节点提供法规、案例和专业知识增强。
 - 用户凭证由 AI 宿主或 Lawyeah 授权服务管理，不进入 Skill、Git 仓库或模型上下文。
@@ -13,7 +15,7 @@ Lawyeah 面向中国大陆执业律师、律师助理和企业法务建设可安
 
 ## 业务领域
 
-完整清单位于 [`catalog/domains.json`](catalog/domains.json)，包含 8 个 P0、8 个 P1 和 6 个 P2 领域。领域处于 `planned` 状态时只代表规划入口，不代表已经发布可用内容。
+完整清单位于 [`catalog/domains.json`](catalog/domains.json)，包含 8 个 P0、8 个 P1 和 6 个 P2 领域。一级归属原则见 [`docs/architecture/domain-boundaries.md`](docs/architecture/domain-boundaries.md)。领域处于 `planned` 状态时只代表规划入口，不代表已经发布可用内容。
 
 ## 仓库结构
 
@@ -28,6 +30,21 @@ docs/           架构与实施记录
 ```
 
 私有研究、原始检索结果和蒸馏证据不进入本公开仓库。
+
+一个运行时领域包使用以下结构：
+
+```text
+packs/<domain-id>/
+├── pack.json
+└── skills/
+    ├── lawyeah-<domain>-guide/
+    │   └── SKILL.md
+    └── lawyeah-<domain>-<task>/
+        ├── SKILL.md
+        ├── references/
+        ├── scripts/
+        └── assets/templates/
+```
 
 ## 验证
 

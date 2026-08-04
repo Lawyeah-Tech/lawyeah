@@ -1,21 +1,53 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "id": "{{PACK_ID}}",
   "displayName": "{{DISPLAY_NAME}}",
   "description": "{{PACK_DESCRIPTION}}",
   "version": "{{SEMVER}}",
   "license": "Apache-2.0",
   "jurisdiction": "CN-mainland",
-  "entrypoint": "SKILL.md",
-  "contentModel": "progressive-disclosure",
+  "contentModel": "multi-skill-progressive-disclosure",
   "reinstallStrategy": "replace",
+  "scope": {
+    "purpose": "{{DOMAIN_PURPOSE}}",
+    "inScope": ["{{IN_SCOPE_ITEM}}"],
+    "outOfScope": ["{{OUT_OF_SCOPE_ITEM}}"],
+    "primaryDeliverables": ["{{PRIMARY_DELIVERABLE}}"]
+  },
+  "guideSkill": "{{GUIDE_SKILL_ID}}",
   "mcp": {
-    "contractVersion": "{{MCP_CONTRACT_VERSION}}",
-    "capabilities": {
-      "required": [],
-      "recommended": [],
-      "optional": [],
-      "unavailableBehavior": "degrade-by-decision-node"
+    "contractRange": "{{MCP_CONTRACT_RANGE}}"
+  },
+  "skills": [
+    {
+      "id": "{{GUIDE_SKILL_ID}}",
+      "kind": "guide",
+      "displayName": "{{GUIDE_DISPLAY_NAME}}",
+      "goal": "说明本领域包的能力、边界和原子 Skill 全貌",
+      "notFor": ["直接完成具体法律业务成果"],
+      "deliverables": ["领域能力定位结果"],
+      "path": "skills/{{GUIDE_SKILL_ID}}",
+      "relations": {
+        "depends-on": [],
+        "related-to": ["{{ATOMIC_SKILL_ID}}"],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "{{ATOMIC_SKILL_ID}}",
+      "kind": "atomic",
+      "displayName": "{{ATOMIC_DISPLAY_NAME}}",
+      "goal": "{{ATOMIC_GOAL}}",
+      "notFor": ["{{ATOMIC_EXCLUSION}}"],
+      "deliverables": ["{{ATOMIC_DELIVERABLE}}"],
+      "path": "skills/{{ATOMIC_SKILL_ID}}",
+      "relations": {
+        "depends-on": [],
+        "related-to": ["{{GUIDE_SKILL_ID}}"],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
     }
-  }
+  ]
 }
