@@ -1,0 +1,21 @@
+* text=auto eol=lf
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.pdf binary
+*.docx binary
+*.xlsx binary
+*.pptx binary
+*.zip binary
+
+/.github export-ignore
+/tests export-ignore
+/tooling export-ignore
+/templates export-ignore
+/docs/superpowers export-ignore
+/CONTRIBUTING.md export-ignore
+/SECURITY.md export-ignore
+/.gitattributes export-ignore

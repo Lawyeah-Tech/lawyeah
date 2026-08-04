@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Lawyeah Static Platform Adapter",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "platform",
+    "deliveryMode",
+    "installsExecutable",
+    "credentialStorage",
+    "professionalContentSource"
+  ],
+  "properties": {
+    "schemaVersion": {"const": 1},
+    "platform": {
+      "enum": [
+        "workbuddy",
+        "kimi",
+        "codex",
+        "claude",
+        "qwen-code",
+        "qoder",
+        "trae",
+        "comate",
+        "agent-skills"
+      ]
+    },
+    "deliveryMode": {"const": "static-files"},
+    "installsExecutable": {"const": false},
+    "credentialStorage": {"const": "host-managed"},
+    "professionalContentSource": {"const": "canonical-domain-pack"},
+    "hostManifest": {"type": "string", "minLength": 1}
+  }
+}

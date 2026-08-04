@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "catalogVersion": "2026.08",
+  "license": "Apache-2.0",
+  "jurisdiction": "CN-mainland",
+  "domains": [
+    {
+      "id": "review-draft-contracts",
+      "displayName": "合同审查与起草",
+      "priority": "P0",
+      "jurisdiction": "CN-mainland",
+      "scope": "合同审查、起草、修改、风险清单与谈判支持",
+      "status": "planned"
+    },
+    {
+      "id": "resolve-contract-disputes",
+      "displayName": "合同争议解决",
+      "priority": "P0",
+      "jurisdiction": "CN-mainland",
+      "scope": "买卖、借款、租赁、服务、委托等合同纠纷",
+      "status": "planned"
+    },
+    {
+      "id": "handle-corporate-equity",
+      "displayName": "公司治理与股权",
+      "priority": "P0",
+      "jurisdiction": "CN-mainland",
+      "scope": "公司设立、章程、股东会、股权设计与股东纠纷",
+      "status": "planned"
+    },
+    {
+      "id": "handle-labor-employment",
+      "displayName": "劳动用工与劳动争议",
+      "priority": "P0",
+      "jurisdiction": "CN-mainland",
+      "scope": "用工制度、劳动合同、解除、劳动仲裁与诉讼",
+      "status": "planned"
+    },
+    {
+      "id": "handle-family-succession",
+      "displayName": "婚姻家事与财富传承",
+      "priority": "P0",
+      "jurisdiction": "CN-mainland",
+      "scope": "离婚、抚养、财产分割、继承与遗嘱",
+      "status": "planned"
+    },
+    {
+      "id": "conduct-criminal-defense",
+      "displayName": "刑事辩护与刑事代理",
+      "priority": "P0",
+      "jurisdiction": "CN-mainland",
+      "scope": "会见、阅卷、辩护、取保、控告与被害人代理",
+      "status": "planned"
+    },
+    {
+      "id": "handle-construction-disputes",
+      "displayName": "建设工程与工程争议",
+      "priority": "P0",
+      "jurisdiction": "CN-mainland",
+      "scope": "施工合同、工程款、工期、质量、鉴定与招投标",
+      "status": "planned"
+    },
+    {
+      "id": "handle-personal-injury",
+      "displayName": "人身损害与侵权赔偿",
+      "priority": "P0",
+      "jurisdiction": "CN-mainland",
+      "scope": "交通事故、工伤竞合、人身侵权与产品责任",
+      "status": "planned"
+    },
+    {
+      "id": "handle-investments-ma",
+      "displayName": "投资并购与企业交易",
+      "priority": "P1",
+      "jurisdiction": "CN-mainland",
+      "scope": "尽职调查、投资协议、并购重组、交割与投后安排",
+      "status": "planned"
+    },
+    {
+      "id": "handle-real-estate",
+      "displayName": "房地产与物业",
+      "priority": "P1",
+      "jurisdiction": "CN-mainland",
+      "scope": "房屋交易、租赁、开发、物业及土地相关争议",
+      "status": "planned"
+    },
+    {
+      "id": "protect-intellectual-property",
+      "displayName": "知识产权",
+      "priority": "P1",
+      "jurisdiction": "CN-mainland",
+      "scope": "商标、著作权、专利、商业秘密、许可与侵权",
+      "status": "planned"
+    },
+    {
+      "id": "handle-healthcare-pharma",
+      "displayName": "医疗与医药法律业务",
+      "priority": "P1",
+      "jurisdiction": "CN-mainland",
+      "scope": "医疗损害、病历审查、医药合规与医患争议",
+      "status": "planned"
+    },
+    {
+      "id": "handle-finance-guarantees",
+      "displayName": "金融、借贷与担保",
+      "priority": "P1",
+      "jurisdiction": "CN-mainland",
+      "scope": "金融合同、民间借贷、担保、保理与融资租赁",
+      "status": "planned"
+    },
+    {
+      "id": "handle-bankruptcy-restructuring",
+      "displayName": "破产、重整与清算",
+      "priority": "P1",
+      "jurisdiction": "CN-mainland",
+      "scope": "债权申报、破产申请、重整、清算及衍生诉讼",
+      "status": "planned"
+    },
+    {
+      "id": "manage-corporate-compliance",
+      "displayName": "企业合规与内部调查",
+      "priority": "P1",
+      "jurisdiction": "CN-mainland",
+      "scope": "合规体系、舞弊调查、反商业贿赂与危机处置",
+      "status": "planned"
+    },
+    {
+      "id": "govern-data-privacy",
+      "displayName": "数据、隐私与网络安全",
+      "priority": "P1",
+      "jurisdiction": "CN-mainland",
+      "scope": "个人信息、数据出境、平台规则与网络安全合规",
+      "status": "planned"
+    },
+    {
+      "id": "handle-administrative-disputes",
+      "displayName": "行政复议与行政诉讼",
+      "priority": "P2",
+      "jurisdiction": "CN-mainland",
+      "scope": "行政处罚、行政许可、行政复议、诉讼及政府监管",
+      "status": "planned"
+    },
+    {
+      "id": "handle-tax-matters",
+      "displayName": "税务法律业务",
+      "priority": "P2",
+      "jurisdiction": "CN-mainland",
+      "scope": "税务合规、交易涉税、税务稽查与税务争议",
+      "status": "planned"
+    },
+    {
+      "id": "handle-competition-antitrust",
+      "displayName": "竞争法与反垄断",
+      "priority": "P2",
+      "jurisdiction": "CN-mainland",
+      "scope": "垄断协议、经营者集中、不正当竞争与平台竞争",
+      "status": "planned"
+    },
+    {
+      "id": "handle-cross-border-trade",
+      "displayName": "涉外与国际贸易",
+      "priority": "P2",
+      "jurisdiction": "CN-mainland",
+      "scope": "跨境交易、国际贸易、涉外争议与国际仲裁",
+      "status": "planned"
+    },
+    {
+      "id": "handle-maritime-matters",
+      "displayName": "海事海商",
+      "priority": "P2",
+      "jurisdiction": "CN-mainland",
+      "scope": "海上运输、船舶、货损、保险与海事诉讼",
+      "status": "planned"
+    },
+    {
+      "id": "handle-environment-energy",
+      "displayName": "环境、能源与自然资源",
+      "priority": "P2",
+      "jurisdiction": "CN-mainland",
+      "scope": "环境合规、能源项目、矿产资源与环境争议",
+      "status": "planned"
+    }
+  ]
+}

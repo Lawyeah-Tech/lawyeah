@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "bundles": [
+    {
+      "id": "full",
+      "displayName": "Lawyeah 完整法律技能包",
+      "selection": {
+        "priorities": ["P0", "P1", "P2"]
+      }
+    },
+    {
+      "id": "p0",
+      "displayName": "Lawyeah 高频法律技能包",
+      "selection": {
+        "priorities": ["P0"]
+      }
+    }
+  ]
+}

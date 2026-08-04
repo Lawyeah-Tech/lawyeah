@@ -1,0 +1,42 @@
+# Secrets and local credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.token
+/secrets/
+/credentials/
+
+# Local MCP and authentication state
+.mcp.local.json
+/.mcp-auth/
+/.auth/
+
+# Private research and raw distillation evidence
+/research/
+/raw-data/
+/evidence/
+
+# Generated outputs
+/dist/
+/build/
+/artifacts/
+/coverage/
+/reports/generated/
+*.zip.sha256
+
+# Caches and temporary files
+__pycache__/
+*.py[cod]
+/.cache/
+/.tmp/
+/tmp/
+*.log
+.DS_Store
+
+# IDE and local agent state
+.idea/
+.vscode/
+/.codex/
+/.claude/

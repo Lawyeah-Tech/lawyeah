@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Lawyeah MCP Capability Dependencies",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["required", "recommended", "optional", "unavailableBehavior"],
+  "properties": {
+    "required": {"$ref": "#/$defs/capabilityList"},
+    "recommended": {"$ref": "#/$defs/capabilityList"},
+    "optional": {"$ref": "#/$defs/capabilityList"},
+    "unavailableBehavior": {"const": "degrade-by-decision-node"}
+  },
+  "$defs": {
+    "capabilityList": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z][a-z0-9]*(?:[._-][a-z0-9]+)*$"
+      }
+    }
+  }
+}

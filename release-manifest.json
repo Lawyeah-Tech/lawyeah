@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "required": [
+    "SKILL.md",
+    "pack.json"
+  ],
+  "rootInclude": [
+    "LICENSE",
+    "NOTICE"
+  ],
+  "include": [
+    "SKILL.md",
+    "pack.json",
+    "agents/**",
+    "references/**",
+    "scripts/**",
+    "assets/**"
+  ]
+}

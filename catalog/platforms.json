@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "deliveryMode": "static-files",
+  "platforms": [
+    {"id": "workbuddy", "displayName": "WorkBuddy / CodeBuddy", "status": "planned"},
+    {"id": "kimi", "displayName": "Kimi Agent / Kimi Code", "status": "planned"},
+    {"id": "codex", "displayName": "OpenAI Codex", "status": "planned"},
+    {"id": "claude", "displayName": "Claude", "status": "planned"},
+    {"id": "qwen-code", "displayName": "Qwen Code", "status": "planned"},
+    {"id": "qoder", "displayName": "Qoder", "status": "planned"},
+    {"id": "trae", "displayName": "TRAE", "status": "planned"},
+    {"id": "comate", "displayName": "Comate", "status": "planned"},
+    {"id": "agent-skills", "displayName": "Generic Agent Skills", "status": "planned"}
+  ]
+}
