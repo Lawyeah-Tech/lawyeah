@@ -1,7 +1,6 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "required": [
-    "SKILL.md",
     "pack.json"
   ],
   "rootInclude": [
@@ -9,11 +8,7 @@
     "NOTICE"
   ],
   "include": [
-    "SKILL.md",
     "pack.json",
-    "agents/**",
-    "references/**",
-    "scripts/**",
-    "assets/**"
+    "skills/**"
   ]
 }

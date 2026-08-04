@@ -11,6 +11,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 BUILDER = ROOT / "tooling" / "build_release.py"
 PACK_ID = "review-draft-contracts"
+GUIDE_ID = "lawyeah-contracts-guide"
+ATOMIC_ID = "lawyeah-contracts-review"
 
 
 class ReleaseBuilderTests(unittest.TestCase):
@@ -21,21 +23,107 @@ class ReleaseBuilderTests(unittest.TestCase):
         self.second_output = self.repo / "second.zip"
 
         (self.repo / "catalog").mkdir()
-        (self.repo / "packs" / PACK_ID / "references").mkdir(parents=True)
+        (self.repo / "packs" / PACK_ID / "skills" / GUIDE_ID).mkdir(parents=True)
+        (self.repo / "packs" / PACK_ID / "skills" / ATOMIC_ID / "references").mkdir(
+            parents=True
+        )
+        (self.repo / "packs" / PACK_ID / "skills" / ATOMIC_ID / "assets" / "templates").mkdir(
+            parents=True
+        )
         (self.repo / "packs" / PACK_ID / "tests").mkdir()
-        (self.repo / "packs" / PACK_ID / "SKILL.md").write_text(
-            "---\nname: review-draft-contracts\n"
-            "description: Review and draft contracts.\n---\n\n# Contracts\n",
+        (self.repo / "packs" / PACK_ID / "skills" / GUIDE_ID / "SKILL.md").write_text(
+            f"---\nname: {GUIDE_ID}\n"
+            "description: Use when the user asks what the contracts pack can do.\n"
+            "---\n\n# Contracts guide\n",
+            encoding="utf-8",
+        )
+        (self.repo / "packs" / PACK_ID / "skills" / ATOMIC_ID / "SKILL.md").write_text(
+            f"---\nname: {ATOMIC_ID}\n"
+            "description: Use when the user asks to review a contract.\n"
+            "---\n\n# Review contracts\n",
             encoding="utf-8",
         )
         (self.repo / "packs" / PACK_ID / "pack.json").write_text(
-            '{"id":"review-draft-contracts","version":"1.0.0"}\n',
+            json.dumps(
+                {
+                    "schemaVersion": 2,
+                    "id": PACK_ID,
+                    "displayName": "合同审查与起草",
+                    "description": "合同审查与起草领域包",
+                    "version": "1.0.0",
+                    "license": "Apache-2.0",
+                    "jurisdiction": "CN-mainland",
+                    "contentModel": "multi-skill-progressive-disclosure",
+                    "reinstallStrategy": "replace",
+                    "scope": {
+                        "purpose": "支持合同审查与起草业务",
+                        "inScope": ["合同审查"],
+                        "outOfScope": ["合同争议诉讼代理"],
+                        "primaryDeliverables": ["合同审查意见"],
+                    },
+                    "guideSkill": GUIDE_ID,
+                    "mcp": {"contractRange": ">=1.0 <2.0"},
+                    "skills": [
+                        {
+                            "id": GUIDE_ID,
+                            "kind": "guide",
+                            "displayName": "合同业务能力导航",
+                            "goal": "说明领域能力、边界和原子能力全貌",
+                            "notFor": ["直接完成合同审查"],
+                            "deliverables": ["能力定位结果"],
+                            "path": f"skills/{GUIDE_ID}",
+                            "relations": {
+                                "depends-on": [],
+                                "related-to": [ATOMIC_ID],
+                                "excludes": [],
+                            },
+                            "mcpDecisionNodes": [],
+                        },
+                        {
+                            "id": ATOMIC_ID,
+                            "kind": "atomic",
+                            "displayName": "合同审查",
+                            "goal": "审查具体合同并形成风险意见",
+                            "notFor": ["代理合同争议诉讼"],
+                            "deliverables": ["合同审查意见"],
+                            "path": f"skills/{ATOMIC_ID}",
+                            "relations": {
+                                "depends-on": [],
+                                "related-to": [GUIDE_ID],
+                                "excludes": [],
+                            },
+                            "mcpDecisionNodes": [],
+                        },
+                    ],
+                },
+                ensure_ascii=False,
+                indent=2,
+            )
+            + "\n",
             encoding="utf-8",
         )
-        (self.repo / "packs" / PACK_ID / "references" / "workflow.md").write_text(
+        (
+            self.repo
+            / "packs"
+            / PACK_ID
+            / "skills"
+            / ATOMIC_ID
+            / "references"
+            / "review-standard.md"
+        ).write_text(
             "# Workflow\n",
             encoding="utf-8",
         )
+        (
+            self.repo
+            / "packs"
+            / PACK_ID
+            / "skills"
+            / ATOMIC_ID
+            / "assets"
+            / "templates"
+            / "review-report.docx"
+        ).write_bytes(b"template fixture")
         (self.repo / "packs" / PACK_ID / "tests" / "internal.md").write_text(
             "not for release\n",
             encoding="utf-8",
@@ -60,17 +148,10 @@ class ReleaseBuilderTests(unittest.TestCase):
         (self.repo / "release-manifest.json").write_text(
             json.dumps(
                 {
-                    "schemaVersion": 1,
-                    "required": ["SKILL.md", "pack.json"],
+                    "schemaVersion": 2,
+                    "required": ["pack.json"],
                     "rootInclude": ["LICENSE", "NOTICE"],
-                    "include": [
-                        "SKILL.md",
-                        "pack.json",
-                        "agents/**",
-                        "references/**",
-                        "scripts/**",
-                        "assets/**",
-                    ],
+                    "include": ["pack.json", "skills/**"],
                 }
             )
             + "\n",
@@ -108,9 +189,11 @@ class ReleaseBuilderTests(unittest.TestCase):
                 [
                     f"{PACK_ID}/LICENSE",
                     f"{PACK_ID}/NOTICE",
-                    f"{PACK_ID}/SKILL.md",
                     f"{PACK_ID}/pack.json",
-                    f"{PACK_ID}/references/workflow.md",
+                    f"{PACK_ID}/skills/{GUIDE_ID}/SKILL.md",
+                    f"{PACK_ID}/skills/{ATOMIC_ID}/SKILL.md",
+                    f"{PACK_ID}/skills/{ATOMIC_ID}/assets/templates/review-report.docx",
+                    f"{PACK_ID}/skills/{ATOMIC_ID}/references/review-standard.md",
                 ],
             )
         digest = hashlib.sha256(self.output.read_bytes()).hexdigest()
@@ -139,6 +222,21 @@ class ReleaseBuilderTests(unittest.TestCase):
 
         self.assertNotEqual(result.returncode, 0)
         self.assertIn("invalid pack id", result.stderr)
+        self.assertFalse(self.output.exists())
+
+    def test_undeclared_runtime_skill_is_rejected(self):
+        undeclared = self.repo / "packs" / PACK_ID / "skills" / "lawyeah-contracts-hidden"
+        undeclared.mkdir()
+        (undeclared / "SKILL.md").write_text(
+            "---\nname: lawyeah-contracts-hidden\n"
+            "description: Use when hidden.\n---\n",
+            encoding="utf-8",
+        )
+
+        result = self.run_builder(PACK_ID, self.output)
+
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("undeclared runtime skill", result.stderr)
         self.assertFalse(self.output.exists())
 
 

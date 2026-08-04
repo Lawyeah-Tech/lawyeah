@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "catalogVersion": "2026.08",
   "license": "Apache-2.0",
   "jurisdiction": "CN-mainland",
@@ -9,7 +9,17 @@
       "displayName": "合同审查与起草",
       "priority": "P0",
       "jurisdiction": "CN-mainland",
-      "scope": "合同审查、起草、修改、风险清单与谈判支持",
+      "purpose": "围绕交易或合作目标形成、审查和修改可签署的合同文件，并支持条款谈判与履约安排。",
+      "inScope": ["合同结构设计与条款起草", "合同风险审查与修改", "谈判要点与签署条件整理", "履约机制和违约条款设计"],
+      "outOfScope": ["已经发生争议后的诉讼仲裁代理", "公司治理文件和股权架构设计", "建设工程、劳动等领域需要独立专业方法的合同事项"],
+      "primaryDeliverables": ["合同文本", "合同审查意见", "修订稿与修改说明", "谈判要点清单"],
+      "ownershipRule": "主要成果是待签署或待修改的合同文件及其交易条款时归本领域；主要成果转为争议解决、公司治理或专项行业法律方案时归相应领域。",
+      "relatedDomains": [
+        {"id": "resolve-contract-disputes", "relation": "related-to", "boundary": "以是否已经形成争议以及主要成果是交易文件还是争议解决成果区分。"},
+        {"id": "handle-corporate-equity", "relation": "related-to", "boundary": "一般交易合同归本领域，公司组织、股东权利和股权结构文件归公司治理与股权。"},
+        {"id": "handle-labor-employment", "relation": "related-to", "boundary": "通用合同方法不替代劳动合同及用工文件的专项劳动规则。"},
+        {"id": "handle-construction-disputes", "relation": "related-to", "boundary": "建设工程合同的订立、履行和争议均由建设工程领域独立发展。"}
+      ],
       "status": "planned"
     },
     {
@@ -17,7 +27,18 @@
       "displayName": "合同争议解决",
       "priority": "P0",
       "jurisdiction": "CN-mainland",
-      "scope": "买卖、借款、租赁、服务、委托等合同纠纷",
+      "purpose": "处理一般商事和民事合同履行、解除、违约及责任承担争议，形成谈判、诉讼或仲裁解决成果。",
+      "inScope": ["合同效力与履行争议", "解除、违约与损失赔偿", "商事谈判、诉讼和仲裁方案", "一般合同证据与请求权分析"],
+      "outOfScope": ["尚未发生争议的合同起草", "建设工程、金融借贷、房地产等独立专业争议", "海事海商专门争议"],
+      "primaryDeliverables": ["争议评估意见", "请求与抗辩方案", "诉讼或仲裁文书", "和解谈判方案"],
+      "ownershipRule": "以一般合同争议解决成果为主要目标时归本领域；存在独立行业规则和专门成果标准时归专项领域。",
+      "relatedDomains": [
+        {"id": "review-draft-contracts", "relation": "related-to", "boundary": "以是否已经形成争议以及主要成果是交易文件还是争议解决成果区分。"},
+        {"id": "handle-construction-disputes", "relation": "related-to", "boundary": "建设工程价款、工期、质量和实际施工人等专门争议归建设工程。"},
+        {"id": "handle-real-estate", "relation": "related-to", "boundary": "房地产交易、开发和物业专门争议归房地产与物业。"},
+        {"id": "handle-finance-guarantees", "relation": "related-to", "boundary": "金融合同、借贷、担保、保理和融资租赁争议归金融领域。"},
+        {"id": "handle-maritime-matters", "relation": "related-to", "boundary": "海上运输、船舶、海事保险等专门合同争议归海事海商。"}
+      ],
       "status": "planned"
     },
     {
@@ -25,7 +46,17 @@
       "displayName": "公司治理与股权",
       "priority": "P0",
       "jurisdiction": "CN-mainland",
-      "scope": "公司设立、章程、股东会、股权设计与股东纠纷",
+      "purpose": "处理公司组织、治理、股东权利和股权安排，支持企业设立、运营和股东关系治理。",
+      "inScope": ["公司设立与章程", "股东会、董事会和治理机制", "股权设计、转让与激励基础安排", "股东权利、控制权和公司僵局争议"],
+      "outOfScope": ["以收购、投资或交割为核心的交易项目", "夫妻财产或继承中的股权分配", "企业日常综合合规体系建设"],
+      "primaryDeliverables": ["章程及治理文件", "股权结构方案", "公司决议文件", "股东争议处理意见"],
+      "ownershipRule": "主要成果解决公司内部组织、权力配置或股东关系时归本领域；以交易完成、家事财产分配或综合合规为主要目标时归相应领域。",
+      "relatedDomains": [
+        {"id": "review-draft-contracts", "relation": "related-to", "boundary": "一般交易合同归合同审查，公司组织和股东权利文件归本领域。"},
+        {"id": "handle-family-succession", "relation": "related-to", "boundary": "公司权利结构归本领域，婚姻或继承关系中的股权归属与分配归婚家。"},
+        {"id": "handle-investments-ma", "relation": "related-to", "boundary": "公司常态治理归本领域，以投资、收购和交割为目标的项目归投资并购。"},
+        {"id": "manage-corporate-compliance", "relation": "related-to", "boundary": "公司机关和股东权利归本领域，企业合规体系和内部调查归企业合规。"}
+      ],
       "status": "planned"
     },
     {
@@ -33,7 +64,16 @@
       "displayName": "劳动用工与劳动争议",
       "priority": "P0",
       "jurisdiction": "CN-mainland",
-      "scope": "用工制度、劳动合同、解除、劳动仲裁与诉讼",
+      "purpose": "处理劳动关系建立、履行、变更、解除和争议解决，支持用人单位、劳动者及其代理人的专业任务。",
+      "inScope": ["劳动关系与劳动合同", "薪酬工时、休假和社会保险", "规章制度、人员调整和劳动合同解除", "劳动仲裁与诉讼"],
+      "outOfScope": ["第三人侵权主导的人身损害赔偿", "一般商业秘密侵权和知识产权争议", "并购交易整体结构与交割"],
+      "primaryDeliverables": ["用工制度与劳动文件", "解除或用工风险评估", "补偿与待遇测算", "劳动仲裁诉讼成果"],
+      "ownershipRule": "主要成果围绕劳动关系和用工责任时归本领域；侵权赔偿、知识产权保护或并购交易仅将劳动问题作为组成部分时归相应主要领域。",
+      "relatedDomains": [
+        {"id": "review-draft-contracts", "relation": "related-to", "boundary": "劳动合同和用工文件依劳动专门规则在本领域独立发展。"},
+        {"id": "handle-personal-injury", "relation": "related-to", "boundary": "工伤认定和劳动待遇归劳动，第三人侵权赔偿及竞合成果归人身损害。"},
+        {"id": "manage-corporate-compliance", "relation": "related-to", "boundary": "日常用工治理归劳动，企业级舞弊调查和综合合规体系归企业合规。"}
+      ],
       "status": "planned"
     },
     {
@@ -41,7 +81,15 @@
       "displayName": "婚姻家事与财富传承",
       "priority": "P0",
       "jurisdiction": "CN-mainland",
-      "scope": "离婚、抚养、财产分割、继承与遗嘱",
+      "purpose": "处理婚姻家庭身份、家庭财产、抚养赡养、继承和代际财富传承事项。",
+      "inScope": ["婚姻效力、离婚与夫妻财产", "子女抚养、监护和探望", "继承、遗嘱和遗产管理", "家庭财富传承安排"],
+      "outOfScope": ["公司治理和股东权利本身", "以税负测算或税务争议为主要成果的事项", "一般合同或侵权纠纷"],
+      "primaryDeliverables": ["婚家争议方案与文书", "夫妻财产或离婚协议", "遗嘱与继承方案", "财富传承法律安排"],
+      "ownershipRule": "主要成果处理家庭身份关系、家庭财产归属或代际传承时归本领域，即使其中包含股权、房产或税务因素。",
+      "relatedDomains": [
+        {"id": "handle-corporate-equity", "relation": "related-to", "boundary": "婚姻继承中的股权分配归婚家，公司治理和股东权利实现归公司治理。"},
+        {"id": "handle-tax-matters", "relation": "related-to", "boundary": "传承结构和家事安排归婚家，以税务测算、申报或争议为主要成果时归税务。"}
+      ],
       "status": "planned"
     },
     {
@@ -49,7 +97,15 @@
       "displayName": "刑事辩护与刑事代理",
       "priority": "P0",
       "jurisdiction": "CN-mainland",
-      "scope": "会见、阅卷、辩护、取保、控告与被害人代理",
+      "purpose": "为犯罪嫌疑人、被告人、被害人及相关主体提供刑事程序中的辩护、代理和控告服务。",
+      "inScope": ["侦查、审查起诉和审判阶段辩护", "会见、阅卷、取保和量刑辩护", "刑事控告、自诉与被害人代理", "刑事证据和程序权利分析"],
+      "outOfScope": ["仅以企业制度整改为目标的合规项目", "行政处罚、行政复议和行政诉讼", "一般民商事责任处理"],
+      "primaryDeliverables": ["刑事案件评估", "辩护或代理意见", "取保及程序申请", "控告、自诉和刑事法律文书"],
+      "ownershipRule": "主要成果直接服务刑事责任认定和刑事程序权利时归本领域；刑事风险只是企业治理或行政监管的一部分时归相应领域。",
+      "relatedDomains": [
+        {"id": "manage-corporate-compliance", "relation": "related-to", "boundary": "刑事辩护与控告归刑事，企业预防、整改和内部调查归企业合规。"},
+        {"id": "handle-administrative-disputes", "relation": "related-to", "boundary": "刑事强制措施和责任归刑事，行政机关作出的处罚和许可争议归行政。"}
+      ],
       "status": "planned"
     },
     {
@@ -57,7 +113,17 @@
       "displayName": "建设工程与工程争议",
       "priority": "P0",
       "jurisdiction": "CN-mainland",
-      "scope": "施工合同、工程款、工期、质量、鉴定与招投标",
+      "purpose": "处理建设工程项目合同、履约管理和工程争议，覆盖价款、工期、质量、鉴定及实际施工人问题。",
+      "inScope": ["施工、设计、监理和工程总承包合同", "工程价款、结算和优先受偿", "工期、质量、签证索赔和鉴定", "招投标与实际施工人争议"],
+      "outOfScope": ["一般合同审查或一般合同争议", "房地产交易、开发销售和物业管理", "能源项目监管和环境资源合规本身"],
+      "primaryDeliverables": ["工程合同与项目法律文件", "工程索赔或抗辩方案", "工程争议诉讼仲裁成果", "工程证据与鉴定方案"],
+      "ownershipRule": "主要成果围绕工程建设过程及其专门价款、工期、质量规则时归本领域，不因同时涉及合同或房地产而转移。",
+      "relatedDomains": [
+        {"id": "review-draft-contracts", "relation": "related-to", "boundary": "建设工程合同在本领域按工程专门规则独立发展。"},
+        {"id": "resolve-contract-disputes", "relation": "related-to", "boundary": "工程价款、工期、质量和实际施工人等专门争议归本领域。"},
+        {"id": "handle-real-estate", "relation": "related-to", "boundary": "施工过程和工程责任归建设工程，房地产交易、开发销售和物业归房地产。"},
+        {"id": "handle-environment-energy", "relation": "related-to", "boundary": "工程合同和建设争议归本领域，能源与环境监管、资源权利和项目合规归环境能源。"}
+      ],
       "status": "planned"
     },
     {
@@ -65,7 +131,16 @@
       "displayName": "人身损害与侵权赔偿",
       "priority": "P0",
       "jurisdiction": "CN-mainland",
-      "scope": "交通事故、工伤竞合、人身侵权与产品责任",
+      "purpose": "处理人身权益受损后的侵权责任、损害项目、因果关系和赔偿实现。",
+      "inScope": ["交通事故和一般人身侵权", "产品或场所致人损害", "工伤与第三人侵权竞合", "伤残、损失和赔偿项目计算"],
+      "outOfScope": ["工伤认定和劳动待遇申请本身", "医疗机构诊疗行为主导的医疗损害鉴定", "海上运输和船舶事故专门责任"],
+      "primaryDeliverables": ["侵权责任评估", "赔偿项目与金额测算", "证据和鉴定方案", "人身损害诉讼调解成果"],
+      "ownershipRule": "主要成果是确定侵权责任和实现人身损害赔偿时归本领域；劳动待遇、医疗专业责任或海事专门责任有独立主要成果时归对应领域。",
+      "relatedDomains": [
+        {"id": "handle-labor-employment", "relation": "related-to", "boundary": "工伤认定与劳动待遇归劳动，第三人侵权赔偿及竞合成果归本领域。"},
+        {"id": "handle-healthcare-pharma", "relation": "related-to", "boundary": "一般损害赔偿归本领域，医疗过错、病历和诊疗因果关系归医疗医药。"},
+        {"id": "handle-maritime-matters", "relation": "related-to", "boundary": "一般人身侵权归本领域，海上运输、船舶事故等海事专门责任归海事海商。"}
+      ],
       "status": "planned"
     },
     {
@@ -73,7 +148,18 @@
       "displayName": "投资并购与企业交易",
       "priority": "P1",
       "jurisdiction": "CN-mainland",
-      "scope": "尽职调查、投资协议、并购重组、交割与投后安排",
+      "purpose": "支持股权或资产投资、并购重组和企业交易从结构设计、尽调、签约到交割及投后安排。",
+      "inScope": ["投资和并购交易结构", "法律尽职调查", "交易文件、交割和投后安排", "资产收购、股权收购和企业重组"],
+      "outOfScope": ["公司日常治理和一般股东争议", "金融机构贷款、担保等融资法律业务", "经营者集中及竞争法专项申报", "跨境贸易和境外法专项问题"],
+      "primaryDeliverables": ["交易结构方案", "法律尽调报告", "投资并购交易文件", "交割清单与投后治理安排"],
+      "ownershipRule": "主要成果服务一项投资、收购、出售或重组交易完成时归本领域；专项融资、竞争申报、跨境监管或公司日常治理分别归对应领域。",
+      "relatedDomains": [
+        {"id": "handle-corporate-equity", "relation": "related-to", "boundary": "交易项目归投资并购，公司常态治理与股东权利归公司治理。"},
+        {"id": "handle-finance-guarantees", "relation": "related-to", "boundary": "股权或资产交易归投资并购，以融资、借贷和担保安排为主要成果时归金融。"},
+        {"id": "handle-competition-antitrust", "relation": "related-to", "boundary": "交易整体归投资并购，经营者集中和竞争限制专项判断归竞争法。"},
+        {"id": "handle-cross-border-trade", "relation": "related-to", "boundary": "投资并购交易主体归本领域，跨法域准入、贸易管制和境外监管专项成果归涉外。"},
+        {"id": "handle-environment-energy", "relation": "related-to", "boundary": "交易执行归投资并购，能源资源权利和环境监管专项尽调成果归环境能源。"}
+      ],
       "status": "planned"
     },
     {
@@ -81,7 +167,16 @@
       "displayName": "房地产与物业",
       "priority": "P1",
       "jurisdiction": "CN-mainland",
-      "scope": "房屋交易、租赁、开发、物业及土地相关争议",
+      "purpose": "处理房地产取得、开发、交易、租赁、运营和物业管理中的法律事务与争议。",
+      "inScope": ["房屋买卖、租赁和开发合作", "土地与房地产项目运营", "商品房销售和不动产交易", "物业服务与业主治理争议"],
+      "outOfScope": ["施工价款、工期、质量和鉴定争议", "一般合同争议", "自然资源权利、能源项目和环境监管专项事项"],
+      "primaryDeliverables": ["房地产交易文件", "项目法律评估", "租售和物业争议成果", "不动产权利处理方案"],
+      "ownershipRule": "主要成果围绕不动产取得、开发、交易或运营时归本领域；施工过程、一般合同或环境资源专项成果归对应领域。",
+      "relatedDomains": [
+        {"id": "resolve-contract-disputes", "relation": "related-to", "boundary": "一般合同争议归合同争议，房地产交易、开发和物业专门争议归本领域。"},
+        {"id": "handle-construction-disputes", "relation": "related-to", "boundary": "房地产交易运营归本领域，施工过程和工程责任归建设工程。"},
+        {"id": "handle-environment-energy", "relation": "related-to", "boundary": "房地产开发运营归本领域，自然资源权利和环境能源监管专项成果归环境能源。"}
+      ],
       "status": "planned"
     },
     {
@@ -89,7 +184,15 @@
       "displayName": "知识产权",
       "priority": "P1",
       "jurisdiction": "CN-mainland",
-      "scope": "商标、著作权、专利、商业秘密、许可与侵权",
+      "purpose": "保护、运营和争议解决商标、著作权、专利、商业秘密及其他知识产权。",
+      "inScope": ["知识产权确权和布局", "许可、转让与商业化", "侵权监测、维权和抗辩", "商业秘密保护与争议"],
+      "outOfScope": ["以个人信息和数据安全合规为主要成果的事项", "以市场竞争秩序为主要成果的不正当竞争和反垄断事项", "一般技术交易或投资交易整体"],
+      "primaryDeliverables": ["知识产权布局方案", "许可转让文件", "侵权分析和维权方案", "知识产权诉讼行政成果"],
+      "ownershipRule": "主要成果是知识产权权利取得、使用或保护时归本领域；数据治理、竞争秩序或交易整体具有独立主要成果时归对应领域。",
+      "relatedDomains": [
+        {"id": "govern-data-privacy", "relation": "related-to", "boundary": "知识产权权利保护归本领域，个人信息、重要数据和网络安全治理归数据隐私。"},
+        {"id": "handle-competition-antitrust", "relation": "related-to", "boundary": "知识产权权利边界归本领域，以竞争秩序和市场排除效果为主要成果时归竞争法。"}
+      ],
       "status": "planned"
     },
     {
@@ -97,7 +200,16 @@
       "displayName": "医疗与医药法律业务",
       "priority": "P1",
       "jurisdiction": "CN-mainland",
-      "scope": "医疗损害、病历审查、医药合规与医患争议",
+      "purpose": "处理医疗服务、医疗损害、医药产品与医疗健康行业监管合规事项。",
+      "inScope": ["医疗损害与病历审查", "诊疗过错、因果关系和医疗鉴定", "医药企业和医疗机构合规", "药品、器械和医疗服务监管"],
+      "outOfScope": ["一般人身侵权赔偿", "企业通用合规体系和非医疗行业内部调查", "一般个人信息与网络安全治理"],
+      "primaryDeliverables": ["医疗损害评估", "病历和鉴定意见", "医疗医药合规方案", "行业监管应对成果"],
+      "ownershipRule": "主要成果依赖医疗专业事实、诊疗规范或医药行业监管时归本领域；一般侵权、通用合规或数据治理成果归相应领域。",
+      "relatedDomains": [
+        {"id": "handle-personal-injury", "relation": "related-to", "boundary": "医疗过错和诊疗因果关系归医疗医药，一般损害赔偿方法归人身损害。"},
+        {"id": "manage-corporate-compliance", "relation": "related-to", "boundary": "医疗医药行业专项合规归本领域，企业通用合规体系和内部调查归企业合规。"},
+        {"id": "govern-data-privacy", "relation": "related-to", "boundary": "医疗业务和行业监管归本领域，个人信息、数据安全和网络安全专项治理归数据隐私。"}
+      ],
       "status": "planned"
     },
     {
@@ -105,7 +217,16 @@
       "displayName": "金融、借贷与担保",
       "priority": "P1",
       "jurisdiction": "CN-mainland",
-      "scope": "金融合同、民间借贷、担保、保理与融资租赁",
+      "purpose": "处理金融交易、民间借贷、担保、保理和融资租赁的结构、文件、履行及争议。",
+      "inScope": ["银行和非银行融资", "民间借贷和金融合同", "保证、抵押、质押等担保", "保理、融资租赁和相关争议"],
+      "outOfScope": ["一般合同争议", "股权投资和并购交易整体", "破产程序、重整和债权申报"],
+      "primaryDeliverables": ["融资和担保文件", "金融交易结构意见", "债权实现方案", "金融借贷争议成果"],
+      "ownershipRule": "主要成果围绕资金提供、偿还、增信和金融债权实现时归本领域；投资交易、一般合同或破产程序成果归对应领域。",
+      "relatedDomains": [
+        {"id": "resolve-contract-disputes", "relation": "related-to", "boundary": "一般合同争议归合同争议，金融合同、借贷和担保专门争议归本领域。"},
+        {"id": "handle-investments-ma", "relation": "related-to", "boundary": "融资借贷和增信安排归金融，以股权或资产交易为主要成果时归投资并购。"},
+        {"id": "handle-bankruptcy-restructuring", "relation": "related-to", "boundary": "破产前债权结构和实现归金融，进入破产程序后的申报、重整和清算归破产。"}
+      ],
       "status": "planned"
     },
     {
@@ -113,7 +234,15 @@
       "displayName": "破产、重整与清算",
       "priority": "P1",
       "jurisdiction": "CN-mainland",
-      "scope": "债权申报、破产申请、重整、清算及衍生诉讼",
+      "purpose": "处理企业破产申请、债权申报、重整、和解、清算及破产衍生争议。",
+      "inScope": ["破产申请和受理评估", "债权申报与审查", "重整投资和重整计划", "清算、管理人事务及衍生诉讼"],
+      "outOfScope": ["破产程序外的一般债权实现", "一般公司治理和经营合规", "普通投资并购项目"],
+      "primaryDeliverables": ["破产申请或异议材料", "债权申报成果", "重整计划与投资文件", "清算及衍生诉讼成果"],
+      "ownershipRule": "主要成果发生在法定破产、重整或清算程序内时归本领域；程序外融资、债权实现和一般交易归相应领域。",
+      "relatedDomains": [
+        {"id": "handle-finance-guarantees", "relation": "related-to", "boundary": "破产程序外金融债权实现归金融，进入破产程序后的申报和分配归本领域。"},
+        {"id": "manage-corporate-compliance", "relation": "related-to", "boundary": "困境企业的法定破产清算程序归本领域，日常合规和内部调查归企业合规。"}
+      ],
       "status": "planned"
     },
     {
@@ -121,7 +250,20 @@
       "displayName": "企业合规与内部调查",
       "priority": "P1",
       "jurisdiction": "CN-mainland",
-      "scope": "合规体系、舞弊调查、反商业贿赂与危机处置",
+      "purpose": "建设企业合规治理体系，开展内部调查、舞弊处置、反商业贿赂和重大合规风险响应。",
+      "inScope": ["企业合规体系和制度", "内部举报与舞弊调查", "反商业贿赂和第三方合规", "合规危机处置与整改"],
+      "outOfScope": ["具体刑事案件辩护", "日常劳动用工专项治理", "个人信息、数据和网络安全专项体系", "竞争法专项评估"],
+      "primaryDeliverables": ["合规体系与制度", "内部调查报告", "风险处置和整改方案", "合规培训与评估成果"],
+      "ownershipRule": "主要成果是企业级预防、发现、调查和整改机制时归本领域；刑事、劳动、数据或竞争专项成果由相应领域独立负责。",
+      "relatedDomains": [
+        {"id": "handle-corporate-equity", "relation": "related-to", "boundary": "公司机关和股东权利归公司治理，企业合规体系和内部调查归本领域。"},
+        {"id": "handle-labor-employment", "relation": "related-to", "boundary": "劳动关系和用工责任归劳动，企业级舞弊调查和综合合规归本领域。"},
+        {"id": "conduct-criminal-defense", "relation": "related-to", "boundary": "企业预防和整改归本领域，具体刑事责任辩护与控告归刑事。"},
+        {"id": "handle-healthcare-pharma", "relation": "related-to", "boundary": "企业通用合规归本领域，医疗医药行业专项监管合规归医疗医药。"},
+        {"id": "handle-bankruptcy-restructuring", "relation": "related-to", "boundary": "日常合规和内部调查归本领域，法定破产清算程序归破产。"},
+        {"id": "govern-data-privacy", "relation": "related-to", "boundary": "综合合规治理归本领域，数据、个人信息和网络安全专项体系归数据隐私。"},
+        {"id": "handle-competition-antitrust", "relation": "related-to", "boundary": "综合合规机制归本领域，竞争限制和市场秩序专项判断归竞争法。"}
+      ],
       "status": "planned"
     },
     {
@@ -129,7 +271,16 @@
       "displayName": "数据、隐私与网络安全",
       "priority": "P1",
       "jurisdiction": "CN-mainland",
-      "scope": "个人信息、数据出境、平台规则与网络安全合规",
+      "purpose": "处理个人信息、数据安全、数据跨境、平台数据治理和网络安全合规。",
+      "inScope": ["个人信息处理和隐私治理", "重要数据与数据安全", "数据出境和跨境传输", "网络安全、平台规则和数据事件响应"],
+      "outOfScope": ["知识产权权利取得和侵权保护", "企业综合合规体系", "医疗业务和医药监管本身"],
+      "primaryDeliverables": ["隐私和数据合规评估", "个人信息与数据制度文件", "数据出境方案", "安全事件响应成果"],
+      "ownershipRule": "主要成果是个人信息、数据或网络安全治理时归本领域；知识产权、综合合规或行业业务成果归相应领域。",
+      "relatedDomains": [
+        {"id": "protect-intellectual-property", "relation": "related-to", "boundary": "个人信息和数据治理归本领域，知识产权权利保护和运营归知识产权。"},
+        {"id": "handle-healthcare-pharma", "relation": "related-to", "boundary": "医疗数据专项治理归数据隐私，医疗业务和行业监管归医疗医药。"},
+        {"id": "manage-corporate-compliance", "relation": "related-to", "boundary": "数据和网络安全专项体系归本领域，企业综合合规治理归企业合规。"}
+      ],
       "status": "planned"
     },
     {
@@ -137,7 +288,17 @@
       "displayName": "行政复议与行政诉讼",
       "priority": "P2",
       "jurisdiction": "CN-mainland",
-      "scope": "行政处罚、行政许可、行政复议、诉讼及政府监管",
+      "purpose": "处理行政处罚、许可、征收及其他行政行为的程序救济、复议和诉讼。",
+      "inScope": ["行政处罚和行政强制", "行政许可和监管措施", "行政复议与行政诉讼", "征收征用和政府信息公开争议"],
+      "outOfScope": ["刑事强制措施和刑事责任", "税务机关作出的专业税务处理争议", "竞争、环境等监管领域的专项实体合规设计"],
+      "primaryDeliverables": ["行政行为合法性评估", "陈述申辩和听证材料", "行政复议申请", "行政诉讼文书与代理方案"],
+      "ownershipRule": "主要成果是对行政行为进行程序性或司法救济时归本领域；税务、竞争、环境等专项实体判断仍由对应领域负责。",
+      "relatedDomains": [
+        {"id": "conduct-criminal-defense", "relation": "related-to", "boundary": "行政处罚与救济归行政，刑事责任和刑事程序归刑事。"},
+        {"id": "handle-tax-matters", "relation": "related-to", "boundary": "一般行政救济方法归行政，税务处理实体判断和税务争议方案归税务。"},
+        {"id": "handle-competition-antitrust", "relation": "related-to", "boundary": "行政救济程序归行政，竞争法实体判断、申报和调查应对归竞争法。"},
+        {"id": "handle-environment-energy", "relation": "related-to", "boundary": "行政复议诉讼程序归行政，环境能源和资源监管实体事项归环境能源。"}
+      ],
       "status": "planned"
     },
     {
@@ -145,7 +306,16 @@
       "displayName": "税务法律业务",
       "priority": "P2",
       "jurisdiction": "CN-mainland",
-      "scope": "税务合规、交易涉税、税务稽查与税务争议",
+      "purpose": "处理经营、交易和财富安排中的税务合规、税负分析、稽查应对和税务争议。",
+      "inScope": ["企业和交易税务合规", "税务结构与税负分析", "税务稽查和风险处置", "税务行政争议"],
+      "outOfScope": ["婚姻继承和财富传承方案本身", "一般行政复议诉讼", "跨境交易和贸易监管整体"],
+      "primaryDeliverables": ["税务法律意见", "交易涉税方案", "税务稽查应对材料", "税务争议解决成果"],
+      "ownershipRule": "主要成果是税务处理、税负或税务机关争议时归本领域；税务仅为家事、跨境或其他交易的组成因素时由主要领域统筹。",
+      "relatedDomains": [
+        {"id": "handle-family-succession", "relation": "related-to", "boundary": "家事和传承结构归婚家，税负测算、申报和税务争议归税务。"},
+        {"id": "handle-administrative-disputes", "relation": "related-to", "boundary": "税务实体和税务争议归本领域，一般行政救济方法归行政。"},
+        {"id": "handle-cross-border-trade", "relation": "related-to", "boundary": "跨境税务专项成果归税务，跨境准入、贸易和交易整体归涉外。"}
+      ],
       "status": "planned"
     },
     {
@@ -153,7 +323,17 @@
       "displayName": "竞争法与反垄断",
       "priority": "P2",
       "jurisdiction": "CN-mainland",
-      "scope": "垄断协议、经营者集中、不正当竞争与平台竞争",
+      "purpose": "处理经营者集中、垄断行为、不正当竞争和平台竞争中的申报、合规、调查与争议。",
+      "inScope": ["经营者集中申报", "垄断协议和滥用市场支配地位", "不正当竞争和平台竞争", "竞争调查、诉讼与合规"],
+      "outOfScope": ["投资并购交易整体执行", "知识产权权利保护本身", "企业综合合规体系", "一般行政救济程序"],
+      "primaryDeliverables": ["竞争法评估", "经营者集中申报成果", "竞争合规方案", "调查和诉讼应对成果"],
+      "ownershipRule": "主要成果评估市场竞争影响、完成竞争申报或应对竞争调查时归本领域；交易、知识产权和综合合规主体成果归相应领域。",
+      "relatedDomains": [
+        {"id": "handle-investments-ma", "relation": "related-to", "boundary": "交易执行归投资并购，经营者集中和竞争限制专项判断归竞争法。"},
+        {"id": "protect-intellectual-property", "relation": "related-to", "boundary": "知识产权权利保护归知识产权，以市场排除和竞争秩序为主要成果时归本领域。"},
+        {"id": "manage-corporate-compliance", "relation": "related-to", "boundary": "竞争专项合规归本领域，企业综合合规机制归企业合规。"},
+        {"id": "handle-administrative-disputes", "relation": "related-to", "boundary": "竞争法实体判断和调查应对归本领域，行政复议诉讼的一般程序方法归行政。"}
+      ],
       "status": "planned"
     },
     {
@@ -161,7 +341,16 @@
       "displayName": "涉外与国际贸易",
       "priority": "P2",
       "jurisdiction": "CN-mainland",
-      "scope": "跨境交易、国际贸易、涉外争议与国际仲裁",
+      "purpose": "处理跨法域经营、国际贸易、跨境投资监管、贸易管制和涉外争议协调。",
+      "inScope": ["跨境交易与境外投资协调", "国际货物和服务贸易", "出口管制、制裁和贸易救济", "涉外诉讼仲裁与跨法域执行"],
+      "outOfScope": ["境内投资并购交易主体工作", "纯跨境税务专项成果", "海上运输、船舶和海事保险专门事项"],
+      "primaryDeliverables": ["跨境交易法律方案", "国际贸易文件与合规意见", "贸易管制应对方案", "涉外争议协调成果"],
+      "ownershipRule": "主要成果解决跨法域适用、跨境准入、国际贸易或外国监管问题时归本领域；境内交易、税务和海事专门成果分别归对应领域。",
+      "relatedDomains": [
+        {"id": "handle-investments-ma", "relation": "related-to", "boundary": "投资并购交易主体归投资并购，跨法域准入和境外监管专项成果归涉外。"},
+        {"id": "handle-tax-matters", "relation": "related-to", "boundary": "跨境交易和贸易整体归涉外，跨境税务专项成果归税务。"},
+        {"id": "handle-maritime-matters", "relation": "related-to", "boundary": "国际贸易和跨法域协调归涉外，海上运输、船舶和海事保险归海事海商。"}
+      ],
       "status": "planned"
     },
     {
@@ -169,7 +358,16 @@
       "displayName": "海事海商",
       "priority": "P2",
       "jurisdiction": "CN-mainland",
-      "scope": "海上运输、船舶、货损、保险与海事诉讼",
+      "purpose": "处理海上运输、船舶、海事事故、海上保险和海事诉讼仲裁等专门法律事务。",
+      "inScope": ["海上货物和旅客运输", "船舶建造、买卖、租用和融资", "碰撞、污染、救助和共同海损", "海事保险、海事诉讼和海事保全"],
+      "outOfScope": ["一般国际贸易和跨境监管", "一般合同争议", "不具有海事专门责任的一般人身侵权"],
+      "primaryDeliverables": ["海事合同与交易文件", "海事责任评估", "海事保全和诉讼仲裁成果", "海上保险和事故处理方案"],
+      "ownershipRule": "主要成果依赖海商法、海事程序或船舶海上运输专门规则时归本领域；一般贸易、合同或侵权成果归相应领域。",
+      "relatedDomains": [
+        {"id": "resolve-contract-disputes", "relation": "related-to", "boundary": "一般合同争议归合同争议，海上运输、船舶和海事保险专门合同争议归本领域。"},
+        {"id": "handle-personal-injury", "relation": "related-to", "boundary": "一般人身侵权归人身损害，船舶事故和海上运输专门责任归本领域。"},
+        {"id": "handle-cross-border-trade", "relation": "related-to", "boundary": "国际贸易和跨法域协调归涉外，海上运输和船舶海事事项归本领域。"}
+      ],
       "status": "planned"
     },
     {
@@ -177,7 +375,17 @@
       "displayName": "环境、能源与自然资源",
       "priority": "P2",
       "jurisdiction": "CN-mainland",
-      "scope": "环境合规、能源项目、矿产资源与环境争议",
+      "purpose": "处理环境保护、能源项目、矿产及自然资源权利、监管合规和相关争议。",
+      "inScope": ["环境影响、排污和生态合规", "能源项目和基础设施监管", "矿产、土地之外的自然资源权利", "环境公益、资源和能源争议"],
+      "outOfScope": ["建设工程施工合同和工程争议", "房地产交易开发运营", "一般行政救济程序", "投资并购交易整体执行"],
+      "primaryDeliverables": ["环境能源合规意见", "资源权利和项目法律方案", "专项尽调成果", "监管与争议应对成果"],
+      "ownershipRule": "主要成果依赖环境、能源或自然资源专门监管和权利规则时归本领域；工程、房地产、行政程序和交易整体成果归对应领域。",
+      "relatedDomains": [
+        {"id": "handle-construction-disputes", "relation": "related-to", "boundary": "工程合同和施工责任归建设工程，环境能源和资源监管专项成果归本领域。"},
+        {"id": "handle-investments-ma", "relation": "related-to", "boundary": "交易执行归投资并购，能源资源权利和环境监管专项尽调归本领域。"},
+        {"id": "handle-real-estate", "relation": "related-to", "boundary": "房地产开发运营归房地产，自然资源权利和环境能源监管归本领域。"},
+        {"id": "handle-administrative-disputes", "relation": "related-to", "boundary": "环境能源实体事项归本领域，行政复议诉讼的一般程序方法归行政。"}
+      ],
       "status": "planned"
     }
   ]

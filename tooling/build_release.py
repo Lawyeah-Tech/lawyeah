@@ -70,6 +70,41 @@ def collect_files(pack_root: Path, include_patterns: List[str]) -> List[Path]:
     return sorted(files, key=lambda item: item.relative_to(pack_root).as_posix())
 
 
+def validate_declared_runtime_skills(pack_root: Path, pack_id: str) -> None:
+    manifest = load_json(pack_root / "pack.json")
+    if manifest.get("schemaVersion") != 2:
+        raise BuildError(f"pack {pack_id} schemaVersion must be 2")
+    if manifest.get("id") != pack_id:
+        raise BuildError(f"pack manifest id must match directory: {pack_id}")
+    skills = manifest.get("skills")
+    if not isinstance(skills, list):
+        raise BuildError("pack skills must be an array")
+
+    declared: set[str] = set()
+    for entry in skills:
+        if not isinstance(entry, dict) or not isinstance(entry.get("id"), str):
+            raise BuildError("every declared skill must have an id")
+        skill_id = entry["id"]
+        expected_path = f"skills/{skill_id}"
+        if entry.get("path") != expected_path:
+            raise BuildError(f"declared skill path must be {expected_path}")
+        if skill_id in declared:
+            raise BuildError(f"duplicate declared skill: {skill_id}")
+        declared.add(skill_id)
+        if not (pack_root / expected_path / "SKILL.md").is_file():
+            raise BuildError(f"declared skill directory is missing: {skill_id}")
+
+    skills_root = pack_root / "skills"
+    actual = {
+        path.name
+        for path in skills_root.iterdir()
+        if path.is_dir() and (path / "SKILL.md").is_file()
+    } if skills_root.is_dir() else set()
+    undeclared = sorted(actual - declared)
+    if undeclared:
+        raise BuildError("undeclared runtime skill: " + ", ".join(undeclared))
+
+
 def write_archive(
     output: Path,
     pack_id: str,
@@ -122,6 +157,8 @@ def build_release(root: Path, pack_id: str, output: Path) -> str:
     pack_root = (packs_root / pack_id).resolve()
     if pack_root.parent != packs_root or not pack_root.is_dir():
         raise BuildError(f"pack directory is missing: {pack_id}")
+
+    validate_declared_runtime_skills(pack_root, pack_id)
 
     for relative in required:
         required_path = pack_root / relative

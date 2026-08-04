@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Lawyeah Domain Skill Pack",
+  "title": "Lawyeah Multi-Skill Domain Pack",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -11,40 +11,156 @@
     "version",
     "license",
     "jurisdiction",
-    "entrypoint",
     "contentModel",
     "reinstallStrategy",
-    "mcp"
+    "scope",
+    "guideSkill",
+    "mcp",
+    "skills"
   ],
   "properties": {
-    "schemaVersion": {"const": 1},
-    "id": {
-      "type": "string",
-      "minLength": 1,
-      "maxLength": 64,
-      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
-    },
-    "displayName": {"type": "string", "minLength": 1},
-    "description": {"type": "string", "minLength": 1},
+    "schemaVersion": {"const": 2},
+    "id": {"$ref": "#/$defs/kebabId"},
+    "displayName": {"$ref": "#/$defs/nonEmptyText"},
+    "description": {"$ref": "#/$defs/nonEmptyText"},
     "version": {
       "type": "string",
       "pattern": "^(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)$"
     },
     "license": {"const": "Apache-2.0"},
     "jurisdiction": {"const": "CN-mainland"},
-    "entrypoint": {"const": "SKILL.md"},
-    "contentModel": {"const": "progressive-disclosure"},
+    "contentModel": {"const": "multi-skill-progressive-disclosure"},
     "reinstallStrategy": {"const": "replace"},
+    "scope": {"$ref": "#/$defs/scope"},
+    "guideSkill": {"$ref": "#/$defs/skillId"},
     "mcp": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["contractVersion", "capabilities"],
+      "required": ["contractRange"],
       "properties": {
-        "contractVersion": {
+        "contractRange": {
           "type": "string",
-          "pattern": "^[0-9]+\\.[0-9]+$"
+          "minLength": 1,
+          "pattern": "^[0-9<>= .-]+$"
+        }
+      }
+    },
+    "skills": {
+      "type": "array",
+      "minItems": 2,
+      "items": {"$ref": "#/$defs/skill"}
+    }
+  },
+  "$defs": {
+    "nonEmptyText": {
+      "type": "string",
+      "minLength": 1
+    },
+    "nonEmptyTextList": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {"$ref": "#/$defs/nonEmptyText"}
+    },
+    "kebabId": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 64,
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "skillId": {
+      "type": "string",
+      "minLength": 9,
+      "maxLength": 64,
+      "pattern": "^lawyeah-[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["purpose", "inScope", "outOfScope", "primaryDeliverables"],
+      "properties": {
+        "purpose": {"$ref": "#/$defs/nonEmptyText"},
+        "inScope": {"$ref": "#/$defs/nonEmptyTextList"},
+        "outOfScope": {"$ref": "#/$defs/nonEmptyTextList"},
+        "primaryDeliverables": {"$ref": "#/$defs/nonEmptyTextList"}
+      }
+    },
+    "dependency": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["skill", "requiredResult"],
+      "properties": {
+        "skill": {"$ref": "#/$defs/skillId"},
+        "requiredResult": {"$ref": "#/$defs/nonEmptyText"}
+      }
+    },
+    "relations": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["depends-on", "related-to", "excludes"],
+      "properties": {
+        "depends-on": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {"$ref": "#/$defs/dependency"}
         },
-        "capabilities": {"$ref": "mcp-capabilities.schema.json"}
+        "related-to": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {"$ref": "#/$defs/skillId"}
+        },
+        "excludes": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {"$ref": "#/$defs/skillId"}
+        }
+      }
+    },
+    "mcpDecisionNode": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "purpose", "capability", "level", "unavailableBehavior"],
+      "properties": {
+        "id": {"$ref": "#/$defs/kebabId"},
+        "purpose": {"$ref": "#/$defs/nonEmptyText"},
+        "capability": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9]*(?:[._-][a-z0-9]+)*$"
+        },
+        "level": {"enum": ["required", "recommended", "optional"]},
+        "unavailableBehavior": {"$ref": "#/$defs/nonEmptyText"}
+      }
+    },
+    "skill": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "kind",
+        "displayName",
+        "goal",
+        "notFor",
+        "deliverables",
+        "path",
+        "relations",
+        "mcpDecisionNodes"
+      ],
+      "properties": {
+        "id": {"$ref": "#/$defs/skillId"},
+        "kind": {"enum": ["guide", "atomic"]},
+        "displayName": {"$ref": "#/$defs/nonEmptyText"},
+        "goal": {"$ref": "#/$defs/nonEmptyText"},
+        "notFor": {"$ref": "#/$defs/nonEmptyTextList"},
+        "deliverables": {"$ref": "#/$defs/nonEmptyTextList"},
+        "path": {
+          "type": "string",
+          "pattern": "^skills/lawyeah-[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "relations": {"$ref": "#/$defs/relations"},
+        "mcpDecisionNodes": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/mcpDecisionNode"}
+        }
       }
     }
   }
