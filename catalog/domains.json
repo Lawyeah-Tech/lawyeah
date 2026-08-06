@@ -55,7 +55,8 @@
         {"id": "review-draft-contracts", "relation": "related-to", "boundary": "一般交易合同归合同审查，公司组织和股东权利文件归本领域。"},
         {"id": "handle-family-succession", "relation": "related-to", "boundary": "公司权利结构归本领域，婚姻或继承关系中的股权归属与分配归婚家。"},
         {"id": "handle-investments-ma", "relation": "related-to", "boundary": "公司常态治理归本领域，以投资、收购和交割为目标的项目归投资并购。"},
-        {"id": "manage-corporate-compliance", "relation": "related-to", "boundary": "公司机关和股东权利归本领域，企业合规体系和内部调查归企业合规。"}
+        {"id": "manage-corporate-compliance", "relation": "related-to", "boundary": "公司机关和股东权利归本领域，企业合规体系和内部调查归企业合规。"},
+        {"id": "handle-labor-employment", "relation": "related-to", "boundary": "公司职务、股权结构和股东权利归公司治理，高管劳动身份、劳动合同权利和员工激励的劳动后果归劳动。"}
       ],
       "status": "planned"
     },
@@ -65,14 +66,24 @@
       "priority": "P0",
       "jurisdiction": "CN-mainland",
       "purpose": "处理劳动关系建立、履行、变更、解除和争议解决，支持用人单位、劳动者及其代理人的专业任务。",
-      "inScope": ["劳动关系与劳动合同", "薪酬工时、休假和社会保险", "规章制度、人员调整和劳动合同解除", "劳动仲裁与诉讼"],
-      "outOfScope": ["第三人侵权主导的人身损害赔偿", "一般商业秘密侵权和知识产权争议", "并购交易整体结构与交割"],
-      "primaryDeliverables": ["用工制度与劳动文件", "解除或用工风险评估", "补偿与待遇测算", "劳动仲裁诉讼成果"],
-      "ownershipRule": "主要成果围绕劳动关系和用工责任时归本领域；侵权赔偿、知识产权保护或并购交易仅将劳动问题作为组成部分时归相应主要领域。",
+      "inScope": ["用工模式、劳动关系与用工主体责任", "招聘录用、劳动合同、规章制度和集体劳动关系", "薪酬工时、休假、社会保险、员工信息劳动法专项和特殊劳动保护", "绩效纪律、内部调查、个体退出、裁员安置和组织调整", "特殊主体、高管劳动身份、员工激励的劳动事项", "工伤职业健康、劳动保障行政办理、劳动仲裁诉讼和执行"],
+      "outOfScope": ["第三人侵权主导的人身损害赔偿", "商业秘密权利保护和一般知识产权侵权争议", "企业级舞弊调查、反商业贿赂和综合合规治理", "个人信息、数据跨境和网络安全专项治理体系", "并购交易、破产程序或行政复议诉讼的整体统筹", "职业危害技术评价、安全生产工程结论和医学诊断"],
+      "primaryDeliverables": ["用工审计、模式选择与主体责任意见", "劳动合同、规章制度和民主公示实施包", "薪酬工时、社会保险、员工信息劳动法专项与特殊保护成果", "员工调查、处分、退出、裁员和安置实施成果", "工伤、职业健康和劳动保障行政事项的专项意见与材料", "劳动者权利诊断、测算、证据与谈判成果", "劳动仲裁诉讼、执行与生效后救济成果"],
+      "ownershipRule": "主要成果围绕劳动关系、用工责任、劳动权益或劳动程序时归本领域；侵权、知识产权、数据、综合合规、交易、破产或一般行政救济具有独立主要成果时归相应领域，劳动专项成果仍在本领域独立发展。",
       "relatedDomains": [
         {"id": "review-draft-contracts", "relation": "related-to", "boundary": "劳动合同和用工文件依劳动专门规则在本领域独立发展。"},
-        {"id": "handle-personal-injury", "relation": "related-to", "boundary": "工伤认定和劳动待遇归劳动，第三人侵权赔偿及竞合成果归人身损害。"},
-        {"id": "manage-corporate-compliance", "relation": "related-to", "boundary": "日常用工治理归劳动，企业级舞弊调查和综合合规体系归企业合规。"}
+        {"id": "handle-personal-injury", "relation": "related-to", "boundary": "工伤认定、鉴定和工伤待遇成果归劳动，第三人侵权责任及侵权赔偿成果归人身损害；竞合案件分别形成专业成果并协调程序。"},
+        {"id": "manage-corporate-compliance", "relation": "related-to", "boundary": "日常用工治理归劳动，企业级舞弊调查和综合合规体系归企业合规。"},
+        {"id": "govern-data-privacy", "relation": "related-to", "boundary": "用工目的、劳动程序和劳动法后果的员工信息专项成果归劳动，个人信息合法性、影响评估、数据跨境和网络安全专项成果归数据隐私。"},
+        {"id": "protect-intellectual-property", "relation": "related-to", "boundary": "竞业限制和劳动关系内保密义务归劳动，商业秘密权利基础、侵权及损失归知识产权。"},
+        {"id": "handle-administrative-disputes", "relation": "related-to", "boundary": "工伤、社保和劳动监察的分流意见、劳动专项实体条件和证据材料归劳动，行政复议诉讼文书和通用程序代理成果归行政争议。"},
+        {"id": "handle-investments-ma", "relation": "related-to", "boundary": "劳动尽调、员工转移和人员安置专项成果归劳动，交易结构、交割和整体项目统筹归投资并购。"},
+        {"id": "handle-bankruptcy-restructuring", "relation": "related-to", "boundary": "职工安置、劳动合同终止和劳动待遇测算归劳动，职工债权申报、确认及破产分配归破产。"},
+        {"id": "handle-corporate-equity", "relation": "related-to", "boundary": "高管劳动身份、劳动合同权利和员工激励的劳动后果归劳动，公司职务、股权结构和股东权利归公司治理。"},
+        {"id": "handle-tax-matters", "relation": "related-to", "boundary": "薪酬和员工激励的劳动权利及用工后果归劳动，税负、申报和税务争议归税务。"},
+        {"id": "handle-cross-border-trade", "relation": "related-to", "boundary": "中国大陆劳动关系、外国人在华用工和劳动权益归劳动，境外当地劳动法及跨法域准入监管成果归涉外。"},
+        {"id": "conduct-criminal-defense", "relation": "related-to", "boundary": "员工涉嫌违法后的劳动调查、处分和用工后果归劳动，刑事控告、辩护和刑事责任归刑事。"},
+        {"id": "handle-construction-disputes", "relation": "related-to", "boundary": "农民工劳动关系、工资和工伤责任归劳动，工程合同、工程价款和施工责任归建设工程。"}
       ],
       "status": "planned"
     },
@@ -104,7 +115,8 @@
       "ownershipRule": "主要成果直接服务刑事责任认定和刑事程序权利时归本领域；刑事风险只是企业治理或行政监管的一部分时归相应领域。",
       "relatedDomains": [
         {"id": "manage-corporate-compliance", "relation": "related-to", "boundary": "刑事辩护与控告归刑事，企业预防、整改和内部调查归企业合规。"},
-        {"id": "handle-administrative-disputes", "relation": "related-to", "boundary": "刑事强制措施和责任归刑事，行政机关作出的处罚和许可争议归行政。"}
+        {"id": "handle-administrative-disputes", "relation": "related-to", "boundary": "刑事强制措施和责任归刑事，行政机关作出的处罚和许可争议归行政。"},
+        {"id": "handle-labor-employment", "relation": "related-to", "boundary": "刑事控告、辩护和刑事责任归刑事，员工涉嫌违法后的劳动调查、处分和用工后果归劳动。"}
       ],
       "status": "planned"
     },
@@ -122,7 +134,8 @@
         {"id": "review-draft-contracts", "relation": "related-to", "boundary": "建设工程合同在本领域按工程专门规则独立发展。"},
         {"id": "resolve-contract-disputes", "relation": "related-to", "boundary": "工程价款、工期、质量和实际施工人等专门争议归本领域。"},
         {"id": "handle-real-estate", "relation": "related-to", "boundary": "施工过程和工程责任归建设工程，房地产交易、开发销售和物业归房地产。"},
-        {"id": "handle-environment-energy", "relation": "related-to", "boundary": "工程合同和建设争议归本领域，能源与环境监管、资源权利和项目合规归环境能源。"}
+        {"id": "handle-environment-energy", "relation": "related-to", "boundary": "工程合同和建设争议归本领域，能源与环境监管、资源权利和项目合规归环境能源。"},
+        {"id": "handle-labor-employment", "relation": "related-to", "boundary": "工程合同、工程价款和施工责任归建设工程，农民工劳动关系、工资和工伤责任归劳动。"}
       ],
       "status": "planned"
     },
@@ -137,7 +150,7 @@
       "primaryDeliverables": ["侵权责任评估", "赔偿项目与金额测算", "证据和鉴定方案", "人身损害诉讼调解成果"],
       "ownershipRule": "主要成果是确定侵权责任和实现人身损害赔偿时归本领域；劳动待遇、医疗专业责任或海事专门责任有独立主要成果时归对应领域。",
       "relatedDomains": [
-        {"id": "handle-labor-employment", "relation": "related-to", "boundary": "工伤认定与劳动待遇归劳动，第三人侵权赔偿及竞合成果归本领域。"},
+        {"id": "handle-labor-employment", "relation": "related-to", "boundary": "第三人侵权责任及侵权赔偿成果归本领域，工伤认定、鉴定和工伤待遇成果归劳动；竞合案件分别形成专业成果并协调程序。"},
         {"id": "handle-healthcare-pharma", "relation": "related-to", "boundary": "一般损害赔偿归本领域，医疗过错、病历和诊疗因果关系归医疗医药。"},
         {"id": "handle-maritime-matters", "relation": "related-to", "boundary": "一般人身侵权归本领域，海上运输、船舶事故等海事专门责任归海事海商。"}
       ],
@@ -158,6 +171,7 @@
         {"id": "handle-finance-guarantees", "relation": "related-to", "boundary": "股权或资产交易归投资并购，以融资、借贷和担保安排为主要成果时归金融。"},
         {"id": "handle-competition-antitrust", "relation": "related-to", "boundary": "交易整体归投资并购，经营者集中和竞争限制专项判断归竞争法。"},
         {"id": "handle-cross-border-trade", "relation": "related-to", "boundary": "投资并购交易主体归本领域，跨法域准入、贸易管制和境外监管专项成果归涉外。"},
+        {"id": "handle-labor-employment", "relation": "related-to", "boundary": "交易结构、交割和整体项目统筹归投资并购，劳动尽调、员工转移和人员安置专项成果归劳动。"},
         {"id": "handle-environment-energy", "relation": "related-to", "boundary": "交易执行归投资并购，能源资源权利和环境监管专项尽调成果归环境能源。"}
       ],
       "status": "planned"
@@ -190,6 +204,7 @@
       "primaryDeliverables": ["知识产权布局方案", "许可转让文件", "侵权分析和维权方案", "知识产权诉讼行政成果"],
       "ownershipRule": "主要成果是知识产权权利取得、使用或保护时归本领域；数据治理、竞争秩序或交易整体具有独立主要成果时归对应领域。",
       "relatedDomains": [
+        {"id": "handle-labor-employment", "relation": "related-to", "boundary": "商业秘密权利基础、侵权及损失归知识产权，竞业限制和劳动关系内保密义务归劳动。"},
         {"id": "govern-data-privacy", "relation": "related-to", "boundary": "知识产权权利保护归本领域，个人信息、重要数据和网络安全治理归数据隐私。"},
         {"id": "handle-competition-antitrust", "relation": "related-to", "boundary": "知识产权权利边界归本领域，以竞争秩序和市场排除效果为主要成果时归竞争法。"}
       ],
@@ -241,7 +256,8 @@
       "ownershipRule": "主要成果发生在法定破产、重整或清算程序内时归本领域；程序外融资、债权实现和一般交易归相应领域。",
       "relatedDomains": [
         {"id": "handle-finance-guarantees", "relation": "related-to", "boundary": "破产程序外金融债权实现归金融，进入破产程序后的申报和分配归本领域。"},
-        {"id": "manage-corporate-compliance", "relation": "related-to", "boundary": "困境企业的法定破产清算程序归本领域，日常合规和内部调查归企业合规。"}
+        {"id": "manage-corporate-compliance", "relation": "related-to", "boundary": "困境企业的法定破产清算程序归本领域，日常合规和内部调查归企业合规。"},
+        {"id": "handle-labor-employment", "relation": "related-to", "boundary": "职工债权申报、确认及破产分配归破产，职工安置、劳动合同终止和劳动待遇测算归劳动。"}
       ],
       "status": "planned"
     },
@@ -277,6 +293,7 @@
       "primaryDeliverables": ["隐私和数据合规评估", "个人信息与数据制度文件", "数据出境方案", "安全事件响应成果"],
       "ownershipRule": "主要成果是个人信息、数据或网络安全治理时归本领域；知识产权、综合合规或行业业务成果归相应领域。",
       "relatedDomains": [
+        {"id": "handle-labor-employment", "relation": "related-to", "boundary": "个人信息合法性、影响评估、数据跨境和网络安全专项成果归数据隐私，用工目的、劳动程序和劳动法后果的员工信息专项成果归劳动。"},
         {"id": "protect-intellectual-property", "relation": "related-to", "boundary": "个人信息和数据治理归本领域，知识产权权利保护和运营归知识产权。"},
         {"id": "handle-healthcare-pharma", "relation": "related-to", "boundary": "医疗数据专项治理归数据隐私，医疗业务和行业监管归医疗医药。"},
         {"id": "manage-corporate-compliance", "relation": "related-to", "boundary": "数据和网络安全专项体系归本领域，企业综合合规治理归企业合规。"}
@@ -294,6 +311,7 @@
       "primaryDeliverables": ["行政行为合法性评估", "陈述申辩和听证材料", "行政复议申请", "行政诉讼文书与代理方案"],
       "ownershipRule": "主要成果是对行政行为进行程序性或司法救济时归本领域；税务、竞争、环境等专项实体判断仍由对应领域负责。",
       "relatedDomains": [
+        {"id": "handle-labor-employment", "relation": "related-to", "boundary": "行政复议诉讼文书和通用程序代理成果归行政争议，工伤、社保和劳动监察的分流意见、劳动专项实体条件和证据材料归劳动。"},
         {"id": "conduct-criminal-defense", "relation": "related-to", "boundary": "行政处罚与救济归行政，刑事责任和刑事程序归刑事。"},
         {"id": "handle-tax-matters", "relation": "related-to", "boundary": "一般行政救济方法归行政，税务处理实体判断和税务争议方案归税务。"},
         {"id": "handle-competition-antitrust", "relation": "related-to", "boundary": "行政救济程序归行政，竞争法实体判断、申报和调查应对归竞争法。"},
@@ -314,7 +332,8 @@
       "relatedDomains": [
         {"id": "handle-family-succession", "relation": "related-to", "boundary": "家事和传承结构归婚家，税负测算、申报和税务争议归税务。"},
         {"id": "handle-administrative-disputes", "relation": "related-to", "boundary": "税务实体和税务争议归本领域，一般行政救济方法归行政。"},
-        {"id": "handle-cross-border-trade", "relation": "related-to", "boundary": "跨境税务专项成果归税务，跨境准入、贸易和交易整体归涉外。"}
+        {"id": "handle-cross-border-trade", "relation": "related-to", "boundary": "跨境税务专项成果归税务，跨境准入、贸易和交易整体归涉外。"},
+        {"id": "handle-labor-employment", "relation": "related-to", "boundary": "税负、申报和税务争议归税务，薪酬和员工激励的劳动权利及用工后果归劳动。"}
       ],
       "status": "planned"
     },
@@ -349,7 +368,8 @@
       "relatedDomains": [
         {"id": "handle-investments-ma", "relation": "related-to", "boundary": "投资并购交易主体归投资并购，跨法域准入和境外监管专项成果归涉外。"},
         {"id": "handle-tax-matters", "relation": "related-to", "boundary": "跨境交易和贸易整体归涉外，跨境税务专项成果归税务。"},
-        {"id": "handle-maritime-matters", "relation": "related-to", "boundary": "国际贸易和跨法域协调归涉外，海上运输、船舶和海事保险归海事海商。"}
+        {"id": "handle-maritime-matters", "relation": "related-to", "boundary": "国际贸易和跨法域协调归涉外，海上运输、船舶和海事保险归海事海商。"},
+        {"id": "handle-labor-employment", "relation": "related-to", "boundary": "境外当地劳动法及跨法域准入监管成果归涉外，中国大陆劳动关系、外国人在华用工和劳动权益归劳动。"}
       ],
       "status": "planned"
     },

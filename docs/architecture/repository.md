@@ -9,7 +9,7 @@ catalog → 领域边界、组合包和渠道目录
 packs → 自包含领域包
 schemas → 可执行契约
 templates → 研发脚手架
-tooling/tests → 源码质量与发布边界
+tooling + tests → 源码质量与发布边界
 static release archive → 用户实际安装内容
 ```
 
@@ -58,9 +58,17 @@ Skill 之间只使用三类关系：
 
 不记录固定 `before`、`after` 或运行时组合方案。相似 Skill 在不同领域独立发展，不共享运行时方法、知识文件、模板或版本。
 
+## 专家评审治理
+
+每个领域体系在设计原子 Skill 清单前，必须完成业务实务、程序证据和 Skill 架构三个独立视角的评审。每个原子 Skill 还必须接受实体规则、反方立场、来源效力、安全权限和成果可用性评审。
+
+评审意见先独立形成，再通过补充律页检索、官方网络验证和区分性测试处理分歧。有证据的重大法律、安全或不可逆程序异议可以阻止进入下一阶段，不能以多数票或平均分覆盖。完整规则见[专家评审治理](expert-review.md)。
+
+当前专家组通过独立评审、失败案例和修订回归完成质量收口。真实数据不是开发或发布的必需验收材料；详细报告和证据留在私有研究层，不进入发布 Skill。
+
 ## 渐进披露与文件边界
 
-每个 Skill 使用 Agent Skills 的三级渐进披露：名称和描述用于发现，`SKILL.md` 在触发后加载，`references/`、`scripts/` 和 `assets/` 按需使用。
+每个 Skill 使用 Agent Skills 的三级渐进披露：名称和描述用于发现，`SKILL.md` 在触发后加载，`references/`、`scripts/` 和 `assets/` 按需使用。每个 Skill 必须提供 `agents/openai.yaml`；Skill 顶层只允许 `SKILL.md`、`agents/`、`references/`、`scripts/` 和 `assets/`。
 
 运行时路径全部使用英文 ASCII。每个 Skill 只能引用自身目录内的文件，不通过 `../` 跨 Skill 读取资源。法律文书格式资产放在所属原子 Skill 的 `assets/templates/`；仓库根目录 `templates/` 只用于研发脚手架，不进入安装包。
 
@@ -86,6 +94,8 @@ MCP 依赖定义到原子 Skill 的具体判断节点，并分为：
 
 领域包只汇总包内判断节点，不统一强制所有 Skill 使用相同工具。Skill 不保存服务端点、用户 ID、密钥或令牌；授权与凭证由 AI 宿主和 Lawyeah MCP 服务负责。
 
+Skill 中可以按标准方式条件引用项目工具目录中已稳定命名的 MCP 或宿主工具，并写明用途、最小逻辑输入、结果使用和不可用行为。开发与发布不要求实际 MCP 注册、联调、权限验证或真实调用；未完成运行时接入不阻断 Skill 的专业评审和发布。
+
 ## 安装与更新
 
 构建发生在 Lawyeah 的 CI 或发布环境。不同平台接收静态目录或静态插件包，客户电脑不安装更新器、守护进程或后台程序。
@@ -104,4 +114,10 @@ MCP 依赖定义到原子 Skill 的具体判断节点，并分为：
 
 `release-manifest.json` 是用户安装包的白名单。每个领域包只允许包含 `pack.json` 和 `skills/**`；仓库测试、构建工具、脚手架、CI、实施计划、全库边界文档、私有研究及任何凭证不进入用户安装包。
 
-发布构建会拒绝未在 `pack.json` 声明的 Skill，仓库校验还会拒绝名称错配、非 ASCII 运行路径、跨 Skill 引用、无效关系和缺失的 MCP 降级说明。
+白名单之外还有内容级硬校验。发布构建与仓库校验使用同一套完整 Pack 规则，拒绝未声明的 Skill、名称错配、缺失 `agents/openai.yaml`、非 ASCII 路径、跨 Skill 引用、无效关系、嵌套 `research/`、`evals/`、`tests/`、隐藏认证目录、本地绝对路径、研发 Retrieval 地址和私有库标识。
+
+领域处于 `planned` 时，仓库全量校验不会把未完成 Pack 当作发布内容；开发者必须显式校验指定草稿包：
+
+```bash
+python3 tooling/validate_repository.py --root . --pack <domain-id>
+```

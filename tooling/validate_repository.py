@@ -18,6 +18,33 @@ CAPABILITY_PATTERN = re.compile(r"^[a-z][a-z0-9]*(?:[._-][a-z0-9]+)*$")
 SEMVER_PATTERN = re.compile(r"^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)$")
 EXPECTED_COUNTS = {"P0": 8, "P1": 8, "P2": 6}
 ALLOWED_STATUSES = {"planned", "active", "deprecated"}
+ALLOWED_SKILL_TOP_LEVEL = {"SKILL.md", "agents", "references", "scripts", "assets"}
+FORBIDDEN_RUNTIME_COMPONENTS = {
+    "research",
+    "evals",
+    "tests",
+    "test",
+    "raw-data",
+    "evidence",
+    "credentials",
+    "secrets",
+    ".mcp-auth",
+    ".git",
+}
+PRIVATE_RESEARCH_MARKERS = (
+    "Lawyeah_Library",
+    "/Users/",
+    "retrieval.lawyeah.cn/app/services/knowledge_search",
+    "research/mcp/",
+    "research/labor/",
+)
+CREDENTIAL_SUFFIXES = {".pem", ".key", ".token", ".p12", ".pfx", ".jks"}
+CREDENTIAL_FILENAMES = {
+    "id_rsa",
+    "id_ed25519",
+    "credentials.json",
+    "service-account.json",
+}
 REQUIRED_ROOT_PATHS = (
     "README.md",
     "LICENSE",
@@ -229,6 +256,53 @@ def validate_skill_references(skill_root: Path, skill_id: str, errors: List[str]
             errors.append(f"cross-skill runtime reference in {skill_id}/{relative}")
 
 
+def validate_skill_runtime_layout(
+    skill_root: Path, skill_id: str, errors: List[str]
+) -> None:
+    agent_metadata = skill_root / "agents" / "openai.yaml"
+    if not agent_metadata.is_file():
+        errors.append(f"skill {skill_id} is missing agents/openai.yaml")
+
+    for path in skill_root.rglob("*"):
+        relative_path = path.relative_to(skill_root)
+        parts = relative_path.parts
+        relative = relative_path.as_posix()
+        if not parts:
+            continue
+
+        if parts[0] not in ALLOWED_SKILL_TOP_LEVEL:
+            errors.append(f"forbidden runtime path in {skill_id}: {relative}")
+        if any(part in FORBIDDEN_RUNTIME_COMPONENTS or part.startswith(".") for part in parts):
+            errors.append(f"forbidden runtime path in {skill_id}: {relative}")
+        if parts[0] == "agents" and relative != "agents/openai.yaml" and path.is_file():
+            errors.append(f"forbidden runtime path in {skill_id}: {relative}")
+        if path.is_file() and (
+            path.suffix.lower() in CREDENTIAL_SUFFIXES
+            or path.name.lower() in CREDENTIAL_FILENAMES
+        ):
+            errors.append(f"credential file in {skill_id}: {relative}")
+
+        if not path.is_file() or path.suffix.lower() not in {
+            ".md",
+            ".json",
+            ".yaml",
+            ".yml",
+            ".txt",
+            ".py",
+            ".sh",
+        }:
+            continue
+        try:
+            text = path.read_text(encoding="utf-8")
+        except UnicodeDecodeError:
+            continue
+        for marker in PRIVATE_RESEARCH_MARKERS:
+            if marker in text:
+                errors.append(
+                    f"private research marker in {skill_id}/{relative}: {marker}"
+                )
+
+
 def validate_pack_manifest(pack_root: Path, expected_id: str, errors: List[str]) -> None:
     path = pack_root / "pack.json"
     manifest = load_json(path, errors)
@@ -316,6 +390,7 @@ def validate_pack_manifest(pack_root: Path, expected_id: str, errors: List[str])
                 f"frontmatter name must match skill directory: {skill_id} (found {actual_name})"
             )
         validate_skill_references(skill_root, skill_id, errors)
+        validate_skill_runtime_layout(skill_root, skill_id, errors)
 
         relations = skill.get("relations")
         if not isinstance(relations, dict):
@@ -417,7 +492,28 @@ def validate_schemas(root: Path, errors: List[str]) -> None:
             errors.append(f"{name} must declare JSON Schema Draft 2020-12")
 
 
-def validate_repository(root: Path) -> List[str]:
+def validate_selected_pack(root: Path, pack_id: str, errors: List[str]) -> None:
+    if not PACK_ID_PATTERN.fullmatch(pack_id):
+        errors.append(f"invalid selected pack id: {pack_id}")
+        return
+    catalog = load_json(root / "catalog" / "domains.json", errors)
+    domains = catalog.get("domains")
+    known_ids = {
+        item.get("id")
+        for item in domains
+        if isinstance(domains, list) and isinstance(item, dict)
+    } if isinstance(domains, list) else set()
+    if pack_id not in known_ids:
+        errors.append(f"selected pack is not in domain catalog: {pack_id}")
+        return
+    pack_root = root / "packs" / pack_id
+    if not pack_root.is_dir():
+        errors.append(f"selected pack is missing: {pack_id}")
+        return
+    validate_pack_manifest(pack_root, pack_id, errors)
+
+
+def validate_repository(root: Path, selected_pack: str | None = None) -> List[str]:
     errors: List[str] = []
     for relative in REQUIRED_ROOT_PATHS:
         if not (root / relative).is_file():
@@ -432,19 +528,25 @@ def validate_repository(root: Path) -> List[str]:
     validate_domain_catalog(root, errors)
     validate_release_manifest(root, errors)
     validate_schemas(root, errors)
+    if selected_pack is not None:
+        validate_selected_pack(root, selected_pack, errors)
     return errors
 
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--root", type=Path, required=True, help="Repository root")
+    parser.add_argument(
+        "--pack",
+        help="Also validate this pack even when its catalog status is planned",
+    )
     return parser.parse_args()
 
 
 def main() -> int:
     args = parse_args()
     root = args.root.resolve()
-    errors = validate_repository(root)
+    errors = validate_repository(root, args.pack)
     if errors:
         for error in errors:
             print(f"error: {error}", file=sys.stderr)

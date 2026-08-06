@@ -31,6 +31,20 @@ class RepositoryContractTests(unittest.TestCase):
         self.assertIn("22 domains", result.stdout)
         self.assertIn("P0=8, P1=8, P2=6", result.stdout)
 
+    def test_current_quality_policy_does_not_require_real_data_or_runtime_mcp(self):
+        governance = (ROOT / "docs" / "architecture" / "expert-review.md").read_text(
+            encoding="utf-8"
+        )
+        contributing = (ROOT / "CONTRIBUTING.md").read_text(encoding="utf-8")
+        current_policy = governance + "\n" + contributing
+
+        self.assertIn(
+            "真实数据不是 Skill 开发或发布的必需验收材料", current_policy
+        )
+        self.assertIn("不要求实际 MCP 注册、联调或真实调用", current_policy)
+        self.assertNotIn("真实脱敏材料完成最终验收", current_policy)
+        self.assertNotIn("独立法律专业人员完成真实脱敏材料终审", current_policy)
+
     def copy_valid_fixture(self, fixture: Path) -> None:
         shutil.copytree(ROOT / "catalog", fixture / "catalog")
         shutil.copytree(ROOT / "schemas", fixture / "schemas")
@@ -70,6 +84,11 @@ class RepositoryContractTests(unittest.TestCase):
             (pack_root / "skills" / skill_id / "SKILL.md").write_text(
                 f"---\nname: {skill_id}\n"
                 f"description: Use when testing {skill_id}.\n---\n\n# Fixture\n",
+                encoding="utf-8",
+            )
+            (pack_root / "skills" / skill_id / "agents").mkdir()
+            (pack_root / "skills" / skill_id / "agents" / "openai.yaml").write_text(
+                "interface:\n  display_name: \"Fixture\"\n",
                 encoding="utf-8",
             )
 
@@ -219,6 +238,96 @@ class RepositoryContractTests(unittest.TestCase):
 
         self.assertNotEqual(result.returncode, 0)
         self.assertIn("declared skill directory is missing", result.stderr)
+
+    def test_missing_skill_agent_metadata_is_rejected(self):
+        with tempfile.TemporaryDirectory() as directory:
+            fixture = Path(directory)
+            self.copy_complete_fixture(fixture)
+            pack_root = self.activate_domain_with_valid_pack(fixture)
+            (pack_root / "skills" / ATOMIC_ID / "agents" / "openai.yaml").unlink()
+
+            result = self.run_validator(fixture)
+
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("missing agents/openai.yaml", result.stderr)
+
+    def test_private_research_directory_inside_skill_is_rejected(self):
+        with tempfile.TemporaryDirectory() as directory:
+            fixture = Path(directory)
+            self.copy_complete_fixture(fixture)
+            pack_root = self.activate_domain_with_valid_pack(fixture)
+            leaked = pack_root / "skills" / ATOMIC_ID / "research" / "raw.md"
+            leaked.parent.mkdir()
+            leaked.write_text("private research\n", encoding="utf-8")
+
+            result = self.run_validator(fixture)
+
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("forbidden runtime path", result.stderr)
+
+    def test_private_research_marker_inside_runtime_text_is_rejected(self):
+        with tempfile.TemporaryDirectory() as directory:
+            fixture = Path(directory)
+            self.copy_complete_fixture(fixture)
+            pack_root = self.activate_domain_with_valid_pack(fixture)
+            reference = pack_root / "skills" / ATOMIC_ID / "references" / "method.md"
+            reference.parent.mkdir()
+            reference.write_text(
+                "Use collection Lawyeah_Library from /Users/example/private.\n",
+                encoding="utf-8",
+            )
+
+            result = self.run_validator(fixture)
+
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("private research marker", result.stderr)
+
+    def test_credential_file_inside_skill_is_rejected(self):
+        with tempfile.TemporaryDirectory() as directory:
+            fixture = Path(directory)
+            self.copy_complete_fixture(fixture)
+            pack_root = self.activate_domain_with_valid_pack(fixture)
+            credential = pack_root / "skills" / ATOMIC_ID / "assets" / "client.pem"
+            credential.parent.mkdir(exist_ok=True)
+            credential.write_text("PRIVATE KEY FIXTURE\n", encoding="utf-8")
+
+            result = self.run_validator(fixture)
+
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("credential file", result.stderr)
+
+    def test_planned_pack_can_be_validated_explicitly(self):
+        with tempfile.TemporaryDirectory() as directory:
+            fixture = Path(directory)
+            self.copy_complete_fixture(fixture)
+            pack_root = self.activate_domain_with_valid_pack(fixture)
+            catalog_path = fixture / "catalog" / "domains.json"
+            catalog = json.loads(catalog_path.read_text(encoding="utf-8"))
+            domain = next(item for item in catalog["domains"] if item["id"] == PACK_ID)
+            domain["status"] = "planned"
+            catalog_path.write_text(
+                json.dumps(catalog, ensure_ascii=False, indent=2) + "\n",
+                encoding="utf-8",
+            )
+            (pack_root / "skills" / ATOMIC_ID / "agents" / "openai.yaml").unlink()
+
+            result = subprocess.run(
+                [
+                    sys.executable,
+                    str(VALIDATOR),
+                    "--root",
+                    str(fixture),
+                    "--pack",
+                    PACK_ID,
+                ],
+                cwd=ROOT,
+                text=True,
+                capture_output=True,
+                check=False,
+            )
+
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("missing agents/openai.yaml", result.stderr)
 
     def test_skill_frontmatter_name_must_match_directory(self):
         with tempfile.TemporaryDirectory() as directory:
