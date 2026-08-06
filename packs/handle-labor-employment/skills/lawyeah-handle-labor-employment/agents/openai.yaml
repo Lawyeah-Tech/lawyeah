@@ -1,0 +1,4 @@
+interface:
+  display_name: "劳动用工与劳动争议导航"
+  short_description: "了解劳动领域包的能力边界，并定位适用的原子 Skill"
+  default_prompt: "使用 $lawyeah-handle-labor-employment 根据我的当前目标和预期成果定位合适的劳动法律原子 Skill。"

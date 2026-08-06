@@ -14,6 +14,8 @@ import zipfile
 from pathlib import Path, PurePosixPath
 from typing import Any, Dict, Iterable, List, Tuple
 
+from validate_repository import validate_pack_manifest
+
 
 PACK_ID_PATTERN = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 ZIP_TIMESTAMP = (1980, 1, 1, 0, 0, 0)
@@ -159,6 +161,10 @@ def build_release(root: Path, pack_id: str, output: Path) -> str:
         raise BuildError(f"pack directory is missing: {pack_id}")
 
     validate_declared_runtime_skills(pack_root, pack_id)
+    validation_errors: List[str] = []
+    validate_pack_manifest(pack_root, pack_id, validation_errors)
+    if validation_errors:
+        raise BuildError("; ".join(validation_errors))
 
     for relative in required:
         required_path = pack_root / relative

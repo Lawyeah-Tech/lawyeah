@@ -31,6 +31,14 @@ docs/           架构与实施记录
 
 私有研究、原始检索结果和蒸馏证据不进入本公开仓库。
 
+## 架构与治理
+
+- [仓库架构](docs/architecture/repository.md)
+- [22 个领域边界](docs/architecture/domain-boundaries.md)
+- [专家评审治理](docs/architecture/expert-review.md)
+- [劳动用工与劳动争议体系](docs/domains/labor-employment.md)
+- [劳动领域 Skill 路线图](docs/domains/labor-employment-skills.md)
+
 一个运行时领域包使用以下结构：
 
 ```text
@@ -38,9 +46,11 @@ packs/<domain-id>/
 ├── pack.json
 └── skills/
     ├── lawyeah-<domain>-guide/
-    │   └── SKILL.md
+    │   ├── SKILL.md
+    │   └── agents/openai.yaml
     └── lawyeah-<domain>-<task>/
         ├── SKILL.md
+        ├── agents/openai.yaml
         ├── references/
         ├── scripts/
         └── assets/templates/
@@ -52,6 +62,8 @@ packs/<domain-id>/
 python3 -m unittest discover -s tests -v
 python3 tooling/validate_repository.py --root .
 ```
+
+开发中的 `planned` Pack 使用 `--pack <domain-id>` 单独执行完整校验。
 
 ## 许可
 

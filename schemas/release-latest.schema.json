@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Lawyeah Signed Domain Latest Payload",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "domainID",
+    "version",
+    "packURL",
+    "fallbackPackURL",
+    "sha256",
+    "size"
+  ],
+  "properties": {
+    "schemaVersion": {"const": 1},
+    "domainID": {"$ref": "#/$defs/id"},
+    "version": {"$ref": "#/$defs/semver"},
+    "packURL": {
+      "type": "string",
+      "pattern": "^https://downloads\\.lawyeah\\.cn/domains/[a-z0-9]+(?:-[a-z0-9]+)*/(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)/pack\\.zip$"
+    },
+    "fallbackPackURL": {
+      "type": "string",
+      "pattern": "^https://github\\.com/Lawyeah-Tech/lawyeah/releases/download/[a-z0-9]+(?:-[a-z0-9]+)*-v(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)/pack\\.zip$"
+    },
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "size": {"type": "integer", "minimum": 1}
+  },
+  "$defs": {
+    "semver": {
+      "type": "string",
+      "pattern": "^(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)$"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    }
+  }
+}

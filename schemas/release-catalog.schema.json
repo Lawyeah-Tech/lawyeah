@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Lawyeah Signed Release Catalog Payload",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "minimumInstallerVersion", "domains"],
+  "properties": {
+    "schemaVersion": {"const": 1},
+    "minimumInstallerVersion": {"$ref": "#/$defs/semver"},
+    "domains": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/domain"}
+    }
+  },
+  "$defs": {
+    "semver": {
+      "type": "string",
+      "pattern": "^(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)$"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "domain": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name", "latestURL", "fallbackLatestURL"],
+      "properties": {
+        "id": {"$ref": "#/$defs/id"},
+        "name": {"type": "string", "minLength": 1},
+        "latestURL": {
+          "type": "string",
+          "pattern": "^https://downloads\\.lawyeah\\.cn/domains/[a-z0-9]+(?:-[a-z0-9]+)*/latest\\.json$"
+        },
+        "fallbackLatestURL": {
+          "type": "string",
+          "pattern": "^https://github\\.com/Lawyeah-Tech/lawyeah/releases/download/static-catalog/[a-z0-9]+(?:-[a-z0-9]+)*-latest\\.json$"
+        }
+      }
+    }
+  }
+}

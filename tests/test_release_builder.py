@@ -37,10 +37,20 @@ class ReleaseBuilderTests(unittest.TestCase):
             "---\n\n# Contracts guide\n",
             encoding="utf-8",
         )
+        (self.repo / "packs" / PACK_ID / "skills" / GUIDE_ID / "agents").mkdir()
+        (self.repo / "packs" / PACK_ID / "skills" / GUIDE_ID / "agents" / "openai.yaml").write_text(
+            "interface:\n  display_name: \"Guide\"\n",
+            encoding="utf-8",
+        )
         (self.repo / "packs" / PACK_ID / "skills" / ATOMIC_ID / "SKILL.md").write_text(
             f"---\nname: {ATOMIC_ID}\n"
             "description: Use when the user asks to review a contract.\n"
             "---\n\n# Review contracts\n",
+            encoding="utf-8",
+        )
+        (self.repo / "packs" / PACK_ID / "skills" / ATOMIC_ID / "agents").mkdir()
+        (self.repo / "packs" / PACK_ID / "skills" / ATOMIC_ID / "agents" / "openai.yaml").write_text(
+            "interface:\n  display_name: \"Review\"\n",
             encoding="utf-8",
         )
         (self.repo / "packs" / PACK_ID / "pack.json").write_text(
@@ -191,7 +201,9 @@ class ReleaseBuilderTests(unittest.TestCase):
                     f"{PACK_ID}/NOTICE",
                     f"{PACK_ID}/pack.json",
                     f"{PACK_ID}/skills/{GUIDE_ID}/SKILL.md",
+                    f"{PACK_ID}/skills/{GUIDE_ID}/agents/openai.yaml",
                     f"{PACK_ID}/skills/{ATOMIC_ID}/SKILL.md",
+                    f"{PACK_ID}/skills/{ATOMIC_ID}/agents/openai.yaml",
                     f"{PACK_ID}/skills/{ATOMIC_ID}/assets/templates/review-report.docx",
                     f"{PACK_ID}/skills/{ATOMIC_ID}/references/review-standard.md",
                 ],
@@ -237,6 +249,44 @@ class ReleaseBuilderTests(unittest.TestCase):
 
         self.assertNotEqual(result.returncode, 0)
         self.assertIn("undeclared runtime skill", result.stderr)
+        self.assertFalse(self.output.exists())
+
+    def test_release_rejects_private_research_inside_declared_skill(self):
+        leaked = (
+            self.repo
+            / "packs"
+            / PACK_ID
+            / "skills"
+            / ATOMIC_ID
+            / "evals"
+            / "raw-output.md"
+        )
+        leaked.parent.mkdir()
+        leaked.write_text("internal evaluation\n", encoding="utf-8")
+
+        result = self.run_builder(PACK_ID, self.output)
+
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("forbidden runtime path", result.stderr)
+        self.assertFalse(self.output.exists())
+
+    def test_release_rejects_credential_file_inside_declared_skill(self):
+        leaked = (
+            self.repo
+            / "packs"
+            / PACK_ID
+            / "skills"
+            / ATOMIC_ID
+            / "scripts"
+            / "service.key"
+        )
+        leaked.parent.mkdir()
+        leaked.write_text("PRIVATE KEY FIXTURE\n", encoding="utf-8")
+
+        result = self.run_builder(PACK_ID, self.output)
+
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("credential file", result.stderr)
         self.assertFalse(self.output.exists())
 
 
