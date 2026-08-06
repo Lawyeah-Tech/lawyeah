@@ -59,6 +59,8 @@ REQUIRED_ROOT_PATHS = (
     "schemas/mcp-capabilities.schema.json",
     "schemas/domain-catalog.schema.json",
     "schemas/adapter.schema.json",
+    "schemas/release-catalog.schema.json",
+    "schemas/release-latest.schema.json",
     "templates/domain-pack/pack.json.tmpl",
     "templates/domain-pack/skills/guide/SKILL.md.tmpl",
     "templates/domain-pack/skills/guide/agents/openai.yaml.tmpl",
@@ -66,6 +68,7 @@ REQUIRED_ROOT_PATHS = (
     "templates/domain-pack/skills/atomic/agents/openai.yaml.tmpl",
     "docs/architecture/repository.md",
     ".github/workflows/validate.yml",
+    ".github/workflows/release-domain.yml",
 )
 
 
@@ -486,6 +489,8 @@ def validate_schemas(root: Path, errors: List[str]) -> None:
         "mcp-capabilities.schema.json",
         "domain-catalog.schema.json",
         "adapter.schema.json",
+        "release-catalog.schema.json",
+        "release-latest.schema.json",
     ):
         schema = load_json(root / "schemas" / name, errors)
         if schema and schema.get("$schema") != "https://json-schema.org/draft/2020-12/schema":

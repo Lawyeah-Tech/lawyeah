@@ -63,10 +63,11 @@ class RepositoryContractTests(unittest.TestCase):
         shutil.copytree(ROOT / "templates", fixture / "templates")
         shutil.copytree(ROOT / "docs", fixture / "docs")
         (fixture / ".github" / "workflows").mkdir(parents=True)
-        shutil.copy2(
-            ROOT / ".github" / "workflows" / "validate.yml",
-            fixture / ".github" / "workflows" / "validate.yml",
-        )
+        for workflow in ("validate.yml", "release-domain.yml"):
+            shutil.copy2(
+                ROOT / ".github" / "workflows" / workflow,
+                fixture / ".github" / "workflows" / workflow,
+            )
 
     def activate_domain_with_valid_pack(self, fixture: Path) -> Path:
         catalog_path = fixture / "catalog" / "domains.json"

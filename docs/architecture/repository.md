@@ -121,3 +121,39 @@ Skill 中可以按标准方式条件引用项目工具目录中已稳定命名�
 ```bash
 python3 tooling/validate_repository.py --root . --pack <domain-id>
 ```
+
+## 静态发行目录
+
+安装器只消费三个公开静态对象：
+
+```text
+https://downloads.lawyeah.cn/catalog.json
+https://downloads.lawyeah.cn/domains/<domain-id>/latest.json
+https://downloads.lawyeah.cn/domains/<domain-id>/<version>/pack.zip
+```
+
+`catalog.json` 只列出规范领域目录中状态为 `active` 的领域，名称直接取其 `displayName`，不接受发布参数覆盖。`latest.json` 只描述一个稳定语义版本，包含 OSS 与 GitHub 的不可变 ZIP 地址、精确字节数和小写 SHA-256。载荷字段分别由 `schemas/release-catalog.schema.json` 和 `schemas/release-latest.schema.json` 定义，并与安装器的数据结构保持一致。
+
+`tooling/build_release_catalog.py` 读取本地确定性 ZIP，自行检查 `<domain-id>/pack.json`、领域状态和版本，再生成排序键、紧凑分隔符、UTF-8 编码且无尾随换行的规范 JSON 载荷及载荷 SHA-256。工具不读取私钥、不签名、不接收任意下载源，也不接触 OSS 凭据。它可以为本次选择的领域生成 `latest`，同时始终为所有已激活领域生成完整 `catalog`；其他已激活领域继续使用各自已经发布的固定 `latest`。
+
+目录对象使用 Ed25519 信封：
+
+```json
+{"payload":{...规范载荷...},"signature":"<base64 Ed25519 signature>"}
+```
+
+签名覆盖 `payload` 的原始字节，不覆盖重新序列化后的等价 JSON。私钥只以 GitHub `release-production` 受保护环境 Secret 注入发布作业的临时文件；作业从私钥派生公钥并与安装器内置公钥变量比对，退出时删除临时私钥。私钥和 OSS AccessKey 均不作为命令行参数传递。
+
+## 受保护发布顺序
+
+`.github/workflows/release-domain.yml` 仅手动触发，并要求目标领域已经是 `active`、输入版本与 `pack.json` 完全一致、仓库校验和测试全部通过。发布事务按以下顺序执行：
+
+1. 构建确定性 ZIP、规范载荷和签名信封；
+2. 向 OSS 不可变版本路径写入 ZIP，`PutObject` 使用禁止覆盖；已有对象只允许在下载后逐字节一致时继续；
+3. 创建不可变 GitHub Release，已有资产同样必须逐字节一致；
+4. 从 OSS 和 GitHub 分别重新下载 ZIP 并与本地产物比较；
+5. 最后先更新领域固定 `latest.json`，再更新完整 `catalog.json`，随后更新 GitHub `static-catalog` 备用资产。
+
+因此，任何发生在第 5 步之前的失败都不会改变安装器正在使用的固定目录对象。固定对象是可替换的发布指针，历史版本 ZIP 永不原地更新。GitHub 是自动备用源，图形安装器仅在主源网络或 HTTP 不可用时回退；主源返回但签名或内容完整性错误时不得回退。
+
+当前发布作业固定并校验官方 ossutil 2.3.0 Linux 包的 SHA-256，凭据仅通过官方支持的 `OSS_ACCESS_KEY_ID`、`OSS_ACCESS_KEY_SECRET`、`OSS_REGION` 和 `OSS_ENDPOINT` 环境变量提供。对象存储操作依据[阿里云 ossutil 2.0 配置说明](https://help.aliyun.com/en/oss/developer-reference/ossutil-overview/)、[PutObject 禁止覆盖参数](https://help.aliyun.com/en/oss/developer-reference/put-object)执行。

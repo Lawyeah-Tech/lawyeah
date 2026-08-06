@@ -1,0 +1,180 @@
+name: Release signed domain pack
+
+on:
+  workflow_dispatch:
+    inputs:
+      domain:
+        description: Active domain ID
+        required: true
+        type: string
+      version:
+        description: Stable semantic version without v prefix
+        required: true
+        type: string
+      minimum_installer_version:
+        description: Minimum supported installer version
+        required: true
+        default: "1.0.0"
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: domain-release-${{ inputs.domain }}
+  cancel-in-progress: false
+
+jobs:
+  release:
+    runs-on: ubuntu-24.04
+    environment: release-production
+    env:
+      DOMAIN_ID: ${{ inputs.domain }}
+      RELEASE_VERSION: ${{ inputs.version }}
+      MINIMUM_INSTALLER_VERSION: ${{ inputs.minimum_installer_version }}
+      ED25519_PRIVATE_KEY_BASE64: ${{ secrets.ED25519_PRIVATE_KEY_BASE64 }}
+      ED25519_PUBLIC_KEY_BASE64: ${{ vars.LAWYEAH_ED25519_PUBLIC_KEY }}
+      OSS_ACCESS_KEY_ID: ${{ secrets.OSS_ACCESS_KEY_ID }}
+      OSS_ACCESS_KEY_SECRET: ${{ secrets.OSS_ACCESS_KEY_SECRET }}
+      OSS_REGION: ${{ vars.OSS_REGION }}
+      OSS_ENDPOINT: ${{ vars.OSS_ENDPOINT }}
+      OSS_BUCKET: ${{ vars.OSS_BUCKET }}
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+      - name: Require protected release inputs
+        shell: bash
+        run: |
+          set -euo pipefail
+          [[ "$DOMAIN_ID" =~ ^[a-z0-9]+(-[a-z0-9]+)*$ ]]
+          [[ "$RELEASE_VERSION" =~ ^(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)$ ]]
+          [[ "$MINIMUM_INSTALLER_VERSION" =~ ^(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)$ ]]
+          for name in ED25519_PRIVATE_KEY_BASE64 ED25519_PUBLIC_KEY_BASE64 OSS_ACCESS_KEY_ID OSS_ACCESS_KEY_SECRET OSS_REGION OSS_ENDPOINT OSS_BUCKET; do
+            test -n "${!name}"
+          done
+      - name: Validate active domain and repository
+        shell: bash
+        run: |
+          set -euo pipefail
+          python tooling/validate_repository.py --root . --pack "$DOMAIN_ID"
+          python - "$DOMAIN_ID" "$RELEASE_VERSION" <<'PY'
+          import json
+          import pathlib
+          import sys
+
+          domain_id, version = sys.argv[1:]
+          catalog = json.loads(pathlib.Path("catalog/domains.json").read_text(encoding="utf-8"))
+          domain = next((item for item in catalog["domains"] if item["id"] == domain_id), None)
+          if domain is None or domain.get("status") != "active":
+              raise SystemExit("selected domain is not active")
+          manifest = json.loads(pathlib.Path("packs", domain_id, "pack.json").read_text(encoding="utf-8"))
+          if manifest.get("version") != version:
+              raise SystemExit("workflow version does not match pack.json")
+          PY
+      - name: Test and build deterministic pack
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m unittest discover -s tests -v
+          mkdir -p dist/pack dist/unsigned dist/signed
+          python tooling/build_release.py --root . --pack "$DOMAIN_ID" --output "dist/pack/pack.zip"
+          python tooling/build_release_catalog.py \
+            --root . \
+            --artifact "dist/pack/pack.zip" \
+            --output "dist/unsigned" \
+            --minimum-installer-version "$MINIMUM_INSTALLER_VERSION"
+      - name: Sign exact payload bytes and create envelopes
+        shell: bash
+        run: |
+          set -euo pipefail
+          key="$RUNNER_TEMP/lawyeah-ed25519-private.pem"
+          trap 'shred -u "$key" 2>/dev/null || rm -f "$key"' EXIT
+          printf '%s' "$ED25519_PRIVATE_KEY_BASE64" | base64 --decode > "$key"
+          chmod 600 "$key"
+          derived_public="$(openssl pkey -in "$key" -pubout -outform DER | tail -c 32 | base64 -w 0)"
+          test "$derived_public" = "$ED25519_PUBLIC_KEY_BASE64"
+          sign_payload() {
+            payload="$1"
+            output="$2"
+            signature="$RUNNER_TEMP/$(basename "$payload").signature"
+            openssl pkeyutl -sign -rawin -inkey "$key" -in "$payload" -out "$signature"
+            python - "$payload" "$signature" "$output" <<'PY'
+          import base64
+          import json
+          import pathlib
+          import sys
+
+          payload_path, signature_path, output_path = map(pathlib.Path, sys.argv[1:])
+          payload = payload_path.read_bytes()
+          json.loads(payload)
+          signature = signature_path.read_bytes()
+          if len(signature) != 64:
+              raise SystemExit("invalid Ed25519 signature length")
+          encoded = base64.b64encode(signature).decode("ascii")
+          envelope = b'{"payload":' + payload + b',"signature":' + json.dumps(encoded).encode("ascii") + b'}\n'
+          output_path.parent.mkdir(parents=True, exist_ok=True)
+          output_path.write_bytes(envelope)
+          PY
+          }
+          sign_payload "dist/unsigned/catalog.payload.json" "dist/signed/catalog.json"
+          sign_payload "dist/unsigned/domains/$DOMAIN_ID/latest.payload.json" "dist/signed/$DOMAIN_ID-latest.json"
+      - name: Install pinned ossutil
+        shell: bash
+        run: |
+          set -euo pipefail
+          archive="$RUNNER_TEMP/ossutil.zip"
+          curl --fail --location --proto '=https' --tlsv1.2 \
+            --output "$archive" \
+            https://gosspublic.alicdn.com/ossutil/v2/2.3.0/ossutil-2.3.0-linux-amd64.zip
+          echo "3ae4d9fc85a7a6e9f5654d1599766f1a3a42a3692870887b5ae9338d582ef65a  $archive" | sha256sum --check
+          unzip -q "$archive" -d "$RUNNER_TEMP/ossutil"
+          binary="$(find "$RUNNER_TEMP/ossutil" -type f -name ossutil -print -quit)"
+          test -n "$binary"
+          chmod 700 "$binary"
+          echo "OSSUTIL=$binary" >> "$GITHUB_ENV"
+      - name: Upload immutable version objects
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          object="oss://$OSS_BUCKET/domains/$DOMAIN_ID/$RELEASE_VERSION/pack.zip"
+          remote="$RUNNER_TEMP/remote-pack.zip"
+          if "$OSSUTIL" cp "$object" "$remote" --force --no-progress; then
+            cmp "dist/pack/pack.zip" "$remote"
+          else
+            "$OSSUTIL" api put-object --bucket "$OSS_BUCKET" --key "domains/$DOMAIN_ID/$RELEASE_VERSION/pack.zip" --body file://"$PWD/dist/pack/pack.zip" --forbid-overwrite true >/dev/null
+          fi
+          tag="$DOMAIN_ID-v$RELEASE_VERSION"
+          if gh release view "$tag" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            gh release download "$tag" --repo "$GITHUB_REPOSITORY" --pattern pack.zip --dir "$RUNNER_TEMP/github-pack"
+            cmp "dist/pack/pack.zip" "$RUNNER_TEMP/github-pack/pack.zip"
+          else
+            gh release create "$tag" "dist/pack/pack.zip" --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" --title "$DOMAIN_ID v$RELEASE_VERSION" --notes "Signed Lawyeah domain pack $DOMAIN_ID v$RELEASE_VERSION"
+          fi
+      - name: Verify immutable remote objects
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          rm -f "$RUNNER_TEMP/verify-oss-pack.zip"
+          "$OSSUTIL" cp "oss://$OSS_BUCKET/domains/$DOMAIN_ID/$RELEASE_VERSION/pack.zip" "$RUNNER_TEMP/verify-oss-pack.zip" --force --no-progress
+          cmp "dist/pack/pack.zip" "$RUNNER_TEMP/verify-oss-pack.zip"
+          rm -rf "$RUNNER_TEMP/verify-github-pack"
+          gh release download "$DOMAIN_ID-v$RELEASE_VERSION" --repo "$GITHUB_REPOSITORY" --pattern pack.zip --dir "$RUNNER_TEMP/verify-github-pack"
+          cmp "dist/pack/pack.zip" "$RUNNER_TEMP/verify-github-pack/pack.zip"
+      - name: Update fixed latest and catalog objects last
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          "$OSSUTIL" cp "dist/signed/$DOMAIN_ID-latest.json" "oss://$OSS_BUCKET/domains/$DOMAIN_ID/latest.json" --force --no-progress
+          "$OSSUTIL" cp "dist/signed/catalog.json" "oss://$OSS_BUCKET/catalog.json" --force --no-progress
+          if ! gh release view static-catalog --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            gh release create static-catalog --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" --title "Static signed release catalog" --notes "Fixed fallback metadata assets managed by the protected release workflow."
+          fi
+          gh release upload static-catalog "dist/signed/$DOMAIN_ID-latest.json" "dist/signed/catalog.json" --repo "$GITHUB_REPOSITORY" --clobber
