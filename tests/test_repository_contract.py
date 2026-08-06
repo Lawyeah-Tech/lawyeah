@@ -45,8 +45,21 @@ class RepositoryContractTests(unittest.TestCase):
         self.assertNotIn("真实脱敏材料完成最终验收", current_policy)
         self.assertNotIn("独立法律专业人员完成真实脱敏材料终审", current_policy)
 
+    def test_valid_fixture_includes_current_active_packs(self):
+        with tempfile.TemporaryDirectory() as directory:
+            fixture = Path(directory)
+            self.copy_valid_fixture(fixture)
+            catalog = json.loads(
+                (fixture / "catalog" / "domains.json").read_text(encoding="utf-8")
+            )
+
+            for domain in catalog["domains"]:
+                if domain["status"] == "active":
+                    self.assertTrue((fixture / "packs" / domain["id"]).is_dir())
+
     def copy_valid_fixture(self, fixture: Path) -> None:
         shutil.copytree(ROOT / "catalog", fixture / "catalog")
+        shutil.copytree(ROOT / "packs", fixture / "packs")
         shutil.copytree(ROOT / "schemas", fixture / "schemas")
         shutil.copy2(ROOT / "release-manifest.json", fixture)
         for filename in (

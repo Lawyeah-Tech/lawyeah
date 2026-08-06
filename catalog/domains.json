@@ -85,7 +85,7 @@
         {"id": "conduct-criminal-defense", "relation": "related-to", "boundary": "员工涉嫌违法后的劳动调查、处分和用工后果归劳动，刑事控告、辩护和刑事责任归刑事。"},
         {"id": "handle-construction-disputes", "relation": "related-to", "boundary": "农民工劳动关系、工资和工伤责任归劳动，工程合同、工程价款和施工责任归建设工程。"}
       ],
-      "status": "planned"
+      "status": "active"
     },
     {
       "id": "handle-family-succession",

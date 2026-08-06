@@ -1,0 +1,4 @@
+interface:
+  display_name: "测算工资工时休假权益"
+  short_description: "为特定人员和期间形成工资、加班与休假权益的可复核逐项测算、证据与情景成果包"
+  default_prompt: "Use $lawyeah-labor-calculate-wage-time-entitlements to calculate mainland China wage, time, and leave entitlements."

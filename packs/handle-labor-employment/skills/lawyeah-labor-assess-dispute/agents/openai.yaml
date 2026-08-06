@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估劳动争议"
+  short_description: "形成劳动争议请求抗辩、程序期限、金额和证据决策矩阵"
+  default_prompt: "Use $lawyeah-labor-assess-dispute to assess a mainland China labor dispute."
