@@ -1,6 +1,7 @@
 import hashlib
 import importlib.util
 import json
+import re
 import tempfile
 import unittest
 import zipfile
@@ -188,6 +189,20 @@ class ReleaseCatalogTests(unittest.TestCase):
         fixed = workflow.index("Update fixed latest and catalog objects last")
         self.assertLess(immutable, verify)
         self.assertLess(verify, fixed)
+
+    def test_domain_release_workflow_defaults_to_first_installer_compatibility_floor(self):
+        workflow = (ROOT / ".github" / "workflows" / "release-domain.yml").read_text(
+            encoding="utf-8"
+        )
+        default = re.search(
+            r"^      minimum_installer_version:\n"
+            r"(?:^        .*\n)*?"
+            r'^        default: "([^"]+)"$',
+            workflow,
+            flags=re.MULTILINE,
+        )
+        self.assertIsNotNone(default)
+        self.assertEqual(default.group(1), "0.1.0")
 
 
 if __name__ == "__main__":
