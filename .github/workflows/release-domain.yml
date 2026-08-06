@@ -21,7 +21,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: domain-release-${{ inputs.domain }}
+  group: static-release-catalog
   cancel-in-progress: false
 
 jobs:
@@ -95,6 +95,7 @@ jobs:
           chmod 600 "$key"
           derived_public="$(openssl pkey -in "$key" -pubout -outform DER | tail -c 32 | base64 -w 0)"
           test "$derived_public" = "$ED25519_PUBLIC_KEY_BASE64"
+          openssl pkey -in "$key" -pubout -out "dist/signed/release-public.pem"
           sign_payload() {
             payload="$1"
             output="$2"
@@ -166,15 +167,193 @@ jobs:
           rm -rf "$RUNNER_TEMP/verify-github-pack"
           gh release download "$DOMAIN_ID-v$RELEASE_VERSION" --repo "$GITHUB_REPOSITORY" --pattern pack.zip --dir "$RUNNER_TEMP/verify-github-pack"
           cmp "dist/pack/pack.zip" "$RUNNER_TEMP/verify-github-pack/pack.zip"
+      - name: Verify existing active latest objects
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          verify_envelope() {
+            envelope="$1"
+            domain="$2"
+            payload="$RUNNER_TEMP/$domain.payload"
+            signature="$RUNNER_TEMP/$domain.signature"
+            python - "$envelope" "$payload" "$signature" "$domain" <<'PY'
+          import base64
+          import json
+          import pathlib
+          import sys
+
+          envelope_path, payload_path, signature_path = map(pathlib.Path, sys.argv[1:4])
+          domain = sys.argv[4]
+          data = envelope_path.read_bytes().rstrip(b"\n")
+          prefix = b'{"payload":'
+          marker = b',"signature":'
+          split = data.rfind(marker)
+          if not data.startswith(prefix) or split < len(prefix):
+              raise SystemExit("signed latest envelope is not canonical")
+          payload = data[len(prefix):split]
+          envelope = json.loads(data)
+          decoded = json.loads(payload)
+          if set(envelope) != {"payload", "signature"} or envelope.get("payload") != decoded:
+              raise SystemExit("signed latest envelope fields are invalid")
+          expected_fields = {
+              "schemaVersion", "domainID", "version", "packURL",
+              "fallbackPackURL", "sha256", "size",
+          }
+          if set(decoded) != expected_fields or decoded.get("schemaVersion") != 1 or decoded.get("domainID") != domain:
+              raise SystemExit("signed latest envelope has the wrong domain")
+          import re
+          version = decoded.get("version")
+          if not isinstance(version, str) or re.fullmatch(r"(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)", version) is None:
+              raise SystemExit("signed latest has an invalid stable version")
+          if decoded.get("packURL") != f"https://downloads.lawyeah.cn/domains/{domain}/{version}/pack.zip":
+              raise SystemExit("signed latest has an invalid primary pack URL")
+          expected_fallback = f"https://github.com/Lawyeah-Tech/lawyeah/releases/download/{domain}-v{version}/pack.zip"
+          if decoded.get("fallbackPackURL") != expected_fallback:
+              raise SystemExit("signed latest has an invalid fallback pack URL")
+          if not isinstance(decoded.get("sha256"), str) or re.fullmatch(r"[0-9a-f]{64}", decoded["sha256"]) is None:
+              raise SystemExit("signed latest has an invalid SHA-256")
+          if isinstance(decoded.get("size"), bool) or not isinstance(decoded.get("size"), int) or decoded["size"] <= 0:
+              raise SystemExit("signed latest has an invalid size")
+          signature = base64.b64decode(envelope.get("signature", ""), validate=True)
+          if len(signature) != 64:
+              raise SystemExit("signed latest has an invalid signature length")
+          payload_path.write_bytes(payload)
+          signature_path.write_bytes(signature)
+          PY
+            openssl pkeyutl -verify -pubin -inkey dist/signed/release-public.pem -rawin -in "$payload" -sigfile "$signature"
+          }
+          verify_envelope "dist/signed/$DOMAIN_ID-latest.json" "$DOMAIN_ID"
+          while IFS= read -r domain; do
+            test -n "$domain"
+            if test "$domain" = "$DOMAIN_ID"; then
+              continue
+            fi
+            main="$RUNNER_TEMP/$domain-main-latest.json"
+            fallback_dir="$RUNNER_TEMP/$domain-fallback"
+            curl --fail --location --proto '=https' --tlsv1.2 --output "$main" "https://downloads.lawyeah.cn/domains/$domain/latest.json"
+            mkdir -p "$fallback_dir"
+            gh release download static-catalog --repo "$GITHUB_REPOSITORY" --pattern "$domain-latest.json" --dir "$fallback_dir"
+            verify_envelope "$main" "$domain"
+            verify_envelope "$fallback_dir/$domain-latest.json" "$domain"
+            cmp "$main" "$fallback_dir/$domain-latest.json"
+          done < <(python - <<'PY'
+          import json
+          import pathlib
+
+          catalog = json.loads(pathlib.Path("catalog/domains.json").read_text(encoding="utf-8"))
+          for domain in sorted(item["id"] for item in catalog["domains"] if item.get("status") == "active"):
+              print(domain)
+          PY
+          )
       - name: Update fixed latest and catalog objects last
         shell: bash
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
-          "$OSSUTIL" cp "dist/signed/$DOMAIN_ID-latest.json" "oss://$OSS_BUCKET/domains/$DOMAIN_ID/latest.json" --force --no-progress
-          "$OSSUTIL" cp "dist/signed/catalog.json" "oss://$OSS_BUCKET/catalog.json" --force --no-progress
-          if ! gh release view static-catalog --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
-            gh release create static-catalog --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" --title "Static signed release catalog" --notes "Fixed fallback metadata assets managed by the protected release workflow."
+          backup="$RUNNER_TEMP/fixed-backup"
+          mkdir -p "$backup/oss" "$backup/github"
+          oss_latest="oss://$OSS_BUCKET/domains/$DOMAIN_ID/latest.json"
+          oss_catalog="oss://$OSS_BUCKET/catalog.json"
+          oss_latest_existed=false
+          oss_catalog_existed=false
+          github_latest_existed=false
+          github_catalog_existed=false
+          committed=false
+          backup_oss_object() {
+            key="$1"
+            source="$2"
+            destination="$3"
+            existed_variable="$4"
+            head_error="$RUNNER_TEMP/head-$(basename "$key").error"
+            if "$OSSUTIL" api head-object --bucket "$OSS_BUCKET" --key "$key" --output-format json >/dev/null 2>"$head_error"; then
+              "$OSSUTIL" cp "$source" "$destination" --force --no-progress
+              printf -v "$existed_variable" true
+            elif grep -q 'NoSuchKey' "$head_error"; then
+              printf -v "$existed_variable" false
+            else
+              echo "OSS fixed-object inspection failed for $key" >&2
+              cat "$head_error" >&2
+              return 1
+            fi
+          }
+          backup_oss_object "domains/$DOMAIN_ID/latest.json" "$oss_latest" "$backup/oss/$DOMAIN_ID-latest.json" oss_latest_existed
+          backup_oss_object "catalog.json" "$oss_catalog" "$backup/oss/catalog.json" oss_catalog_existed
+
+          # The empty static-catalog release is a one-time protected
+          # infrastructure prerequisite. Any API failure here is fatal; it is
+          # never interpreted as an absent asset.
+          github_assets="$(gh api "repos/$GITHUB_REPOSITORY/releases/tags/static-catalog" --jq '.assets[].name')"
+          if grep -Fxq "$DOMAIN_ID-latest.json" <<<"$github_assets"; then
+            gh release download static-catalog --repo "$GITHUB_REPOSITORY" --pattern "$DOMAIN_ID-latest.json" --dir "$backup/github"
+            github_latest_existed=true
           fi
+          if grep -Fxq catalog.json <<<"$github_assets"; then
+            gh release download static-catalog --repo "$GITHUB_REPOSITORY" --pattern catalog.json --dir "$backup/github"
+            github_catalog_existed=true
+          fi
+
+          rollback_fixed() {
+            status=$?
+            if test "$committed" = true; then return; fi
+            trap - EXIT
+            set +e
+            rollback_failed=false
+            delete_github_asset_if_present() {
+              asset="$1"
+              current_assets="$(gh api "repos/$GITHUB_REPOSITORY/releases/tags/static-catalog" --jq '.assets[].name')" || {
+                rollback_failed=true
+                return
+              }
+              if grep -Fxq "$asset" <<<"$current_assets"; then
+                gh release delete-asset static-catalog "$asset" --repo "$GITHUB_REPOSITORY" --yes || rollback_failed=true
+              fi
+            }
+            if test "$oss_latest_existed" = true; then
+              "$OSSUTIL" cp "$backup/oss/$DOMAIN_ID-latest.json" "$oss_latest" --force --no-progress || rollback_failed=true
+            else
+              "$OSSUTIL" rm "$oss_latest" --force || rollback_failed=true
+            fi
+            if test "$oss_catalog_existed" = true; then
+              "$OSSUTIL" cp "$backup/oss/catalog.json" "$oss_catalog" --force --no-progress || rollback_failed=true
+            else
+              "$OSSUTIL" rm "$oss_catalog" --force || rollback_failed=true
+            fi
+            if test "$github_latest_existed" = true; then
+              gh release upload static-catalog "$backup/github/$DOMAIN_ID-latest.json" --repo "$GITHUB_REPOSITORY" --clobber || rollback_failed=true
+            else
+              delete_github_asset_if_present "$DOMAIN_ID-latest.json"
+            fi
+            if test "$github_catalog_existed" = true; then
+              gh release upload static-catalog "$backup/github/catalog.json" --repo "$GITHUB_REPOSITORY" --clobber || rollback_failed=true
+            else
+              delete_github_asset_if_present catalog.json
+            fi
+            if test "$rollback_failed" = true; then
+              echo "::error::Fixed release object rollback failed; restore from $GITHUB_RUN_ID artifacts and investigate before any further release."
+            fi
+            exit "$status"
+          }
+          trap rollback_fixed EXIT
+
+          "$OSSUTIL" cp "dist/signed/$DOMAIN_ID-latest.json" "$oss_latest" --force --no-progress
+          "$OSSUTIL" cp "dist/signed/catalog.json" "$oss_catalog" --force --no-progress
           gh release upload static-catalog "dist/signed/$DOMAIN_ID-latest.json" "dist/signed/catalog.json" --repo "$GITHUB_REPOSITORY" --clobber
+          "$OSSUTIL" cp "$oss_latest" "$RUNNER_TEMP/verify-fixed-latest.json" --force --no-progress
+          "$OSSUTIL" cp "$oss_catalog" "$RUNNER_TEMP/verify-fixed-catalog.json" --force --no-progress
+          cmp "dist/signed/$DOMAIN_ID-latest.json" "$RUNNER_TEMP/verify-fixed-latest.json"
+          cmp "dist/signed/catalog.json" "$RUNNER_TEMP/verify-fixed-catalog.json"
+          gh release download static-catalog --repo "$GITHUB_REPOSITORY" --pattern "$DOMAIN_ID-latest.json" --pattern catalog.json --dir "$RUNNER_TEMP/verify-fixed-github"
+          cmp "dist/signed/$DOMAIN_ID-latest.json" "$RUNNER_TEMP/verify-fixed-github/$DOMAIN_ID-latest.json"
+          cmp "dist/signed/catalog.json" "$RUNNER_TEMP/verify-fixed-github/catalog.json"
+          committed=true
+      - name: Preserve fixed-object recovery backups after failure
+        if: failure()
+        uses: actions/upload-artifact@v7
+        with:
+          name: fixed-object-recovery-${{ github.run_id }}
+          path: ${{ runner.temp }}/fixed-backup
+          if-no-files-found: warn
+          retention-days: 30

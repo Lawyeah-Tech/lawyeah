@@ -146,14 +146,18 @@ https://downloads.lawyeah.cn/domains/<domain-id>/<version>/pack.zip
 
 ## 受保护发布顺序
 
-`.github/workflows/release-domain.yml` 仅手动触发，并要求目标领域已经是 `active`、输入版本与 `pack.json` 完全一致、仓库校验和测试全部通过。发布事务按以下顺序执行：
+`.github/workflows/release-domain.yml` 仅手动触发，并要求目标领域已经是 `active`、输入版本与 `pack.json` 完全一致、仓库校验和测试全部通过。所有领域共用一个 `static-release-catalog` 并发锁，任何时刻只能有一个工作流变更全局固定目录。发布事务按以下顺序执行：
 
 1. 构建确定性 ZIP、规范载荷和签名信封；
 2. 向 OSS 不可变版本路径写入 ZIP，`PutObject` 使用禁止覆盖；已有对象只允许在下载后逐字节一致时继续；
 3. 创建不可变 GitHub Release，已有资产同样必须逐字节一致；
-4. 从 OSS 和 GitHub 分别重新下载 ZIP 并与本地产物比较；
-5. 最后先更新领域固定 `latest.json`，再更新完整 `catalog.json`，随后更新 GitHub `static-catalog` 备用资产。
+4. 从 OSS 和 GitHub 分别重新下载 ZIP并与本地产物比较，同时逐一下载、验签并比对其他 `active` 领域的主备固定 `latest`；缺少任一对象时停止，避免目录展示尚不可安装的领域；
+5. 最后备份主备源现有固定对象，依次更新领域 `latest.json`、完整 `catalog.json` 和 GitHub `static-catalog` 资产，再从两个源回读逐字节比较；任何一步失败都触发恢复原对象或删除本次新建对象。只有 OSS 明确返回 `NoSuchKey` 才按对象不存在处理，其他备份或 API 错误一律在写入前停止；补偿失败会写入 GitHub Actions 错误注解，并把不含凭据的原签名对象作为 30 天恢复 artifact 留存，供人工恢复。
 
-因此，任何发生在第 5 步之前的失败都不会改变安装器正在使用的固定目录对象。固定对象是可替换的发布指针，历史版本 ZIP 永不原地更新。GitHub 是自动备用源，图形安装器仅在主源网络或 HTTP 不可用时回退；主源返回但签名或内容完整性错误时不得回退。
+因此，任何发生在第 5 步之前的失败都不会改变安装器正在使用的固定目录对象；第 5 步采用显式补偿回滚并在回读一致后才提交。固定对象是可替换的发布指针，历史版本 ZIP 永不原地更新。GitHub 是自动备用源，图形安装器仅在主源网络或 HTTP 不可用时回退；主源返回但签名或内容完整性错误时不得回退。
+
+GitHub `static-catalog` Release 是一次性、受保护的基础设施前置条件，首次领域发布前由仓库管理员创建空 Release。正式发布工作流不会把 GitHub API、鉴权或网络错误误判为“Release 不存在”并自动创建。
+
+所有 `active` Pack 的 Skill ID 必须全局唯一。仓库校验会拒绝跨领域重名；安装器在多领域下载完成后、写入任何宿主目录前还会再次检查，防止独立目录或异常发布绕过源码校验。
 
 当前发布作业固定并校验官方 ossutil 2.3.0 Linux 包的 SHA-256，凭据仅通过官方支持的 `OSS_ACCESS_KEY_ID`、`OSS_ACCESS_KEY_SECRET`、`OSS_REGION` 和 `OSS_ENDPOINT` 环境变量提供。对象存储操作依据[阿里云 ossutil 2.0 配置说明](https://help.aliyun.com/en/oss/developer-reference/ossutil-overview/)、[PutObject 禁止覆盖参数](https://help.aliyun.com/en/oss/developer-reference/put-object)执行。

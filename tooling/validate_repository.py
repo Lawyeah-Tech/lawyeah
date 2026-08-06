@@ -105,6 +105,7 @@ def validate_domain_catalog(root: Path, errors: List[str]) -> Counter[str]:
     display_names: set[str] = set()
     priorities: Counter[str] = Counter()
     domain_by_id: Dict[str, Dict[str, Any]] = {}
+    active_skill_owners: Dict[str, str] = {}
     for index, domain in enumerate(domains):
         label = f"domain[{index}]"
         if not isinstance(domain, dict):
@@ -174,6 +175,21 @@ def validate_domain_catalog(root: Path, errors: List[str]) -> Counter[str]:
                     if not (pack_root / required).is_file():
                         errors.append(f"active pack {identifier} is missing {required}")
                 validate_pack_manifest(pack_root, identifier, errors)
+                manifest = load_json(pack_root / "pack.json", errors)
+                skills = manifest.get("skills")
+                if isinstance(skills, list):
+                    for skill in skills:
+                        if not isinstance(skill, dict) or not isinstance(skill.get("id"), str):
+                            continue
+                        skill_id = skill["id"]
+                        owner = active_skill_owners.get(skill_id)
+                        if owner is not None and owner != identifier:
+                            errors.append(
+                                "active packs reuse Skill id: "
+                                f"{skill_id} ({owner}, {identifier})"
+                            )
+                        else:
+                            active_skill_owners[skill_id] = identifier
 
     for priority, expected in EXPECTED_COUNTS.items():
         actual = priorities[priority]

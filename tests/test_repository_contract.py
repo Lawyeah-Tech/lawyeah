@@ -228,6 +228,34 @@ class RepositoryContractTests(unittest.TestCase):
 
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
 
+    def test_active_packs_must_not_reuse_skill_ids(self):
+        with tempfile.TemporaryDirectory() as directory:
+            fixture = Path(directory)
+            self.copy_complete_fixture(fixture)
+            first_pack = self.activate_domain_with_valid_pack(fixture)
+            catalog_path = fixture / "catalog" / "domains.json"
+            catalog = json.loads(catalog_path.read_text(encoding="utf-8"))
+            second = next(item for item in catalog["domains"] if item["id"] != PACK_ID)
+            second["status"] = "active"
+            catalog_path.write_text(
+                json.dumps(catalog, ensure_ascii=False, indent=2) + "\n",
+                encoding="utf-8",
+            )
+            second_pack = fixture / "packs" / second["id"]
+            shutil.copytree(first_pack, second_pack)
+            manifest_path = second_pack / "pack.json"
+            manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+            manifest["id"] = second["id"]
+            manifest_path.write_text(
+                json.dumps(manifest, ensure_ascii=False, indent=2) + "\n",
+                encoding="utf-8",
+            )
+
+            result = self.run_validator(fixture)
+
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("active packs reuse Skill id", result.stderr)
+
     def test_missing_declared_guide_skill_is_rejected(self):
         with tempfile.TemporaryDirectory() as directory:
             fixture = Path(directory)
