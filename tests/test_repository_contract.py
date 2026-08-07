@@ -45,6 +45,18 @@ class RepositoryContractTests(unittest.TestCase):
         self.assertNotIn("真实脱敏材料完成最终验收", current_policy)
         self.assertNotIn("独立法律专业人员完成真实脱敏材料终审", current_policy)
 
+    def test_current_quality_policy_uses_risk_proportional_incremental_validation(self):
+        governance = (ROOT / "docs" / "architecture" / "expert-review.md").read_text(
+            encoding="utf-8"
+        )
+        contributing = (ROOT / "CONTRIBUTING.md").read_text(encoding="utf-8")
+        current_policy = governance + "\n" + contributing
+
+        self.assertIn("统一质量标准，差异化验证强度", current_policy)
+        self.assertIn("风险分级只调整验证证据的强度", current_policy)
+        self.assertIn("只有核心合同变化才要求原子级全量回归", current_policy)
+        self.assertNotIn("修订后必须运行完整回归", current_policy)
+
     def test_valid_fixture_includes_current_active_packs(self):
         with tempfile.TemporaryDirectory() as directory:
             fixture = Path(directory)
