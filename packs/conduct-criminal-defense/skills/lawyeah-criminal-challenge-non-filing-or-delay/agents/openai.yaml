@@ -1,0 +1,4 @@
+interface:
+  display_name: "不予立案或逾期未立案救济"
+  short_description: "针对公安机关不予立案或受案后逾期未作立案决定，按受案状态选择复议复核或检察立案监督材料。"
+  default_prompt: "使用 $lawyeah-criminal-challenge-non-filing-or-delay，按其输入、方法、停止条件和输出合同形成独立成果。"

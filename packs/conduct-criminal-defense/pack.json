@@ -1,0 +1,648 @@
+{
+  "schemaVersion": 2,
+  "id": "conduct-criminal-defense",
+  "displayName": "刑事辩护与刑事代理",
+  "description": "处理中国大陆刑事接案、紧急响应、会见、强制措施、审查起诉、控告、被害人代理、上诉和立案监督的多 Skill 领域包。",
+  "version": "0.1.0",
+  "license": "Apache-2.0",
+  "jurisdiction": "CN-mainland",
+  "contentModel": "multi-skill-progressive-disclosure",
+  "reinstallStrategy": "replace",
+  "scope": {
+    "purpose": "支持被追诉方、被害方及其代理人在已核验角色和程序状态下形成相互独立、可复核的刑事法律专业成果。",
+    "inScope": [
+      "刑事委托资格、授权和利益冲突筛查",
+      "传唤拘留搜查等紧急响应与首次在押会见",
+      "取保候审、审查逮捕和审查起诉阶段专项辩护",
+      "刑事阅卷和证据体系审查",
+      "认罪认罚决策评估和未生效刑事裁判上诉评估",
+      "刑事控告、审查起诉阶段被害人代理和不立案救济"
+    ],
+    "outOfScope": [
+      "未进入当前安装包的刑事案件总体评估、庭审辩护、申诉、执行和特别程序成果",
+      "以企业制度预防整改为目标的综合合规项目",
+      "行政处罚、劳动处分、一般侵权赔偿和民商事争议解决",
+      "境外当地刑事法、引渡司法协助和跨法域监管专项成果",
+      "医学鉴定、电子数据鉴定、会计审计和资产评估等技术结论"
+    ],
+    "primaryDeliverables": [
+      "接案授权冲突筛查和刑事紧急行动方案",
+      "首次在押会见、取保候审和审查逮捕成果",
+      "阅卷证据矩阵、不起诉辩护和认罪认罚决策意见",
+      "刑事控告评估、控告材料和不立案救济材料",
+      "被害人审查起诉代理意见和刑事上诉评估"
+    ]
+  },
+  "guideSkill": "lawyeah-conduct-criminal-defense",
+  "mcp": {
+    "contractRange": "0.0"
+  },
+  "skills": [
+    {
+      "id": "lawyeah-conduct-criminal-defense",
+      "kind": "guide",
+      "displayName": "刑事辩护与刑事代理导航",
+      "goal": "说明刑事领域包的能力、边界和当前原子 Skill 全貌",
+      "notFor": [
+        "直接完成具体刑事法律成果"
+      ],
+      "deliverables": [
+        "领域能力定位结果"
+      ],
+      "path": "skills/lawyeah-conduct-criminal-defense",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "lawyeah-criminal-screen-engagement-authority-conflicts",
+          "lawyeah-criminal-emergency-defense-response",
+          "lawyeah-criminal-prepare-first-custody-meeting",
+          "lawyeah-criminal-apply-bail",
+          "lawyeah-criminal-prepare-arrest-review-opinion",
+          "lawyeah-criminal-review-case-file-evidence",
+          "lawyeah-criminal-prepare-non-prosecution-opinion",
+          "lawyeah-criminal-assess-plea-leniency",
+          "lawyeah-criminal-assess-criminal-accusation",
+          "lawyeah-criminal-prepare-criminal-accusation",
+          "lawyeah-criminal-prepare-victim-prosecution-agency",
+          "lawyeah-criminal-assess-criminal-appeal",
+          "lawyeah-criminal-challenge-non-filing-or-delay"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "lawyeah-criminal-screen-engagement-authority-conflicts",
+      "kind": "atomic",
+      "displayName": "刑事接案资格与冲突筛查",
+      "goal": "在实质刑事工作前形成客户、委托资格、授权、同案关联和利益冲突结论",
+      "notFor": [
+        "替代具体案件实体意见",
+        "在授权或冲突不明时启动实质代理"
+      ],
+      "deliverables": [
+        "客户委托人与授权图",
+        "同案关联案与利益冲突结论",
+        "可接受范围或拒绝转介结论"
+      ],
+      "path": "skills/lawyeah-criminal-screen-engagement-authority-conflicts",
+      "relations": {
+        "depends-on": [],
+        "related-to": ["lawyeah-conduct-criminal-defense"],
+        "excludes": []
+      },
+      "mcpDecisionNodes": [
+        {
+          "id": "law-source-verification",
+          "purpose": "核验会改变委托资格、授权范围或冲突结论的现行规则",
+          "capability": "search_law",
+          "level": "required",
+          "unavailableBehavior": "不形成依赖规则的接受结论，只输出已核验事实、缺口和停止事项"
+        },
+        {
+          "id": "practice-reference",
+          "purpose": "在记录组织或实务风险存在分歧时补充去标识化实践视角",
+          "capability": "search_practiced",
+          "level": "optional",
+          "unavailableBehavior": "继续完成不依赖实践补充的基础筛查并标注未使用该增强"
+        }
+      ]
+    },
+    {
+      "id": "lawyeah-criminal-emergency-defense-response",
+      "kind": "atomic",
+      "displayName": "刑事紧急响应方案",
+      "goal": "确认传唤、拘留、搜查或失联后的程序状态并形成首轮权利保护和期限行动方案",
+      "notFor": [
+        "在卷宗齐备后形成完整实体辩护意见",
+        "替代实际会见"
+      ],
+      "deliverables": [
+        "程序状态表",
+        "紧急行动与材料清单",
+        "风险和停止条件"
+      ],
+      "path": "skills/lawyeah-criminal-emergency-defense-response",
+      "relations": {
+        "depends-on": [],
+        "related-to": ["lawyeah-conduct-criminal-defense"],
+        "excludes": []
+      },
+      "mcpDecisionNodes": [
+        {
+          "id": "law-source-verification",
+          "purpose": "核验当前法域的程序权利、机关路径和期限规则",
+          "capability": "search_law",
+          "level": "required",
+          "unavailableBehavior": "不输出确定法律结论、期限或机关路径，仅保留安全分流、事实缺口和停止事项"
+        },
+        {
+          "id": "practice-reference",
+          "purpose": "补充去标识化紧急响应实践视角",
+          "capability": "search_practiced",
+          "level": "optional",
+          "unavailableBehavior": "继续完成不依赖实践补充的安全分流和事实核验"
+        }
+      ]
+    },
+    {
+      "id": "lawyeah-criminal-prepare-first-custody-meeting",
+      "kind": "atomic",
+      "displayName": "首次在押会见与权利处置",
+      "goal": "为首次会见在押犯罪嫌疑人或被告人形成会见方案、核验记录和会后权利处置清单",
+      "notFor": [
+        "指导串供或传递违规信息",
+        "替代完整卷宗审查"
+      ],
+      "deliverables": [
+        "会见提纲",
+        "事实与程序核验记录",
+        "会后处置清单"
+      ],
+      "path": "skills/lawyeah-criminal-prepare-first-custody-meeting",
+      "relations": {
+        "depends-on": [],
+        "related-to": ["lawyeah-conduct-criminal-defense"],
+        "excludes": []
+      },
+      "mcpDecisionNodes": [
+        {
+          "id": "law-source-verification",
+          "purpose": "核验会见资格、程序权利和会后处置规则",
+          "capability": "search_law",
+          "level": "required",
+          "unavailableBehavior": "不形成依赖规则的权利处置意见，仅输出会见事实核验框架和停止事项"
+        },
+        {
+          "id": "practice-reference",
+          "purpose": "补充去标识化首次会见记录组织视角",
+          "capability": "search_practiced",
+          "level": "optional",
+          "unavailableBehavior": "继续按自包含方法形成基础会见准备成果"
+        }
+      ]
+    },
+    {
+      "id": "lawyeah-criminal-apply-bail",
+      "kind": "atomic",
+      "displayName": "取保候审申请",
+      "goal": "针对确定阶段和决定机关评估取保条件并形成取保候审申请及证明材料包",
+      "notFor": [
+        "逮捕后羁押必要性专项审查",
+        "承诺机关批准取保"
+      ],
+      "deliverables": [
+        "取保条件评估",
+        "取保申请书",
+        "保证与社会危险性材料目录"
+      ],
+      "path": "skills/lawyeah-criminal-apply-bail",
+      "relations": {
+        "depends-on": [],
+        "related-to": ["lawyeah-conduct-criminal-defense"],
+        "excludes": []
+      },
+      "mcpDecisionNodes": [
+        {
+          "id": "law-source-verification",
+          "purpose": "核验取保条件、申请主体、决定机关和期限规则",
+          "capability": "search_law",
+          "level": "required",
+          "unavailableBehavior": "不形成取保法律结论或申请正文，仅输出事实材料索引、缺口和停止事项"
+        },
+        {
+          "id": "practice-reference",
+          "purpose": "补充去标识化取保申请实践视角",
+          "capability": "search_practiced",
+          "level": "optional",
+          "unavailableBehavior": "继续完成不依赖实践补充的基础成果"
+        },
+        {
+          "id": "template-reference",
+          "purpose": "核对取保申请文书结构",
+          "capability": "search_template",
+          "level": "optional",
+          "unavailableBehavior": "按 Skill 自包含输出合同形成草案结构"
+        }
+      ]
+    },
+    {
+      "id": "lawyeah-criminal-prepare-arrest-review-opinion",
+      "kind": "atomic",
+      "displayName": "审查逮捕辩护意见",
+      "goal": "在检察机关审查逮捕节点形成不批准逮捕或替代措施的事实、法律和社会危险性意见",
+      "notFor": [
+        "逮捕后羁押必要性审查",
+        "一般取保申请"
+      ],
+      "deliverables": [
+        "审查逮捕意见",
+        "社会危险性反证目录",
+        "听取意见要点"
+      ],
+      "path": "skills/lawyeah-criminal-prepare-arrest-review-opinion",
+      "relations": {
+        "depends-on": [],
+        "related-to": ["lawyeah-conduct-criminal-defense"],
+        "excludes": []
+      },
+      "mcpDecisionNodes": [
+        {
+          "id": "law-source-verification",
+          "purpose": "核验审查逮捕规则、权限、条件和期限",
+          "capability": "search_law",
+          "level": "required",
+          "unavailableBehavior": "不形成依赖规则的辩护结论，仅输出事实矩阵、材料缺口和停止事项"
+        },
+        {
+          "id": "practice-reference",
+          "purpose": "补充去标识化审查逮捕实践视角",
+          "capability": "search_practiced",
+          "level": "optional",
+          "unavailableBehavior": "继续完成不依赖实践补充的基础成果"
+        },
+        {
+          "id": "fact-similar-case",
+          "purpose": "按去标识化完整事实链检索相似案例",
+          "capability": "search_case_by_fact",
+          "level": "optional",
+          "unavailableBehavior": "不使用类案增强，不影响基础证据和法源分析"
+        },
+        {
+          "id": "filtered-case",
+          "purpose": "按明确筛选条件检索相似案例",
+          "capability": "search_case_by_filter",
+          "level": "optional",
+          "unavailableBehavior": "不使用筛选类案增强，不影响基础证据和法源分析"
+        },
+        {
+          "id": "case-detail",
+          "purpose": "核对已确认案例的完整内容",
+          "capability": "get_case_detail",
+          "level": "optional",
+          "unavailableBehavior": "不引用无法核对全文的案例"
+        },
+        {
+          "id": "template-reference",
+          "purpose": "核对审查逮捕意见文书结构",
+          "capability": "search_template",
+          "level": "optional",
+          "unavailableBehavior": "按 Skill 自包含输出合同形成意见结构"
+        }
+      ]
+    },
+    {
+      "id": "lawyeah-criminal-review-case-file-evidence",
+      "kind": "atomic",
+      "displayName": "刑事阅卷与证据体系审查",
+      "goal": "对依法取得的案卷建立可回链的证据矩阵、证明体系、矛盾缺口和后续核证清单",
+      "notFor": [
+        "直接形成最终定罪量刑意见",
+        "在无权阅卷阶段假设完整案卷"
+      ],
+      "deliverables": [
+        "卷宗索引",
+        "证据矩阵",
+        "证明体系与矛盾缺口表",
+        "后续核证清单"
+      ],
+      "path": "skills/lawyeah-criminal-review-case-file-evidence",
+      "relations": {
+        "depends-on": [],
+        "related-to": ["lawyeah-conduct-criminal-defense"],
+        "excludes": []
+      },
+      "mcpDecisionNodes": [
+        {
+          "id": "law-source-verification",
+          "purpose": "核验影响证据审查和程序动作的现行规则",
+          "capability": "search_law",
+          "level": "required",
+          "unavailableBehavior": "只形成非法律事实索引和证据链缺口，不输出法律结论或程序建议"
+        },
+        {
+          "id": "fact-similar-case",
+          "purpose": "按去标识化事实链检索可供对照的案例",
+          "capability": "search_case_by_fact",
+          "level": "optional",
+          "unavailableBehavior": "不使用类案增强，继续完成卷宗和证据矩阵"
+        },
+        {
+          "id": "case-detail",
+          "purpose": "核对已确认案例的完整内容",
+          "capability": "get_case_detail",
+          "level": "optional",
+          "unavailableBehavior": "不引用无法核对全文的案例"
+        }
+      ]
+    },
+    {
+      "id": "lawyeah-criminal-prepare-non-prosecution-opinion",
+      "kind": "atomic",
+      "displayName": "审查起诉不起诉辩护意见",
+      "goal": "在审查起诉阶段围绕法定、酌定或证据不足情形形成不起诉专项辩护意见",
+      "notFor": [
+        "侦查阶段撤案意见",
+        "被害人不服不起诉救济"
+      ],
+      "deliverables": [
+        "不起诉路径评估",
+        "不起诉辩护意见",
+        "证据与情节附件目录"
+      ],
+      "path": "skills/lawyeah-criminal-prepare-non-prosecution-opinion",
+      "relations": {
+        "depends-on": [],
+        "related-to": ["lawyeah-conduct-criminal-defense"],
+        "excludes": []
+      },
+      "mcpDecisionNodes": [
+        {
+          "id": "law-source-verification",
+          "purpose": "核验不起诉类型、证据标准、程序权利和期限规则",
+          "capability": "search_law",
+          "level": "required",
+          "unavailableBehavior": "不形成不起诉法律结论或意见正文，仅输出事实证据缺口和停止事项"
+        },
+        {
+          "id": "fact-similar-case",
+          "purpose": "按去标识化事实链检索相似案例",
+          "capability": "search_case_by_fact",
+          "level": "optional",
+          "unavailableBehavior": "不使用类案增强，不影响基础证据和法源分析"
+        },
+        {
+          "id": "template-reference",
+          "purpose": "核对不起诉辩护意见文书结构",
+          "capability": "search_template",
+          "level": "optional",
+          "unavailableBehavior": "按 Skill 自包含输出合同形成意见结构"
+        }
+      ]
+    },
+    {
+      "id": "lawyeah-criminal-assess-plea-leniency",
+      "kind": "atomic",
+      "displayName": "审查起诉认罪认罚决策评估",
+      "goal": "在审查起诉拟具结前核验证据、自愿性、法律帮助、量刑建议和程序条件并形成决策意见",
+      "notFor": [
+        "以认罪换取确定结果的承诺",
+        "未成年人速裁程序建议"
+      ],
+      "deliverables": [
+        "证据标准与自愿性核验表",
+        "意见期与见证录像条件核验",
+        "具结反悔或程序转换决策意见"
+      ],
+      "path": "skills/lawyeah-criminal-assess-plea-leniency",
+      "relations": {
+        "depends-on": [],
+        "related-to": ["lawyeah-conduct-criminal-defense"],
+        "excludes": []
+      },
+      "mcpDecisionNodes": [
+        {
+          "id": "law-source-verification",
+          "purpose": "核验认罪认罚的证据标准、自愿性、量刑建议和程序条件",
+          "capability": "search_law",
+          "level": "required",
+          "unavailableBehavior": "不形成具结或程序选择法律结论，仅输出事实缺口、风险和停止事项"
+        },
+        {
+          "id": "practice-reference",
+          "purpose": "补充去标识化认罪认罚实践视角",
+          "capability": "search_practiced",
+          "level": "optional",
+          "unavailableBehavior": "继续完成不依赖实践补充的基础核验"
+        },
+        {
+          "id": "template-reference",
+          "purpose": "核对相关文书和核验表结构",
+          "capability": "search_template",
+          "level": "optional",
+          "unavailableBehavior": "按 Skill 自包含输出合同形成结构化成果"
+        }
+      ]
+    },
+    {
+      "id": "lawyeah-criminal-assess-criminal-accusation",
+      "kind": "atomic",
+      "displayName": "刑事控告可行性评估",
+      "goal": "从被害事实、刑民行政边界、管辖、证据和追诉风险形成是否及如何控告的决策意见",
+      "notFor": [
+        "承诺公安司法机关立案",
+        "直接起草完整控告材料包"
+      ],
+      "deliverables": [
+        "刑事可追诉性矩阵",
+        "管辖与证据缺口",
+        "控告路径及风险意见"
+      ],
+      "path": "skills/lawyeah-criminal-assess-criminal-accusation",
+      "relations": {
+        "depends-on": [],
+        "related-to": ["lawyeah-conduct-criminal-defense"],
+        "excludes": []
+      },
+      "mcpDecisionNodes": [
+        {
+          "id": "law-source-verification",
+          "purpose": "核验刑事可追诉性、刑民行政边界和管辖规则",
+          "capability": "search_law",
+          "level": "required",
+          "unavailableBehavior": "不形成刑事定性、管辖或控告路径法律结论，仅输出事实证据缺口和停止事项"
+        },
+        {
+          "id": "fact-similar-case",
+          "purpose": "按去标识化事实链检索相似案例",
+          "capability": "search_case_by_fact",
+          "level": "optional",
+          "unavailableBehavior": "不使用类案增强，不影响基础事实和法源分析"
+        },
+        {
+          "id": "filtered-case",
+          "purpose": "按明确条件检索相似案例",
+          "capability": "search_case_by_filter",
+          "level": "optional",
+          "unavailableBehavior": "不使用筛选类案增强，不影响基础事实和法源分析"
+        }
+      ]
+    },
+    {
+      "id": "lawyeah-criminal-prepare-criminal-accusation",
+      "kind": "atomic",
+      "displayName": "刑事控告材料包",
+      "goal": "在控告路径确定后形成事实链、法律定性、证据目录和可提交的刑事控告材料",
+      "notFor": [
+        "把民商事纠纷无依据包装为犯罪",
+        "替代不立案后的监督救济"
+      ],
+      "deliverables": [
+        "刑事控告书",
+        "证据与线索目录",
+        "提交和留痕清单"
+      ],
+      "path": "skills/lawyeah-criminal-prepare-criminal-accusation",
+      "relations": {
+        "depends-on": [],
+        "related-to": ["lawyeah-conduct-criminal-defense"],
+        "excludes": []
+      },
+      "mcpDecisionNodes": [
+        {
+          "id": "law-source-verification",
+          "purpose": "核验控告主体、刑事定性、管辖和提交路径规则",
+          "capability": "search_law",
+          "level": "required",
+          "unavailableBehavior": "不形成控告法律结论或可提交正文，仅输出事实链、证据目录缺口和停止事项"
+        },
+        {
+          "id": "template-reference",
+          "purpose": "核对刑事控告文书结构",
+          "capability": "search_template",
+          "level": "optional",
+          "unavailableBehavior": "按 Skill 自包含输出合同形成文书结构"
+        },
+        {
+          "id": "fact-similar-case",
+          "purpose": "按去标识化事实链检索相似案例",
+          "capability": "search_case_by_fact",
+          "level": "optional",
+          "unavailableBehavior": "不使用类案增强，不影响基础事实和法源分析"
+        }
+      ]
+    },
+    {
+      "id": "lawyeah-criminal-prepare-victim-prosecution-agency",
+      "kind": "atomic",
+      "displayName": "审查起诉阶段被害人代理意见",
+      "goal": "在审查起诉阶段为被害人形成事实证据、罪名责任、追赃退赔和量刑方面的代理意见",
+      "notFor": [
+        "被告人不起诉辩护",
+        "不服不起诉决定后的申诉"
+      ],
+      "deliverables": [
+        "被害人代理争点表",
+        "审查起诉代理意见",
+        "证据和损失附件目录"
+      ],
+      "path": "skills/lawyeah-criminal-prepare-victim-prosecution-agency",
+      "relations": {
+        "depends-on": [],
+        "related-to": ["lawyeah-conduct-criminal-defense"],
+        "excludes": []
+      },
+      "mcpDecisionNodes": [
+        {
+          "id": "law-source-verification",
+          "purpose": "核验被害人程序权利、罪名责任、追赃退赔和量刑规则",
+          "capability": "search_law",
+          "level": "required",
+          "unavailableBehavior": "不形成依赖规则的代理结论或意见正文，仅输出事实证据缺口和停止事项"
+        },
+        {
+          "id": "fact-similar-case",
+          "purpose": "按去标识化事实链检索相似案例",
+          "capability": "search_case_by_fact",
+          "level": "optional",
+          "unavailableBehavior": "不使用类案增强，不影响基础事实和法源分析"
+        },
+        {
+          "id": "template-reference",
+          "purpose": "核对被害人代理意见文书结构",
+          "capability": "search_template",
+          "level": "optional",
+          "unavailableBehavior": "按 Skill 自包含输出合同形成意见结构"
+        }
+      ]
+    },
+    {
+      "id": "lawyeah-criminal-assess-criminal-appeal",
+      "kind": "atomic",
+      "displayName": "刑事判决或裁定上诉评估",
+      "goal": "针对被告人或自诉人收到的未生效刑事判决、裁定形成刑事上诉范围、期限和风险评估",
+      "notFor": [
+        "附带民事部分上诉",
+        "被害人请求检察抗诉"
+      ],
+      "deliverables": [
+        "裁判生效性与送达日核验",
+        "刑事上诉争点与期限表",
+        "上诉或不提起上诉意见"
+      ],
+      "path": "skills/lawyeah-criminal-assess-criminal-appeal",
+      "relations": {
+        "depends-on": [],
+        "related-to": ["lawyeah-conduct-criminal-defense"],
+        "excludes": []
+      },
+      "mcpDecisionNodes": [
+        {
+          "id": "law-source-verification",
+          "purpose": "核验裁判生效、上诉主体、范围、期限和风险规则",
+          "capability": "search_law",
+          "level": "required",
+          "unavailableBehavior": "不计算上诉期限或形成上诉法律意见，仅输出裁判文书和送达事实缺口"
+        },
+        {
+          "id": "template-reference",
+          "purpose": "核对刑事上诉评估和文书结构",
+          "capability": "search_template",
+          "level": "optional",
+          "unavailableBehavior": "按 Skill 自包含输出合同形成评估结构"
+        },
+        {
+          "id": "fact-similar-case",
+          "purpose": "按去标识化事实链检索相似案例",
+          "capability": "search_case_by_fact",
+          "level": "optional",
+          "unavailableBehavior": "不使用类案增强，不影响基础裁判和法源分析"
+        }
+      ]
+    },
+    {
+      "id": "lawyeah-criminal-challenge-non-filing-or-delay",
+      "kind": "atomic",
+      "displayName": "不予立案或逾期未立案救济",
+      "goal": "针对公安机关不予立案或受案后逾期未作决定选择复议复核或检察立案监督材料",
+      "notFor": [
+        "已立案后的撤案监督",
+        "初次刑事控告"
+      ],
+      "deliverables": [
+        "受案不予立案或逾期状态文书",
+        "送达日与期限核验",
+        "复议复核或立案监督材料"
+      ],
+      "path": "skills/lawyeah-criminal-challenge-non-filing-or-delay",
+      "relations": {
+        "depends-on": [],
+        "related-to": ["lawyeah-conduct-criminal-defense"],
+        "excludes": []
+      },
+      "mcpDecisionNodes": [
+        {
+          "id": "law-source-verification",
+          "purpose": "核验受案状态、复议复核、检察监督和期限规则",
+          "capability": "search_law",
+          "level": "required",
+          "unavailableBehavior": "不计算期限或形成救济路径法律结论，仅输出状态文书缺口和停止事项"
+        },
+        {
+          "id": "template-reference",
+          "purpose": "核对不立案救济文书结构",
+          "capability": "search_template",
+          "level": "optional",
+          "unavailableBehavior": "按 Skill 自包含输出合同形成材料结构"
+        },
+        {
+          "id": "fact-similar-case",
+          "purpose": "按去标识化事实链检索相似案例",
+          "capability": "search_case_by_fact",
+          "level": "optional",
+          "unavailableBehavior": "不使用类案增强，不影响基础程序和法源分析"
+        }
+      ]
+    }
+  ]
+}

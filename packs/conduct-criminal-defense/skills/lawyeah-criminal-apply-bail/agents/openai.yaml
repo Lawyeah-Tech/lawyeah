@@ -1,0 +1,4 @@
+interface:
+  display_name: "取保候审申请"
+  short_description: "针对确定阶段和决定机关，评估取保条件并形成取保候审申请及证明材料包。"
+  default_prompt: "使用 $lawyeah-criminal-apply-bail，按其输入、方法、停止条件和输出合同形成独立成果。"

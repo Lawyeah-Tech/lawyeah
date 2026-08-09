@@ -1,0 +1,4 @@
+interface:
+  display_name: "刑事接案资格与冲突筛查"
+  short_description: "逐字段核验刑事程序、客户、授权与冲突，形成可审计的接案范围结论"
+  default_prompt: "使用 $lawyeah-criminal-screen-engagement-authority-conflicts 逐字段完成刑事程序入口、委托资格、授权与冲突筛查。"

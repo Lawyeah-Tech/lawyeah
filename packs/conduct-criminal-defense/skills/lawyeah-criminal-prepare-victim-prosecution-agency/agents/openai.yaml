@@ -1,0 +1,4 @@
+interface:
+  display_name: "审查起诉阶段被害人代理意见"
+  short_description: "在审查起诉阶段为被害人形成事实证据、罪名责任、追赃退赔和量刑方面的代理意见。"
+  default_prompt: "使用 $lawyeah-criminal-prepare-victim-prosecution-agency，按其输入、方法、停止条件和输出合同形成独立成果。"
