@@ -1,0 +1,4 @@
+interface:
+  display_name: "离婚协议起草"
+  short_description: "为已决定协议离婚的双方形成身份、子女、财产债务、给付和履行机制完整的协议。"
+  default_prompt: "使用 $lawyeah-family-draft-divorce-settlement，为已决定协议离婚的双方形成身份、子女、财产债务、给付和履行机制完整的协议。"

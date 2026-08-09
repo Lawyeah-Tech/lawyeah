@@ -1,0 +1,4 @@
+interface:
+  display_name: "离婚诉讼原告起诉材料"
+  short_description: "围绕特定法院和原告请求形成离婚起诉、证据目录及程序申请材料。"
+  default_prompt: "使用 $lawyeah-family-file-divorce-action，围绕特定法院和原告请求形成离婚起诉、证据目录及程序申请材料。"

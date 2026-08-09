@@ -1,0 +1,4 @@
+interface:
+  display_name: "遗嘱起草与订立方案"
+  short_description: "为具备遗嘱能力的自然人形成处分范围、形式、见证、执行和更新机制清晰的遗嘱。"
+  default_prompt: "使用 $lawyeah-family-draft-will，为具备遗嘱能力的自然人形成处分范围、形式、见证、执行和更新机制清晰的遗嘱。"

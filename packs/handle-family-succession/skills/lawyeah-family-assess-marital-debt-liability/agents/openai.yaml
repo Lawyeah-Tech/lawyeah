@@ -1,0 +1,4 @@
+interface:
+  display_name: "夫妻债务责任评估"
+  short_description: "逐笔区分夫妻债务对外责任、内部承担、证明责任与抗辩证据"
+  default_prompt: "使用 $lawyeah-family-assess-marital-debt-liability，对已识别的具体债务形成条件性责任评估与证据方案。"

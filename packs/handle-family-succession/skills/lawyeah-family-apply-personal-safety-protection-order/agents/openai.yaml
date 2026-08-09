@@ -1,0 +1,4 @@
+interface:
+  display_name: "人身安全保护令申请"
+  short_description: "针对家庭暴力或现实危险形成管辖、请求措施、证据和紧急保护令申请材料。"
+  default_prompt: "使用 $lawyeah-family-apply-personal-safety-protection-order，针对家庭暴力或现实危险形成管辖、请求措施、证据和紧急保护令申请材料。"

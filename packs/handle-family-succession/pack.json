@@ -1,0 +1,721 @@
+{
+  "schemaVersion": 2,
+  "id": "handle-family-succession",
+  "displayName": "婚姻家事与财富传承",
+  "description": "处理中国大陆婚姻身份、离婚、夫妻债务、子女抚养、监护家暴、继承遗产和遗嘱安排的多 Skill 领域包。",
+  "version": "0.1.0",
+  "license": "Apache-2.0",
+  "jurisdiction": "CN-mainland",
+  "contentModel": "multi-skill-progressive-disclosure",
+  "reinstallStrategy": "replace",
+  "scope": {
+    "purpose": "处理婚姻家庭身份、家庭财产、抚养赡养、继承和代际财富传承事项。",
+    "inScope": [
+      "婚姻效力、离婚与夫妻财产",
+      "子女抚养、监护和探望",
+      "继承、遗嘱和遗产管理",
+      "家庭财富传承安排"
+    ],
+    "outOfScope": [
+      "公司治理和股东权利本身",
+      "以税负测算或税务争议为主要成果的事项",
+      "一般合同或侵权纠纷"
+    ],
+    "primaryDeliverables": [
+      "婚家争议方案与文书",
+      "夫妻财产或离婚协议",
+      "遗嘱与继承方案",
+      "财富传承法律安排"
+    ]
+  },
+  "guideSkill": "lawyeah-handle-family-succession",
+  "mcp": {
+    "contractRange": "0.0"
+  },
+  "skills": [
+    {
+      "id": "lawyeah-handle-family-succession",
+      "kind": "guide",
+      "displayName": "婚姻家事与财富传承导航",
+      "goal": "说明本领域包的能力、边界和当前原子 Skill 全貌",
+      "notFor": [
+        "直接完成具体法律业务成果"
+      ],
+      "deliverables": [
+        "领域能力定位结果"
+      ],
+      "path": "skills/lawyeah-handle-family-succession",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "lawyeah-family-assess-marital-debt-liability",
+          "lawyeah-family-assess-divorce-route-and-claims",
+          "lawyeah-family-draft-divorce-settlement",
+          "lawyeah-family-file-divorce-action",
+          "lawyeah-family-assess-child-custody",
+          "lawyeah-family-handle-child-support-claim",
+          "lawyeah-family-recover-concealed-child",
+          "lawyeah-family-remove-or-replace-guardian",
+          "lawyeah-family-plan-domestic-violence-safety",
+          "lawyeah-family-apply-personal-safety-protection-order",
+          "lawyeah-family-identify-heirs-and-estate",
+          "lawyeah-family-file-inheritance-status-action",
+          "lawyeah-family-administer-estate",
+          "lawyeah-family-draft-will"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "lawyeah-family-assess-marital-debt-liability",
+      "kind": "atomic",
+      "displayName": "夫妻债务责任评估",
+      "goal": "针对特定债务形成共同债务、个人债务、内部承担与外部债权人效力的受限意见。",
+      "notFor": [
+        "仅按借款人姓名判断责任"
+      ],
+      "deliverables": [
+        "逐债务责任表",
+        "抗辩与证据方案"
+      ],
+      "path": "skills/lawyeah-family-assess-marital-debt-liability",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "lawyeah-handle-family-succession"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": [
+        {
+          "id": "law-source-verification",
+          "purpose": "核验会改变结论、期限或程序入口的现行法源",
+          "capability": "search_law",
+          "level": "required",
+          "unavailableBehavior": "停止法律结论、期限和确定程序入口，只保留非法律事实、缺口和安全转介"
+        },
+        {
+          "id": "practice-reference",
+          "purpose": "补充去标识化的实务核验与证据组织视角",
+          "capability": "search_practiced",
+          "level": "optional",
+          "unavailableBehavior": "继续完成不依赖实务增强的基础成果"
+        },
+        {
+          "id": "fact-similar-case",
+          "purpose": "按去标识化事实链对照公开案例",
+          "capability": "search_case_by_fact",
+          "level": "optional",
+          "unavailableBehavior": "不使用类案增强，不影响基础事实和法源分析"
+        },
+        {
+          "id": "filtered-case",
+          "purpose": "按明确条件筛选公开案例",
+          "capability": "search_case_by_filter",
+          "level": "optional",
+          "unavailableBehavior": "不使用筛选类案增强，不影响基础事实和法源分析"
+        },
+        {
+          "id": "case-detail",
+          "purpose": "核对已确认案例的完整内容",
+          "capability": "get_case_detail",
+          "level": "optional",
+          "unavailableBehavior": "不引用无法核对全文的案例"
+        }
+      ]
+    },
+    {
+      "id": "lawyeah-family-assess-divorce-route-and-claims",
+      "kind": "atomic",
+      "displayName": "离婚路径与请求评估",
+      "goal": "在单一当事人立场下形成协议登记或诉讼路径、请求范围、风险和行动顺序。",
+      "notFor": [
+        "替代具体协议或诉状"
+      ],
+      "deliverables": [
+        "离婚路径评估",
+        "请求与行动清单"
+      ],
+      "path": "skills/lawyeah-family-assess-divorce-route-and-claims",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "lawyeah-handle-family-succession"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": [
+        {
+          "id": "law-source-verification",
+          "purpose": "核验会改变结论、期限或程序入口的现行法源",
+          "capability": "search_law",
+          "level": "required",
+          "unavailableBehavior": "停止法律结论、期限和确定程序入口，只保留非法律事实、缺口和安全转介"
+        },
+        {
+          "id": "practice-reference",
+          "purpose": "补充去标识化的实务核验与证据组织视角",
+          "capability": "search_practiced",
+          "level": "optional",
+          "unavailableBehavior": "继续完成不依赖实务增强的基础成果"
+        }
+      ]
+    },
+    {
+      "id": "lawyeah-family-draft-divorce-settlement",
+      "kind": "atomic",
+      "displayName": "离婚协议起草",
+      "goal": "为已决定协议离婚的双方形成身份、子女、财产债务、给付和履行机制完整的协议。",
+      "notFor": [
+        "掩盖重大分歧或家暴胁迫"
+      ],
+      "deliverables": [
+        "离婚协议",
+        "登记与履行事项表"
+      ],
+      "path": "skills/lawyeah-family-draft-divorce-settlement",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "lawyeah-handle-family-succession"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": [
+        {
+          "id": "law-source-verification",
+          "purpose": "核验会改变结论、期限或程序入口的现行法源",
+          "capability": "search_law",
+          "level": "required",
+          "unavailableBehavior": "停止法律结论、期限和确定程序入口，只保留非法律事实、缺口和安全转介"
+        },
+        {
+          "id": "template-reference",
+          "purpose": "核验文书类型、结构和必要字段",
+          "capability": "search_template",
+          "level": "optional",
+          "unavailableBehavior": "按目标 Skill 的文书降级规则停止可提交格式或使用自包含输出结构"
+        },
+        {
+          "id": "practice-reference",
+          "purpose": "补充去标识化的实务核验与证据组织视角",
+          "capability": "search_practiced",
+          "level": "optional",
+          "unavailableBehavior": "继续完成不依赖实务增强的基础成果"
+        }
+      ]
+    },
+    {
+      "id": "lawyeah-family-file-divorce-action",
+      "kind": "atomic",
+      "displayName": "离婚诉讼原告起诉材料",
+      "goal": "围绕特定法院和原告请求形成离婚起诉、证据目录及程序申请材料。",
+      "notFor": [
+        "未核准管辖和请求即代为提交",
+        "为被告或相对方形成答辩材料"
+      ],
+      "deliverables": [
+        "离婚起诉状",
+        "原告证据目录与程序申请清单"
+      ],
+      "path": "skills/lawyeah-family-file-divorce-action",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "lawyeah-handle-family-succession"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": [
+        {
+          "id": "law-source-verification",
+          "purpose": "核验会改变结论、期限或程序入口的现行法源",
+          "capability": "search_law",
+          "level": "required",
+          "unavailableBehavior": "停止法律结论、期限和确定程序入口，只保留非法律事实、缺口和安全转介"
+        },
+        {
+          "id": "template-reference",
+          "purpose": "核验文书类型、结构和必要字段",
+          "capability": "search_template",
+          "level": "optional",
+          "unavailableBehavior": "按目标 Skill 的文书降级规则停止可提交格式或使用自包含输出结构"
+        },
+        {
+          "id": "practice-reference",
+          "purpose": "补充去标识化的实务核验与证据组织视角",
+          "capability": "search_practiced",
+          "level": "optional",
+          "unavailableBehavior": "继续完成不依赖实务增强的基础成果"
+        },
+        {
+          "id": "filtered-case",
+          "purpose": "按明确条件筛选公开案例",
+          "capability": "search_case_by_filter",
+          "level": "optional",
+          "unavailableBehavior": "不使用筛选类案增强，不影响基础事实和法源分析"
+        }
+      ]
+    },
+    {
+      "id": "lawyeah-family-assess-child-custody",
+      "kind": "atomic",
+      "displayName": "未成年子女直接抚养评估",
+      "goal": "以最有利于未成年人为中心形成直接抚养、共同照护、风险与证据评估。",
+      "notFor": [
+        "把父母偏好置于子女安全之上"
+      ],
+      "deliverables": [
+        "子女利益因素表",
+        "抚养方案与证据缺口"
+      ],
+      "path": "skills/lawyeah-family-assess-child-custody",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "lawyeah-handle-family-succession"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": [
+        {
+          "id": "law-source-verification",
+          "purpose": "核验会改变结论、期限或程序入口的现行法源",
+          "capability": "search_law",
+          "level": "required",
+          "unavailableBehavior": "停止法律结论、期限和确定程序入口，只保留非法律事实、缺口和安全转介"
+        },
+        {
+          "id": "practice-reference",
+          "purpose": "补充去标识化的实务核验与证据组织视角",
+          "capability": "search_practiced",
+          "level": "optional",
+          "unavailableBehavior": "继续完成不依赖实务增强的基础成果"
+        },
+        {
+          "id": "fact-similar-case",
+          "purpose": "按去标识化事实链对照公开案例",
+          "capability": "search_case_by_fact",
+          "level": "optional",
+          "unavailableBehavior": "不使用类案增强，不影响基础事实和法源分析"
+        },
+        {
+          "id": "filtered-case",
+          "purpose": "按明确条件筛选公开案例",
+          "capability": "search_case_by_filter",
+          "level": "optional",
+          "unavailableBehavior": "不使用筛选类案增强，不影响基础事实和法源分析"
+        }
+      ]
+    },
+    {
+      "id": "lawyeah-family-handle-child-support-claim",
+      "kind": "atomic",
+      "displayName": "抚养费请求与调整材料",
+      "goal": "针对首次请求、增加、减少或追索抚养费形成测算、证据和诉讼材料。",
+      "notFor": [
+        "只按固定收入比例机械计算",
+        "为被告或相对方形成答辩材料"
+      ],
+      "deliverables": [
+        "抚养费测算表",
+        "起诉材料包"
+      ],
+      "path": "skills/lawyeah-family-handle-child-support-claim",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "lawyeah-handle-family-succession"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": [
+        {
+          "id": "law-source-verification",
+          "purpose": "核验会改变结论、期限或程序入口的现行法源",
+          "capability": "search_law",
+          "level": "required",
+          "unavailableBehavior": "停止法律结论、期限和确定程序入口，只保留非法律事实、缺口和安全转介"
+        },
+        {
+          "id": "template-reference",
+          "purpose": "核验文书类型、结构和必要字段",
+          "capability": "search_template",
+          "level": "optional",
+          "unavailableBehavior": "按目标 Skill 的文书降级规则停止可提交格式或使用自包含输出结构"
+        },
+        {
+          "id": "practice-reference",
+          "purpose": "补充去标识化的实务核验与证据组织视角",
+          "capability": "search_practiced",
+          "level": "optional",
+          "unavailableBehavior": "继续完成不依赖实务增强的基础成果"
+        }
+      ]
+    },
+    {
+      "id": "lawyeah-family-recover-concealed-child",
+      "kind": "atomic",
+      "displayName": "抢夺藏匿未成年子女紧急处置",
+      "goal": "针对抢夺、藏匿、拒绝交接或失联风险形成安全核验、证据固定和紧急救济方案。",
+      "notFor": [
+        "指导以抢夺方式反向控制子女",
+        "仅在事实关系和法定适用范围核实后进入；普通同居财产分割转同居财产原子，刑事或人身侵权事项转相邻领域"
+      ],
+      "deliverables": [
+        "子女安全与位置核验表",
+        "紧急申请和协同处置材料"
+      ],
+      "path": "skills/lawyeah-family-recover-concealed-child",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "lawyeah-handle-family-succession"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": [
+        {
+          "id": "law-source-verification",
+          "purpose": "核验会改变结论、期限或程序入口的现行法源",
+          "capability": "search_law",
+          "level": "required",
+          "unavailableBehavior": "停止法律结论、期限和确定程序入口，只保留非法律事实、缺口和安全转介"
+        },
+        {
+          "id": "practice-reference",
+          "purpose": "补充去标识化的实务核验与证据组织视角",
+          "capability": "search_practiced",
+          "level": "optional",
+          "unavailableBehavior": "继续完成不依赖实务增强的基础成果"
+        },
+        {
+          "id": "template-reference",
+          "purpose": "核验文书类型、结构和必要字段",
+          "capability": "search_template",
+          "level": "optional",
+          "unavailableBehavior": "按目标 Skill 的文书降级规则停止可提交格式或使用自包含输出结构"
+        }
+      ]
+    },
+    {
+      "id": "lawyeah-family-remove-or-replace-guardian",
+      "kind": "atomic",
+      "displayName": "监护资格撤销与变更方案",
+      "goal": "针对怠于履职、侵害、冲突或监护能力变化形成撤销、变更和临时保护材料。",
+      "notFor": [
+        "以财产利益替代被监护人最佳利益"
+      ],
+      "deliverables": [
+        "监护风险与资格评估",
+        "撤销变更申请材料"
+      ],
+      "path": "skills/lawyeah-family-remove-or-replace-guardian",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "lawyeah-handle-family-succession"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": [
+        {
+          "id": "law-source-verification",
+          "purpose": "核验会改变结论、期限或程序入口的现行法源",
+          "capability": "search_law",
+          "level": "required",
+          "unavailableBehavior": "停止法律结论、期限和确定程序入口，只保留非法律事实、缺口和安全转介"
+        },
+        {
+          "id": "practice-reference",
+          "purpose": "补充去标识化的实务核验与证据组织视角",
+          "capability": "search_practiced",
+          "level": "optional",
+          "unavailableBehavior": "继续完成不依赖实务增强的基础成果"
+        },
+        {
+          "id": "template-reference",
+          "purpose": "核验文书类型、结构和必要字段",
+          "capability": "search_template",
+          "level": "optional",
+          "unavailableBehavior": "按目标 Skill 的文书降级规则停止可提交格式或使用自包含输出结构"
+        }
+      ]
+    },
+    {
+      "id": "lawyeah-family-plan-domestic-violence-safety",
+      "kind": "atomic",
+      "displayName": "家庭暴力紧急安全方案",
+      "goal": "在正在发生或迫近的家庭暴力风险下优先形成撤离、报警、医疗、儿童老人安全、证据保护和法律分流方案。",
+      "notFor": [
+        "要求受害人与施暴者当面对质",
+        "仅在事实关系和法定适用范围核实后进入；普通同居财产分割转同居财产原子，刑事或人身侵权事项转相邻领域"
+      ],
+      "deliverables": [
+        "即时危险与安全计划",
+        "报警求助和后续法律路径表"
+      ],
+      "path": "skills/lawyeah-family-plan-domestic-violence-safety",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "lawyeah-handle-family-succession"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": [
+        {
+          "id": "law-source-verification",
+          "purpose": "核验会改变结论、期限或程序入口的现行法源",
+          "capability": "search_law",
+          "level": "required",
+          "unavailableBehavior": "停止法律结论、期限和确定程序入口，只保留非法律事实、缺口和安全转介"
+        },
+        {
+          "id": "practice-reference",
+          "purpose": "补充去标识化的实务核验与证据组织视角",
+          "capability": "search_practiced",
+          "level": "optional",
+          "unavailableBehavior": "继续完成不依赖实务增强的基础成果"
+        }
+      ]
+    },
+    {
+      "id": "lawyeah-family-apply-personal-safety-protection-order",
+      "kind": "atomic",
+      "displayName": "人身安全保护令申请",
+      "goal": "针对家庭暴力或现实危险形成管辖、请求措施、证据和紧急保护令申请材料。",
+      "notFor": [
+        "把保护令申请附属于必须先离婚",
+        "仅在事实关系和法定适用范围核实后进入；普通同居财产分割转同居财产原子，刑事或人身侵权事项转相邻领域"
+      ],
+      "deliverables": [
+        "保护措施请求表",
+        "保护令申请与证据目录"
+      ],
+      "path": "skills/lawyeah-family-apply-personal-safety-protection-order",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "lawyeah-handle-family-succession"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": [
+        {
+          "id": "law-source-verification",
+          "purpose": "核验会改变结论、期限或程序入口的现行法源",
+          "capability": "search_law",
+          "level": "required",
+          "unavailableBehavior": "停止法律结论、期限和确定程序入口，只保留非法律事实、缺口和安全转介"
+        },
+        {
+          "id": "template-reference",
+          "purpose": "核验文书类型、结构和必要字段",
+          "capability": "search_template",
+          "level": "optional",
+          "unavailableBehavior": "按目标 Skill 的文书降级规则停止可提交格式或使用自包含输出结构"
+        },
+        {
+          "id": "practice-reference",
+          "purpose": "补充去标识化的实务核验与证据组织视角",
+          "capability": "search_practiced",
+          "level": "optional",
+          "unavailableBehavior": "继续完成不依赖实务增强的基础成果"
+        }
+      ]
+    },
+    {
+      "id": "lawyeah-family-identify-heirs-and-estate",
+      "kind": "atomic",
+      "displayName": "继承人及遗产范围识别",
+      "goal": "在特定被继承人死亡后形成继承人、继承依据、遗产与他人财产、债务和缺口清单。",
+      "notFor": [
+        "把全部家庭财产当然列为遗产"
+      ],
+      "deliverables": [
+        "继承关系图",
+        "遗产债务与证据台账"
+      ],
+      "path": "skills/lawyeah-family-identify-heirs-and-estate",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "lawyeah-handle-family-succession"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": [
+        {
+          "id": "law-source-verification",
+          "purpose": "核验会改变结论、期限或程序入口的现行法源",
+          "capability": "search_law",
+          "level": "required",
+          "unavailableBehavior": "停止法律结论、期限和确定程序入口，只保留非法律事实、缺口和安全转介"
+        },
+        {
+          "id": "practice-reference",
+          "purpose": "补充去标识化的实务核验与证据组织视角",
+          "capability": "search_practiced",
+          "level": "optional",
+          "unavailableBehavior": "继续完成不依赖实务增强的基础成果"
+        },
+        {
+          "id": "fact-similar-case",
+          "purpose": "按去标识化事实链对照公开案例",
+          "capability": "search_case_by_fact",
+          "level": "optional",
+          "unavailableBehavior": "不使用类案增强，不影响基础事实和法源分析"
+        },
+        {
+          "id": "case-detail",
+          "purpose": "核对已确认案例的完整内容",
+          "capability": "get_case_detail",
+          "level": "optional",
+          "unavailableBehavior": "不引用无法核对全文的案例"
+        }
+      ]
+    },
+    {
+      "id": "lawyeah-family-file-inheritance-status-action",
+      "kind": "atomic",
+      "displayName": "继承权与遗嘱遗赠争议起诉材料",
+      "goal": "围绕继承人资格、继承权、遗嘱或遗赠效力形成原告请求和起诉材料。",
+      "notFor": [
+        "遗产范围和份额均明确后的单纯分割诉讼",
+        "为被告或相对方形成答辩材料"
+      ],
+      "deliverables": [
+        "身份效力争点与请求表",
+        "起诉材料包"
+      ],
+      "path": "skills/lawyeah-family-file-inheritance-status-action",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "lawyeah-handle-family-succession"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": [
+        {
+          "id": "law-source-verification",
+          "purpose": "核验会改变结论、期限或程序入口的现行法源",
+          "capability": "search_law",
+          "level": "required",
+          "unavailableBehavior": "停止法律结论、期限和确定程序入口，只保留非法律事实、缺口和安全转介"
+        },
+        {
+          "id": "template-reference",
+          "purpose": "核验文书类型、结构和必要字段",
+          "capability": "search_template",
+          "level": "optional",
+          "unavailableBehavior": "按目标 Skill 的文书降级规则停止可提交格式或使用自包含输出结构"
+        },
+        {
+          "id": "practice-reference",
+          "purpose": "补充去标识化的实务核验与证据组织视角",
+          "capability": "search_practiced",
+          "level": "optional",
+          "unavailableBehavior": "继续完成不依赖实务增强的基础成果"
+        },
+        {
+          "id": "fact-similar-case",
+          "purpose": "按去标识化事实链对照公开案例",
+          "capability": "search_case_by_fact",
+          "level": "optional",
+          "unavailableBehavior": "不使用类案增强，不影响基础事实和法源分析"
+        },
+        {
+          "id": "case-detail",
+          "purpose": "核对已确认案例的完整内容",
+          "capability": "get_case_detail",
+          "level": "optional",
+          "unavailableBehavior": "不引用无法核对全文的案例"
+        }
+      ]
+    },
+    {
+      "id": "lawyeah-family-administer-estate",
+      "kind": "atomic",
+      "displayName": "遗产清册与保全方案",
+      "goal": "为已确定的遗产管理主体形成通知、清册、占有控制、保全和管理日志。",
+      "notFor": [
+        "处理争议债权债务、管理费用或实施最终分配"
+      ],
+      "deliverables": [
+        "遗产清册",
+        "通知保全与管理日志"
+      ],
+      "path": "skills/lawyeah-family-administer-estate",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "lawyeah-handle-family-succession"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": [
+        {
+          "id": "law-source-verification",
+          "purpose": "核验会改变结论、期限或程序入口的现行法源",
+          "capability": "search_law",
+          "level": "required",
+          "unavailableBehavior": "停止法律结论、期限和确定程序入口，只保留非法律事实、缺口和安全转介"
+        },
+        {
+          "id": "practice-reference",
+          "purpose": "补充去标识化的实务核验与证据组织视角",
+          "capability": "search_practiced",
+          "level": "optional",
+          "unavailableBehavior": "继续完成不依赖实务增强的基础成果"
+        }
+      ]
+    },
+    {
+      "id": "lawyeah-family-draft-will",
+      "kind": "atomic",
+      "displayName": "遗嘱起草与订立方案",
+      "goal": "为具备遗嘱能力的自然人形成处分范围、形式、见证、执行和更新机制清晰的遗嘱。",
+      "notFor": [
+        "处分不属于遗嘱人的财产"
+      ],
+      "deliverables": [
+        "遗嘱文本",
+        "订立执行与保管清单"
+      ],
+      "path": "skills/lawyeah-family-draft-will",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "lawyeah-handle-family-succession"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": [
+        {
+          "id": "law-source-verification",
+          "purpose": "核验会改变结论、期限或程序入口的现行法源",
+          "capability": "search_law",
+          "level": "required",
+          "unavailableBehavior": "停止法律结论、期限和确定程序入口，只保留非法律事实、缺口和安全转介"
+        },
+        {
+          "id": "template-reference",
+          "purpose": "核验文书类型、结构和必要字段",
+          "capability": "search_template",
+          "level": "optional",
+          "unavailableBehavior": "按目标 Skill 的文书降级规则停止可提交格式或使用自包含输出结构"
+        },
+        {
+          "id": "practice-reference",
+          "purpose": "补充去标识化的实务核验与证据组织视角",
+          "capability": "search_practiced",
+          "level": "optional",
+          "unavailableBehavior": "继续完成不依赖实务增强的基础成果"
+        }
+      ]
+    }
+  ]
+}

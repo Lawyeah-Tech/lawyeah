@@ -101,7 +101,7 @@
         {"id": "handle-corporate-equity", "relation": "related-to", "boundary": "婚姻继承中的股权分配归婚家，公司治理和股东权利实现归公司治理。"},
         {"id": "handle-tax-matters", "relation": "related-to", "boundary": "传承结构和家事安排归婚家，以税务测算、申报或争议为主要成果时归税务。"}
       ],
-      "status": "planned"
+      "status": "active"
     },
     {
       "id": "conduct-criminal-defense",

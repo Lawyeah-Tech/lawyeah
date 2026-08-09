@@ -1,0 +1,4 @@
+interface:
+  display_name: "婚姻家事与财富传承导航"
+  short_description: "了解婚姻家事与财富传承领域包，并定位适用的原子 Skill"
+  default_prompt: "使用 $lawyeah-handle-family-succession 根据安全状态、角色、关系、程序和预期成果定位合适的法律原子 Skill。"

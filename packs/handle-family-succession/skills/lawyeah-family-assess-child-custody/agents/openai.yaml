@@ -1,0 +1,4 @@
+interface:
+  display_name: "未成年子女直接抚养评估"
+  short_description: "以最有利于未成年人为中心形成直接抚养、共同照护、风险与证据评估。"
+  default_prompt: "使用 $lawyeah-family-assess-child-custody，以最有利于未成年人为中心形成直接抚养、共同照护、风险与证据评估。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "继承人及遗产范围识别"
+  short_description: "在特定被继承人死亡后形成继承人、继承依据、遗产与他人财产、债务和缺口清单。"
+  default_prompt: "使用 $lawyeah-family-identify-heirs-and-estate，在特定被继承人死亡后形成继承人、继承依据、遗产与他人财产、债务和缺口清单。"
