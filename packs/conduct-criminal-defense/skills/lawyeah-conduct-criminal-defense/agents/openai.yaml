@@ -1,0 +1,4 @@
+interface:
+  display_name: "刑事辩护与刑事代理导航"
+  short_description: "了解刑事领域包的能力边界，并定位适用的原子 Skill"
+  default_prompt: "使用 $lawyeah-conduct-criminal-defense 根据我的角色、程序状态、当前目标和预期成果定位合适的刑事法律原子 Skill。"

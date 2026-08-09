@@ -1,0 +1,4 @@
+interface:
+  display_name: "刑事控告可行性评估"
+  short_description: "从被害事实、刑民行政边界、管辖、证据和追诉风险形成是否及如何控告的决策意见。"
+  default_prompt: "使用 $lawyeah-criminal-assess-criminal-accusation，按其输入、方法、停止条件和输出合同形成独立成果。"

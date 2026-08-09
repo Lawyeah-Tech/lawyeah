@@ -38,6 +38,8 @@ docs/           架构与实施记录
 - [专家评审治理](docs/architecture/expert-review.md)
 - [劳动用工与劳动争议体系](docs/domains/labor-employment.md)
 - [劳动领域 Skill 路线图](docs/domains/labor-employment-skills.md)
+- [刑事辩护与刑事代理体系](docs/domains/criminal-defense.md)
+- [刑事领域 Skill 发布清单](docs/domains/criminal-defense-skills.md)
 
 一个运行时领域包使用以下结构：
 

@@ -118,7 +118,7 @@
         {"id": "handle-administrative-disputes", "relation": "related-to", "boundary": "刑事强制措施和责任归刑事，行政机关作出的处罚和许可争议归行政。"},
         {"id": "handle-labor-employment", "relation": "related-to", "boundary": "刑事控告、辩护和刑事责任归刑事，员工涉嫌违法后的劳动调查、处分和用工后果归劳动。"}
       ],
-      "status": "planned"
+      "status": "active"
     },
     {
       "id": "handle-construction-disputes",

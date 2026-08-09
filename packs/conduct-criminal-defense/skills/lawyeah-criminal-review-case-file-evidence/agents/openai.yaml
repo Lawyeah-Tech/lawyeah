@@ -1,0 +1,4 @@
+interface:
+  display_name: "刑事阅卷与证据体系审查"
+  short_description: "对已依法取得的案卷建立可回链的证据矩阵、证明体系、矛盾缺口和后续核证清单。"
+  default_prompt: "使用 $lawyeah-criminal-review-case-file-evidence，按其输入、方法、停止条件和输出合同形成独立成果。"

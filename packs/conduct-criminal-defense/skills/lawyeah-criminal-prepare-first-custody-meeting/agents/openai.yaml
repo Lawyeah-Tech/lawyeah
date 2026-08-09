@@ -1,0 +1,4 @@
+interface:
+  display_name: "首次在押会见与权利处置"
+  short_description: "为首次会见在押犯罪嫌疑人或被告人形成会见提纲、事实程序核验记录和会后权利处置清单。"
+  default_prompt: "使用 $lawyeah-criminal-prepare-first-custody-meeting，按其输入、方法、停止条件和输出合同形成独立成果。"
