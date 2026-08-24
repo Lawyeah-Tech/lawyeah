@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估商品房交付质量与保修"
+  short_description: "修复或解除分流、保修期、自行修复费用"
+  default_prompt: "使用 $评估商品房交付质量与保修，在买受方立场下评估商品房交付质量、保修和是否构成严重影响居住。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估转租转借与优先承租"
+  short_description: "同意、数份租赁履行顺序、优先权"
+  default_prompt: "使用 $评估转租转借与优先承租，在单一立场下评估擅自转租、优先承租或数份租赁的履行顺序。"

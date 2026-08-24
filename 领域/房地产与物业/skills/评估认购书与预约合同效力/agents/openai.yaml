@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估认购书与预约合同效力"
+  short_description: "预约或本约定性、定金、继续缔约或解除"
+  default_prompt: "使用 $评估认购书与预约合同效力，在单一立场下评估商品房认购书、意向书或排号协议是预约还是本约。"

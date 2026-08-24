@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估是否反诉或反请求"
+  short_description: "反诉条件、管辖、风险、请求草案"
+  default_prompt: "使用 $评估房屋纠纷反诉或反请求，作为被请求方，评估房地产或物业案件是否提出反诉或仲裁反请求。"

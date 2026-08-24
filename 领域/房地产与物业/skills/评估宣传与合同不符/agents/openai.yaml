@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估宣传与合同不符"
+  short_description: "要约邀请或要约分流、是否订入合同、违约而非当然解除"
+  default_prompt: "使用 $评估宣传与合同不符，在买受方立场下评估广告、沙盘、样板间与合同或交付现状不符的后果。"

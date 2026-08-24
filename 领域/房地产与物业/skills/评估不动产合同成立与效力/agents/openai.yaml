@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估不动产合同成立与效力"
+  short_description: "成立与效力争点表、补正时点、后果分流"
+  default_prompt: "使用 $评估不动产合同成立与效力，在单一立场下评估不动产合同是否成立、有效、可撤销或待补正。"

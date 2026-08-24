@@ -1,0 +1,4 @@
+interface:
+  display_name: "执行房地产生效文书"
+  short_description: "执行申请、协助过户、财产线索"
+  default_prompt: "使用 $执行房地产生效文书，作为权利人，持生效判决、调解书或裁决申请执行过户或付款。"

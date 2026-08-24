@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估专有部分擅自改建"
+  short_description: "停止侵害、恢复原状、管理规约"
+  default_prompt: "使用 $评估专有部分擅自改建，在业主或物业立场下评估拆承重、占公共通道或改变用途的停止侵害与恢复原状。"

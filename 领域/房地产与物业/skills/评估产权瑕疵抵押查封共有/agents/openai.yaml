@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估产权瑕疵抵押查封共有"
+  short_description: "处分权、同意、涤除、预告或异议登记接口"
+  default_prompt: "使用 $评估产权瑕疵抵押查封共有，在单一立场下评估共有、抵押、查封、租赁或登记错误对过户的阻碍。"

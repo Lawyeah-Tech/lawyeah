@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估存量房买卖争议"
+  short_description: "过户、占有、户口、抵押涤除、定金、中介接口"
+  default_prompt: "使用 $评估存量房买卖争议，在买受人或出卖人立场下评估已成争的存量房买卖请求与抗辩。"

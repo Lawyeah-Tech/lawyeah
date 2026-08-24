@@ -1,0 +1,4 @@
+interface:
+  display_name: "测算租金物业费及抵扣"
+  short_description: "分期间测算、抵扣、违规收费扣减"
+  default_prompt: "使用 $测算租金物业费及抵扣，在单一立场下做可复核的租金、占有使用费、物业费或押金抵扣测算。"

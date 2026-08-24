@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估业委会资格与越权"
+  short_description: "主体资格、授权、越权后果"
+  default_prompt: "使用 $评估业委会资格与越权，在单一立场下评估业委会任期、备案、越权签约或起诉资格。"

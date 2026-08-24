@@ -1,0 +1,4 @@
+interface:
+  display_name: "办理和解执行力补强"
+  short_description: "路径比较、材料、失败分流"
+  default_prompt: "使用 $办理房屋和解执行力补强，在单一立场下比较司法确认、仲裁调解书或公证赋强，为房地产和解补强执行力。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备房地产案件庭审"
+  short_description: "争点、举证质证、询问、代理提纲"
+  default_prompt: "使用 $准备房地产案件庭审，作为单方代理，为即将开庭的房地产或物业诉讼或仲裁准备庭审提纲。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估租赁解除权是否成立"
+  short_description: "解除路径、催告、恢复原状、除斥"
+  default_prompt: "使用 $评估租赁解除权是否成立，在单一立场下判断房屋租赁约定或法定解除权是否成立，不发出解除通知。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "提起房地产案件上诉"
+  short_description: "上诉状、范围、期限、理由"
+  default_prompt: "使用 $提起房地产案件上诉，作为上诉方，对尚未生效的房地产或物业裁判准备上诉状、范围和理由。"

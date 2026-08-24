@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估定金订金与首付款性质"
+  short_description: "性质识别、适用条件、与违约金选用"
+  default_prompt: "使用 $评估定金订金与首付款性质，在单一立场下识别房地产交易中定金、订金、意向金或首付款的性质与罚则。"

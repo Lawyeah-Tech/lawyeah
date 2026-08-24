@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备房屋质量面积或价值鉴定"
+  short_description: "鉴定事项、检材、机构分流、申请稿"
+  default_prompt: "使用 $准备房屋质量面积或价值鉴定，在单一立场下准备房屋质量、面积或价值鉴定的事项、检材和申请稿。"

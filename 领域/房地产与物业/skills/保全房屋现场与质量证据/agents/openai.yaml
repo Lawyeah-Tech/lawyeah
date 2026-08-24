@@ -1,0 +1,4 @@
+interface:
+  display_name: "保全房屋现场与质量证据"
+  short_description: "保全步骤、公证或鉴定分流、禁止动作"
+  default_prompt: "使用 $保全房屋现场与质量证据，在单一立场下设计房屋渗漏、空鼓、面积或占有现状可能灭失时的合法保全步骤。"

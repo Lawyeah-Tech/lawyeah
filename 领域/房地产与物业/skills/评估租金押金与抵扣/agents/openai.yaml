@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估租金押金与抵扣"
+  short_description: "租金期间、押金性质、抵扣互斥"
+  default_prompt: "使用 $评估租金押金与抵扣，在单一立场下评估房屋租赁欠租、押金扣留和占有使用费的性质与抵扣。"

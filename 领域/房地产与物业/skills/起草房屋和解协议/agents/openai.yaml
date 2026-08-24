@@ -1,0 +1,4 @@
+interface:
+  display_name: "起草和解协议"
+  short_description: "和解协议草稿、过户腾退付款清理"
+  default_prompt: "使用 $起草房屋和解协议，在条件已谈拢时，起草房地产或物业争议的可签和解协议草稿。"

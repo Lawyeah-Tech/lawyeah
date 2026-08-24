@@ -1,0 +1,4 @@
+interface:
+  display_name: "建立房地产争议证据案卷"
+  short_description: "形成要件、举证责任、材料和合法补证矩阵"
+  default_prompt: "使用 $建立房地产争议证据案卷，按要件整理本案房地产或物业争议证据。"

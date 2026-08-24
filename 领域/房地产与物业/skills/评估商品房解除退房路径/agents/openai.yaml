@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估商品房解除退房路径"
+  short_description: "判断商品房解除权、催告三月和除斥，不发函"
+  default_prompt: "使用 $评估商品房解除退房路径，评估本案商品房能否解除退房，不要写出通知。"

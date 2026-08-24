@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估户口腾退与占有交付"
+  short_description: "交付是否完成、户口条款、占有返还、买卖不破租赁"
+  default_prompt: "使用 $评估户口腾退与占有交付，在买受方立场下评估交房后不迁户口、第三人占有或承租人拒腾的民事后果。"

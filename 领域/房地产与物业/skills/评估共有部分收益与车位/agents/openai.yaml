@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估共有部分收益与车位"
+  short_description: "专有或共有识别、首先满足业主、收益归属"
+  default_prompt: "使用 $评估共有部分收益与车位，在业主或开发商立场下评估车位车库、外墙、会所或共有收益的归属。"

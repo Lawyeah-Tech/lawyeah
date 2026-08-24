@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备反诉或仲裁反请求"
+  short_description: "反诉状或反请求和证据"
+  default_prompt: "使用 $准备房屋纠纷反诉或仲裁反请求，作为反诉原告或反请求申请人，在已决定反诉后准备状纸和证据。"

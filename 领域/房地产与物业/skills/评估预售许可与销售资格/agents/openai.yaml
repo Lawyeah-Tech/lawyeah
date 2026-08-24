@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估预售许可与销售资格"
+  short_description: "预售许可时点、合同效力、补正窗口、销售主体表"
+  default_prompt: "使用 $评估预售许可与销售资格，在单一立场下评估商品房预售许可时点、补证窗口和销售主体是否适格。"

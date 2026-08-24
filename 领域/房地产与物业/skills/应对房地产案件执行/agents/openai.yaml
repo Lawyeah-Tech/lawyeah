@@ -1,0 +1,4 @@
+interface:
+  display_name: "应对房地产案件执行"
+  short_description: "适格异议、履行安排"
+  default_prompt: "使用 $应对房地产案件执行，作为被执行人，在收到房地产或物业案件执行后准备适格异议和履行安排。"

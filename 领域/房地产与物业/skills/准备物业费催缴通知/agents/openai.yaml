@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备物业费催缴通知"
+  short_description: "催告稿、合理期限、禁止停水停电提示"
+  default_prompt: "使用 $准备物业费催缴通知，作为物业服务人，准备物业费催缴通知的发送前稿，并标明禁止停水停电。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估交房后隐蔽瑕疵"
+  short_description: "瑕疵类型、检验通知、修复或减价、除斥"
+  default_prompt: "使用 $评估交房后隐蔽瑕疵，在买受方立场下评估过户或入住后发现的隐蔽质量或权利瑕疵。"

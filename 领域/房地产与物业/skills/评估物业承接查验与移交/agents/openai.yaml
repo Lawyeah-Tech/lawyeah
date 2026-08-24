@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估物业承接查验与移交"
+  short_description: "移交清单、查验缺口、责任主体"
+  default_prompt: "使用 $评估物业承接查验与移交，在业委会或新物业立场下评估前期物业交接、资料或共有部位移交不能。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估逾期交房与接房条件"
+  short_description: "交付条件、逾期是否成立、催告、目的能否实现"
+  default_prompt: "使用 $评估逾期交房与接房条件，在买受人或出卖人立场下评估逾期交房、不具备交付条件或拒收的法律效果。"

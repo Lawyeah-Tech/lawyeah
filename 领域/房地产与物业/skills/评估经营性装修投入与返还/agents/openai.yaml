@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估经营性装修投入与返还"
+  short_description: "同意装修、附合、拆除、扩建费用分担"
+  default_prompt: "使用 $评估经营性装修投入与返还，在承租人或出租人立场下评估商铺装修附合、提前解约或到期拆除的费用分担。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "设计通知送达与到达证明"
+  short_description: "约定渠道、备份送达、回证、失败升级"
+  default_prompt: "使用 $设计房屋案件通知送达，在单一立场下单独设计房地产或物业通知的送达渠道和到达证据，不写通知实体内容。"

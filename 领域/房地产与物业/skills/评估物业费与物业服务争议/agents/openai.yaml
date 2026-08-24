@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估物业费与物业服务争议"
+  short_description: "判断物业费请求、质价不符抗辩、催告和禁止停水电"
+  default_prompt: "使用 $评估物业费与物业服务争议，评估物业费主张或抗辩是否成立。"

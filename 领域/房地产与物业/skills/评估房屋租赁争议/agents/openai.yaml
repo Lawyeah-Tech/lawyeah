@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估房屋租赁争议"
+  short_description: "效力、履行抗辩、解除路径、押金租金区间"
+  default_prompt: "使用 $评估房屋租赁争议，在出租人或承租人立场下评估已成争的房屋租赁效力、履行、解除和押金租金接口。"

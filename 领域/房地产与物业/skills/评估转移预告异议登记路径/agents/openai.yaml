@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估转移预告异议登记路径"
+  short_description: "登记类型、九十日或十五日窗口、失效后果"
+  default_prompt: "使用 $评估转移预告异议登记路径，在单一立场下评估不动产转移、预告、更正或异议登记路径及失效风险。"

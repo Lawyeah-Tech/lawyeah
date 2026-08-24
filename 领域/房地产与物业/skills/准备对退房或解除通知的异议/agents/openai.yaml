@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备对退房或解除通知的异议"
+  short_description: "异议函、继续履行主张、确认之诉分流"
+  default_prompt: "使用 $准备对退房或解除通知的异议，作为相对方，对已收到的房屋买卖或租赁解除、退房通知准备异议函。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估按揭贷款不能与合同后果"
+  short_description: "可归责或不可归责分流、解除与返还"
+  default_prompt: "使用 $评估按揭贷款不能与合同后果，在买受人或出卖人立场下评估商品房按揭贷款未能订立时买卖合同的后果。"

@@ -1,0 +1,1618 @@
+{
+  "schemaVersion": 2,
+  "id": "handle-real-estate",
+  "displayName": "房地产与物业",
+  "description": "处理中国大陆房地产取得、开发、交易、租赁、运营和物业管理争议的评估、催告解除、测算、证据、和解和一审两造的多 Skill 领域包。",
+  "version": "1.0.0",
+  "license": "Apache-2.0",
+  "jurisdiction": "CN-mainland",
+  "contentModel": "multi-skill-progressive-disclosure",
+  "reinstallStrategy": "replace",
+  "scope": {
+    "purpose": "处理房地产取得、开发、交易、租赁、运营和物业管理中的法律事务与争议。",
+    "inScope": [
+      "房屋买卖、租赁和开发合作",
+      "土地与房地产项目运营",
+      "商品房销售和不动产交易",
+      "物业服务与业主治理争议"
+    ],
+    "outOfScope": [
+      "施工价款、工期、质量和鉴定争议",
+      "一般合同争议",
+      "自然资源权利、能源项目和环境监管专项事项"
+    ],
+    "primaryDeliverables": [
+      "房地产交易文件",
+      "项目法律评估",
+      "租售和物业争议成果",
+      "不动产权利处理方案"
+    ]
+  },
+  "guideSkill": "房地产与物业导航",
+  "mcp": {
+    "contractRange": "0.0"
+  },
+  "skills": [
+    {
+      "id": "房地产与物业导航",
+      "kind": "guide",
+      "displayName": "房地产与物业导航",
+      "goal": "说明领域包的能力、边界和当前原子 Skill 全貌",
+      "notFor": [
+        "直接完成具体法律业务成果"
+      ],
+      "deliverables": [
+        "领域能力定位结果"
+      ],
+      "path": "skills/房地产与物业导航",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "评估商品房解除退房路径",
+          "评估物业费与物业服务争议",
+          "测算购房款返还违约金与赔偿",
+          "应对房地产与物业纠纷一审",
+          "评估不动产管辖与仲裁协议",
+          "评估房地产与物业争议",
+          "准备房屋买卖解除或退房通知",
+          "建立房地产争议证据案卷",
+          "准备催告交房或办证通知",
+          "提起房地产与物业纠纷一审",
+          "谈判房地产与物业和解方案",
+          "评估土地使用权取得与转让争议",
+          "评估合作开发房地产争议",
+          "评估预售许可与销售资格",
+          "评估项目公司销售代理与签约主体",
+          "评估房地产争议期间",
+          "提出不动产管辖异议",
+          "准备房屋仲裁协议异议材料",
+          "评估不动产合同成立与效力",
+          "评估认购书与预约合同效力",
+          "评估逾期交房与接房条件",
+          "评估面积误差与价款调整",
+          "评估宣传与合同不符",
+          "评估规划设计变更退房",
+          "评估办证不能与权属障碍",
+          "评估商品房交付质量与保修",
+          "评估按揭贷款不能与合同后果",
+          "评估预售资金监管与查封风险",
+          "评估一房二卖与隐瞒抵押查封",
+          "评估存量房买卖争议",
+          "评估产权瑕疵抵押查封共有",
+          "评估定金订金与首付款性质",
+          "评估户口腾退与占有交付",
+          "评估中介如实告知与居间报酬",
+          "评估交房后隐蔽瑕疵",
+          "评估房屋租赁争议",
+          "评估租赁解除权是否成立",
+          "评估租金押金与抵扣",
+          "评估转租转借与优先承租",
+          "评估经营性装修投入与返还",
+          "评估租赁备案与买卖不破租赁",
+          "评估业主大会决议效力",
+          "评估业委会资格与越权",
+          "评估共有部分收益与车位",
+          "评估专有部分擅自改建",
+          "评估物业承接查验与移交",
+          "评估专项维修资金使用争议",
+          "评估转移预告异议登记路径",
+          "评估房屋征收补偿民事请求",
+          "评估安置房交付与权属",
+          "准备租赁催告或解除通知",
+          "准备物业费催缴通知",
+          "准备对退房或解除通知的异议",
+          "测算租金物业费及抵扣",
+          "保全房屋现场与质量证据",
+          "设计房屋案件通知送达",
+          "准备房屋质量面积或价值鉴定",
+          "评估房屋财产保全必要性",
+          "起草房屋和解协议",
+          "办理房屋和解执行力补强",
+          "提起房地产仲裁",
+          "应对房地产仲裁",
+          "准备房地产案件庭审",
+          "提起房地产案件上诉",
+          "评估房屋纠纷反诉或反请求",
+          "准备房屋纠纷反诉或仲裁反请求",
+          "申请物业费或租金支付令",
+          "执行房地产生效文书",
+          "应对房地产案件执行"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估房地产与物业争议",
+      "kind": "atomic",
+      "displayName": "评估房地产与物业争议",
+      "goal": "在单方无冲突立场下形成可决策的房地产与物业争议总图",
+      "notFor": [
+        "发送版催告或解除函",
+        "精算终稿",
+        "诉状或答辩",
+        "签前审查起草",
+        "工程价款工期质量"
+      ],
+      "deliverables": [
+        "在单方无冲突立场下形成可决策的房地产与物业争议总图"
+      ],
+      "path": "skills/评估房地产与物业争议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "房地产与物业导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估不动产管辖与仲裁协议",
+      "kind": "atomic",
+      "displayName": "评估不动产管辖与仲裁协议",
+      "goal": "判断去法院还是仲裁，以及不动产专属管辖是否真正适用",
+      "notFor": [
+        "完整立案包",
+        "过期后赶写管辖异议书",
+        "把普通商品房买卖写成当然专属"
+      ],
+      "deliverables": [
+        "判断去法院还是仲裁，以及不动产专属管辖是否真正适用"
+      ],
+      "path": "skills/评估不动产管辖与仲裁协议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "房地产与物业导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估商品房解除退房路径",
+      "kind": "atomic",
+      "displayName": "评估商品房解除退房路径",
+      "goal": "判断商品房约定或法定解除权是否成立，不发函",
+      "notFor": [
+        "发送版解除通知",
+        "总体争议总图",
+        "施工质量鉴定"
+      ],
+      "deliverables": [
+        "判断商品房约定或法定解除权是否成立，不发函"
+      ],
+      "path": "skills/评估商品房解除退房路径",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "房地产与物业导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估物业费与物业服务争议",
+      "kind": "atomic",
+      "displayName": "评估物业费与物业服务争议",
+      "goal": "判断物业费请求或质价不符抗辩能否成立，并给出金额区间",
+      "notFor": [
+        "停水停电催费方案",
+        "发送版催缴终稿",
+        "业主大会决议撤销之诉终稿"
+      ],
+      "deliverables": [
+        "判断物业费请求或质价不符抗辩能否成立，并给出金额区间"
+      ],
+      "path": "skills/评估物业费与物业服务争议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "房地产与物业导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备催告交房或办证通知",
+      "kind": "atomic",
+      "displayName": "准备催告交房或办证通知",
+      "goal": "形成仍要对方交房、协助办证或付款的发送前催告",
+      "notFor": [
+        "解除通知",
+        "索赔精算终稿",
+        "已解除后的清理"
+      ],
+      "deliverables": [
+        "形成仍要对方交房、协助办证或付款的发送前催告"
+      ],
+      "path": "skills/准备催告交房或办证通知",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "房地产与物业导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备房屋买卖解除或退房通知",
+      "kind": "atomic",
+      "displayName": "准备房屋买卖解除或退房通知",
+      "goal": "形成行使房屋买卖解除权的发送前稿和到达设计",
+      "notFor": [
+        "催告未完成且依法须催告",
+        "只要评估",
+        "把发送写成已解除"
+      ],
+      "deliverables": [
+        "形成行使房屋买卖解除权的发送前稿和到达设计"
+      ],
+      "path": "skills/准备房屋买卖解除或退房通知",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "房地产与物业导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "测算购房款返还违约金与赔偿",
+      "kind": "atomic",
+      "displayName": "测算购房款返还违约金与赔偿",
+      "goal": "形成可复核的分项测算，不认定违约已成立，不输出已删一倍惩罚为必得",
+      "notFor": [
+        "定性总图",
+        "唯一必得总额",
+        "工程造价鉴定"
+      ],
+      "deliverables": [
+        "形成可复核的分项测算，不认定违约已成立，不输出已删一倍惩罚为必得"
+      ],
+      "path": "skills/测算购房款返还违约金与赔偿",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "房地产与物业导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "建立房地产争议证据案卷",
+      "kind": "atomic",
+      "displayName": "建立房地产争议证据案卷",
+      "goal": "形成要件、举证责任、材料与合法补证矩阵",
+      "notFor": [
+        "策略总图",
+        "诉状",
+        "违法取证方案"
+      ],
+      "deliverables": [
+        "形成要件、举证责任、材料与合法补证矩阵"
+      ],
+      "path": "skills/建立房地产争议证据案卷",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "房地产与物业导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "谈判房地产与物业和解方案",
+      "kind": "atomic",
+      "displayName": "谈判房地产与物业和解方案",
+      "goal": "形成底线、过户腾退缴费让步、弃权范围和执行力提示",
+      "notFor": [
+        "已谈拢的和解协议正文",
+        "答辩状",
+        "未成争的补充协议"
+      ],
+      "deliverables": [
+        "形成底线、过户腾退缴费让步、弃权范围和执行力提示"
+      ],
+      "path": "skills/谈判房地产与物业和解方案",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "房地产与物业导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "提起房地产与物业纠纷一审",
+      "kind": "atomic",
+      "displayName": "提起房地产与物业纠纷一审",
+      "goal": "形成可提交的一审起诉包",
+      "notFor": [
+        "有效仲裁未排除",
+        "工程价款工期质量",
+        "代提交"
+      ],
+      "deliverables": [
+        "形成可提交的一审起诉包"
+      ],
+      "path": "skills/提起房地产与物业纠纷一审",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "房地产与物业导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对房地产与物业纠纷一审",
+      "kind": "atomic",
+      "displayName": "应对房地产与物业纠纷一审",
+      "goal": "形成首次应诉答辩包",
+      "notFor": [
+        "主动起诉",
+        "只要管辖异议终稿且无实体",
+        "工程应诉"
+      ],
+      "deliverables": [
+        "形成首次应诉答辩包"
+      ],
+      "path": "skills/应对房地产与物业纠纷一审",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "房地产与物业导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估土地使用权取得与转让争议",
+      "kind": "atomic",
+      "displayName": "评估土地使用权取得与转让争议",
+      "goal": "出让、转让、一地数转或变更登记不能；单方",
+      "notFor": [
+        "矿业权、农地承包、征收决定合法性转出",
+        "施工合同转工程"
+      ],
+      "deliverables": [
+        "出让、转让、一地数转或变更登记不能；单方"
+      ],
+      "path": "skills/评估土地使用权取得与转让争议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "房地产与物业导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估合作开发房地产争议",
+      "kind": "atomic",
+      "displayName": "评估合作开发房地产争议",
+      "goal": "以地出资、联合建房、利润分配或名为合作实为借贷；单方",
+      "notFor": [
+        "施工价款工期质量转工程",
+        "纯借款担保转金融"
+      ],
+      "deliverables": [
+        "以地出资、联合建房、利润分配或名为合作实为借贷；单方"
+      ],
+      "path": "skills/评估合作开发房地产争议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "房地产与物业导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估预售许可与销售资格",
+      "kind": "atomic",
+      "displayName": "评估预售许可与销售资格",
+      "goal": "无证预售、假证、起诉前补证或销售主体不适格；单方",
+      "notFor": [
+        "不替代总体评估",
+        "不写行政处罚复议书"
+      ],
+      "deliverables": [
+        "无证预售、假证、起诉前补证或销售主体不适格；单方"
+      ],
+      "path": "skills/评估预售许可与销售资格",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "房地产与物业导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估项目公司销售代理与签约主体",
+      "kind": "atomic",
+      "displayName": "评估项目公司销售代理与签约主体",
+      "goal": "项目公司、销售代理、印章或无权代理争签约效力；单方",
+      "notFor": [
+        "不审理公司治理内部决议本身"
+      ],
+      "deliverables": [
+        "项目公司、销售代理、印章或无权代理争签约效力；单方"
+      ],
+      "path": "skills/评估项目公司销售代理与签约主体",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "房地产与物业导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估房地产争议期间",
+      "kind": "atomic",
+      "displayName": "评估房地产争议期间",
+      "goal": "单独委托核验期间是否届满；单方",
+      "notFor": [
+        "禁止混算或输出唯一截止日"
+      ],
+      "deliverables": [
+        "单独委托核验期间是否届满；单方"
+      ],
+      "path": "skills/评估房地产争议期间",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "房地产与物业导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "提出不动产管辖异议",
+      "kind": "atomic",
+      "displayName": "提出不动产管辖异议",
+      "goal": "已被起诉，需在法定期限提管辖异议；被请求方",
+      "notFor": [
+        "与仲裁协议异议不同",
+        "过期停止"
+      ],
+      "deliverables": [
+        "已被起诉，需在法定期限提管辖异议；被请求方"
+      ],
+      "path": "skills/提出不动产管辖异议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "房地产与物业导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备房屋仲裁协议异议材料",
+      "kind": "atomic",
+      "displayName": "准备房屋仲裁协议异议材料",
+      "goal": "对方依仲裁条款推进，己方主张无效或不适用；被请求方",
+      "notFor": [
+        "与法院管辖异议、实体抗辩分开"
+      ],
+      "deliverables": [
+        "对方依仲裁条款推进，己方主张无效或不适用；被请求方"
+      ],
+      "path": "skills/准备房屋仲裁协议异议材料",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "房地产与物业导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估不动产合同成立与效力",
+      "kind": "atomic",
+      "displayName": "评估不动产合同成立与效力",
+      "goal": "争认购转本约、无权处分、预售无效、可撤销；单方",
+      "notFor": [
+        "不替代总体评估",
+        "签前改稿走审查（搁置）"
+      ],
+      "deliverables": [
+        "争认购转本约、无权处分、预售无效、可撤销；单方"
+      ],
+      "path": "skills/评估不动产合同成立与效力",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "房地产与物业导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估认购书与预约合同效力",
+      "kind": "atomic",
+      "displayName": "评估认购书与预约合同效力",
+      "goal": "认购、意向、排号后争能否转本约或解除返还；单方",
+      "notFor": [
+        "C 端认购评估只分流",
+        "不写出完整买卖合同"
+      ],
+      "deliverables": [
+        "认购、意向、排号后争能否转本约或解除返还；单方"
+      ],
+      "path": "skills/评估认购书与预约合同效力",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "房地产与物业导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估逾期交房与接房条件",
+      "kind": "atomic",
+      "displayName": "评估逾期交房与接房条件",
+      "goal": "逾期交房、不具备交付条件或拒收；买受人或出卖人",
+      "notFor": [
+        "不直接发出解除通知"
+      ],
+      "deliverables": [
+        "逾期交房、不具备交付条件或拒收；买受人或出卖人"
+      ],
+      "path": "skills/评估逾期交房与接房条件",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "房地产与物业导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估面积误差与价款调整",
+      "kind": "atomic",
+      "displayName": "评估面积误差与价款调整",
+      "goal": "实测或产权登记面积与约定不符；单方",
+      "notFor": [
+        "不得把 2020 已删解释第十四条当现行司法解释"
+      ],
+      "deliverables": [
+        "实测或产权登记面积与约定不符；单方"
+      ],
+      "path": "skills/评估面积误差与价款调整",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "房地产与物业导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估宣传与合同不符",
+      "kind": "atomic",
+      "displayName": "评估宣传与合同不符",
+      "goal": "广告、沙盘、样板间与合同或交付现状冲突；买受方",
+      "notFor": [
+        "不按消保三倍自动升级"
+      ],
+      "deliverables": [
+        "广告、沙盘、样板间与合同或交付现状冲突；买受方"
+      ],
+      "path": "skills/评估宣传与合同不符",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "房地产与物业导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估规划设计变更退房",
+      "kind": "atomic",
+      "displayName": "评估规划设计变更退房",
+      "goal": "容积率、楼间距、户型等规划设计变更；买受方",
+      "notFor": [
+        "规划许可行政诉讼转行政"
+      ],
+      "deliverables": [
+        "容积率、楼间距、户型等规划设计变更；买受方"
+      ],
+      "path": "skills/评估规划设计变更退房",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "房地产与物业导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估办证不能与权属障碍",
+      "kind": "atomic",
+      "displayName": "评估办证不能与权属障碍",
+      "goal": "逾期办证或因出卖人原因无法登记；买受方",
+      "notFor": [
+        "登记行政行为合法性转行政"
+      ],
+      "deliverables": [
+        "逾期办证或因出卖人原因无法登记；买受方"
+      ],
+      "path": "skills/评估办证不能与权属障碍",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "房地产与物业导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估商品房交付质量与保修",
+      "kind": "atomic",
+      "displayName": "评估商品房交付质量与保修",
+      "goal": "交付质量、保修、严重影响居住；买受方",
+      "notFor": [
+        "施工合同质量鉴定、工程价款转工程",
+        "C 端退房质量只分流"
+      ],
+      "deliverables": [
+        "交付质量、保修、严重影响居住；买受方"
+      ],
+      "path": "skills/评估商品房交付质量与保修",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "房地产与物业导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估按揭贷款不能与合同后果",
+      "kind": "atomic",
+      "displayName": "评估按揭贷款不能与合同后果",
+      "goal": "担保贷款合同未订成，买卖合同能否继续；买受人或出卖人",
+      "notFor": [
+        "贷款合同、保证、抵押权实现转金融"
+      ],
+      "deliverables": [
+        "担保贷款合同未订成，买卖合同能否继续；买受人或出卖人"
+      ],
+      "path": "skills/评估按揭贷款不能与合同后果",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "房地产与物业导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估预售资金监管与查封风险",
+      "kind": "atomic",
+      "displayName": "评估预售资金监管与查封风险",
+      "goal": "预售资金挪用、监管账户或房屋被查封；买受方",
+      "notFor": [
+        "不定罪",
+        "破产债权转破产"
+      ],
+      "deliverables": [
+        "预售资金挪用、监管账户或房屋被查封；买受方"
+      ],
+      "path": "skills/评估预售资金监管与查封风险",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "房地产与物业导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估一房二卖与隐瞒抵押查封",
+      "kind": "atomic",
+      "displayName": "评估一房二卖与隐瞒抵押查封",
+      "goal": "一房数卖、隐瞒抵押或已出卖；买受方",
+      "notFor": [
+        "禁止把已删惩罚性赔偿条当现行必得一倍",
+        "刑民交叉只标红旗"
+      ],
+      "deliverables": [
+        "一房数卖、隐瞒抵押或已出卖；买受方"
+      ],
+      "path": "skills/评估一房二卖与隐瞒抵押查封",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "房地产与物业导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估存量房买卖争议",
+      "kind": "atomic",
+      "displayName": "评估存量房买卖争议",
+      "goal": "二手房已成争，需请求抗辩总图；买受人或出卖人",
+      "notFor": [
+        "签前风险审查走审查（搁置）",
+        "C 端二手房审查只分流"
+      ],
+      "deliverables": [
+        "二手房已成争，需请求抗辩总图；买受人或出卖人"
+      ],
+      "path": "skills/评估存量房买卖争议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "房地产与物业导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估产权瑕疵抵押查封共有",
+      "kind": "atomic",
+      "displayName": "评估产权瑕疵抵押查封共有",
+      "goal": "共有、抵押、查封、租赁或登记错误阻碍过户；单方",
+      "notFor": [
+        "婚姻共有分割转婚家",
+        "抵押权实现转金融"
+      ],
+      "deliverables": [
+        "共有、抵押、查封、租赁或登记错误阻碍过户；单方"
+      ],
+      "path": "skills/评估产权瑕疵抵押查封共有",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "房地产与物业导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估定金订金与首付款性质",
+      "kind": "atomic",
+      "displayName": "评估定金订金与首付款性质",
+      "goal": "定金、订金、意向金、首付款定性及罚则；单方",
+      "notFor": [
+        "签前定金条款审查走审查（搁置）"
+      ],
+      "deliverables": [
+        "定金、订金、意向金、首付款定性及罚则；单方"
+      ],
+      "path": "skills/评估定金订金与首付款性质",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "房地产与物业导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估户口腾退与占有交付",
+      "kind": "atomic",
+      "displayName": "评估户口腾退与占有交付",
+      "goal": "交房后不迁户口、第三人占有或承租人拒腾；买受方",
+      "notFor": [
+        "户籍行政管理转行政"
+      ],
+      "deliverables": [
+        "交房后不迁户口、第三人占有或承租人拒腾；买受方"
+      ],
+      "path": "skills/评估户口腾退与占有交付",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "房地产与物业导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估中介如实告知与居间报酬",
+      "kind": "atomic",
+      "displayName": "评估中介如实告知与居间报酬",
+      "goal": "中介隐瞒重要事实或争佣金；买方、卖方或中介",
+      "notFor": [
+        "不替代房屋本体质量判断"
+      ],
+      "deliverables": [
+        "中介隐瞒重要事实或争佣金；买方、卖方或中介"
+      ],
+      "path": "skills/评估中介如实告知与居间报酬",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "房地产与物业导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估交房后隐蔽瑕疵",
+      "kind": "atomic",
+      "displayName": "评估交房后隐蔽瑕疵",
+      "goal": "过户或入住后发现漏水、结构或权利瑕疵；买受方",
+      "notFor": [
+        "施工质量鉴定转工程",
+        "人身伤害转侵权"
+      ],
+      "deliverables": [
+        "过户或入住后发现漏水、结构或权利瑕疵；买受方"
+      ],
+      "path": "skills/评估交房后隐蔽瑕疵",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "房地产与物业导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估房屋租赁争议",
+      "kind": "atomic",
+      "displayName": "评估房屋租赁争议",
+      "goal": "租金、维修、转租、提前解约已成争；出租人或承租人",
+      "notFor": [
+        "C 端租赁解约只分流",
+        "动产租赁转一般合同"
+      ],
+      "deliverables": [
+        "租金、维修、转租、提前解约已成争；出租人或承租人"
+      ],
+      "path": "skills/评估房屋租赁争议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "房地产与物业导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估租赁解除权是否成立",
+      "kind": "atomic",
+      "displayName": "评估租赁解除权是否成立",
+      "goal": "拟解除或已收到解除，需判断约定/法定解除；单方",
+      "notFor": [
+        "不发出解除通知"
+      ],
+      "deliverables": [
+        "拟解除或已收到解除，需判断约定/法定解除；单方"
+      ],
+      "path": "skills/评估租赁解除权是否成立",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "房地产与物业导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估租金押金与抵扣",
+      "kind": "atomic",
+      "displayName": "评估租金押金与抵扣",
+      "goal": "欠租、押金扣留、占有使用费；单方",
+      "notFor": [
+        "C 端押金退还只分流"
+      ],
+      "deliverables": [
+        "欠租、押金扣留、占有使用费；单方"
+      ],
+      "path": "skills/评估租金押金与抵扣",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "房地产与物业导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估转租转借与优先承租",
+      "kind": "atomic",
+      "displayName": "评估转租转借与优先承租",
+      "goal": "擅自转租、优先承租或数份租赁争履行；单方",
+      "notFor": [
+        "不写成物权优先"
+      ],
+      "deliverables": [
+        "擅自转租、优先承租或数份租赁争履行；单方"
+      ],
+      "path": "skills/评估转租转借与优先承租",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "房地产与物业导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估经营性装修投入与返还",
+      "kind": "atomic",
+      "displayName": "评估经营性装修投入与返还",
+      "goal": "商铺装修附合、提前解约或到期拆除；承租人或出租人",
+      "notFor": [
+        "违法建设行政处罚转行政"
+      ],
+      "deliverables": [
+        "商铺装修附合、提前解约或到期拆除；承租人或出租人"
+      ],
+      "path": "skills/评估经营性装修投入与返还",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "房地产与物业导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估租赁备案与买卖不破租赁",
+      "kind": "atomic",
+      "displayName": "评估租赁备案与买卖不破租赁",
+      "goal": "所有权变动后承租人要求继续履行；承租人或受让人",
+      "notFor": [
+        "抵押权实现转金融"
+      ],
+      "deliverables": [
+        "所有权变动后承租人要求继续履行；承租人或受让人"
+      ],
+      "path": "skills/评估租赁备案与买卖不破租赁",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "房地产与物业导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估业主大会决议效力",
+      "kind": "atomic",
+      "displayName": "评估业主大会决议效力",
+      "goal": "表决程序、人数面积或决议内容被挑战；业主或业委会",
+      "notFor": [
+        "不代开业主大会"
+      ],
+      "deliverables": [
+        "表决程序、人数面积或决议内容被挑战；业主或业委会"
+      ],
+      "path": "skills/评估业主大会决议效力",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "房地产与物业导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估业委会资格与越权",
+      "kind": "atomic",
+      "displayName": "评估业委会资格与越权",
+      "goal": "业委会任期、备案、越权签约或起诉；单方",
+      "notFor": [
+        "不审理社区行政管理本身"
+      ],
+      "deliverables": [
+        "业委会任期、备案、越权签约或起诉；单方"
+      ],
+      "path": "skills/评估业委会资格与越权",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "房地产与物业导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估共有部分收益与车位",
+      "kind": "atomic",
+      "displayName": "评估共有部分收益与车位",
+      "goal": "车位车库、外墙、会所或共有收益归属；业主或开发商",
+      "notFor": [
+        "规划许可行政诉讼转行政"
+      ],
+      "deliverables": [
+        "车位车库、外墙、会所或共有收益归属；业主或开发商"
+      ],
+      "path": "skills/评估共有部分收益与车位",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "房地产与物业导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估专有部分擅自改建",
+      "kind": "atomic",
+      "displayName": "评估专有部分擅自改建",
+      "goal": "拆承重、占公共通道或改变用途；业主或物业",
+      "notFor": [
+        "违法建设拆除决定转行政"
+      ],
+      "deliverables": [
+        "拆承重、占公共通道或改变用途；业主或物业"
+      ],
+      "path": "skills/评估专有部分擅自改建",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "房地产与物业导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估物业承接查验与移交",
+      "kind": "atomic",
+      "displayName": "评估物业承接查验与移交",
+      "goal": "前期物业交接、资料或共有部位移交不能；业委会或新物业",
+      "notFor": [
+        "工程质量鉴定转工程"
+      ],
+      "deliverables": [
+        "前期物业交接、资料或共有部位移交不能；业委会或新物业"
+      ],
+      "path": "skills/评估物业承接查验与移交",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "房地产与物业导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估专项维修资金使用争议",
+      "kind": "atomic",
+      "displayName": "评估专项维修资金使用争议",
+      "goal": "维修资金列支、表决或挪用；业主或业委会",
+      "notFor": [
+        "不代替维修技术方案"
+      ],
+      "deliverables": [
+        "维修资金列支、表决或挪用；业主或业委会"
+      ],
+      "path": "skills/评估专项维修资金使用争议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "房地产与物业导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估转移预告异议登记路径",
+      "kind": "atomic",
+      "displayName": "评估转移预告异议登记路径",
+      "goal": "需预告、更正或异议登记，或登记失效风险；单方",
+      "notFor": [
+        "登记机构行政诉讼转行政"
+      ],
+      "deliverables": [
+        "需预告、更正或异议登记，或登记失效风险；单方"
+      ],
+      "path": "skills/评估转移预告异议登记路径",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "房地产与物业导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估房屋征收补偿民事请求",
+      "kind": "atomic",
+      "displayName": "评估房屋征收补偿民事请求",
+      "goal": "补偿协议履行、安置房交付或补偿款；被征收人",
+      "notFor": [
+        "征收决定、补偿决定复议诉讼转行政",
+        "C 端拆迁材料只分流"
+      ],
+      "deliverables": [
+        "补偿协议履行、安置房交付或补偿款；被征收人"
+      ],
+      "path": "skills/评估房屋征收补偿民事请求",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "房地产与物业导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估安置房交付与权属",
+      "kind": "atomic",
+      "displayName": "评估安置房交付与权属",
+      "goal": "拆迁安置房逾期交付、面积或权属；安置对象",
+      "notFor": [
+        "征收合法性转行政"
+      ],
+      "deliverables": [
+        "拆迁安置房逾期交付、面积或权属；安置对象"
+      ],
+      "path": "skills/评估安置房交付与权属",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "房地产与物业导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备租赁催告或解除通知",
+      "kind": "atomic",
+      "displayName": "准备租赁催告或解除通知",
+      "goal": "欠租催告、限期腾退或解除租赁；出租人或承租人",
+      "notFor": [
+        "催告与解除不得混成一函充作均已完成"
+      ],
+      "deliverables": [
+        "欠租催告、限期腾退或解除租赁；出租人或承租人"
+      ],
+      "path": "skills/准备租赁催告或解除通知",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "房地产与物业导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备物业费催缴通知",
+      "kind": "atomic",
+      "displayName": "准备物业费催缴通知",
+      "goal": "物业服务人拟催告欠费后再起诉或仲裁；物业服务人",
+      "notFor": [
+        "不保证受理",
+        "不得设计停水电"
+      ],
+      "deliverables": [
+        "物业服务人拟催告欠费后再起诉或仲裁；物业服务人"
+      ],
+      "path": "skills/准备物业费催缴通知",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "房地产与物业导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备对退房或解除通知的异议",
+      "kind": "atomic",
+      "displayName": "准备对退房或解除通知的异议",
+      "goal": "已收到解除或退房通知，需异议或请求确认未解除；相对方",
+      "notFor": [
+        "不产出确认之诉诉状"
+      ],
+      "deliverables": [
+        "已收到解除或退房通知，需异议或请求确认未解除；相对方"
+      ],
+      "path": "skills/准备对退房或解除通知的异议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "房地产与物业导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "测算租金物业费及抵扣",
+      "kind": "atomic",
+      "displayName": "测算租金物业费及抵扣",
+      "goal": "需可复核的租金、占有使用费、物业费、押金抵扣；单方",
+      "notFor": [
+        "不认定欠费已成立"
+      ],
+      "deliverables": [
+        "需可复核的租金、占有使用费、物业费、押金抵扣；单方"
+      ],
+      "path": "skills/测算租金物业费及抵扣",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "房地产与物业导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "保全房屋现场与质量证据",
+      "kind": "atomic",
+      "displayName": "保全房屋现场与质量证据",
+      "goal": "渗漏、空鼓、面积或占有现状可能灭失；单方",
+      "notFor": [
+        "不指导违法取证",
+        "工程现场造价转工程"
+      ],
+      "deliverables": [
+        "渗漏、空鼓、面积或占有现状可能灭失；单方"
+      ],
+      "path": "skills/保全房屋现场与质量证据",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "房地产与物业导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "设计房屋案件通知送达",
+      "kind": "atomic",
+      "displayName": "设计房屋案件通知送达",
+      "goal": "发函前需单独设计送达渠道和到达证据；单方",
+      "notFor": [
+        "不写通知实体内容"
+      ],
+      "deliverables": [
+        "发函前需单独设计送达渠道和到达证据；单方"
+      ],
+      "path": "skills/设计房屋案件通知送达",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "房地产与物业导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备房屋质量面积或价值鉴定",
+      "kind": "atomic",
+      "displayName": "准备房屋质量面积或价值鉴定",
+      "goal": "需鉴定机构确认质量、面积或价值；单方",
+      "notFor": [
+        "不预测鉴定意见",
+        "工程造价鉴定转工程"
+      ],
+      "deliverables": [
+        "需鉴定机构确认质量、面积或价值；单方"
+      ],
+      "path": "skills/准备房屋质量面积或价值鉴定",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "房地产与物业导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估房屋财产保全必要性",
+      "kind": "atomic",
+      "displayName": "评估房屋财产保全必要性",
+      "goal": "担心转移房产或预售资金，尚未决定申请；单方",
+      "notFor": [
+        "不代写申请"
+      ],
+      "deliverables": [
+        "担心转移房产或预售资金，尚未决定申请；单方"
+      ],
+      "path": "skills/评估房屋财产保全必要性",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "房地产与物业导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "起草房屋和解协议",
+      "kind": "atomic",
+      "displayName": "起草房屋和解协议",
+      "goal": "条件已谈拢，需可签协议；单方",
+      "notFor": [
+        "与未争议的补充协议不同",
+        "司法确认另项"
+      ],
+      "deliverables": [
+        "条件已谈拢，需可签协议；单方"
+      ],
+      "path": "skills/起草房屋和解协议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "房地产与物业导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "办理房屋和解执行力补强",
+      "kind": "atomic",
+      "displayName": "办理房屋和解执行力补强",
+      "goal": "需司法确认、仲裁调解书或公证赋强；单方",
+      "notFor": [
+        "单独和解无执行力必须明示"
+      ],
+      "deliverables": [
+        "需司法确认、仲裁调解书或公证赋强；单方"
+      ],
+      "path": "skills/办理房屋和解执行力补强",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "房地产与物业导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "提起房地产仲裁",
+      "kind": "atomic",
+      "displayName": "提起房地产仲裁",
+      "goal": "有效仲裁协议且决定申请；申请方",
+      "notFor": [
+        "与起诉互斥"
+      ],
+      "deliverables": [
+        "有效仲裁协议且决定申请；申请方"
+      ],
+      "path": "skills/提起房地产仲裁",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "房地产与物业导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对房地产仲裁",
+      "kind": "atomic",
+      "displayName": "应对房地产仲裁",
+      "goal": "收到仲裁申请；被申请方",
+      "notFor": [
+        "与申请方材料权限不同"
+      ],
+      "deliverables": [
+        "收到仲裁申请；被申请方"
+      ],
+      "path": "skills/应对房地产仲裁",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "房地产与物业导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备房地产案件庭审",
+      "kind": "atomic",
+      "displayName": "准备房地产案件庭审",
+      "goal": "诉讼或仲裁即将开庭；单方代理",
+      "notFor": [
+        "不代替立案或仅和解"
+      ],
+      "deliverables": [
+        "诉讼或仲裁即将开庭；单方代理"
+      ],
+      "path": "skills/准备房地产案件庭审",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "房地产与物业导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "提起房地产案件上诉",
+      "kind": "atomic",
+      "displayName": "提起房地产案件上诉",
+      "goal": "不服未生效裁判；上诉方",
+      "notFor": [
+        "不重做一审"
+      ],
+      "deliverables": [
+        "不服未生效裁判；上诉方"
+      ],
+      "path": "skills/提起房地产案件上诉",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "房地产与物业导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估房屋纠纷反诉或反请求",
+      "kind": "atomic",
+      "displayName": "评估房屋纠纷反诉或反请求",
+      "goal": "被告拟反诉；被请求方",
+      "notFor": [
+        "不自动生成反诉状终稿"
+      ],
+      "deliverables": [
+        "被告拟反诉；被请求方"
+      ],
+      "path": "skills/评估房屋纠纷反诉或反请求",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "房地产与物业导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备房屋纠纷反诉或仲裁反请求",
+      "kind": "atomic",
+      "displayName": "准备房屋纠纷反诉或仲裁反请求",
+      "goal": "已决定反诉；反诉原告",
+      "notFor": [
+        "与本诉答辩分开验收"
+      ],
+      "deliverables": [
+        "已决定反诉；反诉原告"
+      ],
+      "path": "skills/准备房屋纠纷反诉或仲裁反请求",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "房地产与物业导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "申请物业费或租金支付令",
+      "kind": "atomic",
+      "displayName": "申请物业费或租金支付令",
+      "goal": "金钱给付明确、无对待给付；债权人",
+      "notFor": [
+        "有实质服务抗辩不得包装成支付令"
+      ],
+      "deliverables": [
+        "金钱给付明确、无对待给付；债权人"
+      ],
+      "path": "skills/申请物业费或租金支付令",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "房地产与物业导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "执行房地产生效文书",
+      "kind": "atomic",
+      "displayName": "执行房地产生效文书",
+      "goal": "持判决、调解书、裁决未获过户或付款；权利人",
+      "notFor": [
+        "不重审实体"
+      ],
+      "deliverables": [
+        "持判决、调解书、裁决未获过户或付款；权利人"
+      ],
+      "path": "skills/执行房地产生效文书",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "房地产与物业导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对房地产案件执行",
+      "kind": "atomic",
+      "displayName": "应对房地产案件执行",
+      "goal": "被执行人收到执行；被执行方",
+      "notFor": [
+        "禁止隐匿转移房产"
+      ],
+      "deliverables": [
+        "被执行人收到执行；被执行方"
+      ],
+      "path": "skills/应对房地产案件执行",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "房地产与物业导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    }
+  ],
+  "guideName": "房地产与物业导航"
+}

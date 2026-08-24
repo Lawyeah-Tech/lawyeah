@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估房地产争议期间"
+  short_description: "分类型期间表，禁止混算或输出唯一截止日"
+  default_prompt: "使用 $评估房地产争议期间，在单一立场下分类型核验房地产争议的诉讼时效、除斥和其他法定期间。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "应对房地产仲裁"
+  short_description: "答辩、仲裁协议抗辩、证据"
+  default_prompt: "使用 $应对房地产仲裁，作为被申请方，应对房地产或物业仲裁申请，准备答辩、协议抗辩和证据。"

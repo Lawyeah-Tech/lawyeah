@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备租赁催告或解除通知"
+  short_description: "催告或解除发送前稿、到达设计"
+  default_prompt: "使用 $准备租赁催告或解除通知，作为出租人或承租人，准备房屋租赁催告、限期腾退或解除通知的发送前稿。"

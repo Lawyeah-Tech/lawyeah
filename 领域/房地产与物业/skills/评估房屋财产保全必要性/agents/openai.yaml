@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估财产保全必要性"
+  short_description: "保全条件、担保、风险、时机"
+  default_prompt: "使用 $评估房屋财产保全必要性，在单一立场下评估是否有必要对房产或预售资金申请财产保全，不代写申请。"

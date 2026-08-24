@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估业主大会决议效力"
+  short_description: "共同决定事项、双过半或参与表决规则待核、撤销窗口"
+  default_prompt: "使用 $评估业主大会决议效力，在业主或业委会立场下评估业主大会决议的表决程序、人数面积和内容效力。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "提出管辖异议"
+  short_description: "管辖异议书、连结点证据、逾期风险"
+  default_prompt: "使用 $提出不动产管辖异议，作为被请求方，在法定期限内准备房地产或物业案件的管辖异议材料。"

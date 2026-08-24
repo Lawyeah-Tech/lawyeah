@@ -1,0 +1,4 @@
+interface:
+  display_name: "提起房地产仲裁"
+  short_description: "仲裁申请包、请求、证据目录"
+  default_prompt: "使用 $提起房地产仲裁，作为申请方，在有效仲裁协议下准备房地产或物业争议的仲裁申请包。"

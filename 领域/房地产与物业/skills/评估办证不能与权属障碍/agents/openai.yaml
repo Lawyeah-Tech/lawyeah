@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估办证不能与权属障碍"
+  short_description: "办证违约、超一年解除、协助义务、查封抵押障碍"
+  default_prompt: "使用 $评估办证不能与权属障碍，在买受方立场下评估逾期办证或因出卖人原因无法登记的违约与解除接口。"

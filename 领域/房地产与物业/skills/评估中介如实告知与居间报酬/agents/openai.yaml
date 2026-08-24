@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估中介如实告知与居间报酬"
+  short_description: "如实告知、报酬条件、返还或赔偿"
+  default_prompt: "使用 $评估中介如实告知与居间报酬，在买方、卖方或中介立场下评估房屋居间如实告知义务与报酬、返还或赔偿。"

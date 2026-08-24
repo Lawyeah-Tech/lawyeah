@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估专项维修资金使用争议"
+  short_description: "使用条件、表决、返还或追偿"
+  default_prompt: "使用 $评估专项维修资金使用争议，在业主或业委会立场下评估专项维修资金列支、表决或挪用。"

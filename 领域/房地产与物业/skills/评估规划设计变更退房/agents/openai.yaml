@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估规划设计变更退房"
+  short_description: "变更是否成立、告知、解除或补偿分流"
+  default_prompt: "使用 $评估规划设计变更退房，在买受方立场下评估容积率、楼间距、户型等规划设计变更能否支持退房或补偿。"

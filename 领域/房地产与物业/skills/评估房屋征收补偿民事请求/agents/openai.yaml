@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估房屋征收补偿民事请求"
+  short_description: "协议性质、民事请求边界、行政决定分流"
+  default_prompt: "使用 $评估房屋征收补偿民事请求，在被征收人立场下评估征收补偿协议履行、安置房交付或补偿款的民事请求边界。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估安置房交付与权属"
+  short_description: "安置协议履行、权属、与商品房规则接口"
+  default_prompt: "使用 $评估安置房交付与权属，在安置对象立场下评估拆迁安置房逾期交付、面积或权属。"
