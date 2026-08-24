@@ -773,25 +773,75 @@
       "id": "应对人身损害一审",
       "kind": "atomic",
       "displayName": "应对人身损害一审",
-      "goal": "形成首次应诉答辩包",
+      "goal": "在被告或被诉保险人无冲突立场下形成首次应诉答辩包：期限卡、请求拆解和答辩草稿；不代提交，不保证免于缺席，不写管辖异议或反诉状终稿",
       "notFor": [
-        "劳动应诉",
-        "医疗损害应诉",
-        "主动起诉",
-        "只要管辖异议终稿且无实体"
+        "劳动应诉或工伤待遇应诉",
+        "医疗损害应诉主轴",
+        "主动起诉或起诉状",
+        "只要管辖异议终稿且无实体答辩",
+        "反诉状终稿",
+        "和解协议正文",
+        "唯一答辩截止日",
+        "把驾驶人自认写成保险人自认",
+        "代提交或保证免于缺席",
+        "C端012大众答辩包"
       ],
       "deliverables": [
-        "形成首次应诉答辩包"
+        "文书登记、答辩与管辖异议期限卡、请求拆解、答辩草稿和反诉接口；送达不明则截止日停止；不含管辖异议书和反诉状终稿"
       ],
       "path": "skills/应对人身损害一审",
       "relations": {
         "depends-on": [],
         "related-to": [
-          "人身损害与侵权赔偿导航"
+          "人身损害与侵权赔偿导航",
+          "提起人身损害一审",
+          "提出人身案件管辖异议",
+          "评估人身损害管辖",
+          "评估人身损害诉讼时效",
+          "评估反诉或抵销",
+          "谈判人身损害和解",
+          "起草人身损害和解协议",
+          "测算人身损害赔偿",
+          "建立人身损害证据案卷",
+          "准备人身损害庭审",
+          "保险公司应对直接索赔",
+          "评估过错与原因力",
+          "评估因果关系与既往伤病",
+          "评估责任主体与保险覆盖",
+          "评估道路交通事故责任与保险先行"
         ],
         "excludes": []
       },
-      "mcpDecisionNodes": []
+      "mcpDecisionNodes": [
+        {
+          "id": "verify-defense-rules",
+          "purpose": "核验答辩期间、管辖异议期间、应诉管辖、保险人抗辩和时效等将被写入 L# 的现行规则",
+          "capability": "search_law",
+          "level": "required",
+          "unavailableBehavior": "继续文书登记和请求拆解；期限截止日、应诉管辖效力、保险人抗辩结论和时效字段停止；不得编唯一截止日，不得写成已接受管辖"
+        },
+        {
+          "id": "verify-law-detail",
+          "purpose": "已有真实 regulation_id 时核验将改变期限或应诉管辖结论的条文正文",
+          "capability": "get_law_detail",
+          "level": "optional",
+          "unavailableBehavior": "不得编造 regulation_id；该规则字段保持待核，不把检索摘要条号或技能正文条号写成已核验 L#"
+        },
+        {
+          "id": "verify-defense-practice",
+          "purpose": "发现电子送达、简易程序答辩期和缺席风险实务，不把已读写成送达",
+          "capability": "search_practiced",
+          "level": "recommended",
+          "unavailableBehavior": "继续内置方法；截止日和缺席结论字段停止，不保证免于缺席"
+        },
+        {
+          "id": "borrow-defense-template",
+          "purpose": "只借鉴答辩状栏目，不把范本当现行法或已提交文本",
+          "capability": "search_template",
+          "level": "optional",
+          "unavailableBehavior": "继续按方法节点写栏目；不编造法定格式，不代提交"
+        }
+      ]
     },
     {
       "id": "评估人身损害管辖",
