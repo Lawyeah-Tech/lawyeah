@@ -1,0 +1,4 @@
+interface:
+  display_name: "申请停止处理或删除的行为保全"
+  short_description: "准备停止处理或删除的行为保全申请要点"
+  default_prompt: "使用 $申请停止处理或删除的行为保全，准备申请停止处理或删除的行为保全要点，不保证裁定，财产保全另转。"

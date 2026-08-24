@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估规划环评选址与区域限批"
+  short_description: "判断规划环评、三线一单和选址否决风险"
+  default_prompt: "使用 $评估规划环评选址与区域限批，评估选址是否受规划环评、三线一单或区域限批否决。"

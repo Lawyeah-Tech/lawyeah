@@ -1,0 +1,4 @@
+interface:
+  display_name: "执行海事生效文书"
+  short_description: "申请执行海事判决、调解书或裁决"
+  default_prompt: "使用 $执行海事生效文书，准备本案海事生效文书的执行申请、金额与财产线索。"

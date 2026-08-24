@@ -1,0 +1,4 @@
+interface:
+  display_name: "处理网络产品安全漏洞披露"
+  short_description: "处理漏洞合法披露路径和禁止违规发布"
+  default_prompt: "使用 $处理网络产品安全漏洞披露，处理网络产品安全漏洞的披露路径和时限，不指导利用、不写利用步骤。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备海事反诉"
+  short_description: "准备已决定提出的海事反诉或反请求"
+  default_prompt: "使用 $准备海事反诉，准备本案海事反诉状或仲裁反请求及证据。"

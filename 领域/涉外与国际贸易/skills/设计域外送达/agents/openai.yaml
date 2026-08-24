@@ -1,0 +1,4 @@
+interface:
+  display_name: "设计域外送达"
+  short_description: "设计向境外主体送达诉讼或仲裁文书的条约、外交或约定渠道"
+  default_prompt: "使用 $设计域外送达，设计向境外主体送达诉讼或仲裁文书的渠道和失败升级。"

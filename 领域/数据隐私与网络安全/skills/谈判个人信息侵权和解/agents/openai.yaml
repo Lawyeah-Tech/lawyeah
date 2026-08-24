@@ -1,0 +1,4 @@
+interface:
+  display_name: "谈判个人信息侵权和解"
+  short_description: "谈判个信侵权的删除道歉赔偿和弃权边界"
+  default_prompt: "使用 $谈判个人信息侵权和解，谈判个人信息侵权和解的底线、让步和弃权范围，不输出已签协议。"

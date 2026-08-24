@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备碳排放报告核查异议"
+  short_description: "整理碳排放核查或配额分配异议点与复核路径"
+  default_prompt: "使用 $准备碳排放报告核查异议，整理对碳排放核查报告或配额分配的异议与复核路径。"

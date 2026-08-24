@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估惩罚性赔偿与中介连带"
+  short_description: "判断环境惩罚性赔偿和中介连带是否具备条件"
+  default_prompt: "使用 $评估惩罚性赔偿与中介连带，评估惩罚性赔偿与环评监测运维中介连带条件；不给倍数必得额。"

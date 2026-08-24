@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估环境违法追责时效"
+  short_description: "分账环境违法发生日、终了日和追责时效"
+  default_prompt: "使用 $评估环境违法追责时效，核验环境违法行政处罚追责时效与继续状态。"

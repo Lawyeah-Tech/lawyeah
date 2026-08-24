@@ -1,0 +1,4 @@
+interface:
+  display_name: "起草生态环境损害赔偿协议"
+  short_description: "起草已谈拢条件的生态环境损害赔偿协议草稿"
+  default_prompt: "使用 $起草生态环境损害赔偿协议，根据已谈拢条件起草生态环境损害赔偿协议草稿。"

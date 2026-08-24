@@ -1,0 +1,4 @@
+interface:
+  display_name: "提出环境鉴定异议或重新鉴定"
+  short_description: "整理环境鉴定异议点和重新鉴定材料"
+  default_prompt: "使用 $提出环境鉴定异议或重新鉴定，整理对环境损害鉴定意见的异议点与重新鉴定材料。"

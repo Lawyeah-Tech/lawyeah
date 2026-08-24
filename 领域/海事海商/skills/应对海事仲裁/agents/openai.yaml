@@ -1,0 +1,4 @@
+interface:
+  display_name: "应对海事仲裁"
+  short_description: "准备海事仲裁被申请方答辩与协议抗辩"
+  default_prompt: "使用 $应对海事仲裁，准备本案海事仲裁答辩、仲裁协议抗辩与证据。"

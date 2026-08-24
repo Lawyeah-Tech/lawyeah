@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估进口许可与检验检疫"
+  short_description: "判断进口自动许可、许可证或法检阻碍通关时的类型和补办路径"
+  default_prompt: "使用 $评估进口许可与检验检疫，评估进口许可或检验检疫对通关的阻碍和补办分流。"

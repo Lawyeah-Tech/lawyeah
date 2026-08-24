@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估客户名单是否构成商业秘密"
+  short_description: "剥离公开信息后评估客户名单深度信息是否具备秘密性"
+  default_prompt: "使用 $评估客户名单是否构成商业秘密，评估中国大陆客户名单是否构成商业秘密。"

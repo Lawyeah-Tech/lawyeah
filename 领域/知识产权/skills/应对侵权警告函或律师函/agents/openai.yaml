@@ -1,0 +1,4 @@
+interface:
+  display_name: "应对侵权警告函或律师函"
+  short_description: "组织警告函回复策略与反通知接口，不自认"
+  default_prompt: "使用 $应对侵权警告函或律师函，应对中国大陆侵权警告函或律师函。"

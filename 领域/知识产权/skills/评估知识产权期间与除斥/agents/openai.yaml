@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估知识产权期间与除斥"
+  short_description: "分类型核验时效除斥异议答辩与海关确认期，不混算"
+  default_prompt: "使用 $评估知识产权期间与除斥，分类型核验中国大陆知识产权期间与除斥。"

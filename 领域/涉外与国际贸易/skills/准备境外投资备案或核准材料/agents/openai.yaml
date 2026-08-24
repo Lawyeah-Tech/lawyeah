@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备境外投资备案或核准材料"
+  short_description: "按已定路径准备境外投资备案或核准材料包和补正清单"
+  default_prompt: "使用 $准备境外投资备案或核准材料，按已决定的备案或核准路径准备境外投资申报材料包。"

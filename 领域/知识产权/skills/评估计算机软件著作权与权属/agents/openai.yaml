@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估计算机软件著作权与权属"
+  short_description: "评估软件作品权属与代码对照接口，百分比不定性"
+  default_prompt: "使用 $评估计算机软件著作权与权属，评估中国大陆计算机软件著作权与权属。"

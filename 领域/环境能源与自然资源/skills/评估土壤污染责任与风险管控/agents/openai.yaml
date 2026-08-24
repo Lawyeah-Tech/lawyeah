@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估土壤污染责任与风险管控"
+  short_description: "识别土壤污染责任人并分流管控或修复"
+  default_prompt: "使用 $评估土壤污染责任与风险管控，评估土壤污染责任人、调查阶段和管控或修复分流。"

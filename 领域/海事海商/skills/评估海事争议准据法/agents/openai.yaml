@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估海事争议准据法"
+  short_description: "判断海商法、条约与约定选法的适用范围"
+  default_prompt: "使用 $评估海事争议准据法，评估本案海事争议准据法与强制适用边界。"

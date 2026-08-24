@@ -1,0 +1,4 @@
+interface:
+  display_name: "应对环保督察反馈与整改"
+  short_description: "拆解督察反馈并划定合法整改与报送边界"
+  default_prompt: "使用 $应对环保督察反馈与整改，拆解环保督察反馈并划定合法整改边界。"

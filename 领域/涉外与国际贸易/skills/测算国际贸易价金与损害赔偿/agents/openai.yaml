@@ -1,0 +1,4 @@
+interface:
+  display_name: "测算国际贸易价金与损害赔偿"
+  short_description: "形成可复核的价款、扣减、迟延和损失分项测算，不认定违约已成立"
+  default_prompt: "使用 $测算国际贸易价金与损害赔偿，测算国际贸易价款、质量扣减或损害赔偿。"

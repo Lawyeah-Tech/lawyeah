@@ -1,0 +1,4 @@
+interface:
+  display_name: "建立跨境争议证据案卷"
+  short_description: "形成要件、举证责任、认证和合法补证矩阵"
+  default_prompt: "使用 $建立跨境争议证据与认证案卷，整理跨境或涉外事项的证据与认证案卷。"

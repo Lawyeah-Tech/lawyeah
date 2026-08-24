@@ -1,0 +1,4 @@
+interface:
+  display_name: "提起个人信息民事索赔"
+  short_description: "形成个人信息民事一审起诉状、请求和证据目录"
+  default_prompt: "使用 $提起个人信息民事索赔，准备针对该个人信息处理者的一审起诉包。"

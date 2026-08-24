@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估跨境收付与外汇合规"
+  short_description: "判断跨境收付阻塞的经常或资本项目定性、单证和登记接口"
+  default_prompt: "使用 $评估跨境收付与外汇合规，评估货款或资本项下无法收付的外汇合规原因和补证接口。"

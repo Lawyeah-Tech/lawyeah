@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备商标异议材料"
+  short_description: "在初审公告期内组织异议申请与引证争点，过期停止"
+  default_prompt: "使用 $准备商标异议材料，准备中国大陆商标异议材料。"

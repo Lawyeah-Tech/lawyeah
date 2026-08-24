@@ -1,0 +1,4 @@
+interface:
+  display_name: "应对商标无效宣告"
+  short_description: "组织注册商标应对无效的答辩与除斥抗辩"
+  default_prompt: "使用 $应对商标无效宣告，应对中国大陆商标无效宣告。"

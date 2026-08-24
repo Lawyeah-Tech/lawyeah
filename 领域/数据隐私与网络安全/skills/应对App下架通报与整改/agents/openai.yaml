@@ -1,0 +1,4 @@
+interface:
+  display_name: "应对 App 下架通报与整改"
+  short_description: "对照应用通报问题并准备整改和复测材料接口"
+  default_prompt: "使用 $应对App下架通报与整改，应对应用下架或通报，对照问题、列出整改和复测材料，不写成已通过。"

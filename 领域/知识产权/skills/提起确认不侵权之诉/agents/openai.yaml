@@ -1,0 +1,4 @@
+interface:
+  display_name: "提起确认不侵权之诉"
+  short_description: "在有诉的利益时组织确认不侵权起诉材料"
+  default_prompt: "使用 $提起确认不侵权之诉，提起中国大陆确认不侵权之诉。"

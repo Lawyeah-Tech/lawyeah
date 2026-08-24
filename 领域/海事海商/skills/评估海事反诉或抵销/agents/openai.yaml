@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估海事反诉或抵销"
+  short_description: "判断运费、滞期或碰撞对请求能否反诉或抵销"
+  default_prompt: "使用 $评估海事反诉或抵销，评估本案海事反诉或抵销的条件、牵连与管辖风险。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估承运人免责适航与火灾抗辩"
+  short_description: "判断适航、火灾和其他承运人免责是否立得住"
+  default_prompt: "使用 $评估承运人免责适航与火灾抗辩，评估本案承运人适航、火灾及其他免责抗辩。"

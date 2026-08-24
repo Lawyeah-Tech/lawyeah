@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估许可争议请求与抗辩"
+  short_description: "评估已成争许可范围费用终止与起诉资格"
+  default_prompt: "使用 $评估许可争议请求与抗辩，评估中国大陆知识产权许可争议请求与抗辩。"

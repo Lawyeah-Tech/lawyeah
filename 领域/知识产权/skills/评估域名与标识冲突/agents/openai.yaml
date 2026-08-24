@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估域名与标识冲突"
+  short_description: "评估域名抢注投诉与诉讼分流，不代提交仲裁"
+  default_prompt: "使用 $评估域名与标识冲突，评估中国大陆域名与标识冲突。"

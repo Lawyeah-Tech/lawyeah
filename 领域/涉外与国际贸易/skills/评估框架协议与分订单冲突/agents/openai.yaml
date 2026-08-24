@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估框架协议与分订单冲突"
+  short_description: "判断框架、PI、订单和信用证的效力层级及本约成立节点"
+  default_prompt: "使用 $评估框架协议与分订单冲突，评估框架协议、订单和信用证冲突及本约成立节点。"

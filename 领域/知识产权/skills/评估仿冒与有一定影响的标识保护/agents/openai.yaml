@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估仿冒与有一定影响的标识保护"
+  short_description: "评估有一定影响标识的仿冒混淆，市场秩序主轴转出"
+  default_prompt: "使用 $评估仿冒与有一定影响的标识保护，评估中国大陆仿冒与有一定影响的标识保护。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "应对个人信息民事索赔"
+  short_description: "形成个信民事应诉期限卡、过错举证和答辩草稿"
+  default_prompt: "使用 $应对个人信息民事索赔，准备该个人信息民事索赔的首次应诉包。"

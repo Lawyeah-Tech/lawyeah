@@ -1,0 +1,4 @@
+interface:
+  display_name: "应对商标撤三"
+  short_description: "组织撤三使用证据包与正当理由接口"
+  default_prompt: "使用 $应对商标撤三，应对中国大陆商标撤三。"

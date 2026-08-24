@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备证据保全申请"
+  short_description: "组织账簿模具等证据保全申请范围与担保"
+  default_prompt: "使用 $准备证据保全申请，准备中国大陆知识产权证据保全申请。"

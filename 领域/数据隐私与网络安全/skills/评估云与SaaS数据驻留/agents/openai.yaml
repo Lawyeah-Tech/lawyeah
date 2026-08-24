@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估云与 SaaS 数据驻留"
+  short_description: "评估云服务的数据驻留、运维位置和子处理器"
+  default_prompt: "使用 $评估云与SaaS数据驻留，评估上云或云服务的存储运维位置、子处理器和出境接口，不审查整份云合同。"

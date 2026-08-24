@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估海上货物保险理赔"
+  short_description: "判断海上货物保险是否承保及除外"
+  default_prompt: "使用 $评估海上货物保险理赔，评估本案海上货物保险承保、除外与代位接口。"

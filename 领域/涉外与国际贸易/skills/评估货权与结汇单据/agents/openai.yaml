@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估货权与结汇单据"
+  short_description: "在买卖合同下评估提单、仓单等结汇单据的货权与付款条件"
+  default_prompt: "使用 $评估货权与结汇单据，评估买卖合同下提单或仓单的货权节点、单据瑕疵和付款条件。"

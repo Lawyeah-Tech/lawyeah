@@ -1,0 +1,4 @@
+interface:
+  display_name: "识别跨境主体与签约能力"
+  short_description: "对照跨境签约名、履行名、登记和授权链条并标能力缺口"
+  default_prompt: "使用 $识别跨境主体与签约能力，在单一立场下识别跨境主体同一性、授权链条和签约能力缺口。"

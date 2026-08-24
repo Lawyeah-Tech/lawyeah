@@ -1,0 +1,4 @@
+interface:
+  display_name: "测算污染人身财产损失"
+  short_description: "分项测算污染造成的人身财产损失，不与生态损害加总"
+  default_prompt: "使用 $测算污染人身财产损失，分项测算污染导致的渔损、作物、健康或清理费用。"

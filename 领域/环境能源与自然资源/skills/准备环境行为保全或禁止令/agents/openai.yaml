@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备环境行为保全或禁止令"
+  short_description: "准备停止排污或破坏的行为保全申请，不与财产保全混写"
+  default_prompt: "使用 $准备环境行为保全或禁止令，准备环境行为保全或禁止令申请；不与财产保全混写。"

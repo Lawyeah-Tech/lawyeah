@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估反诉或另行无效对诉讼的影响"
+  short_description: "评估另行无效或确认不侵权反诉对在审诉讼的影响"
+  default_prompt: "使用 $评估反诉或另行无效对诉讼的影响，评估反诉或另行无效对知识产权诉讼的影响。"

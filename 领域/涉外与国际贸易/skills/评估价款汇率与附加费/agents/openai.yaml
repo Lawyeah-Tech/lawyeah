@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估价款汇率与附加费"
+  short_description: "评估跨境价款调价、汇率条款、附加费和已付款分配"
+  default_prompt: "使用 $评估价款汇率与附加费，评估调价、汇率和附加费争执及已付款分配。"

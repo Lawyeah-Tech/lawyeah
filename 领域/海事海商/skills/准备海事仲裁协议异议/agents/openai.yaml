@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备海事仲裁协议异议"
+  short_description: "准备租约或提单仲裁条款的异议材料"
+  default_prompt: "使用 $准备海事仲裁协议异议，准备本案海事仲裁协议无效或不适用的异议材料。"

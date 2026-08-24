@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备平台投诉与通知删除材料"
+  short_description: "组织平台通知删除要素与错误通知风险，不保证下架"
+  default_prompt: "使用 $准备平台投诉与通知删除材料，准备中国大陆平台投诉与通知删除材料。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估扣船必要性与可扣船舶"
+  short_description: "判断应否扣船、扣哪一艘及错误扣船风险"
+  default_prompt: "使用 $评估扣船必要性与可扣船舶，评估本案扣船必要性、可扣船舶、担保与错误扣船风险。"

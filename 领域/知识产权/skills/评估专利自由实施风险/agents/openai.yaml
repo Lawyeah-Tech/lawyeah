@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估专利自由实施风险"
+  short_description: "对照拟实施方案与他人权项的自由实施风险，不作终局"
+  default_prompt: "使用 $评估专利自由实施风险，评估中国大陆专利自由实施风险。"

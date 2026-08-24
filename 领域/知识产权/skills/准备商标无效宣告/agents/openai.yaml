@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备商标无效宣告"
+  short_description: "组织已注册商标无效理由证据和除斥情景"
+  default_prompt: "使用 $准备商标无效宣告，准备中国大陆商标无效宣告框架。"

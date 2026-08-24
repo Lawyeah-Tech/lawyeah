@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估转让权属争议"
+  short_description: "评估转让未登记或一标二卖的效力与对抗"
+  default_prompt: "使用 $评估转让权属争议，评估中国大陆知识产权转让权属争议。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估营销推送与通讯联络"
+  short_description: "评估营销短信外呼推送的同意、退订和频率红旗"
+  default_prompt: "使用 $评估营销推送与通讯联络，评估营销通讯联络是否具备同意或例外，以及退订是否有效。"

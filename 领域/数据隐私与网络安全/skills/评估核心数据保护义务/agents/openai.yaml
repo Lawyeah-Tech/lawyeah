@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估核心数据保护义务"
+  short_description: "标示核心数据红旗和更严格管理接口"
+  default_prompt: "使用 $评估核心数据保护义务，评估可能的核心数据保护义务和停止项，不自行宣布、不定罪。"

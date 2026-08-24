@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估国际货物交付质量数量"
+  short_description: "评估国际货物迟延、短量和质量不符的节点、期间和补救"
+  default_prompt: "使用 $评估国际货物交付质量数量，评估国际货物交付中的迟延、短量或质量不符及补救分流。"

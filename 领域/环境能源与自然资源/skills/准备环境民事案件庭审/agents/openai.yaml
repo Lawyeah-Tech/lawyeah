@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备环境民事案件庭审"
+  short_description: "准备环境民事庭审争点、质证和鉴定询问提纲"
+  default_prompt: "使用 $准备环境民事案件庭审，准备环境污染、公益或生态损害赔偿民事庭审提纲。"

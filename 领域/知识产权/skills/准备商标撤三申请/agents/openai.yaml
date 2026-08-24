@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备商标撤三申请"
+  short_description: "组织连续三年未使用撤销申请与调查边界"
+  default_prompt: "使用 $准备商标撤三申请，准备中国大陆商标撤三申请。"

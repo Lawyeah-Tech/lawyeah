@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估重点排污单位与环境信用"
+  short_description: "判断重点排污单位名录、信用评价和限批影响"
+  default_prompt: "使用 $评估重点排污单位与环境信用，评估重点排污单位名录与环境信用修复路径。"

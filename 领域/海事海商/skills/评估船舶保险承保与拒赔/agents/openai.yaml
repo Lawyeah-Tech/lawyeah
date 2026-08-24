@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估船舶保险承保与拒赔"
+  short_description: "判断船舶保险拒赔、解除或委付"
+  default_prompt: "使用 $评估船舶保险承保与拒赔，评估本案船舶保险承保、拒赔、解除或委付接口。"

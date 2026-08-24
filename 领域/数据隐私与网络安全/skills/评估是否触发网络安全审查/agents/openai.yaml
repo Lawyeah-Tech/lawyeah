@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估是否触发网络安全审查"
+  short_description: "判断关基采购或国外上市是否触发网络安全审查"
+  default_prompt: "使用 $评估是否触发网络安全审查，评估是否触发网络安全审查及暂停风险，不保证结果，证券发行整案转出。"

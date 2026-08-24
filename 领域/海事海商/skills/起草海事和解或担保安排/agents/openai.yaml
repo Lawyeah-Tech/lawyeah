@@ -1,0 +1,4 @@
+interface:
+  display_name: "起草海事和解或担保安排"
+  short_description: "起草已谈拢的海事和解或担保替换文本"
+  default_prompt: "使用 $起草海事和解或担保安排，根据已谈拢条件起草本案海事和解或担保安排文本。"

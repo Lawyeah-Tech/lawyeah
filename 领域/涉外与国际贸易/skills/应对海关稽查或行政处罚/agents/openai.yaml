@@ -1,0 +1,4 @@
+interface:
+  display_name: "应对海关稽查或行政处罚"
+  short_description: "应对海关稽查通知或处罚告知的期限、申辩和救济接口"
+  default_prompt: "使用 $应对海关稽查或行政处罚，应对已收到的海关稽查通知或行政处罚告知。"

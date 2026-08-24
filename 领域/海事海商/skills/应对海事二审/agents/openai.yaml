@@ -1,0 +1,4 @@
+interface:
+  display_name: "应对海事二审"
+  short_description: "准备海事二审答辩与补充证据意见"
+  default_prompt: "使用 $应对海事二审，准备本案海事二审答辩和补充证据意见。"

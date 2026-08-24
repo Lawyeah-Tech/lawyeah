@@ -1,0 +1,1636 @@
+{
+  "schemaVersion": 2,
+  "id": "handle-environment-energy",
+  "displayName": "环境能源与自然资源",
+  "description": "处理中国大陆环境保护监管、能源项目监管和自然资源权利的评估、许可缺口、应急报告、处罚申辩、测算、证据、磋商和环境污染侵权两造的多 Skill 领域包。",
+  "version": "1.0.0",
+  "license": "Apache-2.0",
+  "jurisdiction": "CN-mainland",
+  "contentModel": "multi-skill-progressive-disclosure",
+  "reinstallStrategy": "replace",
+  "scope": {
+    "purpose": "处理环境保护、能源项目、矿产及自然资源权利、监管合规和相关争议。",
+    "inScope": [
+      "环境影响、排污和生态合规",
+      "能源项目和基础设施监管",
+      "矿产、土地之外的自然资源权利",
+      "环境公益、资源和能源争议"
+    ],
+    "outOfScope": [
+      "建设工程施工合同和工程争议",
+      "房地产交易开发运营",
+      "一般行政救济程序",
+      "投资并购交易整体执行"
+    ],
+    "primaryDeliverables": [
+      "环境能源合规意见",
+      "资源权利和项目法律方案",
+      "专项尽调成果",
+      "监管与争议应对成果"
+    ]
+  },
+  "guideSkill": "环境能源与自然资源导航",
+  "mcp": {
+    "contractRange": "0.0"
+  },
+  "skills": [
+    {
+      "id": "环境能源与自然资源导航",
+      "kind": "guide",
+      "displayName": "环境能源与自然资源导航",
+      "goal": "说明领域包的能力、边界和当前原子 Skill 全貌",
+      "notFor": [
+        "直接完成具体法律业务成果"
+      ],
+      "deliverables": [
+        "领域能力定位结果"
+      ],
+      "path": "skills/环境能源与自然资源导航",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "评估环境能源与资源事项",
+          "准备环境行政处罚陈述申辩",
+          "提起环境污染侵权诉讼",
+          "测算生态环境损害与修复费用",
+          "评估矿业权取得变更与争议",
+          "谈判生态环境损害赔偿磋商",
+          "评估环评与排污许可缺口",
+          "应对环境污染侵权诉讼",
+          "建立环境污染与生态损害证据案卷",
+          "准备突发环境事件报告与应急",
+          "评估自行监测与排污数据合规",
+          "评估环境信息公开义务",
+          "评估重点排污单位与环境信用",
+          "评估规划环评选址与区域限批",
+          "评估环评文件失实与中介责任",
+          "应对环保督察反馈与整改",
+          "评估土壤污染责任与风险管控",
+          "评估危险废物全链条合规",
+          "评估噪声恶臭光污染邻避投诉",
+          "评估辐射安全许可与超标",
+          "评估陆源污染海洋责任",
+          "评估第三方治理与设施运维责任",
+          "准备环境合规整改方案",
+          "评估突发环境事件预案与演练",
+          "应对环境现场检查与调查询问",
+          "评估环境违法追责时效",
+          "应对责令改正限制生产停产",
+          "应对按日连续处罚",
+          "准备环境处罚实体复议理由",
+          "准备环境处罚实体诉讼理由",
+          "评估行政拘留与涉嫌犯罪移送",
+          "评估环境污染侵权请求或抗辩",
+          "测算污染人身财产损失",
+          "保全污染现场与监测证据",
+          "准备环境损害司法鉴定申请",
+          "提出环境鉴定异议或重新鉴定",
+          "提起环境民事公益诉讼",
+          "应对环境民事公益诉讼",
+          "起草生态环境损害赔偿协议",
+          "办理生态损害赔偿协议司法确认",
+          "提起生态环境损害赔偿诉讼",
+          "应对生态环境损害赔偿诉讼",
+          "评估惩罚性赔偿与中介连带",
+          "准备环境行为保全或禁止令",
+          "谈判污染侵权和解方案",
+          "准备环境民事案件庭审",
+          "准备探矿权采矿权申请材料",
+          "评估矿业权转让合同与报批",
+          "准备矿业权转让变更报批",
+          "评估矿业权延续注销吊销",
+          "评估取水权与水资源论证",
+          "准备取水许可申请或变更",
+          "评估林草湿占用与资源权利",
+          "评估野生动植物与保护地红线",
+          "评估海域使用权与采砂",
+          "评估矿区生态修复义务",
+          "提起自然资源权利诉讼",
+          "应对自然资源权利诉讼",
+          "评估能源项目核准备案与节能审查",
+          "评估电力市场交易与并网接入",
+          "评估可再生能源消纳补贴与绿证",
+          "评估碳配额履约与交易",
+          "准备碳排放报告核查异议",
+          "评估节能义务与双控考核",
+          "评估油气勘查开采与管道路由",
+          "评估分布式光伏储能氢能接入",
+          "谈判能源监管与补贴结算争议",
+          "分流污染环境罪刑民交叉",
+          "执行生态环境生效文书",
+          "应对生态环境案件执行"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估环境能源与资源事项",
+      "kind": "atomic",
+      "displayName": "评估环境能源与资源事项",
+      "goal": "在单方无冲突立场下形成可决策的环境能源与资源事项总图",
+      "notFor": [
+        "发送版应急报告或陈述申辩",
+        "精算终稿",
+        "诉状或答辩",
+        "工程施工或房地交易主轴"
+      ],
+      "deliverables": [
+        "在单方无冲突立场下形成可决策的环境能源与资源事项总图"
+      ],
+      "path": "skills/评估环境能源与资源事项",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "环境能源与自然资源导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估环评与排污许可缺口",
+      "kind": "atomic",
+      "displayName": "评估环评与排污许可缺口",
+      "goal": "判断环评、三同时和排污许可或登记是否闭合，以及未批先建与无证排污分账",
+      "notFor": [
+        "代做环评报告",
+        "把限期补办写成现行默认",
+        "施工合同价款工期"
+      ],
+      "deliverables": [
+        "判断环评、三同时和排污许可或登记是否闭合，以及未批先建与无证排污分账"
+      ],
+      "path": "skills/评估环评与排污许可缺口",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "环境能源与自然资源导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备突发环境事件报告与应急",
+      "kind": "atomic",
+      "displayName": "准备突发环境事件报告与应急",
+      "goal": "形成依法报告和应急的发送前稿，不倒签不瞒报",
+      "notFor": [
+        "预案评估终稿",
+        "破坏现场取证",
+        "船舶海上事故"
+      ],
+      "deliverables": [
+        "形成依法报告和应急的发送前稿，不倒签不瞒报"
+      ],
+      "path": "skills/准备突发环境事件报告与应急",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "环境能源与自然资源导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备环境行政处罚陈述申辩",
+      "kind": "atomic",
+      "displayName": "准备环境行政处罚陈述申辩",
+      "goal": "形成处罚决定前的陈述申辩或听证意见",
+      "notFor": [
+        "一般复议申请书主成果",
+        "保证免罚",
+        "伪造监测数据抗辩"
+      ],
+      "deliverables": [
+        "形成处罚决定前的陈述申辩或听证意见"
+      ],
+      "path": "skills/准备环境行政处罚陈述申辩",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "环境能源与自然资源导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "测算生态环境损害与修复费用",
+      "kind": "atomic",
+      "displayName": "测算生态环境损害与修复费用",
+      "goal": "形成可复核的修复费用和生态损害分项测算，不认定责任已成立",
+      "notFor": [
+        "私人人身财产损失精算终稿",
+        "唯一必得总额",
+        "策略总图"
+      ],
+      "deliverables": [
+        "形成可复核的修复费用和生态损害分项测算，不认定责任已成立"
+      ],
+      "path": "skills/测算生态环境损害与修复费用",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "环境能源与自然资源导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "建立环境污染与生态损害证据案卷",
+      "kind": "atomic",
+      "displayName": "建立环境污染与生态损害证据案卷",
+      "goal": "形成要件、举证分配、监测鉴定和行政执法证据矩阵",
+      "notFor": [
+        "策略总图",
+        "诉状",
+        "违法取样或调换样品"
+      ],
+      "deliverables": [
+        "形成要件、举证分配、监测鉴定和行政执法证据矩阵"
+      ],
+      "path": "skills/建立环境污染与生态损害证据案卷",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "环境能源与自然资源导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "谈判生态环境损害赔偿磋商",
+      "kind": "atomic",
+      "displayName": "谈判生态环境损害赔偿磋商",
+      "goal": "形成磋商底线、修复方案边界、弃权范围和协议效力提示",
+      "notFor": [
+        "已签字协议正文",
+        "把磋商纪要写成判决",
+        "代行调查权"
+      ],
+      "deliverables": [
+        "形成磋商底线、修复方案边界、弃权范围和协议效力提示"
+      ],
+      "path": "skills/谈判生态环境损害赔偿磋商",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "环境能源与自然资源导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "提起环境污染侵权诉讼",
+      "kind": "atomic",
+      "displayName": "提起环境污染侵权诉讼",
+      "goal": "形成可提交的环境污染私益侵权起诉包",
+      "notFor": [
+        "代提交",
+        "公益诉讼或生态损害赔偿诉讼",
+        "工程施工质量鉴定主轴"
+      ],
+      "deliverables": [
+        "形成可提交的环境污染私益侵权起诉包"
+      ],
+      "path": "skills/提起环境污染侵权诉讼",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "环境能源与自然资源导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对环境污染侵权诉讼",
+      "kind": "atomic",
+      "displayName": "应对环境污染侵权诉讼",
+      "goal": "形成首次应诉答辩包和因果抗辩",
+      "notFor": [
+        "主动起诉",
+        "公益或生态损害赔偿应诉终稿",
+        "劳动应诉"
+      ],
+      "deliverables": [
+        "形成首次应诉答辩包和因果抗辩"
+      ],
+      "path": "skills/应对环境污染侵权诉讼",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "环境能源与自然资源导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估矿业权取得变更与争议",
+      "kind": "atomic",
+      "displayName": "评估矿业权取得变更与争议",
+      "goal": "判断探矿权采矿权状态、转让报批、重叠和争议路径",
+      "notFor": [
+        "矿区土地使用权买卖",
+        "矿山施工合同价款",
+        "保证颁发许可证"
+      ],
+      "deliverables": [
+        "判断探矿权采矿权状态、转让报批、重叠和争议路径"
+      ],
+      "path": "skills/评估矿业权取得变更与争议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "环境能源与自然资源导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估自行监测与排污数据合规",
+      "kind": "atomic",
+      "displayName": "评估自行监测与排污数据合规",
+      "goal": "自动监测、手工监测、执行报告或数据有效性被质疑；排污单位",
+      "notFor": [
+        "不指导改数或关停监控",
+        "涉嫌伪造移送刑民交叉"
+      ],
+      "deliverables": [
+        "自动监测、手工监测、执行报告或数据有效性被质疑；排污单位"
+      ],
+      "path": "skills/评估自行监测与排污数据合规",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "环境能源与自然资源导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估环境信息公开义务",
+      "kind": "atomic",
+      "displayName": "评估环境信息公开义务",
+      "goal": "重点排污单位或依申请公开被投诉、被约谈；披露义务人",
+      "notFor": [
+        "不替代上市公司公告主成果（可标接口）"
+      ],
+      "deliverables": [
+        "重点排污单位或依申请公开被投诉、被约谈；披露义务人"
+      ],
+      "path": "skills/评估环境信息公开义务",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "环境能源与自然资源导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估重点排污单位与环境信用",
+      "kind": "atomic",
+      "displayName": "评估重点排污单位与环境信用",
+      "goal": "名录、信用评价、限批或绿色信贷受阻；生产经营者",
+      "notFor": [
+        "不发放信用修复决定"
+      ],
+      "deliverables": [
+        "名录、信用评价、限批或绿色信贷受阻；生产经营者"
+      ],
+      "path": "skills/评估重点排污单位与环境信用",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "环境能源与自然资源导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估规划环评选址与区域限批",
+      "kind": "atomic",
+      "displayName": "评估规划环评选址与区域限批",
+      "goal": "选址落入保护地、红线、岸线或区域限批；建设单位",
+      "notFor": [
+        "土地出让与规划许可主轴转房地产",
+        "施工图争议转工程"
+      ],
+      "deliverables": [
+        "选址落入保护地、红线、岸线或区域限批；建设单位"
+      ],
+      "path": "skills/评估规划环评选址与区域限批",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "环境能源与自然资源导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估环评文件失实与中介责任",
+      "kind": "atomic",
+      "displayName": "评估环评文件失实与中介责任",
+      "goal": "报告书造假、隐瞒超标或总量；建设单位或环评机构",
+      "notFor": [
+        "不代替刑事责任认定"
+      ],
+      "deliverables": [
+        "报告书造假、隐瞒超标或总量；建设单位或环评机构"
+      ],
+      "path": "skills/评估环评文件失实与中介责任",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "环境能源与自然资源导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对环保督察反馈与整改",
+      "kind": "atomic",
+      "displayName": "应对环保督察反馈与整改",
+      "goal": "中央或省级环保督察点名、交办、反馈；被督察对象",
+      "notFor": [
+        "不指导虚假整改或毁证"
+      ],
+      "deliverables": [
+        "中央或省级环保督察点名、交办、反馈；被督察对象"
+      ],
+      "path": "skills/应对环保督察反馈与整改",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "环境能源与自然资源导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估土壤污染责任与风险管控",
+      "kind": "atomic",
+      "displayName": "评估土壤污染责任与风险管控",
+      "goal": "农用地或建设用地土壤污染调查、管控、修复责任不明；土地使用权人或责任人",
+      "notFor": [
+        "建设用地交易主轴转房地产",
+        "修复工程施工合同转工程"
+      ],
+      "deliverables": [
+        "农用地或建设用地土壤污染调查、管控、修复责任不明；土地使用权人或责任人"
+      ],
+      "path": "skills/评估土壤污染责任与风险管控",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "环境能源与自然资源导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估危险废物全链条合规",
+      "kind": "atomic",
+      "displayName": "评估危险废物全链条合规",
+      "goal": "产生、收集、贮存、转移、利用、处置危废被查或拟安排；产废或经营单位",
+      "notFor": [
+        "不指导无证经营或伪造联单"
+      ],
+      "deliverables": [
+        "产生、收集、贮存、转移、利用、处置危废被查或拟安排；产废或经营单位"
+      ],
+      "path": "skills/评估危险废物全链条合规",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "环境能源与自然资源导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估噪声恶臭光污染邻避投诉",
+      "kind": "atomic",
+      "displayName": "评估噪声恶臭光污染邻避投诉",
+      "goal": "厂界、施工或邻避投诉要定性；排污单位或居民",
+      "notFor": [
+        "施工噪声若主轴是承包合同转工程",
+        "物业投诉转房地产"
+      ],
+      "deliverables": [
+        "厂界、施工或邻避投诉要定性；排污单位或居民"
+      ],
+      "path": "skills/评估噪声恶臭光污染邻避投诉",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "环境能源与自然资源导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估辐射安全许可与超标",
+      "kind": "atomic",
+      "displayName": "评估辐射安全许可与超标",
+      "goal": "射线装置、放射源许可或超标；持证或拟用单位",
+      "notFor": [
+        "医疗损害主轴转医疗",
+        "核设施专项见核能原子"
+      ],
+      "deliverables": [
+        "射线装置、放射源许可或超标；持证或拟用单位"
+      ],
+      "path": "skills/评估辐射安全许可与超标",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "环境能源与自然资源导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估陆源污染海洋责任",
+      "kind": "atomic",
+      "displayName": "评估陆源污染海洋责任",
+      "goal": "岸上排污、倾废入海被追究；陆源排污者",
+      "notFor": [
+        "船舶油污、海上运输转海事"
+      ],
+      "deliverables": [
+        "岸上排污、倾废入海被追究；陆源排污者"
+      ],
+      "path": "skills/评估陆源污染海洋责任",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "环境能源与自然资源导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估第三方治理与设施运维责任",
+      "kind": "atomic",
+      "displayName": "评估第三方治理与设施运维责任",
+      "goal": "委托运营、监测运维或第三方治理后仍超标；委托人或运营人",
+      "notFor": [
+        "纯价款工期质量走工程或合同争议"
+      ],
+      "deliverables": [
+        "委托运营、监测运维或第三方治理后仍超标；委托人或运营人"
+      ],
+      "path": "skills/评估第三方治理与设施运维责任",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "环境能源与自然资源导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备环境合规整改方案",
+      "kind": "atomic",
+      "displayName": "准备环境合规整改方案",
+      "goal": "检查、处罚或督察后要可核验整改；排污单位",
+      "notFor": [
+        "不代替陈述申辩",
+        "不保证免罚"
+      ],
+      "deliverables": [
+        "检查、处罚或督察后要可核验整改；排污单位"
+      ],
+      "path": "skills/准备环境合规整改方案",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "环境能源与自然资源导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估突发环境事件预案与演练",
+      "kind": "atomic",
+      "displayName": "评估突发环境事件预案与演练",
+      "goal": "预案未备案、未演练或风险评估缺失；单位",
+      "notFor": [
+        "不写事故报告终稿"
+      ],
+      "deliverables": [
+        "预案未备案、未演练或风险评估缺失；单位"
+      ],
+      "path": "skills/评估突发环境事件预案与演练",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "环境能源与自然资源导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对环境现场检查与调查询问",
+      "kind": "atomic",
+      "displayName": "应对环境现场检查与调查询问",
+      "goal": "执法检查、采样、询问笔录即将或正在发生；被检查人",
+      "notFor": [
+        "不指导阻碍执法或调换样品"
+      ],
+      "deliverables": [
+        "执法检查、采样、询问笔录即将或正在发生；被检查人"
+      ],
+      "path": "skills/应对环境现场检查与调查询问",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "环境能源与自然资源导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估环境违法追责时效",
+      "kind": "atomic",
+      "displayName": "评估环境违法追责时效",
+      "goal": "单独委托核验处罚是否超过追责时效或是否继续状态；当事人",
+      "notFor": [
+        "禁止把 1996 年调查条款当时效",
+        "未批先建与三同时不得混算"
+      ],
+      "deliverables": [
+        "单独委托核验处罚是否超过追责时效或是否继续状态；当事人"
+      ],
+      "path": "skills/评估环境违法追责时效",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "环境能源与自然资源导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对责令改正限制生产停产",
+      "kind": "atomic",
+      "displayName": "应对责令改正限制生产停产",
+      "goal": "已被责令改正、限制生产、停产整治或关闭；当事人",
+      "notFor": [
+        "一般程序方法转行政",
+        "不指导拒不执行"
+      ],
+      "deliverables": [
+        "已被责令改正、限制生产、停产整治或关闭；当事人"
+      ],
+      "path": "skills/应对责令改正限制生产停产",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "环境能源与自然资源导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对按日连续处罚",
+      "kind": "atomic",
+      "displayName": "应对按日连续处罚",
+      "goal": "拒不改正被按日计罚或面临计罚；当事人",
+      "notFor": [
+        "不把改正承诺写成已经改正"
+      ],
+      "deliverables": [
+        "拒不改正被按日计罚或面临计罚；当事人"
+      ],
+      "path": "skills/应对按日连续处罚",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "环境能源与自然资源导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备环境处罚实体复议理由",
+      "kind": "atomic",
+      "displayName": "准备环境处罚实体复议理由",
+      "goal": "处罚或命令已送达，实体违法要复议理由；当事人",
+      "notFor": [
+        "复议管辖、申请书格式和审理程序转行政领域"
+      ],
+      "deliverables": [
+        "处罚或命令已送达，实体违法要复议理由；当事人"
+      ],
+      "path": "skills/准备环境处罚实体复议理由",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "环境能源与自然资源导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备环境处罚实体诉讼理由",
+      "kind": "atomic",
+      "displayName": "准备环境处罚实体诉讼理由",
+      "goal": "已决定就环境处罚或许可提起行政诉讼，只要实体理由；当事人",
+      "notFor": [
+        "起诉期限计算、管辖、庭审程序转行政"
+      ],
+      "deliverables": [
+        "已决定就环境处罚或许可提起行政诉讼，只要实体理由；当事人"
+      ],
+      "path": "skills/准备环境处罚实体诉讼理由",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "环境能源与自然资源导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估行政拘留与涉嫌犯罪移送",
+      "kind": "atomic",
+      "displayName": "评估行政拘留与涉嫌犯罪移送",
+      "goal": "暗管、伪造数据、无证排污拒不停止等可能拘留或移送；当事人或负责人",
+      "notFor": [
+        "不定罪",
+        "刑事成果转刑事领域"
+      ],
+      "deliverables": [
+        "暗管、伪造数据、无证排污拒不停止等可能拘留或移送；当事人或负责人"
+      ],
+      "path": "skills/评估行政拘留与涉嫌犯罪移送",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "环境能源与自然资源导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估环境污染侵权请求或抗辩",
+      "kind": "atomic",
+      "displayName": "评估环境污染侵权请求或抗辩",
+      "goal": "污染已致人身财产损害，需判断请求或抗辩能否立住；受害人<\\",
+      "notFor": [
+        "无过错、关联性、因果举证、免责减责、惩罚性接口"
+      ],
+      "deliverables": [
+        "污染已致人身财产损害，需判断请求或抗辩能否立住；受害人<\\"
+      ],
+      "path": "skills/评估环境污染侵权请求或抗辩",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "环境能源与自然资源导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "测算污染人身财产损失",
+      "kind": "atomic",
+      "displayName": "测算污染人身财产损失",
+      "goal": "渔损、作物、健康、清理费用需分项数字；受害人<\\",
+      "notFor": [
+        "分项损失、减损、鉴定接口"
+      ],
+      "deliverables": [
+        "渔损、作物、健康、清理费用需分项数字；受害人<\\"
+      ],
+      "path": "skills/测算污染人身财产损失",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "环境能源与自然资源导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "保全污染现场与监测证据",
+      "kind": "atomic",
+      "displayName": "保全污染现场与监测证据",
+      "goal": "水质、土壤、大气或现场可能灭失；单方",
+      "notFor": [
+        "不指导进入危险区或伪造背景值"
+      ],
+      "deliverables": [
+        "水质、土壤、大气或现场可能灭失；单方"
+      ],
+      "path": "skills/保全污染现场与监测证据",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "环境能源与自然资源导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备环境损害司法鉴定申请",
+      "kind": "atomic",
+      "displayName": "准备环境损害司法鉴定申请",
+      "goal": "需鉴定机构确认污染、因果或修复费用；单方",
+      "notFor": [
+        "不预测鉴定意见",
+        "工程造价鉴定转工程"
+      ],
+      "deliverables": [
+        "需鉴定机构确认污染、因果或修复费用；单方"
+      ],
+      "path": "skills/准备环境损害司法鉴定申请",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "环境能源与自然资源导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "提出环境鉴定异议或重新鉴定",
+      "kind": "atomic",
+      "displayName": "提出环境鉴定异议或重新鉴定",
+      "goal": "鉴定意见作出后不服；单方",
+      "notFor": [
+        "不重做鉴定意见"
+      ],
+      "deliverables": [
+        "鉴定意见作出后不服；单方"
+      ],
+      "path": "skills/提出环境鉴定异议或重新鉴定",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "环境能源与自然资源导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "提起环境民事公益诉讼",
+      "kind": "atomic",
+      "displayName": "提起环境民事公益诉讼",
+      "goal": "社会组织或检察机关接口已决定提起公益诉讼；原告代理人",
+      "notFor": [
+        "不冒充检察机关",
+        "生态损害赔偿权利人诉讼另项"
+      ],
+      "deliverables": [
+        "社会组织或检察机关接口已决定提起公益诉讼；原告代理人"
+      ],
+      "path": "skills/提起环境民事公益诉讼",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "环境能源与自然资源导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对环境民事公益诉讼",
+      "kind": "atomic",
+      "displayName": "应对环境民事公益诉讼",
+      "goal": "已被公益诉讼起诉；被告",
+      "notFor": [
+        "与私益应诉、生态损害赔偿应诉分开"
+      ],
+      "deliverables": [
+        "已被公益诉讼起诉；被告"
+      ],
+      "path": "skills/应对环境民事公益诉讼",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "环境能源与自然资源导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "起草生态环境损害赔偿协议",
+      "kind": "atomic",
+      "displayName": "起草生态环境损害赔偿协议",
+      "goal": "条件已谈拢，需可签协议；单方",
+      "notFor": [
+        "司法确认另项"
+      ],
+      "deliverables": [
+        "条件已谈拢，需可签协议；单方"
+      ],
+      "path": "skills/起草生态环境损害赔偿协议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "环境能源与自然资源导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "办理生态损害赔偿协议司法确认",
+      "kind": "atomic",
+      "displayName": "办理生态损害赔偿协议司法确认",
+      "goal": "需司法确认增强执行力；单方",
+      "notFor": [
+        "单独协议无执行力必须明示"
+      ],
+      "deliverables": [
+        "需司法确认增强执行力；单方"
+      ],
+      "path": "skills/办理生态损害赔偿协议司法确认",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "环境能源与自然资源导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "提起生态环境损害赔偿诉讼",
+      "kind": "atomic",
+      "displayName": "提起生态环境损害赔偿诉讼",
+      "goal": "磋商不成或依法可诉，权利人指定部门拟起诉；原告代理人",
+      "notFor": [
+        "与公益诉讼、私益侵权诉讼不同"
+      ],
+      "deliverables": [
+        "磋商不成或依法可诉，权利人指定部门拟起诉；原告代理人"
+      ],
+      "path": "skills/提起生态环境损害赔偿诉讼",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "环境能源与自然资源导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对生态环境损害赔偿诉讼",
+      "kind": "atomic",
+      "displayName": "应对生态环境损害赔偿诉讼",
+      "goal": "已被省政府或市政府指定部门起诉；被告",
+      "notFor": [
+        "磋商阶段不写应诉终稿"
+      ],
+      "deliverables": [
+        "已被省政府或市政府指定部门起诉；被告"
+      ],
+      "path": "skills/应对生态环境损害赔偿诉讼",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "环境能源与自然资源导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估惩罚性赔偿与中介连带",
+      "kind": "atomic",
+      "displayName": "评估惩罚性赔偿与中介连带",
+      "goal": "拟主张或抗辩惩罚性、环评监测运维连带；单方",
+      "notFor": [
+        "不给倍数必得额"
+      ],
+      "deliverables": [
+        "拟主张或抗辩惩罚性、环评监测运维连带；单方"
+      ],
+      "path": "skills/评估惩罚性赔偿与中介连带",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "环境能源与自然资源导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备环境行为保全或禁止令",
+      "kind": "atomic",
+      "displayName": "准备环境行为保全或禁止令",
+      "goal": "需立即停止排污或破坏；申请方",
+      "notFor": [
+        "不保证裁定",
+        "不与财产保全混写"
+      ],
+      "deliverables": [
+        "需立即停止排污或破坏；申请方"
+      ],
+      "path": "skills/准备环境行为保全或禁止令",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "环境能源与自然资源导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "谈判污染侵权和解方案",
+      "kind": "atomic",
+      "displayName": "谈判污染侵权和解方案",
+      "goal": "私益污染仍可谈；单方",
+      "notFor": [
+        "不替代已签字协议审查"
+      ],
+      "deliverables": [
+        "私益污染仍可谈；单方"
+      ],
+      "path": "skills/谈判污染侵权和解方案",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "环境能源与自然资源导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备环境民事案件庭审",
+      "kind": "atomic",
+      "displayName": "准备环境民事案件庭审",
+      "goal": "侵权、公益或生态损害赔偿已开庭或即将开庭；单方代理",
+      "notFor": [
+        "不代替立案"
+      ],
+      "deliverables": [
+        "侵权、公益或生态损害赔偿已开庭或即将开庭；单方代理"
+      ],
+      "path": "skills/准备环境民事案件庭审",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "环境能源与自然资源导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备探矿权采矿权申请材料",
+      "kind": "atomic",
+      "displayName": "准备探矿权采矿权申请材料",
+      "goal": "已决定申请新设或延续；申请人",
+      "notFor": [
+        "不保证颁发许可证"
+      ],
+      "deliverables": [
+        "已决定申请新设或延续；申请人"
+      ],
+      "path": "skills/准备探矿权采矿权申请材料",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "环境能源与自然资源导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估矿业权转让合同与报批",
+      "kind": "atomic",
+      "displayName": "评估矿业权转让合同与报批",
+      "goal": "转让已签或拟签，报批未定；转让人或受让人",
+      "notFor": [
+        "未成争改合同走审查起草（搁置）"
+      ],
+      "deliverables": [
+        "转让已签或拟签，报批未定；转让人或受让人"
+      ],
+      "path": "skills/评估矿业权转让合同与报批",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "环境能源与自然资源导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备矿业权转让变更报批",
+      "kind": "atomic",
+      "displayName": "准备矿业权转让变更报批",
+      "goal": "已决定报批变更登记；单方",
+      "notFor": [
+        "未经批准不得写成已变更"
+      ],
+      "deliverables": [
+        "已决定报批变更登记；单方"
+      ],
+      "path": "skills/准备矿业权转让变更报批",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "环境能源与自然资源导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估矿业权延续注销吊销",
+      "kind": "atomic",
+      "displayName": "评估矿业权延续注销吊销",
+      "goal": "许可证到期、责令改正未改或拟被吊销；权利人",
+      "notFor": [
+        "不指导抢采"
+      ],
+      "deliverables": [
+        "许可证到期、责令改正未改或拟被吊销；权利人"
+      ],
+      "path": "skills/评估矿业权延续注销吊销",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "环境能源与自然资源导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估取水权与水资源论证",
+      "kind": "atomic",
+      "displayName": "评估取水权与水资源论证",
+      "goal": "取水许可、水量、退水或转让争议；取水人或相对人",
+      "notFor": [
+        "供水买卖主轴可交合同争议"
+      ],
+      "deliverables": [
+        "取水许可、水量、退水或转让争议；取水人或相对人"
+      ],
+      "path": "skills/评估取水权与水资源论证",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "环境能源与自然资源导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备取水许可申请或变更",
+      "kind": "atomic",
+      "displayName": "准备取水许可申请或变更",
+      "goal": "已决定申请或变更取水；申请人",
+      "notFor": [
+        "不保证许可"
+      ],
+      "deliverables": [
+        "已决定申请或变更取水；申请人"
+      ],
+      "path": "skills/准备取水许可申请或变更",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "环境能源与自然资源导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估林草湿占用与资源权利",
+      "kind": "atomic",
+      "displayName": "评估林草湿占用与资源权利",
+      "goal": "占用林地草地湿地、采伐或流转；使用权人或建设单位",
+      "notFor": [
+        "农村土地承包流转只分流",
+        "房地开发主轴转房地产"
+      ],
+      "deliverables": [
+        "占用林地草地湿地、采伐或流转；使用权人或建设单位"
+      ],
+      "path": "skills/评估林草湿占用与资源权利",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "环境能源与自然资源导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估野生动植物与保护地红线",
+      "kind": "atomic",
+      "displayName": "评估野生动植物与保护地红线",
+      "goal": "保护地、红线、禁猎或栖息地破坏；建设单位或被查处人",
+      "notFor": [
+        "不定罪"
+      ],
+      "deliverables": [
+        "保护地、红线、禁猎或栖息地破坏；建设单位或被查处人"
+      ],
+      "path": "skills/评估野生动植物与保护地红线",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "环境能源与自然资源导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估海域使用权与采砂",
+      "kind": "atomic",
+      "displayName": "评估海域使用权与采砂",
+      "goal": "海域使用权取得、变更或违法采砂；权利人或被查处人",
+      "notFor": [
+        "船舶作业事故转海事"
+      ],
+      "deliverables": [
+        "海域使用权取得、变更或违法采砂；权利人或被查处人"
+      ],
+      "path": "skills/评估海域使用权与采砂",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "环境能源与自然资源导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估矿区生态修复义务",
+      "kind": "atomic",
+      "displayName": "评估矿区生态修复义务",
+      "goal": "在产、转让后或历史遗留矿区修复责任；采矿权人或政府接口",
+      "notFor": [
+        "修复工程施工合同转工程"
+      ],
+      "deliverables": [
+        "在产、转让后或历史遗留矿区修复责任；采矿权人或政府接口"
+      ],
+      "path": "skills/评估矿区生态修复义务",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "环境能源与自然资源导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "提起自然资源权利诉讼",
+      "kind": "atomic",
+      "displayName": "提起自然资源权利诉讼",
+      "goal": "已决定就矿业权、取水权等起诉；原告",
+      "notFor": [
+        "土地承包、房地权属转对应领域"
+      ],
+      "deliverables": [
+        "已决定就矿业权、取水权等起诉；原告"
+      ],
+      "path": "skills/提起自然资源权利诉讼",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "环境能源与自然资源导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对自然资源权利诉讼",
+      "kind": "atomic",
+      "displayName": "应对自然资源权利诉讼",
+      "goal": "已收到起诉；被告",
+      "notFor": [
+        "与环境侵权应诉不同"
+      ],
+      "deliverables": [
+        "已收到起诉；被告"
+      ],
+      "path": "skills/应对自然资源权利诉讼",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "环境能源与自然资源导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估能源项目核准备案与节能审查",
+      "kind": "atomic",
+      "displayName": "评估能源项目核准备案与节能审查",
+      "goal": "火电、风光、水电、储能等项目核准/备案或节能审查受阻；投资人",
+      "notFor": [
+        "施工总承包争议转工程",
+        "用地转房地产"
+      ],
+      "deliverables": [
+        "火电、风光、水电、储能等项目核准/备案或节能审查受阻；投资人"
+      ],
+      "path": "skills/评估能源项目核准备案与节能审查",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "环境能源与自然资源导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估电力市场交易与并网接入",
+      "kind": "atomic",
+      "displayName": "评估电力市场交易与并网接入",
+      "goal": "并网、市场交易、电费结算或强制收购争议；发电或售电主体",
+      "notFor": [
+        "一般购售电合同无监管争点可交合同争议"
+      ],
+      "deliverables": [
+        "并网、市场交易、电费结算或强制收购争议；发电或售电主体"
+      ],
+      "path": "skills/评估电力市场交易与并网接入",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "环境能源与自然资源导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估可再生能源消纳补贴与绿证",
+      "kind": "atomic",
+      "displayName": "评估可再生能源消纳补贴与绿证",
+      "goal": "补贴拖欠、绿证或消纳责任争议；发电企业或消纳义务主体",
+      "notFor": [
+        "不保证财政拨款时点"
+      ],
+      "deliverables": [
+        "补贴拖欠、绿证或消纳责任争议；发电企业或消纳义务主体"
+      ],
+      "path": "skills/评估可再生能源消纳补贴与绿证",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "环境能源与自然资源导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估碳配额履约与交易",
+      "kind": "atomic",
+      "displayName": "评估碳配额履约与交易",
+      "goal": "控排企业配额缺口、清缴或交易争议；控排单位",
+      "notFor": [
+        "不预测碳价"
+      ],
+      "deliverables": [
+        "控排企业配额缺口、清缴或交易争议；控排单位"
+      ],
+      "path": "skills/评估碳配额履约与交易",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "环境能源与自然资源导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备碳排放报告核查异议",
+      "kind": "atomic",
+      "displayName": "准备碳排放报告核查异议",
+      "goal": "核查报告或配额分配不服；控排单位",
+      "notFor": [
+        "不伪造排放数据"
+      ],
+      "deliverables": [
+        "核查报告或配额分配不服；控排单位"
+      ],
+      "path": "skills/准备碳排放报告核查异议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "环境能源与自然资源导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估节能义务与双控考核",
+      "kind": "atomic",
+      "displayName": "评估节能义务与双控考核",
+      "goal": "节能监察、限额或考核问责；用能单位",
+      "notFor": [
+        "固定资产投资节能审查与项目核准分列"
+      ],
+      "deliverables": [
+        "节能监察、限额或考核问责；用能单位"
+      ],
+      "path": "skills/评估节能义务与双控考核",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "环境能源与自然资源导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估油气勘查开采与管道路由",
+      "kind": "atomic",
+      "displayName": "评估油气勘查开采与管道路由",
+      "goal": "油气矿业权、管线路由或保护；权利人或沿线权利人",
+      "notFor": [
+        "管道施工合同转工程",
+        "征地转房地产/征收分流"
+      ],
+      "deliverables": [
+        "油气矿业权、管线路由或保护；权利人或沿线权利人"
+      ],
+      "path": "skills/评估油气勘查开采与管道路由",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "环境能源与自然资源导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估分布式光伏储能氢能接入",
+      "kind": "atomic",
+      "displayName": "评估分布式光伏储能氢能接入",
+      "goal": "屋顶光伏、储能、氢能项目接入或备案；投资人",
+      "notFor": [
+        "屋顶租赁主轴可交合同或房地产"
+      ],
+      "deliverables": [
+        "屋顶光伏、储能、氢能项目接入或备案；投资人"
+      ],
+      "path": "skills/评估分布式光伏储能氢能接入",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "环境能源与自然资源导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "谈判能源监管与补贴结算争议",
+      "kind": "atomic",
+      "displayName": "谈判能源监管与补贴结算争议",
+      "goal": "监管约谈或补贴结算仍可谈；单方",
+      "notFor": [
+        "不替代处罚申辩"
+      ],
+      "deliverables": [
+        "监管约谈或补贴结算仍可谈；单方"
+      ],
+      "path": "skills/谈判能源监管与补贴结算争议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "环境能源与自然资源导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "分流污染环境罪刑民交叉",
+      "kind": "atomic",
+      "displayName": "分流污染环境罪刑民交叉",
+      "goal": "出现污染环境罪、非法处置危废、伪造监测数据迹象；单方",
+      "notFor": [
+        "不定罪",
+        "辩护或控告转刑事"
+      ],
+      "deliverables": [
+        "出现污染环境罪、非法处置危废、伪造监测数据迹象；单方"
+      ],
+      "path": "skills/分流污染环境罪刑民交叉",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "环境能源与自然资源导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "执行生态环境生效文书",
+      "kind": "atomic",
+      "displayName": "执行生态环境生效文书",
+      "goal": "持修复或赔偿生效文书未获履行；权利人",
+      "notFor": [
+        "不重审实体"
+      ],
+      "deliverables": [
+        "持修复或赔偿生效文书未获履行；权利人"
+      ],
+      "path": "skills/执行生态环境生效文书",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "环境能源与自然资源导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对生态环境案件执行",
+      "kind": "atomic",
+      "displayName": "应对生态环境案件执行",
+      "goal": "被执行修复或巨额赔偿；被执行人",
+      "notFor": [
+        "禁止隐匿转移、破坏修复现场"
+      ],
+      "deliverables": [
+        "被执行修复或巨额赔偿；被执行人"
+      ],
+      "path": "skills/应对生态环境案件执行",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "环境能源与自然资源导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    }
+  ],
+  "guideName": "环境能源与自然资源导航"
+}

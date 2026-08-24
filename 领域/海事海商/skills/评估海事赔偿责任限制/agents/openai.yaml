@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估海事赔偿责任限制"
+  short_description: "判断海事赔偿责任限制权利与除外"
+  default_prompt: "使用 $评估海事赔偿责任限制，评估本案可否援引海事赔偿责任限制及除外、丧失条件。"

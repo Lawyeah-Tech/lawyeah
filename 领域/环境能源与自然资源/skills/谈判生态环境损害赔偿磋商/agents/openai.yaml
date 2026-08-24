@@ -1,0 +1,4 @@
+interface:
+  display_name: "谈判生态环境损害赔偿磋商"
+  short_description: "形成磋商底线、修复边界和协议效力提示"
+  default_prompt: "使用 $谈判生态环境损害赔偿磋商，为生态环境损害赔偿磋商准备单方方案。"

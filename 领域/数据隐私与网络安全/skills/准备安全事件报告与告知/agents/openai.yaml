@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备安全事件报告与告知"
+  short_description: "形成向主管部门报告或通知个人的发送前稿"
+  default_prompt: "使用 $准备安全事件报告与告知，起草该数据安全事件的发送前报告或告知。"

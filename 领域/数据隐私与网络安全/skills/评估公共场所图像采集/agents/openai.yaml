@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估公共场所图像采集"
+  short_description: "评估公共场所摄像头的提示、目的限制和对外提供"
+  default_prompt: "使用 $评估公共场所图像采集，评估楼宇商场社区等公共场所图像采集的合法性和对外提供限制。"

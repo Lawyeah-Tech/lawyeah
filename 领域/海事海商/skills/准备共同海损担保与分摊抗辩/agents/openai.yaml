@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备共同海损担保与分摊抗辩"
+  short_description: "准备共同海损担保或分摊抗辩"
+  default_prompt: "使用 $准备共同海损担保与分摊抗辩，准备本案共同海损担保方案或分摊抗辩。"

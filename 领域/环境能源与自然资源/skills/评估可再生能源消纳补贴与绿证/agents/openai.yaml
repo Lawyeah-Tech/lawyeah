@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估可再生能源消纳补贴与绿证"
+  short_description: "判断可再生能源补贴资格、绿证和消纳责任"
+  default_prompt: "使用 $评估可再生能源消纳补贴与绿证，评估可再生能源补贴资格、绿证与消纳责任；不保证拨款时点。"

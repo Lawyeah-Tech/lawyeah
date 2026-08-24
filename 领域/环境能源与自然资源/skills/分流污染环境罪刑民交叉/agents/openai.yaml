@@ -1,0 +1,4 @@
+interface:
+  display_name: "分流污染环境罪刑民交叉"
+  short_description: "分流污染环境刑民行程序并列出必须停止的事项"
+  default_prompt: "使用 $分流污染环境罪刑民交叉，分流污染环境、非法处置危废或伪造监测数据的刑民行边界；不定罪。"

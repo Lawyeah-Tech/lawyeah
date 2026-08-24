@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估提单效力转让与物权凭证功能"
+  short_description: "判断提单是否正本、是否转让及物权凭证功能"
+  default_prompt: "使用 $评估提单效力转让与物权凭证功能，评估本案提单效力、转让链条与物权凭证功能。"

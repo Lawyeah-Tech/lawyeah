@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估仲裁反请求"
+  short_description: "评估涉外仲裁反请求的协议覆盖、期限和草案边界"
+  default_prompt: "使用 $评估仲裁反请求，评估在涉外仲裁中提出反请求的条件、期限和草案。"

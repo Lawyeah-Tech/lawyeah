@@ -1,0 +1,4 @@
+interface:
+  display_name: "应对不可靠实体清单"
+  short_description: "应对不可靠实体清单的措施范围、改正期限和移出接口"
+  default_prompt: "使用 $应对不可靠实体清单，评估己方或相对方被列入不可靠实体清单后的措施、期限和移出接口。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估林草湿占用与资源权利"
+  short_description: "判断林地草地湿地占用许可、补偿和恢复义务"
+  default_prompt: "使用 $评估林草湿占用与资源权利，评估林草湿占用许可、补偿、恢复与权利冲突。"

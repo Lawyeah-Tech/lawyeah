@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备商标驳回复审材料"
+  short_description: "组织商标驳回复审理由证据和期限卡，不预测审定"
+  default_prompt: "使用 $准备商标驳回复审材料，准备中国大陆商标驳回复审材料框架。"

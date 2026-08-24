@@ -1,0 +1,1611 @@
+{
+  "schemaVersion": 2,
+  "id": "handle-cross-border-trade",
+  "displayName": "涉外与国际贸易",
+  "description": "处理跨法域经营、国际贸易、跨境投资监管、贸易管制和涉外争议协调的多 Skill 领域包。",
+  "version": "1.0.0",
+  "license": "Apache-2.0",
+  "jurisdiction": "CN-mainland",
+  "contentModel": "multi-skill-progressive-disclosure",
+  "reinstallStrategy": "replace",
+  "scope": {
+    "purpose": "处理跨法域经营、国际贸易、跨境投资监管、贸易管制和涉外争议协调。",
+    "inScope": [
+      "跨境交易与境外投资协调",
+      "国际货物和服务贸易",
+      "出口管制、制裁和贸易救济",
+      "涉外诉讼仲裁与跨法域执行"
+    ],
+    "outOfScope": [
+      "境内投资并购交易主体工作",
+      "纯跨境税务专项成果",
+      "海上运输、船舶和海事保险专门事项"
+    ],
+    "primaryDeliverables": [
+      "跨境交易法律方案",
+      "国际贸易文件与合规意见",
+      "贸易管制应对方案",
+      "涉外争议协调成果"
+    ]
+  },
+  "guideSkill": "涉外与国际贸易导航",
+  "mcp": {
+    "contractRange": "0.0"
+  },
+  "skills": [
+    {
+      "id": "涉外与国际贸易导航",
+      "kind": "guide",
+      "displayName": "涉外与国际贸易导航",
+      "goal": "说明领域包的能力、边界和当前原子 Skill 全貌",
+      "notFor": [
+        "直接完成具体法律业务成果"
+      ],
+      "deliverables": [
+        "领域能力定位结果"
+      ],
+      "path": "skills/涉外与国际贸易导航",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "应对中国涉外仲裁",
+          "申请承认和执行外国仲裁裁决",
+          "准备国际贸易催告或补救通知",
+          "评估外商准入与安全审查",
+          "测算国际贸易价金与损害赔偿",
+          "建立跨境争议证据与认证案卷",
+          "提起中国涉外仲裁",
+          "评估涉外管辖与仲裁协议",
+          "评估出口管制与制裁风险",
+          "评估跨境事项总图",
+          "评估准据法与强制性规范",
+          "识别跨境主体与签约能力",
+          "规划公证认证与附加证明书",
+          "评估强制性规范与公共秩序",
+          "评估涉港澳台法域与文书",
+          "评估作准文本与译文冲突",
+          "筛查跨境委托与当地执业限制",
+          "评估境外投资监管准入",
+          "准备境外投资备案或核准材料",
+          "准备外商投资信息报告材料",
+          "评估外商投资安全审查",
+          "评估返程投资与协议控制监管",
+          "评估跨境担保与内保外贷监管",
+          "评估国际货物交付质量数量",
+          "评估贸易术语风险费用分界",
+          "评估信用证不符点与拒付",
+          "评估独立保函与备用信用证",
+          "评估跨境服务贸易履行",
+          "评估检验与索赔期间",
+          "评估价款汇率与附加费",
+          "评估不可抗力禁运与履行不能",
+          "评估货权与结汇单据",
+          "评估国际贸易解除权",
+          "处理解除后返还仓储与结算",
+          "评估框架协议与分订单冲突",
+          "准备两用物项或出口许可材料",
+          "应对出口管制问询或调查",
+          "评估归类估价与原产地",
+          "应对海关稽查或行政处罚",
+          "评估进口许可与检验检疫",
+          "评估技术进出口监管",
+          "筛查交易对手与最终用户",
+          "评估反制裁与阻断义务",
+          "应对不可靠实体清单",
+          "评估反倾销反补贴保障措施风险",
+          "准备贸易救济应诉材料",
+          "准备贸易救济申请材料",
+          "评估规避贸易救济与原产地风险",
+          "评估跨境收付与外汇合规",
+          "评估贸易融资单据争议",
+          "准备国际贸易解除通知",
+          "准备质量数量索赔通知",
+          "设计域外送达",
+          "规划域外取证与公证认证",
+          "保全货物检验与电子通信证据",
+          "谈判跨境争议和解方案",
+          "起草跨境和解协议",
+          "提起中国法院涉外民事诉讼",
+          "申请承认和执行外国法院判决",
+          "申请涉外或仲裁保全",
+          "申请撤销涉外仲裁裁决",
+          "申请不予执行涉外或外国裁决",
+          "应对中国法院涉外民事诉讼",
+          "提出涉外管辖异议",
+          "应对承认执行外国裁决或判决",
+          "应对涉外保全裁定",
+          "评估仲裁反请求",
+          "评估境外用工当地法与派遣准入"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估跨境事项总图",
+      "kind": "atomic",
+      "displayName": "评估跨境事项总图",
+      "goal": "在单方无冲突立场下形成可决策的跨境交易或涉外争议总图",
+      "notFor": [
+        "发送版催告或解除函",
+        "许可或安全审查申报终稿",
+        "仲裁申请或应诉",
+        "境内并购交易文件"
+      ],
+      "deliverables": [
+        "在单方无冲突立场下形成可决策的跨境交易或涉外争议总图"
+      ],
+      "path": "skills/评估跨境事项总图",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "涉外与国际贸易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估涉外管辖与仲裁协议",
+      "kind": "atomic",
+      "displayName": "评估涉外管辖与仲裁协议",
+      "goal": "判断去法院还是仲裁，以及协议是否绊住诉讼",
+      "notFor": [
+        "完整立案包",
+        "过期后赶写管辖异议书",
+        "海事专属或劳动仲裁"
+      ],
+      "deliverables": [
+        "判断去法院还是仲裁，以及协议是否绊住诉讼"
+      ],
+      "path": "skills/评估涉外管辖与仲裁协议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "涉外与国际贸易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估出口管制与制裁风险",
+      "kind": "atomic",
+      "displayName": "评估出口管制与制裁风险",
+      "goal": "判断物项、最终用户、清单和许可是否挡住交易，并标出反制裁冲突",
+      "notFor": [
+        "许可申请终稿",
+        "规避许可或改名绕名单",
+        "走私辩护"
+      ],
+      "deliverables": [
+        "判断物项、最终用户、清单和许可是否挡住交易，并标出反制裁冲突"
+      ],
+      "path": "skills/评估出口管制与制裁风险",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "涉外与国际贸易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估外商准入与安全审查",
+      "kind": "atomic",
+      "displayName": "评估外商准入与安全审查",
+      "goal": "对照负面清单和安全审查门槛，给出能否实施投资的条件性结论",
+      "notFor": [
+        "股权买卖或交割文件",
+        "经营者集中申报",
+        "境内并购交易主体"
+      ],
+      "deliverables": [
+        "对照负面清单和安全审查门槛，给出能否实施投资的条件性结论"
+      ],
+      "path": "skills/评估外商准入与安全审查",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "涉外与国际贸易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备国际贸易催告或补救通知",
+      "kind": "atomic",
+      "displayName": "准备国际贸易催告或补救通知",
+      "goal": "形成仍要对方履行或补救的发送前催告和跨境送达留痕",
+      "notFor": [
+        "解除通知",
+        "索赔精算终稿",
+        "海事货损函"
+      ],
+      "deliverables": [
+        "形成仍要对方履行或补救的发送前催告和跨境送达留痕"
+      ],
+      "path": "skills/准备国际贸易催告或补救通知",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "涉外与国际贸易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "测算国际贸易价金与损害赔偿",
+      "kind": "atomic",
+      "displayName": "测算国际贸易价金与损害赔偿",
+      "goal": "形成可复核的分项测算，不认定违约已成立",
+      "notFor": [
+        "定性总图",
+        "唯一必得总额",
+        "共同海损或运费主轴"
+      ],
+      "deliverables": [
+        "形成可复核的分项测算，不认定违约已成立"
+      ],
+      "path": "skills/测算国际贸易价金与损害赔偿",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "涉外与国际贸易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "建立跨境争议证据与认证案卷",
+      "kind": "atomic",
+      "displayName": "建立跨境争议证据与认证案卷",
+      "goal": "形成要件、举证责任、认证和合法补证矩阵",
+      "notFor": [
+        "策略总图",
+        "仲裁申请",
+        "违法跨境取证"
+      ],
+      "deliverables": [
+        "形成要件、举证责任、认证和合法补证矩阵"
+      ],
+      "path": "skills/建立跨境争议证据与认证案卷",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "涉外与国际贸易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "提起中国涉外仲裁",
+      "kind": "atomic",
+      "displayName": "提起中国涉外仲裁",
+      "goal": "形成可提交的中国涉外仲裁申请包",
+      "notFor": [
+        "代提交",
+        "有效仲裁未成立仍要申请",
+        "海事仲裁",
+        "直接起诉"
+      ],
+      "deliverables": [
+        "形成可提交的中国涉外仲裁申请包"
+      ],
+      "path": "skills/提起中国涉外仲裁",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "涉外与国际贸易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对中国涉外仲裁",
+      "kind": "atomic",
+      "displayName": "应对中国涉外仲裁",
+      "goal": "形成首次仲裁答辩包和管辖抗辩接口",
+      "notFor": [
+        "主动申请仲裁",
+        "中国法院应诉",
+        "只要逾期异议终稿"
+      ],
+      "deliverables": [
+        "形成首次仲裁答辩包和管辖抗辩接口"
+      ],
+      "path": "skills/应对中国涉外仲裁",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "涉外与国际贸易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "申请承认和执行外国仲裁裁决",
+      "kind": "atomic",
+      "displayName": "申请承认和执行外国仲裁裁决",
+      "goal": "形成在中国申请承认和执行外国仲裁裁决的材料包",
+      "notFor": [
+        "港澳台认可",
+        "内地裁决执行",
+        "承认外国法院判决",
+        "代提交"
+      ],
+      "deliverables": [
+        "形成在中国申请承认和执行外国仲裁裁决的材料包"
+      ],
+      "path": "skills/申请承认和执行外国仲裁裁决",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "涉外与国际贸易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估准据法与强制性规范",
+      "kind": "atomic",
+      "displayName": "评估准据法与强制性规范",
+      "goal": "单独委托判断适用哪一法域实体法或条约；单方",
+      "notFor": [
+        "不选定唯一胜诉法",
+        "不替代总体评估或论坛判断"
+      ],
+      "deliverables": [
+        "单独委托判断适用哪一法域实体法或条约；单方"
+      ],
+      "path": "skills/评估准据法与强制性规范",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "涉外与国际贸易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "识别跨境主体与签约能力",
+      "kind": "atomic",
+      "displayName": "识别跨境主体与签约能力",
+      "goal": "签约名、履行名、境外注册、授权书冲突；单方",
+      "notFor": [
+        "不办境外设立",
+        "并购主体文件转并购"
+      ],
+      "deliverables": [
+        "签约名、履行名、境外注册、授权书冲突；单方"
+      ],
+      "path": "skills/识别跨境主体与签约能力",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "涉外与国际贸易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "规划公证认证与附加证明书",
+      "kind": "atomic",
+      "displayName": "规划公证认证与附加证明书",
+      "goal": "境外文书需在中国使用或相反；单方",
+      "notFor": [
+        "不代办认证",
+        "不证明实体权利成立"
+      ],
+      "deliverables": [
+        "境外文书需在中国使用或相反；单方"
+      ],
+      "path": "skills/规划公证认证与附加证明书",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "涉外与国际贸易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估强制性规范与公共秩序",
+      "kind": "atomic",
+      "displayName": "评估强制性规范与公共秩序",
+      "goal": "约定外法或境外裁决可能撞上中国强制规范；单方",
+      "notFor": [
+        "不定外国法无效的必然结论"
+      ],
+      "deliverables": [
+        "约定外法或境外裁决可能撞上中国强制规范；单方"
+      ],
+      "path": "skills/评估强制性规范与公共秩序",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "涉外与国际贸易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估涉港澳台法域与文书",
+      "kind": "atomic",
+      "displayName": "评估涉港澳台法域与文书",
+      "goal": "相对方或财产在港澳台，需选认可安排而非外国承认；单方",
+      "notFor": [
+        "不按外国裁决处理",
+        "家事离婚承认转家事"
+      ],
+      "deliverables": [
+        "相对方或财产在港澳台，需选认可安排而非外国承认；单方"
+      ],
+      "path": "skills/评估涉港澳台法域与文书",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "涉外与国际贸易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估作准文本与译文冲突",
+      "kind": "atomic",
+      "displayName": "评估作准文本与译文冲突",
+      "goal": "中英文本冲突决定请求能否成立；单方",
+      "notFor": [
+        "不重写整份合同",
+        "未成争改文本走起草（搁置）"
+      ],
+      "deliverables": [
+        "中英文本冲突决定请求能否成立；单方"
+      ],
+      "path": "skills/评估作准文本与译文冲突",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "涉外与国际贸易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "筛查跨境委托与当地执业限制",
+      "kind": "atomic",
+      "displayName": "筛查跨境委托与当地执业限制",
+      "goal": "接案前需判断利益冲突、当地出庭限制、共同代理；单方",
+      "notFor": [
+        "不替代实体评估",
+        "不定境外执业资格"
+      ],
+      "deliverables": [
+        "接案前需判断利益冲突、当地出庭限制、共同代理；单方"
+      ],
+      "path": "skills/筛查跨境委托与当地执业限制",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "涉外与国际贸易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估境外投资监管准入",
+      "kind": "atomic",
+      "displayName": "评估境外投资监管准入",
+      "goal": "中国主体拟对外投资，需判断备案/核准/限制；申报义务人",
+      "notFor": [
+        "不做股权对价与交割文件",
+        "并购交易主体转并购",
+        "税务架构转税务"
+      ],
+      "deliverables": [
+        "中国主体拟对外投资，需判断备案/核准/限制；申报义务人"
+      ],
+      "path": "skills/评估境外投资监管准入",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "涉外与国际贸易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备境外投资备案或核准材料",
+      "kind": "atomic",
+      "displayName": "准备境外投资备案或核准材料",
+      "goal": "已决定走 ODI 申报；申报义务人",
+      "notFor": [
+        "不保证获批",
+        "不写并购协议"
+      ],
+      "deliverables": [
+        "已决定走 ODI 申报；申报义务人"
+      ],
+      "path": "skills/准备境外投资备案或核准材料",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "涉外与国际贸易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备外商投资信息报告材料",
+      "kind": "atomic",
+      "displayName": "准备外商投资信息报告材料",
+      "goal": "已决定履行初始/变更/年度报告；申报义务人",
+      "notFor": [
+        "不替代安全审查申报终稿"
+      ],
+      "deliverables": [
+        "已决定履行初始/变更/年度报告；申报义务人"
+      ],
+      "path": "skills/准备外商投资信息报告材料",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "涉外与国际贸易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估外商投资安全审查",
+      "kind": "atomic",
+      "displayName": "评估外商投资安全审查",
+      "goal": "单独判断是否属于申报范围及能否实施投资；单方",
+      "notFor": [
+        "不预测审查结论",
+        "不写交割条件清单冒充并购主成果"
+      ],
+      "deliverables": [
+        "单独判断是否属于申报范围及能否实施投资；单方"
+      ],
+      "path": "skills/评估外商投资安全审查",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "涉外与国际贸易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估返程投资与协议控制监管",
+      "kind": "atomic",
+      "displayName": "评估返程投资与协议控制监管",
+      "goal": "红筹/VIE/协议控制触及准入或报告；单方",
+      "notFor": [
+        "不设计避法架构",
+        "不起草控制协议（审查起草搁置）"
+      ],
+      "deliverables": [
+        "红筹/VIE/协议控制触及准入或报告；单方"
+      ],
+      "path": "skills/评估返程投资与协议控制监管",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "涉外与国际贸易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估跨境担保与内保外贷监管",
+      "kind": "atomic",
+      "displayName": "评估跨境担保与内保外贷监管",
+      "goal": "内保外贷、外保内贷或跨境保证需监管判断；单方",
+      "notFor": [
+        "主债是境内借贷担保则转金融",
+        "税务成本转税务"
+      ],
+      "deliverables": [
+        "内保外贷、外保内贷或跨境保证需监管判断；单方"
+      ],
+      "path": "skills/评估跨境担保与内保外贷监管",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "涉外与国际贸易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估国际货物交付质量数量",
+      "kind": "atomic",
+      "displayName": "评估国际货物交付质量数量",
+      "goal": "迟延、短量、质量不符已成争；单方",
+      "notFor": [
+        "不发索赔函",
+        "海运货损主轴转海事"
+      ],
+      "deliverables": [
+        "迟延、短量、质量不符已成争；单方"
+      ],
+      "path": "skills/评估国际货物交付质量数量",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "涉外与国际贸易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估贸易术语风险费用分界",
+      "kind": "atomic",
+      "displayName": "评估贸易术语风险费用分界",
+      "goal": "双方对 FOB/CIF 等费用、保险、风险转移争执；单方",
+      "notFor": [
+        "不重选术语改合同（搁置）",
+        "运输合同主轴转海事"
+      ],
+      "deliverables": [
+        "双方对 FOB/CIF 等费用、保险、风险转移争执；单方"
+      ],
+      "path": "skills/评估贸易术语风险费用分界",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "涉外与国际贸易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估信用证不符点与拒付",
+      "kind": "atomic",
+      "displayName": "评估信用证不符点与拒付",
+      "goal": "开证、交单、不符点或拒付；单方",
+      "notFor": [
+        "不指导伪造单据",
+        "独立保函另项"
+      ],
+      "deliverables": [
+        "开证、交单、不符点或拒付；单方"
+      ],
+      "path": "skills/评估信用证不符点与拒付",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "涉外与国际贸易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估独立保函与备用信用证",
+      "kind": "atomic",
+      "displayName": "评估独立保函与备用信用证",
+      "goal": "见索即付保函或备用证索赔/止付；单方",
+      "notFor": [
+        "从属性保证转金融",
+        "海事担保转海事"
+      ],
+      "deliverables": [
+        "见索即付保函或备用证索赔/止付；单方"
+      ],
+      "path": "skills/评估独立保函与备用信用证",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "涉外与国际贸易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估跨境服务贸易履行",
+      "kind": "atomic",
+      "displayName": "评估跨境服务贸易履行",
+      "goal": "外包、许可实施、跨境服务未完成或拒付；单方",
+      "notFor": [
+        "数据出境专项转数据",
+        "劳动派遣在华转劳动"
+      ],
+      "deliverables": [
+        "外包、许可实施、跨境服务未完成或拒付；单方"
+      ],
+      "path": "skills/评估跨境服务贸易履行",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "涉外与国际贸易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估检验与索赔期间",
+      "kind": "atomic",
+      "displayName": "评估检验与索赔期间",
+      "goal": "单独核验通知是否逾期；单方",
+      "notFor": [
+        "不判断质量本身是否构成瑕疵终局"
+      ],
+      "deliverables": [
+        "单独核验通知是否逾期；单方"
+      ],
+      "path": "skills/评估检验与索赔期间",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "涉外与国际贸易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估价款汇率与附加费",
+      "kind": "atomic",
+      "displayName": "评估价款汇率与附加费",
+      "goal": "调价、汇率、滞期附加费争执；单方",
+      "notFor": [
+        "纯税务汇兑损益转税务",
+        "精算终稿走测算原子"
+      ],
+      "deliverables": [
+        "调价、汇率、滞期附加费争执；单方"
+      ],
+      "path": "skills/评估价款汇率与附加费",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "涉外与国际贸易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估不可抗力禁运与履行不能",
+      "kind": "atomic",
+      "displayName": "评估不可抗力禁运与履行不能",
+      "goal": "制裁、禁运、疫情、出口中止；单方",
+      "notFor": [
+        "不作商业困难等于法律不能",
+        "管制许可走管制原子"
+      ],
+      "deliverables": [
+        "制裁、禁运、疫情、出口中止；单方"
+      ],
+      "path": "skills/评估不可抗力禁运与履行不能",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "涉外与国际贸易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估货权与结汇单据",
+      "kind": "atomic",
+      "displayName": "评估货权与结汇单据",
+      "goal": "提单、仓单、发票在买卖合同下的货权与付款；单方",
+      "notFor": [
+        "运输合同、船舶、海事保全转海事"
+      ],
+      "deliverables": [
+        "提单、仓单、发票在买卖合同下的货权与付款；单方"
+      ],
+      "path": "skills/评估货权与结汇单据",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "涉外与国际贸易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估国际贸易解除权",
+      "kind": "atomic",
+      "displayName": "评估国际贸易解除权",
+      "goal": "拟解除或已收到解除，需判断约定/法定/CISG 路径；单方",
+      "notFor": [
+        "不发出解除通知"
+      ],
+      "deliverables": [
+        "拟解除或已收到解除，需判断约定/法定/CISG 路径；单方"
+      ],
+      "path": "skills/评估国际贸易解除权",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "涉外与国际贸易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "处理解除后返还仓储与结算",
+      "kind": "atomic",
+      "displayName": "处理解除后返还仓储与结算",
+      "goal": "解除或拒收后货物、货款、仓储清理；单方",
+      "notFor": [
+        "不重判解除是否成立",
+        "海上留置转海事"
+      ],
+      "deliverables": [
+        "解除或拒收后货物、货款、仓储清理；单方"
+      ],
+      "path": "skills/处理解除后返还仓储与结算",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "涉外与国际贸易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估框架协议与分订单冲突",
+      "kind": "atomic",
+      "displayName": "评估框架协议与分订单冲突",
+      "goal": "框架、PI、订单、L/C 不一致；单方",
+      "notFor": [
+        "不按单张订单另建 Skill"
+      ],
+      "deliverables": [
+        "框架、PI、订单、L/C 不一致；单方"
+      ],
+      "path": "skills/评估框架协议与分订单冲突",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "涉外与国际贸易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备两用物项或出口许可材料",
+      "kind": "atomic",
+      "displayName": "准备两用物项或出口许可材料",
+      "goal": "已判断需要申请许可；申报义务人",
+      "notFor": [
+        "不保证许可",
+        "军品专营另标停止"
+      ],
+      "deliverables": [
+        "已判断需要申请许可；申报义务人"
+      ],
+      "path": "skills/准备两用物项或出口许可材料",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "涉外与国际贸易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对出口管制问询或调查",
+      "kind": "atomic",
+      "displayName": "应对出口管制问询或调查",
+      "goal": "商务/海关已问询、约谈或立案调查；被调查方",
+      "notFor": [
+        "不教唆隐匿",
+        "刑案转刑事"
+      ],
+      "deliverables": [
+        "商务/海关已问询、约谈或立案调查；被调查方"
+      ],
+      "path": "skills/应对出口管制问询或调查",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "涉外与国际贸易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估归类估价与原产地",
+      "kind": "atomic",
+      "displayName": "评估归类估价与原产地",
+      "goal": "税则归类、完税价格或原产地争执；单方",
+      "notFor": [
+        "关税计算作为税务专项转税务",
+        "走私转刑事"
+      ],
+      "deliverables": [
+        "税则归类、完税价格或原产地争执；单方"
+      ],
+      "path": "skills/评估归类估价与原产地",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "涉外与国际贸易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对海关稽查或行政处罚",
+      "kind": "atomic",
+      "displayName": "应对海关稽查或行政处罚",
+      "goal": "已收稽查通知或处罚告知；被调查方",
+      "notFor": [
+        "一般行政处罚方法转行政",
+        "走私转刑事"
+      ],
+      "deliverables": [
+        "已收稽查通知或处罚告知；被调查方"
+      ],
+      "path": "skills/应对海关稽查或行政处罚",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "涉外与国际贸易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估进口许可与检验检疫",
+      "kind": "atomic",
+      "displayName": "评估进口许可与检验检疫",
+      "goal": "自动许可、许可证、法检阻碍通关；单方",
+      "notFor": [
+        "不代报关"
+      ],
+      "deliverables": [
+        "自动许可、许可证、法检阻碍通关；单方"
+      ],
+      "path": "skills/评估进口许可与检验检疫",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "涉外与国际贸易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估技术进出口监管",
+      "kind": "atomic",
+      "displayName": "评估技术进出口监管",
+      "goal": "技术许可或转让需禁止/限制/自由类判断；单方",
+      "notFor": [
+        "不起草许可合同（搁置）",
+        "纯知识产权权属转知识产权"
+      ],
+      "deliverables": [
+        "技术许可或转让需禁止/限制/自由类判断；单方"
+      ],
+      "path": "skills/评估技术进出口监管",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "涉外与国际贸易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "筛查交易对手与最终用户",
+      "kind": "atomic",
+      "displayName": "筛查交易对手与最终用户",
+      "goal": "签约或发货前做名单筛查；单方",
+      "notFor": [
+        "不提供规避名单的改名方案"
+      ],
+      "deliverables": [
+        "签约或发货前做名单筛查；单方"
+      ],
+      "path": "skills/筛查交易对手与最终用户",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "涉外与国际贸易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估反制裁与阻断义务",
+      "kind": "atomic",
+      "displayName": "评估反制裁与阻断义务",
+      "goal": "外国次级制裁与中国反制裁/阻断冲突；单方",
+      "notFor": [
+        "不指导违反任一法域的规避",
+        "不定境外刑法"
+      ],
+      "deliverables": [
+        "外国次级制裁与中国反制裁/阻断冲突；单方"
+      ],
+      "path": "skills/评估反制裁与阻断义务",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "涉外与国际贸易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对不可靠实体清单",
+      "kind": "atomic",
+      "displayName": "应对不可靠实体清单",
+      "goal": "相对方或己方被列入或面临列入；单方",
+      "notFor": [
+        "不保证移出"
+      ],
+      "deliverables": [
+        "相对方或己方被列入或面临列入；单方"
+      ],
+      "path": "skills/应对不可靠实体清单",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "涉外与国际贸易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估反倾销反补贴保障措施风险",
+      "kind": "atomic",
+      "displayName": "评估反倾销反补贴保障措施风险",
+      "goal": "出口市场立案或国内产业拟申请；单方",
+      "notFor": [
+        "不写调查问卷终稿"
+      ],
+      "deliverables": [
+        "出口市场立案或国内产业拟申请；单方"
+      ],
+      "path": "skills/评估反倾销反补贴保障措施风险",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "涉外与国际贸易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备贸易救济应诉材料",
+      "kind": "atomic",
+      "displayName": "准备贸易救济应诉材料",
+      "goal": "已决定应诉国外或国内调查；应诉方",
+      "notFor": [
+        "不伪造成本数据"
+      ],
+      "deliverables": [
+        "已决定应诉国外或国内调查；应诉方"
+      ],
+      "path": "skills/准备贸易救济应诉材料",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "涉外与国际贸易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备贸易救济申请材料",
+      "kind": "atomic",
+      "displayName": "准备贸易救济申请材料",
+      "goal": "国内产业拟申请反倾销等；申请方",
+      "notFor": [
+        "不保证立案"
+      ],
+      "deliverables": [
+        "国内产业拟申请反倾销等；申请方"
+      ],
+      "path": "skills/准备贸易救济申请材料",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "涉外与国际贸易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估规避贸易救济与原产地风险",
+      "kind": "atomic",
+      "displayName": "评估规避贸易救济与原产地风险",
+      "goal": "第三国组装或改税号被指规避；单方",
+      "notFor": [
+        "不提供规避税率的伪装方案"
+      ],
+      "deliverables": [
+        "第三国组装或改税号被指规避；单方"
+      ],
+      "path": "skills/评估规避贸易救济与原产地风险",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "涉外与国际贸易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估跨境收付与外汇合规",
+      "kind": "atomic",
+      "displayName": "评估跨境收付与外汇合规",
+      "goal": "货款、资本项或担保项下无法收付；单方",
+      "notFor": [
+        "不算出税负",
+        "出口退税与转让定价转税务"
+      ],
+      "deliverables": [
+        "货款、资本项或担保项下无法收付；单方"
+      ],
+      "path": "skills/评估跨境收付与外汇合规",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "涉外与国际贸易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估贸易融资单据争议",
+      "kind": "atomic",
+      "displayName": "评估贸易融资单据争议",
+      "goal": "托收、福费廷、出口押汇与基础合同冲突；单方",
+      "notFor": [
+        "境内借贷主轴转金融"
+      ],
+      "deliverables": [
+        "托收、福费廷、出口押汇与基础合同冲突；单方"
+      ],
+      "path": "skills/评估贸易融资单据争议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "涉外与国际贸易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备国际贸易解除通知",
+      "kind": "atomic",
+      "displayName": "准备国际贸易解除通知",
+      "goal": "已决定行使解除权，需发送前稿；解除权人",
+      "notFor": [
+        "催告未完成且依法须催告时停止终稿"
+      ],
+      "deliverables": [
+        "已决定行使解除权，需发送前稿；解除权人"
+      ],
+      "path": "skills/准备国际贸易解除通知",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "涉外与国际贸易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备质量数量索赔通知",
+      "kind": "atomic",
+      "displayName": "准备质量数量索赔通知",
+      "goal": "检验期内需固定索赔意思；主张方",
+      "notFor": [
+        "不替代精算终稿"
+      ],
+      "deliverables": [
+        "检验期内需固定索赔意思；主张方"
+      ],
+      "path": "skills/准备质量数量索赔通知",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "涉外与国际贸易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "设计域外送达",
+      "kind": "atomic",
+      "displayName": "设计域外送达",
+      "goal": "需向境外主体送达诉讼或仲裁文书；单方",
+      "notFor": [
+        "不保证送达成功",
+        "不伪造签收"
+      ],
+      "deliverables": [
+        "需向境外主体送达诉讼或仲裁文书；单方"
+      ],
+      "path": "skills/设计域外送达",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "涉外与国际贸易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "规划域外取证与公证认证",
+      "kind": "atomic",
+      "displayName": "规划域外取证与公证认证",
+      "goal": "关键证据在境外；单方",
+      "notFor": [
+        "禁止违法跨境调取"
+      ],
+      "deliverables": [
+        "关键证据在境外；单方"
+      ],
+      "path": "skills/规划域外取证与公证认证",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "涉外与国际贸易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "保全货物检验与电子通信证据",
+      "kind": "atomic",
+      "displayName": "保全货物检验与电子通信证据",
+      "goal": "货物、样品、邮件可能灭失；单方",
+      "notFor": [
+        "船上扣押或海事证据保全转海事"
+      ],
+      "deliverables": [
+        "货物、样品、邮件可能灭失；单方"
+      ],
+      "path": "skills/保全货物检验与电子通信证据",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "涉外与国际贸易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "谈判跨境争议和解方案",
+      "kind": "atomic",
+      "displayName": "谈判跨境争议和解方案",
+      "goal": "仍可谈，要底线和弃权范围；单方",
+      "notFor": [
+        "不替代已签字协议审查",
+        "未成争改合同走起草（搁置）"
+      ],
+      "deliverables": [
+        "仍可谈，要底线和弃权范围；单方"
+      ],
+      "path": "skills/谈判跨境争议和解方案",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "涉外与国际贸易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "起草跨境和解协议",
+      "kind": "atomic",
+      "displayName": "起草跨境和解协议",
+      "goal": "条件已谈拢，需可签协议；单方",
+      "notFor": [
+        "与未争议补充协议不同",
+        "司法确认另项"
+      ],
+      "deliverables": [
+        "条件已谈拢，需可签协议；单方"
+      ],
+      "path": "skills/起草跨境和解协议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "涉外与国际贸易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "提起中国法院涉外民事诉讼",
+      "kind": "atomic",
+      "displayName": "提起中国法院涉外民事诉讼",
+      "goal": "决定向中国法院起诉且无有效仲裁阻挡；原告",
+      "notFor": [
+        "有效仲裁未排除不得写应起诉",
+        "C 端网上立案只分流"
+      ],
+      "deliverables": [
+        "决定向中国法院起诉且无有效仲裁阻挡；原告"
+      ],
+      "path": "skills/提起中国法院涉外民事诉讼",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "涉外与国际贸易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "申请承认和执行外国法院判决",
+      "kind": "atomic",
+      "displayName": "申请承认和执行外国法院判决",
+      "goal": "持外国判决需在中国承认执行；权利人",
+      "notFor": [
+        "与外国裁决路径不同",
+        "离婚判决家事交叉停"
+      ],
+      "deliverables": [
+        "持外国判决需在中国承认执行；权利人"
+      ],
+      "path": "skills/申请承认和执行外国法院判决",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "涉外与国际贸易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "申请涉外或仲裁保全",
+      "kind": "atomic",
+      "displayName": "申请涉外或仲裁保全",
+      "goal": "已决定申请财产/行为/证据保全；申请方",
+      "notFor": [
+        "不保证裁定",
+        "海事保全转海事"
+      ],
+      "deliverables": [
+        "已决定申请财产/行为/证据保全；申请方"
+      ],
+      "path": "skills/申请涉外或仲裁保全",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "涉外与国际贸易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "申请撤销涉外仲裁裁决",
+      "kind": "atomic",
+      "displayName": "申请撤销涉外仲裁裁决",
+      "goal": "收到内地涉外裁决后法定期限内；不利方",
+      "notFor": [
+        "与不予执行不同"
+      ],
+      "deliverables": [
+        "收到内地涉外裁决后法定期限内；不利方"
+      ],
+      "path": "skills/申请撤销涉外仲裁裁决",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "涉外与国际贸易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "申请不予执行涉外或外国裁决",
+      "kind": "atomic",
+      "displayName": "申请不予执行涉外或外国裁决",
+      "goal": "对方申请执行；被执行方",
+      "notFor": [
+        "不与撤销混用"
+      ],
+      "deliverables": [
+        "对方申请执行；被执行方"
+      ],
+      "path": "skills/申请不予执行涉外或外国裁决",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "涉外与国际贸易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对中国法院涉外民事诉讼",
+      "kind": "atomic",
+      "displayName": "应对中国法院涉外民事诉讼",
+      "goal": "收到涉外起诉状或应诉通知；被告",
+      "notFor": [
+        "C 端 012 只分流"
+      ],
+      "deliverables": [
+        "收到涉外起诉状或应诉通知；被告"
+      ],
+      "path": "skills/应对中国法院涉外民事诉讼",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "涉外与国际贸易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "提出涉外管辖异议",
+      "kind": "atomic",
+      "displayName": "提出涉外管辖异议",
+      "goal": "已被起诉或被申请，需在法定期限提异议；被请求方",
+      "notFor": [
+        "与仲裁协议异议不同",
+        "过期停止终稿"
+      ],
+      "deliverables": [
+        "已被起诉或被申请，需在法定期限提异议；被请求方"
+      ],
+      "path": "skills/提出涉外管辖异议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "涉外与国际贸易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对承认执行外国裁决或判决",
+      "kind": "atomic",
+      "displayName": "应对承认执行外国裁决或判决",
+      "goal": "已收到承认执行申请；被申请人",
+      "notFor": [
+        "禁止转移隐匿财产方案"
+      ],
+      "deliverables": [
+        "已收到承认执行申请；被申请人"
+      ],
+      "path": "skills/应对承认执行外国裁决或判决",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "涉外与国际贸易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对涉外保全裁定",
+      "kind": "atomic",
+      "displayName": "应对涉外保全裁定",
+      "goal": "财产或行为已被保全；被保全方",
+      "notFor": [
+        "禁止违反裁定"
+      ],
+      "deliverables": [
+        "财产或行为已被保全；被保全方"
+      ],
+      "path": "skills/应对涉外保全裁定",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "涉外与国际贸易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估仲裁反请求",
+      "kind": "atomic",
+      "displayName": "评估仲裁反请求",
+      "goal": "被申请人拟提反请求；被请求方",
+      "notFor": [
+        "不自动生成反请求终稿"
+      ],
+      "deliverables": [
+        "被申请人拟提反请求；被请求方"
+      ],
+      "path": "skills/评估仲裁反请求",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "涉外与国际贸易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估境外用工当地法与派遣准入",
+      "kind": "atomic",
+      "displayName": "评估境外用工当地法与派遣准入",
+      "goal": "中国企业派人出境或境外雇工，需当地法与签证准入；单方",
+      "notFor": [
+        "外国人在华用工和中国劳动权益转劳动"
+      ],
+      "deliverables": [
+        "中国企业派人出境或境外雇工，需当地法与签证准入；单方"
+      ],
+      "path": "skills/评估境外用工当地法与派遣准入",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "涉外与国际贸易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    }
+  ],
+  "guideName": "涉外与国际贸易导航"
+}

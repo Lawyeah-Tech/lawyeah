@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备国际贸易解除通知"
+  short_description: "在解除权已定且催告已满足时准备发送前解除通知和到达设计"
+  default_prompt: "使用 $准备国际贸易解除通知，在解除权已定前提下准备国际贸易解除通知发送前稿。"

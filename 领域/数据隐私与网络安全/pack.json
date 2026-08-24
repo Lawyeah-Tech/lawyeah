@@ -1,0 +1,1591 @@
+{
+  "schemaVersion": 2,
+  "id": "govern-data-privacy",
+  "displayName": "数据隐私与网络安全",
+  "description": "处理中国大陆个人信息、数据安全、数据跨境和网络安全合规的评估、告知、出境路径、事件响应、处理记录和民事两造的多 Skill 领域包。",
+  "version": "1.0.0",
+  "license": "Apache-2.0",
+  "jurisdiction": "CN-mainland",
+  "contentModel": "multi-skill-progressive-disclosure",
+  "reinstallStrategy": "replace",
+  "scope": {
+    "purpose": "处理个人信息、数据安全、数据跨境、平台数据治理和网络安全合规。",
+    "inScope": [
+      "个人信息处理和隐私治理",
+      "重要数据与数据安全",
+      "数据出境和跨境传输",
+      "网络安全、平台规则和数据事件响应"
+    ],
+    "outOfScope": [
+      "知识产权权利取得和侵权保护",
+      "企业综合合规体系",
+      "医疗业务和医药监管本身"
+    ],
+    "primaryDeliverables": [
+      "隐私和数据合规评估",
+      "个人信息与数据制度文件",
+      "数据出境方案",
+      "安全事件响应成果"
+    ]
+  },
+  "guideSkill": "数据隐私与网络安全导航",
+  "mcp": {
+    "contractRange": "0.0"
+  },
+  "skills": [
+    {
+      "id": "数据隐私与网络安全导航",
+      "kind": "guide",
+      "displayName": "数据隐私与网络安全导航",
+      "goal": "说明领域包的能力、边界和当前原子 Skill 全貌",
+      "notFor": [
+        "直接完成具体法律业务成果"
+      ],
+      "deliverables": [
+        "领域能力定位结果"
+      ],
+      "path": "skills/数据隐私与网络安全导航",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "应对个人信息民事索赔",
+          "评估数据出境路径",
+          "提起个人信息民事索赔",
+          "测算个人信息侵权损害",
+          "建立个人信息处理活动记录",
+          "应对数据与网络安全事件",
+          "评估个人信息处理合法性",
+          "准备安全事件报告与告知",
+          "评估数据与隐私合规",
+          "准备隐私政策与告知",
+          "开展个人信息保护影响评估",
+          "评估同意与单独同意",
+          "处理个人信息主体权利请求",
+          "处理账号注销与停止处理",
+          "评估保存期限与删除义务",
+          "评估已公开个人信息处理",
+          "评估并指定个人信息保护负责人",
+          "评估最小必要与过度收集",
+          "评估捆绑同意与拒绝服务",
+          "评估敏感个人信息处理",
+          "处理不满十四周岁未成年人个人信息",
+          "评估自动化决策与个性化推荐",
+          "评估人脸识别与生物识别",
+          "评估工作场所监测合法性",
+          "评估公共场所图像采集",
+          "评估行踪轨迹与持续定位",
+          "评估营销推送与通讯联络",
+          "准备委托处理安排",
+          "评估共同处理安排",
+          "评估向第三方提供个人信息",
+          "评估公开个人信息",
+          "处理合并分立破产中的个人信息转移",
+          "评估处理者与供应商数据义务",
+          "评估匿名化去标识化与再识别风险",
+          "评估SDK插件与嵌入式收集",
+          "开展数据分类分级",
+          "识别重要数据",
+          "评估核心数据保护义务",
+          "评估关键信息基础设施运营者义务",
+          "评估境内存储与本地化",
+          "评估数据交易与场内流通",
+          "准备数据出境安全评估申报",
+          "准备个人信息出境标准合同备案",
+          "评估个人信息保护认证出境路径",
+          "评估跨境流动便利化与豁免",
+          "评估境外远程运维访问是否出境",
+          "评估境外接收方与再转移",
+          "规划网络安全等级保护",
+          "评估是否触发网络安全审查",
+          "评估商用密码与关键系统密码应用",
+          "处理网络产品安全漏洞披露",
+          "评估云与SaaS数据驻留",
+          "评估生成式人工智能训练与输出数据",
+          "保全数据安全事件证据",
+          "测算事件影响范围与通知对象",
+          "应对网信约谈与监督检查",
+          "应对数据网络安全行政处罚",
+          "准备个人信息保护合规审计",
+          "应对App下架通报与整改",
+          "准备监管整改报告",
+          "评估向国家机关提供数据",
+          "谈判个人信息侵权和解",
+          "申请停止处理或删除的行为保全",
+          "处理向平台或网信投诉",
+          "评估员工个人信息处理合法性",
+          "评估医疗健康个人信息专项治理",
+          "评估汽车数据与车外图像"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估数据与隐私合规",
+      "kind": "atomic",
+      "displayName": "评估数据与隐私合规",
+      "goal": "在单方无冲突立场下形成可决策的数据与隐私合规总图",
+      "notFor": [
+        "对外告知终稿",
+        "出境申报包",
+        "诉状或答辩",
+        "IP/综合合规/医疗业务监管"
+      ],
+      "deliverables": [
+        "在单方无冲突立场下形成可决策的数据与隐私合规总图"
+      ],
+      "path": "skills/评估数据与隐私合规",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "数据隐私与网络安全导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估个人信息处理合法性",
+      "kind": "atomic",
+      "displayName": "评估个人信息处理合法性",
+      "goal": "判断特定处理活动有无合法基础，以及告知与单独同意是否必要",
+      "notFor": [
+        "总体合规总图",
+        "隐私政策终稿",
+        "民事诉状"
+      ],
+      "deliverables": [
+        "判断特定处理活动有无合法基础，以及告知与单独同意是否必要"
+      ],
+      "path": "skills/评估个人信息处理合法性",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "数据隐私与网络安全导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估数据出境路径",
+      "kind": "atomic",
+      "displayName": "评估数据出境路径",
+      "goal": "判断是否构成出境以及应走评估、标准合同、认证还是豁免",
+      "notFor": [
+        "代提交安全评估",
+        "标准合同备案终稿",
+        "把未识别重要数据写成已豁免"
+      ],
+      "deliverables": [
+        "判断是否构成出境以及应走评估、标准合同、认证还是豁免"
+      ],
+      "path": "skills/评估数据出境路径",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "数据隐私与网络安全导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备隐私政策与告知",
+      "kind": "atomic",
+      "displayName": "准备隐私政策与告知",
+      "goal": "形成可对外发布前的告知文本和变更告知设计",
+      "notFor": [
+        "一般用户协议审查起草",
+        "把发布写成已合法",
+        "C 端网站协议商品"
+      ],
+      "deliverables": [
+        "形成可对外发布前的告知文本和变更告知设计"
+      ],
+      "path": "skills/准备隐私政策与告知",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "数据隐私与网络安全导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备安全事件报告与告知",
+      "kind": "atomic",
+      "displayName": "准备安全事件报告与告知",
+      "goal": "形成向主管部门报告或通知个人的发送前稿",
+      "notFor": [
+        "只要事件处置总图",
+        "把稿件写成已报告",
+        "指导瞒报"
+      ],
+      "deliverables": [
+        "形成向主管部门报告或通知个人的发送前稿"
+      ],
+      "path": "skills/准备安全事件报告与告知",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "数据隐私与网络安全导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "建立个人信息处理活动记录",
+      "kind": "atomic",
+      "displayName": "建立个人信息处理活动记录",
+      "goal": "形成处理活动、系统、受托方和合法补证矩阵",
+      "notFor": [
+        "策略总图",
+        "诉状",
+        "违法取证方案"
+      ],
+      "deliverables": [
+        "形成处理活动、系统、受托方和合法补证矩阵"
+      ],
+      "path": "skills/建立个人信息处理活动记录",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "数据隐私与网络安全导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对数据与网络安全事件",
+      "kind": "atomic",
+      "displayName": "应对数据与网络安全事件",
+      "goal": "形成事件定性、报告告知时钟、补救和停止项，不发对外终稿",
+      "notFor": [
+        "发送版报告或个人告知",
+        "指导瞒报毁证",
+        "刑事辩护"
+      ],
+      "deliverables": [
+        "形成事件定性、报告告知时钟、补救和停止项，不发对外终稿"
+      ],
+      "path": "skills/应对数据与网络安全事件",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "数据隐私与网络安全导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "提起个人信息民事索赔",
+      "kind": "atomic",
+      "displayName": "提起个人信息民事索赔",
+      "goal": "形成可提交的一审起诉包",
+      "notFor": [
+        "代提交",
+        "公益诉讼整案",
+        "C 端个信投诉商品"
+      ],
+      "deliverables": [
+        "形成可提交的一审起诉包"
+      ],
+      "path": "skills/提起个人信息民事索赔",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "数据隐私与网络安全导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对个人信息民事索赔",
+      "kind": "atomic",
+      "displayName": "应对个人信息民事索赔",
+      "goal": "形成首次应诉答辩包和过错举证结构",
+      "notFor": [
+        "主动起诉",
+        "劳动应诉",
+        "只要监管申辩"
+      ],
+      "deliverables": [
+        "形成首次应诉答辩包和过错举证结构"
+      ],
+      "path": "skills/应对个人信息民事索赔",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "数据隐私与网络安全导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "测算个人信息侵权损害",
+      "kind": "atomic",
+      "displayName": "测算个人信息侵权损害",
+      "goal": "形成可复核的损失、获益或酌定区间，不认定侵权已成立",
+      "notFor": [
+        "定性总图",
+        "唯一必得总额",
+        "行政处罚金额测算"
+      ],
+      "deliverables": [
+        "形成可复核的损失、获益或酌定区间，不认定侵权已成立"
+      ],
+      "path": "skills/测算个人信息侵权损害",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "数据隐私与网络安全导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "开展个人信息保护影响评估",
+      "kind": "atomic",
+      "displayName": "开展个人信息保护影响评估",
+      "goal": "敏感信息、自动化决策、委托/对外提供/公开、出境或重大影响活动前；处理者",
+      "notFor": [
+        "不替代出境路径选择",
+        "不写成已通过网信评估"
+      ],
+      "deliverables": [
+        "敏感信息、自动化决策、委托/对外提供/公开、出境或重大影响活动前；处理者"
+      ],
+      "path": "skills/开展个人信息保护影响评估",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "数据隐私与网络安全导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估同意与单独同意",
+      "kind": "atomic",
+      "displayName": "评估同意与单独同意",
+      "goal": "同意是否有效、要不要单独同意、能否撤回；处理者或个人",
+      "notFor": [
+        "合法性总评走合法性原子",
+        "政策文本走告知原子"
+      ],
+      "deliverables": [
+        "同意是否有效、要不要单独同意、能否撤回；处理者或个人"
+      ],
+      "path": "skills/评估同意与单独同意",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "数据隐私与网络安全导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "处理个人信息主体权利请求",
+      "kind": "atomic",
+      "displayName": "处理个人信息主体权利请求",
+      "goal": "收到查阅复制更正删除限制转移或解释说明请求；处理者",
+      "notFor": [
+        "账号注销专项另项",
+        "不写成民事答辩"
+      ],
+      "deliverables": [
+        "收到查阅复制更正删除限制转移或解释说明请求；处理者"
+      ],
+      "path": "skills/处理个人信息主体权利请求",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "数据隐私与网络安全导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "处理账号注销与停止处理",
+      "kind": "atomic",
+      "displayName": "处理账号注销与停止处理",
+      "goal": "用户要注销或停止服务后的处理；处理者或个人",
+      "notFor": [
+        "与普通删除请求不同",
+        "不保证即时销号"
+      ],
+      "deliverables": [
+        "用户要注销或停止服务后的处理；处理者或个人"
+      ],
+      "path": "skills/处理账号注销与停止处理",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "数据隐私与网络安全导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估保存期限与删除义务",
+      "kind": "atomic",
+      "displayName": "评估保存期限与删除义务",
+      "goal": "保存是否超最短必要、到期如何删或停处理；处理者",
+      "notFor": [
+        "不制定全公司档案制度",
+        "综合合规转出"
+      ],
+      "deliverables": [
+        "保存是否超最短必要、到期如何删或停处理；处理者"
+      ],
+      "path": "skills/评估保存期限与删除义务",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "数据隐私与网络安全导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估已公开个人信息处理",
+      "kind": "atomic",
+      "displayName": "评估已公开个人信息处理",
+      "goal": "拟使用个人自行公开或已合法公开信息；处理者",
+      "notFor": [
+        "新闻舆论监督合理范围另核",
+        "不把公开写成可任意用"
+      ],
+      "deliverables": [
+        "拟使用个人自行公开或已合法公开信息；处理者"
+      ],
+      "path": "skills/评估已公开个人信息处理",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "数据隐私与网络安全导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估并指定个人信息保护负责人",
+      "kind": "atomic",
+      "displayName": "评估并指定个人信息保护负责人",
+      "goal": "处理量达到应指定负责人，或要设对内对外接口；处理者",
+      "notFor": [
+        "不代替董监高治理文件",
+        "综合合规负责人转出"
+      ],
+      "deliverables": [
+        "处理量达到应指定负责人，或要设对内对外接口；处理者"
+      ],
+      "path": "skills/评估并指定个人信息保护负责人",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "数据隐私与网络安全导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估最小必要与过度收集",
+      "kind": "atomic",
+      "displayName": "评估最小必要与过度收集",
+      "goal": "被指超范围收集或与目的无关；处理者或个人",
+      "notFor": [
+        "不替代合法性基础判断"
+      ],
+      "deliverables": [
+        "被指超范围收集或与目的无关；处理者或个人"
+      ],
+      "path": "skills/评估最小必要与过度收集",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "数据隐私与网络安全导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估捆绑同意与拒绝服务",
+      "kind": "atomic",
+      "displayName": "评估捆绑同意与拒绝服务",
+      "goal": "不授权就无法使用基本功能，或频繁征求同意；处理者或个人",
+      "notFor": [
+        "App 下架应对另项",
+        "C 端 App 审查只分流"
+      ],
+      "deliverables": [
+        "不授权就无法使用基本功能，或频繁征求同意；处理者或个人"
+      ],
+      "path": "skills/评估捆绑同意与拒绝服务",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "数据隐私与网络安全导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估敏感个人信息处理",
+      "kind": "atomic",
+      "displayName": "评估敏感个人信息处理",
+      "goal": "生物识别、医疗健康、金融账户、行踪轨迹等；处理者",
+      "notFor": [
+        "不满十四周岁走未成年人原子",
+        "诊疗监管转医疗"
+      ],
+      "deliverables": [
+        "生物识别、医疗健康、金融账户、行踪轨迹等；处理者"
+      ],
+      "path": "skills/评估敏感个人信息处理",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "数据隐私与网络安全导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "处理不满十四周岁未成年人个人信息",
+      "kind": "atomic",
+      "displayName": "处理不满十四周岁未成年人个人信息",
+      "goal": "儿童个人信息收集或监护人同意；处理者",
+      "notFor": [
+        "一般未成年人网络保护业务监管不整案吞并"
+      ],
+      "deliverables": [
+        "儿童个人信息收集或监护人同意；处理者"
+      ],
+      "path": "skills/处理不满十四周岁未成年人个人信息",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "数据隐私与网络安全导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估自动化决策与个性化推荐",
+      "kind": "atomic",
+      "displayName": "评估自动化决策与个性化推荐",
+      "goal": "画像、推荐、差别待遇或自动化决定；处理者或个人",
+      "notFor": [
+        "算法备案走备案原子",
+        "竞争法差别待遇转竞争"
+      ],
+      "deliverables": [
+        "画像、推荐、差别待遇或自动化决定；处理者或个人"
+      ],
+      "path": "skills/评估自动化决策与个性化推荐",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "数据隐私与网络安全导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估人脸识别与生物识别",
+      "kind": "atomic",
+      "displayName": "评估人脸识别与生物识别",
+      "goal": "门禁、核验、营销刷脸；处理者或个人",
+      "notFor": [
+        "刑侦依法履职另核",
+        "不指导规避身份核验"
+      ],
+      "deliverables": [
+        "门禁、核验、营销刷脸；处理者或个人"
+      ],
+      "path": "skills/评估人脸识别与生物识别",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "数据隐私与网络安全导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估工作场所监测合法性",
+      "kind": "atomic",
+      "displayName": "评估工作场所监测合法性",
+      "goal": "考勤、邮件、定位、摄像头监控员工；处理者",
+      "notFor": [
+        "劳动处分、规章制度民主程序转劳动"
+      ],
+      "deliverables": [
+        "考勤、邮件、定位、摄像头监控员工；处理者"
+      ],
+      "path": "skills/评估工作场所监测合法性",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "数据隐私与网络安全导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估公共场所图像采集",
+      "kind": "atomic",
+      "displayName": "评估公共场所图像采集",
+      "goal": "楼宇、商场、社区摄像头；处理者",
+      "notFor": [
+        "公安依法安装另核",
+        "肖像商业使用转人格权/C 端肖像"
+      ],
+      "deliverables": [
+        "楼宇、商场、社区摄像头；处理者"
+      ],
+      "path": "skills/评估公共场所图像采集",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "数据隐私与网络安全导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估行踪轨迹与持续定位",
+      "kind": "atomic",
+      "displayName": "评估行踪轨迹与持续定位",
+      "goal": "App 持续定位、轨迹画像；处理者",
+      "notFor": [
+        "不替代总体合法性",
+        "车端数据另项"
+      ],
+      "deliverables": [
+        "App 持续定位、轨迹画像；处理者"
+      ],
+      "path": "skills/评估行踪轨迹与持续定位",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "数据隐私与网络安全导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估营销推送与通讯联络",
+      "kind": "atomic",
+      "displayName": "评估营销推送与通讯联络",
+      "goal": "短信、外呼、推送广告；处理者",
+      "notFor": [
+        "广告法虚假宣传转广告/竞争，不在本领域做宣传内容审查"
+      ],
+      "deliverables": [
+        "短信、外呼、推送广告；处理者"
+      ],
+      "path": "skills/评估营销推送与通讯联络",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "数据隐私与网络安全导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备委托处理安排",
+      "kind": "atomic",
+      "displayName": "准备委托处理安排",
+      "goal": "要把处理交给供应商或云；处理者",
+      "notFor": [
+        "一般采购合同审查搁置",
+        "不保证供应商已合规"
+      ],
+      "deliverables": [
+        "要把处理交给供应商或云；处理者"
+      ],
+      "path": "skills/准备委托处理安排",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "数据隐私与网络安全导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估共同处理安排",
+      "kind": "atomic",
+      "displayName": "评估共同处理安排",
+      "goal": "两方共同决定目的方式；处理者一方",
+      "notFor": [
+        "与委托、对外提供分账"
+      ],
+      "deliverables": [
+        "两方共同决定目的方式；处理者一方"
+      ],
+      "path": "skills/评估共同处理安排",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "数据隐私与网络安全导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估向第三方提供个人信息",
+      "kind": "atomic",
+      "displayName": "评估向第三方提供个人信息",
+      "goal": "向其他处理者提供，非委托；处理者",
+      "notFor": [
+        "出境另走出境原子",
+        "公开另走公开原子"
+      ],
+      "deliverables": [
+        "向其他处理者提供，非委托；处理者"
+      ],
+      "path": "skills/评估向第三方提供个人信息",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "数据隐私与网络安全导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估公开个人信息",
+      "kind": "atomic",
+      "displayName": "评估公开个人信息",
+      "goal": "拟在网站、榜单、判决以外公开个人；处理者",
+      "notFor": [
+        "裁判文书公开依法定",
+        "新闻合理范围另核"
+      ],
+      "deliverables": [
+        "拟在网站、榜单、判决以外公开个人；处理者"
+      ],
+      "path": "skills/评估公开个人信息",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "数据隐私与网络安全导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "处理合并分立破产中的个人信息转移",
+      "kind": "atomic",
+      "displayName": "处理合并分立破产中的个人信息转移",
+      "goal": "并购、分立、解散、破产要移交个人信息；处理者",
+      "notFor": [
+        "交易结构交割转投资并购",
+        "破产程序转破产"
+      ],
+      "deliverables": [
+        "并购、分立、解散、破产要移交个人信息；处理者"
+      ],
+      "path": "skills/处理合并分立破产中的个人信息转移",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "数据隐私与网络安全导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估处理者与供应商数据义务",
+      "kind": "atomic",
+      "displayName": "评估处理者与供应商数据义务",
+      "goal": "单独盘点供应商角色和监督缺口；处理者",
+      "notFor": [
+        "不替代一般供应商尽调 C 端商品"
+      ],
+      "deliverables": [
+        "单独盘点供应商角色和监督缺口；处理者"
+      ],
+      "path": "skills/评估处理者与供应商数据义务",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "数据隐私与网络安全导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估匿名化去标识化与再识别风险",
+      "kind": "atomic",
+      "displayName": "评估匿名化去标识化与再识别风险",
+      "goal": "主张已匿名可退出个保，或去标识后共享；处理者",
+      "notFor": [
+        "不把哈希或脱敏写成当然匿名"
+      ],
+      "deliverables": [
+        "主张已匿名可退出个保，或去标识后共享；处理者"
+      ],
+      "path": "skills/评估匿名化去标识化与再识别风险",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "数据隐私与网络安全导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估SDK插件与嵌入式收集",
+      "kind": "atomic",
+      "displayName": "评估SDK插件与嵌入式收集",
+      "goal": "App/小程序嵌入第三方 SDK；处理者",
+      "notFor": [
+        "C 端 App 审查只分流",
+        "不回改该商品"
+      ],
+      "deliverables": [
+        "App/小程序嵌入第三方 SDK；处理者"
+      ],
+      "path": "skills/评估SDK插件与嵌入式收集",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "数据隐私与网络安全导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "开展数据分类分级",
+      "kind": "atomic",
+      "displayName": "开展数据分类分级",
+      "goal": "要按重要程度和危害建目录；处理者",
+      "notFor": [
+        "不制定企业全面合规体系",
+        "不输出唯一法定目录冒充已公布"
+      ],
+      "deliverables": [
+        "要按重要程度和危害建目录；处理者"
+      ],
+      "path": "skills/开展数据分类分级",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "数据隐私与网络安全导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "识别重要数据",
+      "kind": "atomic",
+      "displayName": "识别重要数据",
+      "goal": "是否属于重要数据、要不要按重要数据处理；处理者",
+      "notFor": [
+        "未被告知或公布不得自行写成已确定重要数据并强制出境评估"
+      ],
+      "deliverables": [
+        "是否属于重要数据、要不要按重要数据处理；处理者"
+      ],
+      "path": "skills/识别重要数据",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "数据隐私与网络安全导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估核心数据保护义务",
+      "kind": "atomic",
+      "displayName": "评估核心数据保护义务",
+      "goal": "可能关系国家安全命脉民生的数据；处理者",
+      "notFor": [
+        "不定罪",
+        "出口管制物项转涉外/管制"
+      ],
+      "deliverables": [
+        "可能关系国家安全命脉民生的数据；处理者"
+      ],
+      "path": "skills/评估核心数据保护义务",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "数据隐私与网络安全导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估关键信息基础设施运营者义务",
+      "kind": "atomic",
+      "displayName": "评估关键信息基础设施运营者义务",
+      "goal": "已被认定或可能被认定为关基运营者；运营者",
+      "notFor": [
+        "行业保护工作部门专项可分流",
+        "不自行宣布已成为关基"
+      ],
+      "deliverables": [
+        "已被认定或可能被认定为关基运营者；运营者"
+      ],
+      "path": "skills/评估关键信息基础设施运营者义务",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "数据隐私与网络安全导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估境内存储与本地化",
+      "kind": "atomic",
+      "displayName": "评估境内存储与本地化",
+      "goal": "关基或达到数量门槛的个人信息、重要数据是否须境内存储；处理者",
+      "notFor": [
+        "出境路径选择走出境评估"
+      ],
+      "deliverables": [
+        "关基或达到数量门槛的个人信息、重要数据是否须境内存储；处理者"
+      ],
+      "path": "skills/评估境内存储与本地化",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "数据隐私与网络安全导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估数据交易与场内流通",
+      "kind": "atomic",
+      "displayName": "评估数据交易与场内流通",
+      "goal": "拟进场交易或购买数据集；处理者",
+      "notFor": [
+        "数据产权或知识产权确权转 IP",
+        "一般买卖合同审查搁置"
+      ],
+      "deliverables": [
+        "拟进场交易或购买数据集；处理者"
+      ],
+      "path": "skills/评估数据交易与场内流通",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "数据隐私与网络安全导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备数据出境安全评估申报",
+      "kind": "atomic",
+      "displayName": "准备数据出境安全评估申报",
+      "goal": "路径已指向安全评估，要申报材料；处理者",
+      "notFor": [
+        "不保证通过",
+        "不超出评估范围再出境"
+      ],
+      "deliverables": [
+        "路径已指向安全评估，要申报材料；处理者"
+      ],
+      "path": "skills/准备数据出境安全评估申报",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "数据隐私与网络安全导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备个人信息出境标准合同备案",
+      "kind": "atomic",
+      "displayName": "准备个人信息出境标准合同备案",
+      "goal": "路径已指向标准合同；处理者",
+      "notFor": [
+        "不得实质性修改法定文本对抗个人",
+        "一般合同审查搁置"
+      ],
+      "deliverables": [
+        "路径已指向标准合同；处理者"
+      ],
+      "path": "skills/准备个人信息出境标准合同备案",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "数据隐私与网络安全导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估个人信息保护认证出境路径",
+      "kind": "atomic",
+      "displayName": "评估个人信息保护认证出境路径",
+      "goal": "拟走认证而非标准合同或评估；处理者",
+      "notFor": [
+        "不代办认证",
+        "不写成已获证"
+      ],
+      "deliverables": [
+        "拟走认证而非标准合同或评估；处理者"
+      ],
+      "path": "skills/评估个人信息保护认证出境路径",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "数据隐私与网络安全导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估跨境流动便利化与豁免",
+      "kind": "atomic",
+      "displayName": "评估跨境流动便利化与豁免",
+      "goal": "主张合同履行、跨境人事、紧急情况、低量或自贸区负面清单外；处理者",
+      "notFor": [
+        "豁免不等于免除告知、合法性和安全义务"
+      ],
+      "deliverables": [
+        "主张合同履行、跨境人事、紧急情况、低量或自贸区负面清单外；处理者"
+      ],
+      "path": "skills/评估跨境流动便利化与豁免",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "数据隐私与网络安全导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估境外远程运维访问是否出境",
+      "kind": "atomic",
+      "displayName": "评估境外远程运维访问是否出境",
+      "goal": "境外运维、集团账号、云控制台可调取境内数据；处理者",
+      "notFor": [
+        "不指导隐匿访问日志"
+      ],
+      "deliverables": [
+        "境外运维、集团账号、云控制台可调取境内数据；处理者"
+      ],
+      "path": "skills/评估境外远程运维访问是否出境",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "数据隐私与网络安全导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估境外接收方与再转移",
+      "kind": "atomic",
+      "displayName": "评估境外接收方与再转移",
+      "goal": "接收方国家法律、再转移、实际控制变化；处理者",
+      "notFor": [
+        "外国法查明不足则字段停止",
+        "涉外交易整体转涉外"
+      ],
+      "deliverables": [
+        "接收方国家法律、再转移、实际控制变化；处理者"
+      ],
+      "path": "skills/评估境外接收方与再转移",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "数据隐私与网络安全导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "规划网络安全等级保护",
+      "kind": "atomic",
+      "displayName": "规划网络安全等级保护",
+      "goal": "要定级备案测评或衔接数据安全防护；运营者",
+      "notFor": [
+        "不代替等保测评机构结论",
+        "不设计企业综合合规体系"
+      ],
+      "deliverables": [
+        "要定级备案测评或衔接数据安全防护；运营者"
+      ],
+      "path": "skills/规划网络安全等级保护",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "数据隐私与网络安全导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估是否触发网络安全审查",
+      "kind": "atomic",
+      "displayName": "评估是否触发网络安全审查",
+      "goal": "关基采购网络产品服务，或赴国外上市数据处理者；处理者",
+      "notFor": [
+        "证券发行整体转投行/证券",
+        "不保证审查结果"
+      ],
+      "deliverables": [
+        "关基采购网络产品服务，或赴国外上市数据处理者；处理者"
+      ],
+      "path": "skills/评估是否触发网络安全审查",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "数据隐私与网络安全导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估商用密码与关键系统密码应用",
+      "kind": "atomic",
+      "displayName": "评估商用密码与关键系统密码应用",
+      "goal": "关基或关键系统要密评；运营者",
+      "notFor": [
+        "不替代密码管理部门结论"
+      ],
+      "deliverables": [
+        "关基或关键系统要密评；运营者"
+      ],
+      "path": "skills/评估商用密码与关键系统密码应用",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "数据隐私与网络安全导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "处理网络产品安全漏洞披露",
+      "kind": "atomic",
+      "displayName": "处理网络产品安全漏洞披露",
+      "goal": "发现或收到漏洞，要披露或响应；运营者或厂商",
+      "notFor": [
+        "不指导利用漏洞",
+        "不写漏洞利用步骤"
+      ],
+      "deliverables": [
+        "发现或收到漏洞，要披露或响应；运营者或厂商"
+      ],
+      "path": "skills/处理网络产品安全漏洞披露",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "数据隐私与网络安全导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估云与SaaS数据驻留",
+      "kind": "atomic",
+      "displayName": "评估云与SaaS数据驻留",
+      "goal": "上云、多可用区、境外 Region；处理者",
+      "notFor": [
+        "一般云采购合同审查搁置"
+      ],
+      "deliverables": [
+        "上云、多可用区、境外 Region；处理者"
+      ],
+      "path": "skills/评估云与SaaS数据驻留",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "数据隐私与网络安全导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估生成式人工智能训练与输出数据",
+      "kind": "atomic",
+      "displayName": "评估生成式人工智能训练与输出数据",
+      "goal": "训练语料、用户输入、生成内容含个人信息或重要数据；处理者",
+      "notFor": [
+        "模型算法备案另项",
+        "内容审查整体不吞并"
+      ],
+      "deliverables": [
+        "训练语料、用户输入、生成内容含个人信息或重要数据；处理者"
+      ],
+      "path": "skills/评估生成式人工智能训练与输出数据",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "数据隐私与网络安全导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "保全数据安全事件证据",
+      "kind": "atomic",
+      "displayName": "保全数据安全事件证据",
+      "goal": "日志、镜像、通知记录可能灭失；处理者或个人",
+      "notFor": [
+        "不指导入侵取证或隐匿日志"
+      ],
+      "deliverables": [
+        "日志、镜像、通知记录可能灭失；处理者或个人"
+      ],
+      "path": "skills/保全数据安全事件证据",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "数据隐私与网络安全导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "测算事件影响范围与通知对象",
+      "kind": "atomic",
+      "displayName": "测算事件影响范围与通知对象",
+      "goal": "要可复核的影响人数、种类、系统范围；处理者",
+      "notFor": [
+        "不定监管处罚金额",
+        "不给唯一暴露人数冒充已核验"
+      ],
+      "deliverables": [
+        "要可复核的影响人数、种类、系统范围；处理者"
+      ],
+      "path": "skills/测算事件影响范围与通知对象",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "数据隐私与网络安全导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对网信约谈与监督检查",
+      "kind": "atomic",
+      "displayName": "应对网信约谈与监督检查",
+      "goal": "收到约谈、检查、问询或材料提交要求；相对人",
+      "notFor": [
+        "处罚听证诉讼转行政",
+        "综合合规调查转出"
+      ],
+      "deliverables": [
+        "收到约谈、检查、问询或材料提交要求；相对人"
+      ],
+      "path": "skills/应对网信约谈与监督检查",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "数据隐私与网络安全导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对数据网络安全行政处罚",
+      "kind": "atomic",
+      "displayName": "应对数据网络安全行政处罚",
+      "goal": "拟罚或已罚，要陈述申辩或衔接复议诉讼；相对人",
+      "notFor": [
+        "复议诉讼文书转行政争议",
+        "不承诺免罚"
+      ],
+      "deliverables": [
+        "拟罚或已罚，要陈述申辩或衔接复议诉讼；相对人"
+      ],
+      "path": "skills/应对数据网络安全行政处罚",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "数据隐私与网络安全导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备个人信息保护合规审计",
+      "kind": "atomic",
+      "displayName": "准备个人信息保护合规审计",
+      "goal": "达到定期审计门槛或被要求审计；处理者",
+      "notFor": [
+        "不代替审计意见",
+        "与重要数据风险评估衔接避免重复"
+      ],
+      "deliverables": [
+        "达到定期审计门槛或被要求审计；处理者"
+      ],
+      "path": "skills/准备个人信息保护合规审计",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "数据隐私与网络安全导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对App下架通报与整改",
+      "kind": "atomic",
+      "displayName": "应对App下架通报与整改",
+      "goal": "被通报、下架、停止功能；运营者",
+      "notFor": [
+        "C 端 App 审查只分流",
+        "不回改该商品"
+      ],
+      "deliverables": [
+        "被通报、下架、停止功能；运营者"
+      ],
+      "path": "skills/应对App下架通报与整改",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "数据隐私与网络安全导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备监管整改报告",
+      "kind": "atomic",
+      "displayName": "准备监管整改报告",
+      "goal": "约谈或处罚后要书面整改；相对人",
+      "notFor": [
+        "不把计划写成已完成"
+      ],
+      "deliverables": [
+        "约谈或处罚后要书面整改；相对人"
+      ],
+      "path": "skills/准备监管整改报告",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "数据隐私与网络安全导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估向国家机关提供数据",
+      "kind": "atomic",
+      "displayName": "评估向国家机关提供数据",
+      "goal": "公安、国安、法院、外国执法索取数据；处理者",
+      "notFor": [
+        "PIPL 第 41 条外国执法须主管机关批准",
+        "不指导对抗合法调取"
+      ],
+      "deliverables": [
+        "公安、国安、法院、外国执法索取数据；处理者"
+      ],
+      "path": "skills/评估向国家机关提供数据",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "数据隐私与网络安全导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "谈判个人信息侵权和解",
+      "kind": "atomic",
+      "displayName": "谈判个人信息侵权和解",
+      "goal": "仍可谈删除、道歉、赔偿和弃权；单方",
+      "notFor": [
+        "不输出已签和解协议终稿"
+      ],
+      "deliverables": [
+        "仍可谈删除、道歉、赔偿和弃权；单方"
+      ],
+      "path": "skills/谈判个人信息侵权和解",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "数据隐私与网络安全导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "申请停止处理或删除的行为保全",
+      "kind": "atomic",
+      "displayName": "申请停止处理或删除的行为保全",
+      "goal": "需立即停止处理或下线某功能；申请方",
+      "notFor": [
+        "不保证裁定",
+        "财产保全另转一般民事方法"
+      ],
+      "deliverables": [
+        "需立即停止处理或下线某功能；申请方"
+      ],
+      "path": "skills/申请停止处理或删除的行为保全",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "数据隐私与网络安全导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "处理向平台或网信投诉",
+      "kind": "atomic",
+      "displayName": "处理向平台或网信投诉",
+      "goal": "个人要投诉平台或向网信举报；个人",
+      "notFor": [
+        "C 端个人信息侵权投诉只分流，不回改"
+      ],
+      "deliverables": [
+        "个人要投诉平台或向网信举报；个人"
+      ],
+      "path": "skills/处理向平台或网信投诉",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "数据隐私与网络安全导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估员工个人信息处理合法性",
+      "kind": "atomic",
+      "displayName": "评估员工个人信息处理合法性",
+      "goal": "招聘、监控、背景调查中的员工信息；处理者",
+      "notFor": [
+        "解除、处分、民主程序转劳动"
+      ],
+      "deliverables": [
+        "招聘、监控、背景调查中的员工信息；处理者"
+      ],
+      "path": "skills/评估员工个人信息处理合法性",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "数据隐私与网络安全导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估医疗健康个人信息专项治理",
+      "kind": "atomic",
+      "displayName": "评估医疗健康个人信息专项治理",
+      "goal": "病历、健康监测、基因等数据治理；处理者",
+      "notFor": [
+        "诊疗过错、器械注册、医院执业转医疗医药"
+      ],
+      "deliverables": [
+        "病历、健康监测、基因等数据治理；处理者"
+      ],
+      "path": "skills/评估医疗健康个人信息专项治理",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "数据隐私与网络安全导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估汽车数据与车外图像",
+      "kind": "atomic",
+      "displayName": "评估汽车数据与车外图像",
+      "goal": "车端个人信息、车外图像、重要数据；汽车数据处理者",
+      "notFor": [
+        "交通事故赔偿转侵权",
+        "产品缺陷监管不整案吞并"
+      ],
+      "deliverables": [
+        "车端个人信息、车外图像、重要数据；汽车数据处理者"
+      ],
+      "path": "skills/评估汽车数据与车外图像",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "数据隐私与网络安全导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    }
+  ],
+  "guideName": "数据隐私与网络安全导航"
+}

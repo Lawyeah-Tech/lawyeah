@@ -1,0 +1,4 @@
+interface:
+  display_name: "起草跨境和解协议"
+  short_description: "在条件已谈拢后起草跨境和解协议的弃权、支付和执行安排"
+  default_prompt: "使用 $起草跨境和解协议，在条件已谈拢后起草跨境和解协议草稿。"

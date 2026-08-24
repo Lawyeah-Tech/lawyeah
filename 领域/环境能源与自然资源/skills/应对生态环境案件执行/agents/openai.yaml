@@ -1,0 +1,4 @@
+interface:
+  display_name: "应对生态环境案件执行"
+  short_description: "提出生态环境执行的适格异议和分期修复方案"
+  default_prompt: "使用 $应对生态环境案件执行，整理生态环境案件执行中的适格异议与分期修复方案。"

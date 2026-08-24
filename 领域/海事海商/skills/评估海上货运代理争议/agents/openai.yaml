@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估海上货运代理争议"
+  short_description: "判断货代签单、转委托或放货责任"
+  default_prompt: "使用 $评估海上货运代理争议，评估本案海上货运代理或无船承运人责任。"

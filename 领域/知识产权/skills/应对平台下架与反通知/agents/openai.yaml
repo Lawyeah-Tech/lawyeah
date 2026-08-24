@@ -1,0 +1,4 @@
+interface:
+  display_name: "应对平台下架与反通知"
+  short_description: "组织平台反通知并分列十五日与合理期限"
+  default_prompt: "使用 $应对平台下架与反通知，应对中国大陆平台下架与反通知。"

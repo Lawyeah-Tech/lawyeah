@@ -1,0 +1,4 @@
+interface:
+  display_name: "排序船舶优先权抵押权留置权"
+  short_description: "排列船舶优先权、抵押权和留置权受偿顺序"
+  default_prompt: "使用 $排序船舶优先权抵押权留置权，排列本案船舶优先权、抵押权和留置权的受偿顺序。"

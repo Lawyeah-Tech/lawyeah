@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估国际贸易解除权"
+  short_description: "判断国际贸易解除权的约定、法定或条约路径及催告除斥"
+  default_prompt: "使用 $评估国际贸易解除权，评估拟解除或已收到解除的路径、催告必要和除斥情景。"

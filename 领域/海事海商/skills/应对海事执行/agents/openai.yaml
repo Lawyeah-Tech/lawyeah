@@ -1,0 +1,4 @@
+interface:
+  display_name: "应对海事执行"
+  short_description: "应对海事执行或船舶被委托扣押"
+  default_prompt: "使用 $应对海事执行，准备本案海事执行异议要点与履行安排。"

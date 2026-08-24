@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估货损货差迟延"
+  short_description: "判断货损责任期间、通知、免责和时效接口"
+  default_prompt: "使用 $评估货损货差迟延索赔，评估本案货损货差或迟延请求与抗辩。"

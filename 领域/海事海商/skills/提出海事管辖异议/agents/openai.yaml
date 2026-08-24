@@ -1,0 +1,4 @@
+interface:
+  display_name: "提出海事管辖异议"
+  short_description: "在法定期限内准备海事管辖异议"
+  default_prompt: "使用 $提出海事管辖异议，在法定期限内准备本案海事管辖异议材料。"

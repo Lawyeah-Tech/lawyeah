@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估境内存储与本地化"
+  short_description: "判断境内存储义务及镜像备份是否构成出境"
+  default_prompt: "使用 $评估境内存储与本地化，评估相关数据是否必须境内存储，以及境外镜像或备份是否构成出境。"

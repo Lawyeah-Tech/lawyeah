@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估涉港澳台法域与文书"
+  short_description: "把涉港澳台事项定性为区际安排并规划认可与文书路径"
+  default_prompt: "使用 $评估涉港澳台法域与文书，评估涉港澳台的区际定性、认可安排入口和文书路径。"

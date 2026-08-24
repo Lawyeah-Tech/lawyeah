@@ -1,0 +1,4 @@
+interface:
+  display_name: "应对涉外保全裁定"
+  short_description: "对被涉外保全的财产或行为准备复议或担保置换且不得违反裁定"
+  default_prompt: "使用 $应对涉外保全裁定，应对涉外保全裁定，评估复议或担保置换。"

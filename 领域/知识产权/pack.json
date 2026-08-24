@@ -1,0 +1,1556 @@
+{
+  "schemaVersion": 2,
+  "id": "protect-intellectual-property",
+  "displayName": "知识产权",
+  "description": "处理中国大陆商标、著作权、专利、商业秘密及其他知识产权的评估、警告通知、行为保全、测算、证据、民事两造和行政查处的多 Skill 领域包。",
+  "version": "1.0.0",
+  "license": "Apache-2.0",
+  "jurisdiction": "CN-mainland",
+  "contentModel": "multi-skill-progressive-disclosure",
+  "reinstallStrategy": "replace",
+  "scope": {
+    "purpose": "保护、运营和争议解决商标、著作权、专利、商业秘密及其他知识产权。",
+    "inScope": [
+      "知识产权确权和布局",
+      "许可、转让与商业化争议评估",
+      "侵权监测、维权和抗辩",
+      "商业秘密保护与争议"
+    ],
+    "outOfScope": [
+      "以个人信息和数据安全合规为主要成果的事项",
+      "以市场竞争秩序为主要成果的不正当竞争和反垄断事项",
+      "一般技术交易或投资交易整体",
+      "竞业限制和劳动关系内保密义务"
+    ],
+    "primaryDeliverables": [
+      "知识产权布局与评估意见",
+      "侵权分析和维权方案",
+      "知识产权诉讼行政成果",
+      "商业秘密权利与侵权评估"
+    ]
+  },
+  "guideSkill": "知识产权导航",
+  "mcp": {
+    "contractRange": "0.0"
+  },
+  "skills": [
+    {
+      "id": "知识产权导航",
+      "kind": "guide",
+      "displayName": "知识产权导航",
+      "goal": "说明领域包的能力、边界和当前原子 Skill 全貌",
+      "notFor": [
+        "直接完成具体法律业务成果"
+      ],
+      "deliverables": [
+        "领域能力定位结果"
+      ],
+      "path": "skills/知识产权导航",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "准备知识产权行为保全申请",
+          "建立知识产权证据案卷",
+          "应对知识产权民事一审",
+          "评估商业秘密权利与侵权",
+          "准备知识产权行政查处投诉",
+          "评估知识产权事项",
+          "测算知识产权损害赔偿",
+          "准备侵权警告函",
+          "提起知识产权民事一审",
+          "评估侵权是否成立",
+          "梳理知识产权权利清单与状态",
+          "选择民事行政平台海关或刑事交叉路径",
+          "评估知识产权期间与除斥",
+          "评估权属与职务成果归属",
+          "评估知识产权管辖与专门法院",
+          "评估权利稳定性与被无效风险",
+          "准备商标注册申请前核验",
+          "准备商标驳回复审材料",
+          "准备商标异议材料",
+          "应对商标异议",
+          "准备商标无效宣告",
+          "应对商标无效宣告",
+          "准备商标撤三申请",
+          "应对商标撤三",
+          "评估专利申请公开与权属风险",
+          "准备专利审查意见答复框架",
+          "准备专利无效宣告",
+          "应对专利无效宣告",
+          "评估专利自由实施风险",
+          "评估作品登记作为权属证据的风险",
+          "评估作品权属与合作委托职务作品",
+          "评估计算机软件著作权与权属",
+          "评估合理使用与法定许可",
+          "建设商业秘密权利基础与保护措施",
+          "应对商业秘密侵权指控",
+          "评估客户名单是否构成商业秘密",
+          "评估商标近似与混淆可能性",
+          "评估专利权利要求与被控技术方案对照",
+          "评估作品实质性相似与接触",
+          "评估被控侵权抗辩路径",
+          "评估定牌加工与合法来源抗辩",
+          "评估在先使用与权利用尽",
+          "评估网络服务提供者责任与通知删除",
+          "评估仿冒与有一定影响的标识保护",
+          "评估域名与标识冲突",
+          "评估植物新品种布图设计或地理标志",
+          "应对侵权警告函或律师函",
+          "准备平台投诉与通知删除材料",
+          "应对平台下架与反通知",
+          "准备知识产权海关备案",
+          "处理海关扣留与确认侵权",
+          "保全网页公证与侵权购买取证",
+          "应对知识产权行为保全裁定",
+          "准备证据保全申请",
+          "准备知识产权鉴定申请",
+          "谈判知识产权和解方案",
+          "评估许可争议请求与抗辩",
+          "评估转让权属争议",
+          "准备知识产权案件庭审",
+          "提起知识产权案件上诉",
+          "准备惩罚性赔偿主张材料",
+          "评估反诉或另行无效对诉讼的影响",
+          "提起确认不侵权之诉",
+          "应对知识产权行政调查与处罚",
+          "分流假冒注册商标等刑民交叉",
+          "执行知识产权生效文书"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估知识产权事项",
+      "kind": "atomic",
+      "displayName": "评估知识产权事项",
+      "goal": "在单方无冲突立场下形成可决策的知识产权事项总图",
+      "notFor": [
+        "发送版警告函",
+        "侵权终局对照",
+        "诉状或答辩",
+        "竞业或劳动保密",
+        "数据合规或反垄断主轴"
+      ],
+      "deliverables": [
+        "在单方无冲突立场下形成可决策的知识产权事项总图"
+      ],
+      "path": "skills/评估知识产权事项",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "知识产权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估侵权是否成立",
+      "kind": "atomic",
+      "displayName": "评估侵权是否成立",
+      "goal": "对照权利保护范围与被控使用，不发函、不定胜诉",
+      "notFor": [
+        "发送版通知",
+        "商业秘密三要件终局",
+        "完整立案包",
+        "C 端第一轮平台评估"
+      ],
+      "deliverables": [
+        "对照权利保护范围与被控使用，不发函、不定胜诉"
+      ],
+      "path": "skills/评估侵权是否成立",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "知识产权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估商业秘密权利与侵权",
+      "kind": "atomic",
+      "displayName": "评估商业秘密权利与侵权",
+      "goal": "判断秘密点、相应措施和侵权路径，不认定已经构成",
+      "notFor": [
+        "竞业效力",
+        "劳动关系内保密安排",
+        "尚未成争的建设包终稿",
+        "刑事策略"
+      ],
+      "deliverables": [
+        "判断秘密点、相应措施和侵权路径，不认定已经构成"
+      ],
+      "path": "skills/评估商业秘密权利与侵权",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "知识产权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备侵权警告函",
+      "kind": "atomic",
+      "displayName": "准备侵权警告函",
+      "goal": "形成发送前警告函及错误通知风险提示",
+      "notFor": [
+        "权属不能回链仍出可发送终稿",
+        "威胁刑事",
+        "把发送写成已构成侵权"
+      ],
+      "deliverables": [
+        "形成发送前警告函及错误通知风险提示"
+      ],
+      "path": "skills/准备侵权警告函",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "知识产权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备知识产权行为保全申请",
+      "kind": "atomic",
+      "displayName": "准备知识产权行为保全申请",
+      "goal": "形成行为保全申请框架、担保和难以弥补损害论证",
+      "notFor": [
+        "财产保全终稿",
+        "保证裁定",
+        "教唆对方违反已生效裁定"
+      ],
+      "deliverables": [
+        "形成行为保全申请框架、担保和难以弥补损害论证"
+      ],
+      "path": "skills/准备知识产权行为保全申请",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "知识产权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "测算知识产权损害赔偿",
+      "kind": "atomic",
+      "displayName": "测算知识产权损害赔偿",
+      "goal": "形成可复核的分项测算，不认定侵权已成立，不输出唯一必得总额",
+      "notFor": [
+        "定性总图",
+        "唯一必得总额",
+        "把未知写成零"
+      ],
+      "deliverables": [
+        "形成可复核的分项测算，不认定侵权已成立，不输出唯一必得总额"
+      ],
+      "path": "skills/测算知识产权损害赔偿",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "知识产权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "建立知识产权证据案卷",
+      "kind": "atomic",
+      "displayName": "建立知识产权证据案卷",
+      "goal": "形成要件、举证责任、材料与合法补证矩阵",
+      "notFor": [
+        "策略总图",
+        "诉状",
+        "违法取证方案"
+      ],
+      "deliverables": [
+        "形成要件、举证责任、材料与合法补证矩阵"
+      ],
+      "path": "skills/建立知识产权证据案卷",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "知识产权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "提起知识产权民事一审",
+      "kind": "atomic",
+      "displayName": "提起知识产权民事一审",
+      "goal": "形成可提交但不代提交的一审起诉包",
+      "notFor": [
+        "代提交",
+        "劳动或反垄断主轴",
+        "只要大众网上立案包"
+      ],
+      "deliverables": [
+        "形成可提交但不代提交的一审起诉包"
+      ],
+      "path": "skills/提起知识产权民事一审",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "知识产权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对知识产权民事一审",
+      "kind": "atomic",
+      "displayName": "应对知识产权民事一审",
+      "goal": "形成首次应诉答辩包和无效/管辖红旗",
+      "notFor": [
+        "劳动应诉",
+        "主动起诉",
+        "只要管辖异议终稿且无实体"
+      ],
+      "deliverables": [
+        "形成首次应诉答辩包和无效/管辖红旗"
+      ],
+      "path": "skills/应对知识产权民事一审",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "知识产权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备知识产权行政查处投诉",
+      "kind": "atomic",
+      "displayName": "准备知识产权行政查处投诉",
+      "goal": "形成向市监或知识产权管理部门提交前的查处投诉包",
+      "notFor": [
+        "反垄断调查",
+        "保证立案处罚",
+        "行政复议文书主成果"
+      ],
+      "deliverables": [
+        "形成向市监或知识产权管理部门提交前的查处投诉包"
+      ],
+      "path": "skills/准备知识产权行政查处投诉",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "知识产权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "梳理知识产权权利清单与状态",
+      "kind": "atomic",
+      "displayName": "梳理知识产权权利清单与状态",
+      "goal": "需单独把注册、申请、许可、转让、续展做成可回链清单；单方",
+      "notFor": [
+        "不判断侵权",
+        "不代办续展终稿"
+      ],
+      "deliverables": [
+        "需单独把注册、申请、许可、转让、续展做成可回链清单；单方"
+      ],
+      "path": "skills/梳理知识产权权利清单与状态",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "知识产权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "选择民事行政平台海关或刑事交叉路径",
+      "kind": "atomic",
+      "displayName": "选择民事行政平台海关或刑事交叉路径",
+      "goal": "路径未闭合，需比较论坛与不可逆性；单方",
+      "notFor": [
+        "不写完整起诉或行政投诉包",
+        "刑事定罪转刑事"
+      ],
+      "deliverables": [
+        "路径未闭合，需比较论坛与不可逆性；单方"
+      ],
+      "path": "skills/选择民事行政平台海关或刑事交叉路径",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "知识产权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估知识产权期间与除斥",
+      "kind": "atomic",
+      "displayName": "评估知识产权期间与除斥",
+      "goal": "单独委托核验时效、除斥、异议期、答辩期、海关确认期；单方",
+      "notFor": [
+        "禁止混算或输出唯一截止日",
+        "实体侵权结论走侵权评估"
+      ],
+      "deliverables": [
+        "单独委托核验时效、除斥、异议期、答辩期、海关确认期；单方"
+      ],
+      "path": "skills/评估知识产权期间与除斥",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "知识产权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估权属与职务成果归属",
+      "kind": "atomic",
+      "displayName": "评估权属与职务成果归属",
+      "goal": "争职务作品/发明、委托、合作、继受；单方",
+      "notFor": [
+        "劳动关系内保密义务转劳动",
+        "不写转让合同（审查起草搁置）"
+      ],
+      "deliverables": [
+        "争职务作品/发明、委托、合作、继受；单方"
+      ],
+      "path": "skills/评估权属与职务成果归属",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "知识产权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估知识产权管辖与专门法院",
+      "kind": "atomic",
+      "displayName": "评估知识产权管辖与专门法院",
+      "goal": "要选知识产权法院、中院或普通院，或对方提管辖异议；单方",
+      "notFor": [
+        "不代写完整立案包",
+        "劳动仲裁转劳动"
+      ],
+      "deliverables": [
+        "要选知识产权法院、中院或普通院，或对方提管辖异议；单方"
+      ],
+      "path": "skills/评估知识产权管辖与专门法院",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "知识产权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估权利稳定性与被无效风险",
+      "kind": "atomic",
+      "displayName": "评估权利稳定性与被无效风险",
+      "goal": "拟维权或被诉，需判断权利被无效/撤销的风险；单方",
+      "notFor": [
+        "不写无效宣告终稿"
+      ],
+      "deliverables": [
+        "拟维权或被诉，需判断权利被无效/撤销的风险；单方"
+      ],
+      "path": "skills/评估权利稳定性与被无效风险",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "知识产权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备商标注册申请前核验",
+      "kind": "atomic",
+      "displayName": "准备商标注册申请前核验",
+      "goal": "拟申请注册，需核验主体、图样、类别和在先冲突；申请方",
+      "notFor": [
+        "不保证核准",
+        "C 端 077 只分流",
+        "不代提交"
+      ],
+      "deliverables": [
+        "拟申请注册，需核验主体、图样、类别和在先冲突；申请方"
+      ],
+      "path": "skills/准备商标注册申请前核验",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "知识产权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备商标驳回复审材料",
+      "kind": "atomic",
+      "displayName": "准备商标驳回复审材料",
+      "goal": "收到驳回，需复审；申请方",
+      "notFor": [
+        "不预测审定",
+        "过期停止"
+      ],
+      "deliverables": [
+        "收到驳回，需复审；申请方"
+      ],
+      "path": "skills/准备商标驳回复审材料",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "知识产权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备商标异议材料",
+      "kind": "atomic",
+      "displayName": "准备商标异议材料",
+      "goal": "初审公告期内要异议；异议人",
+      "notFor": [
+        "与无效宣告不同",
+        "过期停止"
+      ],
+      "deliverables": [
+        "初审公告期内要异议；异议人"
+      ],
+      "path": "skills/准备商标异议材料",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "知识产权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对商标异议",
+      "kind": "atomic",
+      "displayName": "应对商标异议",
+      "goal": "己方商标被异议；被异议人",
+      "notFor": [
+        "与应诉民事不同"
+      ],
+      "deliverables": [
+        "己方商标被异议；被异议人"
+      ],
+      "path": "skills/应对商标异议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "知识产权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备商标无效宣告",
+      "kind": "atomic",
+      "displayName": "准备商标无效宣告",
+      "goal": "已注册商标需宣告无效；请求人",
+      "notFor": [
+        "与异议、撤三不同"
+      ],
+      "deliverables": [
+        "已注册商标需宣告无效；请求人"
+      ],
+      "path": "skills/准备商标无效宣告",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "知识产权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对商标无效宣告",
+      "kind": "atomic",
+      "displayName": "应对商标无效宣告",
+      "goal": "己方注册被请求无效；权利人",
+      "notFor": [
+        "不写行政诉讼终稿"
+      ],
+      "deliverables": [
+        "己方注册被请求无效；权利人"
+      ],
+      "path": "skills/应对商标无效宣告",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "知识产权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备商标撤三申请",
+      "kind": "atomic",
+      "displayName": "准备商标撤三申请",
+      "goal": "主张连续三年未使用；请求人",
+      "notFor": [
+        "不指导伪造未使用"
+      ],
+      "deliverables": [
+        "主张连续三年未使用；请求人"
+      ],
+      "path": "skills/准备商标撤三申请",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "知识产权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对商标撤三",
+      "kind": "atomic",
+      "displayName": "应对商标撤三",
+      "goal": "己方商标被撤三；权利人",
+      "notFor": [
+        "不伪造使用"
+      ],
+      "deliverables": [
+        "己方商标被撤三；权利人"
+      ],
+      "path": "skills/应对商标撤三",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "知识产权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估专利申请公开与权属风险",
+      "kind": "atomic",
+      "displayName": "评估专利申请公开与权属风险",
+      "goal": "拟申请，需判断公开风险、权属和是否应交专利代理；申请方",
+      "notFor": [
+        "不实施 C 端初检材料包",
+        "不撰写权利要求"
+      ],
+      "deliverables": [
+        "拟申请，需判断公开风险、权属和是否应交专利代理；申请方"
+      ],
+      "path": "skills/评估专利申请公开与权属风险",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "知识产权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备专利审查意见答复框架",
+      "kind": "atomic",
+      "displayName": "准备专利审查意见答复框架",
+      "goal": "收到审查意见，需组织答复策略；申请方",
+      "notFor": [
+        "正式改权项交专利代理"
+      ],
+      "deliverables": [
+        "收到审查意见，需组织答复策略；申请方"
+      ],
+      "path": "skills/准备专利审查意见答复框架",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "知识产权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备专利无效宣告",
+      "kind": "atomic",
+      "displayName": "准备专利无效宣告",
+      "goal": "要以现有技术等无效对方专利；请求人",
+      "notFor": [
+        "不保证无效"
+      ],
+      "deliverables": [
+        "要以现有技术等无效对方专利；请求人"
+      ],
+      "path": "skills/准备专利无效宣告",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "知识产权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对专利无效宣告",
+      "kind": "atomic",
+      "displayName": "应对专利无效宣告",
+      "goal": "己方专利被请求无效；权利人",
+      "notFor": [
+        "与民事抗辩不同"
+      ],
+      "deliverables": [
+        "己方专利被请求无效；权利人"
+      ],
+      "path": "skills/应对专利无效宣告",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "知识产权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估专利自由实施风险",
+      "kind": "atomic",
+      "displayName": "评估专利自由实施风险",
+      "goal": "上市或投产前怕落入他人权利要求；实施方",
+      "notFor": [
+        "不定不侵权终局",
+        "不替代检索报告"
+      ],
+      "deliverables": [
+        "上市或投产前怕落入他人权利要求；实施方"
+      ],
+      "path": "skills/评估专利自由实施风险",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "知识产权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估作品登记作为权属证据的风险",
+      "kind": "atomic",
+      "displayName": "评估作品登记作为权属证据的风险",
+      "goal": "争议前需判断登记能否补强权属表面证据；权利人",
+      "notFor": [
+        "不实施 C 端登记材料包",
+        "登记≠权利成立"
+      ],
+      "deliverables": [
+        "争议前需判断登记能否补强权属表面证据；权利人"
+      ],
+      "path": "skills/评估作品登记作为权属证据的风险",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "知识产权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估作品权属与合作委托职务作品",
+      "kind": "atomic",
+      "displayName": "评估作品权属与合作委托职务作品",
+      "goal": "争作者、职务、委托、视听作品归属；单方",
+      "notFor": [
+        "劳动保密转劳动"
+      ],
+      "deliverables": [
+        "争作者、职务、委托、视听作品归属；单方"
+      ],
+      "path": "skills/评估作品权属与合作委托职务作品",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "知识产权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估计算机软件著作权与权属",
+      "kind": "atomic",
+      "displayName": "评估计算机软件著作权与权属",
+      "goal": "软件代码/文档权属或侵权对照；单方",
+      "notFor": [
+        "开源许可证争议可留接口",
+        "商业秘密源码走商业秘密"
+      ],
+      "deliverables": [
+        "软件代码/文档权属或侵权对照；单方"
+      ],
+      "path": "skills/评估计算机软件著作权与权属",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "知识产权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估合理使用与法定许可",
+      "kind": "atomic",
+      "displayName": "评估合理使用与法定许可",
+      "goal": "被控或拟使用，需判断限制与例外；单方",
+      "notFor": [
+        "不定当然免责"
+      ],
+      "deliverables": [
+        "被控或拟使用，需判断限制与例外；单方"
+      ],
+      "path": "skills/评估合理使用与法定许可",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "知识产权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "建设商业秘密权利基础与保护措施",
+      "kind": "atomic",
+      "displayName": "建设商业秘密权利基础与保护措施",
+      "goal": "尚未成争，要建秘密点、措施和权限；管理方",
+      "notFor": [
+        "不认定已构成",
+        "竞业条款转劳动",
+        "C 端建设包只分流"
+      ],
+      "deliverables": [
+        "尚未成争，要建秘密点、措施和权限；管理方"
+      ],
+      "path": "skills/建设商业秘密权利基础与保护措施",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "知识产权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对商业秘密侵权指控",
+      "kind": "atomic",
+      "displayName": "应对商业秘密侵权指控",
+      "goal": "已被警告或起诉侵犯商业秘密；被控方",
+      "notFor": [
+        "不指导隐匿或销毁"
+      ],
+      "deliverables": [
+        "已被警告或起诉侵犯商业秘密；被控方"
+      ],
+      "path": "skills/应对商业秘密侵权指控",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "知识产权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估客户名单是否构成商业秘密",
+      "kind": "atomic",
+      "displayName": "评估客户名单是否构成商业秘密",
+      "goal": "争客户名单深度信息；单方",
+      "notFor": [
+        "仅名称电话不得标已构成"
+      ],
+      "deliverables": [
+        "争客户名单深度信息；单方"
+      ],
+      "path": "skills/评估客户名单是否构成商业秘密",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "知识产权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估商标近似与混淆可能性",
+      "kind": "atomic",
+      "displayName": "评估商标近似与混淆可能性",
+      "goal": "需单独做标识、商品类似和混淆；单方",
+      "notFor": [
+        "不替代总体侵权评估终局"
+      ],
+      "deliverables": [
+        "需单独做标识、商品类似和混淆；单方"
+      ],
+      "path": "skills/评估商标近似与混淆可能性",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "知识产权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估专利权利要求与被控技术方案对照",
+      "kind": "atomic",
+      "displayName": "评估专利权利要求与被控技术方案对照",
+      "goal": "需特征一一对应或等同；单方",
+      "notFor": [
+        "不撰写无效理由终稿"
+      ],
+      "deliverables": [
+        "需特征一一对应或等同；单方"
+      ],
+      "path": "skills/评估专利权利要求与被控技术方案对照",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "知识产权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估作品实质性相似与接触",
+      "kind": "atomic",
+      "displayName": "评估作品实质性相似与接触",
+      "goal": "需判断接触加实质性相似；单方",
+      "notFor": [
+        "百分比或哈希不定性"
+      ],
+      "deliverables": [
+        "需判断接触加实质性相似；单方"
+      ],
+      "path": "skills/评估作品实质性相似与接触",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "知识产权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估被控侵权抗辩路径",
+      "kind": "atomic",
+      "displayName": "评估被控侵权抗辩路径",
+      "goal": "已被警告或起诉，要抗辩地图；被控方",
+      "notFor": [
+        "不自动生成答辩状"
+      ],
+      "deliverables": [
+        "已被警告或起诉，要抗辩地图；被控方"
+      ],
+      "path": "skills/评估被控侵权抗辩路径",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "知识产权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估定牌加工与合法来源抗辩",
+      "kind": "atomic",
+      "displayName": "评估定牌加工与合法来源抗辩",
+      "goal": "代工出口或销售者主张合法来源；被控方",
+      "notFor": [
+        "不定当然免赔"
+      ],
+      "deliverables": [
+        "代工出口或销售者主张合法来源；被控方"
+      ],
+      "path": "skills/评估定牌加工与合法来源抗辩",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "知识产权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估在先使用与权利用尽",
+      "kind": "atomic",
+      "displayName": "评估在先使用与权利用尽",
+      "goal": "主张商标先用或专利权利用尽；被控方",
+      "notFor": [
+        "跨境权利用尽字段停止至核验"
+      ],
+      "deliverables": [
+        "主张商标先用或专利权利用尽；被控方"
+      ],
+      "path": "skills/评估在先使用与权利用尽",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "知识产权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估网络服务提供者责任与通知删除",
+      "kind": "atomic",
+      "displayName": "评估网络服务提供者责任与通知删除",
+      "goal": "平台或权利人需判断通知、必要措施和扩大部分；单方",
+      "notFor": [
+        "不把十五日与合理期限互换"
+      ],
+      "deliverables": [
+        "平台或权利人需判断通知、必要措施和扩大部分；单方"
+      ],
+      "path": "skills/评估网络服务提供者责任与通知删除",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "知识产权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估仿冒与有一定影响的标识保护",
+      "kind": "atomic",
+      "displayName": "评估仿冒与有一定影响的标识保护",
+      "goal": "主目标是制止混淆仿冒，而非反垄断；主张方",
+      "notFor": [
+        "平台强制低价、数据抓取主轴转竞争法"
+      ],
+      "deliverables": [
+        "主目标是制止混淆仿冒，而非反垄断；主张方"
+      ],
+      "path": "skills/评估仿冒与有一定影响的标识保护",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "知识产权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估域名与标识冲突",
+      "kind": "atomic",
+      "displayName": "评估域名与标识冲突",
+      "goal": "域名抢注、投诉或标识与域名冲突；单方",
+      "notFor": [
+        "不代提交域名仲裁",
+        "纯注册服务咨询不收录"
+      ],
+      "deliverables": [
+        "域名抢注、投诉或标识与域名冲突；单方"
+      ],
+      "path": "skills/评估域名与标识冲突",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "知识产权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估植物新品种布图设计或地理标志",
+      "kind": "atomic",
+      "displayName": "评估植物新品种布图设计或地理标志",
+      "goal": "主轴是品种权、集成电路布图或地理标志；单方",
+      "notFor": [
+        "种子法刑事或农业行政执法细节标待核",
+        "不并入一般专利对照终局"
+      ],
+      "deliverables": [
+        "主轴是品种权、集成电路布图或地理标志；单方"
+      ],
+      "path": "skills/评估植物新品种布图设计或地理标志",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "知识产权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对侵权警告函或律师函",
+      "kind": "atomic",
+      "displayName": "应对侵权警告函或律师函",
+      "goal": "已收到警告/下架通知；被控方",
+      "notFor": [
+        "C 端 093 只分流",
+        "已起诉走应诉"
+      ],
+      "deliverables": [
+        "已收到警告/下架通知；被控方"
+      ],
+      "path": "skills/应对侵权警告函或律师函",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "知识产权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备平台投诉与通知删除材料",
+      "kind": "atomic",
+      "displayName": "准备平台投诉与通知删除材料",
+      "goal": "对象在平台，需通知删除；主张方",
+      "notFor": [
+        "与警告函可并行",
+        "不保证下架"
+      ],
+      "deliverables": [
+        "对象在平台，需通知删除；主张方"
+      ],
+      "path": "skills/准备平台投诉与通知删除材料",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "知识产权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对平台下架与反通知",
+      "kind": "atomic",
+      "displayName": "应对平台下架与反通知",
+      "goal": "商品或内容被下架；被通知方",
+      "notFor": [
+        "不伪造不存在侵权声明"
+      ],
+      "deliverables": [
+        "商品或内容被下架；被通知方"
+      ],
+      "path": "skills/应对平台下架与反通知",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "知识产权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备知识产权海关备案",
+      "kind": "atomic",
+      "displayName": "准备知识产权海关备案",
+      "goal": "需海关依职权或依申请保护；权利人",
+      "notFor": [
+        "不保证扣留"
+      ],
+      "deliverables": [
+        "需海关依职权或依申请保护；权利人"
+      ],
+      "path": "skills/准备知识产权海关备案",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "知识产权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "处理海关扣留与确认侵权",
+      "kind": "atomic",
+      "displayName": "处理海关扣留与确认侵权",
+      "goal": "海关已扣货，需确认或异议；权利人或收发货人",
+      "notFor": [
+        "过期未确认可能放行"
+      ],
+      "deliverables": [
+        "海关已扣货，需确认或异议；权利人或收发货人"
+      ],
+      "path": "skills/处理海关扣留与确认侵权",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "知识产权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "保全网页公证与侵权购买取证",
+      "kind": "atomic",
+      "displayName": "保全网页公证与侵权购买取证",
+      "goal": "网页、直播、 purcha se 链可能灭失；主张方",
+      "notFor": [
+        "不指导钓鱼或违法侵入"
+      ],
+      "deliverables": [
+        "网页、直播、 purcha se 链可能灭失；主张方"
+      ],
+      "path": "skills/保全网页公证与侵权购买取证",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "知识产权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对知识产权行为保全裁定",
+      "kind": "atomic",
+      "displayName": "应对知识产权行为保全裁定",
+      "goal": "已被责令停止行为；被申请人",
+      "notFor": [
+        "禁止教唆违反裁定"
+      ],
+      "deliverables": [
+        "已被责令停止行为；被申请人"
+      ],
+      "path": "skills/应对知识产权行为保全裁定",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "知识产权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备证据保全申请",
+      "kind": "atomic",
+      "displayName": "准备证据保全申请",
+      "goal": "账簿或模具可能灭失；申请方",
+      "notFor": [
+        "不保证裁定"
+      ],
+      "deliverables": [
+        "账簿或模具可能灭失；申请方"
+      ],
+      "path": "skills/准备证据保全申请",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "知识产权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备知识产权鉴定申请",
+      "kind": "atomic",
+      "displayName": "准备知识产权鉴定申请",
+      "goal": "需技术或作品对比鉴定；单方",
+      "notFor": [
+        "不预测鉴定意见"
+      ],
+      "deliverables": [
+        "需技术或作品对比鉴定；单方"
+      ],
+      "path": "skills/准备知识产权鉴定申请",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "知识产权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "谈判知识产权和解方案",
+      "kind": "atomic",
+      "displayName": "谈判知识产权和解方案",
+      "goal": "仍可谈，要底线和弃权范围；单方",
+      "notFor": [
+        "不写未成争许可合同（审查起草搁置）"
+      ],
+      "deliverables": [
+        "仍可谈，要底线和弃权范围；单方"
+      ],
+      "path": "skills/谈判知识产权和解方案",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "知识产权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估许可争议请求与抗辩",
+      "kind": "atomic",
+      "displayName": "评估许可争议请求与抗辩",
+      "goal": "已成争的许可范围、费用、终止；单方",
+      "notFor": [
+        "未成争出稿走审查起草（搁置）"
+      ],
+      "deliverables": [
+        "已成争的许可范围、费用、终止；单方"
+      ],
+      "path": "skills/评估许可争议请求与抗辩",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "知识产权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估转让权属争议",
+      "kind": "atomic",
+      "displayName": "评估转让权属争议",
+      "goal": "转让未登记或一标二卖；单方",
+      "notFor": [
+        "出转让协议走审查起草（搁置）"
+      ],
+      "deliverables": [
+        "转让未登记或一标二卖；单方"
+      ],
+      "path": "skills/评估转让权属争议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "知识产权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备知识产权案件庭审",
+      "kind": "atomic",
+      "displayName": "准备知识产权案件庭审",
+      "goal": "即将开庭；单方代理",
+      "notFor": [
+        "不代替立案"
+      ],
+      "deliverables": [
+        "即将开庭；单方代理"
+      ],
+      "path": "skills/准备知识产权案件庭审",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "知识产权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "提起知识产权案件上诉",
+      "kind": "atomic",
+      "displayName": "提起知识产权案件上诉",
+      "goal": "不服未生效裁判；上诉方",
+      "notFor": [
+        "不重做一审"
+      ],
+      "deliverables": [
+        "不服未生效裁判；上诉方"
+      ],
+      "path": "skills/提起知识产权案件上诉",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "知识产权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备惩罚性赔偿主张材料",
+      "kind": "atomic",
+      "displayName": "准备惩罚性赔偿主张材料",
+      "goal": "需主张故意且情节严重；主张方",
+      "notFor": [
+        "不输出必得倍数"
+      ],
+      "deliverables": [
+        "需主张故意且情节严重；主张方"
+      ],
+      "path": "skills/准备惩罚性赔偿主张材料",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "知识产权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估反诉或另行无效对诉讼的影响",
+      "kind": "atomic",
+      "displayName": "评估反诉或另行无效对诉讼的影响",
+      "goal": "被告拟无效或确认不侵权；被控方",
+      "notFor": [
+        "不自动生成无效终稿"
+      ],
+      "deliverables": [
+        "被告拟无效或确认不侵权；被控方"
+      ],
+      "path": "skills/评估反诉或另行无效对诉讼的影响",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "知识产权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "提起确认不侵权之诉",
+      "kind": "atomic",
+      "displayName": "提起确认不侵权之诉",
+      "goal": "已受警告或被威胁起诉，需确认不侵权；被控方",
+      "notFor": [
+        "与普通应诉、警告回复不同",
+        "不自动承认对方权利"
+      ],
+      "deliverables": [
+        "已受警告或被威胁起诉，需确认不侵权；被控方"
+      ],
+      "path": "skills/提起确认不侵权之诉",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "知识产权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对知识产权行政调查与处罚",
+      "kind": "atomic",
+      "displayName": "应对知识产权行政调查与处罚",
+      "goal": "已收到调查或处罚事先告知；被调查方",
+      "notFor": [
+        "行政复议文书主成果转行政领域"
+      ],
+      "deliverables": [
+        "已收到调查或处罚事先告知；被调查方"
+      ],
+      "path": "skills/应对知识产权行政调查与处罚",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "知识产权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "分流假冒注册商标等刑民交叉",
+      "kind": "atomic",
+      "displayName": "分流假冒注册商标等刑民交叉",
+      "goal": "出现假冒、制售、侵犯商业秘密刑责信号；单方",
+      "notFor": [
+        "不定罪",
+        "刑事成果转刑事"
+      ],
+      "deliverables": [
+        "出现假冒、制售、侵犯商业秘密刑责信号；单方"
+      ],
+      "path": "skills/分流假冒注册商标等刑民交叉",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "知识产权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "执行知识产权生效文书",
+      "kind": "atomic",
+      "displayName": "执行知识产权生效文书",
+      "goal": "持停止侵权或金钱判决未获履行；权利人",
+      "notFor": [
+        "不重审实体"
+      ],
+      "deliverables": [
+        "持停止侵权或金钱判决未获履行；权利人"
+      ],
+      "path": "skills/执行知识产权生效文书",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "知识产权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    }
+  ],
+  "guideName": "知识产权导航"
+}

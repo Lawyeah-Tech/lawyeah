@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备惩罚性赔偿主张材料"
+  short_description: "组织惩罚性赔偿的故意情节基数与倍数接口，不输出必得倍数"
+  default_prompt: "使用 $准备惩罚性赔偿主张材料，准备中国大陆知识产权惩罚性赔偿主张材料。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备外商投资信息报告材料"
+  short_description: "准备外商投资初始、变更或年度信息报告材料和时点补正"
+  default_prompt: "使用 $准备外商投资信息报告材料，准备外商投资信息报告的材料、时点和补正清单。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备扣押船舶申请"
+  short_description: "形成扣船申请、担保方案和三十日起诉或仲裁提示"
+  default_prompt: "使用 $准备扣押船舶申请，准备向海事法院申请扣押船舶的材料。"

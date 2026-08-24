@@ -1,0 +1,4 @@
+interface:
+  display_name: "挑战责任限制权利或基金"
+  short_description: "准备对限制权利或基金程序的异议"
+  default_prompt: "使用 $挑战责任限制权利或基金，准备本案对责任限制权利或基金程序的异议。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备取水许可申请或变更"
+  short_description: "准备取水许可申请或变更材料、论证和计量安排"
+  default_prompt: "使用 $准备取水许可申请或变更，准备取水许可申请或变更材料。"

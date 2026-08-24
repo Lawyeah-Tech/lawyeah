@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估船舶买卖争议"
+  short_description: "判断交船、船况、文件或价款争议"
+  default_prompt: "使用 $评估船舶买卖争议，评估本案船舶买卖交船、船况或价款争议。"

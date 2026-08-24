@@ -1,0 +1,4 @@
+interface:
+  display_name: "梳理知识产权权利清单与状态"
+  short_description: "把注册申请许可转让续展做成可回链清单，不判断侵权"
+  default_prompt: "使用 $梳理知识产权权利清单与状态，在单一立场下梳理中国大陆知识产权权利清单与状态。"

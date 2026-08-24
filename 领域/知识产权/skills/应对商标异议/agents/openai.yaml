@@ -1,0 +1,4 @@
+interface:
+  display_name: "应对商标异议"
+  short_description: "组织被异议商标的答辩与使用在先证据"
+  default_prompt: "使用 $应对商标异议，应对中国大陆商标异议。"

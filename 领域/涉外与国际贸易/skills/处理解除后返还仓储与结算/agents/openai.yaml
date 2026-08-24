@@ -1,0 +1,4 @@
+interface:
+  display_name: "处理解除后返还仓储与结算"
+  short_description: "在解除或拒收后整理货物返还、仓储费用和结算而不重判解除"
+  default_prompt: "使用 $处理解除后返还仓储与结算，处理解除或拒收后的货物返还、仓储和结算清理。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估作品实质性相似与接触"
+  short_description: "区分思想与表达后评估接触加实质性相似"
+  default_prompt: "使用 $评估作品实质性相似与接触，评估中国大陆作品实质性相似与接触。"

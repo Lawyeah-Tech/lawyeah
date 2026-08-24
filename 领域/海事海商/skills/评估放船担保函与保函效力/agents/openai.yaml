@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估放船担保函与保函效力"
+  short_description: "判断 保赔协会保函、银行保函或法院担保能否放船"
+  default_prompt: "使用 $评估放船担保函与保函效力，评估本案放船担保函的主体、金额、准据法与可执行性。"

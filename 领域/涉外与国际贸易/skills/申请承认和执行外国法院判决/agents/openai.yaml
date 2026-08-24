@@ -1,0 +1,4 @@
+interface:
+  display_name: "申请承认和执行外国法院判决"
+  short_description: "按条约或互惠路径准备承认和执行外国法院判决的材料和事由预判"
+  default_prompt: "使用 $申请承认和执行外国法院判决，申请在中国承认和执行外国法院判决。"

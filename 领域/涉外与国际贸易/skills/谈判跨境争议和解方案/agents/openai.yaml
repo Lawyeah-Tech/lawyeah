@@ -1,0 +1,4 @@
+interface:
+  display_name: "谈判跨境争议和解方案"
+  short_description: "为跨境争议准备争点让步表、弃权范围和执行承认提示"
+  default_prompt: "使用 $谈判跨境争议和解方案，在仍可谈判时形成跨境争议和解底线、让步和执行力提示。"

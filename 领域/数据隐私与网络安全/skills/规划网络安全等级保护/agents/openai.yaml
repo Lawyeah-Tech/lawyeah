@@ -1,0 +1,4 @@
+interface:
+  display_name: "规划网络安全等级保护"
+  short_description: "规划等保定级备案测评并衔接数据安全"
+  default_prompt: "使用 $规划网络安全等级保护，规划网络安全等级保护的定级备案测评接口，并与数据安全衔接，不代替测评结论。"

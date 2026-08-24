@@ -1,0 +1,4 @@
+interface:
+  display_name: "识别重要数据"
+  short_description: "识别重要数据状态并给出未告知时的出境接口"
+  default_prompt: "使用 $识别重要数据，评估相关数据的重要数据识别状态，未被告知或公布时不得写成已确定。"

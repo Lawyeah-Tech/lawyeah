@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估管辖与仲裁协议"
+  short_description: "判断跨境事项去法院还是仲裁，以及条款是否绊住诉讼"
+  default_prompt: "使用 $评估涉外管辖与仲裁协议，评估跨境或涉外事项的管辖与仲裁协议。"

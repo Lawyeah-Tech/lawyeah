@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估碳配额履约与交易"
+  short_description: "判断碳市场纳入、配额清缴和交易效力，不预测碳价"
+  default_prompt: "使用 $评估碳配额履约与交易，评估碳排放权配额纳入、清缴与交易效力；不预测碳价。"

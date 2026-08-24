@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估运费滞期费与货物留置"
+  short_description: "判断运费滞期请求与货物留置是否立得住"
+  default_prompt: "使用 $评估运费滞期费与货物留置，评估本案运费、滞期费请求与货物留置风险。"

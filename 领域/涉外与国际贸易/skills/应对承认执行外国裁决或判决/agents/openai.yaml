@@ -1,0 +1,4 @@
+interface:
+  display_name: "应对承认执行外国裁决或判决"
+  short_description: "应对承认执行外国裁决或判决的公约抗辩、程序权利和公共秩序"
+  default_prompt: "使用 $应对承认执行外国裁决或判决，作为被申请人应对承认执行外国裁决或判决。"

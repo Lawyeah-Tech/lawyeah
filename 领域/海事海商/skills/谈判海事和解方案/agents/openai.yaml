@@ -1,0 +1,4 @@
+interface:
+  display_name: "谈判海事和解方案"
+  short_description: "形成让步、放船担保和弃权范围，并明示无执行力"
+  default_prompt: "使用 $谈判海事和解方案，设计本案海事和解与放船条件。"

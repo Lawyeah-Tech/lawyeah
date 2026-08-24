@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备货损通知或索赔保留"
+  short_description: "准备货损损坏通知或索赔保留函"
+  default_prompt: "使用 $准备货损通知或索赔保留，准备本案货损通知或索赔保留函。"

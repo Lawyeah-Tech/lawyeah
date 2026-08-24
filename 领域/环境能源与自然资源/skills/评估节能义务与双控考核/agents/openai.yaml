@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估节能义务与双控考核"
+  short_description: "判断节能法义务、双控考核和与项目核准的分账"
+  default_prompt: "使用 $评估节能义务与双控考核，评估节能义务、双控考核，并与项目核准分账。"

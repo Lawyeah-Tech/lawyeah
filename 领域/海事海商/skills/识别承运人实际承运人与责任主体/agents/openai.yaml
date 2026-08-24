@@ -1,0 +1,4 @@
+interface:
+  display_name: "识别承运人实际承运人与责任主体"
+  short_description: "锁定提单、租约和签单货代下的可诉主体"
+  default_prompt: "使用 $识别承运人实际承运人与责任主体，根据提单、订舱和租约识别承运人、实际承运人与责任主体。"

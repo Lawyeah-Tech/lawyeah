@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备矿业权转让变更报批"
+  short_description: "准备矿业权转让变更报批材料并核对证照一致性"
+  default_prompt: "使用 $准备矿业权转让变更报批，准备矿业权转让变更报批材料；未经批准不得写成已变更。"

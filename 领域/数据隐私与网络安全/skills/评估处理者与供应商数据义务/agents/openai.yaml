@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估处理者与供应商数据义务"
+  short_description: "盘点供应商数据角色和监督缺口"
+  default_prompt: "使用 $评估处理者与供应商数据义务，评估各供应商在个人信息处理中的角色、监督措施和再委托风险。"

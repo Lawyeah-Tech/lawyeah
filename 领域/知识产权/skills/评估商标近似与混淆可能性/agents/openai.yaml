@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估商标近似与混淆可能性"
+  short_description: "隔离比对商标近似与混淆因素，不替代侵权终局"
+  default_prompt: "使用 $评估商标近似与混淆可能性，评估中国大陆商标近似与混淆可能性。"

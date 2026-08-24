@@ -1,0 +1,4 @@
+interface:
+  display_name: "开展数据分类分级"
+  short_description: "建立数据分类分级目录和核心重要一般接口"
+  default_prompt: "使用 $开展数据分类分级，开展数据分类分级，输出带版本的目录和级别接口，不冒充国家已公布目录。"

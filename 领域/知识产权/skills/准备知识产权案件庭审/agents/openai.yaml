@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备知识产权案件庭审"
+  short_description: "准备知产庭审争点比对质证与询问提纲"
+  default_prompt: "使用 $准备知识产权案件庭审，准备中国大陆知识产权案件庭审。"

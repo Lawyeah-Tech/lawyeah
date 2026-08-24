@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估数据交易与场内流通"
+  short_description: "评估数据集能否交易及个人信息重要数据剥离"
+  default_prompt: "使用 $评估数据交易与场内流通，评估拟交易或购买的数据集可交易性、剥离情况和安全要点。"

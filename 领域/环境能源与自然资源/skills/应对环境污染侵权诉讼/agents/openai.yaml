@@ -1,0 +1,4 @@
+interface:
+  display_name: "应对环境污染侵权诉讼"
+  short_description: "形成环境污染私益侵权的首次答辩和因果抗辩"
+  default_prompt: "使用 $应对环境污染侵权诉讼，根据起诉状准备中国大陆环境污染侵权首次应诉材料。"

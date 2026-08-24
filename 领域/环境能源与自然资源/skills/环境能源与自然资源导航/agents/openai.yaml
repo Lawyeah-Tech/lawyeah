@@ -1,0 +1,4 @@
+interface:
+  display_name: "环境、能源与自然资源导航"
+  short_description: "了解环境能源领域包的能力边界，并定位适用的原子 Skill"
+  default_prompt: "使用 $环境能源与自然资源导航 根据我的立场、阶段和预期成果定位合适的环境能源原子 Skill。当前安装包是。"

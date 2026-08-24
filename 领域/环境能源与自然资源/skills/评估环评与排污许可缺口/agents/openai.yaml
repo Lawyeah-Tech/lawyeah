@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估环评与排污许可缺口"
+  short_description: "对照环评、三同时和排污许可，分账未批先建与无证排污"
+  default_prompt: "使用 $评估环评与排污许可缺口，评估中国大陆项目的环评、三同时和排污许可缺口。"

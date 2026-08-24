@@ -1,0 +1,4 @@
+interface:
+  display_name: "保全污染现场与监测证据"
+  short_description: "规划污染现场合法保全步骤并分流公证鉴定"
+  default_prompt: "使用 $保全污染现场与监测证据，规划污染现场与监测证据的合法保全步骤。"

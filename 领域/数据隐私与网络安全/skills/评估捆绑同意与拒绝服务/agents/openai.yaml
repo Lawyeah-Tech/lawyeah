@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估捆绑同意与拒绝服务"
+  short_description: "判断不授权即关服务或捆绑同意是否成立"
+  default_prompt: "使用 $评估捆绑同意与拒绝服务，评估捆绑同意、拒绝服务和频繁征求同意的合法性。"

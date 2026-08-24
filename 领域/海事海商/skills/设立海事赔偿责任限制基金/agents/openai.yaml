@@ -1,0 +1,4 @@
+interface:
+  display_name: "设立海事赔偿责任限制基金"
+  short_description: "准备海事赔偿责任限制基金申请材料"
+  default_prompt: "使用 $设立海事赔偿责任限制基金，准备本案海事赔偿责任限制基金申请材料与金额利息接口。"

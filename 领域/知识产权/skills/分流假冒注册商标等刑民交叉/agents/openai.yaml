@@ -1,0 +1,4 @@
+interface:
+  display_name: "分流假冒注册商标等刑民交叉"
+  short_description: "识别假冒与商业秘密等刑民交叉并分流，不定罪"
+  default_prompt: "使用 $分流假冒注册商标等刑民交叉，分流中国大陆假冒注册商标等刑民交叉。"

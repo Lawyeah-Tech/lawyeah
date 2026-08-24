@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估个人信息保护认证出境路径"
+  short_description: "比较认证出境路径的适配性与缺口"
+  default_prompt: "使用 $评估个人信息保护认证出境路径，评估个人信息保护认证作为出境路径是否适配，不代办、不写成已获证。"

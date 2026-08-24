@@ -1,0 +1,4 @@
+interface:
+  display_name: "申请拍卖船舶"
+  short_description: "在扣押后具备条件时申请拍卖船舶"
+  default_prompt: "使用 $申请拍卖船舶，准备本案拍卖船舶申请、公告事项与优先拨付提示。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估在先使用与权利用尽"
+  short_description: "评估商标先用原有范围与专利权利用尽，跨境待核"
+  default_prompt: "使用 $评估在先使用与权利用尽，评估中国大陆在先使用与权利用尽。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估被控侵权抗辩路径"
+  short_description: "为被控方绘制抗辩地图，不自动生成答辩状"
+  default_prompt: "使用 $评估被控侵权抗辩路径，评估中国大陆被控侵权抗辩路径。"

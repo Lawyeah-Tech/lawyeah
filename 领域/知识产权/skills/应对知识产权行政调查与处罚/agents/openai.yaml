@@ -1,0 +1,4 @@
+interface:
+  display_name: "应对知识产权行政调查与处罚"
+  short_description: "组织知产行政调查陈述申辩与听证，复议文书转出"
+  default_prompt: "使用 $应对知识产权行政调查与处罚，应对中国大陆知识产权行政调查与处罚。"

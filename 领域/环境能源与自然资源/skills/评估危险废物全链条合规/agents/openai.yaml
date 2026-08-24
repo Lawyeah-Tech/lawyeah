@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估危险废物全链条合规"
+  short_description: "判断危废名录、许可、联单和非法处置红旗"
+  default_prompt: "使用 $评估危险废物全链条合规，评估危险废物识别、许可、转移和非法处置红旗。"

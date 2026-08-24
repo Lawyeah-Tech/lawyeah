@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估归类估价与原产地"
+  short_description: "评估海关归类、完税价格和原产地争点及复议诉讼分流"
+  default_prompt: "使用 $评估归类估价与原产地，评估税则归类、完税价格或原产地争执。"

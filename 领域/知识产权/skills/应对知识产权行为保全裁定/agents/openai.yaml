@@ -1,0 +1,4 @@
+interface:
+  display_name: "应对知识产权行为保全裁定"
+  short_description: "在不违反裁定的前提下组织复议担保与履行边界"
+  default_prompt: "使用 $应对知识产权行为保全裁定，应对中国大陆知识产权行为保全裁定。"

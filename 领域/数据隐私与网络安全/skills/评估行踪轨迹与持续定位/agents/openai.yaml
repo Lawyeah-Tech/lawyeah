@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估行踪轨迹与持续定位"
+  short_description: "评估持续定位与行踪轨迹的敏感认定、单独同意和关闭路径"
+  default_prompt: "使用 $评估行踪轨迹与持续定位，评估应用持续定位或轨迹画像是否构成敏感信息及关闭路径是否真实。"

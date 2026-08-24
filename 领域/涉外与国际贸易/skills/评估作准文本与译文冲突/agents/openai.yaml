@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估作准文本与译文冲突"
+  short_description: "对照作准条款和中外文本冲突点，判断对请求的影响"
+  default_prompt: "使用 $评估作准文本与译文冲突，评估跨境合同作准文本与译文冲突对请求或抗辩的影响。"

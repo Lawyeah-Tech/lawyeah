@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估共同处理安排"
+  short_description: "认定共同处理并给出对外连带和对内约定接口"
+  default_prompt: "使用 $评估共同处理安排，评估两方是否构成共同处理，以及对外连带和对内约定缺口。"

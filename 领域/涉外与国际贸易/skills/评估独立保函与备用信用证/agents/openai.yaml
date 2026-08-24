@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估独立保函与备用信用证"
+  short_description: "评估见索即付保函或备用证的独立性、欺诈例外和止付接口"
+  default_prompt: "使用 $评估独立保函与备用信用证，评估独立保函或备用信用证的索赔、欺诈例外和止付接口。"

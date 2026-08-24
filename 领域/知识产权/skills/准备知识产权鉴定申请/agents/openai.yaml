@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备知识产权鉴定申请"
+  short_description: "设计可鉴的鉴定事项与检材，不预测鉴定意见"
+  default_prompt: "使用 $准备知识产权鉴定申请，准备中国大陆知识产权鉴定申请。"

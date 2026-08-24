@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估野生动植物与保护地红线"
+  short_description: "判断保护地红线、名录和禁止活动及刑事红旗"
+  default_prompt: "使用 $评估野生动植物与保护地红线，评估野生动植物名录、保护地分区与刑事红旗；不定罪。"

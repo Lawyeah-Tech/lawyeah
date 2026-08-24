@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备海上保险索赔材料"
+  short_description: "准备向保险人递交的海上保险索赔材料"
+  default_prompt: "使用 $准备海上保险索赔材料，准备本案海上保险索赔文件清单与时限。"

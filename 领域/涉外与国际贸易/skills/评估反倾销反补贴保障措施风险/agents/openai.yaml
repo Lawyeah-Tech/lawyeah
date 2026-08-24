@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估反倾销反补贴保障措施风险"
+  short_description: "评估反倾销、反补贴或保障措施的产品范围、接口和应诉申请分流"
+  default_prompt: "使用 $评估反倾销反补贴保障措施风险，评估反倾销反补贴保障措施风险及应诉或申请分流。"

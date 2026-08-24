@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估返程投资与协议控制监管"
+  short_description: "评估红筹、返程和协议控制的准入、审查与披露红旗"
+  default_prompt: "使用 $评估返程投资与协议控制监管，评估返程投资与协议控制的监管定性和红旗。"

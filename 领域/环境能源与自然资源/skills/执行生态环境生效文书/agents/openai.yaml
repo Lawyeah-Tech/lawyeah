@@ -1,0 +1,4 @@
+interface:
+  display_name: "执行生态环境生效文书"
+  short_description: "准备生态环境生效文书的执行申请、修复履行和财产线索"
+  default_prompt: "使用 $执行生态环境生效文书，准备生态环境生效文书的执行申请与修复履行方案。"

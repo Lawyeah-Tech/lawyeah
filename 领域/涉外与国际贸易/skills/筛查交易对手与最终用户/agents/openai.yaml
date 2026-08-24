@@ -1,0 +1,4 @@
+interface:
+  display_name: "筛查交易对手与最终用户"
+  short_description: "签约或发货前筛查对手与最终用户名单并处理命中"
+  default_prompt: "使用 $筛查交易对手与最终用户，在签约或发货前筛查交易对手和最终用户名单。"

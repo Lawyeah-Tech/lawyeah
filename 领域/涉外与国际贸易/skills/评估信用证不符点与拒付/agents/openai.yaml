@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估信用证不符点与拒付"
+  short_description: "评估信用证交单表面相符、不符点、拒付时限和救济分流"
+  default_prompt: "使用 $评估信用证不符点与拒付，评估信用证不符点、拒付效力和与基础合同的分账。"

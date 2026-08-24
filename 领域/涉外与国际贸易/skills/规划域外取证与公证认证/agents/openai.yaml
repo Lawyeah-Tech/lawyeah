@@ -1,0 +1,4 @@
+interface:
+  display_name: "规划域外取证与公证认证"
+  short_description: "规划境外关键证据的合法取证、司法协助和认证接口"
+  default_prompt: "使用 $规划域外取证与公证认证，规划域外取证路径、司法协助接口和认证需求。"

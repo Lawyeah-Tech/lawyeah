@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估船舶所有权登记与权属"
+  short_description: "判断登记船东、实际所有人与共有争议"
+  default_prompt: "使用 $评估船舶所有权登记与权属，评估本案船舶所有权登记、共有或光租登记争议。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估跨境担保与内保外贷监管"
+  short_description: "评估内保外贷、外保内贷等跨境担保的登记接口和效力红旗"
+  default_prompt: "使用 $评估跨境担保与内保外贷监管，评估跨境担保或内保外贷的监管路径、效力红旗和与主债关系。"

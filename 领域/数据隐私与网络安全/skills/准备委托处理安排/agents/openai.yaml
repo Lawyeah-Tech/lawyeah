@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备委托处理安排"
+  short_description: "准备委托处理的目的期限监督和合同要点"
+  default_prompt: "使用 $准备委托处理安排，准备将个人信息委托给供应商或云处理的安排要点，不审查整份采购合同。"

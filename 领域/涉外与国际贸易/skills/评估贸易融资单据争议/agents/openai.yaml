@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估贸易融资单据争议"
+  short_description: "评估托收、福费廷或出口押汇与基础买卖的独立性及追索"
+  default_prompt: "使用 $评估贸易融资单据争议，评估贸易融资单据与基础合同冲突下的独立性和追索。"

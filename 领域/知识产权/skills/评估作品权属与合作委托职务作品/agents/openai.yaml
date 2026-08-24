@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估作品权属与合作委托职务作品"
+  short_description: "评估作者职务委托合作与视听作品归属"
+  default_prompt: "使用 $评估作品权属与合作委托职务作品，评估中国大陆作品权属与合作委托职务作品。"

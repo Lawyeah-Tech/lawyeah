@@ -1,0 +1,4 @@
+interface:
+  display_name: "登记债权并参与拍卖分配"
+  short_description: "在船舶拍卖或基金程序中登记债权"
+  default_prompt: "使用 $登记债权并参与拍卖分配，准备本案在船舶拍卖或基金程序中的债权登记与优先权主张。"

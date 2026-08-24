@@ -1,0 +1,4 @@
+interface:
+  display_name: "保全数据安全事件证据"
+  short_description: "合法保全事件日志镜像并列出禁止动作"
+  default_prompt: "使用 $保全数据安全事件证据，保全数据安全事件相关证据，说明合法步骤和禁止项，不指导入侵或隐匿。"

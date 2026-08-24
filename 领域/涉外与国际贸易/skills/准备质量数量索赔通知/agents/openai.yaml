@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备质量数量索赔通知"
+  short_description: "在检验窗口内固定质量或数量索赔意思及具体项目"
+  default_prompt: "使用 $准备质量数量索赔通知，在检验期内准备质量或数量索赔通知。"

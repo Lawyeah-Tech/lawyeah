@@ -1,0 +1,4 @@
+interface:
+  display_name: "处理向平台或网信投诉"
+  short_description: "为个人准备向平台或网信投诉的路径和材料"
+  default_prompt: "使用 $处理向平台或网信投诉，处理向平台或网信投诉个人信息问题的路径和材料，并与起诉分流。"

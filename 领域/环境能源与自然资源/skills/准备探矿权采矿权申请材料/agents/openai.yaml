@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备探矿权采矿权申请材料"
+  short_description: "准备探矿权或采矿权新设或延续申请材料与缺件"
+  default_prompt: "使用 $准备探矿权采矿权申请材料，准备探矿权或采矿权新设或延续申请材料。"

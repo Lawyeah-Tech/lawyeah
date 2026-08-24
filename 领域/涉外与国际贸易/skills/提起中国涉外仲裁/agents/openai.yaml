@@ -1,0 +1,4 @@
+interface:
+  display_name: "提起中国涉外仲裁"
+  short_description: "形成可提交的中国涉外仲裁申请包，不代提交"
+  default_prompt: "使用 $提起中国涉外仲裁，准备中国机构涉外仲裁申请材料。"

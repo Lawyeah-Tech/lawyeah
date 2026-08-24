@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估检验与索赔期间"
+  short_description: "单独核验质量数量通知是否在约定或合理检验索赔期内"
+  default_prompt: "使用 $评估检验与索赔期间，核验国际货物检验与索赔通知是否逾期。"

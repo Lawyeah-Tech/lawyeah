@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估沉船打捞清除责任"
+  short_description: "判断沉船打捞清除的责任主体与费用"
+  default_prompt: "使用 $评估沉船打捞清除责任，评估本案沉船打捞清除责任主体、费用性质与限制例外。"

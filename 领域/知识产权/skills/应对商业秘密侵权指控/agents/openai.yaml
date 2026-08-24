@@ -1,0 +1,4 @@
+interface:
+  display_name: "应对商业秘密侵权指控"
+  short_description: "组织商业秘密指控的抗辩与反向工程独立开发接口"
+  default_prompt: "使用 $应对商业秘密侵权指控，应对中国大陆商业秘密侵权指控。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估港口作业装卸货损责任"
+  short_description: "判断港内装卸、仓储或理货导致的货损船损"
+  default_prompt: "使用 $评估港口作业装卸货损责任，评估本案港口作业装卸货损或船损责任。"

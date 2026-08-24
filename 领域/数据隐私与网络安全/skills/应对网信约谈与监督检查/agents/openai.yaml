@@ -1,0 +1,4 @@
+interface:
+  display_name: "应对网信约谈与监督检查"
+  short_description: "应对网信约谈检查的期限、答复范围和不扩大自认"
+  default_prompt: "使用 $应对网信约谈与监督检查，应对网信约谈或监督检查，列出期限、答复范围，不扩大自认。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "规划公证认证与附加证明书"
+  short_description: "规划跨境文书的公证、附加证明书或领事认证路径与材料"
+  default_prompt: "使用 $规划公证认证与附加证明书，规划境外文书在中国使用或相反方向的公证认证与附加证明书路径。"

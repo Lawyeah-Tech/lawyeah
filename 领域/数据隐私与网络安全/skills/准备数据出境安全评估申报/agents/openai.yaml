@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备数据出境安全评估申报"
+  short_description: "准备数据出境安全评估申报材料和自评估要点"
+  default_prompt: "使用 $准备数据出境安全评估申报，在路径已指向安全评估的前提下，准备申报材料结构和自评估要点，不保证通过。"

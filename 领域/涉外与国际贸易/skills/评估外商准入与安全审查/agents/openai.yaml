@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估外商准入与安全审查"
+  short_description: "对照负面清单和安全审查门槛，给出能否实施外商投资的条件性结论"
+  default_prompt: "使用 $评估外商准入与安全审查，评估外商投资的负面清单与安全审查准入。"

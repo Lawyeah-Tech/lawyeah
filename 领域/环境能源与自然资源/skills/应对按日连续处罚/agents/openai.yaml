@@ -1,0 +1,4 @@
+interface:
+  display_name: "应对按日连续处罚"
+  short_description: "核验按日连续处罚的改正日、起点和告知程序"
+  default_prompt: "使用 $应对按日连续处罚，核验按日连续处罚的改正日、计罚起点与告知程序。"

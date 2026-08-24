@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估外商投资安全审查"
+  short_description: "判断外商投资是否落入安全审查范围及能否实施"
+  default_prompt: "使用 $评估外商投资安全审查，单独评估外商投资安全审查范围、控制权和停止实施提示。"

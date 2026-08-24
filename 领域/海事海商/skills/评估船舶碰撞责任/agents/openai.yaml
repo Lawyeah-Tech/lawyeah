@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估船舶碰撞责任"
+  short_description: "判断海船碰撞或浪损的过失与责任结构"
+  default_prompt: "使用 $评估船舶碰撞责任，评估本案船舶碰撞或浪损责任与过失比例接口。"

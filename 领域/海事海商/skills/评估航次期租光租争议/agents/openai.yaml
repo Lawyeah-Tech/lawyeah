@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估航次期租光租争议"
+  short_description: "判断停租、撤船、交还船或租金争议"
+  default_prompt: "使用 $评估航次期租光租争议，评估本案航次、期租或光租争议的请求与抗辩。"

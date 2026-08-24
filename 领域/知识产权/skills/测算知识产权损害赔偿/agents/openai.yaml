@@ -1,0 +1,4 @@
+interface:
+  display_name: "测算知识产权损害赔偿"
+  short_description: "形成可复核的分项测算，不认定侵权已成立，不输出唯一必得总额"
+  default_prompt: "使用 $测算知识产权损害赔偿，测算中国大陆知识产权损害赔偿并分列基数与倍数接口。"

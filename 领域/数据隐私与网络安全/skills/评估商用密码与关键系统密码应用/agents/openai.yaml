@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估商用密码与关键系统密码应用"
+  short_description: "评估商用密码应用安全性评估义务和报告接口"
+  default_prompt: "使用 $评估商用密码与关键系统密码应用，评估关键系统商用密码密评义务和材料缺口，不代替管理部门结论。"

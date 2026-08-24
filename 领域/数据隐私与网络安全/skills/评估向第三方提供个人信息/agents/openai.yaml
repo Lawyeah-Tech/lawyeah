@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估向第三方提供个人信息"
+  short_description: "评估向其他处理者提供个人信息的单独同意和告知"
+  default_prompt: "使用 $评估向第三方提供个人信息，评估向第三方提供个人信息是否具备单独同意、接收方告知和影响评估。"

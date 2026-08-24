@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备商标注册申请前核验"
+  short_description: "核验商标申请主体图样类别和在先冲突，不代提交"
+  default_prompt: "使用 $准备商标注册申请前核验，对中国大陆拟申请商标做提交前核验。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备贸易救济申请材料"
+  short_description: "准备国内产业贸易救济申请的要点、代表性和证据缺口"
+  default_prompt: "使用 $准备贸易救济申请材料，准备国内产业反倾销等贸易救济申请材料要点。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "处理个人信息主体权利请求"
+  short_description: "受理查阅复制更正删除限制转移请求并给出准驳接口"
+  default_prompt: "使用 $处理个人信息主体权利请求，处理已收到的个人信息主体权利请求，给出核验、准驳和答复要点。"

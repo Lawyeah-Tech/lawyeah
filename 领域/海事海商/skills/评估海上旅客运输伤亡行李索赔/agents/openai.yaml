@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估海上旅客运输伤亡行李索赔"
+  short_description: "判断海上旅客伤亡或行李请求与限额"
+  default_prompt: "使用 $评估海上旅客运输伤亡行李索赔，评估本案海上旅客运输伤亡或行李索赔。"

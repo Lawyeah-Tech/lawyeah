@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估最小必要与过度收集"
+  short_description: "对照目的判断是否过度收集并列出可拒收项"
+  default_prompt: "使用 $评估最小必要与过度收集，评估收集种类和权限是否超出最小必要，并列出可拒绝项。"

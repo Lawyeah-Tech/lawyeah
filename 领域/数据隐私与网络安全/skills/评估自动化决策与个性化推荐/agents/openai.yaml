@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估自动化决策与个性化推荐"
+  short_description: "评估自动化决策透明度、拒绝个性化和人工复核"
+  default_prompt: "使用 $评估自动化决策与个性化推荐，评估自动化决策与个性化推荐的透明度、拒绝选项和重大影响复核。"

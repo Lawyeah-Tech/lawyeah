@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备突发环境事件报告与应急"
+  short_description: "形成依法报告的发送前稿、时限和禁止瞒报项"
+  default_prompt: "使用 $准备突发环境事件报告与应急，为已发生或可能发生的突发环境事件准备发送前报告和应急要点。"

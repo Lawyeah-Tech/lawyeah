@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备海事证据保全申请"
+  short_description: "准备向海事法院申请证据保全的材料"
+  default_prompt: "使用 $准备海事证据保全申请，准备本案海事证据保全申请、线索与担保。"

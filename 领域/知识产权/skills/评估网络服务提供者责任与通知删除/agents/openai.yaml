@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估网络服务提供者责任与通知删除"
+  short_description: "分列电商法与民法典评估平台通知删除责任"
+  default_prompt: "使用 $评估网络服务提供者责任与通知删除，评估中国大陆网络服务提供者责任与通知删除。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "谈判能源监管与补贴结算争议"
+  short_description: "形成能源监管约谈或补贴结算谈判的让步与承诺边界"
+  default_prompt: "使用 $谈判能源监管与补贴结算争议，形成能源监管约谈或补贴结算谈判方案；不替代处罚申辩。"

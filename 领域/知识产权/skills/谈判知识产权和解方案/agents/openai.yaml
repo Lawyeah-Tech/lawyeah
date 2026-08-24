@@ -1,0 +1,4 @@
+interface:
+  display_name: "谈判知识产权和解方案"
+  short_description: "制作和解让步表与许可共存接口，不出合同终稿"
+  default_prompt: "使用 $谈判知识产权和解方案，谈判中国大陆知识产权和解方案。"

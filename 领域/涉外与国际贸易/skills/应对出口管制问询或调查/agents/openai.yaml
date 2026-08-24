@@ -1,0 +1,4 @@
+interface:
+  display_name: "应对出口管制问询或调查"
+  short_description: "应对出口管制问询或调查的答复范围、补证和刑事红旗"
+  default_prompt: "使用 $应对出口管制问询或调查，在被调查方立场下应对出口管制问询、约谈或调查。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估反制裁与阻断义务"
+  short_description: "评估外国次级制裁与中国反制裁、阻断义务的冲突和报告禁令接口"
+  default_prompt: "使用 $评估反制裁与阻断义务，评估外国次级制裁与中国反制裁或阻断义务的冲突。"

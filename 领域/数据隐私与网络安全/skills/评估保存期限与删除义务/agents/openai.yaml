@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估保存期限与删除义务"
+  short_description: "判断保存是否超最短必要及到期删除或停处理"
+  default_prompt: "使用 $评估保存期限与删除义务，评估相关个人信息的保存期限、到期动作和技术难以删除时的停止处理。"

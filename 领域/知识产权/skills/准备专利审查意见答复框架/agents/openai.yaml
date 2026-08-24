@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备专利审查意见答复框架"
+  short_description: "组织专利审查意见争点与修改边界，不改权项终稿"
+  default_prompt: "使用 $准备专利审查意见答复框架，准备中国大陆专利审查意见答复框架。"

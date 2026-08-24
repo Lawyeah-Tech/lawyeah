@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估权利稳定性与被无效风险"
+  short_description: "评估权利被无效或撤销风险，不写无效终稿"
+  default_prompt: "使用 $评估权利稳定性与被无效风险，评估中国大陆知识产权稳定性与被无效风险。"

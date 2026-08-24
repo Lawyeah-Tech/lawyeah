@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备知识产权海关备案"
+  short_description: "组织知识产权海关备案材料与联系人，不保证扣留"
+  default_prompt: "使用 $准备知识产权海关备案，准备中国大陆知识产权海关备案。"

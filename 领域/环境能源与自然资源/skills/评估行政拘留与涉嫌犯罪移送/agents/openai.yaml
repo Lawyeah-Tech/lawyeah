@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估行政拘留与涉嫌犯罪移送"
+  short_description: "标出环境行政拘留情形和犯罪移送红旗，不定罪"
+  default_prompt: "使用 $评估行政拘留与涉嫌犯罪移送，评估环境违法行政拘留情形与涉嫌犯罪移送红旗；不定罪。"

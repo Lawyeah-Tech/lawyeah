@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备海事庭审"
+  short_description: "准备海事诉讼或仲裁开庭提纲"
+  default_prompt: "使用 $准备海事庭审，准备本案海事庭审争点、举证质证与代理提纲。"

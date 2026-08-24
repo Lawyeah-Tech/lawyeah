@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估权属与职务成果归属"
+  short_description: "评估职务委托合作与继受权属链，不出转让合同"
+  default_prompt: "使用 $评估权属与职务成果归属，在单一立场下评估中国大陆知识产权权属与职务成果归属。"

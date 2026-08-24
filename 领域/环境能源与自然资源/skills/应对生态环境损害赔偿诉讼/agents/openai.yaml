@@ -1,0 +1,4 @@
+interface:
+  display_name: "应对生态环境损害赔偿诉讼"
+  short_description: "准备生态环境损害赔偿诉讼的答辩、鉴定异议和修复替代"
+  default_prompt: "使用 $应对生态环境损害赔偿诉讼，准备对政府生态损害赔偿诉讼的答辩与修复替代抗辩。"

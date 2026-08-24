@@ -1,0 +1,4 @@
+interface:
+  display_name: "提起知识产权案件上诉"
+  short_description: "组织未生效知产裁判的上诉范围与期限，不重做一审"
+  default_prompt: "使用 $提起知识产权案件上诉，提起中国大陆知识产权案件上诉。"

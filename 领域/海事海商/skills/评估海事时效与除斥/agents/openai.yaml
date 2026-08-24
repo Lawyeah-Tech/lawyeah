@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估海事时效与除斥"
+  short_description: "核验货损、租船、碰撞、共同海损、保险与油污期间"
+  default_prompt: "使用 $评估海事时效与除斥，按请求类型核验本案海事时效与除斥是否届满。"

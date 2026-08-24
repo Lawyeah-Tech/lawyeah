@@ -1,0 +1,4 @@
+interface:
+  display_name: "谈判污染侵权和解方案"
+  short_description: "形成私益污染和解让步表并提示执行力"
+  default_prompt: "使用 $谈判污染侵权和解方案，在单一立场下形成污染侵权和解让步表与执行力提示。"

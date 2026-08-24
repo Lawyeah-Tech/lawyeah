@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估员工个人信息处理合法性"
+  short_description: "评估招聘背调和在职员工信息的个保合法性"
+  default_prompt: "使用 $评估员工个人信息处理合法性，评估员工个人信息处理的合法性、人事例外和告知，解除处分转劳动。"

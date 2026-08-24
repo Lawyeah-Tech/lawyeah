@@ -1,0 +1,4 @@
+interface:
+  display_name: "应对数据与网络安全事件"
+  short_description: "形成事件定性、报告告知时钟和补救停止项"
+  default_prompt: "使用 $应对数据与网络安全事件，评估该数据或网络安全事件的处置路径。"

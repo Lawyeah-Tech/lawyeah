@@ -1,0 +1,4 @@
+interface:
+  display_name: "保全航海资料船载货物与电子证据"
+  short_description: "合法固定航海日志、航程数据记录仪、舱单与货况"
+  default_prompt: "使用 $保全航海资料船载货物与电子证据，设计本案航海资料、船载货物与电子证据的合法保全步骤。"

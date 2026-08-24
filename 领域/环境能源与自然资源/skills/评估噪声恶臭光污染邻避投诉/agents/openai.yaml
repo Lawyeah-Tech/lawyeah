@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估噪声恶臭光污染邻避投诉"
+  short_description: "判断噪声恶臭光污染标准、监测和民行分流"
+  default_prompt: "使用 $评估噪声恶臭光污染邻避投诉，在单一立场下评估噪声、恶臭或光污染投诉的标准与责任分流。"

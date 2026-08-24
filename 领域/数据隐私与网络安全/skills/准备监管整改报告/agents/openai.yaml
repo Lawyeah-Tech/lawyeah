@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备监管整改报告"
+  short_description: "准备可核验的监管整改报告结构，不把计划写成已完成"
+  default_prompt: "使用 $准备监管整改报告，准备监管整改报告的结构、可核验措施和复发风险，不把计划写成已完成。"

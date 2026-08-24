@@ -1,0 +1,4 @@
+interface:
+  display_name: "测算碰撞财产停航与船期损失"
+  short_description: "测算碰撞修理、船期、货物或第三人物损"
+  default_prompt: "使用 $测算碰撞财产停航与船期损失，按分项测算本案碰撞财产、停航与船期损失。"

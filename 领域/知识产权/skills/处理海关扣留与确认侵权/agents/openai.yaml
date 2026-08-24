@@ -1,0 +1,4 @@
+interface:
+  display_name: "处理海关扣留与确认侵权"
+  short_description: "处理海关扣留确认期担保与放行没收分流"
+  default_prompt: "使用 $处理海关扣留与确认侵权，处理中国大陆海关扣留与确认侵权。"

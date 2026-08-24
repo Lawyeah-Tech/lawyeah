@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估专利申请公开与权属风险"
+  short_description: "评估专利申请公开权属与代理分流，不写权项"
+  default_prompt: "使用 $评估专利申请公开与权属风险，评估中国大陆专利申请公开与权属风险。"

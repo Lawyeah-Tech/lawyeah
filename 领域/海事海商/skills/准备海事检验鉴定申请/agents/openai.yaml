@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备海事检验鉴定申请"
+  short_description: "准备残损或碰撞的检验鉴定申请"
+  default_prompt: "使用 $准备海事检验鉴定申请，准备本案海事检验或司法鉴定申请事项与检材。"

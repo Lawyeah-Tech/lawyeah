@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备扣押船载货物或燃油申请"
+  short_description: "准备扣押船载货物、燃油或物料的申请"
+  default_prompt: "使用 $准备扣押船载货物或燃油申请，准备本案扣押船载货物或燃油的申请材料。"

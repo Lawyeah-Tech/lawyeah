@@ -1,0 +1,4 @@
+interface:
+  display_name: "保全货物检验与电子通信证据"
+  short_description: "在货物、样品或邮件可能灭失时规划合法保全和公证鉴定"
+  default_prompt: "使用 $保全货物检验与电子通信证据，保全可能灭失的货物检验样品和电子通信证据。"

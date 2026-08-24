@@ -1,0 +1,4 @@
+interface:
+  display_name: "建立知识产权证据案卷"
+  short_description: "形成要件、举证责任、材料与合法补证矩阵"
+  default_prompt: "使用 $建立知识产权证据案卷，建立中国大陆知识产权证据案卷矩阵。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "应对专利无效宣告"
+  short_description: "组织专利无效答辩与修改接口，不写民事抗辩"
+  default_prompt: "使用 $应对专利无效宣告，应对中国大陆专利无效宣告。"

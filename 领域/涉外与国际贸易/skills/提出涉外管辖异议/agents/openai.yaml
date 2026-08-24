@@ -1,0 +1,4 @@
+interface:
+  display_name: "提出涉外管辖异议"
+  short_description: "在法定期限内准备涉外管辖异议书及不方便法院、专属管辖理由"
+  default_prompt: "使用 $提出涉外管辖异议，在法定期限内提出涉外管辖异议。"

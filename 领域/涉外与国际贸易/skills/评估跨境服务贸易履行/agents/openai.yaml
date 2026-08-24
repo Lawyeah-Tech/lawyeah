@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估跨境服务贸易履行"
+  short_description: "评估跨境服务或许可实施的验收、提供限制和请求抗辩"
+  default_prompt: "使用 $评估跨境服务贸易履行，评估跨境服务贸易未完成或拒付的验收、限制和请求抗辩。"

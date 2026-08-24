@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估境外接收方与再转移"
+  short_description: "评估境外接收方义务、再转移和个人行权途径"
+  default_prompt: "使用 $评估境外接收方与再转移，评估境外接收方的保护标准、再转移约束和个人行权途径，外国法不足则停止该字段。"

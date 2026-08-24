@@ -1,0 +1,4 @@
+interface:
+  display_name: "知识产权导航"
+  short_description: "了解知识产权领域包的能力边界，并定位适用的原子 Skill"
+  default_prompt: "使用 $知识产权导航 根据我的立场、权利类型、阶段和预期成果，在知识产权包中定位合适的原子 Skill。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备隐私政策与告知"
+  short_description: "形成发布前的个人信息处理告知文本和变更设计"
+  default_prompt: "使用 $准备隐私政策与告知，起草待发布的隐私政策与告知文本。"

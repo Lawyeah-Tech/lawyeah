@@ -1,0 +1,4 @@
+interface:
+  display_name: "应对中国法院涉外民事诉讼"
+  short_description: "应对中国法院涉外起诉的期限、送达抗辩、管辖异议接口和答辩"
+  default_prompt: "使用 $应对中国法院涉外民事诉讼，作为被告应对中国法院涉外民事诉讼。"

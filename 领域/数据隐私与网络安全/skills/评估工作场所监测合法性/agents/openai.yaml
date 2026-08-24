@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估工作场所监测合法性"
+  short_description: "评估考勤邮件定位摄像头监测员工的个保合法性"
+  default_prompt: "使用 $评估工作场所监测合法性，评估工作场所监测的个人信息合法性、告知和最小必要，劳动处分转出。"

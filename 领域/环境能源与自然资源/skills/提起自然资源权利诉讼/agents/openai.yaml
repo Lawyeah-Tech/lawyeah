@@ -1,0 +1,4 @@
+interface:
+  display_name: "提起自然资源权利诉讼"
+  short_description: "准备自然资源权利诉讼并分流民事或行政路径"
+  default_prompt: "使用 $提起自然资源权利诉讼，准备矿业权或取水权等权利诉讼材料并分流民事或行政路径。"

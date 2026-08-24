@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估知识产权管辖与专门法院"
+  short_description: "评估知产专门管辖连结点和仲裁红旗，不代立案"
+  default_prompt: "使用 $评估知识产权管辖与专门法院，评估中国大陆知识产权管辖与专门法院。"

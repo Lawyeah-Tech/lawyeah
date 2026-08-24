@@ -1,0 +1,4 @@
+interface:
+  display_name: "提起海事仲裁"
+  short_description: "准备海事仲裁申请包"
+  default_prompt: "使用 $提起海事仲裁，准备本案海事仲裁申请、请求与证据目录。"

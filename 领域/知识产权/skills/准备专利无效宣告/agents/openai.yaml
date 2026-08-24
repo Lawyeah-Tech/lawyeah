@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备专利无效宣告"
+  short_description: "组织专利无效理由证据组合与公开日链"
+  default_prompt: "使用 $准备专利无效宣告，准备中国大陆专利无效宣告框架。"

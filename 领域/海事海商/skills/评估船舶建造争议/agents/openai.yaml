@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估船舶建造争议"
+  short_description: "判断造船进度、质量、分期款或弃船争议"
+  default_prompt: "使用 $评估船舶建造争议，评估本案船舶建造进度、质量或分期款争议。"

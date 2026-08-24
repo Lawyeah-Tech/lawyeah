@@ -1,0 +1,4 @@
+interface:
+  display_name: "处理账号注销与停止处理"
+  short_description: "评估注销路径、停处理范围和最短保存例外"
+  default_prompt: "使用 $处理账号注销与停止处理，处理账号注销或服务停止后的个人信息停止处理安排。"

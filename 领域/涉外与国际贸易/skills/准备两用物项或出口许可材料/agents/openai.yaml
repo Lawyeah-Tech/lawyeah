@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备两用物项或出口许可材料"
+  short_description: "按已定许可必要性准备两用物项或出口许可材料包"
+  default_prompt: "使用 $准备两用物项或出口许可材料，准备两用物项或出口许可申请材料和最终用户文件。"

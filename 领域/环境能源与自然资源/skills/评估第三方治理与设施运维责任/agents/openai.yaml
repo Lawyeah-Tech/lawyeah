@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估第三方治理与设施运维责任"
+  short_description: "分账第三方治理的法定责任、合同责任和连带红旗"
+  default_prompt: "使用 $评估第三方治理与设施运维责任，在单一立场下分账第三方治理与设施运维的法定和合同责任。"

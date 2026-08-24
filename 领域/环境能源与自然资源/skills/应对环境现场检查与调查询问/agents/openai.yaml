@@ -1,0 +1,4 @@
+interface:
+  display_name: "应对环境现场检查与调查询问"
+  short_description: "划定环境现场检查配合边界和采样留样要点"
+  default_prompt: "使用 $应对环境现场检查与调查询问，划定环境现场检查与询问的合法配合边界。"

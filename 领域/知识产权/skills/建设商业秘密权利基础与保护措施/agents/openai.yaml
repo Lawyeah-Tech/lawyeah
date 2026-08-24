@@ -1,0 +1,4 @@
+interface:
+  display_name: "建设商业秘密权利基础与保护措施"
+  short_description: "建设秘密点清单与相应措施回链，不认定已构成"
+  default_prompt: "使用 $建设商业秘密权利基础与保护措施，建设中国大陆商业秘密权利基础与保护措施。"

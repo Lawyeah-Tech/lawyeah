@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估敏感个人信息处理"
+  short_description: "认定敏感个人信息并判断单独同意与充分必要"
+  default_prompt: "使用 $评估敏感个人信息处理，评估敏感个人信息的认定、单独同意、告知和充分必要。"

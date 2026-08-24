@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估专利权利要求与被控技术方案对照"
+  short_description: "逐特征对照权利要求与被控方案，含等同与禁止反悔接口"
+  default_prompt: "使用 $评估专利权利要求与被控技术方案对照，对照中国大陆专利权利要求与被控技术方案。"

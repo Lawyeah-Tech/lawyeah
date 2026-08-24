@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估贸易术语风险费用分界"
+  short_description: "对照贸易术语版本和合同专条，划清风险、费用和保险分界"
+  default_prompt: "使用 $评估贸易术语风险费用分界，评估 FOB、CIF 等贸易术语下的风险、费用和保险分界。"

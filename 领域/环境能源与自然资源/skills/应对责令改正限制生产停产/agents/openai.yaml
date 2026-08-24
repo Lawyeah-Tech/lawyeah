@@ -1,0 +1,4 @@
+interface:
+  display_name: "应对责令改正限制生产停产"
+  short_description: "识别责令改正或停产命令性质并划定履行边界"
+  default_prompt: "使用 $应对责令改正限制生产停产，识别责令改正、限制生产或停产关闭的性质与履行边界。"

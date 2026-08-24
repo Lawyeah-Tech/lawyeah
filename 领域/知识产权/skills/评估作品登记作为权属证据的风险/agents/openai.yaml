@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估作品登记作为权属证据的风险"
+  short_description: "评估作品登记补强权属表面证据的利弊，登记不等于权利"
+  default_prompt: "使用 $评估作品登记作为权属证据的风险，评估中国大陆作品登记作为权属证据的风险。"

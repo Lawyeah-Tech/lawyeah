@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备贸易救济应诉材料"
+  short_description: "准备贸易救济应诉问卷策略、抽样、保密和时限"
+  default_prompt: "使用 $准备贸易救济应诉材料，为已决定应诉的贸易救济调查准备问卷策略和材料边界。"

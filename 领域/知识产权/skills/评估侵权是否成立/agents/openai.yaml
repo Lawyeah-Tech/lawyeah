@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估侵权是否成立"
+  short_description: "对照权利保护范围与被控使用，不发函、不定胜诉"
+  default_prompt: "使用 $评估侵权是否成立，在单一立场下对照中国大陆被控使用是否落入知识产权保护范围。"

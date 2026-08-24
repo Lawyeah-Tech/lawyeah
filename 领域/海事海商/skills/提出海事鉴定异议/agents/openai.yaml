@@ -1,0 +1,4 @@
+interface:
+  display_name: "提出海事鉴定异议"
+  short_description: "对海事检验或鉴定意见提出异议"
+  default_prompt: "使用 $提出海事鉴定异议，针对已作出的海事检验或鉴定意见准备异议和补充鉴定材料。"

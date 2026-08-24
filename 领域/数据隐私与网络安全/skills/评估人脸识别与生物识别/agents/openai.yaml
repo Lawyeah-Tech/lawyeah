@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估人脸识别与生物识别"
+  short_description: "评估刷脸与生物识别的单独同意、替代方案和场所限制"
+  default_prompt: "使用 $评估人脸识别与生物识别，评估人脸识别或其他生物识别的合法性、替代方案和公共场所限制。"

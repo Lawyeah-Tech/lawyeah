@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备环境处罚实体复议理由"
+  short_description: "整理环境处罚实体复议理由，程序方法转行政"
+  default_prompt: "使用 $准备环境处罚实体复议理由，整理环境处罚或命令的实体复议理由；程序方法转行政领域。"

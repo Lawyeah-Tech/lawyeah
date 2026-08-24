@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估船舶抵押与登记对抗"
+  short_description: "判断船舶抵押权设立、登记对抗与实现条件"
+  default_prompt: "使用 $评估船舶抵押与登记对抗，评估本案船舶抵押效力、登记对抗与实现条件。"

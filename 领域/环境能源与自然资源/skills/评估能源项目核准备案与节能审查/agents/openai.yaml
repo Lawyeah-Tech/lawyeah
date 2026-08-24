@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估能源项目核准备案与节能审查"
+  short_description: "判断能源项目核准或备案、节能审查并与环评分账"
+  default_prompt: "使用 $评估能源项目核准备案与节能审查，评估能源项目核准或备案、节能审查，并与环评分账。"

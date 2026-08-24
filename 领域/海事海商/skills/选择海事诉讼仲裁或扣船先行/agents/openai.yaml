@@ -1,0 +1,4 @@
+interface:
+  display_name: "选择海事诉讼仲裁或扣船先行"
+  short_description: "比较先扣船、先仲裁或直接起诉的路径"
+  default_prompt: "使用 $选择海事诉讼仲裁或扣船先行，比较本案先扣船、先仲裁或直接起诉的程序适配与成本。"

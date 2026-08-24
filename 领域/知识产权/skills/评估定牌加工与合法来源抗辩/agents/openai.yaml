@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估定牌加工与合法来源抗辩"
+  short_description: "评估定牌加工与销售者合法来源，不定当然免赔"
+  default_prompt: "使用 $评估定牌加工与合法来源抗辩，评估中国大陆定牌加工与合法来源抗辩。"

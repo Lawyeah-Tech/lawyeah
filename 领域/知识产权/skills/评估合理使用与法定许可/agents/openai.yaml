@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估合理使用与法定许可"
+  short_description: "对号评估合理使用与法定许可，不定当然免责"
+  default_prompt: "使用 $评估合理使用与法定许可，评估中国大陆合理使用与法定许可。"
