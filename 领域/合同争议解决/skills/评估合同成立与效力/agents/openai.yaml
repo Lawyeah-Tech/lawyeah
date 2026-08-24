@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估合同成立与效力"
+  short_description: "形成成立、无权代理、无效、可撤销或效力待定争点表"
+  default_prompt: "使用 $评估合同成立与效力，在单一立场下评估中国大陆一般合同的成立与效力争点。"

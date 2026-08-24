@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估医院感染管理合规"
+  short_description: "评估医院感染管理制度、报告义务和责任接口"
+  default_prompt: "使用 $评估医院感染管理合规，在单一立场下处理中国大陆评估医院感染管理合规事项。"

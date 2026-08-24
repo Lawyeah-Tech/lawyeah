@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备增资认购协议"
+  short_description: "准备发送前增资额估值资金用途交割和章程接口"
+  default_prompt: "使用 $准备增资认购协议，在起草方立场下准备以增资取得股权的发送前认购协议。"

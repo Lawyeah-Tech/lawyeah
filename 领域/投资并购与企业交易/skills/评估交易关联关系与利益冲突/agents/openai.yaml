@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估交易关联关系与利益冲突"
+  short_description: "识别交易关联回避路径和批准停止项"
+  default_prompt: "使用 $评估交易关联关系与利益冲突，在单一立场下评估中国大陆投资并购中的关联关系和利益冲突。"

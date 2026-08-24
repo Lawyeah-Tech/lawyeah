@@ -1,0 +1,4 @@
+interface:
+  display_name: "起草工程和解或结算协议"
+  short_description: "起草已谈拢的工程和解或结算协议"
+  default_prompt: "使用 $起草工程和解或结算协议，在单一立场下处理中国大陆建设工程争议中的「起草工程和解或结算协议」。"

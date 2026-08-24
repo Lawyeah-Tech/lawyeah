@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备交割文件包"
+  short_description: "整理交割条件、文件、资金流向和名册登记印章交接"
+  default_prompt: "使用 $准备交割文件包，准备中国大陆投资并购交割文件包。"

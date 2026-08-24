@@ -1,0 +1,13 @@
+interface:
+  display_name: "复杂夫妻财产分割方案"
+  short_description: "对房产、股权及其他资产形成家庭法上的财产性质、权属争议和分割请求情景方案。"
+  default_prompt: "使用 $复杂夫妻财产分割方案，对房产、股权及其他资产形成家庭法上的财产性质、权属争议和分割请求情景方案。"
+tools:
+  - name: "search_law"
+    purpose: "核验指定法域的现行实体与程序法源"
+    requiredFor: "法律结论、期限和程序入口"
+    privacy: "调用前脱敏；不得提交姓名、联系方式、账户、完整文书或可识别家庭事实"
+  - name: "search_practiced"
+    purpose: "补充去标识化的实务核验、证据组织和风险视角"
+    requiredFor: "可选辅助，不替代法源或案件事实"
+    privacy: "只提交完成任务所需的最小化问题"

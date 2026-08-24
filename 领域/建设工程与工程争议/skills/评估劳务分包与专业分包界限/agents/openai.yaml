@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估劳务分包与专业分包界限"
+  short_description: "判断劳务分包、专业分包与劳动关系界限"
+  default_prompt: "使用 $评估劳务分包与专业分包界限，在单一立场下处理中国大陆建设工程争议中的「评估劳务分包与专业分包界限」。"

@@ -1,0 +1,1702 @@
+{
+  "schemaVersion": 2,
+  "id": "handle-investments-ma",
+  "displayName": "投资并购与企业交易",
+  "description": "支持中国大陆股权或资产投资、并购重组和企业交易从结构设计、尽调、签约到交割及投后安排的多 Skill 领域包。",
+  "version": "1.0.0",
+  "license": "Apache-2.0",
+  "jurisdiction": "CN-mainland",
+  "contentModel": "multi-skill-progressive-disclosure",
+  "reinstallStrategy": "replace",
+  "scope": {
+    "purpose": "支持股权或资产投资、并购重组和企业交易从结构设计、尽调、签约到交割及投后安排。",
+    "inScope": [
+      "投资和并购交易结构",
+      "法律尽职调查",
+      "交易文件、交割和投后安排",
+      "资产收购、股权收购和企业重组"
+    ],
+    "outOfScope": [
+      "公司日常治理和一般股东争议",
+      "金融机构贷款、担保等融资法律业务",
+      "经营者集中及竞争法专项申报",
+      "跨境贸易和境外法专项问题"
+    ],
+    "primaryDeliverables": [
+      "交易结构方案",
+      "法律尽调报告",
+      "投资并购交易文件",
+      "交割清单与投后治理安排"
+    ]
+  },
+  "guideSkill": "投资并购与企业交易导航",
+  "mcp": {
+    "contractRange": "0.0"
+  },
+  "skills": [
+    {
+      "id": "投资并购与企业交易导航",
+      "kind": "guide",
+      "displayName": "投资并购与企业交易导航",
+      "goal": "说明领域包的能力、边界和当前原子 Skill 全貌",
+      "notFor": [
+        "直接完成具体法律业务成果"
+      ],
+      "deliverables": [
+        "领域能力定位结果"
+      ],
+      "path": "skills/投资并购与企业交易导航",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "准备投资并购条款清单",
+          "审查对方交易文件",
+          "评估投资并购交易结构",
+          "规划法律尽调范围与红旗",
+          "准备交割文件包",
+          "准备股权收购协议",
+          "准备交易终止通知",
+          "评估投后赔偿与或有对价请求",
+          "测算交易对价与调整",
+          "形成法律尽调报告",
+          "梳理目标公司股权与组织",
+          "评估交易关联关系与利益冲突",
+          "评估国资交易进场与审批路径",
+          "评估上市公司收购与重组路径",
+          "评估外商投资准入与信息报告",
+          "评估外商投资安全审查红旗",
+          "识别经营者集中红旗并转出",
+          "评估合资设立与资产剥离路径",
+          "评估合并分立重组路径",
+          "准备合并分立实施文件与债权人通知",
+          "应对合并分立债权人清偿或担保请求",
+          "评估产权交易所挂牌路径",
+          "评估优先购买权同意权与章程限制",
+          "评估交割前后许可资质承继",
+          "评估交易中的代持清理",
+          "准备尽调资料清单与资料室规则",
+          "准备卖方资料室与披露控制",
+          "评估标的权属与权利负担",
+          "评估重大合同变更控制与终止权",
+          "评估诉讼仲裁与或有负债",
+          "评估许可合规尽调发现",
+          "评估披露函是否闭合陈述保证",
+          "评估交易否决级红旗",
+          "准备交易保密安排",
+          "评估条款清单或意向书拘束力",
+          "准备排他谈判与冻结安排",
+          "谈判投资并购交易条件",
+          "准备交易附属函与例外安排",
+          "准备资产收购协议",
+          "准备增资认购协议",
+          "准备交易项下股东协议",
+          "准备陈述保证与披露附件",
+          "准备赔偿提存与留扣条款",
+          "准备对价提存或尾款留扣安排",
+          "准备过渡服务安排",
+          "准备交易内部决议与批准包",
+          "准备披露函与披露附件",
+          "准备交易项下竞业与不招揽",
+          "准备交易项下增资扩股文件",
+          "评估或有对价与对赌",
+          "评估锁箱与交割账机制",
+          "评估重大不利变化条件",
+          "评估交割条件是否满足",
+          "准备股权或股东变更登记",
+          "准备印章证照与账册交接",
+          "准备交割资金流向指令",
+          "处理签约至交割过渡",
+          "准备交割确认与完成备忘",
+          "建立交割后契约跟踪表",
+          "评估交割失败与退出交易",
+          "准备对交易终止的异议",
+          "评估分手费与交易定金",
+          "准备交割失败索赔通知",
+          "准备投后赔偿通知",
+          "应对投后赔偿通知",
+          "评估或有对价是否成就",
+          "准备卖出权或买入权行权通知",
+          "评估随售拖售与转让限制",
+          "规划交割后控制权交接",
+          "准备价格调整通知",
+          "评估提存或留扣释放",
+          "谈判投后和解方案"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估投资并购交易结构",
+      "kind": "atomic",
+      "displayName": "评估投资并购交易结构",
+      "goal": "在单方无冲突立场下形成可决策的交易路径、监管闸红旗和关键条件总图",
+      "notFor": [
+        "股权收购协议终稿",
+        "交割包",
+        "经营者集中申报",
+        "小微无争议转让材料"
+      ],
+      "deliverables": [
+        "在单方无冲突立场下形成可决策的交易路径、监管闸红旗和关键条件总图"
+      ],
+      "path": "skills/评估投资并购交易结构",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "投资并购与企业交易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "规划法律尽调范围与红旗",
+      "kind": "atomic",
+      "displayName": "规划法律尽调范围与红旗",
+      "goal": "形成尽调范围、资料清单、红旗类别和专项转出接口",
+      "notFor": [
+        "尽调报告终稿",
+        "劳动或环境专项尽调",
+        "供应商准入清单"
+      ],
+      "deliverables": [
+        "形成尽调范围、资料清单、红旗类别和专项转出接口"
+      ],
+      "path": "skills/规划法律尽调范围与红旗",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "投资并购与企业交易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "形成法律尽调报告",
+      "kind": "atomic",
+      "displayName": "形成法律尽调报告",
+      "goal": "形成分模块发现、交易影响分级和条件／价格／披露接口",
+      "notFor": [
+        "把缺失写成清洁意见",
+        "劳动环境税专项终局",
+        "交易结构总图"
+      ],
+      "deliverables": [
+        "形成分模块发现、交易影响分级和条件／价格／披露接口"
+      ],
+      "path": "skills/形成法律尽调报告",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "投资并购与企业交易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备投资并购条款清单",
+      "kind": "atomic",
+      "displayName": "准备投资并购条款清单",
+      "goal": "形成发送前条款清单并对拘束力条款分账",
+      "notFor": [
+        "股权收购协议",
+        "把非约束力写成零责任",
+        "已决出发送 SPA"
+      ],
+      "deliverables": [
+        "形成发送前条款清单并对拘束力条款分账"
+      ],
+      "path": "skills/准备投资并购条款清单",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "投资并购与企业交易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备股权收购协议",
+      "kind": "atomic",
+      "displayName": "准备股权收购协议",
+      "goal": "形成发送前股权收购协议及条件、陈述保证和赔偿接口",
+      "notFor": [
+        "小微无争议转让包",
+        "资产收购协议",
+        "把草稿写成已签署"
+      ],
+      "deliverables": [
+        "形成发送前股权收购协议及条件、陈述保证和赔偿接口"
+      ],
+      "path": "skills/准备股权收购协议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "投资并购与企业交易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "审查对方交易文件",
+      "kind": "atomic",
+      "displayName": "审查对方交易文件",
+      "goal": "形成严重度分级问题单和接受／改写／退出建议",
+      "notFor": [
+        "己方首稿 SPA",
+        "一般买卖合同审查",
+        "只改格式不改风险"
+      ],
+      "deliverables": [
+        "形成严重度分级问题单和接受／改写／退出建议"
+      ],
+      "path": "skills/审查对方交易文件",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "投资并购与企业交易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "测算交易对价与调整",
+      "kind": "atomic",
+      "displayName": "测算交易对价与调整",
+      "goal": "形成可复核的分项对价与调整测算，不输出唯一必得总价",
+      "notFor": [
+        "对赌效力终局",
+        "认定调整权已成立",
+        "税务测算"
+      ],
+      "deliverables": [
+        "形成可复核的分项对价与调整测算，不输出唯一必得总价"
+      ],
+      "path": "skills/测算交易对价与调整",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "投资并购与企业交易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备交割文件包",
+      "kind": "atomic",
+      "displayName": "准备交割文件包",
+      "goal": "形成交割条件表、文件清单、资金流向和名册登记印章交接",
+      "notFor": [
+        "代提交登记",
+        "经营者集中申报",
+        "把登记完成写成权属无争议"
+      ],
+      "deliverables": [
+        "形成交割条件表、文件清单、资金流向和名册登记印章交接"
+      ],
+      "path": "skills/准备交割文件包",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "投资并购与企业交易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备交易终止通知",
+      "kind": "atomic",
+      "displayName": "准备交易终止通知",
+      "goal": "形成行使交易终止权的发送前稿和到达设计",
+      "notFor": [
+        "终止权未闭合仍出终稿",
+        "把发送写成已终止",
+        "只要评估"
+      ],
+      "deliverables": [
+        "形成行使交易终止权的发送前稿和到达设计"
+      ],
+      "path": "skills/准备交易终止通知",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "投资并购与企业交易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估投后赔偿与或有对价请求",
+      "kind": "atomic",
+      "displayName": "评估投后赔偿与或有对价请求",
+      "goal": "判断交割后赔偿、价格调整或对赌请求能否成立，不发函",
+      "notFor": [
+        "发送版索赔通知",
+        "一般合同诉讼文书",
+        "唯一必得金额"
+      ],
+      "deliverables": [
+        "判断交割后赔偿、价格调整或对赌请求能否成立，不发函"
+      ],
+      "path": "skills/评估投后赔偿与或有对价请求",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "投资并购与企业交易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "梳理目标公司股权与组织",
+      "kind": "atomic",
+      "displayName": "梳理目标公司股权与组织",
+      "goal": "单独要把股权、出资、一层／多层架构和机关做成可回链图；单方",
+      "notFor": [
+        "不裁定代持权属",
+        "不设计日常治理",
+        "C 端 034 只分流"
+      ],
+      "deliverables": [
+        "单独要把股权、出资、一层／多层架构和机关做成可回链图；单方"
+      ],
+      "path": "skills/梳理目标公司股权与组织",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "投资并购与企业交易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估交易关联关系与利益冲突",
+      "kind": "atomic",
+      "displayName": "评估交易关联关系与利益冲突",
+      "goal": "关联交易、董监高自我交易或双方利益冲突需单独判断；单方",
+      "notFor": [
+        "不代替公司日常关联交易治理",
+        "不做出资效力终局"
+      ],
+      "deliverables": [
+        "关联交易、董监高自我交易或双方利益冲突需单独判断；单方"
+      ],
+      "path": "skills/评估交易关联关系与利益冲突",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "投资并购与企业交易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估国资交易进场与审批路径",
+      "kind": "atomic",
+      "displayName": "评估国资交易进场与审批路径",
+      "goal": "标的或转让方含国有、应进场或应评估审批；单方",
+      "notFor": [
+        "不代办进场",
+        "失效《企业国有产权转让管理暂行办法》不得当现行法"
+      ],
+      "deliverables": [
+        "标的或转让方含国有、应进场或应评估审批；单方"
+      ],
+      "path": "skills/评估国资交易进场与审批路径",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "投资并购与企业交易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估上市公司收购与重组路径",
+      "kind": "atomic",
+      "displayName": "评估上市公司收购与重组路径",
+      "goal": "目标或买方为上市公司／新三板，需收购或重组路径；单方",
+      "notFor": [
+        "不写完整披露稿",
+        "证券监管专项未核验则字段停止"
+      ],
+      "deliverables": [
+        "目标或买方为上市公司／新三板，需收购或重组路径；单方"
+      ],
+      "path": "skills/评估上市公司收购与重组路径",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "投资并购与企业交易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估外商投资准入与信息报告",
+      "kind": "atomic",
+      "displayName": "评估外商投资准入与信息报告",
+      "goal": "外方直接或间接收购／增资境内企业，需准入判断；单方",
+      "notFor": [
+        "不做境外法／ODI／制裁",
+        "不把 2009 并购规定审批写成现行默认"
+      ],
+      "deliverables": [
+        "外方直接或间接收购／增资境内企业，需准入判断；单方"
+      ],
+      "path": "skills/评估外商投资准入与信息报告",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "投资并购与企业交易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估外商投资安全审查红旗",
+      "kind": "atomic",
+      "displayName": "评估外商投资安全审查红旗",
+      "goal": "可能影响国家安全的外资并购需判断是否触审查；单方",
+      "notFor": [
+        "不代申报",
+        "与经营者集中申报互斥主成果"
+      ],
+      "deliverables": [
+        "可能影响国家安全的外资并购需判断是否触审查；单方"
+      ],
+      "path": "skills/评估外商投资安全审查红旗",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "投资并购与企业交易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "识别经营者集中红旗并转出",
+      "kind": "atomic",
+      "displayName": "识别经营者集中红旗并转出",
+      "goal": "交易可能导致控制权集中，需判断是否触申报闸；单方",
+      "notFor": [
+        "不撰写、不提交经营者集中申报"
+      ],
+      "deliverables": [
+        "交易可能导致控制权集中，需判断是否触申报闸；单方"
+      ],
+      "path": "skills/识别经营者集中红旗并转出",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "投资并购与企业交易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估合资设立与资产剥离路径",
+      "kind": "atomic",
+      "displayName": "评估合资设立与资产剥离路径",
+      "goal": "拟新设合资或从目标剥离资产／业务后再交割；单方",
+      "notFor": [
+        "劳动转移转劳动",
+        "房地产／工程主轴转出"
+      ],
+      "deliverables": [
+        "拟新设合资或从目标剥离资产／业务后再交割；单方"
+      ],
+      "path": "skills/评估合资设立与资产剥离路径",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "投资并购与企业交易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估合并分立重组路径",
+      "kind": "atomic",
+      "displayName": "评估合并分立重组路径",
+      "goal": "拟吸收／新设合并或分立，需程序和法律效果；单方",
+      "notFor": [
+        "不写合并协议终稿",
+        "破产程序内重整转破产"
+      ],
+      "deliverables": [
+        "拟吸收／新设合并或分立，需程序和法律效果；单方"
+      ],
+      "path": "skills/评估合并分立重组路径",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "投资并购与企业交易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备合并分立实施文件与债权人通知",
+      "kind": "atomic",
+      "displayName": "准备合并分立实施文件与债权人通知",
+      "goal": "已定合并或分立路径，需协议、决议、资产负债表和债权人通知公告；单方",
+      "notFor": [
+        "路径未定先走评估",
+        "不代发公告",
+        "集中申报转竞争法",
+        "破产程序转破产"
+      ],
+      "deliverables": [
+        "已定合并或分立路径，需协议、决议、资产负债表和债权人通知公告；单方"
+      ],
+      "path": "skills/准备合并分立实施文件与债权人通知",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "投资并购与企业交易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对合并分立债权人清偿或担保请求",
+      "kind": "atomic",
+      "displayName": "应对合并分立债权人清偿或担保请求",
+      "goal": "债权人在通知或公告期内要求清偿或提供担保；公司方",
+      "notFor": [
+        "不重判合并路径",
+        "一般合同债务催收转合同争议或金融"
+      ],
+      "deliverables": [
+        "债权人在通知或公告期内要求清偿或提供担保；公司方"
+      ],
+      "path": "skills/应对合并分立债权人清偿或担保请求",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "投资并购与企业交易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估产权交易所挂牌路径",
+      "kind": "atomic",
+      "displayName": "评估产权交易所挂牌路径",
+      "goal": "必须或选择在产权交易所公开转让；单方",
+      "notFor": [
+        "不代挂牌",
+        "国资批准另走国资原子"
+      ],
+      "deliverables": [
+        "必须或选择在产权交易所公开转让；单方"
+      ],
+      "path": "skills/评估产权交易所挂牌路径",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "投资并购与企业交易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估优先购买权同意权与章程限制",
+      "kind": "atomic",
+      "displayName": "评估优先购买权同意权与章程限制",
+      "goal": "对外转股或增资，需判断章程、股东协议限制；单方",
+      "notFor": [
+        "不把 2018 年公司法第 71 条当现行默认",
+        "C 端小微转让只分流"
+      ],
+      "deliverables": [
+        "对外转股或增资，需判断章程、股东协议限制；单方"
+      ],
+      "path": "skills/评估优先购买权同意权与章程限制",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "投资并购与企业交易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估交割前后许可资质承继",
+      "kind": "atomic",
+      "displayName": "评估交割前后许可资质承继",
+      "goal": "交易依赖特许、牌照或行业许可能否随转；单方",
+      "notFor": [
+        "不做行业监管申报正文",
+        "环境许可专项转环境能源"
+      ],
+      "deliverables": [
+        "交易依赖特许、牌照或行业许可能否随转；单方"
+      ],
+      "path": "skills/评估交割前后许可资质承继",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "投资并购与企业交易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估交易中的代持清理",
+      "kind": "atomic",
+      "displayName": "评估交易中的代持清理",
+      "goal": "交割前需显名、还原或解除代持；单方",
+      "notFor": [
+        "不裁定隐名股东权属终局",
+        "C 端 034 只分流",
+        "日常股东争议转公司治理"
+      ],
+      "deliverables": [
+        "交割前需显名、还原或解除代持；单方"
+      ],
+      "path": "skills/评估交易中的代持清理",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "投资并购与企业交易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备尽调资料清单与资料室规则",
+      "kind": "atomic",
+      "displayName": "准备尽调资料清单与资料室规则",
+      "goal": "需向卖方发 RFI 或建买方资料室规则；买方",
+      "notFor": [
+        "不代替卖方建室",
+        "不写报告"
+      ],
+      "deliverables": [
+        "需向卖方发 RFI 或建买方资料室规则；买方"
+      ],
+      "path": "skills/准备尽调资料清单与资料室规则",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "投资并购与企业交易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备卖方资料室与披露控制",
+      "kind": "atomic",
+      "displayName": "准备卖方资料室与披露控制",
+      "goal": "卖方需建室、脱敏和披露边界；卖方",
+      "notFor": [
+        "不代替披露函或尽调报告"
+      ],
+      "deliverables": [
+        "卖方需建室、脱敏和披露边界；卖方"
+      ],
+      "path": "skills/准备卖方资料室与披露控制",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "投资并购与企业交易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估标的权属与权利负担",
+      "kind": "atomic",
+      "displayName": "评估标的权属与权利负担",
+      "goal": "单独核股权或资产权属、质押冻结查封；单方",
+      "notFor": [
+        "不保证能过户",
+        "房地产权利专项转房地产"
+      ],
+      "deliverables": [
+        "单独核股权或资产权属、质押冻结查封；单方"
+      ],
+      "path": "skills/评估标的权属与权利负担",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "投资并购与企业交易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估重大合同变更控制与终止权",
+      "kind": "atomic",
+      "displayName": "评估重大合同变更控制与终止权",
+      "goal": "重大合同的控制权变更、终止、排他需单独判断；单方",
+      "notFor": [
+        "不重写那些合同",
+        "一般合同审查起草搁置"
+      ],
+      "deliverables": [
+        "重大合同的控制权变更、终止、排他需单独判断；单方"
+      ],
+      "path": "skills/评估重大合同变更控制与终止权",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "投资并购与企业交易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估诉讼仲裁与或有负债",
+      "kind": "atomic",
+      "displayName": "评估诉讼仲裁与或有负债",
+      "goal": "未决诉讼、处罚、或有负债影响对价或交割；单方",
+      "notFor": [
+        "不定案",
+        "不写应诉状"
+      ],
+      "deliverables": [
+        "未决诉讼、处罚、或有负债影响对价或交割；单方"
+      ],
+      "path": "skills/评估诉讼仲裁与或有负债",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "投资并购与企业交易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估许可合规尽调发现",
+      "kind": "atomic",
+      "displayName": "评估许可合规尽调发现",
+      "goal": "许可过期、超范围、未年报影响交易；单方",
+      "notFor": [
+        "不代办许可",
+        "环境许可转环境能源"
+      ],
+      "deliverables": [
+        "许可过期、超范围、未年报影响交易；单方"
+      ],
+      "path": "skills/评估许可合规尽调发现",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "投资并购与企业交易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估披露函是否闭合陈述保证",
+      "kind": "atomic",
+      "displayName": "评估披露函是否闭合陈述保证",
+      "goal": "卖方披露函能否排除或限制 R&W；单方",
+      "notFor": [
+        "不重写整份 SPA"
+      ],
+      "deliverables": [
+        "卖方披露函能否排除或限制 R&W；单方"
+      ],
+      "path": "skills/评估披露函是否闭合陈述保证",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "投资并购与企业交易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估交易否决级红旗",
+      "kind": "atomic",
+      "displayName": "评估交易否决级红旗",
+      "goal": "需单独决定是否因红旗停买、降价或加条件；单方",
+      "notFor": [
+        "不代替完整尽调报告",
+        "不写终止通知"
+      ],
+      "deliverables": [
+        "需单独决定是否因红旗停买、降价或加条件；单方"
+      ],
+      "path": "skills/评估交易否决级红旗",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "投资并购与企业交易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备交易保密安排",
+      "kind": "atomic",
+      "displayName": "准备交易保密安排",
+      "goal": "接触资料前需交易专项保密；单方",
+      "notFor": [
+        "一般 NDA 签前审查走审查领域（搁置）",
+        "C 端保密协议只分流"
+      ],
+      "deliverables": [
+        "接触资料前需交易专项保密；单方"
+      ],
+      "path": "skills/准备交易保密安排",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "投资并购与企业交易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估条款清单或意向书拘束力",
+      "kind": "atomic",
+      "displayName": "评估条款清单或意向书拘束力",
+      "goal": "已签或拟签 TS／LOI，需判断预约／本约／无拘束；单方",
+      "notFor": [
+        "不重写 TS",
+        "已决出发送 SPA 走起草原子"
+      ],
+      "deliverables": [
+        "已签或拟签 TS／LOI，需判断预约／本约／无拘束；单方"
+      ],
+      "path": "skills/评估条款清单或意向书拘束力",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "投资并购与企业交易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备排他谈判与冻结安排",
+      "kind": "atomic",
+      "displayName": "准备排他谈判与冻结安排",
+      "goal": "需锁定期、禁止询价或禁止处置标的；单方",
+      "notFor": [
+        "不写成已锁定",
+        "上市公司信义义务出口另项"
+      ],
+      "deliverables": [
+        "需锁定期、禁止询价或禁止处置标的；单方"
+      ],
+      "path": "skills/准备排他谈判与冻结安排",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "投资并购与企业交易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "谈判投资并购交易条件",
+      "kind": "atomic",
+      "displayName": "谈判投资并购交易条件",
+      "goal": "仍可谈，要底线、让步和不可让条款；单方",
+      "notFor": [
+        "不代替已谈拢的 SPA 正文"
+      ],
+      "deliverables": [
+        "仍可谈，要底线、让步和不可让条款；单方"
+      ],
+      "path": "skills/谈判投资并购交易条件",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "投资并购与企业交易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备交易附属函与例外安排",
+      "kind": "atomic",
+      "displayName": "准备交易附属函与例外安排",
+      "goal": "主协议外需单方例外、宽限或个别股东安排；单方",
+      "notFor": [
+        "不绕开必须进场或必须披露的安排"
+      ],
+      "deliverables": [
+        "主协议外需单方例外、宽限或个别股东安排；单方"
+      ],
+      "path": "skills/准备交易附属函与例外安排",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "投资并购与企业交易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备资产收购协议",
+      "kind": "atomic",
+      "displayName": "准备资产收购协议",
+      "goal": "已定资产路径，需发送前资产购买协议；起草方",
+      "notFor": [
+        "房地产买卖主轴转房地产",
+        "不把资产协议写成股权协议"
+      ],
+      "deliverables": [
+        "已定资产路径，需发送前资产购买协议；起草方"
+      ],
+      "path": "skills/准备资产收购协议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "投资并购与企业交易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备增资认购协议",
+      "kind": "atomic",
+      "displayName": "准备增资认购协议",
+      "goal": "以增资取得股权，需发送前认购协议；起草方",
+      "notFor": [
+        "日常增资治理转公司治理",
+        "不出完整 SHA"
+      ],
+      "deliverables": [
+        "以增资取得股权，需发送前认购协议；起草方"
+      ],
+      "path": "skills/准备增资认购协议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "投资并购与企业交易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备交易项下股东协议",
+      "kind": "atomic",
+      "displayName": "准备交易项下股东协议",
+      "goal": "交割后需共同治理、退出和保护性条款；起草方",
+      "notFor": [
+        "日常章程修订转公司治理",
+        "劳动激励后果转劳动"
+      ],
+      "deliverables": [
+        "交割后需共同治理、退出和保护性条款；起草方"
+      ],
+      "path": "skills/准备交易项下股东协议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "投资并购与企业交易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备陈述保证与披露附件",
+      "kind": "atomic",
+      "displayName": "准备陈述保证与披露附件",
+      "goal": "单独要把 R&W 和附件做成可谈判稿；单方",
+      "notFor": [
+        "不代替整份 SPA",
+        "披露函评估另项"
+      ],
+      "deliverables": [
+        "单独要把 R&W 和附件做成可谈判稿；单方"
+      ],
+      "path": "skills/准备陈述保证与披露附件",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "投资并购与企业交易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备赔偿提存与留扣条款",
+      "kind": "atomic",
+      "displayName": "准备赔偿提存与留扣条款",
+      "goal": "需设计赔偿范围、篮子、上限、留扣；单方",
+      "notFor": [
+        "不把融资担保当主成果",
+        "不算出必得金额"
+      ],
+      "deliverables": [
+        "需设计赔偿范围、篮子、上限、留扣；单方"
+      ],
+      "path": "skills/准备赔偿提存与留扣条款",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "投资并购与企业交易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备对价提存或尾款留扣安排",
+      "kind": "atomic",
+      "displayName": "准备对价提存或尾款留扣安排",
+      "goal": "需第三方提存或卖方留扣保障交割后索赔；单方",
+      "notFor": [
+        "银行存管或担保主轴转金融"
+      ],
+      "deliverables": [
+        "需第三方提存或卖方留扣保障交割后索赔；单方"
+      ],
+      "path": "skills/准备对价提存或尾款留扣安排",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "投资并购与企业交易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备过渡服务安排",
+      "kind": "atomic",
+      "displayName": "准备过渡服务安排",
+      "goal": "交割后仍需卖方提供系统、人员或采购过渡；单方",
+      "notFor": [
+        "劳动派遣／用工转劳动"
+      ],
+      "deliverables": [
+        "交割后仍需卖方提供系统、人员或采购过渡；单方"
+      ],
+      "path": "skills/准备过渡服务安排",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "投资并购与企业交易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备交易内部决议与批准包",
+      "kind": "atomic",
+      "displayName": "准备交易内部决议与批准包",
+      "goal": "签约或交割需股东会／董事会／投资人批准；单方",
+      "notFor": [
+        "日常董事会运行转公司治理",
+        "国资批准另项"
+      ],
+      "deliverables": [
+        "签约或交割需股东会／董事会／投资人批准；单方"
+      ],
+      "path": "skills/准备交易内部决议与批准包",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "投资并购与企业交易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备披露函与披露附件",
+      "kind": "atomic",
+      "displayName": "准备披露函与披露附件",
+      "goal": "卖方需对照 R&W 做披露附件；卖方",
+      "notFor": [
+        "不重判 R&W 是否成立"
+      ],
+      "deliverables": [
+        "卖方需对照 R&W 做披露附件；卖方"
+      ],
+      "path": "skills/准备披露函与披露附件",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "投资并购与企业交易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备交易项下竞业与不招揽",
+      "kind": "atomic",
+      "displayName": "准备交易项下竞业与不招揽",
+      "goal": "卖方或创始人需交易项下不竞争；单方",
+      "notFor": [
+        "劳动关系内竞业转劳动",
+        "不保证条款有效"
+      ],
+      "deliverables": [
+        "卖方或创始人需交易项下不竞争；单方"
+      ],
+      "path": "skills/准备交易项下竞业与不招揽",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "投资并购与企业交易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备交易项下增资扩股文件",
+      "kind": "atomic",
+      "displayName": "准备交易项下增资扩股文件",
+      "goal": "增资交割需认购、章程修正和登记材料；单方",
+      "notFor": [
+        "与认购协议分工：本项含登记与章程修正"
+      ],
+      "deliverables": [
+        "增资交割需认购、章程修正和登记材料；单方"
+      ],
+      "path": "skills/准备交易项下增资扩股文件",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "投资并购与企业交易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估或有对价与对赌",
+      "kind": "atomic",
+      "displayName": "评估或有对价与对赌",
+      "goal": "业绩承诺、回购、现金补偿需判断效力和可履行；单方",
+      "notFor": [
+        "不把与目标公司对赌写成当然有效或当然无效"
+      ],
+      "deliverables": [
+        "业绩承诺、回购、现金补偿需判断效力和可履行；单方"
+      ],
+      "path": "skills/评估或有对价与对赌",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "投资并购与企业交易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估锁箱与交割账机制",
+      "kind": "atomic",
+      "displayName": "评估锁箱与交割账机制",
+      "goal": "需在锁箱和交割账之间做机制选择；单方",
+      "notFor": [
+        "不代替数字测算"
+      ],
+      "deliverables": [
+        "需在锁箱和交割账之间做机制选择；单方"
+      ],
+      "path": "skills/评估锁箱与交割账机制",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "投资并购与企业交易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估重大不利变化条件",
+      "kind": "atomic",
+      "displayName": "评估重大不利变化条件",
+      "goal": "拟用或被主张 MAC 作为不交割理由；单方",
+      "notFor": [
+        "不发出终止通知"
+      ],
+      "deliverables": [
+        "拟用或被主张 MAC 作为不交割理由；单方"
+      ],
+      "path": "skills/评估重大不利变化条件",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "投资并购与企业交易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估交割条件是否满足",
+      "kind": "atomic",
+      "displayName": "评估交割条件是否满足",
+      "goal": "需判断 CP 是否已满足、放弃或未满足；单方",
+      "notFor": [
+        "不发出交割或终止通知"
+      ],
+      "deliverables": [
+        "需判断 CP 是否已满足、放弃或未满足；单方"
+      ],
+      "path": "skills/评估交割条件是否满足",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "投资并购与企业交易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备股权或股东变更登记",
+      "kind": "atomic",
+      "displayName": "准备股权或股东变更登记",
+      "goal": "交割后需股东名册和登记机关变更材料；单方",
+      "notFor": [
+        "C 端小微变更只分流",
+        "当地书式一律待核"
+      ],
+      "deliverables": [
+        "交割后需股东名册和登记机关变更材料；单方"
+      ],
+      "path": "skills/准备股权或股东变更登记",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "投资并购与企业交易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备印章证照与账册交接",
+      "kind": "atomic",
+      "displayName": "准备印章证照与账册交接",
+      "goal": "控制权交割需印鉴、证照、U 盾、账册交接；单方",
+      "notFor": [
+        "不指导抢章",
+        "日常用印制度转公司治理"
+      ],
+      "deliverables": [
+        "控制权交割需印鉴、证照、U 盾、账册交接；单方"
+      ],
+      "path": "skills/准备印章证照与账册交接",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "投资并购与企业交易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备交割资金流向指令",
+      "kind": "atomic",
+      "displayName": "准备交割资金流向指令",
+      "goal": "需付款日、账户、提存和同时履行安排；单方",
+      "notFor": [
+        "不提供洗钱或阴阳价",
+        "融资放款文件转金融"
+      ],
+      "deliverables": [
+        "需付款日、账户、提存和同时履行安排；单方"
+      ],
+      "path": "skills/准备交割资金流向指令",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "投资并购与企业交易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "处理签约至交割过渡",
+      "kind": "atomic",
+      "displayName": "处理签约至交割过渡",
+      "goal": "先签后交，需过渡经营、泄漏和保护；单方",
+      "notFor": [
+        "不把签约写成已交割"
+      ],
+      "deliverables": [
+        "先签后交，需过渡经营、泄漏和保护；单方"
+      ],
+      "path": "skills/处理签约至交割过渡",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "投资并购与企业交易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备交割确认与完成备忘",
+      "kind": "atomic",
+      "displayName": "准备交割确认与完成备忘",
+      "goal": "交割当日需确认条件满足和文件互交；单方",
+      "notFor": [
+        "不伪称登记已完成"
+      ],
+      "deliverables": [
+        "交割当日需确认条件满足和文件互交；单方"
+      ],
+      "path": "skills/准备交割确认与完成备忘",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "投资并购与企业交易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "建立交割后契约跟踪表",
+      "kind": "atomic",
+      "displayName": "建立交割后契约跟踪表",
+      "goal": "交割后需跟踪登记、许可、赔偿期限和信息权；单方",
+      "notFor": [
+        "不接管日常公司治理"
+      ],
+      "deliverables": [
+        "交割后需跟踪登记、许可、赔偿期限和信息权；单方"
+      ],
+      "path": "skills/建立交割后契约跟踪表",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "投资并购与企业交易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估交割失败与退出交易",
+      "kind": "atomic",
+      "displayName": "评估交割失败与退出交易",
+      "goal": "条件可能无法满足或拟退出，先判断能否走；单方",
+      "notFor": [
+        "不发出终止通知"
+      ],
+      "deliverables": [
+        "条件可能无法满足或拟退出，先判断能否走；单方"
+      ],
+      "path": "skills/评估交割失败与退出交易",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "投资并购与企业交易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备对交易终止的异议",
+      "kind": "atomic",
+      "displayName": "准备对交易终止的异议",
+      "goal": "已收到终止通知，需异议或主张继续交割；相对方",
+      "notFor": [
+        "不写确认之诉诉状"
+      ],
+      "deliverables": [
+        "已收到终止通知，需异议或主张继续交割；相对方"
+      ],
+      "path": "skills/准备对交易终止的异议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "投资并购与企业交易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估分手费与交易定金",
+      "kind": "atomic",
+      "displayName": "评估分手费与交易定金",
+      "goal": "约定分手费、反向分手费或定金需判断可否主张；单方",
+      "notFor": [
+        "不定法院必支持数额"
+      ],
+      "deliverables": [
+        "约定分手费、反向分手费或定金需判断可否主张；单方"
+      ],
+      "path": "skills/评估分手费与交易定金",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "投资并购与企业交易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备交割失败索赔通知",
+      "kind": "atomic",
+      "displayName": "准备交割失败索赔通知",
+      "goal": "不交割已发生，需书面主张赔偿或返还；主张方",
+      "notFor": [
+        "不代替精算或起诉"
+      ],
+      "deliverables": [
+        "不交割已发生，需书面主张赔偿或返还；主张方"
+      ],
+      "path": "skills/准备交割失败索赔通知",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "投资并购与企业交易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备投后赔偿通知",
+      "kind": "atomic",
+      "displayName": "准备投后赔偿通知",
+      "goal": "已支持发出赔偿通知，需发送前稿；索赔方",
+      "notFor": [
+        "评估未闭合不得出终稿"
+      ],
+      "deliverables": [
+        "已支持发出赔偿通知，需发送前稿；索赔方"
+      ],
+      "path": "skills/准备投后赔偿通知",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "投资并购与企业交易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对投后赔偿通知",
+      "kind": "atomic",
+      "displayName": "应对投后赔偿通知",
+      "goal": "已收到赔偿通知，需抗辩和反请求接口；被请求方",
+      "notFor": [
+        "不自动承认责任"
+      ],
+      "deliverables": [
+        "已收到赔偿通知，需抗辩和反请求接口；被请求方"
+      ],
+      "path": "skills/应对投后赔偿通知",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "投资并购与企业交易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估或有对价是否成就",
+      "kind": "atomic",
+      "displayName": "评估或有对价是否成就",
+      "goal": "业绩期结束或争议计算口径；单方",
+      "notFor": [
+        "不代做审计"
+      ],
+      "deliverables": [
+        "业绩期结束或争议计算口径；单方"
+      ],
+      "path": "skills/评估或有对价是否成就",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "投资并购与企业交易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备卖出权或买入权行权通知",
+      "kind": "atomic",
+      "displayName": "准备卖出权或买入权行权通知",
+      "goal": "投后需行使认沽／认购；行权方",
+      "notFor": [
+        "行权条件未闭合停止"
+      ],
+      "deliverables": [
+        "投后需行使认沽／认购；行权方"
+      ],
+      "path": "skills/准备卖出权或买入权行权通知",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "投资并购与企业交易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估随售拖售与转让限制",
+      "kind": "atomic",
+      "displayName": "评估随售拖售与转让限制",
+      "goal": "投后拟转股或被拖售；单方",
+      "notFor": [
+        "日常股东争议转公司治理"
+      ],
+      "deliverables": [
+        "投后拟转股或被拖售；单方"
+      ],
+      "path": "skills/评估随售拖售与转让限制",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "投资并购与企业交易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "规划交割后控制权交接",
+      "kind": "atomic",
+      "displayName": "规划交割后控制权交接",
+      "goal": "交割后需董事改选、印鉴、银行和信息权落地；单方",
+      "notFor": [
+        "不接管日常股东会／董事会运行"
+      ],
+      "deliverables": [
+        "交割后需董事改选、印鉴、银行和信息权落地；单方"
+      ],
+      "path": "skills/规划交割后控制权交接",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "投资并购与企业交易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备价格调整通知",
+      "kind": "atomic",
+      "displayName": "准备价格调整通知",
+      "goal": "交割账或锁箱泄漏需书面提出调整；主张方",
+      "notFor": [
+        "不代替测算终稿"
+      ],
+      "deliverables": [
+        "交割账或锁箱泄漏需书面提出调整；主张方"
+      ],
+      "path": "skills/准备价格调整通知",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "投资并购与企业交易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估提存或留扣释放",
+      "kind": "atomic",
+      "displayName": "评估提存或留扣释放",
+      "goal": "期限届满或争议，需判断能否释放；单方",
+      "notFor": [
+        "存管银行法律关系转金融"
+      ],
+      "deliverables": [
+        "期限届满或争议，需判断能否释放；单方"
+      ],
+      "path": "skills/评估提存或留扣释放",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "投资并购与企业交易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "谈判投后和解方案",
+      "kind": "atomic",
+      "displayName": "谈判投后和解方案",
+      "goal": "赔偿或对赌仍可谈；单方",
+      "notFor": [
+        "已谈拢协议正文另项",
+        "一般合同和解转争议领域"
+      ],
+      "deliverables": [
+        "赔偿或对赌仍可谈；单方"
+      ],
+      "path": "skills/谈判投后和解方案",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "投资并购与企业交易导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    }
+  ],
+  "guideName": "投资并购与企业交易导航"
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估传染病报告与防控义务"
+  short_description: "评估传染病报告义务和隔离等防控措施的合法性"
+  default_prompt: "使用 $评估传染病报告与防控义务，在单一立场下处理中国大陆评估传染病报告与防控义务事项。"

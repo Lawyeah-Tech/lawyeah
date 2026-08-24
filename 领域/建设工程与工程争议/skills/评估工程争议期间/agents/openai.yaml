@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估工程争议期间"
+  short_description: "分类型列出时效、十八个月、除斥和质量期间"
+  default_prompt: "使用 $评估工程争议期间，在单一立场下处理中国大陆建设工程争议中的「评估工程争议期间」。"

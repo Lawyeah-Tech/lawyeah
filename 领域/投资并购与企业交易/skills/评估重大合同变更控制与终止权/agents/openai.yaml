@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估重大合同变更控制与终止权"
+  short_description: "判断重大合同控制权变更同意和终止风险"
+  default_prompt: "使用 $评估重大合同变更控制与终止权，在单一立场下评估重大合同的控制权变更、同意和终止风险。"

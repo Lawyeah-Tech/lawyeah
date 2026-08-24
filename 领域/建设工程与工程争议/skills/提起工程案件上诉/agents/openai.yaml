@@ -1,0 +1,4 @@
+interface:
+  display_name: "提起工程案件上诉"
+  short_description: "准备工程案件上诉状、范围和理由"
+  default_prompt: "使用 $提起工程案件上诉，在单一立场下处理中国大陆建设工程争议中的「提起工程案件上诉」。"

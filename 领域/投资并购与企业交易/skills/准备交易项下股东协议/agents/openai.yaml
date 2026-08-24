@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备交易项下股东协议"
+  short_description: "准备发送前SHA保护性权利和转让限制"
+  default_prompt: "使用 $准备交易项下股东协议，在起草方立场下准备交割后共同治理、退出和保护性条款的发送前股东协议。"

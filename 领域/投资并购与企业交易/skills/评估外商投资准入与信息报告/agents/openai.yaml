@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估外商投资准入与信息报告"
+  short_description: "判断负面清单准入和信息报告停止项"
+  default_prompt: "使用 $评估外商投资准入与信息报告，在单一立场下评估外方收购或增资境内企业的准入与信息报告。"

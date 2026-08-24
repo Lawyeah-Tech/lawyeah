@@ -1,0 +1,4 @@
+interface:
+  display_name: "应对合同纠纷一审"
+  short_description: "形成期限卡、请求拆解、答辩草稿、管辖仲裁红旗和反诉评估接口的应诉包"
+  default_prompt: "使用 $应对合同纠纷一审，在单一被告立场下准备中国大陆一般合同纠纷一审应诉材料。"

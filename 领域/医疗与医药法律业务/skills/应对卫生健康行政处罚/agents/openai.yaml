@@ -1,0 +1,4 @@
+interface:
+  display_name: "应对卫生健康行政处罚"
+  short_description: "拆解卫健行政处罚构成并准备听证申辩和救济接口"
+  default_prompt: "使用 $应对卫生健康行政处罚，在单一立场下处理中国大陆应对卫生健康行政处罚事项。"

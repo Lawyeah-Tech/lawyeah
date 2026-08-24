@@ -1,0 +1,4 @@
+interface:
+  display_name: "提起药品器械产品责任诉讼"
+  short_description: "形成药品器械或不合格血液产品责任起诉包和追加接口"
+  default_prompt: "使用 $提起药品器械产品责任诉讼，在单一立场下处理中国大陆提起药品器械产品责任诉讼事项。"

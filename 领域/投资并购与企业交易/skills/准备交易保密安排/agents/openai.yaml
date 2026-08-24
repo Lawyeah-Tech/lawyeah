@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备交易保密安排"
+  short_description: "准备发送前交易专项保密条款范围例外和归还销毁"
+  default_prompt: "使用 $准备交易保密安排，在单一立场下准备投资并购接触资料前的发送前保密安排。"

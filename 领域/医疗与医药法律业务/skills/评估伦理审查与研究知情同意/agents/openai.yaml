@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估伦理审查与研究知情同意"
+  short_description: "评估伦理批件覆盖、研究知情缺陷和弱势群体保护"
+  default_prompt: "使用 $评估伦理审查与研究知情同意，在单一立场下处理中国大陆评估伦理审查与研究知情同意事项。"

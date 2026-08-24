@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备价格调整通知"
+  short_description: "准备交割账或锁箱泄漏的发送前调价通知和计算附件接口"
+  default_prompt: "使用 $准备价格调整通知，在主张方立场下准备交割账或锁箱泄漏的发送前价格调整通知。"

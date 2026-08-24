@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备陈述保证与披露附件"
+  short_description: "把R&W和披露附件做成可谈判稿"
+  default_prompt: "使用 $准备陈述保证与披露附件，在单一立场下准备可谈判的陈述保证清单、知识限定和披露附件结构。"

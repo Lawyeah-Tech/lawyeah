@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估非法行医民事与行政后果"
+  short_description: "评估无证或严重超范围行医的民事行政后果并只标刑事红旗"
+  default_prompt: "使用 $评估非法行医民事与行政后果，在单一立场下处理中国大陆评估非法行医民事与行政后果事项。"

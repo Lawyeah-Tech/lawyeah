@@ -1,0 +1,4 @@
+interface:
+  display_name: "处理解除后返还与清理"
+  short_description: "整理解除后返还、折价、保管和结算清理"
+  default_prompt: "使用 $处理解除后返还与清理，在单一立场下处理合同解除或终止后的返还与清理，不重判解除。"

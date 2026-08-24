@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估医疗机构执业许可与校验"
+  short_description: "评估医疗机构执业许可、校验状态和超范围后果"
+  default_prompt: "使用 $评估医疗机构执业许可与校验，在单一立场下处理中国大陆评估医疗机构执业许可与校验事项。"

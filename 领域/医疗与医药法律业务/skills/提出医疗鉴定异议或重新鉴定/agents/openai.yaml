@@ -1,0 +1,4 @@
+interface:
+  display_name: "提出医疗鉴定异议或重新鉴定"
+  short_description: "组织医疗鉴定异议、补充或重新鉴定材料并分列期限"
+  default_prompt: "使用 $提出医疗鉴定异议或重新鉴定，在单一立场下处理中国大陆提出医疗鉴定异议或重新鉴定事项。"

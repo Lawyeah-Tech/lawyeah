@@ -1,0 +1,4 @@
+interface:
+  display_name: "应对医疗损害二审"
+  short_description: "形成医疗损害二审答辩和补充鉴定立场"
+  default_prompt: "使用 $应对医疗损害二审，在单一立场下处理中国大陆应对医疗损害二审事项。"

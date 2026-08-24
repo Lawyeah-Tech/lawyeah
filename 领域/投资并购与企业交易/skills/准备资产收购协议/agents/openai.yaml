@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备资产收购协议"
+  short_description: "准备发送前资产范围负债排除许可合同转让和交割条款"
+  default_prompt: "使用 $准备资产收购协议，在起草方立场下准备已定资产路径的发送前资产购买协议。"

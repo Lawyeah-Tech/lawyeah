@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估合并分立重组路径"
+  short_description: "判断吸收新设合并或分立的程序和债务承继"
+  default_prompt: "使用 $评估合并分立重组路径，在单一立场下评估中国大陆公司合并或分立的程序和法律效果。"

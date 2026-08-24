@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估死亡病例尸检路径"
+  short_description: "评估死亡病例尸检告知、期间名称和拒绝后果，禁止唯一截止日"
+  default_prompt: "使用 $评估死亡病例尸检路径，在单一立场下处理中国大陆评估死亡病例尸检路径事项。"

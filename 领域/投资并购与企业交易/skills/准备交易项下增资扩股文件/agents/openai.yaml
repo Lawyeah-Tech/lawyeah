@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备交易项下增资扩股文件"
+  short_description: "准备增资认购章程修正和登记材料接口"
+  default_prompt: "使用 $准备交易项下增资扩股文件，在单一立场下准备交易项下增资交割所需的认购配合、章程修正和登记材料。"

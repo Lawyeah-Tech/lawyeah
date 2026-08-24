@@ -1,0 +1,4 @@
+interface:
+  display_name: "应对医师护士执业处罚"
+  short_description: "应对医师或护士警告暂停吊销的听证申辩和交叉风险"
+  default_prompt: "使用 $应对医师护士执业处罚，在单一立场下处理中国大陆应对医师护士执业处罚事项。"

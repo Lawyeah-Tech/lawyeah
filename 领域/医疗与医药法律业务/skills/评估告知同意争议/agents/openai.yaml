@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估告知同意争议"
+  short_description: "形成告知义务、明确同意、紧急例外和损害要件决策矩阵"
+  default_prompt: "使用 $评估告知同意争议，在单一立场下处理中国大陆评估告知同意争议事项。"

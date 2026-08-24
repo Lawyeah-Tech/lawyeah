@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备投后赔偿通知"
+  short_description: "在评估已支持时准备发送前投后赔偿通知"
+  default_prompt: "使用 $准备投后赔偿通知，在索赔方立场下，于投后赔偿评估已支持时准备发送前赔偿通知。"

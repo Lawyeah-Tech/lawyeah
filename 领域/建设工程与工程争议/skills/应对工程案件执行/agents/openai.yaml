@@ -1,0 +1,4 @@
+interface:
+  display_name: "应对工程案件执行"
+  short_description: "应对工程案件执行：适格异议与履行安排"
+  default_prompt: "使用 $应对工程案件执行，在单一立场下处理中国大陆建设工程争议中的「应对工程案件执行」。"

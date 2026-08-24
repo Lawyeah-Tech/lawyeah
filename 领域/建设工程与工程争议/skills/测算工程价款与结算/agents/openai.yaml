@@ -1,0 +1,4 @@
+interface:
+  display_name: "测算工程价款与结算"
+  short_description: "形成可复核的工程款分项测算，不认定必得总额"
+  default_prompt: "使用 $测算工程价款与结算，测算中国大陆建设工程价款与结算。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备工程案件财产保全申请"
+  short_description: "准备工程案件财产保全申请书、担保和线索"
+  default_prompt: "使用 $准备工程案件财产保全申请，在单一立场下处理中国大陆建设工程争议中的「准备工程案件财产保全申请」。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "建立医疗损害证据案卷"
+  short_description: "形成医疗损害要件、举证责任、病历鉴定费用矩阵和合法补证"
+  default_prompt: "使用 $建立医疗损害证据案卷，建立中国大陆医疗损害证据案卷。"

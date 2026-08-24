@@ -1,0 +1,4 @@
+interface:
+  display_name: "谈判投资并购交易条件"
+  short_description: "整理仍可谈的底线让步和不可让条款"
+  default_prompt: "使用 $谈判投资并购交易条件，在单一立场下整理投资并购仍可谈判的底线、让步和不可让条款。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "办理和解执行力补强"
+  short_description: "比较司法确认、仲裁调解书和公证赋强路径"
+  default_prompt: "使用 $办理合同和解执行力补强，使用本技能比较并准备和解执行力补强路径，必须明示单独和解通常无执行力。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "建立合同争议证据案卷"
+  short_description: "形成要件、举证责任、支持不利材料、控制方和合法补证矩阵"
+  default_prompt: "使用 $建立合同争议证据案卷，在单一立场下建立中国大陆一般合同争议的证据案卷。"

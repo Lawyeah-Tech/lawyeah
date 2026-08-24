@@ -1,0 +1,4 @@
+interface:
+  display_name: "投资并购与企业交易导航"
+  short_description: "按交易阶段和成果定位已安装的投资并购原子技能"
+  default_prompt: "使用 $投资并购与企业交易导航，说明本能力并为当前中国大陆投资并购任务定位入口。"

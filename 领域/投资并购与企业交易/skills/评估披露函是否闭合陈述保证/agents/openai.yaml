@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估披露函是否闭合陈述保证"
+  short_description: "对照披露函与R&W判断排除效力和补披露风险"
+  default_prompt: "使用 $评估披露函是否闭合陈述保证，在单一立场下评估卖方披露函能否排除或限制陈述保证。"

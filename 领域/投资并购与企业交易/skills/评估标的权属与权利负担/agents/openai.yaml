@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估标的权属与权利负担"
+  short_description: "核股权或资产权属链并列表质押冻结查封"
+  default_prompt: "使用 $评估标的权属与权利负担，在单一立场下评估交易标的的权属链和权利负担。"

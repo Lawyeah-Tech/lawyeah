@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估工程质量缺陷与验收"
+  short_description: "评估工程质量缺陷、验收状态和修复路径"
+  default_prompt: "使用 $评估工程质量缺陷与验收，在单一立场下处理中国大陆建设工程争议中的「评估工程质量缺陷与验收」。"

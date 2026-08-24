@@ -1,0 +1,4 @@
+interface:
+  display_name: "应对投后赔偿通知"
+  short_description: "针对已收到的赔偿通知整理抗辩披露排除和反请求红旗"
+  default_prompt: "使用 $应对投后赔偿通知，在被请求方立场下应对已收到的投后赔偿通知。"

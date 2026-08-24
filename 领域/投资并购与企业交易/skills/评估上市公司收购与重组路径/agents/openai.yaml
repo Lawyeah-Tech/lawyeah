@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估上市公司收购与重组路径"
+  short_description: "分流要约协议重组并标披露和股东大会接口"
+  default_prompt: "使用 $评估上市公司收购与重组路径，在单一立场下评估中国大陆上市公司或新三板收购重组路径。"

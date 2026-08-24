@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估以审计为准条款"
+  short_description: "评估以审计为准条款的约束力与拖延后果"
+  default_prompt: "使用 $评估以审计为准条款，在单一立场下处理中国大陆建设工程争议中的「评估以审计为准条款」。"

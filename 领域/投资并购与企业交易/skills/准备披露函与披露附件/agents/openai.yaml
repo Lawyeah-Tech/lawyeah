@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备披露函与披露附件"
+  short_description: "卖方对照R&W准备披露表排除主张和补披露窗口"
+  default_prompt: "使用 $准备披露函与披露附件，在卖方立场下对照陈述保证准备披露函与披露附件。"

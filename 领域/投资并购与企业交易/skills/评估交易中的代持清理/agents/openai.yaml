@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估交易中的代持清理"
+  short_description: "判断交割前显名还原或解除代持的路径和登记风险"
+  default_prompt: "使用 $评估交易中的代持清理，在单一立场下评估交割前显名、还原或解除代持的路径。"

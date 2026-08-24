@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估医师多点执业与外出会诊"
+  short_description: "评估多点执业备案、外出会诊安排和责任主体"
+  default_prompt: "使用 $评估医师多点执业与外出会诊，在单一立场下处理中国大陆评估医师多点执业与外出会诊事项。"

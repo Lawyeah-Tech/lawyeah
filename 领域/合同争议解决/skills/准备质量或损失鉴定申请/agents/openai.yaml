@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备质量或损失鉴定申请"
+  short_description: "准备鉴定事项、检材、机构分流和申请稿"
+  default_prompt: "使用 $准备质量或损失鉴定申请，使用本技能准备质量或损失鉴定申请，不要预测鉴定意见。"

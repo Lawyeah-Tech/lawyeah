@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估麻醉精神药品管理合规"
+  short_description: "评估麻精药品专册专柜缺口并标行政与刑事红旗"
+  default_prompt: "使用 $评估麻醉精神药品管理合规，在单一立场下处理中国大陆评估麻醉精神药品管理合规事项。"

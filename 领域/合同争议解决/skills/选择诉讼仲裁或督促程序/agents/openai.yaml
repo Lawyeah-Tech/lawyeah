@@ -1,0 +1,4 @@
+interface:
+  display_name: "选择诉讼仲裁或督促程序"
+  short_description: "比较起诉、仲裁和支付令的适配与失败分流"
+  default_prompt: "使用 $选择诉讼仲裁或督促程序，使用本技能比较诉讼、仲裁或支付令，不要直接写完整申请书。"

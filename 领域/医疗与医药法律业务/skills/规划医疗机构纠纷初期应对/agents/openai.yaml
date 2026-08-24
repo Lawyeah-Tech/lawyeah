@@ -1,0 +1,4 @@
+interface:
+  display_name: "规划医疗机构纠纷初期应对"
+  short_description: "并行管理救治、告知、封存、报告和接待，禁止隐匿病历"
+  default_prompt: "使用 $规划医疗机构纠纷初期应对，为医疗机构规划中国大陆医疗纠纷初期应对。"

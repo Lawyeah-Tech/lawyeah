@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估实际施工人请求"
+  short_description: "识别实际施工人身份并框定相对方折价补偿、代位或挂靠知情请求"
+  default_prompt: "使用 $评估实际施工人请求，评估中国大陆建设工程实际施工人请求。"

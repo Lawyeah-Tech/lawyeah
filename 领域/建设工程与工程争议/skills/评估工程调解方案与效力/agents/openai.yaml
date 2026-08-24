@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估工程调解方案与效力"
+  short_description: "评估工程调解方案的利弊、效力和反悔窗口"
+  default_prompt: "使用 $评估工程调解方案与效力，在单一立场下处理中国大陆建设工程争议中的「评估工程调解方案与效力」。"

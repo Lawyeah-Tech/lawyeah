@@ -1,0 +1,4 @@
+interface:
+  display_name: "分流医闹治安与刑事交叉"
+  short_description: "分流医闹现场的民事治安刑事边界并固定合法证据"
+  default_prompt: "使用 $分流医闹治安与刑事交叉，在单一立场下处理中国大陆分流医闹治安与刑事交叉事项。"

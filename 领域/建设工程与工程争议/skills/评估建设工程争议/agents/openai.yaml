@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估建设工程争议"
+  short_description: "形成工程争议请求抗辩、效力接口、价款区间、鉴定红旗和证据决策矩阵"
+  default_prompt: "使用 $评估建设工程争议，在单一立场下评估中国大陆建设工程争议。"

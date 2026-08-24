@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备交易项下竞业与不招揽"
+  short_description: "准备卖方或创始人交易项下不竞争范围期限和对价接口"
+  default_prompt: "使用 $准备交易项下竞业与不招揽，在单一立场下准备交易项下卖方或创始人的竞业与不招揽条款。"

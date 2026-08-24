@@ -1,0 +1,4 @@
+interface:
+  display_name: "提起建设工程一审"
+  short_description: "形成可提交的建设工程起诉状、请求和证据目录"
+  default_prompt: "使用 $提起建设工程一审，准备中国大陆建设工程一审起诉材料。"

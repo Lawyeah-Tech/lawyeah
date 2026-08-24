@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估临床用血与输血管理"
+  short_description: "评估临床用血核查、血袋管理和不合格血液接口"
+  default_prompt: "使用 $评估临床用血与输血管理，在单一立场下处理中国大陆评估临床用血与输血管理事项。"

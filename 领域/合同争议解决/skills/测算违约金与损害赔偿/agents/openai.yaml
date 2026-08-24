@@ -1,0 +1,4 @@
+interface:
+  display_name: "测算违约金与损害赔偿"
+  short_description: "形成可复核的违约金、损失、定金和已付款分项测算，不定违约已成立"
+  default_prompt: "使用 $测算违约金与损害赔偿，在单一立场下测算中国大陆一般合同争议的违约金与损害赔偿。"

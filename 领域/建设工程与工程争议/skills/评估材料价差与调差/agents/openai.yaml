@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估材料价差与调差"
+  short_description: "评估材料价差、调差条款和情势变更接口"
+  default_prompt: "使用 $评估材料价差与调差，在单一立场下处理中国大陆建设工程争议中的「评估材料价差与调差」。"

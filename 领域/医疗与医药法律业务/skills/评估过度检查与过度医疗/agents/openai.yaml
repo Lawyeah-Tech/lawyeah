@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估过度检查与过度医疗"
+  short_description: "对照规范列出不必要检查和过度医疗的费用返还争点"
+  default_prompt: "使用 $评估过度检查与过度医疗，在单一立场下处理中国大陆评估过度检查与过度医疗事项。"

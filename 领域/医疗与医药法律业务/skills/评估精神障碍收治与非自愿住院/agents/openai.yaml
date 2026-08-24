@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估精神障碍收治与非自愿住院"
+  short_description: "评估精神障碍非自愿住院条件、告知复诊和救济"
+  default_prompt: "使用 $评估精神障碍收治与非自愿住院，在单一立场下处理中国大陆评估精神障碍收治与非自愿住院事项。"

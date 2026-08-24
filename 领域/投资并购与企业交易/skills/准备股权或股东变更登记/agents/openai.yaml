@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备股权或股东变更登记"
+  short_description: "准备股东名册请求登记材料和三十日提示"
+  default_prompt: "使用 $准备股权或股东变更登记，在单一立场下准备交割后股东名册和登记机关变更材料。"

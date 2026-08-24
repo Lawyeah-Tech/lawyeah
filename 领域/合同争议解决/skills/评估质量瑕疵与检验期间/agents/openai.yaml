@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估质量瑕疵与检验期间"
+  short_description: "判断检验期间、异议通知、瑕疵因果和鉴定分流"
+  default_prompt: "使用 $评估质量瑕疵与检验期间，在单一立场下评估中国大陆一般合同的质量瑕疵与检验期间。"

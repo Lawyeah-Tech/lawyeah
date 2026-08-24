@@ -1,0 +1,4 @@
+interface:
+  display_name: "申请撤销工程仲裁裁决"
+  short_description: "准备撤销工程仲裁裁决的事由和材料"
+  default_prompt: "使用 $申请撤销工程仲裁裁决，在单一立场下处理中国大陆建设工程争议中的「申请撤销工程仲裁裁决」。"

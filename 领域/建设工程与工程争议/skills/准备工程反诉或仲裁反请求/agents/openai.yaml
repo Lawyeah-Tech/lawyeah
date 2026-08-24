@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备工程反诉或仲裁反请求"
+  short_description: "准备工程反诉状或仲裁反请求及证据"
+  default_prompt: "使用 $准备工程反诉或仲裁反请求，在单一立场下处理中国大陆建设工程争议中的「准备工程反诉或仲裁反请求」。"

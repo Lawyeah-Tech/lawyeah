@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备交易附属函与例外安排"
+  short_description: "准备发送前附属函并对照主协议冲突"
+  default_prompt: "使用 $准备交易附属函与例外安排，在单一立场下准备主协议之外的发送前附属函或个别股东例外安排。"

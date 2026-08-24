@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估质保金与保修金返还"
+  short_description: "评估质保金返还时点、缺陷扣款和保修分离"
+  default_prompt: "使用 $评估质保金与保修金返还，在单一立场下处理中国大陆建设工程争议中的「评估质保金与保修金返还」。"

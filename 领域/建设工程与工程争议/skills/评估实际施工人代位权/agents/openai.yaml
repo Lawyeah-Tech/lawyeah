@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估实际施工人代位权"
+  short_description: "评估实际施工人对发包人的代位主通道及旧案隔离"
+  default_prompt: "使用 $评估实际施工人代位权，在单一立场下处理中国大陆建设工程争议中的「评估实际施工人代位权」。"

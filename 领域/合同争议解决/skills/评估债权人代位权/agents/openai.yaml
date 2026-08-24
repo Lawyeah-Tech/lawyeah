@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估债权人代位权"
+  short_description: "判断代位条件、专属权利排除和范围"
+  default_prompt: "使用 $评估债权人代位权，在债权人立场下评估是否具备代位权条件。"

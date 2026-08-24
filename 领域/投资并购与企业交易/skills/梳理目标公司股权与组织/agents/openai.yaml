@@ -1,0 +1,4 @@
+interface:
+  display_name: "梳理目标公司股权与组织"
+  short_description: "把目标股权出资多层架构和机关做成可回链图"
+  default_prompt: "使用 $梳理目标公司股权与组织，在单一立场下梳理中国大陆目标公司的股权、出资、架构和机关。"

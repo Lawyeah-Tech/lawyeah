@@ -1,0 +1,4 @@
+interface:
+  display_name: "起草医疗和解协议"
+  short_description: "在条件已谈拢时起草医疗和解协议并标明弃权和再发风险"
+  default_prompt: "使用 $起草医疗和解协议，在单一立场下处理中国大陆起草医疗和解协议事项。"

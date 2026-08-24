@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备印章证照与账册交接"
+  short_description: "准备控制权交割的印鉴证照U盾账册交接清单"
+  default_prompt: "使用 $准备印章证照与账册交接，在单一立场下准备控制权交割所需的印章、证照、U 盾和账册交接。"

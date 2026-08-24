@@ -1,0 +1,4 @@
+interface:
+  display_name: "合同争议解决导航"
+  short_description: "了解合同争议领域包的 P0 与 P1 能力边界，并定位适用的原子 Skill"
+  default_prompt: "使用 $合同争议解决导航 根据我的立场、阶段和预期成果，在已安装的 P0 与 P1 原子中定位合适的合同争议 Skill。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估调解方案与效力"
+  short_description: "评估法院、仲裁或人民调解的利弊、效力和反悔窗口"
+  default_prompt: "使用 $评估合同调解方案与效力，在单一立场下评估调解方案与效力，不要代替庭审策略。"

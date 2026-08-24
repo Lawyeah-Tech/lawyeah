@@ -1,0 +1,4 @@
+interface:
+  display_name: "执行工程生效文书"
+  short_description: "准备工程生效文书的执行申请和优先实现"
+  default_prompt: "使用 $执行工程生效文书，在单一立场下处理中国大陆建设工程争议中的「执行工程生效文书」。"

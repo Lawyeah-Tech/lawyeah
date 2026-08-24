@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估医保拒付与定点协议争议"
+  short_description: "评估医保拒付追回理由、定点协议和监管民事分流"
+  default_prompt: "使用 $评估医保拒付与定点协议争议，在单一立场下处理中国大陆评估医保拒付与定点协议争议事项。"

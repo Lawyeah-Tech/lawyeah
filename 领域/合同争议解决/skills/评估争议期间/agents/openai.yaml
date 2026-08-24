@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估争议期间"
+  short_description: "分类型列出时效、除斥、质量异议和约定催告期间"
+  default_prompt: "使用 $评估争议期间，在单一立场下按类型核验中国大陆一般合同争议的期间，不要混算。"

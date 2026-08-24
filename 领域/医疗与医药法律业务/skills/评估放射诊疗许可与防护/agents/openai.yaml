@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估放射诊疗许可与防护"
+  short_description: "评估放射诊疗许可、人员资质和防护管理缺口"
+  default_prompt: "使用 $评估放射诊疗许可与防护，在单一立场下处理中国大陆评估放射诊疗许可与防护事项。"

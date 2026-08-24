@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估疫苗质量与接种异常责任"
+  short_description: "分流疫苗质量、接种实施和异常反应补偿与赔偿路径"
+  default_prompt: "使用 $评估疫苗质量与接种异常责任，在单一立场下处理中国大陆评估疫苗质量与接种异常责任事项。"

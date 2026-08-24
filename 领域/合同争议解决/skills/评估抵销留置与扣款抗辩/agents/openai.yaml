@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估抵销留置与扣款抗辩"
+  short_description: "判断抵销、留置或扣款抗辩的条件和禁止情形"
+  default_prompt: "使用 $评估抵销留置与扣款抗辩，在单一立场下评估抵销、留置或扣款抗辩是否成立。"

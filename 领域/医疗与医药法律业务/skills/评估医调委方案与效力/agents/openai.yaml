@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估医调委方案与效力"
+  short_description: "评估医调委方案的利弊效力反悔窗口和鉴定缺口"
+  default_prompt: "使用 $评估医调委方案与效力，在单一立场下处理中国大陆评估医调委方案与效力事项。"

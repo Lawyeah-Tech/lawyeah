@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备对价提存或尾款留扣安排"
+  short_description: "准备提存或留扣条款和释放条件"
+  default_prompt: "使用 $准备对价提存或尾款留扣安排，在单一立场下准备对价提存或卖方留扣的条款和释放条件。"

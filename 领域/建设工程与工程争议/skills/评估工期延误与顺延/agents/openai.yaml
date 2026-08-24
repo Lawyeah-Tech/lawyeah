@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估工期延误与顺延"
+  short_description: "评估工期延误、顺延事由和违约金接口"
+  default_prompt: "使用 $评估工期延误与顺延，在单一立场下处理中国大陆建设工程争议中的「评估工期延误与顺延」。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估变更是否成立"
+  short_description: "判断口头变更、纪要或实际履行是否构成变更"
+  default_prompt: "使用 $评估变更是否成立，在单一立场下评估口头变更、会议纪要或实际履行是否构成合同变更。"

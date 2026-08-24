@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估抗菌药物临床应用合规"
+  short_description: "评估抗菌药物越级使用、会诊缺失和管理整改"
+  default_prompt: "使用 $评估抗菌药物临床应用合规，在单一立场下处理中国大陆评估抗菌药物临床应用合规事项。"

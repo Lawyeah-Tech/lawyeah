@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备投资并购条款清单"
+  short_description: "形成发送前条款清单并对拘束力条款分账"
+  default_prompt: "使用 $准备投资并购条款清单，准备中国大陆投资并购条款清单或意向书发送前稿。"

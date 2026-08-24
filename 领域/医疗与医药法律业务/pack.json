@@ -1,0 +1,1793 @@
+{
+  "schemaVersion": 2,
+  "id": "handle-healthcare-pharma",
+  "displayName": "医疗与医药法律业务",
+  "description": "处理中国大陆医疗服务损害、病历鉴定、医疗机构专项监管与药品器械行业事项的多 Skill 领域包。",
+  "version": "1.0.0",
+  "license": "Apache-2.0",
+  "jurisdiction": "CN-mainland",
+  "contentModel": "multi-skill-progressive-disclosure",
+  "reinstallStrategy": "replace",
+  "scope": {
+    "purpose": "处理医疗服务、医疗损害、医药产品与医疗健康行业监管合规事项。",
+    "inScope": [
+      "医疗损害与病历审查",
+      "诊疗过错、因果关系和医疗鉴定",
+      "医药企业和医疗机构合规",
+      "药品、器械和医疗服务监管"
+    ],
+    "outOfScope": [
+      "一般人身侵权赔偿",
+      "企业通用合规体系和非医疗行业内部调查",
+      "一般个人信息与网络安全治理"
+    ],
+    "primaryDeliverables": [
+      "医疗损害评估",
+      "病历和鉴定意见",
+      "医疗医药合规方案",
+      "行业监管应对成果"
+    ]
+  },
+  "guideSkill": "医疗与医药法律业务导航",
+  "mcp": {
+    "contractRange": "0.0"
+  },
+  "skills": [
+    {
+      "id": "医疗与医药法律业务导航",
+      "kind": "guide",
+      "displayName": "医疗与医药法律业务导航",
+      "goal": "说明领域包的能力、边界和当前原子 Skill 全貌",
+      "notFor": [
+        "直接完成具体法律业务成果"
+      ],
+      "deliverables": [
+        "说明本领域包的能力、边界和当前原子 Skill 全貌"
+      ],
+      "path": "skills/医疗与医药法律业务导航",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "审查病历真实性完整性",
+          "规划医疗机构纠纷初期应对",
+          "评估医疗损害争议",
+          "测算医疗损害专项赔偿",
+          "准备医疗损害鉴定申请",
+          "提起医疗损害诉讼",
+          "建立医疗损害证据案卷",
+          "谈判医疗和解方案",
+          "准备病历查阅复制与封存",
+          "应对医疗损害诉讼",
+          "评估告知同意争议",
+          "选择诊疗过错与药品器械缺陷路径",
+          "评估急危重症救治义务",
+          "评估拒诊转诊与接诊义务",
+          "评估医疗损害管辖与时效",
+          "识别医疗机构医务人员与责任主体",
+          "区分医疗美容与生活美容路径",
+          "选择医疗服务合同与侵权竞合",
+          "评估过度检查与过度医疗",
+          "评估超说明书与未批治疗",
+          "封存输液输血注射用药现场实物",
+          "调取影像病理切片与原始数据",
+          "评估死亡病例尸检路径",
+          "选择医疗损害鉴定与事故技术鉴定",
+          "提出医疗鉴定异议或重新鉴定",
+          "准备医学专家咨询与出庭",
+          "申请调取病历或第三方检查资料",
+          "起草医疗和解协议",
+          "办理医疗和解执行力补强",
+          "申请医疗纠纷人民调解",
+          "评估医调委方案与效力",
+          "准备医疗损害庭审",
+          "提起医疗损害上诉",
+          "应对医疗损害二审",
+          "准备医疗损害财产保全",
+          "申请医疗费先予执行",
+          "提起药品器械产品责任诉讼",
+          "应对药品器械产品责任诉讼",
+          "执行医疗损害生效文书",
+          "处理医疗投诉与信访",
+          "分流医闹治安与刑事交叉",
+          "准备医疗质量安全事件内部报告",
+          "评估医疗机构执业许可与校验",
+          "准备医疗机构设置或执业许可材料",
+          "应对卫生健康监督检查",
+          "应对卫生健康行政处罚",
+          "审查医疗广告与宣传合规",
+          "评估互联网诊疗与互联网医院合规",
+          "评估抗菌药物临床应用合规",
+          "评估麻醉精神药品管理合规",
+          "评估放射诊疗许可与防护",
+          "评估医院感染管理合规",
+          "评估医疗废物处置合规",
+          "评估临床用血与输血管理",
+          "评估医师执业注册与超范围",
+          "应对医师护士执业处罚",
+          "评估医师多点执业与外出会诊",
+          "评估非法行医民事与行政后果",
+          "评估药品器械缺陷责任",
+          "应对药品器械召回",
+          "评估药品生产或经营质量管理缺口",
+          "应对药监检查与飞检",
+          "应对药监行政处罚",
+          "评估疫苗质量与接种异常责任",
+          "评估集中带量采购履约争议",
+          "评估医药学术推广合规红旗",
+          "评估药物或器械临床试验合规",
+          "评估伦理审查与研究知情同意",
+          "应对药品器械不良反应或不良事件报告",
+          "评估网售处方药合规",
+          "评估精神障碍收治与非自愿住院",
+          "评估传染病报告与防控义务",
+          "评估孕产损害专项争点",
+          "评估医保拒付与定点协议争议",
+          "应对医保飞行检查与拒付追回",
+          "评估诊疗中病历隐私泄露行业后果"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估医疗损害争议",
+      "kind": "atomic",
+      "displayName": "评估医疗损害争议",
+      "goal": "在单方无冲突立场下形成可决策的医疗损害总图",
+      "notFor": [
+        "鉴定申请终稿",
+        "诉状或答辩",
+        "认定医疗事故",
+        "一般人身侵权测算"
+      ],
+      "deliverables": [
+        "在单方无冲突立场下形成可决策的医疗损害总图"
+      ],
+      "path": "skills/评估医疗损害争议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "审查病历真实性完整性",
+      "kind": "atomic",
+      "displayName": "审查病历真实性完整性",
+      "goal": "形成病历目录对照、真实性完整性争点和推定过错接口",
+      "notFor": [
+        "复制封存操作稿",
+        "鉴定意见",
+        "认定伪造已构成犯罪"
+      ],
+      "deliverables": [
+        "形成病历目录对照、真实性完整性争点和推定过错接口"
+      ],
+      "path": "skills/审查病历真实性完整性",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备病历查阅复制与封存",
+      "kind": "atomic",
+      "displayName": "准备病历查阅复制与封存",
+      "goal": "形成合法复制或双方在场封存的发送前文书和在场清单",
+      "notFor": [
+        "抢夺病历或撕封条",
+        "认定过错",
+        "C端应急清单终稿"
+      ],
+      "deliverables": [
+        "形成合法复制或双方在场封存的发送前文书和在场清单"
+      ],
+      "path": "skills/准备病历查阅复制与封存",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备医疗损害鉴定申请",
+      "kind": "atomic",
+      "displayName": "准备医疗损害鉴定申请",
+      "goal": "形成鉴定事项、检材和发送前申请稿",
+      "notFor": [
+        "预测鉴定意见",
+        "把医疗事故技术鉴定与司法鉴定混写",
+        "一般伤残鉴定主轴"
+      ],
+      "deliverables": [
+        "形成鉴定事项、检材和发送前申请稿"
+      ],
+      "path": "skills/准备医疗损害鉴定申请",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "测算医疗损害专项赔偿",
+      "kind": "atomic",
+      "displayName": "测算医疗损害专项赔偿",
+      "goal": "按过错假设和原因力拆分原发病与扩大损害，并转介一般人身项目",
+      "notFor": [
+        "认定过错已成立",
+        "一般人身侵权测算终稿",
+        "唯一必得总额"
+      ],
+      "deliverables": [
+        "按过错假设和原因力拆分原发病与扩大损害，并转介一般人身项目"
+      ],
+      "path": "skills/测算医疗损害专项赔偿",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "建立医疗损害证据案卷",
+      "kind": "atomic",
+      "displayName": "建立医疗损害证据案卷",
+      "goal": "形成要件、举证责任、病历鉴定费用矩阵与合法补证",
+      "notFor": [
+        "策略总图",
+        "诉状",
+        "违法取证方案"
+      ],
+      "deliverables": [
+        "形成要件、举证责任、病历鉴定费用矩阵与合法补证"
+      ],
+      "path": "skills/建立医疗损害证据案卷",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "谈判医疗和解方案",
+      "kind": "atomic",
+      "displayName": "谈判医疗和解方案",
+      "goal": "形成底线、让步、弃权范围和执行力提示",
+      "notFor": [
+        "已谈拢的和解协议正文",
+        "答辩状",
+        "保证机构赔付"
+      ],
+      "deliverables": [
+        "形成底线、让步、弃权范围和执行力提示"
+      ],
+      "path": "skills/谈判医疗和解方案",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "提起医疗损害诉讼",
+      "kind": "atomic",
+      "displayName": "提起医疗损害诉讼",
+      "goal": "形成可提交的医疗损害一审起诉包",
+      "notFor": [
+        "代提交",
+        "一般人身侵权起诉",
+        "有效仲裁未排除仍要求直接起诉"
+      ],
+      "deliverables": [
+        "形成可提交的医疗损害一审起诉包"
+      ],
+      "path": "skills/提起医疗损害诉讼",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对医疗损害诉讼",
+      "kind": "atomic",
+      "displayName": "应对医疗损害诉讼",
+      "goal": "形成医疗机构或产品主体的首次应诉答辩包",
+      "notFor": [
+        "劳动应诉",
+        "主动起诉",
+        "只要大众答辩包"
+      ],
+      "deliverables": [
+        "形成医疗机构或产品主体的首次应诉答辩包"
+      ],
+      "path": "skills/应对医疗损害诉讼",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "规划医疗机构纠纷初期应对",
+      "kind": "atomic",
+      "displayName": "规划医疗机构纠纷初期应对",
+      "goal": "并行管理救治、封存、告知、报告和接待，不隐匿病历",
+      "notFor": [
+        "患者侧总图终稿",
+        "指导隐匿或改病程",
+        "卫健处罚申辩终稿"
+      ],
+      "deliverables": [
+        "并行管理救治、封存、告知、报告和接待，不隐匿病历"
+      ],
+      "path": "skills/规划医疗机构纠纷初期应对",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估告知同意争议",
+      "kind": "atomic",
+      "displayName": "评估告知同意争议",
+      "goal": "争点集中在病情、风险、替代方案未说明或签字效力；单方",
+      "notFor": [
+        "未造成人身损害的单纯告知瑕疵不得写成必赔",
+        "紧急批准路径另判"
+      ],
+      "deliverables": [
+        "争点集中在病情、风险、替代方案未说明或签字效力；单方"
+      ],
+      "path": "skills/评估告知同意争议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "选择诊疗过错与药品器械缺陷路径",
+      "kind": "atomic",
+      "displayName": "选择诊疗过错与药品器械缺陷路径",
+      "goal": "同一损害可走诊疗过错或产品／血液不合格；单方",
+      "notFor": [
+        "不定产品必有缺陷",
+        "一般产品责任伤人主轴转侵权"
+      ],
+      "deliverables": [
+        "同一损害可走诊疗过错或产品／血液不合格；单方"
+      ],
+      "path": "skills/选择诊疗过错与药品器械缺陷路径",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估急危重症救治义务",
+      "kind": "atomic",
+      "displayName": "评估急危重症救治义务",
+      "goal": "急诊、抢救、绿色通道争议；单方",
+      "notFor": [
+        "不替代总体评估",
+        "不写尸检或鉴定申请"
+      ],
+      "deliverables": [
+        "急诊、抢救、绿色通道争议；单方"
+      ],
+      "path": "skills/评估急危重症救治义务",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估拒诊转诊与接诊义务",
+      "kind": "atomic",
+      "displayName": "评估拒诊转诊与接诊义务",
+      "goal": "拒收、延误转诊、擅自转院；单方",
+      "notFor": [
+        "医保定点拒付走医保原子",
+        "生活美容拒服务转一般合同"
+      ],
+      "deliverables": [
+        "拒收、延误转诊、擅自转院；单方"
+      ],
+      "path": "skills/评估拒诊转诊与接诊义务",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估医疗损害管辖与时效",
+      "kind": "atomic",
+      "displayName": "评估医疗损害管辖与时效",
+      "goal": "单独委托核验法院、鉴定中止、时效起算；单方",
+      "notFor": [
+        "禁止混算或输出唯一截止日",
+        "劳动仲裁转劳动"
+      ],
+      "deliverables": [
+        "单独委托核验法院、鉴定中止、时效起算；单方"
+      ],
+      "path": "skills/评估医疗损害管辖与时效",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "识别医疗机构医务人员与责任主体",
+      "kind": "atomic",
+      "displayName": "识别医疗机构医务人员与责任主体",
+      "goal": "多院转诊、医联体、外包科室、执业地点不明；单方",
+      "notFor": [
+        "不替代总体过错判断",
+        "非法行医刑责转刑事"
+      ],
+      "deliverables": [
+        "多院转诊、医联体、外包科室、执业地点不明；单方"
+      ],
+      "path": "skills/识别医疗机构医务人员与责任主体",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "区分医疗美容与生活美容路径",
+      "kind": "atomic",
+      "displayName": "区分医疗美容与生活美容路径",
+      "goal": "医美机构或生活美容致损，需判断是否适用医疗损害规则；单方",
+      "notFor": [
+        "生活美容主轴转一般人身侵权",
+        "未成争合同审查搁置"
+      ],
+      "deliverables": [
+        "医美机构或生活美容致损，需判断是否适用医疗损害规则；单方"
+      ],
+      "path": "skills/区分医疗美容与生活美容路径",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "选择医疗服务合同与侵权竞合",
+      "kind": "atomic",
+      "displayName": "选择医疗服务合同与侵权竞合",
+      "goal": "同一事实可主张合同或侵权；单方",
+      "notFor": [
+        "医疗服务合同解释不适用医疗损害解释",
+        "不双份重复索赔"
+      ],
+      "deliverables": [
+        "同一事实可主张合同或侵权；单方"
+      ],
+      "path": "skills/选择医疗服务合同与侵权竞合",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估过度检查与过度医疗",
+      "kind": "atomic",
+      "displayName": "评估过度检查与过度医疗",
+      "goal": "争不必要检查、过度用药或过度手术；单方",
+      "notFor": [
+        "不定医学上必不必要",
+        "收费争议夹带医保另转"
+      ],
+      "deliverables": [
+        "争不必要检查、过度用药或过度手术；单方"
+      ],
+      "path": "skills/评估过度检查与过度医疗",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估超说明书与未批治疗",
+      "kind": "atomic",
+      "displayName": "评估超说明书与未批治疗",
+      "goal": "超说明书、干细胞、未批器械或试验性治疗；单方",
+      "notFor": [
+        "临床试验专项另项",
+        "刑事非法行医转刑事"
+      ],
+      "deliverables": [
+        "超说明书、干细胞、未批器械或试验性治疗；单方"
+      ],
+      "path": "skills/评估超说明书与未批治疗",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "封存输液输血注射用药现场实物",
+      "kind": "atomic",
+      "displayName": "封存输液输血注射用药现场实物",
+      "goal": "疑似输液输血注射用药不良后果；单方",
+      "notFor": [
+        "不把封存写成已证明缺陷"
+      ],
+      "deliverables": [
+        "疑似输液输血注射用药不良后果；单方"
+      ],
+      "path": "skills/封存输液输血注射用药现场实物",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "调取影像病理切片与原始数据",
+      "kind": "atomic",
+      "displayName": "调取影像病理切片与原始数据",
+      "goal": "需 DICOM、胶片、蜡块、切片或心电原始记录；单方",
+      "notFor": [
+        "不侵入信息系统",
+        "不替代病历整套复制"
+      ],
+      "deliverables": [
+        "需 DICOM、胶片、蜡块、切片或心电原始记录；单方"
+      ],
+      "path": "skills/调取影像病理切片与原始数据",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估死亡病例尸检路径",
+      "kind": "atomic",
+      "displayName": "评估死亡病例尸检路径",
+      "goal": "死亡原因不明或有异议；近亲属或机构",
+      "notFor": [
+        "禁止死亡时间加 48 小时写成唯一截止日",
+        "不定死因"
+      ],
+      "deliverables": [
+        "死亡原因不明或有异议；近亲属或机构"
+      ],
+      "path": "skills/评估死亡病例尸检路径",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "选择医疗损害鉴定与事故技术鉴定",
+      "kind": "atomic",
+      "displayName": "选择医疗损害鉴定与事故技术鉴定",
+      "goal": "需在司法鉴定与医学会事故鉴定间选择；单方",
+      "notFor": [
+        "不得把“不属于医疗事故”写成不赔的现行前提"
+      ],
+      "deliverables": [
+        "需在司法鉴定与医学会事故鉴定间选择；单方"
+      ],
+      "path": "skills/选择医疗损害鉴定与事故技术鉴定",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "提出医疗鉴定异议或重新鉴定",
+      "kind": "atomic",
+      "displayName": "提出医疗鉴定异议或重新鉴定",
+      "goal": "鉴定意见作出后不服；单方",
+      "notFor": [
+        "不重新做鉴定意见",
+        "不指导威胁鉴定人"
+      ],
+      "deliverables": [
+        "鉴定意见作出后不服；单方"
+      ],
+      "path": "skills/提出医疗鉴定异议或重新鉴定",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备医学专家咨询与出庭",
+      "kind": "atomic",
+      "displayName": "准备医学专家咨询与出庭",
+      "goal": "需院外专家阅片或出庭说明；单方",
+      "notFor": [
+        "专家咨询不是鉴定意见",
+        "不伪造专家身份"
+      ],
+      "deliverables": [
+        "需院外专家阅片或出庭说明；单方"
+      ],
+      "path": "skills/准备医学专家咨询与出庭",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "申请调取病历或第三方检查资料",
+      "kind": "atomic",
+      "displayName": "申请调取病历或第三方检查资料",
+      "goal": "关键资料由其他医院、体检或保险掌握；单方",
+      "notFor": [
+        "禁止违法调取第三人病历或个人信息"
+      ],
+      "deliverables": [
+        "关键资料由其他医院、体检或保险掌握；单方"
+      ],
+      "path": "skills/申请调取病历或第三方检查资料",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "起草医疗和解协议",
+      "kind": "atomic",
+      "displayName": "起草医疗和解协议",
+      "goal": "条件已谈拢，需可签协议；单方",
+      "notFor": [
+        "与未争议的服务协议不同",
+        "司法确认另项"
+      ],
+      "deliverables": [
+        "条件已谈拢，需可签协议；单方"
+      ],
+      "path": "skills/起草医疗和解协议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "办理医疗和解执行力补强",
+      "kind": "atomic",
+      "displayName": "办理医疗和解执行力补强",
+      "goal": "需司法确认或公证赋强；单方",
+      "notFor": [
+        "单独和解无执行力必须明示"
+      ],
+      "deliverables": [
+        "需司法确认或公证赋强；单方"
+      ],
+      "path": "skills/办理医疗和解执行力补强",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "申请医疗纠纷人民调解",
+      "kind": "atomic",
+      "displayName": "申请医疗纠纷人民调解",
+      "goal": "决定走医调委；单方",
+      "notFor": [
+        "不强制调解",
+        "超期未成视为不成"
+      ],
+      "deliverables": [
+        "决定走医调委；单方"
+      ],
+      "path": "skills/申请医疗纠纷人民调解",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估医调委方案与效力",
+      "kind": "atomic",
+      "displayName": "评估医调委方案与效力",
+      "goal": "已有调解方案或协议草稿需评估；单方",
+      "notFor": [
+        "不代替庭审策略"
+      ],
+      "deliverables": [
+        "已有调解方案或协议草稿需评估；单方"
+      ],
+      "path": "skills/评估医调委方案与效力",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备医疗损害庭审",
+      "kind": "atomic",
+      "displayName": "准备医疗损害庭审",
+      "goal": "即将开庭，需质证病历和鉴定；单方代理",
+      "notFor": [
+        "不代替立案或仅和解"
+      ],
+      "deliverables": [
+        "即将开庭，需质证病历和鉴定；单方代理"
+      ],
+      "path": "skills/准备医疗损害庭审",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "提起医疗损害上诉",
+      "kind": "atomic",
+      "displayName": "提起医疗损害上诉",
+      "goal": "不服未生效裁判；上诉方",
+      "notFor": [
+        "不重做一审"
+      ],
+      "deliverables": [
+        "不服未生效裁判；上诉方"
+      ],
+      "path": "skills/提起医疗损害上诉",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对医疗损害二审",
+      "kind": "atomic",
+      "displayName": "应对医疗损害二审",
+      "goal": "收到上诉状；被上诉方",
+      "notFor": [
+        "不代替主动上诉"
+      ],
+      "deliverables": [
+        "收到上诉状；被上诉方"
+      ],
+      "path": "skills/应对医疗损害二审",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备医疗损害财产保全",
+      "kind": "atomic",
+      "displayName": "准备医疗损害财产保全",
+      "goal": "已决定申请诉前或诉中保全；申请方",
+      "notFor": [
+        "不保证裁定",
+        "与先予执行不同"
+      ],
+      "deliverables": [
+        "已决定申请诉前或诉中保全；申请方"
+      ],
+      "path": "skills/准备医疗损害财产保全",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "申请医疗费先予执行",
+      "kind": "atomic",
+      "displayName": "申请医疗费先予执行",
+      "goal": "继续治疗急需先行给付；申请方",
+      "notFor": [
+        "与保全不同"
+      ],
+      "deliverables": [
+        "继续治疗急需先行给付；申请方"
+      ],
+      "path": "skills/申请医疗费先予执行",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "提起药品器械产品责任诉讼",
+      "kind": "atomic",
+      "displayName": "提起药品器械产品责任诉讼",
+      "goal": "主轴是缺陷产品或不合格血液；原告",
+      "notFor": [
+        "诊疗过错主轴走医疗损害起诉"
+      ],
+      "deliverables": [
+        "主轴是缺陷产品或不合格血液；原告"
+      ],
+      "path": "skills/提起药品器械产品责任诉讼",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对药品器械产品责任诉讼",
+      "kind": "atomic",
+      "displayName": "应对药品器械产品责任诉讼",
+      "goal": "持有人、生产者、经营或使用单位应诉；被告",
+      "notFor": [
+        "与医疗机构诊疗过错应诉不同"
+      ],
+      "deliverables": [
+        "持有人、生产者、经营或使用单位应诉；被告"
+      ],
+      "path": "skills/应对药品器械产品责任诉讼",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "执行医疗损害生效文书",
+      "kind": "atomic",
+      "displayName": "执行医疗损害生效文书",
+      "goal": "持判决或调解书未获履行；权利人",
+      "notFor": [
+        "不重审过错或鉴定"
+      ],
+      "deliverables": [
+        "持判决或调解书未获履行；权利人"
+      ],
+      "path": "skills/执行医疗损害生效文书",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "处理医疗投诉与信访",
+      "kind": "atomic",
+      "displayName": "处理医疗投诉与信访",
+      "goal": "已进入院内投诉、12320 或信访；机构或患方",
+      "notFor": [
+        "不定过错",
+        "群体聚集转秩序原子"
+      ],
+      "deliverables": [
+        "已进入院内投诉、12320 或信访；机构或患方"
+      ],
+      "path": "skills/处理医疗投诉与信访",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "分流医闹治安与刑事交叉",
+      "kind": "atomic",
+      "displayName": "分流医闹治安与刑事交叉",
+      "goal": "出现围堵、伤害医务人员或扰乱秩序；机构方",
+      "notFor": [
+        "不定罪",
+        "刑事成果转刑事领域"
+      ],
+      "deliverables": [
+        "出现围堵、伤害医务人员或扰乱秩序；机构方"
+      ],
+      "path": "skills/分流医闹治安与刑事交叉",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备医疗质量安全事件内部报告",
+      "kind": "atomic",
+      "displayName": "准备医疗质量安全事件内部报告",
+      "goal": "需按院感或不良事件制度上报；机构方",
+      "notFor": [
+        "不代替监管申辩",
+        "禁止补造报告消灭证据"
+      ],
+      "deliverables": [
+        "需按院感或不良事件制度上报；机构方"
+      ],
+      "path": "skills/准备医疗质量安全事件内部报告",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估医疗机构执业许可与校验",
+      "kind": "atomic",
+      "displayName": "评估医疗机构执业许可与校验",
+      "goal": "超范围执业、校验、科目变更争议；机构或相对人",
+      "notFor": [
+        "不办通用企业合规体系"
+      ],
+      "deliverables": [
+        "超范围执业、校验、科目变更争议；机构或相对人"
+      ],
+      "path": "skills/评估医疗机构执业许可与校验",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备医疗机构设置或执业许可材料",
+      "kind": "atomic",
+      "displayName": "准备医疗机构设置或执业许可材料",
+      "goal": "新设、变更、校验申报；机构方",
+      "notFor": [
+        "合同审查起草搁置",
+        "不保证审批"
+      ],
+      "deliverables": [
+        "新设、变更、校验申报；机构方"
+      ],
+      "path": "skills/准备医疗机构设置或执业许可材料",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对卫生健康监督检查",
+      "kind": "atomic",
+      "displayName": "应对卫生健康监督检查",
+      "goal": "卫健委监督检查或飞行检查；机构方",
+      "notFor": [
+        "通用内部调查转企业合规"
+      ],
+      "deliverables": [
+        "卫健委监督检查或飞行检查；机构方"
+      ],
+      "path": "skills/应对卫生健康监督检查",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对卫生健康行政处罚",
+      "kind": "atomic",
+      "displayName": "应对卫生健康行政处罚",
+      "goal": "已收到卫健处罚事先告知或决定；机构或人员",
+      "notFor": [
+        "通用行政处罚文书转行政领域",
+        "C 端行政救济只分流"
+      ],
+      "deliverables": [
+        "已收到卫健处罚事先告知或决定；机构或人员"
+      ],
+      "path": "skills/应对卫生健康行政处罚",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "审查医疗广告与宣传合规",
+      "kind": "atomic",
+      "displayName": "审查医疗广告与宣传合规",
+      "goal": "医疗广告、科室宣传、疗效承诺；机构方",
+      "notFor": [
+        "一般商业广告转广告审查商品",
+        "不办品牌全案"
+      ],
+      "deliverables": [
+        "医疗广告、科室宣传、疗效承诺；机构方"
+      ],
+      "path": "skills/审查医疗广告与宣传合规",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估互联网诊疗与互联网医院合规",
+      "kind": "atomic",
+      "displayName": "评估互联网诊疗与互联网医院合规",
+      "goal": "线上复诊、处方、跨省诊疗；机构方",
+      "notFor": [
+        "一般数据跨境和网安体系转数据隐私"
+      ],
+      "deliverables": [
+        "线上复诊、处方、跨省诊疗；机构方"
+      ],
+      "path": "skills/评估互联网诊疗与互联网医院合规",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估抗菌药物临床应用合规",
+      "kind": "atomic",
+      "displayName": "评估抗菌药物临床应用合规",
+      "goal": "越级使用、会诊缺失、专项检查；机构方",
+      "notFor": [
+        "不写医学治疗方案"
+      ],
+      "deliverables": [
+        "越级使用、会诊缺失、专项检查；机构方"
+      ],
+      "path": "skills/评估抗菌药物临床应用合规",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估麻醉精神药品管理合规",
+      "kind": "atomic",
+      "displayName": "评估麻醉精神药品管理合规",
+      "goal": "麻精药品账物、处方、专册检查；机构方",
+      "notFor": [
+        "定罪转刑事",
+        "不指导规避监管"
+      ],
+      "deliverables": [
+        "麻精药品账物、处方、专册检查；机构方"
+      ],
+      "path": "skills/评估麻醉精神药品管理合规",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估放射诊疗许可与防护",
+      "kind": "atomic",
+      "displayName": "评估放射诊疗许可与防护",
+      "goal": "放射诊疗许可、防护、剂量；机构方",
+      "notFor": [
+        "不代替放射卫生技术评价"
+      ],
+      "deliverables": [
+        "放射诊疗许可、防护、剂量；机构方"
+      ],
+      "path": "skills/评估放射诊疗许可与防护",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估医院感染管理合规",
+      "kind": "atomic",
+      "displayName": "评估医院感染管理合规",
+      "goal": "院感暴发或检查；机构方",
+      "notFor": [
+        "不定医学感染源",
+        "群体事件另项"
+      ],
+      "deliverables": [
+        "院感暴发或检查；机构方"
+      ],
+      "path": "skills/评估医院感染管理合规",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估医疗废物处置合规",
+      "kind": "atomic",
+      "displayName": "评估医疗废物处置合规",
+      "goal": "医废分类、转运、外包；机构方",
+      "notFor": [
+        "环保专项工程结论转环境能源"
+      ],
+      "deliverables": [
+        "医废分类、转运、外包；机构方"
+      ],
+      "path": "skills/评估医疗废物处置合规",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估临床用血与输血管理",
+      "kind": "atomic",
+      "displayName": "评估临床用血与输血管理",
+      "goal": "输血适应证、交叉配血、血袋管理；机构方",
+      "notFor": [
+        "产品责任诉讼另项"
+      ],
+      "deliverables": [
+        "输血适应证、交叉配血、血袋管理；机构方"
+      ],
+      "path": "skills/评估临床用血与输血管理",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估医师执业注册与超范围",
+      "kind": "atomic",
+      "displayName": "评估医师执业注册与超范围",
+      "goal": "注册地点、类别、范围争议；医师或机构",
+      "notFor": [
+        "劳动身份走劳动",
+        "吊销处罚另项"
+      ],
+      "deliverables": [
+        "注册地点、类别、范围争议；医师或机构"
+      ],
+      "path": "skills/评估医师执业注册与超范围",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对医师护士执业处罚",
+      "kind": "atomic",
+      "displayName": "应对医师护士执业处罚",
+      "goal": "警告、暂停、吊销执业证书；人员方",
+      "notFor": [
+        "刑事非法行医转刑事"
+      ],
+      "deliverables": [
+        "警告、暂停、吊销执业证书；人员方"
+      ],
+      "path": "skills/应对医师护士执业处罚",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估医师多点执业与外出会诊",
+      "kind": "atomic",
+      "displayName": "评估医师多点执业与外出会诊",
+      "goal": "多点备案、会诊、外院手术责任；医师或机构",
+      "notFor": [
+        "不审查劳动合同文本（审查搁置／劳动）"
+      ],
+      "deliverables": [
+        "多点备案、会诊、外院手术责任；医师或机构"
+      ],
+      "path": "skills/评估医师多点执业与外出会诊",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估非法行医民事与行政后果",
+      "kind": "atomic",
+      "displayName": "评估非法行医民事与行政后果",
+      "goal": "无证行医、超范围构成非法行医嫌疑的民事／行政层；单方",
+      "notFor": [
+        "不定罪、不做出辩护策略",
+        "刑事转刑事"
+      ],
+      "deliverables": [
+        "无证行医、超范围构成非法行医嫌疑的民事／行政层；单方"
+      ],
+      "path": "skills/评估非法行医民事与行政后果",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估药品器械缺陷责任",
+      "kind": "atomic",
+      "displayName": "评估药品器械缺陷责任",
+      "goal": "怀疑药品、消毒产品、器械缺陷致损；患者或企业",
+      "notFor": [
+        "诊疗过错主轴走医疗损害评估",
+        "一般产品伤人转侵权"
+      ],
+      "deliverables": [
+        "怀疑药品、消毒产品、器械缺陷致损；患者或企业"
+      ],
+      "path": "skills/评估药品器械缺陷责任",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对药品器械召回",
+      "kind": "atomic",
+      "displayName": "应对药品器械召回",
+      "goal": "主动或责令召回；持有人或经营使用单位",
+      "notFor": [
+        "不指导隐瞒召回",
+        "通用危机公关不是本成果"
+      ],
+      "deliverables": [
+        "主动或责令召回；持有人或经营使用单位"
+      ],
+      "path": "skills/应对药品器械召回",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估药品生产或经营质量管理缺口",
+      "kind": "atomic",
+      "displayName": "评估药品生产或经营质量管理缺口",
+      "goal": "飞检或自查发现 GMP／GSP 缺口；企业方",
+      "notFor": [
+        "不建通用合规体系",
+        "不代替认证咨询工程"
+      ],
+      "deliverables": [
+        "飞检或自查发现 GMP／GSP 缺口；企业方"
+      ],
+      "path": "skills/评估药品生产或经营质量管理缺口",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对药监检查与飞检",
+      "kind": "atomic",
+      "displayName": "应对药监检查与飞检",
+      "goal": "药监现场检查；企业方",
+      "notFor": [
+        "通用内部调查转企业合规"
+      ],
+      "deliverables": [
+        "药监现场检查；企业方"
+      ],
+      "path": "skills/应对药监检查与飞检",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对药监行政处罚",
+      "kind": "atomic",
+      "displayName": "应对药监行政处罚",
+      "goal": "假劣药、未批生产、经营违法事先告知或决定；企业方",
+      "notFor": [
+        "通用行政处罚转行政",
+        "刑责转刑事"
+      ],
+      "deliverables": [
+        "假劣药、未批生产、经营违法事先告知或决定；企业方"
+      ],
+      "path": "skills/应对药监行政处罚",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估疫苗质量与接种异常责任",
+      "kind": "atomic",
+      "displayName": "评估疫苗质量与接种异常责任",
+      "goal": "疫苗质量或接种异常反应；患方或接种单位",
+      "notFor": [
+        "不定医学异常反应",
+        "国家补偿程序标待核"
+      ],
+      "deliverables": [
+        "疫苗质量或接种异常反应；患方或接种单位"
+      ],
+      "path": "skills/评估疫苗质量与接种异常责任",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估集中带量采购履约争议",
+      "kind": "atomic",
+      "displayName": "评估集中带量采购履约争议",
+      "goal": "集采断供、质量、量价协议；企业或医疗机构",
+      "notFor": [
+        "一般买卖合同争议转合同争议",
+        "审查起草搁置"
+      ],
+      "deliverables": [
+        "集采断供、质量、量价协议；企业或医疗机构"
+      ],
+      "path": "skills/评估集中带量采购履约争议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估医药学术推广合规红旗",
+      "kind": "atomic",
+      "displayName": "评估医药学术推广合规红旗",
+      "goal": "学术会、讲者费、回扣线索；企业或机构",
+      "notFor": [
+        "不办企业舞弊调查全案",
+        "刑事商业贿赂转刑事",
+        "通用合规转企业合规"
+      ],
+      "deliverables": [
+        "学术会、讲者费、回扣线索；企业或机构"
+      ],
+      "path": "skills/评估医药学术推广合规红旗",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估药物或器械临床试验合规",
+      "kind": "atomic",
+      "displayName": "评估药物或器械临床试验合规",
+      "goal": "试验方案、知情、不良事件、数据；申办方或机构",
+      "notFor": [
+        "伦理审查专项可另委",
+        "不写医学方案"
+      ],
+      "deliverables": [
+        "试验方案、知情、不良事件、数据；申办方或机构"
+      ],
+      "path": "skills/评估药物或器械临床试验合规",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估伦理审查与研究知情同意",
+      "kind": "atomic",
+      "displayName": "评估伦理审查与研究知情同意",
+      "goal": "伦理批件、知情文本、弱势群体；申办方或伦理委",
+      "notFor": [
+        "不代替伦理委员会决定"
+      ],
+      "deliverables": [
+        "伦理批件、知情文本、弱势群体；申办方或伦理委"
+      ],
+      "path": "skills/评估伦理审查与研究知情同意",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对药品器械不良反应或不良事件报告",
+      "kind": "atomic",
+      "displayName": "应对药品器械不良反应或不良事件报告",
+      "goal": "个例或聚集性报告义务；持有人、经营或使用单位",
+      "notFor": [
+        "不认定医学因果",
+        "不隐瞒报告"
+      ],
+      "deliverables": [
+        "个例或聚集性报告义务；持有人、经营或使用单位"
+      ],
+      "path": "skills/应对药品器械不良反应或不良事件报告",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估网售处方药合规",
+      "kind": "atomic",
+      "displayName": "评估网售处方药合规",
+      "goal": "电商或互联网医院售药；企业方",
+      "notFor": [
+        "一般电商平台规则转平台／合同",
+        "数据治理转数据隐私"
+      ],
+      "deliverables": [
+        "电商或互联网医院售药；企业方"
+      ],
+      "path": "skills/评估网售处方药合规",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估精神障碍收治与非自愿住院",
+      "kind": "atomic",
+      "displayName": "评估精神障碍收治与非自愿住院",
+      "goal": "非自愿住院、约束、出院争议；患方、监护人或机构",
+      "notFor": [
+        "不定精神医学诊断",
+        "人身自由刑事强制转刑事"
+      ],
+      "deliverables": [
+        "非自愿住院、约束、出院争议；患方、监护人或机构"
+      ],
+      "path": "skills/评估精神障碍收治与非自愿住院",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估传染病报告与防控义务",
+      "kind": "atomic",
+      "displayName": "评估传染病报告与防控义务",
+      "goal": "漏报、迟报、隔离争议；机构或相对人",
+      "notFor": [
+        "不定流行病学结论",
+        "一般行政强制转行政"
+      ],
+      "deliverables": [
+        "漏报、迟报、隔离争议；机构或相对人"
+      ],
+      "path": "skills/评估传染病报告与防控义务",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估孕产损害专项争点",
+      "kind": "atomic",
+      "displayName": "评估孕产损害专项争点",
+      "goal": "产程、新生儿窒息、肩难产等母儿损害；单方",
+      "notFor": [
+        "方法仍属医疗损害，不另定事故",
+        "一般产伤非诊疗主轴转侵权"
+      ],
+      "deliverables": [
+        "产程、新生儿窒息、肩难产等母儿损害；单方"
+      ],
+      "path": "skills/评估孕产损害专项争点",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估医保拒付与定点协议争议",
+      "kind": "atomic",
+      "displayName": "评估医保拒付与定点协议争议",
+      "goal": "医保拒付、追回、骗保红旗；机构或患者",
+      "notFor": [
+        "普通商业保险理赔转保险商品",
+        "骗保刑责转刑事"
+      ],
+      "deliverables": [
+        "医保拒付、追回、骗保红旗；机构或患者"
+      ],
+      "path": "skills/评估医保拒付与定点协议争议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对医保飞行检查与拒付追回",
+      "kind": "atomic",
+      "displayName": "应对医保飞行检查与拒付追回",
+      "goal": "医保局飞检或追回决定；机构方",
+      "notFor": [
+        "通用税务或审计调查不在此做"
+      ],
+      "deliverables": [
+        "医保局飞检或追回决定；机构方"
+      ],
+      "path": "skills/应对医保飞行检查与拒付追回",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估诊疗中病历隐私泄露行业后果",
+      "kind": "atomic",
+      "displayName": "评估诊疗中病历隐私泄露行业后果",
+      "goal": "院内公开病历、教学观摩、泄露；患方或机构",
+      "notFor": [
+        "个人信息影响评估、跨境、网安体系转数据隐私"
+      ],
+      "deliverables": [
+        "院内公开病历、教学观摩、泄露；患方或机构"
+      ],
+      "path": "skills/评估诊疗中病历隐私泄露行业后果",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "医疗与医药法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    }
+  ],
+  "guideName": "医疗与医药法律业务导航"
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备尽调资料清单与资料室规则"
+  short_description: "准备买方RFI批次和保密清洁团队规则"
+  default_prompt: "使用 $准备尽调资料清单与资料室规则，在买方立场下准备尽调资料请求、批次和资料室规则。"

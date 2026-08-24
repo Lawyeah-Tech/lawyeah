@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估定金罚则争议"
+  short_description: "识别定金性质并判断罚则与违约金选用"
+  default_prompt: "使用 $评估定金罚则争议，在单一立场下评估定金、订金或预付款及罚则适用。"

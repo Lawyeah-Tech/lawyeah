@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估交割条件是否满足"
+  short_description: "逐项判断交割条件满足放弃或未满足"
+  default_prompt: "使用 $评估交割条件是否满足，在单一立场下逐项评估交割条件是否已满足、可放弃或未满足。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估迟延拒绝与不完全履行"
+  short_description: "界定逾期、拒绝、不完全履行并判断催告与目的"
+  default_prompt: "使用 $评估迟延拒绝与不完全履行，在单一立场下评估中国大陆一般合同的迟延、拒绝或不完全履行。"

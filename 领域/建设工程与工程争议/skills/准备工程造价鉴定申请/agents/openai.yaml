@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备工程造价鉴定申请"
+  short_description: "准备工程造价鉴定事项、检材和申请稿"
+  default_prompt: "使用 $准备工程造价鉴定申请，在单一立场下处理中国大陆建设工程争议中的「准备工程造价鉴定申请」。"

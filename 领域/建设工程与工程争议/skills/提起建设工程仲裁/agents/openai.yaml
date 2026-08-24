@@ -1,0 +1,4 @@
+interface:
+  display_name: "提起建设工程仲裁"
+  short_description: "准备建设工程仲裁申请包"
+  default_prompt: "使用 $提起建设工程仲裁，在单一立场下处理中国大陆建设工程争议中的「提起建设工程仲裁」。"

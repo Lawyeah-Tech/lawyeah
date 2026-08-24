@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备索赔或违约金主张通知"
+  short_description: "准备索赔通知、项目表和计算假设"
+  default_prompt: "使用 $准备索赔或违约金主张通知，使用本技能准备索赔或违约金主张通知，不要当成精算终稿。"

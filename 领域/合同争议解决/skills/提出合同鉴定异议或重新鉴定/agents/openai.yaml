@@ -1,0 +1,4 @@
+interface:
+  display_name: "提出鉴定异议或重新鉴定"
+  short_description: "整理异议点并准备补充或重新鉴定材料"
+  default_prompt: "使用 $提出合同鉴定异议或重新鉴定，使用本技能对已作出的鉴定意见提出异议或申请重新鉴定。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "审查医疗广告与宣传合规"
+  short_description: "审查医疗广告禁载事项、审批备案和违法后果"
+  default_prompt: "使用 $审查医疗广告与宣传合规，在单一立场下处理中国大陆审查医疗广告与宣传合规事项。"

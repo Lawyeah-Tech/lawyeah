@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备赔偿、提存与留扣条款"
+  short_description: "设计赔偿范围篮子上限和留扣接口"
+  default_prompt: "使用 $准备赔偿提存与留扣条款，在单一立场下准备投资并购赔偿范围、篮子、上限和留扣条款结构。"

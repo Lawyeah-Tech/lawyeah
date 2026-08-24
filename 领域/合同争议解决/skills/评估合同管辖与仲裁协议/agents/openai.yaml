@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估管辖与仲裁协议"
+  short_description: "判断一般合同争议去法院还是仲裁，以及协议是否绊住诉讼"
+  default_prompt: "使用 $评估合同管辖与仲裁协议，在单一立场下评估中国大陆一般合同争议的管辖与仲裁协议。"

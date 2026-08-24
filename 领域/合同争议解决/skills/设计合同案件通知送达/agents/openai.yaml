@@ -1,0 +1,4 @@
+interface:
+  display_name: "设计通知送达与到达证明"
+  short_description: "设计约定渠道、备份送达和到达回证"
+  default_prompt: "使用 $设计合同案件通知送达，使用本技能设计通知送达与到达证明，不要撰写通知正文。"

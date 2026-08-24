@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备停工通知"
+  short_description: "准备发送前停工通知、现场保护和复工条件"
+  default_prompt: "使用 $准备停工通知，在单一立场下处理中国大陆建设工程争议中的「准备停工通知」。"

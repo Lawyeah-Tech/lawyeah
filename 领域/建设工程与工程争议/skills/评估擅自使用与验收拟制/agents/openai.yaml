@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估擅自使用与验收拟制"
+  short_description: "评估擅自使用对质量抗辩的限制及地基主体除外"
+  default_prompt: "使用 $评估擅自使用与验收拟制，在单一立场下处理中国大陆建设工程争议中的「评估擅自使用与验收拟制」。"

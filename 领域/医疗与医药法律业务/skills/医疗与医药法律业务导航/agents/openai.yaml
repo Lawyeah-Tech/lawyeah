@@ -1,0 +1,4 @@
+interface:
+  display_name: "医疗与医药法律业务导航"
+  short_description: "了解医疗医药领域包的能力边界，并定位适用的原子技能"
+  default_prompt: "使用 $医疗与医药法律业务导航，根据我的立场、阶段和预期成果定位合适的医疗与医药原子技能。"

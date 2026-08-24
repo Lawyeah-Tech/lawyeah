@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估国资交易进场与审批路径"
+  short_description: "分流国资进场协议转让和评估备案红旗"
+  default_prompt: "使用 $评估国资交易进场与审批路径，在单一立场下评估中国大陆国资交易的进场、协议转让和审批路径。"

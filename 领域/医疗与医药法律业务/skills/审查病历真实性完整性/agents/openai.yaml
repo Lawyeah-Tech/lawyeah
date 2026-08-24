@@ -1,0 +1,4 @@
+interface:
+  display_name: "审查病历真实性完整性"
+  short_description: "对照法定目录审查病历缺件、冲突、补记涂改和推定过错接口"
+  default_prompt: "使用 $审查病历真实性完整性，审查已持有的中国大陆病历资料完整性与真实性争点。"

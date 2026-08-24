@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备交割失败索赔通知"
+  short_description: "准备不交割已发生后的发送前赔偿或返还通知"
+  default_prompt: "使用 $准备交割失败索赔通知，在主张方立场下准备交割失败后的发送前索赔或返还通知。"

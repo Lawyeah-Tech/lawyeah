@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估药品生产或经营质量管理缺口"
+  short_description: "对照 GMP／GSP 条款评估缺陷分级、整改和法律后果"
+  default_prompt: "使用 $评估药品生产或经营质量管理缺口，在单一立场下处理中国大陆评估药品生产或经营质量管理缺口事项。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备交割资金流向指令"
+  short_description: "准备付款日账户提存和同时履行及失败回退"
+  default_prompt: "使用 $准备交割资金流向指令，在单一立场下准备交割资金流向、同时履行和失败回退安排。"

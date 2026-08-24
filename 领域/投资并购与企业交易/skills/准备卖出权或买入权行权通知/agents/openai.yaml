@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备卖出权或买入权行权通知"
+  short_description: "准备发送前认沽或认购行权通知价格机制和到达"
+  default_prompt: "使用 $准备卖出权或买入权行权通知，在行权方立场下准备投后卖出权或买入权的发送前行权通知。"

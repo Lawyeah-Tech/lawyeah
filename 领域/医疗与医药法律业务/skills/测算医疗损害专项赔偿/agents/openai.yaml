@@ -1,0 +1,4 @@
+interface:
+  display_name: "测算医疗损害专项赔偿"
+  short_description: "按原因力拆分原发病与扩大损害，一般人身项目转介不套标准表"
+  default_prompt: "使用 $测算医疗损害专项赔偿，测算中国大陆医疗损害专项赔偿并转介一般人身项目。"

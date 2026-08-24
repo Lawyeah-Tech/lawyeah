@@ -1,0 +1,4 @@
+interface:
+  display_name: "保全工地现场与隐蔽工程证据"
+  short_description: "合法保全工地现场与隐蔽工程证据"
+  default_prompt: "使用 $保全工地现场与隐蔽工程证据，在单一立场下处理中国大陆建设工程争议中的「保全工地现场与隐蔽工程证据」。"

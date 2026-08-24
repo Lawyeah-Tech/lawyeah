@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估超说明书与未批治疗"
+  short_description: "评估超说明书、未批器械或试验性治疗的批准知情和责任路径"
+  default_prompt: "使用 $评估超说明书与未批治疗，在单一立场下处理中国大陆评估超说明书与未批治疗事项。"

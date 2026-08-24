@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估继续履行是否可能"
+  short_description: "判断继续履行除外情形、替代履行和费用"
+  default_prompt: "使用 $评估继续履行是否可能，在单一立场下评估继续履行是否可能，不要写成强制执行方案。"

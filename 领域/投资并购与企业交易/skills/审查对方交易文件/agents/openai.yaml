@@ -1,0 +1,4 @@
+interface:
+  display_name: "审查对方交易文件"
+  short_description: "对对方并购协议做严重度分级并给出改写或退出建议"
+  default_prompt: "使用 $审查对方交易文件，审查对方提供的中国大陆投资并购交易文件。"

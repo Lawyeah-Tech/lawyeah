@@ -1,0 +1,4 @@
+interface:
+  display_name: "应对建设工程仲裁"
+  short_description: "准备建设工程仲裁答辩和协议抗辩"
+  default_prompt: "使用 $应对建设工程仲裁，在单一立场下处理中国大陆建设工程争议中的「应对建设工程仲裁」。"

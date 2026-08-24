@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备医疗损害财产保全"
+  short_description: "准备医疗损害诉前或诉中财产保全申请、担保和线索"
+  default_prompt: "使用 $准备医疗损害财产保全，在单一立场下处理中国大陆准备医疗损害财产保全事项。"

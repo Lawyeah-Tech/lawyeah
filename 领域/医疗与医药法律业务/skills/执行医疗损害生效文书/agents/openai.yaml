@@ -1,0 +1,4 @@
+interface:
+  display_name: "执行医疗损害生效文书"
+  short_description: "准备医疗损害生效文书的执行申请、金额和财产线索"
+  default_prompt: "使用 $执行医疗损害生效文书，在单一立场下处理中国大陆执行医疗损害生效文书事项。"

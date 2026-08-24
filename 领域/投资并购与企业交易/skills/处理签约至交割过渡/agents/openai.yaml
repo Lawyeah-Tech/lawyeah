@@ -1,0 +1,4 @@
+interface:
+  display_name: "处理签约至交割过渡"
+  short_description: "设计先签后交的过渡经营泄漏保护和信息权"
+  default_prompt: "使用 $处理签约至交割过渡，在单一立场下处理先签后交期间的过渡经营、泄漏禁止和信息权。"

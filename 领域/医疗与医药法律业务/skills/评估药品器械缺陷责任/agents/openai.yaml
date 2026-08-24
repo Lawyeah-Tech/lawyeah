@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估药品器械缺陷责任"
+  short_description: "评估药品器械缺陷假设、使用损害证据和首负追偿"
+  default_prompt: "使用 $评估药品器械缺陷责任，在单一立场下处理中国大陆评估药品器械缺陷责任事项。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估竣工结算与逾期不结算"
+  short_description: "评估竣工结算报送、审核期和逾期视为认可"
+  default_prompt: "使用 $评估竣工结算与逾期不结算，在单一立场下处理中国大陆建设工程争议中的「评估竣工结算与逾期不结算」。"

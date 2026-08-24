@@ -1,0 +1,4 @@
+interface:
+  display_name: "申请医疗纠纷人民调解"
+  short_description: "准备医调委申请材料并标明自愿原则和办理期名称"
+  default_prompt: "使用 $申请医疗纠纷人民调解，在单一立场下处理中国大陆申请医疗纠纷人民调解事项。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "测算欠付工程款利息"
+  short_description: "分段测算欠付工程款利息并与优先受偿隔离"
+  default_prompt: "使用 $测算欠付工程款利息，在单一立场下处理中国大陆建设工程争议中的「测算欠付工程款利息」。"

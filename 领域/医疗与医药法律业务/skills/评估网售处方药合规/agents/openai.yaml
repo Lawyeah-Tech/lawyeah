@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估网售处方药合规"
+  short_description: "评估网售处方药的处方真实性、冷链和禁售品种"
+  default_prompt: "使用 $评估网售处方药合规，在单一立场下处理中国大陆评估网售处方药合规事项。"

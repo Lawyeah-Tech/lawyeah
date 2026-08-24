@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估许可合规尽调发现"
+  short_description: "整理许可过期超范围未年报对交易的缺口和条件"
+  default_prompt: "使用 $评估许可合规尽调发现，在单一立场下评估许可过期、超范围或未年报对交易的影响。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估拒诊转诊与接诊义务"
+  short_description: "评估拒收、延误转诊和擅自转院的义务与责任接口"
+  default_prompt: "使用 $评估拒诊转诊与接诊义务，在单一立场下处理中国大陆评估拒诊转诊与接诊义务事项。"

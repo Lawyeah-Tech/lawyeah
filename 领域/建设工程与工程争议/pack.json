@@ -1,0 +1,1636 @@
+{
+  "schemaVersion": 2,
+  "id": "handle-construction-disputes",
+  "displayName": "建设工程与工程争议",
+  "description": "处理中国大陆建设工程项目合同、履约管理和工程争议，覆盖价款、工期、质量、鉴定、实际施工人及优先受偿的多 Skill 领域包。",
+  "version": "1.0.0",
+  "license": "Apache-2.0",
+  "jurisdiction": "CN-mainland",
+  "contentModel": "multi-skill-progressive-disclosure",
+  "reinstallStrategy": "replace",
+  "scope": {
+    "purpose": "处理建设工程项目合同、履约管理和工程争议，覆盖价款、工期、质量、鉴定及实际施工人问题。",
+    "inScope": [
+      "施工、设计、监理和工程总承包合同",
+      "工程价款、结算和优先受偿",
+      "工期、质量、签证索赔和鉴定",
+      "招投标与实际施工人争议"
+    ],
+    "outOfScope": [
+      "一般合同审查或一般合同争议",
+      "房地产交易、开发销售和物业管理",
+      "能源项目监管和环境资源合规本身"
+    ],
+    "primaryDeliverables": [
+      "工程合同与项目法律文件",
+      "工程索赔或抗辩方案",
+      "工程争议诉讼仲裁成果",
+      "工程证据与鉴定方案"
+    ]
+  },
+  "guideSkill": "建设工程与工程争议导航",
+  "mcp": {
+    "contractRange": "0.0"
+  },
+  "skills": [
+    {
+      "id": "建设工程与工程争议导航",
+      "kind": "guide",
+      "displayName": "建设工程与工程争议导航",
+      "goal": "说明领域包的能力、边界和当前原子 Skill 全貌",
+      "notFor": [
+        "直接完成具体法律业务成果"
+      ],
+      "deliverables": [
+        "领域能力定位结果"
+      ],
+      "path": "skills/建设工程与工程争议导航",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "测算工程价款与结算",
+          "准备施工合同解除通知",
+          "建立工程证据与鉴定方案",
+          "应对建设工程一审",
+          "评估建设工程争议",
+          "评估工程价款优先受偿",
+          "准备工程索赔或催告付款通知",
+          "评估施工合同效力",
+          "评估实际施工人请求",
+          "谈判工程和解方案",
+          "提起建设工程一审",
+          "评估资质挂靠与借用名义",
+          "评估招投标与中标效力",
+          "评估黑白合同与结算依据",
+          "评估工程管辖与仲裁协议",
+          "评估工程争议期间",
+          "提出工程案件管辖异议",
+          "准备工程仲裁协议异议",
+          "评估设计监理或工程总承包争议",
+          "评估转包违法分包与肢解发包",
+          "评估劳务分包与专业分包界限",
+          "评估内部承包与挂靠内部结算",
+          "准备实际施工人对发包人起诉材料",
+          "评估发包人欠付范围内责任",
+          "评估实际施工人代位权",
+          "评估进度款与节点付款",
+          "评估竣工结算与逾期不结算",
+          "评估质保金与保修金返还",
+          "准备优先受偿权行使材料",
+          "测算欠付工程款利息",
+          "评估以审计为准条款",
+          "评估固定价与据实结算争议",
+          "评估材料价差与调差",
+          "评估优先受偿与抵押权购房人冲突",
+          "评估工期延误与顺延",
+          "评估工程质量缺陷与验收",
+          "评估变更签证与索赔成立",
+          "评估停工权是否成立",
+          "评估施工合同解除权",
+          "准备停工通知",
+          "准备对工程解约通知的异议",
+          "评估发包人协助义务与未提供条件",
+          "评估擅自使用与验收拟制",
+          "处理解除后已完工程价款与清理",
+          "保全工地现场与隐蔽工程证据",
+          "准备工程造价鉴定申请",
+          "准备工程质量或修复费用鉴定",
+          "提出工程鉴定异议或重新鉴定",
+          "评估工程案件财产保全必要性",
+          "准备工程案件财产保全申请",
+          "应对工程案件保全裁定",
+          "申请工程案件调查令或取证",
+          "起草工程和解或结算协议",
+          "办理工程和解执行力补强",
+          "评估工程调解方案与效力",
+          "提起建设工程仲裁",
+          "提起施工合同效力确认之诉",
+          "提起优先受偿权确认或实现之诉",
+          "准备工程案件庭审",
+          "提起工程案件上诉",
+          "申请撤销工程仲裁裁决",
+          "申请不予执行工程仲裁裁决",
+          "应对建设工程仲裁",
+          "应对工程案件二审",
+          "评估是否提出工程反诉",
+          "准备工程反诉或仲裁反请求",
+          "执行工程生效文书",
+          "应对工程案件执行",
+          "准备购房人或抵押权人执行异议",
+          "准备工程执行和解"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估建设工程争议",
+      "kind": "atomic",
+      "displayName": "评估建设工程争议",
+      "goal": "在单方无冲突立场下形成可决策的建设工程争议总图",
+      "notFor": [
+        "发送版催告或解除函",
+        "精算终稿",
+        "诉状或答辩",
+        "签前审查起草"
+      ],
+      "deliverables": [
+        "在单方无冲突立场下形成可决策的建设工程争议总图"
+      ],
+      "path": "skills/评估建设工程争议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "建设工程与工程争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估施工合同效力",
+      "kind": "atomic",
+      "displayName": "评估施工合同效力",
+      "goal": "判断施工合同是否无效及无效后的价款后果接口，不写确认之诉",
+      "notFor": [
+        "总体争议总图",
+        "确认之诉诉状",
+        "把无效写成无价款"
+      ],
+      "deliverables": [
+        "判断施工合同是否无效及无效后的价款后果接口，不写确认之诉"
+      ],
+      "path": "skills/评估施工合同效力",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "建设工程与工程争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估实际施工人请求",
+      "kind": "atomic",
+      "displayName": "评估实际施工人请求",
+      "goal": "识别实际施工人身份并判断对转包人、违法分包人和发包人的请求边界",
+      "notFor": [
+        "农民工劳动报酬",
+        "普通承包人起诉包",
+        "当然主张优先受偿"
+      ],
+      "deliverables": [
+        "识别实际施工人身份并判断对转包人、违法分包人和发包人的请求边界"
+      ],
+      "path": "skills/评估实际施工人请求",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "建设工程与工程争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估工程价款优先受偿",
+      "kind": "atomic",
+      "displayName": "评估工程价款优先受偿",
+      "goal": "判断优先受偿主体、质量、期限和范围，不把利息计入优先额",
+      "notFor": [
+        "普通工程款测算终稿",
+        "拍卖申请终稿",
+        "实际施工人当然优先"
+      ],
+      "deliverables": [
+        "判断优先受偿主体、质量、期限和范围，不把利息计入优先额"
+      ],
+      "path": "skills/评估工程价款优先受偿",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "建设工程与工程争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "测算工程价款与结算",
+      "kind": "atomic",
+      "displayName": "测算工程价款与结算",
+      "goal": "形成可复核的分项价款测算，不认定合同有效或质量已合格",
+      "notFor": [
+        "定性总图",
+        "唯一必得总额",
+        "把利息写入优先受偿"
+      ],
+      "deliverables": [
+        "形成可复核的分项价款测算，不认定合同有效或质量已合格"
+      ],
+      "path": "skills/测算工程价款与结算",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "建设工程与工程争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "建立工程证据与鉴定方案",
+      "kind": "atomic",
+      "displayName": "建立工程证据与鉴定方案",
+      "goal": "形成要件、举证责任、现场资料与鉴定启动或不应鉴定矩阵",
+      "notFor": [
+        "策略总图",
+        "诉状",
+        "预测鉴定意见",
+        "违法取证"
+      ],
+      "deliverables": [
+        "形成要件、举证责任、现场资料与鉴定启动或不应鉴定矩阵"
+      ],
+      "path": "skills/建立工程证据与鉴定方案",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "建设工程与工程争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备工程索赔或催告付款通知",
+      "kind": "atomic",
+      "displayName": "准备工程索赔或催告付款通知",
+      "goal": "形成仍要对方付款、签证确认或补救的发送前催告或索赔",
+      "notFor": [
+        "解除通知",
+        "停工通知",
+        "索赔精算终稿"
+      ],
+      "deliverables": [
+        "形成仍要对方付款、签证确认或补救的发送前催告或索赔"
+      ],
+      "path": "skills/准备工程索赔或催告付款通知",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "建设工程与工程争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备施工合同解除通知",
+      "kind": "atomic",
+      "displayName": "准备施工合同解除通知",
+      "goal": "形成行使施工合同解除权的发送前稿和到达设计",
+      "notFor": [
+        "催告未完成且依法须催告",
+        "只要评估",
+        "把发送写成已解除"
+      ],
+      "deliverables": [
+        "形成行使施工合同解除权的发送前稿和到达设计"
+      ],
+      "path": "skills/准备施工合同解除通知",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "建设工程与工程争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "谈判工程和解方案",
+      "kind": "atomic",
+      "displayName": "谈判工程和解方案",
+      "goal": "形成价款工期质量底线、弃权范围和执行力提示",
+      "notFor": [
+        "已谈拢的和解协议正文",
+        "答辩状",
+        "未成争的补充协议"
+      ],
+      "deliverables": [
+        "形成价款工期质量底线、弃权范围和执行力提示"
+      ],
+      "path": "skills/谈判工程和解方案",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "建设工程与工程争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "提起建设工程一审",
+      "kind": "atomic",
+      "displayName": "提起建设工程一审",
+      "goal": "形成可提交的建设工程一审起诉包",
+      "notFor": [
+        "有效仲裁未排除",
+        "一般合同或劳动专属",
+        "代提交"
+      ],
+      "deliverables": [
+        "形成可提交的建设工程一审起诉包"
+      ],
+      "path": "skills/提起建设工程一审",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "建设工程与工程争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对建设工程一审",
+      "kind": "atomic",
+      "displayName": "应对建设工程一审",
+      "goal": "形成首次应诉答辩包及质量工期反诉接口",
+      "notFor": [
+        "劳动应诉",
+        "主动起诉",
+        "只要管辖异议终稿且无实体"
+      ],
+      "deliverables": [
+        "形成首次应诉答辩包及质量工期反诉接口"
+      ],
+      "path": "skills/应对建设工程一审",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "建设工程与工程争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估资质挂靠与借用名义",
+      "kind": "atomic",
+      "displayName": "评估资质挂靠与借用名义",
+      "goal": "无资质、超资质、借用资质或挂靠是否成立；单方",
+      "notFor": [
+        "内部承包结算走内部承包原子",
+        "农民工劳动关系转劳动"
+      ],
+      "deliverables": [
+        "无资质、超资质、借用资质或挂靠是否成立；单方"
+      ],
+      "path": "skills/评估资质挂靠与借用名义",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "建设工程与工程争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估招投标与中标效力",
+      "kind": "atomic",
+      "displayName": "评估招投标与中标效力",
+      "goal": "必须招标未招、串标、中标无效或未招先定；单方",
+      "notFor": [
+        "黑白合同结算走专项",
+        "一般采购招投标非建设工程转合同争议"
+      ],
+      "deliverables": [
+        "必须招标未招、串标、中标无效或未招先定；单方"
+      ],
+      "path": "skills/评估招投标与中标效力",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "建设工程与工程争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估黑白合同与结算依据",
+      "kind": "atomic",
+      "displayName": "评估黑白合同与结算依据",
+      "goal": "备案中标合同与另行协议价款工期质量不一致；单方",
+      "notFor": [
+        "不重写合同",
+        "未成争补签走审查（搁置）"
+      ],
+      "deliverables": [
+        "备案中标合同与另行协议价款工期质量不一致；单方"
+      ],
+      "path": "skills/评估黑白合同与结算依据",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "建设工程与工程争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估工程管辖与仲裁协议",
+      "kind": "atomic",
+      "displayName": "评估工程管辖与仲裁协议",
+      "goal": "要选法院还是仲裁，或对方提管辖/仲裁异议；单方",
+      "notFor": [
+        "不代写完整立案包",
+        "劳动仲裁转劳动"
+      ],
+      "deliverables": [
+        "要选法院还是仲裁，或对方提管辖/仲裁异议；单方"
+      ],
+      "path": "skills/评估工程管辖与仲裁协议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "建设工程与工程争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估工程争议期间",
+      "kind": "atomic",
+      "displayName": "评估工程争议期间",
+      "goal": "单独核验时效、优先受偿十八个月、质量异议、解除除斥；单方",
+      "notFor": [
+        "禁止混算或输出唯一截止日",
+        "优先受偿实体走优先受偿评估"
+      ],
+      "deliverables": [
+        "单独核验时效、优先受偿十八个月、质量异议、解除除斥；单方"
+      ],
+      "path": "skills/评估工程争议期间",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "建设工程与工程争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "提出工程案件管辖异议",
+      "kind": "atomic",
+      "displayName": "提出工程案件管辖异议",
+      "goal": "已被起诉，需在法定期限提管辖异议；被请求方",
+      "notFor": [
+        "与仲裁协议异议不同",
+        "过期停止"
+      ],
+      "deliverables": [
+        "已被起诉，需在法定期限提管辖异议；被请求方"
+      ],
+      "path": "skills/提出工程案件管辖异议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "建设工程与工程争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备工程仲裁协议异议",
+      "kind": "atomic",
+      "displayName": "准备工程仲裁协议异议",
+      "goal": "对方依仲裁条款推进，己方主张无效或不适用；被请求方",
+      "notFor": [
+        "与法院管辖异议、实体抗辩分开"
+      ],
+      "deliverables": [
+        "对方依仲裁条款推进，己方主张无效或不适用；被请求方"
+      ],
+      "path": "skills/准备工程仲裁协议异议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "建设工程与工程争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估设计监理或工程总承包争议",
+      "kind": "atomic",
+      "displayName": "评估设计监理或工程总承包争议",
+      "goal": "勘察设计延误或质量、监理责任、EPC 界面争议；单方",
+      "notFor": [
+        "不把施工价款主轴改写成设计费争议",
+        "环境能源项目监管转出"
+      ],
+      "deliverables": [
+        "勘察设计延误或质量、监理责任、EPC 界面争议；单方"
+      ],
+      "path": "skills/评估设计监理或工程总承包争议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "建设工程与工程争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估转包违法分包与肢解发包",
+      "kind": "atomic",
+      "displayName": "评估转包违法分包与肢解发包",
+      "goal": "争转包、违法分包、再分包或肢解发包是否成立；单方",
+      "notFor": [
+        "合法专业分包/劳务分包界限走专项",
+        "不自动解除"
+      ],
+      "deliverables": [
+        "争转包、违法分包、再分包或肢解发包是否成立；单方"
+      ],
+      "path": "skills/评估转包违法分包与肢解发包",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "建设工程与工程争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估劳务分包与专业分包界限",
+      "kind": "atomic",
+      "displayName": "评估劳务分包与专业分包界限",
+      "goal": "一份协议究竟是劳务分包、专业分包还是劳动关系；单方",
+      "notFor": [
+        "已定性为劳动关系则整段转劳动",
+        "不处理工伤待遇"
+      ],
+      "deliverables": [
+        "一份协议究竟是劳务分包、专业分包还是劳动关系；单方"
+      ],
+      "path": "skills/评估劳务分包与专业分包界限",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "建设工程与工程争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估内部承包与挂靠内部结算",
+      "kind": "atomic",
+      "displayName": "评估内部承包与挂靠内部结算",
+      "goal": "项目经理内部承包、上缴管理费、内部结算争议；单方",
+      "notFor": [
+        "对外实际施工人请求走实际施工人原子"
+      ],
+      "deliverables": [
+        "项目经理内部承包、上缴管理费、内部结算争议；单方"
+      ],
+      "path": "skills/评估内部承包与挂靠内部结算",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "建设工程与工程争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备实际施工人对发包人起诉材料",
+      "kind": "atomic",
+      "displayName": "准备实际施工人对发包人起诉材料",
+      "goal": "已决定以实际施工人身份起诉转包人/违法分包人并及于发包人；主张方",
+      "notFor": [
+        "与普通承包人起诉不同",
+        "评估项不发诉状"
+      ],
+      "deliverables": [
+        "已决定以实际施工人身份起诉转包人/违法分包人并及于发包人；主张方"
+      ],
+      "path": "skills/准备实际施工人对发包人起诉材料",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "建设工程与工程争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估发包人欠付范围内责任",
+      "kind": "atomic",
+      "displayName": "评估发包人欠付范围内责任",
+      "goal": "发包人被实际施工人或分包人追索，需框定欠付范围；发包人",
+      "notFor": [
+        "不替代总体应诉包"
+      ],
+      "deliverables": [
+        "发包人被实际施工人或分包人追索，需框定欠付范围；发包人"
+      ],
+      "path": "skills/评估发包人欠付范围内责任",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "建设工程与工程争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估实际施工人代位权",
+      "kind": "atomic",
+      "displayName": "评估实际施工人代位权",
+      "goal": "转包人/违法分包人怠于向发包人行使到期债权；实际施工人",
+      "notFor": [
+        "不管理转包人内部治理",
+        "普通合同代位转合同争议"
+      ],
+      "deliverables": [
+        "转包人/违法分包人怠于向发包人行使到期债权；实际施工人"
+      ],
+      "path": "skills/评估实际施工人代位权",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "建设工程与工程争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估进度款与节点付款",
+      "kind": "atomic",
+      "displayName": "评估进度款与节点付款",
+      "goal": "节点未付、形象进度争议或停工前欠付；单方",
+      "notFor": [
+        "不替代竣工结算总账"
+      ],
+      "deliverables": [
+        "节点未付、形象进度争议或停工前欠付；单方"
+      ],
+      "path": "skills/评估进度款与节点付款",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "建设工程与工程争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估竣工结算与逾期不结算",
+      "kind": "atomic",
+      "displayName": "评估竣工结算与逾期不结算",
+      "goal": "结算报送后对方拖延审核或不签认；单方",
+      "notFor": [
+        "以审计为准走审计条款原子"
+      ],
+      "deliverables": [
+        "结算报送后对方拖延审核或不签认；单方"
+      ],
+      "path": "skills/评估竣工结算与逾期不结算",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "建设工程与工程争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估质保金与保修金返还",
+      "kind": "atomic",
+      "displayName": "评估质保金与保修金返还",
+      "goal": "质保期满未返还或被不当扣留；单方",
+      "notFor": [
+        "保修期内质量修复走质量原子"
+      ],
+      "deliverables": [
+        "质保期满未返还或被不当扣留；单方"
+      ],
+      "path": "skills/评估质保金与保修金返还",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "建设工程与工程争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备优先受偿权行使材料",
+      "kind": "atomic",
+      "displayName": "准备优先受偿权行使材料",
+      "goal": "已判断可主张，需书面主张、诉讼或参与分配材料；承包人",
+      "notFor": [
+        "评估项不发出行使材料"
+      ],
+      "deliverables": [
+        "已判断可主张，需书面主张、诉讼或参与分配材料；承包人"
+      ],
+      "path": "skills/准备优先受偿权行使材料",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "建设工程与工程争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "测算欠付工程款利息",
+      "kind": "atomic",
+      "displayName": "测算欠付工程款利息",
+      "goal": "单独委托计息；单方",
+      "notFor": [
+        "不把利息写入优先受偿额"
+      ],
+      "deliverables": [
+        "单独委托计息；单方"
+      ],
+      "path": "skills/测算欠付工程款利息",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "建设工程与工程争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估以审计为准条款",
+      "kind": "atomic",
+      "displayName": "评估以审计为准条款",
+      "goal": "合同约定以财政/跟踪审计结论结算，双方争约束力；单方",
+      "notFor": [
+        "不代替审计机关结论"
+      ],
+      "deliverables": [
+        "合同约定以财政/跟踪审计结论结算，双方争约束力；单方"
+      ],
+      "path": "skills/评估以审计为准条款",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "建设工程与工程争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估固定价与据实结算争议",
+      "kind": "atomic",
+      "displayName": "评估固定价与据实结算争议",
+      "goal": "固定总价/固定单价与增减项、鉴定申请冲突；单方",
+      "notFor": [
+        "重大设计变更价款走签证变更原子"
+      ],
+      "deliverables": [
+        "固定总价/固定单价与增减项、鉴定申请冲突；单方"
+      ],
+      "path": "skills/评估固定价与据实结算争议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "建设工程与工程争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估材料价差与调差",
+      "kind": "atomic",
+      "displayName": "评估材料价差与调差",
+      "goal": "钢材水泥等价格剧变或约定调差；单方",
+      "notFor": [
+        "不作商业亏损等于法律不能"
+      ],
+      "deliverables": [
+        "钢材水泥等价格剧变或约定调差；单方"
+      ],
+      "path": "skills/评估材料价差与调差",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "建设工程与工程争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估优先受偿与抵押权购房人冲突",
+      "kind": "atomic",
+      "displayName": "评估优先受偿与抵押权购房人冲突",
+      "goal": "工程款优先、抵押权、商品房消费者并存；单方",
+      "notFor": [
+        "商品房买卖主轴转房地产",
+        "本项只处理工程优先冲突"
+      ],
+      "deliverables": [
+        "工程款优先、抵押权、商品房消费者并存；单方"
+      ],
+      "path": "skills/评估优先受偿与抵押权购房人冲突",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "建设工程与工程争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估工期延误与顺延",
+      "kind": "atomic",
+      "displayName": "评估工期延误与顺延",
+      "goal": "逾期竣工、停工窝工或反索赔工期；单方",
+      "notFor": [
+        "不直接发出解除通知"
+      ],
+      "deliverables": [
+        "逾期竣工、停工窝工或反索赔工期；单方"
+      ],
+      "path": "skills/评估工期延误与顺延",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "建设工程与工程争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估工程质量缺陷与验收",
+      "kind": "atomic",
+      "displayName": "评估工程质量缺陷与验收",
+      "goal": "验收不合格、保修、地基主体结构或擅自使用；单方",
+      "notFor": [
+        "造价鉴定另走",
+        "产品致人损害转侵权"
+      ],
+      "deliverables": [
+        "验收不合格、保修、地基主体结构或擅自使用；单方"
+      ],
+      "path": "skills/评估工程质量缺陷与验收",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "建设工程与工程争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估变更签证与索赔成立",
+      "kind": "atomic",
+      "displayName": "评估变更签证与索赔成立",
+      "goal": "设计变更、现场签证、索赔报告是否构成价款或工期调整；单方",
+      "notFor": [
+        "未成争补签签证走审查（搁置）"
+      ],
+      "deliverables": [
+        "设计变更、现场签证、索赔报告是否构成价款或工期调整；单方"
+      ],
+      "path": "skills/评估变更签证与索赔成立",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "建设工程与工程争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估停工权是否成立",
+      "kind": "atomic",
+      "displayName": "评估停工权是否成立",
+      "goal": "欠付、发包人不提供条件或拟停工抗辩；单方",
+      "notFor": [
+        "不发出停工通知终稿"
+      ],
+      "deliverables": [
+        "欠付、发包人不提供条件或拟停工抗辩；单方"
+      ],
+      "path": "skills/评估停工权是否成立",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "建设工程与工程争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估施工合同解除权",
+      "kind": "atomic",
+      "displayName": "评估施工合同解除权",
+      "goal": "拟解除或已收到解除，需判断约定/法定（含转包违法分包、协助义务）；单方",
+      "notFor": [
+        "不发出解除通知",
+        "不写诉状"
+      ],
+      "deliverables": [
+        "拟解除或已收到解除，需判断约定/法定（含转包违法分包、协助义务）；单方"
+      ],
+      "path": "skills/评估施工合同解除权",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "建设工程与工程争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备停工通知",
+      "kind": "atomic",
+      "displayName": "准备停工通知",
+      "goal": "已判断可停工，需发送前停工函；承包人",
+      "notFor": [
+        "催告未完成且依法须催告时停止终稿"
+      ],
+      "deliverables": [
+        "已判断可停工，需发送前停工函；承包人"
+      ],
+      "path": "skills/准备停工通知",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "建设工程与工程争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备对工程解约通知的异议",
+      "kind": "atomic",
+      "displayName": "准备对工程解约通知的异议",
+      "goal": "已收到解除通知，需异议或请求确认未解除；相对方",
+      "notFor": [
+        "不产出确认之诉诉状"
+      ],
+      "deliverables": [
+        "已收到解除通知，需异议或请求确认未解除；相对方"
+      ],
+      "path": "skills/准备对工程解约通知的异议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "建设工程与工程争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估发包人协助义务与未提供条件",
+      "kind": "atomic",
+      "displayName": "评估发包人协助义务与未提供条件",
+      "goal": "场地、图纸、材料设备、付款担保未提供；承包人",
+      "notFor": [
+        "不把商业附加条件写成协助义务"
+      ],
+      "deliverables": [
+        "场地、图纸、材料设备、付款担保未提供；承包人"
+      ],
+      "path": "skills/评估发包人协助义务与未提供条件",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "建设工程与工程争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估擅自使用与验收拟制",
+      "kind": "atomic",
+      "displayName": "评估擅自使用与验收拟制",
+      "goal": "未验收发包人已使用，争质量抗辩是否受限；单方",
+      "notFor": [
+        "不把擅自使用写成工程质量合格"
+      ],
+      "deliverables": [
+        "未验收发包人已使用，争质量抗辩是否受限；单方"
+      ],
+      "path": "skills/评估擅自使用与验收拟制",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "建设工程与工程争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "处理解除后已完工程价款与清理",
+      "kind": "atomic",
+      "displayName": "处理解除后已完工程价款与清理",
+      "goal": "解除或终止后需计价、退场、资料移交、保管；单方",
+      "notFor": [
+        "不重判解除是否成立"
+      ],
+      "deliverables": [
+        "解除或终止后需计价、退场、资料移交、保管；单方"
+      ],
+      "path": "skills/处理解除后已完工程价款与清理",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "建设工程与工程争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "保全工地现场与隐蔽工程证据",
+      "kind": "atomic",
+      "displayName": "保全工地现场与隐蔽工程证据",
+      "goal": "隐蔽工程、现场、影像可能灭失；单方",
+      "notFor": [
+        "不指导违法取证或抢工毁灭对方证据"
+      ],
+      "deliverables": [
+        "隐蔽工程、现场、影像可能灭失；单方"
+      ],
+      "path": "skills/保全工地现场与隐蔽工程证据",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "建设工程与工程争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备工程造价鉴定申请",
+      "kind": "atomic",
+      "displayName": "准备工程造价鉴定申请",
+      "goal": "需鉴定机构确认造价或增减项；单方",
+      "notFor": [
+        "不预测造价结论"
+      ],
+      "deliverables": [
+        "需鉴定机构确认造价或增减项；单方"
+      ],
+      "path": "skills/准备工程造价鉴定申请",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "建设工程与工程争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备工程质量或修复费用鉴定",
+      "kind": "atomic",
+      "displayName": "准备工程质量或修复费用鉴定",
+      "goal": "质量、修复费用专门性问题；单方",
+      "notFor": [
+        "不预测合格与否"
+      ],
+      "deliverables": [
+        "质量、修复费用专门性问题；单方"
+      ],
+      "path": "skills/准备工程质量或修复费用鉴定",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "建设工程与工程争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "提出工程鉴定异议或重新鉴定",
+      "kind": "atomic",
+      "displayName": "提出工程鉴定异议或重新鉴定",
+      "goal": "鉴定意见作出后不服；单方",
+      "notFor": [
+        "不重新做鉴定意见"
+      ],
+      "deliverables": [
+        "鉴定意见作出后不服；单方"
+      ],
+      "path": "skills/提出工程鉴定异议或重新鉴定",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "建设工程与工程争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估工程案件财产保全必要性",
+      "kind": "atomic",
+      "displayName": "评估工程案件财产保全必要性",
+      "goal": "担心转移工程款或项目公司空壳，尚未决定申请；单方",
+      "notFor": [
+        "不代写申请"
+      ],
+      "deliverables": [
+        "担心转移工程款或项目公司空壳，尚未决定申请；单方"
+      ],
+      "path": "skills/评估工程案件财产保全必要性",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "建设工程与工程争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备工程案件财产保全申请",
+      "kind": "atomic",
+      "displayName": "准备工程案件财产保全申请",
+      "goal": "已决定申请诉前或诉中保全；申请方",
+      "notFor": [
+        "不保证裁定"
+      ],
+      "deliverables": [
+        "已决定申请诉前或诉中保全；申请方"
+      ],
+      "path": "skills/准备工程案件财产保全申请",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "建设工程与工程争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对工程案件保全裁定",
+      "kind": "atomic",
+      "displayName": "应对工程案件保全裁定",
+      "goal": "账户或在建工程收益已被保全；被保全方",
+      "notFor": [
+        "不提供转移隐匿财产方案"
+      ],
+      "deliverables": [
+        "账户或在建工程收益已被保全；被保全方"
+      ],
+      "path": "skills/应对工程案件保全裁定",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "建设工程与工程争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "申请工程案件调查令或取证",
+      "kind": "atomic",
+      "displayName": "申请工程案件调查令或取证",
+      "goal": "规划许可、中标备案、付款走账由第三方掌握；单方",
+      "notFor": [
+        "禁止违法调取"
+      ],
+      "deliverables": [
+        "规划许可、中标备案、付款走账由第三方掌握；单方"
+      ],
+      "path": "skills/申请工程案件调查令或取证",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "建设工程与工程争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "起草工程和解或结算协议",
+      "kind": "atomic",
+      "displayName": "起草工程和解或结算协议",
+      "goal": "条件已谈拢，需可签协议；单方",
+      "notFor": [
+        "司法确认另项"
+      ],
+      "deliverables": [
+        "条件已谈拢，需可签协议；单方"
+      ],
+      "path": "skills/起草工程和解或结算协议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "建设工程与工程争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "办理工程和解执行力补强",
+      "kind": "atomic",
+      "displayName": "办理工程和解执行力补强",
+      "goal": "需司法确认、仲裁调解书或公证赋强；单方",
+      "notFor": [
+        "单独和解无执行力必须明示"
+      ],
+      "deliverables": [
+        "需司法确认、仲裁调解书或公证赋强；单方"
+      ],
+      "path": "skills/办理工程和解执行力补强",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "建设工程与工程争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估工程调解方案与效力",
+      "kind": "atomic",
+      "displayName": "评估工程调解方案与效力",
+      "goal": "法院/仲裁调解或行业调解；单方",
+      "notFor": [
+        "不代替庭审策略"
+      ],
+      "deliverables": [
+        "法院/仲裁调解或行业调解；单方"
+      ],
+      "path": "skills/评估工程调解方案与效力",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "建设工程与工程争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "提起建设工程仲裁",
+      "kind": "atomic",
+      "displayName": "提起建设工程仲裁",
+      "goal": "有效仲裁协议且决定申请；申请方",
+      "notFor": [
+        "与起诉互斥"
+      ],
+      "deliverables": [
+        "有效仲裁协议且决定申请；申请方"
+      ],
+      "path": "skills/提起建设工程仲裁",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "建设工程与工程争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "提起施工合同效力确认之诉",
+      "kind": "atomic",
+      "displayName": "提起施工合同效力确认之诉",
+      "goal": "需确认无效、有效或不成立；主张方",
+      "notFor": [
+        "与普通给付之诉不同"
+      ],
+      "deliverables": [
+        "需确认无效、有效或不成立；主张方"
+      ],
+      "path": "skills/提起施工合同效力确认之诉",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "建设工程与工程争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "提起优先受偿权确认或实现之诉",
+      "kind": "atomic",
+      "displayName": "提起优先受偿权确认或实现之诉",
+      "goal": "已决定以诉讼实现优先受偿；承包人",
+      "notFor": [
+        "与普通给付一审可并案但成果独立验收"
+      ],
+      "deliverables": [
+        "已决定以诉讼实现优先受偿；承包人"
+      ],
+      "path": "skills/提起优先受偿权确认或实现之诉",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "建设工程与工程争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备工程案件庭审",
+      "kind": "atomic",
+      "displayName": "准备工程案件庭审",
+      "goal": "诉讼或仲裁即将开庭；单方代理",
+      "notFor": [
+        "不代替立案"
+      ],
+      "deliverables": [
+        "诉讼或仲裁即将开庭；单方代理"
+      ],
+      "path": "skills/准备工程案件庭审",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "建设工程与工程争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "提起工程案件上诉",
+      "kind": "atomic",
+      "displayName": "提起工程案件上诉",
+      "goal": "不服未生效裁判；上诉方",
+      "notFor": [
+        "不重做一审"
+      ],
+      "deliverables": [
+        "不服未生效裁判；上诉方"
+      ],
+      "path": "skills/提起工程案件上诉",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "建设工程与工程争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "申请撤销工程仲裁裁决",
+      "kind": "atomic",
+      "displayName": "申请撤销工程仲裁裁决",
+      "goal": "收到裁决后法定期限内；不利方",
+      "notFor": [
+        "与不予执行不同"
+      ],
+      "deliverables": [
+        "收到裁决后法定期限内；不利方"
+      ],
+      "path": "skills/申请撤销工程仲裁裁决",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "建设工程与工程争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "申请不予执行工程仲裁裁决",
+      "kind": "atomic",
+      "displayName": "申请不予执行工程仲裁裁决",
+      "goal": "对方申请执行裁决；被执行方",
+      "notFor": [
+        "不与撤销混用"
+      ],
+      "deliverables": [
+        "对方申请执行裁决；被执行方"
+      ],
+      "path": "skills/申请不予执行工程仲裁裁决",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "建设工程与工程争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对建设工程仲裁",
+      "kind": "atomic",
+      "displayName": "应对建设工程仲裁",
+      "goal": "收到仲裁申请；被申请方",
+      "notFor": [
+        "与申请方材料权限不同"
+      ],
+      "deliverables": [
+        "收到仲裁申请；被申请方"
+      ],
+      "path": "skills/应对建设工程仲裁",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "建设工程与工程争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对工程案件二审",
+      "kind": "atomic",
+      "displayName": "应对工程案件二审",
+      "goal": "收到上诉状；被上诉方",
+      "notFor": [
+        "不代替主动上诉"
+      ],
+      "deliverables": [
+        "收到上诉状；被上诉方"
+      ],
+      "path": "skills/应对工程案件二审",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "建设工程与工程争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估是否提出工程反诉",
+      "kind": "atomic",
+      "displayName": "评估是否提出工程反诉",
+      "goal": "被告拟就质量、工期、逾期竣工反诉；被请求方",
+      "notFor": [
+        "不自动生成反诉状终稿"
+      ],
+      "deliverables": [
+        "被告拟就质量、工期、逾期竣工反诉；被请求方"
+      ],
+      "path": "skills/评估是否提出工程反诉",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "建设工程与工程争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备工程反诉或仲裁反请求",
+      "kind": "atomic",
+      "displayName": "准备工程反诉或仲裁反请求",
+      "goal": "已决定反诉；反诉原告",
+      "notFor": [
+        "与本诉答辩分开验收"
+      ],
+      "deliverables": [
+        "已决定反诉；反诉原告"
+      ],
+      "path": "skills/准备工程反诉或仲裁反请求",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "建设工程与工程争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "执行工程生效文书",
+      "kind": "atomic",
+      "displayName": "执行工程生效文书",
+      "goal": "持判决、调解书、裁决未获履行；权利人",
+      "notFor": [
+        "不重审实体"
+      ],
+      "deliverables": [
+        "持判决、调解书、裁决未获履行；权利人"
+      ],
+      "path": "skills/执行工程生效文书",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "建设工程与工程争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对工程案件执行",
+      "kind": "atomic",
+      "displayName": "应对工程案件执行",
+      "goal": "被执行人收到执行；被执行方",
+      "notFor": [
+        "禁止隐匿转移"
+      ],
+      "deliverables": [
+        "被执行人收到执行；被执行方"
+      ],
+      "path": "skills/应对工程案件执行",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "建设工程与工程争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备购房人或抵押权人执行异议",
+      "kind": "atomic",
+      "displayName": "准备购房人或抵押权人执行异议",
+      "goal": "案外人主张房屋或抵押权对抗工程执行；案外人",
+      "notFor": [
+        "商品房买卖主轴转房地产后只留执行接口"
+      ],
+      "deliverables": [
+        "案外人主张房屋或抵押权对抗工程执行；案外人"
+      ],
+      "path": "skills/准备购房人或抵押权人执行异议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "建设工程与工程争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备工程执行和解",
+      "kind": "atomic",
+      "displayName": "准备工程执行和解",
+      "goal": "执行中拟分期或以物抵债；单方",
+      "notFor": [
+        "不放弃已生效债权除非明示"
+      ],
+      "deliverables": [
+        "执行中拟分期或以物抵债；单方"
+      ],
+      "path": "skills/准备工程执行和解",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "建设工程与工程争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    }
+  ],
+  "guideName": "建设工程与工程争议导航"
+}

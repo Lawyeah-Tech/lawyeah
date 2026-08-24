@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备工程质量或修复费用鉴定"
+  short_description: "准备工程质量或修复费用鉴定申请"
+  default_prompt: "使用 $准备工程质量或修复费用鉴定，在单一立场下处理中国大陆建设工程争议中的「准备工程质量或修复费用鉴定」。"

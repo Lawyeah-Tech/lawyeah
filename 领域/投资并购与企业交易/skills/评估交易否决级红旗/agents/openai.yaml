@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估交易否决级红旗"
+  short_description: "把尽调红旗分成停买降价加条件或披露四级"
+  default_prompt: "使用 $评估交易否决级红旗，在单一立场下评估投资并购尽调红旗应停买、降价、加条件还是仅披露。"

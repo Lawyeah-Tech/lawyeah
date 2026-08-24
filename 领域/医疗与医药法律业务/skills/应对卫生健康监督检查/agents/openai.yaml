@@ -1,0 +1,4 @@
+interface:
+  display_name: "应对卫生健康监督检查"
+  short_description: "应对卫健监督检查的范围核对、笔录和整改接口"
+  default_prompt: "使用 $应对卫生健康监督检查，在单一立场下处理中国大陆应对卫生健康监督检查事项。"

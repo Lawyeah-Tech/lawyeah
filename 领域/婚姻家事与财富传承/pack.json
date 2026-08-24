@@ -1,0 +1,2276 @@
+{
+  "schemaVersion": 2,
+  "id": "handle-family-succession",
+  "displayName": "婚姻家事与财富传承",
+  "description": "处理中国大陆婚姻身份、离婚、夫妻债务、子女抚养、监护家暴、继承遗产和遗嘱安排的多 Skill 领域包。",
+  "version": "1.0.0",
+  "license": "Apache-2.0",
+  "jurisdiction": "CN-mainland",
+  "contentModel": "multi-skill-progressive-disclosure",
+  "reinstallStrategy": "replace",
+  "scope": {
+    "purpose": "处理婚姻家庭身份、家庭财产、抚养赡养、继承和代际财富传承事项。",
+    "inScope": [
+      "婚姻效力、离婚与夫妻财产",
+      "子女抚养、监护和探望",
+      "继承、遗嘱和遗产管理",
+      "家庭财富传承安排"
+    ],
+    "outOfScope": [
+      "公司治理和股东权利本身",
+      "以税负测算或税务争议为主要成果的事项",
+      "一般合同或侵权纠纷"
+    ],
+    "primaryDeliverables": [
+      "婚家争议方案与文书",
+      "夫妻财产或离婚协议",
+      "遗嘱与继承方案",
+      "财富传承法律安排"
+    ]
+  },
+  "guideSkill": "婚姻家事与财富传承导航",
+  "mcp": {
+    "contractRange": "0.0"
+  },
+  "skills": [
+    {
+      "id": "婚姻家事与财富传承导航",
+      "kind": "guide",
+      "displayName": "婚姻家事与财富传承导航",
+      "goal": "说明领域包的能力、边界和当前原子 Skill 全貌",
+      "notFor": [
+        "直接完成具体法律业务成果"
+      ],
+      "deliverables": [
+        "领域能力定位结果"
+      ],
+      "path": "skills/婚姻家事与财富传承导航",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "抚养费请求与调整材料",
+          "继承权与遗嘱遗赠争议起诉材料",
+          "继承人及遗产范围识别",
+          "夫妻债务责任评估",
+          "离婚诉讼原告起诉材料",
+          "抢夺藏匿未成年子女紧急处置",
+          "人身安全保护令申请",
+          "遗嘱起草与订立方案",
+          "离婚路径与请求评估",
+          "离婚协议起草",
+          "遗产清册与保全方案",
+          "未成年子女直接抚养评估",
+          "家庭暴力紧急安全方案",
+          "监护资格撤销与变更方案",
+          "婚姻成立与效力评估",
+          "彩礼返还争议方案",
+          "同居关系财产析产方案",
+          "婚前财产协议起草",
+          "夫妻财产与债务证据图谱",
+          "婚内财产协议起草",
+          "复杂夫妻财产分割方案",
+          "夫妻财产紧急保全方案",
+          "夫妻共同财产不当处分追回起诉",
+          "夫妻共同财产不当处分答辩",
+          "离婚争议证据方案",
+          "离婚谈判与调解方案",
+          "离婚案件庭审代理方案",
+          "离婚约定与裁判履行救济",
+          "离婚后财产争议诉讼材料",
+          "亲子关系确认与否认诉讼材料",
+          "子女抚养费与共同照护协议",
+          "探望安排与履行方案",
+          "变更直接抚养关系方案",
+          "配偶扶养请求方案",
+          "境内收养条件与登记方案",
+          "意定监护协议起草",
+          "行为能力认定与恢复特别程序材料",
+          "被监护人财产保护方案",
+          "家庭暴力证据固定方案",
+          "人身安全保护令履行救济",
+          "遗嘱与遗赠效力评估",
+          "继承争议证据方案",
+          "遗产分割协商与调解方案",
+          "遗产管理人确定与指定申请",
+          "遗产管理人履职争议救济",
+          "继承协议与裁判履行救济",
+          "遗赠扶养协议起草",
+          "遗嘱信托法律安排",
+          "人身保险受益与继承边界评估",
+          "家庭传承法律问题与转交边界图",
+          "婚姻效力与撤销争议诉讼材料",
+          "收养成立与效力争议方案",
+          "子女抚养与探望履行救济",
+          "家事主体管辖与期限评估",
+          "家事裁判上诉与审级救济",
+          "遗赠扶养协议履行与解除争议",
+          "接受与放弃继承意思表示方案",
+          "老年人与成年亲属赡养请求方案",
+          "遗产范围与分割争议诉讼材料",
+          "彩礼返还争议答辩",
+          "离婚诉讼答辩材料",
+          "亲子关系争议答辩材料",
+          "抚养费争议答辩材料",
+          "变更直接抚养答辩材料",
+          "离婚后财产争议答辩材料",
+          "婚姻效力与撤销争议答辩材料",
+          "收养成立与效力争议答辩材料",
+          "遗赠扶养协议争议答辩材料",
+          "继承权与遗嘱遗赠争议答辩材料",
+          "遗产范围与分割争议答辩材料",
+          "监护设立指定与临时监护方案",
+          "家庭财产赠与与生前转移安排",
+          "继承遗产非诉办理与登记协助",
+          "家事执行程序异议与复议",
+          "遗产分配实施方案",
+          "人身安全保护令被申请人答辩与复议",
+          "监护撤销变更相对方答辩",
+          "遗产债权债务与管理费用处理",
+          "家事执行案外人权利救济",
+          "配偶扶养请求答辩方案",
+          "老年人与成年亲属赡养请求答辩方案",
+          "婚姻收养登记机关决定行政救济",
+          "宣告失踪或死亡特别程序材料",
+          "失踪死亡宣告家事后果评估"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "夫妻债务责任评估",
+      "kind": "atomic",
+      "displayName": "夫妻债务责任评估",
+      "goal": "针对特定债务形成共同债务、个人债务、内部承担与外部债权人效力的受限意见。",
+      "notFor": [
+        "仅按借款人姓名判断责任"
+      ],
+      "deliverables": [
+        "逐债务责任表",
+        "抗辩与证据方案"
+      ],
+      "path": "skills/夫妻债务责任评估",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": [
+        {
+          "id": "law-source-verification",
+          "purpose": "核验会改变结论、期限或程序入口的现行法源",
+          "capability": "search_law",
+          "level": "required",
+          "unavailableBehavior": "不拒绝执行、不中断主流程；停止法律结论、期限和确定程序入口，只保留非法律事实、缺口和安全转介。"
+        },
+        {
+          "id": "practice-reference",
+          "purpose": "补充去标识化的实务核验与证据组织视角",
+          "capability": "search_practiced",
+          "level": "optional",
+          "unavailableBehavior": "继续完成不依赖实务增强的基础成果"
+        },
+        {
+          "id": "fact-similar-case",
+          "purpose": "按去标识化事实链对照公开案例",
+          "capability": "search_case_by_fact",
+          "level": "optional",
+          "unavailableBehavior": "不使用类案增强，不影响基础事实和法源分析"
+        },
+        {
+          "id": "filtered-case",
+          "purpose": "按明确条件筛选公开案例",
+          "capability": "search_case_by_filter",
+          "level": "optional",
+          "unavailableBehavior": "不使用筛选类案增强，不影响基础事实和法源分析"
+        },
+        {
+          "id": "case-detail",
+          "purpose": "核对已确认案例的完整内容",
+          "capability": "get_case_detail",
+          "level": "optional",
+          "unavailableBehavior": "不引用无法核对全文的案例"
+        }
+      ]
+    },
+    {
+      "id": "离婚路径与请求评估",
+      "kind": "atomic",
+      "displayName": "离婚路径与请求评估",
+      "goal": "在单一当事人立场下形成协议登记或诉讼路径、请求范围、风险和行动顺序。",
+      "notFor": [
+        "替代具体协议或诉状"
+      ],
+      "deliverables": [
+        "离婚路径评估",
+        "请求与行动清单"
+      ],
+      "path": "skills/离婚路径与请求评估",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": [
+        {
+          "id": "law-source-verification",
+          "purpose": "核验会改变结论、期限或程序入口的现行法源",
+          "capability": "search_law",
+          "level": "required",
+          "unavailableBehavior": "不拒绝执行、不中断主流程；停止法律结论、期限和确定程序入口，只保留非法律事实、缺口和安全转介。"
+        },
+        {
+          "id": "practice-reference",
+          "purpose": "补充去标识化的实务核验与证据组织视角",
+          "capability": "search_practiced",
+          "level": "optional",
+          "unavailableBehavior": "继续完成不依赖实务增强的基础成果"
+        }
+      ]
+    },
+    {
+      "id": "离婚协议起草",
+      "kind": "atomic",
+      "displayName": "离婚协议起草",
+      "goal": "为已决定协议离婚的双方形成身份、子女、财产债务、给付和履行机制完整的协议。",
+      "notFor": [
+        "掩盖重大分歧或家暴胁迫"
+      ],
+      "deliverables": [
+        "离婚协议",
+        "登记与履行事项表"
+      ],
+      "path": "skills/离婚协议起草",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": [
+        {
+          "id": "law-source-verification",
+          "purpose": "核验会改变结论、期限或程序入口的现行法源",
+          "capability": "search_law",
+          "level": "required",
+          "unavailableBehavior": "不拒绝执行、不中断主流程；停止法律结论、期限和确定程序入口，只保留非法律事实、缺口和安全转介。"
+        },
+        {
+          "id": "template-reference",
+          "purpose": "核验文书类型、结构和必要字段",
+          "capability": "search_template",
+          "level": "optional",
+          "unavailableBehavior": "按目标 Skill 的文书降级规则停止可提交格式或使用自包含输出结构"
+        },
+        {
+          "id": "practice-reference",
+          "purpose": "补充去标识化的实务核验与证据组织视角",
+          "capability": "search_practiced",
+          "level": "optional",
+          "unavailableBehavior": "继续完成不依赖实务增强的基础成果"
+        }
+      ]
+    },
+    {
+      "id": "离婚诉讼原告起诉材料",
+      "kind": "atomic",
+      "displayName": "离婚诉讼原告起诉材料",
+      "goal": "围绕特定法院和原告请求形成离婚起诉、证据目录及程序申请材料。",
+      "notFor": [
+        "未核准管辖和请求即代为提交",
+        "为被告或相对方形成答辩材料"
+      ],
+      "deliverables": [
+        "离婚起诉状",
+        "原告证据目录与程序申请清单"
+      ],
+      "path": "skills/离婚诉讼原告起诉材料",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": [
+        {
+          "id": "law-source-verification",
+          "purpose": "核验会改变结论、期限或程序入口的现行法源",
+          "capability": "search_law",
+          "level": "required",
+          "unavailableBehavior": "不拒绝执行、不中断主流程；停止法律结论、期限和确定程序入口，只保留非法律事实、缺口和安全转介。"
+        },
+        {
+          "id": "template-reference",
+          "purpose": "核验文书类型、结构和必要字段",
+          "capability": "search_template",
+          "level": "optional",
+          "unavailableBehavior": "按目标 Skill 的文书降级规则停止可提交格式或使用自包含输出结构"
+        },
+        {
+          "id": "practice-reference",
+          "purpose": "补充去标识化的实务核验与证据组织视角",
+          "capability": "search_practiced",
+          "level": "optional",
+          "unavailableBehavior": "继续完成不依赖实务增强的基础成果"
+        },
+        {
+          "id": "filtered-case",
+          "purpose": "按明确条件筛选公开案例",
+          "capability": "search_case_by_filter",
+          "level": "optional",
+          "unavailableBehavior": "不使用筛选类案增强，不影响基础事实和法源分析"
+        }
+      ]
+    },
+    {
+      "id": "未成年子女直接抚养评估",
+      "kind": "atomic",
+      "displayName": "未成年子女直接抚养评估",
+      "goal": "以最有利于未成年人为中心形成直接抚养、共同照护、风险与证据评估。",
+      "notFor": [
+        "把父母偏好置于子女安全之上"
+      ],
+      "deliverables": [
+        "子女利益因素表",
+        "抚养方案与证据缺口"
+      ],
+      "path": "skills/未成年子女直接抚养评估",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": [
+        {
+          "id": "law-source-verification",
+          "purpose": "核验会改变结论、期限或程序入口的现行法源",
+          "capability": "search_law",
+          "level": "required",
+          "unavailableBehavior": "不拒绝执行、不中断主流程；停止法律结论、期限和确定程序入口，只保留非法律事实、缺口和安全转介。"
+        },
+        {
+          "id": "practice-reference",
+          "purpose": "补充去标识化的实务核验与证据组织视角",
+          "capability": "search_practiced",
+          "level": "optional",
+          "unavailableBehavior": "继续完成不依赖实务增强的基础成果"
+        },
+        {
+          "id": "fact-similar-case",
+          "purpose": "按去标识化事实链对照公开案例",
+          "capability": "search_case_by_fact",
+          "level": "optional",
+          "unavailableBehavior": "不使用类案增强，不影响基础事实和法源分析"
+        },
+        {
+          "id": "filtered-case",
+          "purpose": "按明确条件筛选公开案例",
+          "capability": "search_case_by_filter",
+          "level": "optional",
+          "unavailableBehavior": "不使用筛选类案增强，不影响基础事实和法源分析"
+        }
+      ]
+    },
+    {
+      "id": "抚养费请求与调整材料",
+      "kind": "atomic",
+      "displayName": "抚养费请求与调整材料",
+      "goal": "针对首次请求、增加、减少或追索抚养费形成测算、证据和诉讼材料。",
+      "notFor": [
+        "只按固定收入比例机械计算",
+        "为被告或相对方形成答辩材料"
+      ],
+      "deliverables": [
+        "抚养费测算表",
+        "起诉材料包"
+      ],
+      "path": "skills/抚养费请求与调整材料",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": [
+        {
+          "id": "law-source-verification",
+          "purpose": "核验会改变结论、期限或程序入口的现行法源",
+          "capability": "search_law",
+          "level": "required",
+          "unavailableBehavior": "不拒绝执行、不中断主流程；停止法律结论、期限和确定程序入口，只保留非法律事实、缺口和安全转介。"
+        },
+        {
+          "id": "template-reference",
+          "purpose": "核验文书类型、结构和必要字段",
+          "capability": "search_template",
+          "level": "optional",
+          "unavailableBehavior": "按目标 Skill 的文书降级规则停止可提交格式或使用自包含输出结构"
+        },
+        {
+          "id": "practice-reference",
+          "purpose": "补充去标识化的实务核验与证据组织视角",
+          "capability": "search_practiced",
+          "level": "optional",
+          "unavailableBehavior": "继续完成不依赖实务增强的基础成果"
+        }
+      ]
+    },
+    {
+      "id": "抢夺藏匿未成年子女紧急处置",
+      "kind": "atomic",
+      "displayName": "抢夺藏匿未成年子女紧急处置",
+      "goal": "针对抢夺、藏匿、拒绝交接或失联风险形成安全核验、证据固定和紧急救济方案。",
+      "notFor": [
+        "指导以抢夺方式反向控制子女",
+        "仅在事实关系和法定适用范围核实后进入；普通同居财产分割转同居财产原子，刑事或人身侵权事项转相邻领域"
+      ],
+      "deliverables": [
+        "子女安全与位置核验表",
+        "紧急申请和协同处置材料"
+      ],
+      "path": "skills/抢夺藏匿未成年子女紧急处置",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": [
+        {
+          "id": "law-source-verification",
+          "purpose": "核验会改变结论、期限或程序入口的现行法源",
+          "capability": "search_law",
+          "level": "required",
+          "unavailableBehavior": "不拒绝执行、不中断主流程；停止法律结论、期限和确定程序入口，只保留非法律事实、缺口和安全转介。"
+        },
+        {
+          "id": "practice-reference",
+          "purpose": "补充去标识化的实务核验与证据组织视角",
+          "capability": "search_practiced",
+          "level": "optional",
+          "unavailableBehavior": "继续完成不依赖实务增强的基础成果"
+        },
+        {
+          "id": "template-reference",
+          "purpose": "核验文书类型、结构和必要字段",
+          "capability": "search_template",
+          "level": "optional",
+          "unavailableBehavior": "按目标 Skill 的文书降级规则停止可提交格式或使用自包含输出结构"
+        }
+      ]
+    },
+    {
+      "id": "监护资格撤销与变更方案",
+      "kind": "atomic",
+      "displayName": "监护资格撤销与变更方案",
+      "goal": "针对怠于履职、侵害、冲突或监护能力变化形成撤销、变更和临时保护材料。",
+      "notFor": [
+        "以财产利益替代被监护人最佳利益"
+      ],
+      "deliverables": [
+        "监护风险与资格评估",
+        "撤销变更申请材料"
+      ],
+      "path": "skills/监护资格撤销与变更方案",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": [
+        {
+          "id": "law-source-verification",
+          "purpose": "核验会改变结论、期限或程序入口的现行法源",
+          "capability": "search_law",
+          "level": "required",
+          "unavailableBehavior": "不拒绝执行、不中断主流程；停止法律结论、期限和确定程序入口，只保留非法律事实、缺口和安全转介。"
+        },
+        {
+          "id": "practice-reference",
+          "purpose": "补充去标识化的实务核验与证据组织视角",
+          "capability": "search_practiced",
+          "level": "optional",
+          "unavailableBehavior": "继续完成不依赖实务增强的基础成果"
+        },
+        {
+          "id": "template-reference",
+          "purpose": "核验文书类型、结构和必要字段",
+          "capability": "search_template",
+          "level": "optional",
+          "unavailableBehavior": "按目标 Skill 的文书降级规则停止可提交格式或使用自包含输出结构"
+        }
+      ]
+    },
+    {
+      "id": "家庭暴力紧急安全方案",
+      "kind": "atomic",
+      "displayName": "家庭暴力紧急安全方案",
+      "goal": "在正在发生或迫近的家庭暴力风险下优先形成撤离、报警、医疗、儿童老人安全、证据保护和法律分流方案。",
+      "notFor": [
+        "要求受害人与施暴者当面对质",
+        "仅在事实关系和法定适用范围核实后进入；普通同居财产分割转同居财产原子，刑事或人身侵权事项转相邻领域"
+      ],
+      "deliverables": [
+        "即时危险与安全计划",
+        "报警求助和后续法律路径表"
+      ],
+      "path": "skills/家庭暴力紧急安全方案",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": [
+        {
+          "id": "law-source-verification",
+          "purpose": "核验会改变结论、期限或程序入口的现行法源",
+          "capability": "search_law",
+          "level": "required",
+          "unavailableBehavior": "不拒绝执行、不中断主流程；停止法律结论、期限和确定程序入口，只保留非法律事实、缺口和安全转介。"
+        },
+        {
+          "id": "practice-reference",
+          "purpose": "补充去标识化的实务核验与证据组织视角",
+          "capability": "search_practiced",
+          "level": "optional",
+          "unavailableBehavior": "继续完成不依赖实务增强的基础成果"
+        }
+      ]
+    },
+    {
+      "id": "人身安全保护令申请",
+      "kind": "atomic",
+      "displayName": "人身安全保护令申请",
+      "goal": "针对家庭暴力或现实危险形成管辖、请求措施、证据和紧急保护令申请材料。",
+      "notFor": [
+        "把保护令申请附属于必须先离婚",
+        "仅在事实关系和法定适用范围核实后进入；普通同居财产分割转同居财产原子，刑事或人身侵权事项转相邻领域"
+      ],
+      "deliverables": [
+        "保护措施请求表",
+        "保护令申请与证据目录"
+      ],
+      "path": "skills/人身安全保护令申请",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": [
+        {
+          "id": "law-source-verification",
+          "purpose": "核验会改变结论、期限或程序入口的现行法源",
+          "capability": "search_law",
+          "level": "required",
+          "unavailableBehavior": "不拒绝执行、不中断主流程；停止法律结论、期限和确定程序入口，只保留非法律事实、缺口和安全转介。"
+        },
+        {
+          "id": "template-reference",
+          "purpose": "核验文书类型、结构和必要字段",
+          "capability": "search_template",
+          "level": "optional",
+          "unavailableBehavior": "按目标 Skill 的文书降级规则停止可提交格式或使用自包含输出结构"
+        },
+        {
+          "id": "practice-reference",
+          "purpose": "补充去标识化的实务核验与证据组织视角",
+          "capability": "search_practiced",
+          "level": "optional",
+          "unavailableBehavior": "继续完成不依赖实务增强的基础成果"
+        }
+      ]
+    },
+    {
+      "id": "继承人及遗产范围识别",
+      "kind": "atomic",
+      "displayName": "继承人及遗产范围识别",
+      "goal": "在特定被继承人死亡后形成继承人、继承依据、遗产与他人财产、债务和缺口清单。",
+      "notFor": [
+        "把全部家庭财产当然列为遗产"
+      ],
+      "deliverables": [
+        "继承关系图",
+        "遗产债务与证据台账"
+      ],
+      "path": "skills/继承人及遗产范围识别",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": [
+        {
+          "id": "law-source-verification",
+          "purpose": "核验会改变结论、期限或程序入口的现行法源",
+          "capability": "search_law",
+          "level": "required",
+          "unavailableBehavior": "不拒绝执行、不中断主流程；停止法律结论、期限和确定程序入口，只保留非法律事实、缺口和安全转介。"
+        },
+        {
+          "id": "practice-reference",
+          "purpose": "补充去标识化的实务核验与证据组织视角",
+          "capability": "search_practiced",
+          "level": "optional",
+          "unavailableBehavior": "继续完成不依赖实务增强的基础成果"
+        },
+        {
+          "id": "fact-similar-case",
+          "purpose": "按去标识化事实链对照公开案例",
+          "capability": "search_case_by_fact",
+          "level": "optional",
+          "unavailableBehavior": "不使用类案增强，不影响基础事实和法源分析"
+        },
+        {
+          "id": "case-detail",
+          "purpose": "核对已确认案例的完整内容",
+          "capability": "get_case_detail",
+          "level": "optional",
+          "unavailableBehavior": "不引用无法核对全文的案例"
+        }
+      ]
+    },
+    {
+      "id": "继承权与遗嘱遗赠争议起诉材料",
+      "kind": "atomic",
+      "displayName": "继承权与遗嘱遗赠争议起诉材料",
+      "goal": "围绕继承人资格、继承权、遗嘱或遗赠效力形成原告请求和起诉材料。",
+      "notFor": [
+        "遗产范围和份额均明确后的单纯分割诉讼",
+        "为被告或相对方形成答辩材料"
+      ],
+      "deliverables": [
+        "身份效力争点与请求表",
+        "起诉材料包"
+      ],
+      "path": "skills/继承权与遗嘱遗赠争议起诉材料",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": [
+        {
+          "id": "law-source-verification",
+          "purpose": "核验会改变结论、期限或程序入口的现行法源",
+          "capability": "search_law",
+          "level": "required",
+          "unavailableBehavior": "不拒绝执行、不中断主流程；停止法律结论、期限和确定程序入口，只保留非法律事实、缺口和安全转介。"
+        },
+        {
+          "id": "template-reference",
+          "purpose": "核验文书类型、结构和必要字段",
+          "capability": "search_template",
+          "level": "optional",
+          "unavailableBehavior": "按目标 Skill 的文书降级规则停止可提交格式或使用自包含输出结构"
+        },
+        {
+          "id": "practice-reference",
+          "purpose": "补充去标识化的实务核验与证据组织视角",
+          "capability": "search_practiced",
+          "level": "optional",
+          "unavailableBehavior": "继续完成不依赖实务增强的基础成果"
+        },
+        {
+          "id": "fact-similar-case",
+          "purpose": "按去标识化事实链对照公开案例",
+          "capability": "search_case_by_fact",
+          "level": "optional",
+          "unavailableBehavior": "不使用类案增强，不影响基础事实和法源分析"
+        },
+        {
+          "id": "case-detail",
+          "purpose": "核对已确认案例的完整内容",
+          "capability": "get_case_detail",
+          "level": "optional",
+          "unavailableBehavior": "不引用无法核对全文的案例"
+        }
+      ]
+    },
+    {
+      "id": "遗产清册与保全方案",
+      "kind": "atomic",
+      "displayName": "遗产清册与保全方案",
+      "goal": "为已确定的遗产管理主体形成通知、清册、占有控制、保全和管理日志。",
+      "notFor": [
+        "处理争议债权债务、管理费用或实施最终分配"
+      ],
+      "deliverables": [
+        "遗产清册",
+        "通知保全与管理日志"
+      ],
+      "path": "skills/遗产清册与保全方案",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": [
+        {
+          "id": "law-source-verification",
+          "purpose": "核验会改变结论、期限或程序入口的现行法源",
+          "capability": "search_law",
+          "level": "required",
+          "unavailableBehavior": "不拒绝执行、不中断主流程；停止法律结论、期限和确定程序入口，只保留非法律事实、缺口和安全转介。"
+        },
+        {
+          "id": "practice-reference",
+          "purpose": "补充去标识化的实务核验与证据组织视角",
+          "capability": "search_practiced",
+          "level": "optional",
+          "unavailableBehavior": "继续完成不依赖实务增强的基础成果"
+        }
+      ]
+    },
+    {
+      "id": "遗嘱起草与订立方案",
+      "kind": "atomic",
+      "displayName": "遗嘱起草与订立方案",
+      "goal": "为具备遗嘱能力的自然人形成处分范围、形式、见证、执行和更新机制清晰的遗嘱。",
+      "notFor": [
+        "处分不属于遗嘱人的财产"
+      ],
+      "deliverables": [
+        "遗嘱文本",
+        "订立执行与保管清单"
+      ],
+      "path": "skills/遗嘱起草与订立方案",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": [
+        {
+          "id": "law-source-verification",
+          "purpose": "核验会改变结论、期限或程序入口的现行法源",
+          "capability": "search_law",
+          "level": "required",
+          "unavailableBehavior": "不拒绝执行、不中断主流程；停止法律结论、期限和确定程序入口，只保留非法律事实、缺口和安全转介。"
+        },
+        {
+          "id": "template-reference",
+          "purpose": "核验文书类型、结构和必要字段",
+          "capability": "search_template",
+          "level": "optional",
+          "unavailableBehavior": "按目标 Skill 的文书降级规则停止可提交格式或使用自包含输出结构"
+        },
+        {
+          "id": "practice-reference",
+          "purpose": "补充去标识化的实务核验与证据组织视角",
+          "capability": "search_practiced",
+          "level": "optional",
+          "unavailableBehavior": "继续完成不依赖实务增强的基础成果"
+        }
+      ]
+    },
+    {
+      "id": "婚姻成立与效力评估",
+      "kind": "atomic",
+      "displayName": "婚姻成立与效力评估",
+      "goal": "围绕特定婚姻关系形成成立、有效、无效、可撤销或事实婚姻边界的受限评估。",
+      "notFor": [
+        "直接起草离婚诉状"
+      ],
+      "deliverables": [
+        "围绕特定婚姻关系形成成立、有效、无效、可撤销或事实婚姻边界的受限评估。"
+      ],
+      "path": "skills/婚姻成立与效力评估",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "彩礼返还争议方案",
+      "kind": "atomic",
+      "displayName": "彩礼返还争议方案",
+      "goal": "围绕特定彩礼给付和共同生活事实形成返还范围、主体、证据与诉讼方案。",
+      "notFor": [
+        "处理全部夫妻共同财产",
+        "为被告或相对方形成答辩材料"
+      ],
+      "deliverables": [
+        "围绕特定彩礼给付和共同生活事实形成返还范围、主体、证据与诉讼方案。"
+      ],
+      "path": "skills/彩礼返还争议方案",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "同居关系财产析产方案",
+      "kind": "atomic",
+      "displayName": "同居关系财产析产方案",
+      "goal": "对未形成有效婚姻的共同生活财产形成权属、贡献、债务与析产方案。",
+      "notFor": [
+        "按夫妻共同财产当然平均分割"
+      ],
+      "deliverables": [
+        "对未形成有效婚姻的共同生活财产形成权属、贡献、债务与析产方案。"
+      ],
+      "path": "skills/同居关系财产析产方案",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "婚前财产协议起草",
+      "kind": "atomic",
+      "displayName": "婚前财产协议起草",
+      "goal": "为拟结婚双方形成财产权属、债务、重大变动披露和执行边界清晰的婚前协议。",
+      "notFor": [
+        "承诺协议可对抗所有第三人"
+      ],
+      "deliverables": [
+        "为拟结婚双方形成财产权属、债务、重大变动披露和执行边界清晰的婚前协议。"
+      ],
+      "path": "skills/婚前财产协议起草",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "夫妻财产与债务证据图谱",
+      "kind": "atomic",
+      "displayName": "夫妻财产与债务证据图谱",
+      "goal": "对特定婚姻的资产、负债、登记、来源和控制状态形成可回链证据图谱。",
+      "notFor": [
+        "直接给出最终分割比例"
+      ],
+      "deliverables": [
+        "对特定婚姻的资产、负债、登记、来源和控制状态形成可回链证据图谱。"
+      ],
+      "path": "skills/夫妻财产与债务证据图谱",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "婚内财产协议起草",
+      "kind": "atomic",
+      "displayName": "婚内财产协议起草",
+      "goal": "在婚姻存续中形成财产权属、收益、债务和履行机制明确的书面约定。",
+      "notFor": [
+        "借协议逃避第三人债务"
+      ],
+      "deliverables": [
+        "在婚姻存续中形成财产权属、收益、债务和履行机制明确的书面约定。"
+      ],
+      "path": "skills/婚内财产协议起草",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "复杂夫妻财产分割方案",
+      "kind": "atomic",
+      "displayName": "复杂夫妻财产分割方案",
+      "goal": "对房产、股权及其他资产形成家庭法上的财产性质、权属争议和分割请求情景方案。",
+      "notFor": [
+        "税务、公司治理、股权交易执行、投资产品、金融监管或专业估值意见"
+      ],
+      "deliverables": [
+        "对房产、股权及其他资产形成家庭法上的财产性质、权属争议和分割请求情景方案。"
+      ],
+      "path": "skills/复杂夫妻财产分割方案",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "夫妻财产紧急保全方案",
+      "kind": "atomic",
+      "displayName": "夫妻财产紧急保全方案",
+      "goal": "针对转移、隐匿、挥霍或处分风险形成证据固定、行为限制和财产保全方案。",
+      "notFor": [
+        "无证据冻结对方全部财产"
+      ],
+      "deliverables": [
+        "针对转移、隐匿、挥霍或处分风险形成证据固定、行为限制和财产保全方案。"
+      ],
+      "path": "skills/夫妻财产紧急保全方案",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "夫妻共同财产不当处分追回起诉",
+      "kind": "atomic",
+      "displayName": "夫妻共同财产不当处分追回起诉",
+      "goal": "针对赠与、低价转让、恶意串通或隐藏共同财产形成效力、返还评估与起诉材料。",
+      "notFor": [
+        "当然否定所有未经配偶同意的交易",
+        "为被告或受让人形成答辩材料"
+      ],
+      "deliverables": [
+        "针对赠与、低价转让、恶意串通或隐藏共同财产形成效力、返还评估与起诉材料。"
+      ],
+      "path": "skills/夫妻共同财产不当处分追回起诉",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "夫妻共同财产不当处分答辩",
+      "kind": "atomic",
+      "displayName": "夫妻共同财产不当处分答辩",
+      "goal": "被告或受让人针对共同财产赠与、转让、恶意串通或返还请求形成答辩材料。",
+      "notFor": [
+        "为原告提出返还请求"
+      ],
+      "deliverables": [
+        "被告或受让人针对共同财产赠与、转让、恶意串通或返还请求形成答辩材料。"
+      ],
+      "path": "skills/夫妻共同财产不当处分答辩",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "离婚争议证据方案",
+      "kind": "atomic",
+      "displayName": "离婚争议证据方案",
+      "goal": "围绕感情、子女、财产债务、过错和救济请求形成事实—证据—证明责任图谱。",
+      "notFor": [
+        "指导窃取账户或非法监听"
+      ],
+      "deliverables": [
+        "围绕感情、子女、财产债务、过错和救济请求形成事实—证据—证明责任图谱。"
+      ],
+      "path": "skills/离婚争议证据方案",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "离婚谈判与调解方案",
+      "kind": "atomic",
+      "displayName": "离婚谈判与调解方案",
+      "goal": "围绕明确争议和底线形成议题排序、方案区间、交换条件与可落地调解文本要点。",
+      "notFor": [
+        "在胁迫或安全风险下强推共同谈判"
+      ],
+      "deliverables": [
+        "围绕明确争议和底线形成议题排序、方案区间、交换条件与可落地调解文本要点。"
+      ],
+      "path": "skills/离婚谈判与调解方案",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "离婚案件庭审代理方案",
+      "kind": "atomic",
+      "displayName": "离婚案件庭审代理方案",
+      "goal": "针对已立案离婚案件形成争点、举证质证、询问、辩论和调解响应方案。",
+      "notFor": [
+        "代替法院认定事实"
+      ],
+      "deliverables": [
+        "针对已立案离婚案件形成争点、举证质证、询问、辩论和调解响应方案。"
+      ],
+      "path": "skills/离婚案件庭审代理方案",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "离婚约定与裁判履行救济",
+      "kind": "atomic",
+      "displayName": "离婚约定与裁判履行救济",
+      "goal": "针对离婚协议、调解书或判决的未履行事项形成催告、诉讼或执行方案。",
+      "notFor": [
+        "把未登记离婚协议当然作为执行依据"
+      ],
+      "deliverables": [
+        "针对离婚协议、调解书或判决的未履行事项形成催告、诉讼或执行方案。"
+      ],
+      "path": "skills/离婚约定与裁判履行救济",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "离婚后财产争议诉讼材料",
+      "kind": "atomic",
+      "displayName": "离婚后财产争议诉讼材料",
+      "goal": "对漏分、隐藏、转移或离婚协议财产条款争议形成起诉和证据材料。",
+      "notFor": [
+        "执行已明确的生效给付义务",
+        "为被告或相对方形成答辩材料"
+      ],
+      "deliverables": [
+        "对漏分、隐藏、转移或离婚协议财产条款争议形成起诉和证据材料。"
+      ],
+      "path": "skills/离婚后财产争议诉讼材料",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "亲子关系确认与否认诉讼材料",
+      "kind": "atomic",
+      "displayName": "亲子关系确认与否认诉讼材料",
+      "goal": "围绕特定亲子身份争议形成主体、请求、鉴定与证据方案及诉讼材料。",
+      "notFor": [
+        "未经程序直接宣告亲子关系",
+        "为被告或相对方形成答辩材料"
+      ],
+      "deliverables": [
+        "围绕特定亲子身份争议形成主体、请求、鉴定与证据方案及诉讼材料。"
+      ],
+      "path": "skills/亲子关系确认与否认诉讼材料",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "子女抚养费与共同照护协议",
+      "kind": "atomic",
+      "displayName": "子女抚养费与共同照护协议",
+      "goal": "为父母形成抚养费项目、支付调整、重大支出、共同决策和履行机制明确的协议。",
+      "notFor": [
+        "排除子女依法请求合理费用的权利"
+      ],
+      "deliverables": [
+        "为父母形成抚养费项目、支付调整、重大支出、共同决策和履行机制明确的协议。"
+      ],
+      "path": "skills/子女抚养费与共同照护协议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "探望安排与履行方案",
+      "kind": "atomic",
+      "displayName": "探望安排与履行方案",
+      "goal": "形成兼顾子女安全、稳定和真实意愿的探望时间、交接、监督及履行救济方案。",
+      "notFor": [
+        "对未成年人人身进行强制执行"
+      ],
+      "deliverables": [
+        "形成兼顾子女安全、稳定和真实意愿的探望时间、交接、监督及履行救济方案。"
+      ],
+      "path": "skills/探望安排与履行方案",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "变更直接抚养关系方案",
+      "kind": "atomic",
+      "displayName": "变更直接抚养关系方案",
+      "goal": "针对既有抚养安排后的重大变化形成变更条件、子女利益、证据和诉讼材料。",
+      "notFor": [
+        "仅以父母主观不满请求变更",
+        "为被告或相对方形成答辩材料"
+      ],
+      "deliverables": [
+        "针对既有抚养安排后的重大变化形成变更条件、子女利益、证据和诉讼材料。"
+      ],
+      "path": "skills/变更直接抚养关系方案",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "配偶扶养请求方案",
+      "kind": "atomic",
+      "displayName": "配偶扶养请求方案",
+      "goal": "针对婚姻存续中一方不履行配偶扶养义务形成项目、测算、证据和救济材料。",
+      "notFor": [
+        "处理子女抚养费或成年亲属赡养"
+      ],
+      "deliverables": [
+        "针对婚姻存续中一方不履行配偶扶养义务形成项目、测算、证据和救济材料。"
+      ],
+      "path": "skills/配偶扶养请求方案",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "境内收养条件与登记方案",
+      "kind": "atomic",
+      "displayName": "境内收养条件与登记方案",
+      "goal": "对中国境内收养形成收养人、被收养人、送养人条件、同意、评估和登记材料方案。",
+      "notFor": [
+        "规避收养登记或买卖儿童"
+      ],
+      "deliverables": [
+        "对中国境内收养形成收养人、被收养人、送养人条件、同意、评估和登记材料方案。"
+      ],
+      "path": "skills/境内收养条件与登记方案",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "意定监护协议起草",
+      "kind": "atomic",
+      "displayName": "意定监护协议起草",
+      "goal": "为具有完全民事行为能力的成年人形成尊重本人意愿、职责、监督和财产边界清晰的意定监护协议。",
+      "notFor": [
+        "代替本人作出未经授权的医疗或财产决定"
+      ],
+      "deliverables": [
+        "为具有完全民事行为能力的成年人形成尊重本人意愿、职责、监督和财产边界清晰的意定监护协议。"
+      ],
+      "path": "skills/意定监护协议起草",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "行为能力认定与恢复特别程序材料",
+      "kind": "atomic",
+      "displayName": "行为能力认定与恢复特别程序材料",
+      "goal": "围绕成年人行为能力认定、恢复及鉴定形成特别程序申请材料。",
+      "notFor": [
+        "首次监护设立指定或既有监护撤销变更"
+      ],
+      "deliverables": [
+        "围绕成年人行为能力认定、恢复及鉴定形成特别程序申请材料。"
+      ],
+      "path": "skills/行为能力认定与恢复特别程序材料",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "被监护人财产保护方案",
+      "kind": "atomic",
+      "displayName": "被监护人财产保护方案",
+      "goal": "针对监护人处分、侵占或管理被监护人财产的风险形成清单、冲突审查和追索保全方案。",
+      "notFor": [
+        "为监护人个人利益处分财产"
+      ],
+      "deliverables": [
+        "针对监护人处分、侵占或管理被监护人财产的风险形成清单、冲突审查和追索保全方案。"
+      ],
+      "path": "skills/被监护人财产保护方案",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "家庭暴力证据固定方案",
+      "kind": "atomic",
+      "displayName": "家庭暴力证据固定方案",
+      "goal": "围绕家庭暴力事实形成合法、创伤知情的证据保全、调取、时间线和证明方案。",
+      "notFor": [
+        "诱导受害人冒险取证"
+      ],
+      "deliverables": [
+        "围绕家庭暴力事实形成合法、创伤知情的证据保全、调取、时间线和证明方案。"
+      ],
+      "path": "skills/家庭暴力证据固定方案",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "人身安全保护令履行救济",
+      "kind": "atomic",
+      "displayName": "人身安全保护令履行救济",
+      "goal": "针对违反保护令或措施不足形成记录、法院公安执行协助、复议和安全分流方案。",
+      "notFor": [
+        "自行接触违反者执法，或形成刑事责任判断与刑事控告代理成果",
+        "仅在事实关系和法定适用范围核实后进入；普通同居财产分割转同居财产原子，刑事或人身侵权事项转相邻领域"
+      ],
+      "deliverables": [
+        "针对违反保护令或措施不足形成记录、法院公安执行协助、复议和安全分流方案。"
+      ],
+      "path": "skills/人身安全保护令履行救济",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "遗嘱与遗赠效力评估",
+      "kind": "atomic",
+      "displayName": "遗嘱与遗赠效力评估",
+      "goal": "对特定遗嘱或遗赠形成形式、能力、真实意思、处分权限、冲突与保留份额评估。",
+      "notFor": [
+        "把公证作为所有遗嘱有效的必要条件"
+      ],
+      "deliverables": [
+        "对特定遗嘱或遗赠形成形式、能力、真实意思、处分权限、冲突与保留份额评估。"
+      ],
+      "path": "skills/遗嘱与遗赠效力评估",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "继承争议证据方案",
+      "kind": "atomic",
+      "displayName": "继承争议证据方案",
+      "goal": "围绕亲属身份、遗嘱形成、财产权属、贡献扶养、遗产债务和处分形成证据图谱。",
+      "notFor": [
+        "以非法方式获取医疗或账户信息"
+      ],
+      "deliverables": [
+        "围绕亲属身份、遗嘱形成、财产权属、贡献扶养、遗产债务和处分形成证据图谱。"
+      ],
+      "path": "skills/继承争议证据方案",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "遗产分割协商与调解方案",
+      "kind": "atomic",
+      "displayName": "遗产分割协商与调解方案",
+      "goal": "在继承主体和主要遗产可识别时形成份额、实物分配、补偿、债务和履行的协商方案。",
+      "notFor": [
+        "掩盖遗嘱效力或遗产归属重大争议"
+      ],
+      "deliverables": [
+        "在继承主体和主要遗产可识别时形成份额、实物分配、补偿、债务和履行的协商方案。"
+      ],
+      "path": "skills/遗产分割协商与调解方案",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "遗产管理人确定与指定申请",
+      "kind": "atomic",
+      "displayName": "遗产管理人确定与指定申请",
+      "goal": "在遗产管理人无法协商确定或履职空缺时形成选任、指定、管辖和申请材料。",
+      "notFor": [
+        "把申请人意愿等同法院必然指定"
+      ],
+      "deliverables": [
+        "在遗产管理人无法协商确定或履职空缺时形成选任、指定、管辖和申请材料。"
+      ],
+      "path": "skills/遗产管理人确定与指定申请",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "遗产管理人履职争议救济",
+      "kind": "atomic",
+      "displayName": "遗产管理人履职争议救济",
+      "goal": "针对不当处分、怠于履职、利益冲突、损害或报酬争议形成监督、变更和责任方案。",
+      "notFor": [
+        "仅因分配结果不满意即当然撤换"
+      ],
+      "deliverables": [
+        "针对不当处分、怠于履职、利益冲突、损害或报酬争议形成监督、变更和责任方案。"
+      ],
+      "path": "skills/遗产管理人履职争议救济",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "继承协议与裁判履行救济",
+      "kind": "atomic",
+      "displayName": "继承协议与裁判履行救济",
+      "goal": "针对遗产分割协议、调解书或生效裁判未履行形成催告、执行、处分协助和后续救济材料。",
+      "notFor": [
+        "把普通分割协议当然作为强制执行依据"
+      ],
+      "deliverables": [
+        "针对遗产分割协议、调解书或生效裁判未履行形成催告、执行、处分协助和后续救济材料。"
+      ],
+      "path": "skills/继承协议与裁判履行救济",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "遗赠扶养协议起草",
+      "kind": "atomic",
+      "displayName": "遗赠扶养协议起草",
+      "goal": "围绕持续扶养与身后财产给付形成义务、监督、违约、财产权属和执行条款完整的协议。",
+      "notFor": [
+        "用未来遗赠掩盖不真实或违法交易"
+      ],
+      "deliverables": [
+        "围绕持续扶养与身后财产给付形成义务、监督、违约、财产权属和执行条款完整的协议。"
+      ],
+      "path": "skills/遗赠扶养协议起草",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "遗嘱信托法律安排",
+      "kind": "atomic",
+      "displayName": "遗嘱信托法律安排",
+      "goal": "为明确家庭目的形成遗嘱信托的财产、受托人、受益、治理、终止和执行法律文书方案。",
+      "notFor": [
+        "承诺金融机构承接、税务结果或投资收益"
+      ],
+      "deliverables": [
+        "为明确家庭目的形成遗嘱信托的财产、受托人、受益、治理、终止和执行法律文书方案。"
+      ],
+      "path": "skills/遗嘱信托法律安排",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "人身保险受益与继承边界评估",
+      "kind": "atomic",
+      "displayName": "人身保险受益与继承边界评估",
+      "goal": "对特定人身保险的投保人、被保险人、受益人指定变更与保险金是否进入遗产形成法律评估。",
+      "notFor": [
+        "推荐保险产品或承诺税务结果"
+      ],
+      "deliverables": [
+        "对特定人身保险的投保人、被保险人、受益人指定变更与保险金是否进入遗产形成法律评估。"
+      ],
+      "path": "skills/人身保险受益与继承边界评估",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "家庭传承法律问题与转交边界图",
+      "kind": "atomic",
+      "displayName": "家庭传承法律问题与转交边界图",
+      "goal": "识别家庭关系、财产权属、监护与继承目标中的法律问题、冲突、单一工具候选及专业转交边界。",
+      "notFor": [
+        "形成税务、投资、金融产品、公司治理或境外法结论，也不输出跨专业综合实施方案"
+      ],
+      "deliverables": [
+        "识别家庭关系、财产权属、监护与继承目标中的法律问题、冲突、单一工具候选及专业转交边界。"
+      ],
+      "path": "skills/家庭传承法律问题与转交边界图",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "婚姻效力与撤销争议诉讼材料",
+      "kind": "atomic",
+      "displayName": "婚姻效力与撤销争议诉讼材料",
+      "goal": "围绕婚姻无效、撤销或身份确认争议形成主体、请求、期限、证据和诉讼材料。",
+      "notFor": [
+        "行政婚姻登记办理或普通离婚诉讼",
+        "为被告或相对方形成答辩材料"
+      ],
+      "deliverables": [
+        "围绕婚姻无效、撤销或身份确认争议形成主体、请求、期限、证据和诉讼材料。"
+      ],
+      "path": "skills/婚姻效力与撤销争议诉讼材料",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "收养成立与效力争议方案",
+      "kind": "atomic",
+      "displayName": "收养成立与效力争议方案",
+      "goal": "围绕收养主体、同意、登记、成立或无效及其亲子监护扶养继承后果形成评估和起诉材料。",
+      "notFor": [
+        "一般亲子关系确认或单纯收养登记办理",
+        "为被告或相对方形成答辩材料"
+      ],
+      "deliverables": [
+        "围绕收养主体、同意、登记、成立或无效及其亲子监护扶养继承后果形成评估和起诉材料。"
+      ],
+      "path": "skills/收养成立与效力争议方案",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "子女抚养与探望履行救济",
+      "kind": "atomic",
+      "displayName": "子女抚养与探望履行救济",
+      "goal": "针对抚养费、直接抚养、交接或探望安排不履行形成依据分类、儿童安全和执行救济材料。",
+      "notFor": [
+        "对未成年人人身或探望行为直接强制执行"
+      ],
+      "deliverables": [
+        "针对抚养费、直接抚养、交接或探望安排不履行形成依据分类、儿童安全和执行救济材料。"
+      ],
+      "path": "skills/子女抚养与探望履行救济",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "家事主体管辖与期限评估",
+      "kind": "atomic",
+      "displayName": "家事主体管辖与期限评估",
+      "goal": "针对一个已明确的单一家事目标形成程序入口、主体资格、受理机关、管辖、期限和失权风险分流表。",
+      "notFor": [
+        "作为全领域总控入口，或输出跨轨道实体策略、固定组合和具体诉辩结论"
+      ],
+      "deliverables": [
+        "针对一个已明确的单一家事目标形成程序入口、主体资格、受理机关、管辖、期限和失权风险分流表。"
+      ],
+      "path": "skills/家事主体管辖与期限评估",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "家事裁判上诉与审级救济",
+      "kind": "atomic",
+      "displayName": "家事裁判上诉与审级救济",
+      "goal": "针对已送达的一审家事裁判形成期限、上诉请求、事实法律争点、补充证据和审级分流方案。",
+      "notFor": [
+        "执行、再审、执行异议或刑事救济"
+      ],
+      "deliverables": [
+        "针对已送达的一审家事裁判形成期限、上诉请求、事实法律争点、补充证据和审级分流方案。"
+      ],
+      "path": "skills/家事裁判上诉与审级救济",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "遗赠扶养协议履行与解除争议",
+      "kind": "atomic",
+      "displayName": "遗赠扶养协议履行与解除争议",
+      "goal": "针对遗赠扶养协议履行、解除、补偿、遗产取得和责任争议形成评估与起诉材料。",
+      "notFor": [
+        "重新起草尚未履行的新协议",
+        "为被告或相对方形成答辩材料"
+      ],
+      "deliverables": [
+        "针对遗赠扶养协议履行、解除、补偿、遗产取得和责任争议形成评估与起诉材料。"
+      ],
+      "path": "skills/遗赠扶养协议履行与解除争议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "接受与放弃继承意思表示方案",
+      "kind": "atomic",
+      "displayName": "接受与放弃继承意思表示方案",
+      "goal": "针对接受、放弃继承或受遗赠的意思表示、期限、能力、代理和撤回争议形成法律方案。",
+      "notFor": [
+        "直接代当事人作出或签署不可逆意思表示"
+      ],
+      "deliverables": [
+        "针对接受、放弃继承或受遗赠的意思表示、期限、能力、代理和撤回争议形成法律方案。"
+      ],
+      "path": "skills/接受与放弃继承意思表示方案",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "老年人与成年亲属赡养请求方案",
+      "kind": "atomic",
+      "displayName": "老年人与成年亲属赡养请求方案",
+      "goal": "针对成年子女或其他法定义务人的赡养责任形成项目、测算、证据和协商诉讼材料。",
+      "notFor": [
+        "处理配偶扶养或未成年子女抚养费"
+      ],
+      "deliverables": [
+        "针对成年子女或其他法定义务人的赡养责任形成项目、测算、证据和协商诉讼材料。"
+      ],
+      "path": "skills/老年人与成年亲属赡养请求方案",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "遗产范围与分割争议诉讼材料",
+      "kind": "atomic",
+      "displayName": "遗产范围与分割争议诉讼材料",
+      "goal": "在继承资格和主要继承依据可识别时，围绕遗产范围、债务、份额和实物分割形成诉讼材料。",
+      "notFor": [
+        "继承人资格或遗嘱遗赠效力为核心的争议",
+        "为被告或相对方形成答辩材料"
+      ],
+      "deliverables": [
+        "在继承资格和主要继承依据可识别时，围绕遗产范围、债务、份额和实物分割形成诉讼材料。"
+      ],
+      "path": "skills/遗产范围与分割争议诉讼材料",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "彩礼返还争议答辩",
+      "kind": "atomic",
+      "displayName": "彩礼返还争议答辩",
+      "goal": "被告围绕彩礼范围、共同生活、使用与返还责任形成答辩材料。",
+      "notFor": [
+        "原告就彩礼返还提起诉讼"
+      ],
+      "deliverables": [
+        "被告围绕彩礼范围、共同生活、使用与返还责任形成答辩材料。"
+      ],
+      "path": "skills/彩礼返还争议答辩",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "离婚诉讼答辩材料",
+      "kind": "atomic",
+      "displayName": "离婚诉讼答辩材料",
+      "goal": "被告围绕离婚、子女、财产债务和附随请求形成答辩材料。",
+      "notFor": [
+        "原告提起离婚诉讼"
+      ],
+      "deliverables": [
+        "被告围绕离婚、子女、财产债务和附随请求形成答辩材料。"
+      ],
+      "path": "skills/离婚诉讼答辩材料",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "亲子关系争议答辩材料",
+      "kind": "atomic",
+      "displayName": "亲子关系争议答辩材料",
+      "goal": "被告围绕亲子关系确认或否认请求、鉴定与证据形成答辩材料。",
+      "notFor": [
+        "原告提起亲子关系诉讼"
+      ],
+      "deliverables": [
+        "被告围绕亲子关系确认或否认请求、鉴定与证据形成答辩材料。"
+      ],
+      "path": "skills/亲子关系争议答辩材料",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "抚养费争议答辩材料",
+      "kind": "atomic",
+      "displayName": "抚养费争议答辩材料",
+      "goal": "被告围绕子女需要、负担能力、既有给付和调整事由形成答辩材料。",
+      "notFor": [
+        "原告提起抚养费请求或调整诉讼"
+      ],
+      "deliverables": [
+        "被告围绕子女需要、负担能力、既有给付和调整事由形成答辩材料。"
+      ],
+      "path": "skills/抚养费争议答辩材料",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "变更直接抚养答辩材料",
+      "kind": "atomic",
+      "displayName": "变更直接抚养答辩材料",
+      "goal": "被告以最有利于未成年人为中心形成变更直接抚养争议答辩材料。",
+      "notFor": [
+        "原告请求变更直接抚养"
+      ],
+      "deliverables": [
+        "被告以最有利于未成年人为中心形成变更直接抚养争议答辩材料。"
+      ],
+      "path": "skills/变更直接抚养答辩材料",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "离婚后财产争议答辩材料",
+      "kind": "atomic",
+      "displayName": "离婚后财产争议答辩材料",
+      "goal": "被告围绕漏分、隐藏、转移或离婚协议财产条款争议形成答辩材料。",
+      "notFor": [
+        "原告提起离婚后财产诉讼"
+      ],
+      "deliverables": [
+        "被告围绕漏分、隐藏、转移或离婚协议财产条款争议形成答辩材料。"
+      ],
+      "path": "skills/离婚后财产争议答辩材料",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "婚姻效力与撤销争议答辩材料",
+      "kind": "atomic",
+      "displayName": "婚姻效力与撤销争议答辩材料",
+      "goal": "相对方围绕婚姻无效、撤销或身份确认请求形成答辩材料。",
+      "notFor": [
+        "原告或申请人提出婚姻身份请求"
+      ],
+      "deliverables": [
+        "相对方围绕婚姻无效、撤销或身份确认请求形成答辩材料。"
+      ],
+      "path": "skills/婚姻效力与撤销争议答辩材料",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "收养成立与效力争议答辩材料",
+      "kind": "atomic",
+      "displayName": "收养成立与效力争议答辩材料",
+      "goal": "相对方围绕收养成立、效力及身份后果形成答辩材料。",
+      "notFor": [
+        "原告或申请人提出收养效力请求"
+      ],
+      "deliverables": [
+        "相对方围绕收养成立、效力及身份后果形成答辩材料。"
+      ],
+      "path": "skills/收养成立与效力争议答辩材料",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "遗赠扶养协议争议答辩材料",
+      "kind": "atomic",
+      "displayName": "遗赠扶养协议争议答辩材料",
+      "goal": "被告围绕遗赠扶养协议履行、解除、补偿和责任形成答辩材料。",
+      "notFor": [
+        "原告提起遗赠扶养协议诉讼"
+      ],
+      "deliverables": [
+        "被告围绕遗赠扶养协议履行、解除、补偿和责任形成答辩材料。"
+      ],
+      "path": "skills/遗赠扶养协议争议答辩材料",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "继承权与遗嘱遗赠争议答辩材料",
+      "kind": "atomic",
+      "displayName": "继承权与遗嘱遗赠争议答辩材料",
+      "goal": "被告围绕继承资格、继承权、遗嘱或遗赠效力形成答辩材料。",
+      "notFor": [
+        "原告提起继承权或遗嘱遗赠诉讼"
+      ],
+      "deliverables": [
+        "被告围绕继承资格、继承权、遗嘱或遗赠效力形成答辩材料。"
+      ],
+      "path": "skills/继承权与遗嘱遗赠争议答辩材料",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "遗产范围与分割争议答辩材料",
+      "kind": "atomic",
+      "displayName": "遗产范围与分割争议答辩材料",
+      "goal": "被告围绕遗产范围、债务、份额和实物分割形成答辩材料。",
+      "notFor": [
+        "原告提起遗产范围或分割诉讼"
+      ],
+      "deliverables": [
+        "被告围绕遗产范围、债务、份额和实物分割形成答辩材料。"
+      ],
+      "path": "skills/遗产范围与分割争议答辩材料",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "监护设立指定与临时监护方案",
+      "kind": "atomic",
+      "displayName": "监护设立指定与临时监护方案",
+      "goal": "针对未成年人或成年人监护缺位形成首次监护设立、指定、临时保护和启动方案。",
+      "notFor": [
+        "行为能力认定、既有监护人的撤销或为候选监护人谋取财产利益"
+      ],
+      "deliverables": [
+        "针对未成年人或成年人监护缺位形成首次监护设立、指定、临时保护和启动方案。"
+      ],
+      "path": "skills/监护设立指定与临时监护方案",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "家庭财产赠与与生前转移安排",
+      "kind": "atomic",
+      "displayName": "家庭财产赠与与生前转移安排",
+      "goal": "围绕家庭成员间特定财产的赠与、附义务或附条件安排、登记交付、撤销和第三人效力形成法律文书。",
+      "notFor": [
+        "税务、投资、金融产品、公司治理、专业估值或境外法意见"
+      ],
+      "deliverables": [
+        "围绕家庭成员间特定财产的赠与、附义务或附条件安排、登记交付、撤销和第三人效力形成法律文书。"
+      ],
+      "path": "skills/家庭财产赠与与生前转移安排",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "继承遗产非诉办理与登记协助",
+      "kind": "atomic",
+      "displayName": "继承遗产非诉办理与登记协助",
+      "goal": "在继承依据基本确定后形成公证或其他凭证、房产登记、金融领取、遗赠交付和权利变更办理路线。",
+      "notFor": [
+        "税务、投资、金融产品、公司治理、境外资产或境外法实体意见"
+      ],
+      "deliverables": [
+        "在继承依据基本确定后形成公证或其他凭证、房产登记、金融领取、遗赠交付和权利变更办理路线。"
+      ],
+      "path": "skills/继承遗产非诉办理与登记协助",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "家事执行程序异议与复议",
+      "kind": "atomic",
+      "displayName": "家事执行程序异议与复议",
+      "goal": "由申请执行人或被执行人针对家事执行措施、程序、终结恢复或执行和解形成异议复议材料。",
+      "notFor": [
+        "案外人主张执行标的实体权利或重新审理原实体争议"
+      ],
+      "deliverables": [
+        "由申请执行人或被执行人针对家事执行措施、程序、终结恢复或执行和解形成异议复议材料。"
+      ],
+      "path": "skills/家事执行程序异议与复议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "遗产分配实施方案",
+      "kind": "atomic",
+      "displayName": "遗产分配实施方案",
+      "goal": "在遗产范围、债务、管理权限和分配依据达到可分配状态后形成分配、交付、登记和留痕方案。",
+      "notFor": [
+        "遗产范围、债务或权限尚未关闭时不可逆处分核心遗产"
+      ],
+      "deliverables": [
+        "在遗产范围、债务、管理权限和分配依据达到可分配状态后形成分配、交付、登记和留痕方案。"
+      ],
+      "path": "skills/遗产分配实施方案",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "人身安全保护令被申请人答辩与复议",
+      "kind": "atomic",
+      "displayName": "人身安全保护令被申请人答辩与复议",
+      "goal": "被申请人围绕保护令事实、措施范围、证据和复议形成程序应对，不接触或报复申请人。",
+      "notFor": [
+        "刑事辩护或控告",
+        "联系、威胁、报复、跟踪受保护人或规避保护措施"
+      ],
+      "deliverables": [
+        "被申请人围绕保护令事实、措施范围、证据和复议形成程序应对，不接触或报复申请人。"
+      ],
+      "path": "skills/人身安全保护令被申请人答辩与复议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "监护撤销变更相对方答辩",
+      "kind": "atomic",
+      "displayName": "监护撤销变更相对方答辩",
+      "goal": "现任监护人或利害关系人针对撤销、变更或临时保护请求形成答辩材料。",
+      "notFor": [
+        "作为申请人提出撤销或变更监护",
+        "以答辩妨害被监护人的即时安全或最佳利益"
+      ],
+      "deliverables": [
+        "现任监护人或利害关系人针对撤销、变更或临时保护请求形成答辩材料。"
+      ],
+      "path": "skills/监护撤销变更相对方答辩",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "遗产债权债务与管理费用处理",
+      "kind": "atomic",
+      "displayName": "遗产债权债务与管理费用处理",
+      "goal": "为已确定的遗产管理主体形成债权通知核查、债务清偿顺序、争议债权和管理费用方案。",
+      "notFor": [
+        "制作初始遗产清册或实施最终遗产分配"
+      ],
+      "deliverables": [
+        "为已确定的遗产管理主体形成债权通知核查、债务清偿顺序、争议债权和管理费用方案。"
+      ],
+      "path": "skills/遗产债权债务与管理费用处理",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "家事执行案外人权利救济",
+      "kind": "atomic",
+      "displayName": "家事执行案外人权利救济",
+      "goal": "案外人针对家事执行标的主张实体权利时形成异议、复议或案外人诉讼分流材料。",
+      "notFor": [
+        "申请执行人或被执行人的一般执行程序异议"
+      ],
+      "deliverables": [
+        "案外人针对家事执行标的主张实体权利时形成异议、复议或案外人诉讼分流材料。"
+      ],
+      "path": "skills/家事执行案外人权利救济",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "配偶扶养请求答辩方案",
+      "kind": "atomic",
+      "displayName": "配偶扶养请求答辩方案",
+      "goal": "由被请求履行配偶扶养义务的一方形成义务基础、实际需要、履行能力和给付范围的答辩材料。",
+      "notFor": [
+        "作为请求方主张配偶扶养，或处理子女抚养、老年人赡养"
+      ],
+      "deliverables": [
+        "由被请求履行配偶扶养义务的一方形成义务基础、实际需要、履行能力和给付范围的答辩材料。"
+      ],
+      "path": "skills/配偶扶养请求答辩方案",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "老年人与成年亲属赡养请求答辩方案",
+      "kind": "atomic",
+      "displayName": "老年人与成年亲属赡养请求答辩方案",
+      "goal": "由被请求履行赡养义务的一方形成义务主体、实际需要、履行能力、多人分担和既有给付的答辩材料。",
+      "notFor": [
+        "作为请求方主张赡养，或处理配偶扶养、未成年子女抚养"
+      ],
+      "deliverables": [
+        "由被请求履行赡养义务的一方形成义务主体、实际需要、履行能力、多人分担和既有给付的答辩材料。"
+      ],
+      "path": "skills/老年人与成年亲属赡养请求答辩方案",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "婚姻收养登记机关决定行政救济",
+      "kind": "atomic",
+      "displayName": "婚姻收养登记机关决定行政救济",
+      "goal": "针对婚姻或必要收养登记的拒绝、错误记载、不予更正等登记机关决定，识别行政救济入口、期限和材料。",
+      "notFor": [
+        "法院处理婚姻、亲子或收养的民事身份效力争议",
+        "代替首次登记办理材料准备"
+      ],
+      "deliverables": [
+        "针对婚姻或必要收养登记的拒绝、错误记载、不予更正等登记机关决定，识别行政救济入口、期限和材料。"
+      ],
+      "path": "skills/婚姻收养登记机关决定行政救济",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "宣告失踪或死亡特别程序材料",
+      "kind": "atomic",
+      "displayName": "宣告失踪或死亡特别程序材料",
+      "goal": "围绕特定自然人的宣告失踪或宣告死亡条件形成利害关系人、事实期限和特别程序申请材料。",
+      "notFor": [
+        "直接实施监护、婚姻身份、继承、债务或遗产处分后果"
+      ],
+      "deliverables": [
+        "围绕特定自然人的宣告失踪或宣告死亡条件形成利害关系人、事实期限和特别程序申请材料。"
+      ],
+      "path": "skills/宣告失踪或死亡特别程序材料",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "失踪死亡宣告家事后果评估",
+      "kind": "atomic",
+      "displayName": "失踪死亡宣告家事后果评估",
+      "goal": "在已有或预期宣告结果基础上识别监护、财产代管、婚姻身份、继承开始和遗产管理的后续入口。",
+      "notFor": [
+        "起草宣告申请",
+        "直接代替监护、离婚、继承确认、遗产管理或债务处理原子形成实施成果"
+      ],
+      "deliverables": [
+        "在已有或预期宣告结果基础上识别监护、财产代管、婚姻身份、继承开始和遗产管理的后续入口。"
+      ],
+      "path": "skills/失踪死亡宣告家事后果评估",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "婚姻家事与财富传承导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    }
+  ],
+  "guideName": "婚姻家事与财富传承导航"
+}

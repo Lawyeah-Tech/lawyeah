@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备交割确认与完成备忘"
+  short_description: "准备交割当日条件满足确认文件互交和保留项"
+  default_prompt: "使用 $准备交割确认与完成备忘，在单一立场下准备交割当日的确认备忘、未完成项和保留。"

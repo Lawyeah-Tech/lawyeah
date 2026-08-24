@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备对解除通知的异议"
+  short_description: "准备对解除通知的异议函和确认未解除分流"
+  default_prompt: "使用 $准备对合同解除通知的异议，使用本技能为相对方准备对解除通知的异议材料。"

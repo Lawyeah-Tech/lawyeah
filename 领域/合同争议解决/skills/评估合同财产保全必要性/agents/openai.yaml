@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估财产保全必要性"
+  short_description: "评估是否需要财产保全及担保风险时机"
+  default_prompt: "使用 $评估合同财产保全必要性，在单一立场下评估财产保全必要性，不要直接写申请书。"

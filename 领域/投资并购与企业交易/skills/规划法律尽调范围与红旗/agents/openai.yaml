@@ -1,0 +1,4 @@
+interface:
+  display_name: "规划法律尽调范围与红旗"
+  short_description: "按交易路径形成尽调模块、资料清单和红旗分级"
+  default_prompt: "使用 $规划法律尽调范围与红旗，规划中国大陆投资并购法律尽调范围。"

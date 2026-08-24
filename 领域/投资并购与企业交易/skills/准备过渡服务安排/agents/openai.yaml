@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备过渡服务安排"
+  short_description: "准备发送前TSA范围期限收费和退出"
+  default_prompt: "使用 $准备过渡服务安排，在单一立场下准备交割后卖方过渡服务的发送前安排。"

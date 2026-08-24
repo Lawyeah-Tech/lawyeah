@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估是否提出工程反诉"
+  short_description: "评估是否提出工程反诉及管辖风险"
+  default_prompt: "使用 $评估是否提出工程反诉，在单一立场下处理中国大陆建设工程争议中的「评估是否提出工程反诉」。"

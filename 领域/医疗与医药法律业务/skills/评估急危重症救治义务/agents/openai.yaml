@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估急危重症救治义务"
+  short_description: "评估急诊抢救中的紧急情况、批准和合理诊疗义务"
+  default_prompt: "使用 $评估急危重症救治义务，在单一立场下处理中国大陆评估急危重症救治义务事项。"

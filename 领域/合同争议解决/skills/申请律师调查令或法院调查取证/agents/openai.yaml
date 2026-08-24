@@ -1,0 +1,4 @@
+interface:
+  display_name: "申请律师调查令或法院调查取证"
+  short_description: "准备律师调查令或法院调查取证申请和范围"
+  default_prompt: "使用 $申请律师调查令或法院调查取证，使用本技能申请律师调查令或法院调查取证，禁止违法调取个人信息。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估解除权是否成立"
+  short_description: "判断约定或法定解除权、催告必要和除斥，不发解除函"
+  default_prompt: "使用 $评估解除权是否成立，在单一立场下评估中国大陆一般合同争议的解除权是否成立。"

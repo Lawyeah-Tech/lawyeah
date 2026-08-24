@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备排他谈判与冻结安排"
+  short_description: "准备发送前排他锁定期禁止询价和禁止处置条款"
+  default_prompt: "使用 $准备排他谈判与冻结安排，在单一立场下准备发送前排他谈判与标的冻结条款。"

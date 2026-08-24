@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估招投标与中标效力"
+  short_description: "判断必须招标、中标效力和结算依据接口"
+  default_prompt: "使用 $评估招投标与中标效力，在单一立场下处理中国大陆建设工程争议中的「评估招投标与中标效力」。"

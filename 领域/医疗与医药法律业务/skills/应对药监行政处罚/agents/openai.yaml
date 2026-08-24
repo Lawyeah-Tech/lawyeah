@@ -1,0 +1,4 @@
+interface:
+  display_name: "应对药监行政处罚"
+  short_description: "拆解药监处罚构成、听证和十倍惩罚性赔偿接口"
+  default_prompt: "使用 $应对药监行政处罚，在单一立场下处理中国大陆应对药监行政处罚事项。"

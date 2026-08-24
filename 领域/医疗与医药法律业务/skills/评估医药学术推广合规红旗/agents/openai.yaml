@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估医药学术推广合规红旗"
+  short_description: "识别学术推广和讲者费回扣红旗并给出停止项与转介"
+  default_prompt: "使用 $评估医药学术推广合规红旗，在单一立场下处理中国大陆评估医药学术推广合规红旗事项。"

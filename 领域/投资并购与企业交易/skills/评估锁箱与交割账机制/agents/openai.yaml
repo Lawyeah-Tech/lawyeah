@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估锁箱与交割账机制"
+  short_description: "比较锁箱和交割账并定义泄漏与保护条款"
+  default_prompt: "使用 $评估锁箱与交割账机制，在单一立场下比较锁箱与交割账机制并列出泄漏定义和保护条款。"

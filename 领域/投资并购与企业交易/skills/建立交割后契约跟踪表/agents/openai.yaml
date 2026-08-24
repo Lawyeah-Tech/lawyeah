@@ -1,0 +1,4 @@
+interface:
+  display_name: "建立交割后契约跟踪表"
+  short_description: "建立登记许可赔偿期限和信息权的契约日历"
+  default_prompt: "使用 $建立交割后契约跟踪表，在单一立场下建立交割后登记、许可、赔偿期限和信息权的跟踪表。"

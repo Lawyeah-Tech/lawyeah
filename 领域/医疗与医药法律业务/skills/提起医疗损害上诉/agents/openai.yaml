@@ -1,0 +1,4 @@
+interface:
+  display_name: "提起医疗损害上诉"
+  short_description: "针对未生效医疗损害裁判形成上诉范围理由和期限待核"
+  default_prompt: "使用 $提起医疗损害上诉，在单一立场下处理中国大陆提起医疗损害上诉事项。"

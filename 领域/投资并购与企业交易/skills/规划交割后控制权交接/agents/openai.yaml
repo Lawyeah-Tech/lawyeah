@@ -1,0 +1,4 @@
+interface:
+  display_name: "规划交割后控制权交接"
+  short_description: "规划董事改选印鉴银行和信息权落地计划"
+  default_prompt: "使用 $规划交割后控制权交接，在单一立场下规划交割后董事改选、印鉴、银行和信息权落地。"

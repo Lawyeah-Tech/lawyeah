@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备对交易终止的异议"
+  short_description: "针对已收到的终止通知准备异议和继续交割或索赔分流"
+  default_prompt: "使用 $准备对交易终止的异议，在相对方立场下对已收到的交易终止通知准备异议或主张继续交割。"

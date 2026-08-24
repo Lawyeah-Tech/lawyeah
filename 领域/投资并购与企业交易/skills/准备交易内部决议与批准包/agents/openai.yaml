@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备交易内部决议与批准包"
+  short_description: "准备签约或交割所需股东会董事会决议回避和授权"
+  default_prompt: "使用 $准备交易内部决议与批准包，在单一立场下准备投资并购签约或交割所需的内部决议与批准包。"

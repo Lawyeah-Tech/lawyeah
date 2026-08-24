@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估框架协议与订单冲突"
+  short_description: "确定框架、订单、送货单和对账单的效力层级"
+  default_prompt: "使用 $评估框架协议与订单冲突，在单一立场下评估框架协议与订单、送货单、对账单冲突。"

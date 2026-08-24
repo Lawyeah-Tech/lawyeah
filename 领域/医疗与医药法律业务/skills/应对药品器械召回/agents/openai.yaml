@@ -1,0 +1,4 @@
+interface:
+  display_name: "应对药品器械召回"
+  short_description: "实施药品器械召回的级别、通知、记录和责任接口"
+  default_prompt: "使用 $应对药品器械召回，在单一立场下处理中国大陆应对药品器械召回事项。"

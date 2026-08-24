@@ -1,0 +1,1551 @@
+{
+  "schemaVersion": 2,
+  "id": "resolve-contract-disputes",
+  "displayName": "合同争议解决",
+  "description": "处理中国大陆一般合同已经形成争议后的评估、催告解除、测算、证据、和解和一审两造的多 Skill 领域包。",
+  "version": "1.0.0",
+  "license": "Apache-2.0",
+  "jurisdiction": "CN-mainland",
+  "contentModel": "multi-skill-progressive-disclosure",
+  "reinstallStrategy": "replace",
+  "scope": {
+    "purpose": "处理一般商事和民事合同履行、解除、违约及责任承担争议，形成谈判、诉讼或仲裁解决成果。",
+    "inScope": [
+      "合同效力与履行争议",
+      "解除、违约与损失赔偿",
+      "商事谈判、诉讼和仲裁方案",
+      "一般合同证据与请求权分析"
+    ],
+    "outOfScope": [
+      "尚未发生争议的合同起草",
+      "建设工程、金融借贷、房地产等独立专业争议",
+      "海事海商专门争议"
+    ],
+    "primaryDeliverables": [
+      "争议评估意见",
+      "请求与抗辩方案",
+      "诉讼或仲裁文书",
+      "和解谈判方案"
+    ]
+  },
+  "guideSkill": "合同争议解决导航",
+  "mcp": {
+    "contractRange": "0.0"
+  },
+  "skills": [
+    {
+      "id": "合同争议解决导航",
+      "kind": "guide",
+      "displayName": "合同争议解决导航",
+      "goal": "说明领域包的能力、边界和当前原子 Skill 全貌",
+      "notFor": [
+        "直接完成具体法律业务成果"
+      ],
+      "deliverables": [
+        "领域能力定位结果"
+      ],
+      "path": "skills/合同争议解决导航",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "提起合同纠纷一审",
+          "测算违约金与损害赔偿",
+          "谈判合同和解方案",
+          "准备解除通知",
+          "应对合同纠纷一审",
+          "评估合同管辖与仲裁协议",
+          "评估解除权是否成立",
+          "准备催告履行或补救通知",
+          "建立合同争议证据案卷",
+          "评估合同争议",
+          "评估合同成立与效力",
+          "解释争议条款与填补漏洞",
+          "评估争议中的格式条款",
+          "评估争议期间",
+          "提出合同案件管辖异议",
+          "准备合同仲裁协议异议材料",
+          "建立双向履行时间线",
+          "评估质量瑕疵与检验期间",
+          "评估迟延拒绝与不完全履行",
+          "评估同时履行先履行与不安抗辩",
+          "评估不可抗力情势变更与履行不能",
+          "评估抵销留置与扣款抗辩",
+          "评估债权转让与债务承担争议",
+          "评估变更是否成立",
+          "评估电子合同成立与送达",
+          "评估框架协议与订单冲突",
+          "选择合同违约与侵权竞合路径",
+          "评估债权人代位权",
+          "准备代位权诉讼材料",
+          "评估债权人撤销权",
+          "准备债权人撤销权诉讼",
+          "提起合同成立或效力确认之诉",
+          "提起情势变更变更或解除之诉",
+          "准备对合同解除通知的异议",
+          "准备索赔或违约金主张通知",
+          "评估定金罚则争议",
+          "评估价款结算与发票争议",
+          "处理解除后返还与清理",
+          "评估继续履行是否可能",
+          "保全质量现场与电子证据",
+          "设计合同案件通知送达",
+          "评估合同财产保全必要性",
+          "准备合同财产保全申请",
+          "应对合同案件保全裁定",
+          "准备合同案件公证保全",
+          "准备质量或损失鉴定申请",
+          "规划举证期限与证据交换",
+          "提出合同鉴定异议或重新鉴定",
+          "申请律师调查令或法院调查取证",
+          "起草合同和解协议",
+          "办理合同和解执行力补强",
+          "评估合同调解方案与效力",
+          "选择诉讼仲裁或督促程序",
+          "申请合同金钱支付令",
+          "提起合同仲裁",
+          "准备合同案件庭审",
+          "提起合同案件上诉",
+          "申请撤销仲裁裁决",
+          "申请不予执行仲裁裁决",
+          "应对合同仲裁",
+          "应对合同案件二审",
+          "评估合同反诉或反请求",
+          "准备合同反诉或仲裁反请求",
+          "执行合同生效文书",
+          "应对合同案件执行",
+          "准备合同执行和解"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估合同争议",
+      "kind": "atomic",
+      "displayName": "评估合同争议",
+      "goal": "在单方无冲突立场下形成可决策的合同争议总图",
+      "notFor": [
+        "发送版催告或解除函",
+        "精算终稿",
+        "诉状或答辩",
+        "签前审查起草"
+      ],
+      "deliverables": [
+        "在单方无冲突立场下形成可决策的合同争议总图"
+      ],
+      "path": "skills/评估合同争议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "合同争议解决导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估合同管辖与仲裁协议",
+      "kind": "atomic",
+      "displayName": "评估合同管辖与仲裁协议",
+      "goal": "判断去法院还是仲裁，以及协议是否绊住诉讼",
+      "notFor": [
+        "完整立案包",
+        "过期后赶写管辖异议书",
+        "海事专属或劳动仲裁"
+      ],
+      "deliverables": [
+        "判断去法院还是仲裁，以及协议是否绊住诉讼"
+      ],
+      "path": "skills/评估合同管辖与仲裁协议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "合同争议解决导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估解除权是否成立",
+      "kind": "atomic",
+      "displayName": "评估解除权是否成立",
+      "goal": "判断约定或法定解除权是否成立，不发函",
+      "notFor": [
+        "发送版解除通知",
+        "总体争议总图",
+        "确认之诉诉状"
+      ],
+      "deliverables": [
+        "判断约定或法定解除权是否成立，不发函"
+      ],
+      "path": "skills/评估解除权是否成立",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "合同争议解决导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备催告履行或补救通知",
+      "kind": "atomic",
+      "displayName": "准备催告履行或补救通知",
+      "goal": "形成仍要对方履行或补救的发送前催告",
+      "notFor": [
+        "解除通知",
+        "索赔精算终稿",
+        "已解除后的清理"
+      ],
+      "deliverables": [
+        "形成仍要对方履行或补救的发送前催告"
+      ],
+      "path": "skills/准备催告履行或补救通知",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "合同争议解决导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备解除通知",
+      "kind": "atomic",
+      "displayName": "准备解除通知",
+      "goal": "形成行使解除权的发送前稿和到达设计",
+      "notFor": [
+        "催告未完成且依法须催告",
+        "只要评估",
+        "把发送写成已解除"
+      ],
+      "deliverables": [
+        "形成行使解除权的发送前稿和到达设计"
+      ],
+      "path": "skills/准备解除通知",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "合同争议解决导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "测算违约金与损害赔偿",
+      "kind": "atomic",
+      "displayName": "测算违约金与损害赔偿",
+      "goal": "形成可复核的分项测算，不认定违约已成立",
+      "notFor": [
+        "定性总图",
+        "保险或侵权主轴",
+        "唯一必得总额"
+      ],
+      "deliverables": [
+        "形成可复核的分项测算，不认定违约已成立"
+      ],
+      "path": "skills/测算违约金与损害赔偿",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "合同争议解决导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "建立合同争议证据案卷",
+      "kind": "atomic",
+      "displayName": "建立合同争议证据案卷",
+      "goal": "形成要件、举证责任、材料与合法补证矩阵",
+      "notFor": [
+        "策略总图",
+        "诉状",
+        "违法取证方案"
+      ],
+      "deliverables": [
+        "形成要件、举证责任、材料与合法补证矩阵"
+      ],
+      "path": "skills/建立合同争议证据案卷",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "合同争议解决导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "谈判合同和解方案",
+      "kind": "atomic",
+      "displayName": "谈判合同和解方案",
+      "goal": "形成底线、让步、弃权范围和执行力提示",
+      "notFor": [
+        "已谈拢的和解协议正文",
+        "答辩状",
+        "未成争的补充协议"
+      ],
+      "deliverables": [
+        "形成底线、让步、弃权范围和执行力提示"
+      ],
+      "path": "skills/谈判合同和解方案",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "合同争议解决导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "提起合同纠纷一审",
+      "kind": "atomic",
+      "displayName": "提起合同纠纷一审",
+      "goal": "形成可提交的一审起诉包",
+      "notFor": [
+        "有效仲裁未排除",
+        "劳动工程海事专属",
+        "代提交"
+      ],
+      "deliverables": [
+        "形成可提交的一审起诉包"
+      ],
+      "path": "skills/提起合同纠纷一审",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "合同争议解决导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对合同纠纷一审",
+      "kind": "atomic",
+      "displayName": "应对合同纠纷一审",
+      "goal": "形成首次应诉答辩包",
+      "notFor": [
+        "劳动应诉",
+        "主动起诉",
+        "只要管辖异议终稿且无实体"
+      ],
+      "deliverables": [
+        "形成首次应诉答辩包"
+      ],
+      "path": "skills/应对合同纠纷一审",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "合同争议解决导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估合同成立与效力",
+      "kind": "atomic",
+      "displayName": "评估合同成立与效力",
+      "goal": "争成立、无权代理、无效、可撤销、效力待定；单方",
+      "notFor": [
+        "不替代总体争议评估",
+        "不审理前审查文本"
+      ],
+      "deliverables": [
+        "争成立、无权代理、无效、可撤销、效力待定；单方"
+      ],
+      "path": "skills/评估合同成立与效力",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "合同争议解决导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "解释争议条款与填补漏洞",
+      "kind": "atomic",
+      "displayName": "解释争议条款与填补漏洞",
+      "goal": "核心条款歧义、冲突或漏洞决定请求能否成立；单方",
+      "notFor": [
+        "不重写整份合同",
+        "未成争改条款走起草（搁置）"
+      ],
+      "deliverables": [
+        "核心条款歧义、冲突或漏洞决定请求能否成立；单方"
+      ],
+      "path": "skills/解释争议条款与填补漏洞",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "合同争议解决导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估争议中的格式条款",
+      "kind": "atomic",
+      "displayName": "评估争议中的格式条款",
+      "goal": "对方以格式条款免责或限权，需判断提示说明与效力；单方",
+      "notFor": [
+        "签前格式条款审查走审查领域（搁置）"
+      ],
+      "deliverables": [
+        "对方以格式条款免责或限权，需判断提示说明与效力；单方"
+      ],
+      "path": "skills/评估争议中的格式条款",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "合同争议解决导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估争议期间",
+      "kind": "atomic",
+      "displayName": "评估争议期间",
+      "goal": "单独委托核验期间是否届满；单方",
+      "notFor": [
+        "禁止混算或输出唯一截止日",
+        "解除权实体结论走解除权评估",
+        "质量是否构成瑕疵走质量评估"
+      ],
+      "deliverables": [
+        "单独委托核验期间是否届满；单方"
+      ],
+      "path": "skills/评估争议期间",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "合同争议解决导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "提出合同案件管辖异议",
+      "kind": "atomic",
+      "displayName": "提出合同案件管辖异议",
+      "goal": "已被起诉或被申请，需在法定期限提管辖异议；被请求方",
+      "notFor": [
+        "与仲裁协议异议不同",
+        "过期停止"
+      ],
+      "deliverables": [
+        "已被起诉或被申请，需在法定期限提管辖异议；被请求方"
+      ],
+      "path": "skills/提出合同案件管辖异议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "合同争议解决导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备合同仲裁协议异议材料",
+      "kind": "atomic",
+      "displayName": "准备合同仲裁协议异议材料",
+      "goal": "对方依仲裁条款推进，己方主张无效或不适用；被请求方",
+      "notFor": [
+        "与法院管辖异议、实体抗辩分开",
+        "评估论坛走管辖原子"
+      ],
+      "deliverables": [
+        "对方依仲裁条款推进，己方主张无效或不适用；被请求方"
+      ],
+      "path": "skills/准备合同仲裁协议异议材料",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "合同争议解决导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "建立双向履行时间线",
+      "kind": "atomic",
+      "displayName": "建立双向履行时间线",
+      "goal": "需单独把双方义务、节点、实际履行做成可回链时间线；单方",
+      "notFor": [
+        "不判断最终违约或解除",
+        "质量鉴定另走"
+      ],
+      "deliverables": [
+        "需单独把双方义务、节点、实际履行做成可回链时间线；单方"
+      ],
+      "path": "skills/建立双向履行时间线",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "合同争议解决导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估质量瑕疵与检验期间",
+      "kind": "atomic",
+      "displayName": "评估质量瑕疵与检验期间",
+      "goal": "质量、隐蔽瑕疵、验收异议；主张方或抗辩方",
+      "notFor": [
+        "建设工程质量转工程",
+        "产品责任伤人转侵权"
+      ],
+      "deliverables": [
+        "质量、隐蔽瑕疵、验收异议；主张方或抗辩方"
+      ],
+      "path": "skills/评估质量瑕疵与检验期间",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "合同争议解决导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估迟延拒绝与不完全履行",
+      "kind": "atomic",
+      "displayName": "评估迟延拒绝与不完全履行",
+      "goal": "逾期、拒绝、履行不符合约定；单方",
+      "notFor": [
+        "不直接发出解除通知"
+      ],
+      "deliverables": [
+        "逾期、拒绝、履行不符合约定；单方"
+      ],
+      "path": "skills/评估迟延拒绝与不完全履行",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "合同争议解决导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估同时履行先履行与不安抗辩",
+      "kind": "atomic",
+      "displayName": "评估同时履行先履行与不安抗辩",
+      "goal": "一方拟停给停付或被指责停给；单方",
+      "notFor": [
+        "不把抗辩自动写成解除"
+      ],
+      "deliverables": [
+        "一方拟停给停付或被指责停给；单方"
+      ],
+      "path": "skills/评估同时履行先履行与不安抗辩",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "合同争议解决导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估不可抗力情势变更与履行不能",
+      "kind": "atomic",
+      "displayName": "评估不可抗力情势变更与履行不能",
+      "goal": "外部变故、履行不能或成本剧变；单方",
+      "notFor": [
+        "不作商业不可行等于法律不能"
+      ],
+      "deliverables": [
+        "外部变故、履行不能或成本剧变；单方"
+      ],
+      "path": "skills/评估不可抗力情势变更与履行不能",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "合同争议解决导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估抵销留置与扣款抗辩",
+      "kind": "atomic",
+      "displayName": "评估抵销留置与扣款抗辩",
+      "goal": "一方主张抵销、扣款、留置；单方",
+      "notFor": [
+        "担保物权实现转金融"
+      ],
+      "deliverables": [
+        "一方主张抵销、扣款、留置；单方"
+      ],
+      "path": "skills/评估抵销留置与扣款抗辩",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "合同争议解决导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估债权转让与债务承担争议",
+      "kind": "atomic",
+      "displayName": "评估债权转让与债务承担争议",
+      "goal": "转让、加入、免责承担发生争议；单方",
+      "notFor": [
+        "保理专项转金融"
+      ],
+      "deliverables": [
+        "转让、加入、免责承担发生争议；单方"
+      ],
+      "path": "skills/评估债权转让与债务承担争议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "合同争议解决导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估变更是否成立",
+      "kind": "atomic",
+      "displayName": "评估变更是否成立",
+      "goal": "口头变更、会议纪要、长期实际履行与书面合同冲突；单方",
+      "notFor": [
+        "未成争要补签补充协议走起草（搁置）"
+      ],
+      "deliverables": [
+        "口头变更、会议纪要、长期实际履行与书面合同冲突；单方"
+      ],
+      "path": "skills/评估变更是否成立",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "合同争议解决导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估电子合同成立与送达",
+      "kind": "atomic",
+      "displayName": "评估电子合同成立与送达",
+      "goal": "数据电文、平台下单、电子章引发成立或到达争议；单方",
+      "notFor": [
+        "不替代电子认证鉴定"
+      ],
+      "deliverables": [
+        "数据电文、平台下单、电子章引发成立或到达争议；单方"
+      ],
+      "path": "skills/评估电子合同成立与送达",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "合同争议解决导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估框架协议与订单冲突",
+      "kind": "atomic",
+      "displayName": "评估框架协议与订单冲突",
+      "goal": "框架、订单、送货单、对账单不一致；单方",
+      "notFor": [
+        "不按单张订单另建 Skill"
+      ],
+      "deliverables": [
+        "框架、订单、送货单、对账单不一致；单方"
+      ],
+      "path": "skills/评估框架协议与订单冲突",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "合同争议解决导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "选择合同违约与侵权竞合路径",
+      "kind": "atomic",
+      "displayName": "选择合同违约与侵权竞合路径",
+      "goal": "同一事实可主张违约或侵权；单方",
+      "notFor": [
+        "人身伤害主轴转侵权",
+        "不双份重复索赔"
+      ],
+      "deliverables": [
+        "同一事实可主张违约或侵权；单方"
+      ],
+      "path": "skills/选择合同违约与侵权竞合路径",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "合同争议解决导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估债权人代位权",
+      "kind": "atomic",
+      "displayName": "评估债权人代位权",
+      "goal": "债务人怠于行使对第三人债权，影响清偿；债权人",
+      "notFor": [
+        "不管理债务人内部治理"
+      ],
+      "deliverables": [
+        "债务人怠于行使对第三人债权，影响清偿；债权人"
+      ],
+      "path": "skills/评估债权人代位权",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "合同争议解决导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备代位权诉讼材料",
+      "kind": "atomic",
+      "displayName": "准备代位权诉讼材料",
+      "goal": "已决定代位起诉第三人；债权人",
+      "notFor": [
+        "与普通合同起诉不同"
+      ],
+      "deliverables": [
+        "已决定代位起诉第三人；债权人"
+      ],
+      "path": "skills/准备代位权诉讼材料",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "合同争议解决导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估债权人撤销权",
+      "kind": "atomic",
+      "displayName": "评估债权人撤销权",
+      "goal": "债务人无偿或明显低价处分财产；债权人",
+      "notFor": [
+        "破产撤销转破产",
+        "家事赠与交叉停"
+      ],
+      "deliverables": [
+        "债务人无偿或明显低价处分财产；债权人"
+      ],
+      "path": "skills/评估债权人撤销权",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "合同争议解决导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备债权人撤销权诉讼",
+      "kind": "atomic",
+      "displayName": "准备债权人撤销权诉讼",
+      "goal": "已决定起诉撤销；债权人",
+      "notFor": [
+        "与合同无效确认不同"
+      ],
+      "deliverables": [
+        "已决定起诉撤销；债权人"
+      ],
+      "path": "skills/准备债权人撤销权诉讼",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "合同争议解决导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "提起合同成立或效力确认之诉",
+      "kind": "atomic",
+      "displayName": "提起合同成立或效力确认之诉",
+      "goal": "需法院/仲裁确认成立、不成立、无效或撤销；主张方",
+      "notFor": [
+        "与总体评估、普通给付之诉不同"
+      ],
+      "deliverables": [
+        "需法院/仲裁确认成立、不成立、无效或撤销；主张方"
+      ],
+      "path": "skills/提起合同成立或效力确认之诉",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "合同争议解决导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "提起情势变更变更或解除之诉",
+      "kind": "atomic",
+      "displayName": "提起情势变更变更或解除之诉",
+      "goal": "已判断可能适用情势变更，需请求变更或解除；主张方",
+      "notFor": [
+        "评估项不发诉状",
+        "不可抗力路径另判"
+      ],
+      "deliverables": [
+        "已判断可能适用情势变更，需请求变更或解除；主张方"
+      ],
+      "path": "skills/提起情势变更变更或解除之诉",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "合同争议解决导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备对合同解除通知的异议",
+      "kind": "atomic",
+      "displayName": "准备对合同解除通知的异议",
+      "goal": "已收到解除通知，需异议或请求确认未解除；相对方",
+      "notFor": [
+        "不产出确认之诉诉状",
+        "诉状走一审起诉或效力确认之诉"
+      ],
+      "deliverables": [
+        "已收到解除通知，需异议或请求确认未解除；相对方"
+      ],
+      "path": "skills/准备对合同解除通知的异议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "合同争议解决导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备索赔或违约金主张通知",
+      "kind": "atomic",
+      "displayName": "准备索赔或违约金主张通知",
+      "goal": "不解除或已解除，需书面主张金钱；主张方",
+      "notFor": [
+        "不替代精算终稿或起诉状"
+      ],
+      "deliverables": [
+        "不解除或已解除，需书面主张金钱；主张方"
+      ],
+      "path": "skills/准备索赔或违约金主张通知",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "合同争议解决导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估定金罚则争议",
+      "kind": "atomic",
+      "displayName": "评估定金罚则争议",
+      "goal": "定金、订金、预付款定性及双倍或没收；单方",
+      "notFor": [
+        "签前定金审查走审查（搁置）"
+      ],
+      "deliverables": [
+        "定金、订金、预付款定性及双倍或没收；单方"
+      ],
+      "path": "skills/评估定金罚则争议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "合同争议解决导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估价款结算与发票争议",
+      "kind": "atomic",
+      "displayName": "评估价款结算与发票争议",
+      "goal": "对账、结算、发票、质保金扣留；单方",
+      "notFor": [
+        "纯无争议到期欠款可交催收交叉，有履行抗辩留本领域"
+      ],
+      "deliverables": [
+        "对账、结算、发票、质保金扣留；单方"
+      ],
+      "path": "skills/评估价款结算与发票争议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "合同争议解决导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "处理解除后返还与清理",
+      "kind": "atomic",
+      "displayName": "处理解除后返还与清理",
+      "goal": "解除或终止后需返还、折价、保管、结算清理；单方",
+      "notFor": [
+        "不重判解除是否成立"
+      ],
+      "deliverables": [
+        "解除或终止后需返还、折价、保管、结算清理；单方"
+      ],
+      "path": "skills/处理解除后返还与清理",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "合同争议解决导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估继续履行是否可能",
+      "kind": "atomic",
+      "displayName": "评估继续履行是否可能",
+      "goal": "请求继续履行或主张法律上不能；单方",
+      "notFor": [
+        "不强制对方实际履行"
+      ],
+      "deliverables": [
+        "请求继续履行或主张法律上不能；单方"
+      ],
+      "path": "skills/评估继续履行是否可能",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "合同争议解决导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "保全质量现场与电子证据",
+      "kind": "atomic",
+      "displayName": "保全质量现场与电子证据",
+      "goal": "瑕疵、现场、聊天、邮件可能灭失；单方",
+      "notFor": [
+        "不指导违法取证",
+        "工程现场转工程"
+      ],
+      "deliverables": [
+        "瑕疵、现场、聊天、邮件可能灭失；单方"
+      ],
+      "path": "skills/保全质量现场与电子证据",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "合同争议解决导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "设计合同案件通知送达",
+      "kind": "atomic",
+      "displayName": "设计合同案件通知送达",
+      "goal": "发函前需单独设计送达渠道和到达证据；单方",
+      "notFor": [
+        "不写通知实体内容"
+      ],
+      "deliverables": [
+        "发函前需单独设计送达渠道和到达证据；单方"
+      ],
+      "path": "skills/设计合同案件通知送达",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "合同争议解决导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估合同财产保全必要性",
+      "kind": "atomic",
+      "displayName": "评估合同财产保全必要性",
+      "goal": "担心转移财产，尚未决定申请；单方",
+      "notFor": [
+        "不代写申请",
+        "先予执行另项"
+      ],
+      "deliverables": [
+        "担心转移财产，尚未决定申请；单方"
+      ],
+      "path": "skills/评估合同财产保全必要性",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "合同争议解决导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备合同财产保全申请",
+      "kind": "atomic",
+      "displayName": "准备合同财产保全申请",
+      "goal": "已决定申请诉前或诉中保全；申请方",
+      "notFor": [
+        "不保证裁定",
+        "与先予执行不同"
+      ],
+      "deliverables": [
+        "已决定申请诉前或诉中保全；申请方"
+      ],
+      "path": "skills/准备合同财产保全申请",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "合同争议解决导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对合同案件保全裁定",
+      "kind": "atomic",
+      "displayName": "应对合同案件保全裁定",
+      "goal": "财产已被保全，需复议或提供担保解封；被保全方",
+      "notFor": [
+        "不提供转移隐匿财产方案"
+      ],
+      "deliverables": [
+        "财产已被保全，需复议或提供担保解封；被保全方"
+      ],
+      "path": "skills/应对合同案件保全裁定",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "合同争议解决导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备合同案件公证保全",
+      "kind": "atomic",
+      "displayName": "准备合同案件公证保全",
+      "goal": "需公证处固定发送或现状；单方",
+      "notFor": [
+        "不代替鉴定"
+      ],
+      "deliverables": [
+        "需公证处固定发送或现状；单方"
+      ],
+      "path": "skills/准备合同案件公证保全",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "合同争议解决导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备质量或损失鉴定申请",
+      "kind": "atomic",
+      "displayName": "准备质量或损失鉴定申请",
+      "goal": "需鉴定机构确认瑕疵、价值或损失；单方",
+      "notFor": [
+        "不预测鉴定意见",
+        "工程造价鉴定转工程"
+      ],
+      "deliverables": [
+        "需鉴定机构确认瑕疵、价值或损失；单方"
+      ],
+      "path": "skills/准备质量或损失鉴定申请",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "合同争议解决导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "规划举证期限与证据交换",
+      "kind": "atomic",
+      "displayName": "规划举证期限与证据交换",
+      "goal": "已立案，需在举证期内完成交换；单方",
+      "notFor": [
+        "不替代整本案卷或庭审质证"
+      ],
+      "deliverables": [
+        "已立案，需在举证期内完成交换；单方"
+      ],
+      "path": "skills/规划举证期限与证据交换",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "合同争议解决导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "提出合同鉴定异议或重新鉴定",
+      "kind": "atomic",
+      "displayName": "提出合同鉴定异议或重新鉴定",
+      "goal": "鉴定意见作出后不服；单方",
+      "notFor": [
+        "不重新做鉴定意见"
+      ],
+      "deliverables": [
+        "鉴定意见作出后不服；单方"
+      ],
+      "path": "skills/提出合同鉴定异议或重新鉴定",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "合同争议解决导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "申请律师调查令或法院调查取证",
+      "kind": "atomic",
+      "displayName": "申请律师调查令或法院调查取证",
+      "goal": "关键证据由第三方掌握；单方",
+      "notFor": [
+        "禁止违法调取个人信息"
+      ],
+      "deliverables": [
+        "关键证据由第三方掌握；单方"
+      ],
+      "path": "skills/申请律师调查令或法院调查取证",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "合同争议解决导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "起草合同和解协议",
+      "kind": "atomic",
+      "displayName": "起草合同和解协议",
+      "goal": "条件已谈拢，需可签协议；单方",
+      "notFor": [
+        "与未争议的补充协议不同",
+        "司法确认另项"
+      ],
+      "deliverables": [
+        "条件已谈拢，需可签协议；单方"
+      ],
+      "path": "skills/起草合同和解协议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "合同争议解决导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "办理合同和解执行力补强",
+      "kind": "atomic",
+      "displayName": "办理合同和解执行力补强",
+      "goal": "需司法确认、仲裁调解书或公证赋强；单方",
+      "notFor": [
+        "单独和解无执行力必须明示"
+      ],
+      "deliverables": [
+        "需司法确认、仲裁调解书或公证赋强；单方"
+      ],
+      "path": "skills/办理合同和解执行力补强",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "合同争议解决导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估合同调解方案与效力",
+      "kind": "atomic",
+      "displayName": "评估合同调解方案与效力",
+      "goal": "法院/仲裁调解或人民调解；单方",
+      "notFor": [
+        "不代替庭审策略"
+      ],
+      "deliverables": [
+        "法院/仲裁调解或人民调解；单方"
+      ],
+      "path": "skills/评估合同调解方案与效力",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "合同争议解决导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "选择诉讼仲裁或督促程序",
+      "kind": "atomic",
+      "displayName": "选择诉讼仲裁或督促程序",
+      "goal": "债权条件需比较起诉、仲裁、支付令；主张方",
+      "notFor": [
+        "不写完整申请书"
+      ],
+      "deliverables": [
+        "债权条件需比较起诉、仲裁、支付令；主张方"
+      ],
+      "path": "skills/选择诉讼仲裁或督促程序",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "合同争议解决导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "申请合同金钱支付令",
+      "kind": "atomic",
+      "displayName": "申请合同金钱支付令",
+      "goal": "金钱给付明确、无对待给付；债权人",
+      "notFor": [
+        "有实质履行抗辩不得包装成支付令"
+      ],
+      "deliverables": [
+        "金钱给付明确、无对待给付；债权人"
+      ],
+      "path": "skills/申请合同金钱支付令",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "合同争议解决导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "提起合同仲裁",
+      "kind": "atomic",
+      "displayName": "提起合同仲裁",
+      "goal": "有效仲裁协议且决定申请；申请方",
+      "notFor": [
+        "与起诉互斥",
+        "不含完整庭审"
+      ],
+      "deliverables": [
+        "有效仲裁协议且决定申请；申请方"
+      ],
+      "path": "skills/提起合同仲裁",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "合同争议解决导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备合同案件庭审",
+      "kind": "atomic",
+      "displayName": "准备合同案件庭审",
+      "goal": "诉讼或仲裁已开庭或即将开庭；单方代理",
+      "notFor": [
+        "覆盖诉讼与仲裁庭审",
+        "不代替立案或仅和解"
+      ],
+      "deliverables": [
+        "诉讼或仲裁已开庭或即将开庭；单方代理"
+      ],
+      "path": "skills/准备合同案件庭审",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "合同争议解决导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "提起合同案件上诉",
+      "kind": "atomic",
+      "displayName": "提起合同案件上诉",
+      "goal": "不服未生效裁判；上诉方",
+      "notFor": [
+        "不重做一审"
+      ],
+      "deliverables": [
+        "不服未生效裁判；上诉方"
+      ],
+      "path": "skills/提起合同案件上诉",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "合同争议解决导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "申请撤销仲裁裁决",
+      "kind": "atomic",
+      "displayName": "申请撤销仲裁裁决",
+      "goal": "收到裁决后法定期限内；不利方",
+      "notFor": [
+        "与不予执行不同"
+      ],
+      "deliverables": [
+        "收到裁决后法定期限内；不利方"
+      ],
+      "path": "skills/申请撤销仲裁裁决",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "合同争议解决导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "申请不予执行仲裁裁决",
+      "kind": "atomic",
+      "displayName": "申请不予执行仲裁裁决",
+      "goal": "对方申请执行裁决；被执行方",
+      "notFor": [
+        "不与撤销混用"
+      ],
+      "deliverables": [
+        "对方申请执行裁决；被执行方"
+      ],
+      "path": "skills/申请不予执行仲裁裁决",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "合同争议解决导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对合同仲裁",
+      "kind": "atomic",
+      "displayName": "应对合同仲裁",
+      "goal": "收到仲裁申请；被申请方",
+      "notFor": [
+        "与申请方材料权限不同"
+      ],
+      "deliverables": [
+        "收到仲裁申请；被申请方"
+      ],
+      "path": "skills/应对合同仲裁",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "合同争议解决导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对合同案件二审",
+      "kind": "atomic",
+      "displayName": "应对合同案件二审",
+      "goal": "收到上诉状；被上诉方",
+      "notFor": [
+        "不代替主动上诉"
+      ],
+      "deliverables": [
+        "收到上诉状；被上诉方"
+      ],
+      "path": "skills/应对合同案件二审",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "合同争议解决导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估合同反诉或反请求",
+      "kind": "atomic",
+      "displayName": "评估合同反诉或反请求",
+      "goal": "被告拟反诉；被请求方",
+      "notFor": [
+        "不自动生成反诉状终稿"
+      ],
+      "deliverables": [
+        "被告拟反诉；被请求方"
+      ],
+      "path": "skills/评估合同反诉或反请求",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "合同争议解决导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备合同反诉或仲裁反请求",
+      "kind": "atomic",
+      "displayName": "准备合同反诉或仲裁反请求",
+      "goal": "已决定反诉；反诉原告",
+      "notFor": [
+        "与本诉答辩分开验收"
+      ],
+      "deliverables": [
+        "已决定反诉；反诉原告"
+      ],
+      "path": "skills/准备合同反诉或仲裁反请求",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "合同争议解决导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "执行合同生效文书",
+      "kind": "atomic",
+      "displayName": "执行合同生效文书",
+      "goal": "持判决、调解书、裁决未获履行；权利人",
+      "notFor": [
+        "复杂追加、拒执刑责升级",
+        "不重审实体"
+      ],
+      "deliverables": [
+        "持判决、调解书、裁决未获履行；权利人"
+      ],
+      "path": "skills/执行合同生效文书",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "合同争议解决导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对合同案件执行",
+      "kind": "atomic",
+      "displayName": "应对合同案件执行",
+      "goal": "被执行人收到执行；被执行方",
+      "notFor": [
+        "禁止隐匿转移"
+      ],
+      "deliverables": [
+        "被执行人收到执行；被执行方"
+      ],
+      "path": "skills/应对合同案件执行",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "合同争议解决导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备合同执行和解",
+      "kind": "atomic",
+      "displayName": "准备合同执行和解",
+      "goal": "执行中拟分期或以物抵债；单方",
+      "notFor": [
+        "不放弃已生效债权除非明示"
+      ],
+      "deliverables": [
+        "执行中拟分期或以物抵债；单方"
+      ],
+      "path": "skills/准备合同执行和解",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "合同争议解决导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    }
+  ],
+  "guideName": "合同争议解决导航"
+}

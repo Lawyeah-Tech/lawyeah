@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估诉讼仲裁与或有负债"
+  short_description: "整理未决诉讼处罚和或有负债对对价交割的影响"
+  default_prompt: "使用 $评估诉讼仲裁与或有负债，在单一立场下评估未决诉讼、处罚和或有负债对交易的影响。"

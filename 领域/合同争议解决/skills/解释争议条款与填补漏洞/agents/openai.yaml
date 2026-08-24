@@ -1,0 +1,4 @@
+interface:
+  display_name: "解释争议条款与填补漏洞"
+  short_description: "给出争议条款解释路径、习惯目的因素和待证事实"
+  default_prompt: "使用 $解释争议条款与填补漏洞，在单一立场下解释中国大陆一般合同的争议条款或填补漏洞。"

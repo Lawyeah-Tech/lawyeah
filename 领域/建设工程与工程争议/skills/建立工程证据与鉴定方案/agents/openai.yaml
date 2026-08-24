@@ -1,0 +1,4 @@
+interface:
+  display_name: "建立工程证据与鉴定方案"
+  short_description: "形成举证责任、现场资料和鉴定启动或不应鉴定矩阵"
+  default_prompt: "使用 $建立工程证据与鉴定方案，整理中国大陆建设工程证据与鉴定方案。"

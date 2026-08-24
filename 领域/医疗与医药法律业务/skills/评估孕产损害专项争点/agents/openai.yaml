@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估孕产损害专项争点"
+  short_description: "组织孕产损害的母儿双主体、围产记录和多因一果接口"
+  default_prompt: "使用 $评估孕产损害专项争点，在单一立场下处理中国大陆评估孕产损害专项争点事项。"

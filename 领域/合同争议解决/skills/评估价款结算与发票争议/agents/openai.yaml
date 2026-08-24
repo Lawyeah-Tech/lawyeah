@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估价款结算与发票争议"
+  short_description: "整理结算争点、凭证链和付款条件"
+  default_prompt: "使用 $评估价款结算与发票争议，在单一立场下评估价款结算、对账、发票或质保金争议。"

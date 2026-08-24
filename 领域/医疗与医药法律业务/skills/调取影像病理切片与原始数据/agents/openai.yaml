@@ -1,0 +1,4 @@
+interface:
+  display_name: "调取影像病理切片与原始数据"
+  short_description: "形成影像病理切片和原始数据的合法调取清单与拒绝接口"
+  default_prompt: "使用 $调取影像病理切片与原始数据，在单一立场下处理中国大陆调取影像病理切片与原始数据事项。"

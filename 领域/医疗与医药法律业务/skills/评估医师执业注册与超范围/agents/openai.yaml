@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估医师执业注册与超范围"
+  short_description: "评估医师注册地点类别范围及机构连带"
+  default_prompt: "使用 $评估医师执业注册与超范围，在单一立场下处理中国大陆评估医师执业注册与超范围事项。"

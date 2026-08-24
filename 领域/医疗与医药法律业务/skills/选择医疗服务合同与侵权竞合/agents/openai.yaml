@@ -1,0 +1,4 @@
+interface:
+  display_name: "选择医疗服务合同与侵权竞合"
+  short_description: "比较医疗服务合同与侵权路径的时效管辖和赔偿范围"
+  default_prompt: "使用 $选择医疗服务合同与侵权竞合，在单一立场下处理中国大陆选择医疗服务合同与侵权竞合事项。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "应对药监检查与飞检"
+  short_description: "应对药监飞检的权限核对、样品封存和缺陷沟通"
+  default_prompt: "使用 $应对药监检查与飞检，在单一立场下处理中国大陆应对药监检查与飞检事项。"

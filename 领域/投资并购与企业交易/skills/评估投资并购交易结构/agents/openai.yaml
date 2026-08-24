@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估投资并购交易结构"
+  short_description: "比较股权资产增资合并路径并标出监管闸红旗"
+  default_prompt: "使用 $评估投资并购交易结构，在单一立场下评估中国大陆投资并购交易结构。"

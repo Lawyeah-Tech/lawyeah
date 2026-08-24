@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估黑白合同与结算依据"
+  short_description: "并列数份合同并判断结算文本层级"
+  default_prompt: "使用 $评估黑白合同与结算依据，在单一立场下处理中国大陆建设工程争议中的「评估黑白合同与结算依据」。"

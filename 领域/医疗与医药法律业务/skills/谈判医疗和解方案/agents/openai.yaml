@@ -1,0 +1,4 @@
+interface:
+  display_name: "谈判医疗和解方案"
+  short_description: "形成医疗和解底线、弃权范围、鉴定窗口和执行力提示"
+  default_prompt: "使用 $谈判医疗和解方案，在单一立场下形成中国大陆医疗和解谈判方案。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "形成法律尽调报告"
+  short_description: "按模块写出尽调发现并对交易影响分级"
+  default_prompt: "使用 $形成法律尽调报告，根据已收材料形成中国大陆投资并购法律尽调报告。"

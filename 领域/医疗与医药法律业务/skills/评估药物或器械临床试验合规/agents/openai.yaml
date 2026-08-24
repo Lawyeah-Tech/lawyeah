@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估药物或器械临床试验合规"
+  short_description: "评估临床试验批准、知情、不良事件报告和数据合规缺口"
+  default_prompt: "使用 $评估药物或器械临床试验合规，在单一立场下处理中国大陆评估药物或器械临床试验合规事项。"

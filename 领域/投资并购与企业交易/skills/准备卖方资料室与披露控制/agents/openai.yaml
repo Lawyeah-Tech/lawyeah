@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备卖方资料室与披露控制"
+  short_description: "准备卖方资料室结构权限和保留项"
+  default_prompt: "使用 $准备卖方资料室与披露控制，在卖方立场下准备资料室结构、披露权限和保留项。"

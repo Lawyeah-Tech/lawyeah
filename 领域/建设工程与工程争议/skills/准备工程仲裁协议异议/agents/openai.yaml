@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备工程仲裁协议异议"
+  short_description: "形成工程仲裁协议异议或效力确认材料"
+  default_prompt: "使用 $准备工程仲裁协议异议，在单一立场下处理中国大陆建设工程争议中的「准备工程仲裁协议异议」。"

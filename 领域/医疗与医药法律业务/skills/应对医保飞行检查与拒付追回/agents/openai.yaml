@@ -1,0 +1,4 @@
+interface:
+  display_name: "应对医保飞行检查与拒付追回"
+  short_description: "应对医保飞检和追回决定的迎检申辩与退费处罚接口"
+  default_prompt: "使用 $应对医保飞行检查与拒付追回，在单一立场下处理中国大陆应对医保飞行检查与拒付追回事项。"

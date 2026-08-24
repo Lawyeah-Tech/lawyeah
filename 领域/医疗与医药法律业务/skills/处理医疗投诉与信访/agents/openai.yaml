@@ -1,0 +1,4 @@
+interface:
+  display_name: "处理医疗投诉与信访"
+  short_description: "处理院内投诉、12320或信访的路径答复和升级条件"
+  default_prompt: "使用 $处理医疗投诉与信访，在单一立场下处理中国大陆处理医疗投诉与信访事项。"

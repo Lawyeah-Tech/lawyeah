@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备医学专家咨询与出庭"
+  short_description: "准备医学专家咨询范围、回避和意见使用边界"
+  default_prompt: "使用 $准备医学专家咨询与出庭，在单一立场下处理中国大陆准备医学专家咨询与出庭事项。"
