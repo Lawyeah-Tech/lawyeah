@@ -1,4 +1,4 @@
 interface:
   display_name: "准备侵权索赔通知"
-  short_description: "形成发送前人身损害索赔通知、项目表和送达留痕"
-  default_prompt: "使用 $准备侵权索赔通知，起草中国大陆人身损害发送前索赔通知。"
+  short_description: "形成发送前人身损害索赔通知和到达设计，不执行发送、不倒签"
+  default_prompt: "使用 $准备侵权索赔通知，起草中国大陆人身损害发送前索赔通知。不执行发送，不倒签，未知金额不写零。"
