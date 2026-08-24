@@ -603,24 +603,85 @@
       "id": "谈判人身损害和解",
       "kind": "atomic",
       "displayName": "谈判人身损害和解",
-      "goal": "形成底线、让步、弃权范围和执行力提示",
+      "goal": "在单方无冲突立场下形成仍可协商的人身损害和解方案表：分项让步、谈判底线、具体弃权范围、付款安排和执行力提示；不写可签正文，不概括放弃未知伤残",
       "notFor": [
         "已谈拢的和解协议正文",
-        "覆盖未知伤残的概括弃权",
-        "答辩状"
+        "保险人一次性了结或权益转让审查终稿",
+        "司法确认、诉讼调解书或公证赋强手续终稿",
+        "覆盖未知伤残、未知手术或永不追究一切的概括弃权",
+        "答辩状或起诉状",
+        "测算终稿或唯一必得总额",
+        "鉴定申请终稿或虚构十级折现",
+        "交强险分账终稿",
+        "选定管辖法院或唯一时效截止日",
+        "工伤待遇一次性了结"
       ],
       "deliverables": [
-        "形成底线、让步、弃权范围和执行力提示"
+        "争点让步表、底线、具体弃权范围、付款接口和执行力红旗；未稳定或未鉴定时伤残与后续治疗保留另行主张，不含可签协议"
       ],
       "path": "skills/谈判人身损害和解",
       "relations": {
         "depends-on": [],
         "related-to": [
-          "人身损害与侵权赔偿导航"
+          "人身损害与侵权赔偿导航",
+          "评估人身侵权责任",
+          "测算人身损害赔偿",
+          "准备伤残鉴定材料",
+          "建立人身损害证据案卷",
+          "起草人身损害和解协议",
+          "审查保险一次性了结弃权",
+          "办理人身和解执行力补强",
+          "评估人身调解方案与效力",
+          "选择诉讼调解或保险先行",
+          "准备侵权索赔通知",
+          "提起人身损害一审",
+          "应对人身损害一审",
+          "评估工伤与第三人侵权竞合",
+          "评估死亡赔偿权利人与分配",
+          "评估后续治疗费另行主张",
+          "评估人身损害诉讼时效",
+          "分流刑民交叉",
+          "评估道路交通事故责任与保险先行"
         ],
         "excludes": []
       },
-      "mcpDecisionNodes": []
+      "mcpDecisionNodes": [
+        {
+          "id": "verify-settlement-rules",
+          "purpose": "核验弃权效力、诉讼时效中断、调解书、司法确认、分期支付与担保等将被写入 L# 的现行规则",
+          "capability": "search_law",
+          "level": "required",
+          "unavailableBehavior": "继续报价表和争点分列；弃权效力、时效中断、执行力和司法确认期限字段停止"
+        },
+        {
+          "id": "verify-law-detail",
+          "purpose": "已有真实 regulation_id 时核验将改变弃权或执行力结论的条文正文",
+          "capability": "get_law_detail",
+          "level": "optional",
+          "unavailableBehavior": "不得编造 regulation_id；该规则字段保持待核，不把检索摘要条号或技能正文条号写成已核验 L#"
+        },
+        {
+          "id": "verify-settlement-practice",
+          "purpose": "发现未稳定和解、保险结案和司法确认不受理情形，不把地区摘要写成已核定执行力",
+          "capability": "search_practiced",
+          "level": "recommended",
+          "unavailableBehavior": "继续内置方法；执行力和弃权效力字段停止，不把无实务检索写成全国统一可强制执行"
+        },
+        {
+          "id": "borrow-settlement-template",
+          "purpose": "只借鉴和解或调解栏目名，不把范本当现行法或可签正文",
+          "capability": "search_template",
+          "level": "optional",
+          "unavailableBehavior": "继续按方法节点写栏目；不编造法定格式，不输出可签署协议"
+        },
+        {
+          "id": "compare-fact-cases",
+          "purpose": "特殊事实比较类案在弃权范围、口头成交和保险付款消灭请求上的差异，不写成必然成交",
+          "capability": "search_case_by_fact",
+          "level": "optional",
+          "unavailableBehavior": "不编造案号；不把无类案写成概括弃权有效或口头报价已成立"
+        }
+      ]
     },
     {
       "id": "提起人身损害一审",
