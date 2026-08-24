@@ -422,7 +422,8 @@
           "准备侵权索赔通知",
           "评估人身损害诉讼时效",
           "评估后续治疗费另行主张",
-          "评估伤残等级争议"
+          "评估伤残等级争议",
+          "建立人身损害证据案卷"
         ],
         "excludes": []
       },
@@ -433,6 +434,13 @@
           "capability": "search_law",
           "level": "required",
           "unavailableBehavior": "继续检材编目和闸门判断；标准选择、重新鉴定条件和法律效果字段停止"
+        },
+        {
+          "id": "verify-law-detail",
+          "purpose": "已有真实 regulation_id 时核验将改变标准或重新鉴定结论的条文正文",
+          "capability": "get_law_detail",
+          "level": "optional",
+          "unavailableBehavior": "不得编造 regulation_id；该规则字段保持待核"
         },
         {
           "id": "borrow-application-template",
