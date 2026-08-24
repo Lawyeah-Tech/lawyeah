@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备自查补报方案"
+  short_description: "在未立案阶段列出自查范围和补报策略，不保证免责"
+  default_prompt: "使用 $准备自查补报方案，在管理方立场下准备尚未立案的中国大陆税务自查补报方案。"

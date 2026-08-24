@@ -1,0 +1,4 @@
+interface:
+  display_name: "执行限制性条件监督报告"
+  short_description: "对照附加限制性条件形成履行监督报告"
+  default_prompt: "使用 $执行限制性条件监督报告，对照附加限制性条件形成履行监督报告。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估境外交易中国申报"
+  short_description: "判断境外交易是否需要向中国申报经营者集中"
+  default_prompt: "使用 $评估境外交易中国申报，判断境外交易是否需要向中国申报经营者集中。"

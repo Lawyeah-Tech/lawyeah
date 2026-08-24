@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估人保物保并存"
+  short_description: "评估同一债务上保证与抵押质押并存时的实现顺序"
+  default_prompt: "使用 $评估人保物保并存，在单一立场下评估中国大陆人保物保并存的顺序与选择权。"

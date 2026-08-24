@@ -1,0 +1,1734 @@
+{
+  "schemaVersion": 2,
+  "id": "handle-finance-guarantees",
+  "displayName": "金融借贷与担保",
+  "description": "处理中国大陆金融交易、民间借贷、担保、保理和融资租赁的评估、催收主张、测算、证据、担保物权实现、和解和一审两造的多 Skill 领域包。",
+  "version": "1.0.0",
+  "license": "Apache-2.0",
+  "jurisdiction": "CN-mainland",
+  "contentModel": "multi-skill-progressive-disclosure",
+  "reinstallStrategy": "replace",
+  "scope": {
+    "purpose": "处理金融交易、民间借贷、担保、保理和融资租赁的结构、文件、履行及争议。",
+    "inScope": [
+      "银行和非银行融资",
+      "民间借贷和金融合同",
+      "保证、抵押、质押等担保",
+      "保理、融资租赁和相关争议"
+    ],
+    "outOfScope": [
+      "一般合同争议",
+      "股权投资和并购交易整体",
+      "破产程序、重整和债权申报"
+    ],
+    "primaryDeliverables": [
+      "融资和担保文件",
+      "金融交易结构意见",
+      "债权实现方案",
+      "金融借贷争议成果"
+    ]
+  },
+  "guideSkill": "金融借贷与担保导航",
+  "mcp": {
+    "contractRange": "0.0"
+  },
+  "skills": [
+    {
+      "id": "金融借贷与担保导航",
+      "kind": "guide",
+      "displayName": "金融借贷与担保导航",
+      "goal": "说明领域包的能力、边界和当前原子 Skill 全貌",
+      "notFor": [
+        "直接完成具体法律业务成果"
+      ],
+      "deliverables": [
+        "领域能力定位结果"
+      ],
+      "path": "skills/金融借贷与担保导航",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "谈判金融和解与分期",
+          "建立金融借贷担保证据案卷",
+          "测算本金利息罚息复利",
+          "评估保证责任",
+          "准备实现担保物权申请",
+          "评估金融借贷担保争议",
+          "提起金融借贷担保一审",
+          "准备保证债务主张通知",
+          "应对金融借贷担保一审",
+          "准备催收或加速到期通知",
+          "评估民间借贷成立与效力",
+          "识别融资安排法律性质",
+          "评估利率费用与砍头息",
+          "评估放贷资质与职业放贷",
+          "评估金融争议管辖与仲裁",
+          "评估时效与保证期间",
+          "评估加速到期与提前收回",
+          "评估电子借款成立与送达",
+          "评估金融债权转让",
+          "提出金融案件管辖异议",
+          "评估金融格式条款",
+          "评估公司对外担保决议",
+          "评估独立保函",
+          "评估最高额保证",
+          "评估保证人追偿权",
+          "准备保证人追偿诉讼",
+          "评估人保物保并存",
+          "评估抵押质押设立与对抗",
+          "评估担保物权顺位",
+          "评估让与担保",
+          "评估应收账款或股权质押",
+          "应对实现担保物权申请",
+          "评估抵押变更涂销争议",
+          "评估动产担保与购置款超级优先",
+          "准备请求办理抵押登记诉讼",
+          "建立借还时间线与抵充顺序",
+          "评估提前还款与违约金",
+          "评估银行抵销与扣款",
+          "处理加速到期后清算",
+          "准备公证催收或赋强公证",
+          "执行赋强公证债权文书",
+          "保全转账与电子证据",
+          "评估金融财产保全必要性",
+          "准备金融财产保全申请",
+          "应对金融案件保全裁定",
+          "申请调查令调取流水",
+          "提出担保物价值鉴定异议",
+          "起草还款和解协议",
+          "评估庭外重组方案",
+          "办理金融和解执行力补强",
+          "选择诉讼仲裁支付令或特别程序",
+          "申请金融金钱支付令",
+          "提起金融仲裁",
+          "应对金融仲裁",
+          "准备金融案件庭审",
+          "提起金融案件上诉",
+          "应对金融案件二审",
+          "评估金融反诉或反请求",
+          "准备金融反诉或仲裁反请求",
+          "评估保理真实性与通知",
+          "准备保理债权转让通知",
+          "评估融资租赁性质与取回",
+          "准备融资租赁物取回或清算",
+          "评估信用卡与消费贷争议",
+          "评估银行理财适当性",
+          "评估委托贷款结构",
+          "评估票据贴现与融资",
+          "评估网贷平台责任",
+          "执行金融生效文书",
+          "应对金融执行",
+          "评估追加被执行人或担保人",
+          "准备金融执行和解",
+          "识别破产程序入口并分流",
+          "评估夫妻共债交叉并分流"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估金融借贷担保争议",
+      "kind": "atomic",
+      "displayName": "评估金融借贷担保争议",
+      "goal": "在单方无冲突立场下形成可决策的金融借贷担保争议总图",
+      "notFor": [
+        "发送版催收或保证主张函",
+        "精算终稿",
+        "诉状或答辩",
+        "签前审查起草"
+      ],
+      "deliverables": [
+        "在单方无冲突立场下形成可决策的金融借贷担保争议总图"
+      ],
+      "path": "skills/评估金融借贷担保争议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "金融借贷与担保导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估保证责任",
+      "kind": "atomic",
+      "displayName": "评估保证责任",
+      "goal": "判断保证方式、范围、期间和是否仍可能担责，不发函",
+      "notFor": [
+        "发送版保证主张通知",
+        "一定免责或一定全额还",
+        "独立保函终局"
+      ],
+      "deliverables": [
+        "判断保证方式、范围、期间和是否仍可能担责，不发函"
+      ],
+      "path": "skills/评估保证责任",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "金融借贷与担保导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备催收或加速到期通知",
+      "kind": "atomic",
+      "displayName": "准备催收或加速到期通知",
+      "goal": "形成向主债务人催收或宣布加速的发送前稿和到达设计",
+      "notFor": [
+        "向保证人主张保证责任",
+        "把催收写成已判决",
+        "未成争改合同"
+      ],
+      "deliverables": [
+        "形成向主债务人催收或宣布加速的发送前稿和到达设计"
+      ],
+      "path": "skills/准备催收或加速到期通知",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "金融借贷与担保导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备保证债务主张通知",
+      "kind": "atomic",
+      "displayName": "准备保证债务主张通知",
+      "goal": "形成保证期间内向保证人主张的发送前稿和到达设计",
+      "notFor": [
+        "一般保证仅向保证人发函代替对债务人起诉",
+        "主债务人催收函",
+        "把发送写成保证责任已确定"
+      ],
+      "deliverables": [
+        "形成保证期间内向保证人主张的发送前稿和到达设计"
+      ],
+      "path": "skills/准备保证债务主张通知",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "金融借贷与担保导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "测算本金利息罚息复利",
+      "kind": "atomic",
+      "displayName": "测算本金利息罚息复利",
+      "goal": "形成可复核的分项测算，不认定借贷已成立",
+      "notFor": [
+        "定性总图",
+        "唯一必得总额",
+        "把未知写成零"
+      ],
+      "deliverables": [
+        "形成可复核的分项测算，不认定借贷已成立"
+      ],
+      "path": "skills/测算本金利息罚息复利",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "金融借贷与担保导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "建立金融借贷担保证据案卷",
+      "kind": "atomic",
+      "displayName": "建立金融借贷担保证据案卷",
+      "goal": "形成交付、担保、催收要件与合法补证矩阵",
+      "notFor": [
+        "策略总图",
+        "诉状",
+        "违法调取流水"
+      ],
+      "deliverables": [
+        "形成交付、担保、催收要件与合法补证矩阵"
+      ],
+      "path": "skills/建立金融借贷担保证据案卷",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "金融借贷与担保导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备实现担保物权申请",
+      "kind": "atomic",
+      "displayName": "准备实现担保物权申请",
+      "goal": "形成可提交的实现担保物权特别程序申请包",
+      "notFor": [
+        "有实质性争议仍坚持特别程序终稿",
+        "普通给付之诉",
+        "代提交"
+      ],
+      "deliverables": [
+        "形成可提交的实现担保物权特别程序申请包"
+      ],
+      "path": "skills/准备实现担保物权申请",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "金融借贷与担保导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "谈判金融和解与分期",
+      "kind": "atomic",
+      "displayName": "谈判金融和解与分期",
+      "goal": "形成底线、让步、弃权范围、担保释放和执行力提示",
+      "notFor": [
+        "已谈拢的和解协议正文",
+        "答辩状",
+        "破产重整计划"
+      ],
+      "deliverables": [
+        "形成底线、让步、弃权范围、担保释放和执行力提示"
+      ],
+      "path": "skills/谈判金融和解与分期",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "金融借贷与担保导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "提起金融借贷担保一审",
+      "kind": "atomic",
+      "displayName": "提起金融借贷担保一审",
+      "goal": "形成可提交的一审起诉包，含保证人或物上保证人接口",
+      "notFor": [
+        "有效仲裁未排除",
+        "实现担保物权特别程序",
+        "代提交"
+      ],
+      "deliverables": [
+        "形成可提交的一审起诉包，含保证人或物上保证人接口"
+      ],
+      "path": "skills/提起金融借贷担保一审",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "金融借贷与担保导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对金融借贷担保一审",
+      "kind": "atomic",
+      "displayName": "应对金融借贷担保一审",
+      "goal": "形成首次应诉答辩包，含保证期间和时效抗辩",
+      "notFor": [
+        "一般合同应诉",
+        "主动起诉",
+        "只要管辖异议终稿且无实体"
+      ],
+      "deliverables": [
+        "形成首次应诉答辩包，含保证期间和时效抗辩"
+      ],
+      "path": "skills/应对金融借贷担保一审",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "金融借贷与担保导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估民间借贷成立与效力",
+      "kind": "atomic",
+      "displayName": "评估民间借贷成立与效力",
+      "goal": "争本金交付、虚假诉讼、无效或可撤销；单方",
+      "notFor": [
+        "不替代总体评估",
+        "不认定利率保护上限终局",
+        "金融机构贷款不适用民间借贷规定"
+      ],
+      "deliverables": [
+        "争本金交付、虚假诉讼、无效或可撤销；单方"
+      ],
+      "path": "skills/评估民间借贷成立与效力",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "金融借贷与担保导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "识别融资安排法律性质",
+      "kind": "atomic",
+      "displayName": "识别融资安排法律性质",
+      "goal": "名实不符：名股实债、售后回租、名为买卖实为借贷；单方",
+      "notFor": [
+        "并购交易整体转投资并购",
+        "不重写交易文件（审查搁置）"
+      ],
+      "deliverables": [
+        "名实不符：名股实债、售后回租、名为买卖实为借贷；单方"
+      ],
+      "path": "skills/识别融资安排法律性质",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "金融借贷与担保导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估利率费用与砍头息",
+      "kind": "atomic",
+      "displayName": "评估利率费用与砍头息",
+      "goal": "利率、服务费、砍头息、利滚利是否受保护；单方",
+      "notFor": [
+        "不输出精算终稿",
+        "金融机构复利罚息另列待核"
+      ],
+      "deliverables": [
+        "利率、服务费、砍头息、利滚利是否受保护；单方"
+      ],
+      "path": "skills/评估利率费用与砍头息",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "金融借贷与担保导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估放贷资质与职业放贷",
+      "kind": "atomic",
+      "displayName": "评估放贷资质与职业放贷",
+      "goal": "对方被指职业放贷、无牌放贷或非法金融；单方",
+      "notFor": [
+        "不定罪",
+        "刑民交叉走专项",
+        "不替代效力总评"
+      ],
+      "deliverables": [
+        "对方被指职业放贷、无牌放贷或非法金融；单方"
+      ],
+      "path": "skills/评估放贷资质与职业放贷",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "金融借贷与担保导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估金融争议管辖与仲裁",
+      "kind": "atomic",
+      "displayName": "评估金融争议管辖与仲裁",
+      "goal": "要选法院还是仲裁，或对方提出管辖/仲裁异议；单方",
+      "notFor": [
+        "不代写完整立案包",
+        "海事专属转出"
+      ],
+      "deliverables": [
+        "要选法院还是仲裁，或对方提出管辖/仲裁异议；单方"
+      ],
+      "path": "skills/评估金融争议管辖与仲裁",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "金融借贷与担保导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估时效与保证期间",
+      "kind": "atomic",
+      "displayName": "评估时效与保证期间",
+      "goal": "单独委托核验诉讼时效与保证期间；单方",
+      "notFor": [
+        "禁止混算或输出唯一截止日",
+        "保证责任实体结论走保证评估"
+      ],
+      "deliverables": [
+        "单独委托核验诉讼时效与保证期间；单方"
+      ],
+      "path": "skills/评估时效与保证期间",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "金融借贷与担保导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估加速到期与提前收回",
+      "kind": "atomic",
+      "displayName": "评估加速到期与提前收回",
+      "goal": "拟宣布或已被宣布全部到期；单方",
+      "notFor": [
+        "不发出加速通知",
+        "不写诉状"
+      ],
+      "deliverables": [
+        "拟宣布或已被宣布全部到期；单方"
+      ],
+      "path": "skills/评估加速到期与提前收回",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "金融借贷与担保导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估电子借款成立与送达",
+      "kind": "atomic",
+      "displayName": "评估电子借款成立与送达",
+      "goal": "电子签约、人脸、短信验证码引发成立或到达争议；单方",
+      "notFor": [
+        "不替代电子认证鉴定"
+      ],
+      "deliverables": [
+        "电子签约、人脸、短信验证码引发成立或到达争议；单方"
+      ],
+      "path": "skills/评估电子借款成立与送达",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "金融借贷与担保导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估金融债权转让",
+      "kind": "atomic",
+      "displayName": "评估金融债权转让",
+      "goal": "银行/AMC/保理受让或被告知转让后发生争议；单方",
+      "notFor": [
+        "保理真实性走保理原子",
+        "破产内转让申报转破产"
+      ],
+      "deliverables": [
+        "银行/AMC/保理受让或被告知转让后发生争议；单方"
+      ],
+      "path": "skills/评估金融债权转让",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "金融借贷与担保导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "提出金融案件管辖异议",
+      "kind": "atomic",
+      "displayName": "提出金融案件管辖异议",
+      "goal": "已被起诉或被申请，需在法定期限提管辖异议；被请求方",
+      "notFor": [
+        "与仲裁协议异议不同",
+        "过期停止"
+      ],
+      "deliverables": [
+        "已被起诉或被申请，需在法定期限提管辖异议；被请求方"
+      ],
+      "path": "skills/提出金融案件管辖异议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "金融借贷与担保导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估金融格式条款",
+      "kind": "atomic",
+      "displayName": "评估金融格式条款",
+      "goal": "对方以格式条款加速、复利或限权；单方",
+      "notFor": [
+        "签前格式审查走审查领域（搁置）"
+      ],
+      "deliverables": [
+        "对方以格式条款加速、复利或限权；单方"
+      ],
+      "path": "skills/评估金融格式条款",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "金融借贷与担保导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估公司对外担保决议",
+      "kind": "atomic",
+      "displayName": "评估公司对外担保决议",
+      "goal": "公司或相对人争担保是否对公司发生效力；单方",
+      "notFor": [
+        "不展开股东责任整案",
+        "追股东转公司治理"
+      ],
+      "deliverables": [
+        "公司或相对人争担保是否对公司发生效力；单方"
+      ],
+      "path": "skills/评估公司对外担保决议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "金融借贷与担保导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估独立保函",
+      "kind": "atomic",
+      "displayName": "评估独立保函",
+      "goal": "见索即付、独立于基础交易；单方",
+      "notFor": [
+        "不按典型保证期间处理",
+        "跨境复杂标红旗"
+      ],
+      "deliverables": [
+        "见索即付、独立于基础交易；单方"
+      ],
+      "path": "skills/评估独立保函",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "金融借贷与担保导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估最高额保证",
+      "kind": "atomic",
+      "displayName": "评估最高额保证",
+      "goal": "循环授信或最高额保证期间/决算日争议；单方",
+      "notFor": [
+        "不替代普通保证评估"
+      ],
+      "deliverables": [
+        "循环授信或最高额保证期间/决算日争议；单方"
+      ],
+      "path": "skills/评估最高额保证",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "金融借贷与担保导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估保证人追偿权",
+      "kind": "atomic",
+      "displayName": "评估保证人追偿权",
+      "goal": "保证人已付或即将承担责任，要看能否追偿；保证人",
+      "notFor": [
+        "不写追偿诉状"
+      ],
+      "deliverables": [
+        "保证人已付或即将承担责任，要看能否追偿；保证人"
+      ],
+      "path": "skills/评估保证人追偿权",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "金融借贷与担保导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备保证人追偿诉讼",
+      "kind": "atomic",
+      "displayName": "准备保证人追偿诉讼",
+      "goal": "已决定追偿起诉；保证人",
+      "notFor": [
+        "与普通借款起诉不同"
+      ],
+      "deliverables": [
+        "已决定追偿起诉；保证人"
+      ],
+      "path": "skills/准备保证人追偿诉讼",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "金融借贷与担保导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估人保物保并存",
+      "kind": "atomic",
+      "displayName": "评估人保物保并存",
+      "goal": "同一债既有保证又有抵押/质押；单方",
+      "notFor": [
+        "不直接实现担保物权"
+      ],
+      "deliverables": [
+        "同一债既有保证又有抵押/质押；单方"
+      ],
+      "path": "skills/评估人保物保并存",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "金融借贷与担保导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估抵押质押设立与对抗",
+      "kind": "atomic",
+      "displayName": "评估抵押质押设立与对抗",
+      "goal": "争担保是否设立、能否对抗第三人；单方",
+      "notFor": [
+        "不写实现申请",
+        "未成争登记走审查（搁置）"
+      ],
+      "deliverables": [
+        "争担保是否设立、能否对抗第三人；单方"
+      ],
+      "path": "skills/评估抵押质押设立与对抗",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "金融借贷与担保导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估担保物权顺位",
+      "kind": "atomic",
+      "displayName": "评估担保物权顺位",
+      "goal": "同一财产上多个担保或购置款超级优先；单方",
+      "notFor": [
+        "不替代实现申请"
+      ],
+      "deliverables": [
+        "同一财产上多个担保或购置款超级优先；单方"
+      ],
+      "path": "skills/评估担保物权顺位",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "金融借贷与担保导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估让与担保",
+      "kind": "atomic",
+      "displayName": "评估让与担保",
+      "goal": "名为转让实为担保；单方",
+      "notFor": [
+        "股权并购交割转投资并购"
+      ],
+      "deliverables": [
+        "名为转让实为担保；单方"
+      ],
+      "path": "skills/评估让与担保",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "金融借贷与担保导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估应收账款或股权质押",
+      "kind": "atomic",
+      "displayName": "评估应收账款或股权质押",
+      "goal": "应收/股权出质的设立、通知、处分限制；单方",
+      "notFor": [
+        "保理竞存走保理原子"
+      ],
+      "deliverables": [
+        "应收/股权出质的设立、通知、处分限制；单方"
+      ],
+      "path": "skills/评估应收账款或股权质押",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "金融借贷与担保导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对实现担保物权申请",
+      "kind": "atomic",
+      "displayName": "应对实现担保物权申请",
+      "goal": "已被申请拍卖变卖担保财产；被申请人",
+      "notFor": [
+        "禁止转移隐匿担保物"
+      ],
+      "deliverables": [
+        "已被申请拍卖变卖担保财产；被申请人"
+      ],
+      "path": "skills/应对实现担保物权申请",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "金融借贷与担保导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估抵押变更涂销争议",
+      "kind": "atomic",
+      "displayName": "评估抵押变更涂销争议",
+      "goal": "争应否变更、涂销或继续登记；单方",
+      "notFor": [
+        "不代办登记"
+      ],
+      "deliverables": [
+        "争应否变更、涂销或继续登记；单方"
+      ],
+      "path": "skills/评估抵押变更涂销争议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "金融借贷与担保导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估动产担保与购置款超级优先",
+      "kind": "atomic",
+      "displayName": "评估动产担保与购置款超级优先",
+      "goal": "动产担保、浮动抵押或购置款对抗；单方",
+      "notFor": [
+        "不写实现申请"
+      ],
+      "deliverables": [
+        "动产担保、浮动抵押或购置款对抗；单方"
+      ],
+      "path": "skills/评估动产担保与购置款超级优先",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "金融借贷与担保导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备请求办理抵押登记诉讼",
+      "kind": "atomic",
+      "displayName": "准备请求办理抵押登记诉讼",
+      "goal": "抵押合同生效但未登记，已决定起诉办登；债权人",
+      "notFor": [
+        "与实现担保物权不同"
+      ],
+      "deliverables": [
+        "抵押合同生效但未登记，已决定起诉办登；债权人"
+      ],
+      "path": "skills/准备请求办理抵押登记诉讼",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "金融借贷与担保导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "建立借还时间线与抵充顺序",
+      "kind": "atomic",
+      "displayName": "建立借还时间线与抵充顺序",
+      "goal": "需单独把放款、还款、抵充做成可回链时间线；单方",
+      "notFor": [
+        "不判断最终欠款总额"
+      ],
+      "deliverables": [
+        "需单独把放款、还款、抵充做成可回链时间线；单方"
+      ],
+      "path": "skills/建立借还时间线与抵充顺序",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "金融借贷与担保导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估提前还款与违约金",
+      "kind": "atomic",
+      "displayName": "评估提前还款与违约金",
+      "goal": "拟提前还或被收提前还款违约金；单方",
+      "notFor": [
+        "不输出精算终稿"
+      ],
+      "deliverables": [
+        "拟提前还或被收提前还款违约金；单方"
+      ],
+      "path": "skills/评估提前还款与违约金",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "金融借贷与担保导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估银行抵销与扣款",
+      "kind": "atomic",
+      "displayName": "评估银行抵销与扣款",
+      "goal": "银行扣划存款或主张抵销；单方",
+      "notFor": [
+        "不指导隐匿账户规避扣划"
+      ],
+      "deliverables": [
+        "银行扣划存款或主张抵销；单方"
+      ],
+      "path": "skills/评估银行抵销与扣款",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "金融借贷与担保导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "处理加速到期后清算",
+      "kind": "atomic",
+      "displayName": "处理加速到期后清算",
+      "goal": "已加速或终止后需清算本息费用；单方",
+      "notFor": [
+        "不重判加速是否成立"
+      ],
+      "deliverables": [
+        "已加速或终止后需清算本息费用；单方"
+      ],
+      "path": "skills/处理加速到期后清算",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "金融借贷与担保导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备公证催收或赋强公证",
+      "kind": "atomic",
+      "displayName": "准备公证催收或赋强公证",
+      "goal": "需公证固定催收或赋强执行；单方",
+      "notFor": [
+        "不保证出具执行证书"
+      ],
+      "deliverables": [
+        "需公证固定催收或赋强执行；单方"
+      ],
+      "path": "skills/准备公证催收或赋强公证",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "金融借贷与担保导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "执行赋强公证债权文书",
+      "kind": "atomic",
+      "displayName": "执行赋强公证债权文书",
+      "goal": "持赋强公证书要执行证书或申请执行；权利人",
+      "notFor": [
+        "与普通判决执行不同"
+      ],
+      "deliverables": [
+        "持赋强公证书要执行证书或申请执行；权利人"
+      ],
+      "path": "skills/执行赋强公证债权文书",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "金融借贷与担保导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "保全转账与电子证据",
+      "kind": "atomic",
+      "displayName": "保全转账与电子证据",
+      "goal": "聊天、转账、电子签约可能灭失；单方",
+      "notFor": [
+        "不指导违法取证"
+      ],
+      "deliverables": [
+        "聊天、转账、电子签约可能灭失；单方"
+      ],
+      "path": "skills/保全转账与电子证据",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "金融借贷与担保导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估金融财产保全必要性",
+      "kind": "atomic",
+      "displayName": "评估金融财产保全必要性",
+      "goal": "担心转移财产，尚未决定申请；单方",
+      "notFor": [
+        "不代写申请"
+      ],
+      "deliverables": [
+        "担心转移财产，尚未决定申请；单方"
+      ],
+      "path": "skills/评估金融财产保全必要性",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "金融借贷与担保导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备金融财产保全申请",
+      "kind": "atomic",
+      "displayName": "准备金融财产保全申请",
+      "goal": "已决定申请诉前或诉中保全；申请方",
+      "notFor": [
+        "不保证裁定",
+        "与先予执行不同"
+      ],
+      "deliverables": [
+        "已决定申请诉前或诉中保全；申请方"
+      ],
+      "path": "skills/准备金融财产保全申请",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "金融借贷与担保导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对金融案件保全裁定",
+      "kind": "atomic",
+      "displayName": "应对金融案件保全裁定",
+      "goal": "账户或担保物已被保全；被保全方",
+      "notFor": [
+        "不提供转移隐匿方案"
+      ],
+      "deliverables": [
+        "账户或担保物已被保全；被保全方"
+      ],
+      "path": "skills/应对金融案件保全裁定",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "金融借贷与担保导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "申请调查令调取流水",
+      "kind": "atomic",
+      "displayName": "申请调查令调取流水",
+      "goal": "关键流水或登记由第三方掌握；单方",
+      "notFor": [
+        "禁止违法调取个人信息"
+      ],
+      "deliverables": [
+        "关键流水或登记由第三方掌握；单方"
+      ],
+      "path": "skills/申请调查令调取流水",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "金融借贷与担保导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "提出担保物价值鉴定异议",
+      "kind": "atomic",
+      "displayName": "提出担保物价值鉴定异议",
+      "goal": "鉴定意见作出后不服；单方",
+      "notFor": [
+        "不重新做鉴定意见"
+      ],
+      "deliverables": [
+        "鉴定意见作出后不服；单方"
+      ],
+      "path": "skills/提出担保物价值鉴定异议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "金融借贷与担保导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "起草还款和解协议",
+      "kind": "atomic",
+      "displayName": "起草还款和解协议",
+      "goal": "条件已谈拢，需可签协议；单方",
+      "notFor": [
+        "未成争补签走起草（搁置）",
+        "司法确认另项"
+      ],
+      "deliverables": [
+        "条件已谈拢，需可签协议；单方"
+      ],
+      "path": "skills/起草还款和解协议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "金融借贷与担保导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估庭外重组方案",
+      "kind": "atomic",
+      "displayName": "评估庭外重组方案",
+      "goal": "多债权人庭外展期、削债或置换；单方",
+      "notFor": [
+        "不制定重整计划",
+        "破产内方案转破产"
+      ],
+      "deliverables": [
+        "多债权人庭外展期、削债或置换；单方"
+      ],
+      "path": "skills/评估庭外重组方案",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "金融借贷与担保导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "办理金融和解执行力补强",
+      "kind": "atomic",
+      "displayName": "办理金融和解执行力补强",
+      "goal": "需司法确认、调解书或公证赋强；单方",
+      "notFor": [
+        "单独和解无执行力必须明示"
+      ],
+      "deliverables": [
+        "需司法确认、调解书或公证赋强；单方"
+      ],
+      "path": "skills/办理金融和解执行力补强",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "金融借贷与担保导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "选择诉讼仲裁支付令或特别程序",
+      "kind": "atomic",
+      "displayName": "选择诉讼仲裁支付令或特别程序",
+      "goal": "债权条件需比较起诉、仲裁、支付令、实现担保物权；主张方",
+      "notFor": [
+        "不写完整申请书"
+      ],
+      "deliverables": [
+        "债权条件需比较起诉、仲裁、支付令、实现担保物权；主张方"
+      ],
+      "path": "skills/选择诉讼仲裁支付令或特别程序",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "金融借贷与担保导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "申请金融金钱支付令",
+      "kind": "atomic",
+      "displayName": "申请金融金钱支付令",
+      "goal": "金钱给付明确、无对待给付；债权人",
+      "notFor": [
+        "有实质履行或担保争议不得包装成支付令"
+      ],
+      "deliverables": [
+        "金钱给付明确、无对待给付；债权人"
+      ],
+      "path": "skills/申请金融金钱支付令",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "金融借贷与担保导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "提起金融仲裁",
+      "kind": "atomic",
+      "displayName": "提起金融仲裁",
+      "goal": "有效仲裁协议且决定申请；申请方",
+      "notFor": [
+        "与起诉互斥"
+      ],
+      "deliverables": [
+        "有效仲裁协议且决定申请；申请方"
+      ],
+      "path": "skills/提起金融仲裁",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "金融借贷与担保导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对金融仲裁",
+      "kind": "atomic",
+      "displayName": "应对金融仲裁",
+      "goal": "收到仲裁申请；被申请方",
+      "notFor": [
+        "与申请方材料权限不同"
+      ],
+      "deliverables": [
+        "收到仲裁申请；被申请方"
+      ],
+      "path": "skills/应对金融仲裁",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "金融借贷与担保导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备金融案件庭审",
+      "kind": "atomic",
+      "displayName": "准备金融案件庭审",
+      "goal": "诉讼或仲裁即将开庭；单方代理",
+      "notFor": [
+        "不代替立案或仅和解"
+      ],
+      "deliverables": [
+        "诉讼或仲裁即将开庭；单方代理"
+      ],
+      "path": "skills/准备金融案件庭审",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "金融借贷与担保导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "提起金融案件上诉",
+      "kind": "atomic",
+      "displayName": "提起金融案件上诉",
+      "goal": "不服未生效裁判；上诉方",
+      "notFor": [
+        "不重做一审"
+      ],
+      "deliverables": [
+        "不服未生效裁判；上诉方"
+      ],
+      "path": "skills/提起金融案件上诉",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "金融借贷与担保导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对金融案件二审",
+      "kind": "atomic",
+      "displayName": "应对金融案件二审",
+      "goal": "收到上诉状；被上诉方",
+      "notFor": [
+        "不代替主动上诉"
+      ],
+      "deliverables": [
+        "收到上诉状；被上诉方"
+      ],
+      "path": "skills/应对金融案件二审",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "金融借贷与担保导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估金融反诉或反请求",
+      "kind": "atomic",
+      "displayName": "评估金融反诉或反请求",
+      "goal": "被告拟反诉；被请求方",
+      "notFor": [
+        "不自动生成反诉状终稿"
+      ],
+      "deliverables": [
+        "被告拟反诉；被请求方"
+      ],
+      "path": "skills/评估金融反诉或反请求",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "金融借贷与担保导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备金融反诉或仲裁反请求",
+      "kind": "atomic",
+      "displayName": "准备金融反诉或仲裁反请求",
+      "goal": "已决定反诉；反诉原告",
+      "notFor": [
+        "与本诉答辩分开验收"
+      ],
+      "deliverables": [
+        "已决定反诉；反诉原告"
+      ],
+      "path": "skills/准备金融反诉或仲裁反请求",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "金融借贷与担保导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估保理真实性与通知",
+      "kind": "atomic",
+      "displayName": "评估保理真实性与通知",
+      "goal": "争基础交易真实性、通知或优先顺位；单方",
+      "notFor": [
+        "一般债权转让走转让原子",
+        "应收账款质押竞存单列"
+      ],
+      "deliverables": [
+        "争基础交易真实性、通知或优先顺位；单方"
+      ],
+      "path": "skills/评估保理真实性与通知",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "金融借贷与担保导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备保理债权转让通知",
+      "kind": "atomic",
+      "displayName": "准备保理债权转让通知",
+      "goal": "已决定通知应收账款债务人；保理人或债权人",
+      "notFor": [
+        "不替代保理定性"
+      ],
+      "deliverables": [
+        "已决定通知应收账款债务人；保理人或债权人"
+      ],
+      "path": "skills/准备保理债权转让通知",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "金融借贷与担保导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估融资租赁性质与取回",
+      "kind": "atomic",
+      "displayName": "评估融资租赁性质与取回",
+      "goal": "争是否构成融资租赁、租金或取回；单方",
+      "notFor": [
+        "名不副实按实际关系分流",
+        "一般租赁转合同争议"
+      ],
+      "deliverables": [
+        "争是否构成融资租赁、租金或取回；单方"
+      ],
+      "path": "skills/评估融资租赁性质与取回",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "金融借贷与担保导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备融资租赁物取回或清算",
+      "kind": "atomic",
+      "displayName": "准备融资租赁物取回或清算",
+      "goal": "已决定取回或参照担保物权实现；出租人",
+      "notFor": [
+        "不保证取回成功"
+      ],
+      "deliverables": [
+        "已决定取回或参照担保物权实现；出租人"
+      ],
+      "path": "skills/准备融资租赁物取回或清算",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "金融借贷与担保导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估信用卡与消费贷争议",
+      "kind": "atomic",
+      "displayName": "评估信用卡与消费贷争议",
+      "goal": "账单、息费、盗刷或停卡后催收；单方",
+      "notFor": [
+        "未授权银行卡交易大众包只分流"
+      ],
+      "deliverables": [
+        "账单、息费、盗刷或停卡后催收；单方"
+      ],
+      "path": "skills/评估信用卡与消费贷争议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "金融借贷与担保导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估银行理财适当性",
+      "kind": "atomic",
+      "displayName": "评估银行理财适当性",
+      "goal": "亏损后争适当性、告知或刚兑表述；单方",
+      "notFor": [
+        "证券虚假陈述或私募整案转投资并购/证券交叉"
+      ],
+      "deliverables": [
+        "亏损后争适当性、告知或刚兑表述；单方"
+      ],
+      "path": "skills/评估银行理财适当性",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "金融借贷与担保导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估委托贷款结构",
+      "kind": "atomic",
+      "displayName": "评估委托贷款结构",
+      "goal": "银行通道或委托贷款责任争议；单方",
+      "notFor": [
+        "C 端委托理财评估只分流",
+        "通道业务监管另标"
+      ],
+      "deliverables": [
+        "银行通道或委托贷款责任争议；单方"
+      ],
+      "path": "skills/评估委托贷款结构",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "金融借贷与担保导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估票据贴现与融资",
+      "kind": "atomic",
+      "displayName": "评估票据贴现与融资",
+      "goal": "票据贴现、回购式融资或票据担保；单方",
+      "notFor": [
+        "纯票据追索可留本领域",
+        "海事提单转海事"
+      ],
+      "deliverables": [
+        "票据贴现、回购式融资或票据担保；单方"
+      ],
+      "path": "skills/评估票据贴现与融资",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "金融借贷与担保导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估网贷平台责任",
+      "kind": "atomic",
+      "displayName": "评估网贷平台责任",
+      "goal": "平台被指自融、担保或未尽审核；单方",
+      "notFor": [
+        "刑民交叉、集资红旗转专项",
+        "不定罪"
+      ],
+      "deliverables": [
+        "平台被指自融、担保或未尽审核；单方"
+      ],
+      "path": "skills/评估网贷平台责任",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "金融借贷与担保导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "执行金融生效文书",
+      "kind": "atomic",
+      "displayName": "执行金融生效文书",
+      "goal": "持判决、调解书、裁决未获履行；权利人",
+      "notFor": [
+        "复杂追加另项",
+        "不重审实体",
+        "C 端执行申请只分流"
+      ],
+      "deliverables": [
+        "持判决、调解书、裁决未获履行；权利人"
+      ],
+      "path": "skills/执行金融生效文书",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "金融借贷与担保导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对金融执行",
+      "kind": "atomic",
+      "displayName": "应对金融执行",
+      "goal": "被执行人收到执行；被执行方",
+      "notFor": [
+        "禁止隐匿转移"
+      ],
+      "deliverables": [
+        "被执行人收到执行；被执行方"
+      ],
+      "path": "skills/应对金融执行",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "金融借贷与担保导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估追加被执行人或担保人",
+      "kind": "atomic",
+      "displayName": "评估追加被执行人或担保人",
+      "goal": "拟追加未列明担保人或股东；申请执行人",
+      "notFor": [
+        "股东出资责任转公司治理",
+        "破产追加转破产"
+      ],
+      "deliverables": [
+        "拟追加未列明担保人或股东；申请执行人"
+      ],
+      "path": "skills/评估追加被执行人或担保人",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "金融借贷与担保导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备金融执行和解",
+      "kind": "atomic",
+      "displayName": "准备金融执行和解",
+      "goal": "执行中拟分期或以物抵债；单方",
+      "notFor": [
+        "不放弃已生效债权除非明示"
+      ],
+      "deliverables": [
+        "执行中拟分期或以物抵债；单方"
+      ],
+      "path": "skills/准备金融执行和解",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "金融借贷与担保导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "识别破产程序入口并分流",
+      "kind": "atomic",
+      "displayName": "识别破产程序入口并分流",
+      "goal": "出现破产受理、重整或集中清偿信号；单方",
+      "notFor": [
+        "**不**做破产债权申报",
+        "申报转破产领域"
+      ],
+      "deliverables": [
+        "出现破产受理、重整或集中清偿信号；单方"
+      ],
+      "path": "skills/识别破产程序入口并分流",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "金融借贷与担保导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估夫妻共债交叉并分流",
+      "kind": "atomic",
+      "displayName": "评估夫妻共债交叉并分流",
+      "goal": "配偶是否共同债务影响借贷担保；单方",
+      "notFor": [
+        "不展开家事整案",
+        "转婚家领域"
+      ],
+      "deliverables": [
+        "配偶是否共同债务影响借贷担保；单方"
+      ],
+      "path": "skills/评估夫妻共债交叉并分流",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "金融借贷与担保导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    }
+  ],
+  "guideName": "金融借贷与担保导航"
+}

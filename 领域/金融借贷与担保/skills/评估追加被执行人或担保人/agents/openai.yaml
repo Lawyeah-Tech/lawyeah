@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估追加被执行人或担保人"
+  short_description: "评估执行中追加担保人或股东是否具备法定条件"
+  default_prompt: "使用 $评估追加被执行人或担保人，在申请执行人立场下评估追加被执行人或担保人。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "执行竞争法生效文书"
+  short_description: "准备竞争法生效文书的执行申请和行为履行监督"
+  default_prompt: "使用 $执行竞争法生效文书，准备竞争法生效文书的执行申请和行为履行监督。"

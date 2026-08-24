@@ -1,0 +1,4 @@
+interface:
+  display_name: "规划清税注销"
+  short_description: "列出清税事项、发票缴销和检查红旗，不定简易注销"
+  default_prompt: "使用 $规划清税注销，在管理方立场下规划中国大陆清税注销事项和检查红旗。"

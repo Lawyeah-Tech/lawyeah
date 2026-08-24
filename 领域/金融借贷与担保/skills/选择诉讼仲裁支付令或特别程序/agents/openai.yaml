@@ -1,0 +1,4 @@
+interface:
+  display_name: "选择诉讼仲裁支付令或特别程序"
+  short_description: "比较诉讼、仲裁、支付令和实现担保物权程序"
+  default_prompt: "使用 $选择诉讼仲裁支付令或特别程序，在主张方立场下选择中国大陆金融债权的实现程序。"

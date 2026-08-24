@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估扣缴义务"
+  short_description: "评估应扣未扣范围、时点、责任和滞纳金接口"
+  default_prompt: "使用 $评估扣缴义务，在单一立场下评估中国大陆扣缴义务和未扣缴责任接口。"

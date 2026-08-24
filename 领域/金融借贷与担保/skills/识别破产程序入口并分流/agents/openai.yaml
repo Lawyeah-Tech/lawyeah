@@ -1,0 +1,4 @@
+interface:
+  display_name: "识别破产程序入口并分流"
+  short_description: "识别破产入口、提示个别清偿风险并分流"
+  default_prompt: "使用 $识别破产程序入口并分流，在单一立场下识别中国大陆破产程序入口并分流，不在本包申报。"

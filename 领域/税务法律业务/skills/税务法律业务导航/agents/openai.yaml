@@ -1,0 +1,4 @@
+interface:
+  display_name: "税务法律业务导航"
+  short_description: "了解税务领域包的能力边界，并定位适用的原子 Skill"
+  default_prompt: "使用 $税务法律业务导航 根据我的立场、阶段和预期成果，在已安装的 P0 与 P1 中定位合适的税务原子 Skill。"

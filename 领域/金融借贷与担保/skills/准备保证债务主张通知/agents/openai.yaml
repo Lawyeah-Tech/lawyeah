@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备保证债务主张通知"
+  short_description: "形成保证期间内向保证人主张的发送前稿和到达设计"
+  default_prompt: "使用 $准备保证债务主张通知，起草向保证人发送前的保证债务主张通知。"

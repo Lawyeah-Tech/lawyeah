@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估独立保函"
+  short_description: "评估见索即付独立保函的相符交单与欺诈止付"
+  default_prompt: "使用 $评估独立保函，在单一立场下评估中国大陆独立保函的独立性、单据相符与止付接口。"

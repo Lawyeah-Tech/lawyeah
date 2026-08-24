@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备和解协议草案"
+  short_description: "起草法定和解协议的清偿来源办法期限并接会议表决"
+  default_prompt: "使用 $准备和解协议草案，准备中国大陆破产和解协议草案。"

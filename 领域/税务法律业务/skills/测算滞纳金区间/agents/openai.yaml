@@ -1,0 +1,4 @@
+interface:
+  display_name: "测算滞纳金区间"
+  short_description: "分情景测算滞纳金起算、万分之五接口和停止加收，未知本金不写零"
+  default_prompt: "使用 $测算滞纳金区间，在单一立场下测算中国大陆税收滞纳金起算和停止加收情景。"

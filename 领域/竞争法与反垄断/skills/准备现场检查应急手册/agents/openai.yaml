@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备现场检查应急手册"
+  short_description: "预置针对反垄断现场检查的到场分工和陈述纪律手册"
+  default_prompt: "使用 $准备现场检查应急手册，预置针对反垄断现场检查的到场分工和陈述纪律手册。"

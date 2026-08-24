@@ -1,0 +1,4 @@
+interface:
+  display_name: "规划举证期限与补充证据"
+  short_description: "规划行政诉讼举证期限、逾期后果和补证申请"
+  default_prompt: "使用 $规划举证期限与补充证据，在单一立场下规划中国大陆行政诉讼举证期限和补充证据，不要写成整本案卷。"

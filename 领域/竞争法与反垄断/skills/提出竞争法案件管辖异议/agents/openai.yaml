@@ -1,0 +1,4 @@
+interface:
+  display_name: "提出竞争法案件管辖异议"
+  short_description: "在法定期限内准备竞争法案件管辖异议"
+  default_prompt: "使用 $提出竞争法案件管辖异议，在法定期限内准备竞争法案件管辖异议。"

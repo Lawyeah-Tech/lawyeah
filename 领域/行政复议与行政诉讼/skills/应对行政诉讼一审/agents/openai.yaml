@@ -1,0 +1,4 @@
+interface:
+  display_name: "应对行政诉讼一审"
+  short_description: "形成十五日举证卡、答辩草稿和共同被告分工"
+  default_prompt: "使用 $应对行政诉讼一审，根据起诉状准备行政诉讼一审答辩和举证目录。"

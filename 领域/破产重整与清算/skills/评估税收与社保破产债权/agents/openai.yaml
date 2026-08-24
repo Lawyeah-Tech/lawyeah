@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估税收与社保破产债权"
+  short_description: "拆分税款滞纳金与社保在破产中的性质顺位和停计点"
+  default_prompt: "使用 $评估税收与社保破产债权，评估中国大陆破产中的税收与社保债权。"

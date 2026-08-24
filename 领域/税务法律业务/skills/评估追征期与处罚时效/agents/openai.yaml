@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估追征期与处罚时效"
+  short_description: "分列三年／五年／无限期追征与五年处罚时效，禁止混算"
+  default_prompt: "使用 $评估追征期与处罚时效，在单一立场下分类型评估中国大陆税款追征期和处罚时效。"

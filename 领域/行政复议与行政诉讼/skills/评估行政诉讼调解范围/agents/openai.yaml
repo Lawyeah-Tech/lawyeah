@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估行政诉讼调解范围"
+  short_description: "判断行政诉讼可调事项、禁止事项和调解效力"
+  default_prompt: "使用 $评估行政诉讼调解范围，在单一立场下评估中国大陆行政诉讼调解范围，列出可调和禁止事项。"

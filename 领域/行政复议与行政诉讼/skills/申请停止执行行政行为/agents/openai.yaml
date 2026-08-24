@@ -1,0 +1,4 @@
+interface:
+  display_name: "申请停止执行行政行为"
+  short_description: "起草复议或诉讼中的停止执行申请并权衡公共利益"
+  default_prompt: "使用 $申请停止执行行政行为，在申请人或原告立场下准备中国大陆停止执行行政行为的申请，并明示原则不停止。"

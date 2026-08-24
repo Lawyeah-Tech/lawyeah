@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估政府信息公开决定"
+  short_description: "评估政府信息公开决定的范围、例外和复议前置"
+  default_prompt: "使用 $评估政府信息公开决定，在申请人立场下评估中国大陆政府信息公开决定及复议前置是否命中。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估动产担保与购置款超级优先"
+  short_description: "评估动产浮动抵押公示和购置款超级优先"
+  default_prompt: "使用 $评估动产担保与购置款超级优先，在单一立场下评估中国大陆动产担保与购置款超级优先。"

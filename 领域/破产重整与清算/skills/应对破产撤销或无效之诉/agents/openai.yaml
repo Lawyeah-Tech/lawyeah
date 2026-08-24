@@ -1,0 +1,4 @@
+interface:
+  display_name: "应对破产撤销或无效之诉"
+  short_description: "对破产撤销或无效之诉组织起算、善意和例外抗辩"
+  default_prompt: "使用 $应对破产撤销或无效之诉，准备中国大陆破产撤销或无效之诉答辩。"

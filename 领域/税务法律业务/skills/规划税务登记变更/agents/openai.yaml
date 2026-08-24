@@ -1,0 +1,4 @@
+interface:
+  display_name: "规划税务登记变更"
+  short_description: "列出税务登记变更事项、材料和申报衔接，不代提交"
+  default_prompt: "使用 $规划税务登记变更，在管理方立场下规划中国大陆税务登记变更事项和材料。"

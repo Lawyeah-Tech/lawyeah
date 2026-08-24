@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估行政强制措施或执行"
+  short_description: "评估查封扣押冻结或行政强制执行的程序与期限"
+  default_prompt: "使用 $评估行政强制措施或执行，在相对人立场下评估中国大陆行政强制措施或强制执行的合法性与停止执行接口。"

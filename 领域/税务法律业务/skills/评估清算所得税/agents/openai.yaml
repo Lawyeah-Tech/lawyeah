@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估清算所得税"
+  short_description: "列出清算所得、股东剩余财产所得和清税衔接"
+  default_prompt: "使用 $评估清算所得税，在管理方或股东立场下评估中国大陆清算所得税和股东所得接口。"

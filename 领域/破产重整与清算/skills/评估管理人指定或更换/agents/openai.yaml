@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估管理人指定或更换"
+  short_description: "对照法定情形评估能否申请更换管理人"
+  default_prompt: "使用 $评估管理人指定或更换，评估中国大陆破产管理人指定或更换。"

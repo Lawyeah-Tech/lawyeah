@@ -1,0 +1,4 @@
+interface:
+  display_name: "针对特定商业做法设计竞争风险控制"
+  short_description: "针对某一经销、定价或平台做法设计竞争法控制点"
+  default_prompt: "使用 $针对特定商业做法设计竞争风险控制，针对某一经销、定价或平台做法设计竞争法控制点。"

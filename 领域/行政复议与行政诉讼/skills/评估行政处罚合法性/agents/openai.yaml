@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估行政处罚合法性"
+  short_description: "评估行政处罚主体、事实、依据、程序和过罚相当"
+  default_prompt: "使用 $评估行政处罚合法性，在相对人立场下评估中国大陆行政处罚合法性，列出听证权利和从轻接口。"

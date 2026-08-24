@@ -1,0 +1,4 @@
+interface:
+  display_name: "对职工债权清单提出异议"
+  short_description: "对公示职工债权清单提出更正并分流诉讼"
+  default_prompt: "使用 $对职工债权清单提出异议，处理中国大陆破产职工债权清单异议。"

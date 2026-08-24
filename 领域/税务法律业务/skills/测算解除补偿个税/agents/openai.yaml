@@ -1,0 +1,4 @@
+interface:
+  display_name: "测算解除补偿个税"
+  short_description: "拆分解除补偿与工资，列出免税额接口和扣缴，未知不写零"
+  default_prompt: "使用 $测算解除补偿个税，在单一立场下测算中国大陆解除劳动关系补偿的个人所得税接口。"

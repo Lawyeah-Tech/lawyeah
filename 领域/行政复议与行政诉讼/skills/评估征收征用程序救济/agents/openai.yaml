@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估征收征用程序救济"
+  short_description: "评估征收征用公告听证等程序并转出补偿实体"
+  default_prompt: "使用 $评估征收征用程序救济，在被征收人立场下评估中国大陆征收或征用程序违法争点和救济入口，不测算补偿额。"

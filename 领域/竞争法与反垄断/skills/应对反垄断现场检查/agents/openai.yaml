@@ -1,0 +1,4 @@
+interface:
+  display_name: "应对反垄断现场检查"
+  short_description: "形成反垄断现场检查的到场权利义务和陈述边界卡"
+  default_prompt: "使用 $应对反垄断现场检查，形成反垄断现场检查的到场权利义务和陈述边界卡。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估不动产交易税负"
+  short_description: "列出不动产买卖、投资或抵债的增值税、土增、契税和所得税争点"
+  default_prompt: "使用 $评估不动产交易税负，在单一立场下评估中国大陆不动产交易的税种争点。"

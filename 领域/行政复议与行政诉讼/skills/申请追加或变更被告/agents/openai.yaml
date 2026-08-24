@@ -1,0 +1,4 @@
+interface:
+  display_name: "申请追加或变更被告"
+  short_description: "申请追加或变更行政诉讼被告并应对共同被告释明"
+  default_prompt: "使用 $申请追加或变更被告，在原告立场下申请追加或变更中国大陆行政诉讼被告，并说明法院可依职权列共同被告。"

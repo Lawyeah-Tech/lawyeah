@@ -1,0 +1,4 @@
+interface:
+  display_name: "作为第三人参加行政诉讼"
+  short_description: "准备行政诉讼第三人参加申请或陈述并评估独立请求"
+  default_prompt: "使用 $作为第三人参加行政诉讼，在第三人立场下参加中国大陆行政诉讼，不要写成被告答辩。"

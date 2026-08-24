@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估知识产权行使的竞争法面向"
+  short_description: "评估知识产权行使是否构成垄断或不正当竞争及 FRAND 接口"
+  default_prompt: "使用 $评估知识产权行使的竞争法面向，评估知识产权行使是否构成垄断或不正当竞争及 FRAND 接口。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估规范性文件附带审查"
+  short_description: "判断红头文件能否附带审查及提出时点"
+  default_prompt: "使用 $评估规范性文件附带审查，在单一立场下评估中国大陆行政行为所依规范性文件是否属于可附带审查的规定。"

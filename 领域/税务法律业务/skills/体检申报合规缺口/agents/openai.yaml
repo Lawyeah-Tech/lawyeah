@@ -1,0 +1,4 @@
+interface:
+  display_name: "体检申报合规缺口"
+  short_description: "对照申报、开票和收款列出合规缺口与整改优先级"
+  default_prompt: "使用 $体检申报合规缺口，在管理方立场下体检尚未被查的中国大陆申报合规缺口。"

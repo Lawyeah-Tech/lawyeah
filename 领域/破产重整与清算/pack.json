@@ -1,0 +1,1442 @@
+{
+  "schemaVersion": 2,
+  "id": "handle-bankruptcy-restructuring",
+  "displayName": "破产重整与清算",
+  "description": "处理中国大陆企业破产申请、债权申报、重整可行性、清算分配接口及破产衍生撤销争议的多 Skill 领域包。",
+  "version": "1.0.0",
+  "license": "Apache-2.0",
+  "jurisdiction": "CN-mainland",
+  "contentModel": "multi-skill-progressive-disclosure",
+  "reinstallStrategy": "replace",
+  "scope": {
+    "purpose": "处理企业破产申请、债权申报、重整、和解、清算及破产衍生争议。",
+    "inScope": [
+      "破产申请和受理评估",
+      "债权申报与审查",
+      "重整投资和重整计划",
+      "清算、管理人事务及衍生诉讼"
+    ],
+    "outOfScope": [
+      "破产程序外的一般债权实现",
+      "一般公司治理和经营合规",
+      "普通投资并购项目"
+    ],
+    "primaryDeliverables": [
+      "破产申请或异议材料",
+      "债权申报成果",
+      "重整计划与投资文件",
+      "清算及衍生诉讼成果"
+    ]
+  },
+  "guideSkill": "破产重整与清算导航",
+  "mcp": {
+    "contractRange": "0.0"
+  },
+  "skills": [
+    {
+      "id": "破产重整与清算导航",
+      "kind": "guide",
+      "displayName": "破产重整与清算导航",
+      "goal": "说明领域包的能力、边界和当前原子 Skill 全貌",
+      "notFor": [
+        "直接完成具体法律业务成果"
+      ],
+      "deliverables": [
+        "领域能力定位结果"
+      ],
+      "path": "skills/破产重整与清算导航",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "建立破产程序证据案卷",
+          "准备破产债权申报",
+          "准备破产撤销或无效之诉",
+          "测算债权额性质与清偿顺位",
+          "准备债权人破产申请",
+          "评估重整可行性",
+          "对债权表提出异议",
+          "准备债务人破产申请",
+          "对破产受理提出异议",
+          "评估破产重整和解路径",
+          "评估破产原因是否成立",
+          "评估申请主体与清算义务",
+          "评估破产案件管辖",
+          "评估预重整或庭外重组",
+          "评估强制清算转破产",
+          "评估关联企业实质合并",
+          "筛查代理与管理人冲突",
+          "对不予受理或驳回上诉",
+          "准备清算义务人破产申请",
+          "申请清算重整和解转换",
+          "整理受理后中止与个别清偿清单",
+          "提起破产债权确认之诉",
+          "应对破产债权确认之诉",
+          "对职工债权清单提出异议",
+          "编制职工债权清单",
+          "准备补充申报",
+          "评估别除权与担保债权",
+          "评估破产抵销",
+          "评估税收与社保破产债权",
+          "评估未到期或然与保证人债权",
+          "盘点债务人财产与权利负担",
+          "应对破产撤销或无效之诉",
+          "准备追缴出资或内部人责任",
+          "准备取回权主张",
+          "应对取回权主张",
+          "评估待履行合同解除或继续",
+          "准备破产财产追回与保全接口",
+          "准备破产财产变价或整体出让",
+          "对财产处置提出异议",
+          "评估管理人指定或更换",
+          "准备管理人工作与财产状况报告",
+          "准备债权人会议表决",
+          "准备知情查阅与监督请求",
+          "准备破产衍生诉讼庭审",
+          "准备重整计划草案",
+          "评估重整计划分组与表决",
+          "申请重整计划强制批准",
+          "对重整计划提出异议",
+          "准备重整投资与招募",
+          "申请终止重整并宣告破产",
+          "评估共益债融资与继续经营",
+          "评估和解可行性",
+          "准备和解协议草案",
+          "对和解协议提出异议",
+          "谈判庭外或程序内债务调整",
+          "评估宣告破产条件",
+          "准备变价与分配方案",
+          "对分配方案提出异议",
+          "测算分配瀑布与清偿区间",
+          "准备董事高管破产责任诉讼",
+          "准备出资加速到期或抽逃追缴"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估破产重整和解路径",
+      "kind": "atomic",
+      "displayName": "评估破产重整和解路径",
+      "goal": "在单方无冲突立场下形成可决策的法定程序路径总图",
+      "notFor": [
+        "申请书终稿",
+        "债权申报终稿",
+        "程序外催收",
+        "职工安置"
+      ],
+      "deliverables": [
+        "在单方无冲突立场下形成可决策的法定程序路径总图"
+      ],
+      "path": "skills/评估破产重整和解路径",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "破产重整与清算导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备债务人破产申请",
+      "kind": "atomic",
+      "displayName": "准备债务人破产申请",
+      "goal": "形成债务人申请清算、重整或和解的发送前申请包",
+      "notFor": [
+        "债权人申请",
+        "代提交",
+        "保证受理"
+      ],
+      "deliverables": [
+        "形成债务人申请清算、重整或和解的发送前申请包"
+      ],
+      "path": "skills/准备债务人破产申请",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "破产重整与清算导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备债权人破产申请",
+      "kind": "atomic",
+      "displayName": "准备债权人破产申请",
+      "goal": "形成债权人以不能清偿到期债务申请重整或清算的发送前申请包",
+      "notFor": [
+        "债务人申请",
+        "程序外执行",
+        "代提交"
+      ],
+      "deliverables": [
+        "形成债权人以不能清偿到期债务申请重整或清算的发送前申请包"
+      ],
+      "path": "skills/准备债权人破产申请",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "破产重整与清算导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "对破产受理提出异议",
+      "kind": "atomic",
+      "displayName": "对破产受理提出异议",
+      "goal": "形成债务人对债权人申请的法定期限异议包",
+      "notFor": [
+        "已受理后的程序转换",
+        "隐匿财产方案",
+        "主动申请"
+      ],
+      "deliverables": [
+        "形成债务人对债权人申请的法定期限异议包"
+      ],
+      "path": "skills/对破产受理提出异议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "破产重整与清算导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备破产债权申报",
+      "kind": "atomic",
+      "displayName": "准备破产债权申报",
+      "goal": "形成已受理案件的发送前债权申报包",
+      "notFor": [
+        "未受理时的催收",
+        "职工法定项目当作必须申报",
+        "C端052降级实施"
+      ],
+      "deliverables": [
+        "形成已受理案件的发送前债权申报包"
+      ],
+      "path": "skills/准备破产债权申报",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "破产重整与清算导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "对债权表提出异议",
+      "kind": "atomic",
+      "displayName": "对债权表提出异议",
+      "goal": "形成对债权表或核查意见的异议和确认之诉分流",
+      "notFor": [
+        "首次申报",
+        "确认之诉终稿",
+        "职工安置"
+      ],
+      "deliverables": [
+        "形成对债权表或核查意见的异议和确认之诉分流"
+      ],
+      "path": "skills/对债权表提出异议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "破产重整与清算导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "测算债权额性质与清偿顺位",
+      "kind": "atomic",
+      "displayName": "测算债权额性质与清偿顺位",
+      "goal": "形成可复核的分项测算和顺位，不认定债权已确认",
+      "notFor": [
+        "唯一清偿率",
+        "劳动待遇精算终稿",
+        "定性总图"
+      ],
+      "deliverables": [
+        "形成可复核的分项测算和顺位，不认定债权已确认"
+      ],
+      "path": "skills/测算债权额性质与清偿顺位",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "破产重整与清算导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "建立破产程序证据案卷",
+      "kind": "atomic",
+      "displayName": "建立破产程序证据案卷",
+      "goal": "形成要件、举证责任、材料与合法补证矩阵",
+      "notFor": [
+        "策略总图",
+        "申请书或诉状",
+        "违法取证方案"
+      ],
+      "deliverables": [
+        "形成要件、举证责任、材料与合法补证矩阵"
+      ],
+      "path": "skills/建立破产程序证据案卷",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "破产重整与清算导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估重整可行性",
+      "kind": "atomic",
+      "displayName": "评估重整可行性",
+      "goal": "判断有无重整价值和可能，不写计划草案终稿",
+      "notFor": [
+        "重整计划草案",
+        "强制批准申请",
+        "普通并购交割"
+      ],
+      "deliverables": [
+        "判断有无重整价值和可能，不写计划草案终稿"
+      ],
+      "path": "skills/评估重整可行性",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "破产重整与清算导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备破产撤销或无效之诉",
+      "kind": "atomic",
+      "displayName": "准备破产撤销或无效之诉",
+      "goal": "形成临界期内可撤销或无效行为的发送前诉讼包",
+      "notFor": [
+        "民法典债权人撤销权",
+        "保证追回",
+        "隐匿财产方案"
+      ],
+      "deliverables": [
+        "形成临界期内可撤销或无效行为的发送前诉讼包"
+      ],
+      "path": "skills/准备破产撤销或无效之诉",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "破产重整与清算导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估破产原因是否成立",
+      "kind": "atomic",
+      "displayName": "评估破产原因是否成立",
+      "goal": "单独委托核验不能清偿、资不抵债或明显缺乏清偿能力；单方",
+      "notFor": [
+        "不替代路径总图",
+        "不写申请书"
+      ],
+      "deliverables": [
+        "单独委托核验不能清偿、资不抵债或明显缺乏清偿能力；单方"
+      ],
+      "path": "skills/评估破产原因是否成立",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "破产重整与清算导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估申请主体与清算义务",
+      "kind": "atomic",
+      "displayName": "评估申请主体与清算义务",
+      "goal": "争议谁有权或谁必须申请；债务人／债权人／清算义务人",
+      "notFor": [
+        "不代替申请书",
+        "公司日常治理转公司治理"
+      ],
+      "deliverables": [
+        "争议谁有权或谁必须申请；债务人／债权人／清算义务人"
+      ],
+      "path": "skills/评估申请主体与清算义务",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "破产重整与清算导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估破产案件管辖",
+      "kind": "atomic",
+      "displayName": "评估破产案件管辖",
+      "goal": "要选受理法院或出现集中管辖／关联管辖；单方",
+      "notFor": [
+        "不代写申请",
+        "海事、金融专项管辖转出"
+      ],
+      "deliverables": [
+        "要选受理法院或出现集中管辖／关联管辖；单方"
+      ],
+      "path": "skills/评估破产案件管辖",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "破产重整与清算导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估预重整或庭外重组",
+      "kind": "atomic",
+      "displayName": "评估预重整或庭外重组",
+      "goal": "尚未受理，拟预重整、庭外协议或招募投资人；债务人／主要债权人",
+      "notFor": [
+        "普通并购交易转投资并购",
+        "预重整无权接管财产"
+      ],
+      "deliverables": [
+        "尚未受理，拟预重整、庭外协议或招募投资人；债务人／主要债权人"
+      ],
+      "path": "skills/评估预重整或庭外重组",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "破产重整与清算导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估强制清算转破产",
+      "kind": "atomic",
+      "displayName": "评估强制清算转破产",
+      "goal": "已在或拟启动公司强制清算，出现资不抵债；清算组／债权人／义务人",
+      "notFor": [
+        "能自行清算且足额清偿不进本领域",
+        "简易注销转 C 端关停"
+      ],
+      "deliverables": [
+        "已在或拟启动公司强制清算，出现资不抵债；清算组／债权人／义务人"
+      ],
+      "path": "skills/评估强制清算转破产",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "破产重整与清算导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估关联企业实质合并",
+      "kind": "atomic",
+      "displayName": "评估关联企业实质合并",
+      "goal": "人格混同或财产混同，拟合并破产；债权人／管理人／债务人",
+      "notFor": [
+        "不当然合并",
+        "公司治理日常人格否认转公司治理"
+      ],
+      "deliverables": [
+        "人格混同或财产混同，拟合并破产；债权人／管理人／债务人"
+      ],
+      "path": "skills/评估关联企业实质合并",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "破产重整与清算导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "筛查代理与管理人冲突",
+      "kind": "atomic",
+      "displayName": "筛查代理与管理人冲突",
+      "goal": "收案或拟担任管理人／债权人代表；受托方",
+      "notFor": [
+        "不指定管理人",
+        "不保证入册"
+      ],
+      "deliverables": [
+        "收案或拟担任管理人／债权人代表；受托方"
+      ],
+      "path": "skills/筛查代理与管理人冲突",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "破产重整与清算导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "对不予受理或驳回上诉",
+      "kind": "atomic",
+      "displayName": "对不予受理或驳回上诉",
+      "goal": "收到不予受理或驳回裁定；申请方",
+      "notFor": [
+        "对其他裁定不得冒充可上诉"
+      ],
+      "deliverables": [
+        "收到不予受理或驳回裁定；申请方"
+      ],
+      "path": "skills/对不予受理或驳回上诉",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "破产重整与清算导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备清算义务人破产申请",
+      "kind": "atomic",
+      "displayName": "准备清算义务人破产申请",
+      "goal": "已解散未清算或未清算完毕且资产不足；清算义务人",
+      "notFor": [
+        "能足额自行清算不进",
+        "假清算停止"
+      ],
+      "deliverables": [
+        "已解散未清算或未清算完毕且资产不足；清算义务人"
+      ],
+      "path": "skills/准备清算义务人破产申请",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "破产重整与清算导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "申请清算重整和解转换",
+      "kind": "atomic",
+      "displayName": "申请清算重整和解转换",
+      "goal": "已受理某一程序，拟在宣告破产前转换；债务人／债权人／出资人",
+      "notFor": [
+        "宣告破产后不得假装仍可重整"
+      ],
+      "deliverables": [
+        "已受理某一程序，拟在宣告破产前转换；债务人／债权人／出资人"
+      ],
+      "path": "skills/申请清算重整和解转换",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "破产重整与清算导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "整理受理后中止与个别清偿清单",
+      "kind": "atomic",
+      "displayName": "整理受理后中止与个别清偿清单",
+      "goal": "刚受理，需列执行中止、保全解除、个别清偿无效；单方",
+      "notFor": [
+        "不写执行申请",
+        "程序外实现转金融"
+      ],
+      "deliverables": [
+        "刚受理，需列执行中止、保全解除、个别清偿无效；单方"
+      ],
+      "path": "skills/整理受理后中止与个别清偿清单",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "破产重整与清算导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "提起破产债权确认之诉",
+      "kind": "atomic",
+      "displayName": "提起破产债权确认之诉",
+      "goal": "已决定起诉确认；异议方",
+      "notFor": [
+        "与普通合同一审不同",
+        "劳动待遇测算转劳动"
+      ],
+      "deliverables": [
+        "已决定起诉确认；异议方"
+      ],
+      "path": "skills/提起破产债权确认之诉",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "破产重整与清算导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对破产债权确认之诉",
+      "kind": "atomic",
+      "displayName": "应对破产债权确认之诉",
+      "goal": "收到确认之诉；相对方或管理人",
+      "notFor": [
+        "与主动起诉权限不同"
+      ],
+      "deliverables": [
+        "收到确认之诉；相对方或管理人"
+      ],
+      "path": "skills/应对破产债权确认之诉",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "破产重整与清算导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "对职工债权清单提出异议",
+      "kind": "atomic",
+      "displayName": "对职工债权清单提出异议",
+      "goal": "职工对管理人公示清单不服；职工债权人",
+      "notFor": [
+        "不测算经济补偿终值、不安置方案",
+        "该段转劳动"
+      ],
+      "deliverables": [
+        "职工对管理人公示清单不服；职工债权人"
+      ],
+      "path": "skills/对职工债权清单提出异议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "破产重整与清算导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "编制职工债权清单",
+      "kind": "atomic",
+      "displayName": "编制职工债权清单",
+      "goal": "管理人或债务人需依法调查公示职工债权；管理人／债务人",
+      "notFor": [
+        "不定 N+1 或安置方案",
+        "待遇测算转劳动"
+      ],
+      "deliverables": [
+        "管理人或债务人需依法调查公示职工债权；管理人／债务人"
+      ],
+      "path": "skills/编制职工债权清单",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "破产重整与清算导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备补充申报",
+      "kind": "atomic",
+      "displayName": "准备补充申报",
+      "goal": "申报期过后、最后分配前拟补报；债权人",
+      "notFor": [
+        "不写“补报无风险”"
+      ],
+      "deliverables": [
+        "申报期过后、最后分配前拟补报；债权人"
+      ],
+      "path": "skills/准备补充申报",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "破产重整与清算导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估别除权与担保债权",
+      "kind": "atomic",
+      "displayName": "评估别除权与担保债权",
+      "goal": "有抵押质押留置，需判断优先受偿范围；担保债权人／债务人",
+      "notFor": [
+        "破产外实现担保转金融",
+        "工程优先受偿转工程"
+      ],
+      "deliverables": [
+        "有抵押质押留置，需判断优先受偿范围；担保债权人／债务人"
+      ],
+      "path": "skills/评估别除权与担保债权",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "破产重整与清算导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估破产抵销",
+      "kind": "atomic",
+      "displayName": "评估破产抵销",
+      "goal": "互负债务，拟抵销或抗辩抵销；单方",
+      "notFor": [
+        "个别清偿伪装抵销走撤销"
+      ],
+      "deliverables": [
+        "互负债务，拟抵销或抗辩抵销；单方"
+      ],
+      "path": "skills/评估破产抵销",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "破产重整与清算导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估税收与社保破产债权",
+      "kind": "atomic",
+      "displayName": "评估税收与社保破产债权",
+      "goal": "税、滞纳金、统筹社保在程序内如何申报确认；单方",
+      "notFor": [
+        "税务争议实体转税务",
+        "社保补缴路径转劳动"
+      ],
+      "deliverables": [
+        "税、滞纳金、统筹社保在程序内如何申报确认；单方"
+      ],
+      "path": "skills/评估税收与社保破产债权",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "破产重整与清算导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估未到期或然与保证人债权",
+      "kind": "atomic",
+      "displayName": "评估未到期或然与保证人债权",
+      "goal": "保证人、连带、未到期或诉讼未决；债权人／保证人",
+      "notFor": [
+        "保证合同效力本体转金融"
+      ],
+      "deliverables": [
+        "保证人、连带、未到期或诉讼未决；债权人／保证人"
+      ],
+      "path": "skills/评估未到期或然与保证人债权",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "破产重整与清算导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "盘点债务人财产与权利负担",
+      "kind": "atomic",
+      "displayName": "盘点债务人财产与权利负担",
+      "goal": "需单独摸清破产财产、共有、权利负担；管理人／债务人／债权人",
+      "notFor": [
+        "不估值终局",
+        "不指导隐匿转移"
+      ],
+      "deliverables": [
+        "需单独摸清破产财产、共有、权利负担；管理人／债务人／债权人"
+      ],
+      "path": "skills/盘点债务人财产与权利负担",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "破产重整与清算导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对破产撤销或无效之诉",
+      "kind": "atomic",
+      "displayName": "应对破产撤销或无效之诉",
+      "goal": "相对人被诉撤销或无效；被告",
+      "notFor": [
+        "禁止补造虚假对价"
+      ],
+      "deliverables": [
+        "相对人被诉撤销或无效；被告"
+      ],
+      "path": "skills/应对破产撤销或无效之诉",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "破产重整与清算导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备追缴出资或内部人责任",
+      "kind": "atomic",
+      "displayName": "准备追缴出资或内部人责任",
+      "goal": "未出资、抽逃、董监高非正常收入或侵占；管理人／债权人",
+      "notFor": [
+        "日常股东争议转公司治理",
+        "不定刑事责任"
+      ],
+      "deliverables": [
+        "未出资、抽逃、董监高非正常收入或侵占；管理人／债权人"
+      ],
+      "path": "skills/准备追缴出资或内部人责任",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "破产重整与清算导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备取回权主张",
+      "kind": "atomic",
+      "displayName": "准备取回权主张",
+      "goal": "主张对特定物享有所有权或合法占有应取回；权利人",
+      "notFor": [
+        "普通金钱债权不得包装成取回"
+      ],
+      "deliverables": [
+        "主张对特定物享有所有权或合法占有应取回；权利人"
+      ],
+      "path": "skills/准备取回权主张",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "破产重整与清算导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对取回权主张",
+      "kind": "atomic",
+      "displayName": "应对取回权主张",
+      "goal": "管理人或债务人抗辩取回；管理人／债务人",
+      "notFor": [
+        "不把取回写成普通债权确认"
+      ],
+      "deliverables": [
+        "管理人或债务人抗辩取回；管理人／债务人"
+      ],
+      "path": "skills/应对取回权主张",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "破产重整与清算导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估待履行合同解除或继续",
+      "kind": "atomic",
+      "displayName": "评估待履行合同解除或继续",
+      "goal": "双方均未履行完毕的合同如何处理；管理人／相对人",
+      "notFor": [
+        "未成争改合同走审查（搁置）"
+      ],
+      "deliverables": [
+        "双方均未履行完毕的合同如何处理；管理人／相对人"
+      ],
+      "path": "skills/评估待履行合同解除或继续",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "破产重整与清算导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备破产财产追回与保全接口",
+      "kind": "atomic",
+      "displayName": "准备破产财产追回与保全接口",
+      "goal": "财产流失，需追回或保全；管理人／债权人",
+      "notFor": [
+        "不写普通诉前保全当破产外执行"
+      ],
+      "deliverables": [
+        "财产流失，需追回或保全；管理人／债权人"
+      ],
+      "path": "skills/准备破产财产追回与保全接口",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "破产重整与清算导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备破产财产变价或整体出让",
+      "kind": "atomic",
+      "displayName": "准备破产财产变价或整体出让",
+      "goal": "已决定处置资产或营业；管理人",
+      "notFor": [
+        "普通并购交割转投资并购"
+      ],
+      "deliverables": [
+        "已决定处置资产或营业；管理人"
+      ],
+      "path": "skills/准备破产财产变价或整体出让",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "破产重整与清算导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "对财产处置提出异议",
+      "kind": "atomic",
+      "displayName": "对财产处置提出异议",
+      "goal": "认为贱卖或程序违法；债权人／取回权人",
+      "notFor": [
+        "禁止指导扰乱拍卖"
+      ],
+      "deliverables": [
+        "认为贱卖或程序违法；债权人／取回权人"
+      ],
+      "path": "skills/对财产处置提出异议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "破产重整与清算导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估管理人指定或更换",
+      "kind": "atomic",
+      "displayName": "评估管理人指定或更换",
+      "goal": "拟申请更换或审查利害关系；债权人会议／单方",
+      "notFor": [
+        "不保证更换",
+        "不指定继任"
+      ],
+      "deliverables": [
+        "拟申请更换或审查利害关系；债权人会议／单方"
+      ],
+      "path": "skills/评估管理人指定或更换",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "破产重整与清算导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备管理人工作与财产状况报告",
+      "kind": "atomic",
+      "displayName": "准备管理人工作与财产状况报告",
+      "goal": "管理人需向法院或会议报告；管理人",
+      "notFor": [
+        "不替代分配方案"
+      ],
+      "deliverables": [
+        "管理人需向法院或会议报告；管理人"
+      ],
+      "path": "skills/准备管理人工作与财产状况报告",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "破产重整与清算导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备债权人会议表决",
+      "kind": "atomic",
+      "displayName": "准备债权人会议表决",
+      "goal": "即将表决债权核查、重整计划或分配；单方",
+      "notFor": [
+        "不伪造出席或授权"
+      ],
+      "deliverables": [
+        "即将表决债权核查、重整计划或分配；单方"
+      ],
+      "path": "skills/准备债权人会议表决",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "破产重整与清算导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备知情查阅与监督请求",
+      "kind": "atomic",
+      "displayName": "准备知情查阅与监督请求",
+      "goal": "债权人要看账册、评估或费用；债权人",
+      "notFor": [
+        "禁止违法调取个人信息"
+      ],
+      "deliverables": [
+        "债权人要看账册、评估或费用；债权人"
+      ],
+      "path": "skills/准备知情查阅与监督请求",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "破产重整与清算导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备破产衍生诉讼庭审",
+      "kind": "atomic",
+      "displayName": "准备破产衍生诉讼庭审",
+      "goal": "确认、撤销、追收等已开庭；单方",
+      "notFor": [
+        "不代替立案"
+      ],
+      "deliverables": [
+        "确认、撤销、追收等已开庭；单方"
+      ],
+      "path": "skills/准备破产衍生诉讼庭审",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "破产重整与清算导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备重整计划草案",
+      "kind": "atomic",
+      "displayName": "准备重整计划草案",
+      "goal": "已决定制定草案；债务人／管理人",
+      "notFor": [
+        "不保证批准",
+        "强制批准另项"
+      ],
+      "deliverables": [
+        "已决定制定草案；债务人／管理人"
+      ],
+      "path": "skills/准备重整计划草案",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "破产重整与清算导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估重整计划分组与表决",
+      "kind": "atomic",
+      "displayName": "评估重整计划分组与表决",
+      "goal": "分组是否合法、能否通过；单方",
+      "notFor": [
+        "不伪造表决结果"
+      ],
+      "deliverables": [
+        "分组是否合法、能否通过；单方"
+      ],
+      "path": "skills/评估重整计划分组与表决",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "破产重整与清算导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "申请重整计划强制批准",
+      "kind": "atomic",
+      "displayName": "申请重整计划强制批准",
+      "goal": "部分组别未通过，拟请求法院批准；债务人／管理人",
+      "notFor": [
+        "条件不闭合停止终稿"
+      ],
+      "deliverables": [
+        "部分组别未通过，拟请求法院批准；债务人／管理人"
+      ],
+      "path": "skills/申请重整计划强制批准",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "破产重整与清算导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "对重整计划提出异议",
+      "kind": "atomic",
+      "displayName": "对重整计划提出异议",
+      "goal": "认为不公平或不可行；反对组债权人／出资人",
+      "notFor": [
+        "不指导恶意阻挠"
+      ],
+      "deliverables": [
+        "认为不公平或不可行；反对组债权人／出资人"
+      ],
+      "path": "skills/对重整计划提出异议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "破产重整与清算导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备重整投资与招募",
+      "kind": "atomic",
+      "displayName": "准备重整投资与招募",
+      "goal": "需招募或锁定重整投资人；债务人／管理人／投资人",
+      "notFor": [
+        "普通股权收购转投资并购"
+      ],
+      "deliverables": [
+        "需招募或锁定重整投资人；债务人／管理人／投资人"
+      ],
+      "path": "skills/准备重整投资与招募",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "破产重整与清算导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "申请终止重整并宣告破产",
+      "kind": "atomic",
+      "displayName": "申请终止重整并宣告破产",
+      "goal": "无法执行或目的不能实现；单方",
+      "notFor": [
+        "不因经营困难自动终止"
+      ],
+      "deliverables": [
+        "无法执行或目的不能实现；单方"
+      ],
+      "path": "skills/申请终止重整并宣告破产",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "破产重整与清算导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估共益债融资与继续经营",
+      "kind": "atomic",
+      "displayName": "评估共益债融资与继续经营",
+      "goal": "需新借款或继续营业；管理人／债务人",
+      "notFor": [
+        "程序外融资结构转金融"
+      ],
+      "deliverables": [
+        "需新借款或继续营业；管理人／债务人"
+      ],
+      "path": "skills/评估共益债融资与继续经营",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "破产重整与清算导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估和解可行性",
+      "kind": "atomic",
+      "displayName": "评估和解可行性",
+      "goal": "拟走法定和解而非重整；债务人／债权人",
+      "notFor": [
+        "庭外和解谈判另项"
+      ],
+      "deliverables": [
+        "拟走法定和解而非重整；债务人／债权人"
+      ],
+      "path": "skills/评估和解可行性",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "破产重整与清算导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备和解协议草案",
+      "kind": "atomic",
+      "displayName": "准备和解协议草案",
+      "goal": "已决定提出和解；债务人",
+      "notFor": [
+        "不保证认可"
+      ],
+      "deliverables": [
+        "已决定提出和解；债务人"
+      ],
+      "path": "skills/准备和解协议草案",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "破产重整与清算导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "对和解协议提出异议",
+      "kind": "atomic",
+      "displayName": "对和解协议提出异议",
+      "goal": "认为欺诈或条件不公；债权人",
+      "notFor": [
+        "与重整计划异议不同"
+      ],
+      "deliverables": [
+        "认为欺诈或条件不公；债权人"
+      ],
+      "path": "skills/对和解协议提出异议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "破产重整与清算导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "谈判庭外或程序内债务调整",
+      "kind": "atomic",
+      "displayName": "谈判庭外或程序内债务调整",
+      "goal": "仍可谈减免、展期或以股抵债；单方",
+      "notFor": [
+        "已签字协议审查走审查（搁置）",
+        "普通并购转投资并购"
+      ],
+      "deliverables": [
+        "仍可谈减免、展期或以股抵债；单方"
+      ],
+      "path": "skills/谈判庭外或程序内债务调整",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "破产重整与清算导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估宣告破产条件",
+      "kind": "atomic",
+      "displayName": "评估宣告破产条件",
+      "goal": "重整／和解失败或直接清算，需判断能否宣告；单方",
+      "notFor": [
+        "不把受理写成已宣告"
+      ],
+      "deliverables": [
+        "重整／和解失败或直接清算，需判断能否宣告；单方"
+      ],
+      "path": "skills/评估宣告破产条件",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "破产重整与清算导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备变价与分配方案",
+      "kind": "atomic",
+      "displayName": "准备变价与分配方案",
+      "goal": "管理人拟提交分配；管理人",
+      "notFor": [
+        "不定必得比例"
+      ],
+      "deliverables": [
+        "管理人拟提交分配；管理人"
+      ],
+      "path": "skills/准备变价与分配方案",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "破产重整与清算导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "对分配方案提出异议",
+      "kind": "atomic",
+      "displayName": "对分配方案提出异议",
+      "goal": "债权人认为顺位或金额错误；债权人",
+      "notFor": [
+        "不重审已确认债权实体，除非走确认之诉"
+      ],
+      "deliverables": [
+        "债权人认为顺位或金额错误；债权人"
+      ],
+      "path": "skills/对分配方案提出异议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "破产重整与清算导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "测算分配瀑布与清偿区间",
+      "kind": "atomic",
+      "displayName": "测算分配瀑布与清偿区间",
+      "goal": "需可复核的费用、共益债、优先与普通区间；单方",
+      "notFor": [
+        "禁止唯一清偿率",
+        "职工待遇测算转劳动"
+      ],
+      "deliverables": [
+        "需可复核的费用、共益债、优先与普通区间；单方"
+      ],
+      "path": "skills/测算分配瀑布与清偿区间",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "破产重整与清算导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备董事高管破产责任诉讼",
+      "kind": "atomic",
+      "displayName": "准备董事高管破产责任诉讼",
+      "goal": "拟追究违反忠实勤勉或导致破产；管理人／债权人",
+      "notFor": [
+        "不定罪",
+        "刑事转刑事"
+      ],
+      "deliverables": [
+        "拟追究违反忠实勤勉或导致破产；管理人／债权人"
+      ],
+      "path": "skills/准备董事高管破产责任诉讼",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "破产重整与清算导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备出资加速到期或抽逃追缴",
+      "kind": "atomic",
+      "displayName": "准备出资加速到期或抽逃追缴",
+      "goal": "认缴未届期或抽逃；管理人",
+      "notFor": [
+        "日常股权争议转公司治理"
+      ],
+      "deliverables": [
+        "认缴未届期或抽逃；管理人"
+      ],
+      "path": "skills/准备出资加速到期或抽逃追缴",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "破产重整与清算导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    }
+  ],
+  "guideName": "破产重整与清算导航"
+}

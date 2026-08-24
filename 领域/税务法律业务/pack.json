@@ -1,0 +1,1536 @@
+{
+  "schemaVersion": 2,
+  "id": "handle-tax-matters",
+  "displayName": "税务法律业务",
+  "description": "处理中国大陆经营、交易和财富安排中的税务合规、税负分析、稽查应对和税务争议的多 Skill 领域包。",
+  "version": "1.0.0",
+  "license": "Apache-2.0",
+  "jurisdiction": "CN-mainland",
+  "contentModel": "multi-skill-progressive-disclosure",
+  "reinstallStrategy": "replace",
+  "scope": {
+    "purpose": "处理经营、交易和财富安排中的税务合规、税负分析、稽查应对和税务争议。",
+    "inScope": [
+      "企业和交易税务合规",
+      "税务结构与税负分析",
+      "税务稽查和风险处置",
+      "税务行政争议"
+    ],
+    "outOfScope": [
+      "婚姻继承和财富传承方案本身",
+      "一般行政复议诉讼",
+      "跨境交易和贸易监管整体"
+    ],
+    "primaryDeliverables": [
+      "税务法律意见",
+      "交易涉税方案",
+      "税务稽查应对材料",
+      "税务争议解决成果"
+    ]
+  },
+  "guideSkill": "税务法律业务导航",
+  "mcp": {
+    "contractRange": "0.0"
+  },
+  "skills": [
+    {
+      "id": "税务法律业务导航",
+      "kind": "guide",
+      "displayName": "税务法律业务导航",
+      "goal": "说明领域包的能力、边界和当前原子 Skill 全貌",
+      "notFor": [
+        "直接完成具体法律业务成果"
+      ],
+      "deliverables": [
+        "领域能力定位结果"
+      ],
+      "path": "skills/税务法律业务导航",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "评估税务事项",
+          "申请税务行政复议",
+          "建立税务证据案卷",
+          "提起税务行政诉讼",
+          "谈判补税整改方案",
+          "准备检查陈述申辩",
+          "评估纳税争议先缴或担保",
+          "评估税务检查应对",
+          "准备税务听证材料",
+          "测算调整滞纳金罚款",
+          "识别纳税主体与税种",
+          "评估追征期与处罚时效",
+          "梳理主管税务机关与管辖",
+          "评估居民身份与纳税地点",
+          "评估扣缴义务",
+          "体检申报合规缺口",
+          "评估税收优惠适用",
+          "评估小规模与一般纳税人路径",
+          "规划税务登记变更",
+          "规划清税注销",
+          "处理逾期申报与更正",
+          "评估个体户核定与查账",
+          "评估合伙穿透课税",
+          "评估查账与核定征收",
+          "评估股权转让税负",
+          "评估资产收购税负",
+          "评估重组特殊性税务处理",
+          "评估不动产交易税负",
+          "评估关联交易定价税务风险",
+          "评估股权激励个税",
+          "测算解除补偿个税",
+          "评估赠与继承涉税后果",
+          "评估非货币性资产投资税务",
+          "评估清算所得税",
+          "评估发票与虚开风险",
+          "处理异常失控作废发票",
+          "评估进项抵扣能否成立",
+          "准备发票协查应对",
+          "评估转让定价调整",
+          "准备同期资料",
+          "评估受控外国企业与间接转让",
+          "评估受益所有人与协定待遇",
+          "应对反避税调查",
+          "准备自查补报方案",
+          "应对纳税评估约谈",
+          "应对调账检查与资料调取",
+          "评估重大案件审理应对",
+          "测算滞纳金区间",
+          "测算退税与抵缴",
+          "测算土地增值税清算",
+          "测算出口退税风险额",
+          "保全账簿与电子数据",
+          "准备纳税担保",
+          "应对税收保全",
+          "应对税收强制执行",
+          "申请停止执行或暂缓",
+          "应对税务行政诉讼",
+          "评估税收规范性文件附带审查",
+          "提起税务行政上诉",
+          "分流逃税骗税虚开刑行交叉",
+          "评估首次逃税不予追究刑事责任条件",
+          "应对税务案件移送公安机关",
+          "评估常设机构与境内所得",
+          "评估对外付汇扣缴"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估税务事项",
+      "kind": "atomic",
+      "displayName": "评估税务事项",
+      "goal": "在单方无冲突立场下形成可决策的税务事项总图",
+      "notFor": [
+        "发送版陈述申辩或复议申请",
+        "精算终稿",
+        "婚家传承方案",
+        "一般行政复议"
+      ],
+      "deliverables": [
+        "在单方无冲突立场下形成可决策的税务事项总图"
+      ],
+      "path": "skills/评估税务事项",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "税务法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估税务检查应对",
+      "kind": "atomic",
+      "displayName": "评估税务检查应对",
+      "goal": "判断检查阶段、权限、权利和下一步，不写申辩终稿",
+      "notFor": [
+        "发送版陈述申辩",
+        "确定税额",
+        "C 端 055 应急清单本体",
+        "刑事辩护"
+      ],
+      "deliverables": [
+        "判断检查阶段、权限、权利和下一步，不写申辩终稿"
+      ],
+      "path": "skills/评估税务检查应对",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "税务法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估纳税争议先缴或担保",
+      "kind": "atomic",
+      "displayName": "评估纳税争议先缴或担保",
+      "goal": "判断征税行为是否须先缴清或提供担保才能复议",
+      "notFor": [
+        "复议申请书",
+        "代缴税款",
+        "处罚决定的选择复议或诉讼终稿"
+      ],
+      "deliverables": [
+        "判断征税行为是否须先缴清或提供担保才能复议"
+      ],
+      "path": "skills/评估纳税争议先缴或担保",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "税务法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "测算调整滞纳金罚款",
+      "kind": "atomic",
+      "displayName": "测算调整滞纳金罚款",
+      "goal": "形成可复核的分项测算，不认定偷税已成立",
+      "notFor": [
+        "定性总图",
+        "唯一必得总额",
+        "把未知写成零"
+      ],
+      "deliverables": [
+        "形成可复核的分项测算，不认定偷税已成立"
+      ],
+      "path": "skills/测算调整滞纳金罚款",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "税务法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "建立税务证据案卷",
+      "kind": "atomic",
+      "displayName": "建立税务证据案卷",
+      "goal": "形成要件、证明责任、材料与合法补证矩阵",
+      "notFor": [
+        "策略总图",
+        "申辩稿",
+        "违法取证或改账方案"
+      ],
+      "deliverables": [
+        "形成要件、证明责任、材料与合法补证矩阵"
+      ],
+      "path": "skills/建立税务证据案卷",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "税务法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备检查陈述申辩",
+      "kind": "atomic",
+      "displayName": "准备检查陈述申辩",
+      "goal": "形成发送前陈述申辩稿和证据引用",
+      "notFor": [
+        "听证申请终稿",
+        "只要评估",
+        "指导改账或统一口径"
+      ],
+      "deliverables": [
+        "形成发送前陈述申辩稿和证据引用"
+      ],
+      "path": "skills/准备检查陈述申辩",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "税务法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备税务听证材料",
+      "kind": "atomic",
+      "displayName": "准备税务听证材料",
+      "goal": "形成法定期限内的听证申请和陈述提纲",
+      "notFor": [
+        "逾期后赶写视为仍有效",
+        "只要普通申辩",
+        "保证组织听证"
+      ],
+      "deliverables": [
+        "形成法定期限内的听证申请和陈述提纲"
+      ],
+      "path": "skills/准备税务听证材料",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "税务法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "申请税务行政复议",
+      "kind": "atomic",
+      "displayName": "申请税务行政复议",
+      "goal": "形成可提交的税务复议申请包并核验先缴闸",
+      "notFor": [
+        "一般行政复议程序",
+        "纳税争议未过先缴闸仍出终稿",
+        "代提交"
+      ],
+      "deliverables": [
+        "形成可提交的税务复议申请包并核验先缴闸"
+      ],
+      "path": "skills/申请税务行政复议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "税务法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "提起税务行政诉讼",
+      "kind": "atomic",
+      "displayName": "提起税务行政诉讼",
+      "goal": "形成可提交的税务行政诉讼起诉包",
+      "notFor": [
+        "纳税争议未复议却直接起诉",
+        "一般行政诉讼方法",
+        "代提交"
+      ],
+      "deliverables": [
+        "形成可提交的税务行政诉讼起诉包"
+      ],
+      "path": "skills/提起税务行政诉讼",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "税务法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "谈判补税整改方案",
+      "kind": "atomic",
+      "displayName": "谈判补税整改方案",
+      "goal": "形成补税、分期、免罚协商的底线和弃权风险",
+      "notFor": [
+        "保证补了免罚免刑",
+        "复议申请书",
+        "掩盖犯罪的和解"
+      ],
+      "deliverables": [
+        "形成补税、分期、免罚协商的底线和弃权风险"
+      ],
+      "path": "skills/谈判补税整改方案",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "税务法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "识别纳税主体与税种",
+      "kind": "atomic",
+      "displayName": "识别纳税主体与税种",
+      "goal": "主体混同、总分机构、扣缴、代征或税种定性不明；单方",
+      "notFor": [
+        "不替代总体评估",
+        "不办登记"
+      ],
+      "deliverables": [
+        "主体混同、总分机构、扣缴、代征或税种定性不明；单方"
+      ],
+      "path": "skills/识别纳税主体与税种",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "税务法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估追征期与处罚时效",
+      "kind": "atomic",
+      "displayName": "评估追征期与处罚时效",
+      "goal": "单独委托核验能否追征、加收滞纳金或处罚；单方",
+      "notFor": [
+        "禁止混算或输出唯一截止日",
+        "偷税定性走总体或刑事分流"
+      ],
+      "deliverables": [
+        "单独委托核验能否追征、加收滞纳金或处罚；单方"
+      ],
+      "path": "skills/评估追征期与处罚时效",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "税务法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "梳理主管税务机关与管辖",
+      "kind": "atomic",
+      "displayName": "梳理主管税务机关与管辖",
+      "goal": "多机关、稽查局、跨区经营或共同行为，需确定主管与复议机关；单方",
+      "notFor": [
+        "不选定唯一法院",
+        "海关代征转海关／涉外"
+      ],
+      "deliverables": [
+        "多机关、稽查局、跨区经营或共同行为，需确定主管与复议机关；单方"
+      ],
+      "path": "skills/梳理主管税务机关与管辖",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "税务法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估居民身份与纳税地点",
+      "kind": "atomic",
+      "displayName": "评估居民身份与纳税地点",
+      "goal": "个人或企业居民、机构场所、经营地争议；单方",
+      "notFor": [
+        "跨境交易整体转涉外",
+        "只做税务专项"
+      ],
+      "deliverables": [
+        "个人或企业居民、机构场所、经营地争议；单方"
+      ],
+      "path": "skills/评估居民身份与纳税地点",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "税务法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估扣缴义务",
+      "kind": "atomic",
+      "displayName": "评估扣缴义务",
+      "goal": "支付方被指应扣未扣或被扣方争议代扣；扣缴义务人或纳税人",
+      "notFor": [
+        "劳动报酬权利本身转劳动",
+        "对外付汇走出境扣缴原子"
+      ],
+      "deliverables": [
+        "支付方被指应扣未扣或被扣方争议代扣；扣缴义务人或纳税人"
+      ],
+      "path": "skills/评估扣缴义务",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "税务法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "体检申报合规缺口",
+      "kind": "atomic",
+      "displayName": "体检申报合规缺口",
+      "goal": "尚未被查，要对照所属期申报、开票、收款；管理方",
+      "notFor": [
+        "不定税额",
+        "已进入检查转检查评估",
+        "C 端 054 只分流"
+      ],
+      "deliverables": [
+        "尚未被查，要对照所属期申报、开票、收款；管理方"
+      ],
+      "path": "skills/体检申报合规缺口",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "税务法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估税收优惠适用",
+      "kind": "atomic",
+      "displayName": "评估税收优惠适用",
+      "goal": "高新、小微、加计扣除、减免备案或事后核查；单方",
+      "notFor": [
+        "不定必然享受",
+        "不代备案"
+      ],
+      "deliverables": [
+        "高新、小微、加计扣除、减免备案或事后核查；单方"
+      ],
+      "path": "skills/评估税收优惠适用",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "税务法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估小规模与一般纳税人路径",
+      "kind": "atomic",
+      "displayName": "评估小规模与一般纳税人路径",
+      "goal": "销售额接近标准或拟登记／转回；管理方",
+      "notFor": [
+        "不代办登记",
+        "进项抵扣专项另项"
+      ],
+      "deliverables": [
+        "销售额接近标准或拟登记／转回；管理方"
+      ],
+      "path": "skills/评估小规模与一般纳税人路径",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "税务法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "规划税务登记变更",
+      "kind": "atomic",
+      "displayName": "规划税务登记变更",
+      "goal": "地址、名称、扣缴、跨区经营需变更；管理方",
+      "notFor": [
+        "不代提交",
+        "股权架构本身转公司治理"
+      ],
+      "deliverables": [
+        "地址、名称、扣缴、跨区经营需变更；管理方"
+      ],
+      "path": "skills/规划税务登记变更",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "税务法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "规划清税注销",
+      "kind": "atomic",
+      "displayName": "规划清税注销",
+      "goal": "拟注销或简易注销遇税务障碍；管理方",
+      "notFor": [
+        "不定能否简易注销",
+        "公司关停整体另转",
+        "已有检查通知转检查"
+      ],
+      "deliverables": [
+        "拟注销或简易注销遇税务障碍；管理方"
+      ],
+      "path": "skills/规划清税注销",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "税务法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "处理逾期申报与更正",
+      "kind": "atomic",
+      "displayName": "处理逾期申报与更正",
+      "goal": "漏报、错报、更正申报或解除非正常；单方",
+      "notFor": [
+        "不定补税终值",
+        "已立案检查不得包装成普通更正"
+      ],
+      "deliverables": [
+        "漏报、错报、更正申报或解除非正常；单方"
+      ],
+      "path": "skills/处理逾期申报与更正",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "税务法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估个体户核定与查账",
+      "kind": "atomic",
+      "displayName": "评估个体户核定与查账",
+      "goal": "个体户或个人经营征收方式、定额偏离；经营者",
+      "notFor": [
+        "C 端 054 大众体检只分流",
+        "已检查转检查"
+      ],
+      "deliverables": [
+        "个体户或个人经营征收方式、定额偏离；经营者"
+      ],
+      "path": "skills/评估个体户核定与查账",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "税务法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估合伙穿透课税",
+      "kind": "atomic",
+      "displayName": "评估合伙穿透课税",
+      "goal": "合伙企业或契约型安排谁纳税；单方",
+      "notFor": [
+        "合伙退伙民事安排转民事／公司",
+        "不写退伙协议"
+      ],
+      "deliverables": [
+        "合伙企业或契约型安排谁纳税；单方"
+      ],
+      "path": "skills/评估合伙穿透课税",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "税务法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估查账与核定征收",
+      "kind": "atomic",
+      "displayName": "评估查账与核定征收",
+      "goal": "拟核定、已被核定或争可否查账；单方",
+      "notFor": [
+        "不定唯一税额",
+        "不指导假账转核定"
+      ],
+      "deliverables": [
+        "拟核定、已被核定或争可否查账；单方"
+      ],
+      "path": "skills/评估查账与核定征收",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "税务法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估股权转让税负",
+      "kind": "atomic",
+      "displayName": "评估股权转让税负",
+      "goal": "拟转或已转股权，需税种与计税基础；转让方或受让方",
+      "notFor": [
+        "不写股权协议",
+        "公司治理与交割整体转出"
+      ],
+      "deliverables": [
+        "拟转或已转股权，需税种与计税基础；转让方或受让方"
+      ],
+      "path": "skills/评估股权转让税负",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "税务法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估资产收购税负",
+      "kind": "atomic",
+      "displayName": "评估资产收购税负",
+      "goal": "资产包转让、剥离；单方",
+      "notFor": [
+        "不写买卖合同",
+        "房地产交易整体转房地产"
+      ],
+      "deliverables": [
+        "资产包转让、剥离；单方"
+      ],
+      "path": "skills/评估资产收购税负",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "税务法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估重组特殊性税务处理",
+      "kind": "atomic",
+      "displayName": "评估重组特殊性税务处理",
+      "goal": "合并、分立、划转、股权收购拟适用特殊重组；单方",
+      "notFor": [
+        "不保证适用",
+        "并购交易整体转投资并购"
+      ],
+      "deliverables": [
+        "合并、分立、划转、股权收购拟适用特殊重组；单方"
+      ],
+      "path": "skills/评估重组特殊性税务处理",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "税务法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估不动产交易税负",
+      "kind": "atomic",
+      "displayName": "评估不动产交易税负",
+      "goal": "房产土地买卖、投资、抵债；单方",
+      "notFor": [
+        "不写网签或过户方案",
+        "开发销售争议转房地产"
+      ],
+      "deliverables": [
+        "房产土地买卖、投资、抵债；单方"
+      ],
+      "path": "skills/评估不动产交易税负",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "税务法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估关联交易定价税务风险",
+      "kind": "atomic",
+      "displayName": "评估关联交易定价税务风险",
+      "goal": "关联购销、服务、资金占用被问定价；单方",
+      "notFor": [
+        "不替代转让定价调整评估",
+        "不定避税已成立"
+      ],
+      "deliverables": [
+        "关联购销、服务、资金占用被问定价；单方"
+      ],
+      "path": "skills/评估关联交易定价税务风险",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "税务法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估股权激励个税",
+      "kind": "atomic",
+      "displayName": "评估股权激励个税",
+      "goal": "期权、限制性股票、分红激励如何计税；企业或个人",
+      "notFor": [
+        "劳动权利、行权安排本身转劳动",
+        "不写激励计划"
+      ],
+      "deliverables": [
+        "期权、限制性股票、分红激励如何计税；企业或个人"
+      ],
+      "path": "skills/评估股权激励个税",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "税务法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "测算解除补偿个税",
+      "kind": "atomic",
+      "displayName": "测算解除补偿个税",
+      "goal": "已有或拟支付解除补偿，需个税口径；单方",
+      "notFor": [
+        "补偿合法性与 N/N+1 转劳动",
+        "未知不写零"
+      ],
+      "deliverables": [
+        "已有或拟支付解除补偿，需个税口径；单方"
+      ],
+      "path": "skills/测算解除补偿个税",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "税务法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估赠与继承涉税后果",
+      "kind": "atomic",
+      "displayName": "评估赠与继承涉税后果",
+      "goal": "房产股权赠与、继承过户要税负或已成税务争议；单方",
+      "notFor": [
+        "**不写婚家传承方案、遗嘱或财产协议**",
+        "家事结构归婚家"
+      ],
+      "deliverables": [
+        "房产股权赠与、继承过户要税负或已成税务争议；单方"
+      ],
+      "path": "skills/评估赠与继承涉税后果",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "税务法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估非货币性资产投资税务",
+      "kind": "atomic",
+      "displayName": "评估非货币性资产投资税务",
+      "goal": "以股权、不动产、知识产权出资；单方",
+      "notFor": [
+        "不写出资协议",
+        "公司设立整体转公司治理"
+      ],
+      "deliverables": [
+        "以股权、不动产、知识产权出资；单方"
+      ],
+      "path": "skills/评估非货币性资产投资税务",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "税务法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估清算所得税",
+      "kind": "atomic",
+      "displayName": "评估清算所得税",
+      "goal": "公司清算或视同清算；管理方或股东",
+      "notFor": [
+        "不写清算分配方案本体",
+        "破产分配转破产"
+      ],
+      "deliverables": [
+        "公司清算或视同清算；管理方或股东"
+      ],
+      "path": "skills/评估清算所得税",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "税务法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估发票与虚开风险",
+      "kind": "atomic",
+      "displayName": "评估发票与虚开风险",
+      "goal": "受票、开票、走逃、协查，需判断虚开／善意取得边界；开票方或受票方",
+      "notFor": [
+        "不定罪",
+        "刑事辩护转刑事",
+        "不指导补票改账"
+      ],
+      "deliverables": [
+        "受票、开票、走逃、协查，需判断虚开／善意取得边界；开票方或受票方"
+      ],
+      "path": "skills/评估发票与虚开风险",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "税务法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "处理异常失控作废发票",
+      "kind": "atomic",
+      "displayName": "处理异常失控作废发票",
+      "goal": "发票异常、失控、作废、红冲争议；单方",
+      "notFor": [
+        "不替代虚开评估",
+        "不指导虚假红冲"
+      ],
+      "deliverables": [
+        "发票异常、失控、作废、红冲争议；单方"
+      ],
+      "path": "skills/处理异常失控作废发票",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "税务法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估进项抵扣能否成立",
+      "kind": "atomic",
+      "displayName": "评估进项抵扣能否成立",
+      "goal": "扣税凭证被否或拟抵扣；一般纳税人",
+      "notFor": [
+        "增值税法扣税凭证须运行时核验",
+        "不定必然抵扣"
+      ],
+      "deliverables": [
+        "扣税凭证被否或拟抵扣；一般纳税人"
+      ],
+      "path": "skills/评估进项抵扣能否成立",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "税务法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备发票协查应对",
+      "kind": "atomic",
+      "displayName": "准备发票协查应对",
+      "goal": "收到协查、核查或风险提示要回函；单方",
+      "notFor": [
+        "已立案稽查转检查评估",
+        "不写统一口径"
+      ],
+      "deliverables": [
+        "收到协查、核查或风险提示要回函；单方"
+      ],
+      "path": "skills/准备发票协查应对",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "税务法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估转让定价调整",
+      "kind": "atomic",
+      "displayName": "评估转让定价调整",
+      "goal": "已收到特别纳税调整或预约定价；单方",
+      "notFor": [
+        "不替代同期资料",
+        "不定避税成立"
+      ],
+      "deliverables": [
+        "已收到特别纳税调整或预约定价；单方"
+      ],
+      "path": "skills/评估转让定价调整",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "税务法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备同期资料",
+      "kind": "atomic",
+      "displayName": "准备同期资料",
+      "goal": "达到准备门槛或被要求提供；管理方",
+      "notFor": [
+        "不保证免除调整"
+      ],
+      "deliverables": [
+        "达到准备门槛或被要求提供；管理方"
+      ],
+      "path": "skills/准备同期资料",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "税务法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估受控外国企业与间接转让",
+      "kind": "atomic",
+      "displayName": "评估受控外国企业与间接转让",
+      "goal": "境外架构利润不分配或间接转让中国权益；单方",
+      "notFor": [
+        "跨境交易整体转涉外",
+        "只做税务专项"
+      ],
+      "deliverables": [
+        "境外架构利润不分配或间接转让中国权益；单方"
+      ],
+      "path": "skills/评估受控外国企业与间接转让",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "税务法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估受益所有人与协定待遇",
+      "kind": "atomic",
+      "displayName": "评估受益所有人与协定待遇",
+      "goal": "对外付汇拟适用协定税率；支付方或非居民",
+      "notFor": [
+        "不保证协定适用",
+        "付汇手续走出境扣缴"
+      ],
+      "deliverables": [
+        "对外付汇拟适用协定税率；支付方或非居民"
+      ],
+      "path": "skills/评估受益所有人与协定待遇",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "税务法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对反避税调查",
+      "kind": "atomic",
+      "displayName": "应对反避税调查",
+      "goal": "一般反避税、受控交易调查已启动；单方",
+      "notFor": [
+        "与日常检查评估不同",
+        "刑事转出"
+      ],
+      "deliverables": [
+        "一般反避税、受控交易调查已启动；单方"
+      ],
+      "path": "skills/应对反避税调查",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "税务法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备自查补报方案",
+      "kind": "atomic",
+      "displayName": "准备自查补报方案",
+      "goal": "风险提示或自查通知，尚未立案稽查；管理方",
+      "notFor": [
+        "不定“补了就没事”",
+        "已立案不得假装自查"
+      ],
+      "deliverables": [
+        "风险提示或自查通知，尚未立案稽查；管理方"
+      ],
+      "path": "skills/准备自查补报方案",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "税务法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对纳税评估约谈",
+      "kind": "atomic",
+      "displayName": "应对纳税评估约谈",
+      "goal": "评估约谈、询问或提示提醒；被评估方",
+      "notFor": [
+        "与立案稽查不同",
+        "不定评估结论"
+      ],
+      "deliverables": [
+        "评估约谈、询问或提示提醒；被评估方"
+      ],
+      "path": "skills/应对纳税评估约谈",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "税务法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对调账检查与资料调取",
+      "kind": "atomic",
+      "displayName": "应对调账检查与资料调取",
+      "goal": "账簿、凭证或电子数据被调取；被查方",
+      "notFor": [
+        "不指导藏账",
+        "保全强制另项"
+      ],
+      "deliverables": [
+        "账簿、凭证或电子数据被调取；被查方"
+      ],
+      "path": "skills/应对调账检查与资料调取",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "税务法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估重大案件审理应对",
+      "kind": "atomic",
+      "displayName": "评估重大案件审理应对",
+      "goal": "拟或已进入重大税务案件审理；被查方",
+      "notFor": [
+        "不预测审理结论"
+      ],
+      "deliverables": [
+        "拟或已进入重大税务案件审理；被查方"
+      ],
+      "path": "skills/评估重大案件审理应对",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "税务法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "测算滞纳金区间",
+      "kind": "atomic",
+      "displayName": "测算滞纳金区间",
+      "goal": "单独委托核验滞纳金起算与封顶；单方",
+      "notFor": [
+        "禁止把未知本金写成零"
+      ],
+      "deliverables": [
+        "单独委托核验滞纳金起算与封顶；单方"
+      ],
+      "path": "skills/测算滞纳金区间",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "税务法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "测算退税与抵缴",
+      "kind": "atomic",
+      "displayName": "测算退税与抵缴",
+      "goal": "多缴、减免、留抵或结算退税；单方",
+      "notFor": [
+        "出口退税风险专项另项",
+        "不保证退还"
+      ],
+      "deliverables": [
+        "多缴、减免、留抵或结算退税；单方"
+      ],
+      "path": "skills/测算退税与抵缴",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "税务法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "测算土地增值税清算",
+      "kind": "atomic",
+      "displayName": "测算土地增值税清算",
+      "goal": "达到清算或核定条件；开发方",
+      "notFor": [
+        "不定唯一清算额",
+        "开发争议转房地产"
+      ],
+      "deliverables": [
+        "达到清算或核定条件；开发方"
+      ],
+      "path": "skills/测算土地增值税清算",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "税务法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "测算出口退税风险额",
+      "kind": "atomic",
+      "displayName": "测算出口退税风险额",
+      "goal": "出口退税被疑骗税或函调异常；单方",
+      "notFor": [
+        "海关缉私主导停止",
+        "不定骗税成立"
+      ],
+      "deliverables": [
+        "出口退税被疑骗税或函调异常；单方"
+      ],
+      "path": "skills/测算出口退税风险额",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "税务法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "保全账簿与电子数据",
+      "kind": "atomic",
+      "displayName": "保全账簿与电子数据",
+      "goal": "账套、邮件、进销存可能灭失或已被调取；单方",
+      "notFor": [
+        "不指导格式化或改系统时间"
+      ],
+      "deliverables": [
+        "账套、邮件、进销存可能灭失或已被调取；单方"
+      ],
+      "path": "skills/保全账簿与电子数据",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "税务法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备纳税担保",
+      "kind": "atomic",
+      "displayName": "准备纳税担保",
+      "goal": "为打开纳税争议复议或解除保全，需提供担保；纳税人或担保人",
+      "notFor": [
+        "不保证机关确认",
+        "担保无效则复议闸不打开"
+      ],
+      "deliverables": [
+        "为打开纳税争议复议或解除保全，需提供担保；纳税人或担保人"
+      ],
+      "path": "skills/准备纳税担保",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "税务法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对税收保全",
+      "kind": "atomic",
+      "displayName": "应对税收保全",
+      "goal": "账户、商品或财产已被保全；被保全方",
+      "notFor": [
+        "禁止转移隐匿",
+        "与强制执行不同"
+      ],
+      "deliverables": [
+        "账户、商品或财产已被保全；被保全方"
+      ],
+      "path": "skills/应对税收保全",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "税务法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对税收强制执行",
+      "kind": "atomic",
+      "displayName": "应对税收强制执行",
+      "goal": "已收强制执行决定或即将扣缴拍卖；被执行方",
+      "notFor": [
+        "禁止对抗执行或转移财产"
+      ],
+      "deliverables": [
+        "已收强制执行决定或即将扣缴拍卖；被执行方"
+      ],
+      "path": "skills/应对税收强制执行",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "税务法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "申请停止执行或暂缓",
+      "kind": "atomic",
+      "displayName": "申请停止执行或暂缓",
+      "goal": "复议诉讼中需暂缓或停止执行；申请人",
+      "notFor": [
+        "不保证准许",
+        "不指导拖延缴税"
+      ],
+      "deliverables": [
+        "复议诉讼中需暂缓或停止执行；申请人"
+      ],
+      "path": "skills/申请停止执行或暂缓",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "税务法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对税务行政诉讼",
+      "kind": "atomic",
+      "displayName": "应对税务行政诉讼",
+      "goal": "税务机关或第三人应诉；被告或第三人",
+      "notFor": [
+        "不重做处理决定",
+        "纳税人起诉走起诉原子"
+      ],
+      "deliverables": [
+        "税务机关或第三人应诉；被告或第三人"
+      ],
+      "path": "skills/应对税务行政诉讼",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "税务法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估税收规范性文件附带审查",
+      "kind": "atomic",
+      "displayName": "评估税收规范性文件附带审查",
+      "goal": "认为处理依据不合法，拟附带审查；申请人／原告",
+      "notFor": [
+        "不抽象审查规章或法律"
+      ],
+      "deliverables": [
+        "认为处理依据不合法，拟附带审查；申请人／原告"
+      ],
+      "path": "skills/评估税收规范性文件附带审查",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "税务法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "提起税务行政上诉",
+      "kind": "atomic",
+      "displayName": "提起税务行政上诉",
+      "goal": "不服未生效税务行政判决／裁定；上诉方",
+      "notFor": [
+        "不重做一审"
+      ],
+      "deliverables": [
+        "不服未生效税务行政判决／裁定；上诉方"
+      ],
+      "path": "skills/提起税务行政上诉",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "税务法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "分流逃税骗税虚开刑行交叉",
+      "kind": "atomic",
+      "displayName": "分流逃税骗税虚开刑行交叉",
+      "goal": "出现逃税、骗税、虚开、隐匿账簿线索；单方",
+      "notFor": [
+        "不定罪",
+        "辩护会见转刑事"
+      ],
+      "deliverables": [
+        "出现逃税、骗税、虚开、隐匿账簿线索；单方"
+      ],
+      "path": "skills/分流逃税骗税虚开刑行交叉",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "税务法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估首次逃税不予追究刑事责任条件",
+      "kind": "atomic",
+      "displayName": "评估首次逃税不予追究刑事责任条件",
+      "goal": "被指逃税，拟主张补缴后不予刑责；纳税人",
+      "notFor": [
+        "不定“补了就没事”",
+        "已立案按刑事规则"
+      ],
+      "deliverables": [
+        "被指逃税，拟主张补缴后不予刑责；纳税人"
+      ],
+      "path": "skills/评估首次逃税不予追究刑事责任条件",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "税务法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对税务案件移送公安机关",
+      "kind": "atomic",
+      "displayName": "应对税务案件移送公安机关",
+      "goal": "已决定或可能移送；被查方",
+      "notFor": [
+        "不办刑事辩护",
+        "会见取保转刑事"
+      ],
+      "deliverables": [
+        "已决定或可能移送；被查方"
+      ],
+      "path": "skills/应对税务案件移送公安机关",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "税务法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估常设机构与境内所得",
+      "kind": "atomic",
+      "displayName": "评估常设机构与境内所得",
+      "goal": "境外主体境内活动是否构成机构场所／常设机构；单方",
+      "notFor": [
+        "跨境交易、管制、投资整体转涉外"
+      ],
+      "deliverables": [
+        "境外主体境内活动是否构成机构场所／常设机构；单方"
+      ],
+      "path": "skills/评估常设机构与境内所得",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "税务法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估对外付汇扣缴",
+      "kind": "atomic",
+      "displayName": "评估对外付汇扣缴",
+      "goal": "对外支付股息、利息、特许权、服务费；支付方",
+      "notFor": [
+        "外汇与贸易监管整体转涉外"
+      ],
+      "deliverables": [
+        "对外支付股息、利息、特许权、服务费；支付方"
+      ],
+      "path": "skills/评估对外付汇扣缴",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "税务法律业务导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    }
+  ],
+  "guideName": "税务法律业务导航"
+}

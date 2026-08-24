@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备行政诉讼保全申请"
+  short_description: "准备行政诉讼诉前或诉中保全申请、线索和担保要点"
+  default_prompt: "使用 $准备行政诉讼保全申请，在申请方立场下准备中国大陆行政诉讼保全申请，并与停止执行区分。"

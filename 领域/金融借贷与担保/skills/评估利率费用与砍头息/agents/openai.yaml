@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估利率费用与砍头息"
+  short_description: "分层评估砍头息、服务费、复利和利率保护上限"
+  default_prompt: "使用 $评估利率费用与砍头息，在单一立场下评估中国大陆借贷利率、费用与砍头息的保护范围。"

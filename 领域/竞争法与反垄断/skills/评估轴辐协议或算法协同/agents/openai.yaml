@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估轴辐协议或算法协同"
+  short_description: "评估轴辐协议或算法协同的联络路径与抗辩"
+  default_prompt: "使用 $评估轴辐协议或算法协同，评估轴辐协议或算法协同的联络路径与抗辩。"

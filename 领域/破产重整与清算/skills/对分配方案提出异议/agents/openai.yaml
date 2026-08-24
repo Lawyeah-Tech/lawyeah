@@ -1,0 +1,4 @@
+interface:
+  display_name: "对分配方案提出异议"
+  short_description: "针对分配方案顺位或金额错误提出会议或法院异议"
+  default_prompt: "使用 $对分配方案提出异议，对中国大陆破产分配方案提出异议。"

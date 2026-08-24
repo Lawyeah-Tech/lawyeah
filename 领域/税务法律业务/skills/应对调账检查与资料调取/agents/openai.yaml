@@ -1,0 +1,4 @@
+interface:
+  display_name: "应对调账检查与资料调取"
+  short_description: "核验调账文书、清单、复制件和退还期限，不指导藏账"
+  default_prompt: "使用 $应对调账检查与资料调取，在被查方立场下应对中国大陆税务调取账簿、凭证或电子数据。"

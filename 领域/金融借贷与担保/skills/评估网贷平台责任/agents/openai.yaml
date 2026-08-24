@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估网贷平台责任"
+  short_description: "分层评估网贷平台是中介、增信还是共同放贷"
+  default_prompt: "使用 $评估网贷平台责任，在单一立场下评估中国大陆网贷平台民事责任。"

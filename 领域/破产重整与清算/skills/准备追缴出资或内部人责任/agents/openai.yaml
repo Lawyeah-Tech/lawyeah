@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备追缴出资或内部人责任"
+  short_description: "准备未出资、抽逃或内部人侵占的追收请求与证据"
+  default_prompt: "使用 $准备追缴出资或内部人责任，准备中国大陆破产中的出资追缴或内部人责任追收。"

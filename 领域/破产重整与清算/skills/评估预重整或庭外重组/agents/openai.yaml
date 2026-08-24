@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估预重整或庭外重组"
+  short_description: "划清预重整、庭外重组与法定重整的效力边界"
+  default_prompt: "使用 $评估预重整或庭外重组，评估中国大陆预重整或庭外重组与法定程序的接口。"

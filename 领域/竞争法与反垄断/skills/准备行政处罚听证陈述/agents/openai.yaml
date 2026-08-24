@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备行政处罚听证陈述"
+  short_description: "准备竞争处罚听证的实体陈述、质证和裁量情节"
+  default_prompt: "使用 $准备行政处罚听证陈述，准备竞争处罚听证的实体陈述、质证和裁量情节。"

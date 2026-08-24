@@ -1,0 +1,4 @@
+interface:
+  display_name: "处理异常失控作废发票"
+  short_description: "处理异常、失控、作废发票的进项、举证责任和合法补救"
+  default_prompt: "使用 $处理异常失控作废发票，在单一立场下处理中国大陆异常、失控或作废发票的进项和补救路径。"

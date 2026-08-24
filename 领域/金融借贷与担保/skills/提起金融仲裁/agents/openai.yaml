@@ -1,0 +1,4 @@
+interface:
+  display_name: "提起金融仲裁"
+  short_description: "在有效仲裁协议下准备金融仲裁申请包"
+  default_prompt: "使用 $提起金融仲裁，在申请方立场下提起中国大陆金融仲裁。"

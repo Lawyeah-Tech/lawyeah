@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备停止不正当竞争通知"
+  short_description: "准备停止不正当竞争的发送前通知和送达留痕"
+  default_prompt: "使用 $准备停止不正当竞争通知，准备停止不正当竞争的发送前通知和送达留痕。"

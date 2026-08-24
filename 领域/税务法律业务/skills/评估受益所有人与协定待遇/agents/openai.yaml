@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估受益所有人与协定待遇"
+  short_description: "对照受益所有人要件和协定待遇被拒风险，不保证适用"
+  default_prompt: "使用 $评估受益所有人与协定待遇，在支付方或非居民立场下评估税收协定受益所有人待遇风险。"

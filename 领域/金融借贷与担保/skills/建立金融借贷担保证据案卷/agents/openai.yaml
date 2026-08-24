@@ -1,0 +1,4 @@
+interface:
+  display_name: "建立金融借贷担保证据案卷"
+  short_description: "形成交付、担保、催收要件与合法补证矩阵"
+  default_prompt: "使用 $建立金融借贷担保证据案卷，整理中国大陆金融借贷或担保争议的证据案卷。"

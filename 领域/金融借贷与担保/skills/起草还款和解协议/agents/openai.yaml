@@ -1,0 +1,4 @@
+interface:
+  display_name: "起草还款和解协议"
+  short_description: "把已谈拢的金融和解条件写成可签协议"
+  default_prompt: "使用 $起草还款和解协议，在单一立场下起草中国大陆金融争议还款和解协议。"

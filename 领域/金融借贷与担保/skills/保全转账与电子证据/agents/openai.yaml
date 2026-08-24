@@ -1,0 +1,4 @@
+interface:
+  display_name: "保全转账与电子证据"
+  short_description: "合法保全转账、聊天和电子签约证据"
+  default_prompt: "使用 $保全转账与电子证据，在单一立场下保全中国大陆借贷相关的转账与电子证据。"

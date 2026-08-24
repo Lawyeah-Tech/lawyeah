@@ -1,0 +1,4 @@
+interface:
+  display_name: "提起破产债权确认之诉"
+  short_description: "在破产受理法院准备债权确认之诉发送前材料"
+  default_prompt: "使用 $提起破产债权确认之诉，准备中国大陆破产债权确认之诉起诉材料。"

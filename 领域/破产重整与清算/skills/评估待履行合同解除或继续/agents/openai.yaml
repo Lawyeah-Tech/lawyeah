@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估待履行合同解除或继续"
+  short_description: "判断待履行合同解除或继续及共益债务风险"
+  default_prompt: "使用 $评估待履行合同解除或继续，评估中国大陆破产中待履行合同的解除或继续。"

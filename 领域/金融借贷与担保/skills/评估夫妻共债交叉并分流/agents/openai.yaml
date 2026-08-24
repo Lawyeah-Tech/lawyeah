@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估夫妻共债交叉并分流"
+  short_description: "分列夫妻共债与保证签字并交接婚家领域"
+  default_prompt: "使用 $评估夫妻共债交叉并分流，在单一立场下评估夫妻共债对金融借贷担保的交叉并分流。"

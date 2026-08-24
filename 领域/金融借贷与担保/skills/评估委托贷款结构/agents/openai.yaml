@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估委托贷款结构"
+  short_description: "分层评估委托贷款中委托人、银行和借款人责任"
+  default_prompt: "使用 $评估委托贷款结构，在单一立场下评估中国大陆委托贷款结构与责任分层。"

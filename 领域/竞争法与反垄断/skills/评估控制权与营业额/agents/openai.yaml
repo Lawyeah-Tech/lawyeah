@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估控制权与营业额"
+  short_description: "核验集中交易的控制权变化和营业额口径"
+  default_prompt: "使用 $评估控制权与营业额，核验集中交易的控制权变化和营业额口径。"

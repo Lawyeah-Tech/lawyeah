@@ -1,0 +1,4 @@
+interface:
+  display_name: "申请中止调查承诺"
+  short_description: "准备反垄断中止调查承诺的正式申请和监督安排"
+  default_prompt: "使用 $申请中止调查承诺，准备反垄断中止调查承诺的正式申请和监督安排。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备公证催收或赋强公证"
+  short_description: "准备公证催收或赋予强制执行效力的债权文书公证"
+  default_prompt: "使用 $准备公证催收或赋强公证，在单一立场下准备中国大陆公证催收或赋强公证材料。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估未达标准被要求申报"
+  short_description: "评估未达申报门槛仍被叫停或被要求申报的风险"
+  default_prompt: "使用 $评估未达标准被要求申报，评估未达申报门槛仍被叫停或被要求申报的风险。"

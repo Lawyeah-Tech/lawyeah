@@ -1,0 +1,4 @@
+interface:
+  display_name: "对债权表提出异议"
+  short_description: "形成对债权表或核查意见的异议材料和确认之诉分流"
+  default_prompt: "使用 $对债权表提出异议，准备中国大陆破产债权表异议材料。"

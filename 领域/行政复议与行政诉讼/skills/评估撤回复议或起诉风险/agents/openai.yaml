@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估撤回复议或起诉风险"
+  short_description: "评估撤回复议或起诉后能否再申请或再诉"
+  default_prompt: "使用 $评估撤回复议或起诉风险，在申请人或原告立场下评估撤回中国大陆行政复议或行政诉讼的风险，不要代为提交撤回。"

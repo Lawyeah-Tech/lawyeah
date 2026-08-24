@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估对外付汇扣缴"
+  short_description: "评估对外支付的税目、协定衔接、扣缴和税务报告，外汇整体转出"
+  default_prompt: "使用 $评估对外付汇扣缴，在支付方立场下评估中国大陆对外付汇的扣缴税目和税务报告义务。"

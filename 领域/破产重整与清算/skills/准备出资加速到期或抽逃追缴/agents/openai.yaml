@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备出资加速到期或抽逃追缴"
+  short_description: "分账准备认缴加速或抽逃追缴的发送前起诉材料"
+  default_prompt: "使用 $准备出资加速到期或抽逃追缴，准备中国大陆破产出资加速到期或抽逃追缴诉讼。"

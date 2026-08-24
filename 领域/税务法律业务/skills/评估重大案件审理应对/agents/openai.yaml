@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估重大案件审理应对"
+  short_description: "梳理重大税务案件审理节点和陈述机会，不预测结论"
+  default_prompt: "使用 $评估重大案件审理应对，在被查方立场下评估中国大陆重大税务案件审理的应对节点。"

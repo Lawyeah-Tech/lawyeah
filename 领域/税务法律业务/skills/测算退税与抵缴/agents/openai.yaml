@@ -1,0 +1,4 @@
+interface:
+  display_name: "测算退税与抵缴"
+  short_description: "列出多缴、留抵或结算退抵条件、所属期和证据，不保证退还"
+  default_prompt: "使用 $测算退税与抵缴，在单一立场下测算中国大陆多缴、留抵或结算退税与抵缴条件。"

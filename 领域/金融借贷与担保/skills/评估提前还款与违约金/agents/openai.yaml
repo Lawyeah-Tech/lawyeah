@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估提前还款与违约金"
+  short_description: "评估能否提前还款及提前还款费用是否受保护"
+  default_prompt: "使用 $评估提前还款与违约金，在单一立场下评估中国大陆提前还款与违约金。"

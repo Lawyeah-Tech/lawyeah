@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备执行和解"
+  short_description: "准备执行中的分期或抵债和解并保留恢复执行"
+  default_prompt: "使用 $准备金融执行和解，在单一立场下准备中国大陆金融执行和解。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备重整投资与招募"
+  short_description: "设计重整投资人招募选聘并衔接到计划"
+  default_prompt: "使用 $准备重整投资与招募，准备中国大陆重整投资与招募。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估竞争法期限与主管机关"
+  short_description: "分类型核验竞争法时效、管辖法院和执法机关"
+  default_prompt: "使用 $评估竞争法期限与主管机关，分类型核验竞争法时效、管辖法院和执法机关。"

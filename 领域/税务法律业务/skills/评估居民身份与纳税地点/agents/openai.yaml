@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估居民身份与纳税地点"
+  short_description: "评估个人或企业居民身份、所得来源地和申报地待核"
+  default_prompt: "使用 $评估居民身份与纳税地点，在单一立场下评估中国大陆税收居民身份和纳税地点。"

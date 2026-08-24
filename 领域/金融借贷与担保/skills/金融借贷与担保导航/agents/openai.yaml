@@ -1,0 +1,4 @@
+interface:
+  display_name: "金融借贷与担保导航"
+  short_description: "了解金融借贷担保领域包的能力边界，并定位适用的原子 Skill"
+  default_prompt: "使用 $金融借贷与担保导航 根据我的立场、阶段和预期成果，在（P0+P1）中定位合适的金融借贷担保原子 Skill。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "应对竞争法民事诉讼"
+  short_description: "形成竞争法民事案件首次应诉答辩包"
+  default_prompt: "使用 $应对竞争法民事诉讼，在单一被告立场下准备中国大陆竞争法民事诉讼答辩。"

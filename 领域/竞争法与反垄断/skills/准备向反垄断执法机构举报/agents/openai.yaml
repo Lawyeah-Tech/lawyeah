@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备向反垄断执法机构举报"
+  short_description: "形成发送前行政举报材料、管辖建议和证据目录"
+  default_prompt: "使用 $准备向反垄断执法机构举报，准备向中国反垄断或反不正当竞争执法机构提交的举报材料。"

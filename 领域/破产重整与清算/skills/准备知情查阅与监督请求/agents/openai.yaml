@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备知情查阅与监督请求"
+  short_description: "准备债权人合法查阅账册评估费用及拒绝后救济"
+  default_prompt: "使用 $准备知情查阅与监督请求，准备中国大陆破产知情查阅与监督请求。"

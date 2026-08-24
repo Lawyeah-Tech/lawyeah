@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备债权人会议表决"
+  short_description: "核算债权人会议表决权、回避、门槛与代理"
+  default_prompt: "使用 $准备债权人会议表决，准备中国大陆债权人会议表决。"

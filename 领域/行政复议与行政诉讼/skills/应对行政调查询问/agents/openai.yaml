@@ -1,0 +1,4 @@
+interface:
+  display_name: "应对行政调查询问"
+  short_description: "界定行政调查中的配合边界、权利告知和材料清单"
+  default_prompt: "使用 $应对行政调查询问，在相对人立场下应对中国大陆行政调查询问，列出合法配合边界，不要指导妨碍执法。"

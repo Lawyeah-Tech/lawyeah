@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备公平竞争审查意见"
+  short_description: "为起草单位准备公平竞争审查表、例外和出台结论"
+  default_prompt: "使用 $准备公平竞争审查意见，为起草单位准备公平竞争审查表、例外和出台结论。"

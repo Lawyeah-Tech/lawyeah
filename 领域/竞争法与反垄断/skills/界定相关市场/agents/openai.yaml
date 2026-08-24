@@ -1,0 +1,4 @@
+interface:
+  display_name: "界定相关市场"
+  short_description: "界定相关商品市场和地域市场并列出假设与数据缺口"
+  default_prompt: "使用 $界定相关市场，界定相关商品市场和地域市场并列出假设与数据缺口。"

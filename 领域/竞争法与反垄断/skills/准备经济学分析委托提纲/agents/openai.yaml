@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备经济学分析委托提纲"
+  short_description: "准备相关市场或损害分析的经济学委托提纲"
+  default_prompt: "使用 $准备经济学分析委托提纲，准备相关市场或损害分析的经济学委托提纲。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备保证人追偿诉讼"
+  short_description: "准备保证人追偿之诉的起诉材料"
+  default_prompt: "使用 $准备保证人追偿诉讼，在保证人立场下准备中国大陆保证追偿诉讼材料。"

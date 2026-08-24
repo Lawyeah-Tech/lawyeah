@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备补充申报"
+  short_description: "准备逾期补充申报并提示费用与不得参与已分配"
+  default_prompt: "使用 $准备补充申报，准备中国大陆破产债权补充申报。"

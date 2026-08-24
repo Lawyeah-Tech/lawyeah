@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估资产收购税负"
+  short_description: "列出资产包转让的增值税、土增、企税、契税接口与缺口"
+  default_prompt: "使用 $评估资产收购税负，在单一立场下评估中国大陆资产收购或剥离的多税种接口。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估纵向限制"
+  short_description: "评估转售价格、独家、最惠等纵向限制的竞争法路径"
+  default_prompt: "使用 $评估纵向限制，评估转售价格、独家、最惠等纵向限制的竞争法路径。"

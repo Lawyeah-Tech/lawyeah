@@ -1,0 +1,4 @@
+interface:
+  display_name: "提起竞争法案件上诉"
+  short_description: "准备竞争法案件上诉状、范围、期限和理由"
+  default_prompt: "使用 $提起竞争法案件上诉，准备竞争法案件上诉状、范围、期限和理由。"

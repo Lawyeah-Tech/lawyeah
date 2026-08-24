@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估查账与核定征收"
+  short_description: "对照核定条件、方法和证据，不定唯一税额"
+  default_prompt: "使用 $评估查账与核定征收，在单一立场下评估中国大陆查账征收与核定征收条件和调整空间。"

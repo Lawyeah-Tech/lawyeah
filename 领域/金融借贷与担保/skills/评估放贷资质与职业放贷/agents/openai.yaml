@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估放贷资质与职业放贷"
+  short_description: "评估无牌放贷或职业放贷的民事效力与后果"
+  default_prompt: "使用 $评估放贷资质与职业放贷，在单一立场下评估中国大陆放贷资质与职业放贷的民事争点。"

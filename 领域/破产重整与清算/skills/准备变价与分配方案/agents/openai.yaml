@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备变价与分配方案"
+  short_description: "按法定顺位准备分配方案并列出提存与异议期"
+  default_prompt: "使用 $准备变价与分配方案，准备中国大陆破产变价与分配方案。"

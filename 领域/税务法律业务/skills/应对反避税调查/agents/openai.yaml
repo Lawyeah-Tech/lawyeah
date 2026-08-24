@@ -1,0 +1,4 @@
+interface:
+  display_name: "应对反避税调查"
+  short_description: "应对一般反避税调查的商业实质抗辩、资料和协商节点"
+  default_prompt: "使用 $应对反避税调查，在单一立场下应对已启动的中国大陆一般反避税或受控交易调查。"

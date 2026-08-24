@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估平台竞争限制"
+  short_description: "评估平台二选一、自我优待、数据封禁和算法限制"
+  default_prompt: "使用 $评估平台竞争限制，评估平台二选一、自我优待、数据封禁和算法限制。"

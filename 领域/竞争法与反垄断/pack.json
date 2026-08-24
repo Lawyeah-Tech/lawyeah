@@ -1,0 +1,1531 @@
+{
+  "schemaVersion": 2,
+  "id": "handle-competition-antitrust",
+  "displayName": "竞争法与反垄断",
+  "description": "处理中国大陆经营者集中、垄断行为、不正当竞争和平台竞争中的评估、申报、举报、测算、证据、调查应对、民事两造和承诺谈判的多 Skill 领域包。",
+  "version": "1.0.0",
+  "license": "Apache-2.0",
+  "jurisdiction": "CN-mainland",
+  "contentModel": "multi-skill-progressive-disclosure",
+  "reinstallStrategy": "replace",
+  "scope": {
+    "purpose": "处理经营者集中、垄断行为、不正当竞争和平台竞争中的申报、合规、调查与争议。",
+    "inScope": [
+      "经营者集中申报",
+      "垄断协议和滥用市场支配地位",
+      "不正当竞争和平台竞争",
+      "竞争调查、诉讼与合规"
+    ],
+    "outOfScope": [
+      "投资并购交易整体执行",
+      "知识产权权利保护本身",
+      "企业综合合规体系",
+      "一般行政救济程序"
+    ],
+    "primaryDeliverables": [
+      "竞争法评估",
+      "经营者集中申报成果",
+      "竞争合规方案",
+      "调查和诉讼应对成果"
+    ]
+  },
+  "guideSkill": "竞争法与反垄断导航",
+  "mcp": {
+    "contractRange": "0.0"
+  },
+  "skills": [
+    {
+      "id": "竞争法与反垄断导航",
+      "kind": "guide",
+      "displayName": "竞争法与反垄断导航",
+      "goal": "说明领域包的能力、边界和当前原子 Skill 全貌",
+      "notFor": [
+        "直接完成具体法律业务成果"
+      ],
+      "deliverables": [
+        "领域能力定位结果"
+      ],
+      "path": "skills/竞争法与反垄断导航",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "建立竞争法证据案卷",
+          "应对反垄断调查",
+          "评估竞争法事项",
+          "准备向反垄断执法机构举报",
+          "应对竞争法民事诉讼",
+          "评估经营者集中申报义务",
+          "提起竞争法民事诉讼",
+          "测算罚款违法所得与损害赔偿",
+          "谈判中止调查承诺或和解方案",
+          "准备经营者集中申报",
+          "评估未达标准被要求申报",
+          "评估违法实施集中",
+          "评估合营是否构成集中",
+          "评估控制权与营业额",
+          "评估垄断协议",
+          "评估纵向限制",
+          "评估滥用市场支配地位",
+          "评估不正当竞争行为",
+          "评估平台竞争限制",
+          "评估公平竞争审查",
+          "应对申报补正与审查问题",
+          "准备附加限制性条件方案",
+          "准备撤回申报或竞争专项结构调整",
+          "评估境外交易中国申报",
+          "准备未依法申报自我报告",
+          "执行限制性条件监督报告",
+          "评估申报审查期限与停钟",
+          "评估行业协会组织垄断协议",
+          "评估轴辐协议或算法协同",
+          "申请垄断协议宽恕",
+          "评估豁免或安全港",
+          "审查经销体系竞争限制",
+          "界定相关市场",
+          "评估拒绝交易限定交易或搭售",
+          "评估不公平价格与差别待遇",
+          "评估混淆与仿冒",
+          "评估商业诋毁",
+          "评估经营者间虚假宣传",
+          "评估商业贿赂竞争法路径",
+          "评估网络不正当竞争",
+          "分流商业秘密与竞争法交叉",
+          "准备停止不正当竞争通知",
+          "准备平台内竞争投诉下架",
+          "应对反垄断现场检查",
+          "作为被举报人应对初步核实",
+          "申请中止调查承诺",
+          "准备行政处罚听证陈述",
+          "评估行政处罚决定",
+          "准备竞争处罚复议诉讼实体材料",
+          "评估滥用行政权力排除限制竞争",
+          "申请停止侵害或行为保全",
+          "准备竞争法案件庭审",
+          "提起竞争法案件上诉",
+          "评估行政认定后的后继民事诉讼",
+          "执行竞争法生效文书",
+          "提出竞争法案件管辖异议",
+          "保全协同或仿冒电子证据",
+          "准备经济学分析委托提纲",
+          "起草竞争争议和解协议",
+          "评估竞争法期限与主管机关",
+          "准备现场检查应急手册",
+          "针对特定商业做法设计竞争风险控制",
+          "审查协会章程与行业自律文件",
+          "准备公平竞争审查意见",
+          "评估知识产权行使的竞争法面向"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估竞争法事项",
+      "kind": "atomic",
+      "displayName": "评估竞争法事项",
+      "goal": "在单方无冲突立场下形成可决策的竞争法总图",
+      "notFor": [
+        "申报终稿",
+        "举报函",
+        "诉状或答辩",
+        "罚款精算终稿",
+        "并购交易整体"
+      ],
+      "deliverables": [
+        "在单方无冲突立场下形成可决策的竞争法总图"
+      ],
+      "path": "skills/评估竞争法事项",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "竞争法与反垄断导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估经营者集中申报义务",
+      "kind": "atomic",
+      "displayName": "评估经营者集中申报义务",
+      "goal": "判断是否构成集中、是否达到申报标准以及批准前能否实施",
+      "notFor": [
+        "申报表终稿",
+        "交易结构或交割清单",
+        "境外当地申报"
+      ],
+      "deliverables": [
+        "判断是否构成集中、是否达到申报标准以及批准前能否实施"
+      ],
+      "path": "skills/评估经营者集中申报义务",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "竞争法与反垄断导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备经营者集中申报",
+      "kind": "atomic",
+      "displayName": "准备经营者集中申报",
+      "goal": "形成可复核、不代提交的经营者集中申报包",
+      "notFor": [
+        "代提交",
+        "交易对价谈判",
+        "把签署协议写成已可交割"
+      ],
+      "deliverables": [
+        "形成可复核、不代提交的经营者集中申报包"
+      ],
+      "path": "skills/准备经营者集中申报",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "竞争法与反垄断导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备向反垄断执法机构举报",
+      "kind": "atomic",
+      "displayName": "准备向反垄断执法机构举报",
+      "goal": "形成发送前行政举报材料和管辖建议",
+      "notFor": [
+        "保证立案",
+        "民事起诉状",
+        "消费者投诉主路径"
+      ],
+      "deliverables": [
+        "形成发送前行政举报材料和管辖建议"
+      ],
+      "path": "skills/准备向反垄断执法机构举报",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "竞争法与反垄断导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "测算罚款违法所得与损害赔偿",
+      "kind": "atomic",
+      "displayName": "测算罚款违法所得与损害赔偿",
+      "goal": "形成可复核的分项测算，不认定违法已成立",
+      "notFor": [
+        "定性总图",
+        "唯一必得总额",
+        "把未知销售额写成零"
+      ],
+      "deliverables": [
+        "形成可复核的分项测算，不认定违法已成立"
+      ],
+      "path": "skills/测算罚款违法所得与损害赔偿",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "竞争法与反垄断导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "建立竞争法证据案卷",
+      "kind": "atomic",
+      "displayName": "建立竞争法证据案卷",
+      "goal": "形成要件、举证责任、材料与合法补证矩阵",
+      "notFor": [
+        "策略总图",
+        "诉状",
+        "违法取证方案"
+      ],
+      "deliverables": [
+        "形成要件、举证责任、材料与合法补证矩阵"
+      ],
+      "path": "skills/建立竞争法证据案卷",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "竞争法与反垄断导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对反垄断调查",
+      "kind": "atomic",
+      "displayName": "应对反垄断调查",
+      "goal": "形成被调查人的程序状态、答复边界和承诺宽恕接口",
+      "notFor": [
+        "现场检查到场指挥终稿",
+        "保证中止调查",
+        "指导藏匿材料"
+      ],
+      "deliverables": [
+        "形成被调查人的程序状态、答复边界和承诺宽恕接口"
+      ],
+      "path": "skills/应对反垄断调查",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "竞争法与反垄断导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "提起竞争法民事诉讼",
+      "kind": "atomic",
+      "displayName": "提起竞争法民事诉讼",
+      "goal": "形成可提交的竞争法民事起诉包",
+      "notFor": [
+        "代提交",
+        "行政举报终稿",
+        "知识产权权属确认之诉"
+      ],
+      "deliverables": [
+        "形成可提交的竞争法民事起诉包"
+      ],
+      "path": "skills/提起竞争法民事诉讼",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "竞争法与反垄断导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对竞争法民事诉讼",
+      "kind": "atomic",
+      "displayName": "应对竞争法民事诉讼",
+      "goal": "形成首次应诉答辩包",
+      "notFor": [
+        "主动起诉",
+        "只要管辖异议终稿且无实体",
+        "劳动应诉"
+      ],
+      "deliverables": [
+        "形成首次应诉答辩包"
+      ],
+      "path": "skills/应对竞争法民事诉讼",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "竞争法与反垄断导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "谈判中止调查承诺或和解方案",
+      "kind": "atomic",
+      "displayName": "谈判中止调查承诺或和解方案",
+      "goal": "形成底线、承诺措施、弃权范围和恢复调查风险提示",
+      "notFor": [
+        "已谈拢的和解协议正文",
+        "正式中止调查申请终稿",
+        "答辩状"
+      ],
+      "deliverables": [
+        "形成底线、承诺措施、弃权范围和恢复调查风险提示"
+      ],
+      "path": "skills/谈判中止调查承诺或和解方案",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "竞争法与反垄断导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估未达标准被要求申报",
+      "kind": "atomic",
+      "displayName": "评估未达标准被要求申报",
+      "goal": "未达门槛但仍担心被叫停或被要求申报；交易方",
+      "notFor": [
+        "不替代申报义务总评估",
+        "不写申报终稿"
+      ],
+      "deliverables": [
+        "未达门槛但仍担心被叫停或被要求申报；交易方"
+      ],
+      "path": "skills/评估未达标准被要求申报",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "竞争法与反垄断导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估违法实施集中",
+      "kind": "atomic",
+      "displayName": "评估违法实施集中",
+      "goal": "交割前已整合、委派高管、交换敏感信息或已交割未申报；单方",
+      "notFor": [
+        "不指导补做交割",
+        "自我报告另项"
+      ],
+      "deliverables": [
+        "交割前已整合、委派高管、交换敏感信息或已交割未申报；单方"
+      ],
+      "path": "skills/评估违法实施集中",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "竞争法与反垄断导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估合营是否构成集中",
+      "kind": "atomic",
+      "displayName": "评估合营是否构成集中",
+      "goal": "新设或改建合营，争是否取得控制权或决定性影响；单方",
+      "notFor": [
+        "不起草合资合同（审查起草搁置）"
+      ],
+      "deliverables": [
+        "新设或改建合营，争是否取得控制权或决定性影响；单方"
+      ],
+      "path": "skills/评估合营是否构成集中",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "竞争法与反垄断导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估控制权与营业额",
+      "kind": "atomic",
+      "displayName": "评估控制权与营业额",
+      "goal": "单独委托核验控制权变化和营业额口径；单方",
+      "notFor": [
+        "不选定是否必须申报",
+        "申报义务评估另项"
+      ],
+      "deliverables": [
+        "单独委托核验控制权变化和营业额口径；单方"
+      ],
+      "path": "skills/评估控制权与营业额",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "竞争法与反垄断导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估垄断协议",
+      "kind": "atomic",
+      "displayName": "评估垄断协议",
+      "goal": "价格、产量、市场划分、联合抵制或协同行为被质疑；单方",
+      "notFor": [
+        "不定罪",
+        "行业协会、轴辐另项可深挖"
+      ],
+      "deliverables": [
+        "价格、产量、市场划分、联合抵制或协同行为被质疑；单方"
+      ],
+      "path": "skills/评估垄断协议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "竞争法与反垄断导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估纵向限制",
+      "kind": "atomic",
+      "displayName": "评估纵向限制",
+      "goal": "转售价格、独家、最惠、地域限制被质疑；品牌方或经销商",
+      "notFor": [
+        "不重写经销合同正文（审查起草搁置）"
+      ],
+      "deliverables": [
+        "转售价格、独家、最惠、地域限制被质疑；品牌方或经销商"
+      ],
+      "path": "skills/评估纵向限制",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "竞争法与反垄断导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估滥用市场支配地位",
+      "kind": "atomic",
+      "displayName": "评估滥用市场支配地位",
+      "goal": "不公平价格、拒绝交易、限定交易、搭售、差别待遇被质疑；单方",
+      "notFor": [
+        "不替代相关市场专项界定"
+      ],
+      "deliverables": [
+        "不公平价格、拒绝交易、限定交易、搭售、差别待遇被质疑；单方"
+      ],
+      "path": "skills/评估滥用市场支配地位",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "竞争法与反垄断导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估不正当竞争行为",
+      "kind": "atomic",
+      "displayName": "评估不正当竞争行为",
+      "goal": "仿冒、虚假宣传、诋毁、网络干扰等经营者间争议；主张方或被指方",
+      "notFor": [
+        "普通消费者主请求转消保/C 端",
+        "商业秘密权利本身转知识产权"
+      ],
+      "deliverables": [
+        "仿冒、虚假宣传、诋毁、网络干扰等经营者间争议；主张方或被指方"
+      ],
+      "path": "skills/评估不正当竞争行为",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "竞争法与反垄断导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估平台竞争限制",
+      "kind": "atomic",
+      "displayName": "评估平台竞争限制",
+      "goal": "二选一、自我优待、数据封禁、算法协同、平台内规则被质疑；平台或商家",
+      "notFor": [
+        "不建平台综合合规体系",
+        "数据跨境转数据隐私"
+      ],
+      "deliverables": [
+        "二选一、自我优待、数据封禁、算法协同、平台内规则被质疑；平台或商家"
+      ],
+      "path": "skills/评估平台竞争限制",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "竞争法与反垄断导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估公平竞争审查",
+      "kind": "atomic",
+      "displayName": "评估公平竞争审查",
+      "goal": "政策措施草案或已出台文件被指排除限制竞争；起草单位或受影响经营者",
+      "notFor": [
+        "不替代正式审查意见书"
+      ],
+      "deliverables": [
+        "政策措施草案或已出台文件被指排除限制竞争；起草单位或受影响经营者"
+      ],
+      "path": "skills/评估公平竞争审查",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "竞争法与反垄断导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对申报补正与审查问题",
+      "kind": "atomic",
+      "displayName": "应对申报补正与审查问题",
+      "goal": "已立案审查，收到补正或问题清单；申报方",
+      "notFor": [
+        "不改写交易整体",
+        "不承诺审查结果"
+      ],
+      "deliverables": [
+        "已立案审查，收到补正或问题清单；申报方"
+      ],
+      "path": "skills/应对申报补正与审查问题",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "竞争法与反垄断导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备附加限制性条件方案",
+      "kind": "atomic",
+      "displayName": "准备附加限制性条件方案",
+      "goal": "审查认为可能排除限制竞争，需提出救济；申报方",
+      "notFor": [
+        "不保证附加批准",
+        "不吞并购重组方案"
+      ],
+      "deliverables": [
+        "审查认为可能排除限制竞争，需提出救济；申报方"
+      ],
+      "path": "skills/准备附加限制性条件方案",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "竞争法与反垄断导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备撤回申报或竞争专项结构调整",
+      "kind": "atomic",
+      "displayName": "准备撤回申报或竞争专项结构调整",
+      "goal": "拟撤回申报或为竞争审查调整控制权安排；申报方",
+      "notFor": [
+        "交易整体、融资交割归投资并购"
+      ],
+      "deliverables": [
+        "拟撤回申报或为竞争审查调整控制权安排；申报方"
+      ],
+      "path": "skills/准备撤回申报或竞争专项结构调整",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "竞争法与反垄断导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估境外交易中国申报",
+      "kind": "atomic",
+      "displayName": "评估境外交易中国申报",
+      "goal": "交易在境外签署或交割，需判断中国申报；交易方",
+      "notFor": [
+        "境外当地申报转涉外"
+      ],
+      "deliverables": [
+        "交易在境外签署或交割，需判断中国申报；交易方"
+      ],
+      "path": "skills/评估境外交易中国申报",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "竞争法与反垄断导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备未依法申报自我报告",
+      "kind": "atomic",
+      "displayName": "准备未依法申报自我报告",
+      "goal": "已实施或即将被查，拟主动报告；义务人",
+      "notFor": [
+        "不指导伪造补申报时间线"
+      ],
+      "deliverables": [
+        "已实施或即将被查，拟主动报告；义务人"
+      ],
+      "path": "skills/准备未依法申报自我报告",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "竞争法与反垄断导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "执行限制性条件监督报告",
+      "kind": "atomic",
+      "displayName": "执行限制性条件监督报告",
+      "goal": "已附加批准，需按期报告履行；义务人",
+      "notFor": [
+        "不重开交易谈判"
+      ],
+      "deliverables": [
+        "已附加批准，需按期报告履行；义务人"
+      ],
+      "path": "skills/执行限制性条件监督报告",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "竞争法与反垄断导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估申报审查期限与停钟",
+      "kind": "atomic",
+      "displayName": "评估申报审查期限与停钟",
+      "goal": "单独委托核验立案、初步审查、进一步审查和中止；申报方",
+      "notFor": [
+        "不预测批准日"
+      ],
+      "deliverables": [
+        "单独委托核验立案、初步审查、进一步审查和中止；申报方"
+      ],
+      "path": "skills/评估申报审查期限与停钟",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "竞争法与反垄断导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估行业协会组织垄断协议",
+      "kind": "atomic",
+      "displayName": "评估行业协会组织垄断协议",
+      "goal": "协会章程、会议纪要或自律公约被指组织协同；协会或会员",
+      "notFor": [
+        "不定罪",
+        "不建协会综合治理"
+      ],
+      "deliverables": [
+        "协会章程、会议纪要或自律公约被指组织协同；协会或会员"
+      ],
+      "path": "skills/评估行业协会组织垄断协议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "竞争法与反垄断导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估轴辐协议或算法协同",
+      "kind": "atomic",
+      "displayName": "评估轴辐协议或算法协同",
+      "goal": "平台或上游传递价格、算法跟价被指协同；单方",
+      "notFor": [
+        "不鉴定算法源码"
+      ],
+      "deliverables": [
+        "平台或上游传递价格、算法跟价被指协同；单方"
+      ],
+      "path": "skills/评估轴辐协议或算法协同",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "竞争法与反垄断导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "申请垄断协议宽恕",
+      "kind": "atomic",
+      "displayName": "申请垄断协议宽恕",
+      "goal": "已决定争取减免处罚，需排队和材料；参与方",
+      "notFor": [
+        "不保证第一顺位",
+        "不指导甩锅伪造"
+      ],
+      "deliverables": [
+        "已决定争取减免处罚，需排队和材料；参与方"
+      ],
+      "path": "skills/申请垄断协议宽恕",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "竞争法与反垄断导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估豁免或安全港",
+      "kind": "atomic",
+      "displayName": "评估豁免或安全港",
+      "goal": "主张效率、中小企业或市场份额安全港；单方",
+      "notFor": [
+        "不写成必然不予禁止"
+      ],
+      "deliverables": [
+        "主张效率、中小企业或市场份额安全港；单方"
+      ],
+      "path": "skills/评估豁免或安全港",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "竞争法与反垄断导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "审查经销体系竞争限制",
+      "kind": "atomic",
+      "displayName": "审查经销体系竞争限制",
+      "goal": "已有或拟执行经销政策，需竞争法判断；品牌方",
+      "notFor": [
+        "不出可签署经销合同（审查起草搁置）"
+      ],
+      "deliverables": [
+        "已有或拟执行经销政策，需竞争法判断；品牌方"
+      ],
+      "path": "skills/审查经销体系竞争限制",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "竞争法与反垄断导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "界定相关市场",
+      "kind": "atomic",
+      "displayName": "界定相关市场",
+      "goal": "单独委托商品市场和地域市场界定；单方",
+      "notFor": [
+        "不输出市场份额唯一数字冒充已证实"
+      ],
+      "deliverables": [
+        "单独委托商品市场和地域市场界定；单方"
+      ],
+      "path": "skills/界定相关市场",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "竞争法与反垄断导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估拒绝交易限定交易或搭售",
+      "kind": "atomic",
+      "displayName": "评估拒绝交易限定交易或搭售",
+      "goal": "必要设施、二选一、捆绑被质疑；单方",
+      "notFor": [
+        "不强制缔约"
+      ],
+      "deliverables": [
+        "必要设施、二选一、捆绑被质疑；单方"
+      ],
+      "path": "skills/评估拒绝交易限定交易或搭售",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "竞争法与反垄断导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估不公平价格与差别待遇",
+      "kind": "atomic",
+      "displayName": "评估不公平价格与差别待遇",
+      "goal": "过高过低价、大数据杀熟的竞争法路径；单方",
+      "notFor": [
+        "纯消保路径转出",
+        "不定价监管结论"
+      ],
+      "deliverables": [
+        "过高过低价、大数据杀熟的竞争法路径；单方"
+      ],
+      "path": "skills/评估不公平价格与差别待遇",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "竞争法与反垄断导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估混淆与仿冒",
+      "kind": "atomic",
+      "displayName": "评估混淆与仿冒",
+      "goal": "名称、包装、装潢、搜索关键词被指仿冒；单方",
+      "notFor": [
+        "商标权属与授权本身转知识产权"
+      ],
+      "deliverables": [
+        "名称、包装、装潢、搜索关键词被指仿冒；单方"
+      ],
+      "path": "skills/评估混淆与仿冒",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "竞争法与反垄断导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估商业诋毁",
+      "kind": "atomic",
+      "displayName": "评估商业诋毁",
+      "goal": "编造传播虚假或误导信息损害商誉；主张方或被指方",
+      "notFor": [
+        "名誉权个人主轴转侵权"
+      ],
+      "deliverables": [
+        "编造传播虚假或误导信息损害商誉；主张方或被指方"
+      ],
+      "path": "skills/评估商业诋毁",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "竞争法与反垄断导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估经营者间虚假宣传",
+      "kind": "atomic",
+      "displayName": "评估经营者间虚假宣传",
+      "goal": "片面对比、虚假交易评价伤害竞争者；经营者",
+      "notFor": [
+        "普通消费者索赔转消保/C 端虚假宣传包"
+      ],
+      "deliverables": [
+        "片面对比、虚假交易评价伤害竞争者；经营者"
+      ],
+      "path": "skills/评估经营者间虚假宣传",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "竞争法与反垄断导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估商业贿赂竞争法路径",
+      "kind": "atomic",
+      "displayName": "评估商业贿赂竞争法路径",
+      "goal": "账外暗中利益输送争夺交易机会；单方",
+      "notFor": [
+        "不定受贿罪",
+        "刑事转刑事领域"
+      ],
+      "deliverables": [
+        "账外暗中利益输送争夺交易机会；单方"
+      ],
+      "path": "skills/评估商业贿赂竞争法路径",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "竞争法与反垄断导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估网络不正当竞争",
+      "kind": "atomic",
+      "displayName": "评估网络不正当竞争",
+      "goal": "流量劫持、恶意不兼容、干扰、虚假数据；单方",
+      "notFor": [
+        "不替代平台规则仲裁",
+        "数据合规转数据隐私"
+      ],
+      "deliverables": [
+        "流量劫持、恶意不兼容、干扰、虚假数据；单方"
+      ],
+      "path": "skills/评估网络不正当竞争",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "竞争法与反垄断导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "分流商业秘密与竞争法交叉",
+      "kind": "atomic",
+      "displayName": "分流商业秘密与竞争法交叉",
+      "goal": "同时出现保密措施和竞争秩序主张；单方",
+      "notFor": [
+        "不审理商业秘密构成要件终局"
+      ],
+      "deliverables": [
+        "同时出现保密措施和竞争秩序主张；单方"
+      ],
+      "path": "skills/分流商业秘密与竞争法交叉",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "竞争法与反垄断导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备停止不正当竞争通知",
+      "kind": "atomic",
+      "displayName": "准备停止不正当竞争通知",
+      "goal": "已决定发函要求停止仿冒、诋毁或网络干扰；主张方",
+      "notFor": [
+        "不把发送写成已构成侵权",
+        "举报函另项"
+      ],
+      "deliverables": [
+        "已决定发函要求停止仿冒、诋毁或网络干扰；主张方"
+      ],
+      "path": "skills/准备停止不正当竞争通知",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "竞争法与反垄断导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备平台内竞争投诉下架",
+      "kind": "atomic",
+      "displayName": "准备平台内竞争投诉下架",
+      "goal": "需向电商或应用商店投诉下架仿冒或虚假宣传；主张方",
+      "notFor": [
+        "C 端侵权下架包只分流",
+        "不保证下架"
+      ],
+      "deliverables": [
+        "需向电商或应用商店投诉下架仿冒或虚假宣传；主张方"
+      ],
+      "path": "skills/准备平台内竞争投诉下架",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "竞争法与反垄断导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对反垄断现场检查",
+      "kind": "atomic",
+      "displayName": "应对反垄断现场检查",
+      "goal": "执法人员已到场或即将到场；被检查人",
+      "notFor": [
+        "不指导藏匿销毁",
+        "不替代后续调查应对"
+      ],
+      "deliverables": [
+        "执法人员已到场或即将到场；被检查人"
+      ],
+      "path": "skills/应对反垄断现场检查",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "竞争法与反垄断导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "作为被举报人应对初步核实",
+      "kind": "atomic",
+      "displayName": "作为被举报人应对初步核实",
+      "goal": "接到初步核实或约谈，尚未正式立案；被反映人",
+      "notFor": [
+        "不写成已经结案"
+      ],
+      "deliverables": [
+        "接到初步核实或约谈，尚未正式立案；被反映人"
+      ],
+      "path": "skills/作为被举报人应对初步核实",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "竞争法与反垄断导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "申请中止调查承诺",
+      "kind": "atomic",
+      "displayName": "申请中止调查承诺",
+      "goal": "已决定走承诺程序，需正式申请；被调查人",
+      "notFor": [
+        "谈判方案走承诺谈判原子",
+        "不保证中止"
+      ],
+      "deliverables": [
+        "已决定走承诺程序，需正式申请；被调查人"
+      ],
+      "path": "skills/申请中止调查承诺",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "竞争法与反垄断导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备行政处罚听证陈述",
+      "kind": "atomic",
+      "displayName": "准备行政处罚听证陈述",
+      "goal": "已收到处罚告知或听证通知；当事人",
+      "notFor": [
+        "一般行政听证方法转行政领域"
+      ],
+      "deliverables": [
+        "已收到处罚告知或听证通知；当事人"
+      ],
+      "path": "skills/准备行政处罚听证陈述",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "竞争法与反垄断导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估行政处罚决定",
+      "kind": "atomic",
+      "displayName": "评估行政处罚决定",
+      "goal": "已收到处罚决定书，需判断履行、复议或诉讼；当事人",
+      "notFor": [
+        "不代写复议申请书通用格式"
+      ],
+      "deliverables": [
+        "已收到处罚决定书，需判断履行、复议或诉讼；当事人"
+      ],
+      "path": "skills/评估行政处罚决定",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "竞争法与反垄断导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备竞争处罚复议诉讼实体材料",
+      "kind": "atomic",
+      "displayName": "准备竞争处罚复议诉讼实体材料",
+      "goal": "已决定寻求行政救济，需竞争法实体争点包；当事人",
+      "notFor": [
+        "复议诉讼通用程序文书转行政领域"
+      ],
+      "deliverables": [
+        "已决定寻求行政救济，需竞争法实体争点包；当事人"
+      ],
+      "path": "skills/准备竞争处罚复议诉讼实体材料",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "竞争法与反垄断导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估滥用行政权力排除限制竞争",
+      "kind": "atomic",
+      "displayName": "评估滥用行政权力排除限制竞争",
+      "goal": "地方保护、指定交易、强制垄断协议；经营者或起草单位",
+      "notFor": [
+        "不替代对行政机关的一般行政诉讼"
+      ],
+      "deliverables": [
+        "地方保护、指定交易、强制垄断协议；经营者或起草单位"
+      ],
+      "path": "skills/评估滥用行政权力排除限制竞争",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "竞争法与反垄断导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "申请停止侵害或行为保全",
+      "kind": "atomic",
+      "displayName": "申请停止侵害或行为保全",
+      "goal": "需立即停止仿冒、封禁或搭售；申请方",
+      "notFor": [
+        "不保证裁定",
+        "财产保全另评"
+      ],
+      "deliverables": [
+        "需立即停止仿冒、封禁或搭售；申请方"
+      ],
+      "path": "skills/申请停止侵害或行为保全",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "竞争法与反垄断导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备竞争法案件庭审",
+      "kind": "atomic",
+      "displayName": "准备竞争法案件庭审",
+      "goal": "诉讼已排期开庭；单方代理",
+      "notFor": [
+        "不代替立案或仅和解"
+      ],
+      "deliverables": [
+        "诉讼已排期开庭；单方代理"
+      ],
+      "path": "skills/准备竞争法案件庭审",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "竞争法与反垄断导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "提起竞争法案件上诉",
+      "kind": "atomic",
+      "displayName": "提起竞争法案件上诉",
+      "goal": "不服未生效裁判；上诉方",
+      "notFor": [
+        "不重做一审"
+      ],
+      "deliverables": [
+        "不服未生效裁判；上诉方"
+      ],
+      "path": "skills/提起竞争法案件上诉",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "竞争法与反垄断导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估行政认定后的后继民事诉讼",
+      "kind": "atomic",
+      "displayName": "评估行政认定后的后继民事诉讼",
+      "goal": "已有行政处罚或认定，拟跟进民事赔偿；受害人",
+      "notFor": [
+        "不把行政认定写成必然胜诉"
+      ],
+      "deliverables": [
+        "已有行政处罚或认定，拟跟进民事赔偿；受害人"
+      ],
+      "path": "skills/评估行政认定后的后继民事诉讼",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "竞争法与反垄断导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "执行竞争法生效文书",
+      "kind": "atomic",
+      "displayName": "执行竞争法生效文书",
+      "goal": "停止侵害或金钱判决未获履行；权利人",
+      "notFor": [
+        "不重审实体"
+      ],
+      "deliverables": [
+        "停止侵害或金钱判决未获履行；权利人"
+      ],
+      "path": "skills/执行竞争法生效文书",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "竞争法与反垄断导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "提出竞争法案件管辖异议",
+      "kind": "atomic",
+      "displayName": "提出竞争法案件管辖异议",
+      "goal": "已被起诉，需在法定期限提管辖异议；被告",
+      "notFor": [
+        "过期停止",
+        "与实体答辩分开"
+      ],
+      "deliverables": [
+        "已被起诉，需在法定期限提管辖异议；被告"
+      ],
+      "path": "skills/提出竞争法案件管辖异议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "竞争法与反垄断导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "保全协同或仿冒电子证据",
+      "kind": "atomic",
+      "displayName": "保全协同或仿冒电子证据",
+      "goal": "聊天、算法日志、网页可能灭失；单方",
+      "notFor": [
+        "不指导侵入系统或非法爬取"
+      ],
+      "deliverables": [
+        "聊天、算法日志、网页可能灭失；单方"
+      ],
+      "path": "skills/保全协同或仿冒电子证据",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "竞争法与反垄断导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备经济学分析委托提纲",
+      "kind": "atomic",
+      "displayName": "准备经济学分析委托提纲",
+      "goal": "需外部经济学家做相关市场或损害分析；单方",
+      "notFor": [
+        "不冒充已完成经济学鉴定"
+      ],
+      "deliverables": [
+        "需外部经济学家做相关市场或损害分析；单方"
+      ],
+      "path": "skills/准备经济学分析委托提纲",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "竞争法与反垄断导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "起草竞争争议和解协议",
+      "kind": "atomic",
+      "displayName": "起草竞争争议和解协议",
+      "goal": "条件已谈拢，需可签协议；单方",
+      "notFor": [
+        "与未争议的经销补充协议不同",
+        "审查起草搁置不覆盖本项已成争和解"
+      ],
+      "deliverables": [
+        "条件已谈拢，需可签协议；单方"
+      ],
+      "path": "skills/起草竞争争议和解协议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "竞争法与反垄断导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估竞争法期限与主管机关",
+      "kind": "atomic",
+      "displayName": "评估竞争法期限与主管机关",
+      "goal": "单独委托核验时效、执法时效、管辖法院和执法机构；单方",
+      "notFor": [
+        "禁止混算或输出唯一截止日"
+      ],
+      "deliverables": [
+        "单独委托核验时效、执法时效、管辖法院和执法机构；单方"
+      ],
+      "path": "skills/评估竞争法期限与主管机关",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "竞争法与反垄断导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备现场检查应急手册",
+      "kind": "atomic",
+      "displayName": "准备现场检查应急手册",
+      "goal": "尚未被查，需针对反垄断现场检查预置手册；企业竞争法对接人",
+      "notFor": [
+        "不是企业综合合规体系或内控手册"
+      ],
+      "deliverables": [
+        "尚未被查，需针对反垄断现场检查预置手册；企业竞争法对接人"
+      ],
+      "path": "skills/准备现场检查应急手册",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "竞争法与反垄断导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "针对特定商业做法设计竞争风险控制",
+      "kind": "atomic",
+      "displayName": "针对特定商业做法设计竞争风险控制",
+      "goal": "某一经销、定价或平台规则需要可执行控制点；单方",
+      "notFor": [
+        "不建反贿赂/数据/出口管制综合合规"
+      ],
+      "deliverables": [
+        "某一经销、定价或平台规则需要可执行控制点；单方"
+      ],
+      "path": "skills/针对特定商业做法设计竞争风险控制",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "竞争法与反垄断导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "审查协会章程与行业自律文件",
+      "kind": "atomic",
+      "displayName": "审查协会章程与行业自律文件",
+      "goal": "协会拟发布或已发布自律公约；协会或会员",
+      "notFor": [
+        "不出新的协会治理体系"
+      ],
+      "deliverables": [
+        "协会拟发布或已发布自律公约；协会或会员"
+      ],
+      "path": "skills/审查协会章程与行业自律文件",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "竞争法与反垄断导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备公平竞争审查意见",
+      "kind": "atomic",
+      "displayName": "准备公平竞争审查意见",
+      "goal": "起草单位需出具政策措施审查意见；起草单位",
+      "notFor": [
+        "不替代立法起草本身"
+      ],
+      "deliverables": [
+        "起草单位需出具政策措施审查意见；起草单位"
+      ],
+      "path": "skills/准备公平竞争审查意见",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "竞争法与反垄断导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估知识产权行使的竞争法面向",
+      "kind": "atomic",
+      "displayName": "评估知识产权行使的竞争法面向",
+      "goal": "SEP、拒绝许可、过期权利继续收费被指排除限制竞争；单方",
+      "notFor": [
+        "权属、侵权比对、许可合同权利本身转知识产权"
+      ],
+      "deliverables": [
+        "SEP、拒绝许可、过期权利继续收费被指排除限制竞争；单方"
+      ],
+      "path": "skills/评估知识产权行使的竞争法面向",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "竞争法与反垄断导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    }
+  ],
+  "guideName": "竞争法与反垄断导航"
+}

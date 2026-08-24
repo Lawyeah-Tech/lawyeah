@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估发票与虚开风险"
+  short_description: "判断发票业务真实性、进项转出和刑行分流，不定罪"
+  default_prompt: "使用 $评估发票与虚开风险，在开票方或受票方单一立场下评估中国大陆发票虚开与善意取得边界。"

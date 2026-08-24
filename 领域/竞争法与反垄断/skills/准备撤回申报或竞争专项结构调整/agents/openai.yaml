@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备撤回申报或竞争专项结构调整"
+  short_description: "评估撤回经营者集中申报及竞争专项结构调整"
+  default_prompt: "使用 $准备撤回申报或竞争专项结构调整，评估撤回经营者集中申报及竞争专项结构调整。"

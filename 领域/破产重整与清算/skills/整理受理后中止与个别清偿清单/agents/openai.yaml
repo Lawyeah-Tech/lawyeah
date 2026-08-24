@@ -1,0 +1,4 @@
+interface:
+  display_name: "整理受理后中止与个别清偿清单"
+  short_description: "列受理后中止、停息和个别清偿无效并标记已发生行为"
+  default_prompt: "使用 $整理受理后中止与个别清偿清单，整理中国大陆破产受理后的中止与个别清偿效果。"

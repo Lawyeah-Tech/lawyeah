@@ -1,0 +1,4 @@
+interface:
+  display_name: "分流逃税骗税虚开刑行交叉"
+  short_description: "列出逃税骗税虚开的行政与刑事边界和移送红旗，不定罪"
+  default_prompt: "使用 $分流逃税骗税虚开刑行交叉，在单一立场下分流中国大陆逃税、骗税、虚开的刑行交叉风险。"

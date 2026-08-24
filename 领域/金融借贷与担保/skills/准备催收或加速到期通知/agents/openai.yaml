@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备催收或加速到期通知"
+  short_description: "形成向主债务人催收或宣布加速的发送前稿和到达设计"
+  default_prompt: "使用 $准备催收或加速到期通知，起草向主债务人发送前的催收或加速到期通知。"

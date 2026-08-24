@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估小规模与一般纳税人路径"
+  short_description: "评估小规模与一般纳税人资格、进项后果和转换时点"
+  default_prompt: "使用 $评估小规模与一般纳税人路径，在管理方立场下评估中国大陆小规模与一般纳税人路径。"

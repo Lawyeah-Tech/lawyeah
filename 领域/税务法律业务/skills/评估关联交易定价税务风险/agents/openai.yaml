@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估关联交易定价税务风险"
+  short_description: "识别关联交易独立交易风险和同期资料接口，不定避税成立"
+  default_prompt: "使用 $评估关联交易定价税务风险，在单一立场下评估中国大陆关联交易定价的税务风险。"

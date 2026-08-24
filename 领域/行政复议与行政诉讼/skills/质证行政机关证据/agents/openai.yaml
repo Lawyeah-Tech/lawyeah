@@ -1,0 +1,4 @@
+interface:
+  display_name: "质证行政机关证据"
+  short_description: "对行政机关证据逐份出具三性和排除意见"
+  default_prompt: "使用 $质证行政机关证据，在单一立场下对中国大陆行政诉讼或听证中的行政机关证据逐份质证。"

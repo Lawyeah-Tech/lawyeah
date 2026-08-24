@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备同期资料"
+  short_description: "列出主体／本地／特殊事项同期资料清单与缺口，不保证免调整"
+  default_prompt: "使用 $准备同期资料，在管理方立场下准备中国大陆同期资料文档清单和缺口。"

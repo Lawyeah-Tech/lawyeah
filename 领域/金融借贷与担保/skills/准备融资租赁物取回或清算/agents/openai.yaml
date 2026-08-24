@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备融资租赁物取回或清算"
+  short_description: "准备融资租赁物的合法取回或清算路径"
+  default_prompt: "使用 $准备融资租赁物取回或清算，在出租人立场下准备中国大陆融资租赁物取回或清算。"

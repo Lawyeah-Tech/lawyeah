@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估股权转让税负"
+  short_description: "列出股权转让的税种、计税价格争点和扣缴接口"
+  default_prompt: "使用 $评估股权转让税负，在单一立场下评估中国大陆股权转让的税种、计税基础和扣缴。"

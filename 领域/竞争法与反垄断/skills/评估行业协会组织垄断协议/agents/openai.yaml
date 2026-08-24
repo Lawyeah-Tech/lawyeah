@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估行业协会组织垄断协议"
+  short_description: "评估行业协会组织或帮助垄断协议的责任与条款"
+  default_prompt: "使用 $评估行业协会组织垄断协议，评估行业协会组织或帮助垄断协议的责任与条款。"

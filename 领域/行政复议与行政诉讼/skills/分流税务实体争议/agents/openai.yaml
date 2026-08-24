@@ -1,0 +1,4 @@
+interface:
+  display_name: "分流税务实体争议"
+  short_description: "把纳税争议和税务处理整案转出并保留一般处罚程序接口"
+  default_prompt: "使用 $分流税务实体争议，在单一立场下把中国大陆税务实体争议转出到税务领域，不要在本领域作法条税负方案。"

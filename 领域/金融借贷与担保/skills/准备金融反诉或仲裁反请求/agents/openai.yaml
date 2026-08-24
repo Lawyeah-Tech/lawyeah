@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备反诉或仲裁反请求"
+  short_description: "准备金融案件反诉状或仲裁反请求"
+  default_prompt: "使用 $准备金融反诉或仲裁反请求，在反诉原告立场下准备中国大陆金融案件反诉或仲裁反请求。"

@@ -1,0 +1,1538 @@
+{
+  "schemaVersion": 2,
+  "id": "handle-administrative-disputes",
+  "displayName": "行政复议与行政诉讼",
+  "description": "处理中国大陆行政处罚、许可、强制及其他行政行为的评估、陈述申辩、复议、测算、证据、协调和一审两造的多 Skill 领域包。",
+  "version": "1.0.0",
+  "license": "Apache-2.0",
+  "jurisdiction": "CN-mainland",
+  "contentModel": "multi-skill-progressive-disclosure",
+  "reinstallStrategy": "replace",
+  "scope": {
+    "purpose": "处理行政处罚、许可、征收及其他行政行为的程序救济、复议和诉讼。",
+    "inScope": [
+      "行政处罚和行政强制",
+      "行政许可和监管措施",
+      "行政复议与行政诉讼",
+      "征收征用和政府信息公开争议"
+    ],
+    "outOfScope": [
+      "刑事强制措施和刑事责任",
+      "税务机关作出的专业税务处理争议",
+      "竞争、环境等监管领域的专项实体合规设计"
+    ],
+    "primaryDeliverables": [
+      "行政行为合法性评估",
+      "陈述申辩和听证材料",
+      "行政复议申请",
+      "行政诉讼文书与代理方案"
+    ]
+  },
+  "guideSkill": "行政复议与行政诉讼导航",
+  "mcp": {
+    "contractRange": "0.0"
+  },
+  "skills": [
+    {
+      "id": "行政复议与行政诉讼导航",
+      "kind": "guide",
+      "displayName": "行政复议与行政诉讼导航",
+      "goal": "说明领域包的能力、边界和当前原子 Skill 全貌",
+      "notFor": [
+        "直接完成具体法律业务成果"
+      ],
+      "deliverables": [
+        "领域能力定位结果"
+      ],
+      "path": "skills/行政复议与行政诉讼导航",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "测算罚款没收与行政赔偿",
+          "谈判行政争议协调方案",
+          "评估复议或诉讼路径",
+          "建立行政争议证据案卷",
+          "评估原告资格与被告",
+          "应对行政诉讼一审",
+          "评估行政行为争议",
+          "提起行政诉讼一审",
+          "申请行政复议",
+          "准备陈述申辩",
+          "评估受案范围与复议范围",
+          "评估复议起诉期限",
+          "评估行政诉讼管辖",
+          "评估行政文书送达",
+          "评估行政处罚合法性",
+          "评估行政许可决定",
+          "评估行政强制措施或执行",
+          "评估行政不作为",
+          "评估政府信息公开决定",
+          "评估征收征用程序救济",
+          "评估行政协议争议",
+          "评估规范性文件附带审查",
+          "准备行政处罚听证材料",
+          "应对行政调查询问",
+          "申请举行听证",
+          "应对许可吊销或撤销程序",
+          "评估行政赔偿路径",
+          "阅卷并拆解行政案卷",
+          "保全行政争议证据",
+          "质证行政机关证据",
+          "申请法院调取证据",
+          "规划举证期限与补充证据",
+          "准备行政案件公证保全",
+          "向赔偿义务机关申请赔偿",
+          "申请停止执行行政行为",
+          "申请政府信息公开",
+          "一并提出规范性文件审查",
+          "申请复议听证",
+          "准备行政诉讼保全申请",
+          "提出行政诉讼管辖异议",
+          "申请暂缓或分期缴纳罚款",
+          "提出送达或公告异议",
+          "起草行政调解或和解协议",
+          "评估行政诉讼调解范围",
+          "办理协调方案执行力补强",
+          "选择撤销确认违法确认无效或履行请求",
+          "准备行政附带民事诉讼",
+          "单独提起行政赔偿诉讼",
+          "准备行政诉讼庭审",
+          "提起行政诉讼上诉",
+          "申请追加或变更被告",
+          "评估撤回复议或起诉风险",
+          "应对行政复议被申请",
+          "作为第三人参加行政诉讼",
+          "应对行政诉讼二审",
+          "应对保全或停止执行裁定",
+          "执行行政诉讼生效裁判",
+          "应对行政裁判执行",
+          "申请非诉行政执行",
+          "提出非诉执行异议",
+          "申请履行复议决定",
+          "准备行政执行和解",
+          "分流税务实体争议",
+          "分流竞争或环境专项实体",
+          "分流劳动工伤社保行政事项"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估行政行为争议",
+      "kind": "atomic",
+      "displayName": "评估行政行为争议",
+      "goal": "在单方无冲突立场下形成可决策的行政行为争议总图",
+      "notFor": [
+        "发送版陈述申辩或复议申请",
+        "精算终稿",
+        "诉状或答辩",
+        "税务实体或刑事强制措施"
+      ],
+      "deliverables": [
+        "在单方无冲突立场下形成可决策的行政行为争议总图"
+      ],
+      "path": "skills/评估行政行为争议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "行政复议与行政诉讼导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估复议或诉讼路径",
+      "kind": "atomic",
+      "displayName": "评估复议或诉讼路径",
+      "goal": "判断复议前置、直接起诉或复议后再诉，以及受理互斥",
+      "notFor": [
+        "完整复议申请包",
+        "完整起诉包",
+        "纳税争议实体方案"
+      ],
+      "deliverables": [
+        "判断复议前置、直接起诉或复议后再诉，以及受理互斥"
+      ],
+      "path": "skills/评估复议或诉讼路径",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "行政复议与行政诉讼导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估原告资格与被告",
+      "kind": "atomic",
+      "displayName": "评估原告资格与被告",
+      "goal": "判断申请人或原告资格，以及被申请人或被告、共同被告",
+      "notFor": [
+        "起诉状终稿",
+        "复议申请终稿",
+        "刑事被告人身份"
+      ],
+      "deliverables": [
+        "判断申请人或原告资格，以及被申请人或被告、共同被告"
+      ],
+      "path": "skills/评估原告资格与被告",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "行政复议与行政诉讼导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备陈述申辩",
+      "kind": "atomic",
+      "displayName": "准备陈述申辩",
+      "goal": "形成处罚或处理决定作出前的发送前陈述申辩",
+      "notFor": [
+        "听证材料终稿",
+        "复议申请",
+        "把陈述写成已减轻"
+      ],
+      "deliverables": [
+        "形成处罚或处理决定作出前的发送前陈述申辩"
+      ],
+      "path": "skills/准备陈述申辩",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "行政复议与行政诉讼导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "申请行政复议",
+      "kind": "atomic",
+      "displayName": "申请行政复议",
+      "goal": "形成可提交但不代提交的复议申请包",
+      "notFor": [
+        "法院已受理同一行为",
+        "纳税争议实体",
+        "代提交"
+      ],
+      "deliverables": [
+        "形成可提交但不代提交的复议申请包"
+      ],
+      "path": "skills/申请行政复议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "行政复议与行政诉讼导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "测算罚款没收与行政赔偿",
+      "kind": "atomic",
+      "displayName": "测算罚款没收与行政赔偿",
+      "goal": "形成可复核的分项测算，不认定处罚或赔偿已成立",
+      "notFor": [
+        "定性总图",
+        "税务税额核定",
+        "唯一必得或必处总额"
+      ],
+      "deliverables": [
+        "形成可复核的分项测算，不认定处罚或赔偿已成立"
+      ],
+      "path": "skills/测算罚款没收与行政赔偿",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "行政复议与行政诉讼导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "建立行政争议证据案卷",
+      "kind": "atomic",
+      "displayName": "建立行政争议证据案卷",
+      "goal": "形成要件、被告举证、原告补证与合法补证矩阵",
+      "notFor": [
+        "策略总图",
+        "诉状",
+        "违法取证方案"
+      ],
+      "deliverables": [
+        "形成要件、被告举证、原告补证与合法补证矩阵"
+      ],
+      "path": "skills/建立行政争议证据案卷",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "行政复议与行政诉讼导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "谈判行政争议协调方案",
+      "kind": "atomic",
+      "displayName": "谈判行政争议协调方案",
+      "goal": "形成底线、让步、法定可调范围和执行力提示",
+      "notFor": [
+        "已谈拢的和解协议正文",
+        "就处罚合法性违法调解",
+        "答辩状"
+      ],
+      "deliverables": [
+        "形成底线、让步、法定可调范围和执行力提示"
+      ],
+      "path": "skills/谈判行政争议协调方案",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "行政复议与行政诉讼导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "提起行政诉讼一审",
+      "kind": "atomic",
+      "displayName": "提起行政诉讼一审",
+      "goal": "形成可提交的一审起诉包",
+      "notFor": [
+        "复议前置未完成",
+        "代提交",
+        "民事网上立案包"
+      ],
+      "deliverables": [
+        "形成可提交的一审起诉包"
+      ],
+      "path": "skills/提起行政诉讼一审",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "行政复议与行政诉讼导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对行政诉讼一审",
+      "kind": "atomic",
+      "displayName": "应对行政诉讼一审",
+      "goal": "形成首次应诉答辩包和十五日举证卡",
+      "notFor": [
+        "民事答辩包",
+        "主动起诉",
+        "隐匿卷宗"
+      ],
+      "deliverables": [
+        "形成首次应诉答辩包和十五日举证卡"
+      ],
+      "path": "skills/应对行政诉讼一审",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "行政复议与行政诉讼导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估受案范围与复议范围",
+      "kind": "atomic",
+      "displayName": "评估受案范围与复议范围",
+      "goal": "单独委托判断该行为能否复议或起诉；单方",
+      "notFor": [
+        "不替代总体评估",
+        "不选定复议机关或法院"
+      ],
+      "deliverables": [
+        "单独委托判断该行为能否复议或起诉；单方"
+      ],
+      "path": "skills/评估受案范围与复议范围",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "行政复议与行政诉讼导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估复议起诉期限",
+      "kind": "atomic",
+      "displayName": "评估复议起诉期限",
+      "goal": "单独委托核验复议申请期或起诉期是否届满；单方",
+      "notFor": [
+        "禁止混算或输出唯一截止日",
+        "送达不明则字段停止"
+      ],
+      "deliverables": [
+        "单独委托核验复议申请期或起诉期是否届满；单方"
+      ],
+      "path": "skills/评估复议起诉期限",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "行政复议与行政诉讼导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估行政诉讼管辖",
+      "kind": "atomic",
+      "displayName": "评估行政诉讼管辖",
+      "goal": "要选受诉法院，或对方提出管辖异议；单方",
+      "notFor": [
+        "不代写完整立案包",
+        "海事、刑事附带排除"
+      ],
+      "deliverables": [
+        "要选受诉法院，或对方提出管辖异议；单方"
+      ],
+      "path": "skills/评估行政诉讼管辖",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "行政复议与行政诉讼导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估行政文书送达",
+      "kind": "atomic",
+      "displayName": "评估行政文书送达",
+      "goal": "争是否送达、公告是否合法、期限是否起算；单方",
+      "notFor": [
+        "微信已读不等于送达",
+        "不写唯一截止日"
+      ],
+      "deliverables": [
+        "争是否送达、公告是否合法、期限是否起算；单方"
+      ],
+      "path": "skills/评估行政文书送达",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "行政复议与行政诉讼导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估行政处罚合法性",
+      "kind": "atomic",
+      "displayName": "评估行政处罚合法性",
+      "goal": "拟处罚或已决定，需判断主体、事实、依据、程序、过罚相当；相对人",
+      "notFor": [
+        "不输出陈述申辩终稿",
+        "税务处罚实体转税务",
+        "竞争环境专项实体转出"
+      ],
+      "deliverables": [
+        "拟处罚或已决定，需判断主体、事实、依据、程序、过罚相当；相对人"
+      ],
+      "path": "skills/评估行政处罚合法性",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "行政复议与行政诉讼导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估行政许可决定",
+      "kind": "atomic",
+      "displayName": "评估行政许可决定",
+      "goal": "许可不予、变更、撤回、撤销、吊销发生争议；相对人",
+      "notFor": [
+        "不代办许可申请材料",
+        "商标专利复审转知识产权"
+      ],
+      "deliverables": [
+        "许可不予、变更、撤回、撤销、吊销发生争议；相对人"
+      ],
+      "path": "skills/评估行政许可决定",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "行政复议与行政诉讼导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估行政强制措施或执行",
+      "kind": "atomic",
+      "displayName": "评估行政强制措施或执行",
+      "goal": "查封扣押冻结或强制执行已实施或即将实施；相对人",
+      "notFor": [
+        "刑事搜查扣押转刑事",
+        "非诉执行申请另项"
+      ],
+      "deliverables": [
+        "查封扣押冻结或强制执行已实施或即将实施；相对人"
+      ],
+      "path": "skills/评估行政强制措施或执行",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "行政复议与行政诉讼导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估行政不作为",
+      "kind": "atomic",
+      "displayName": "评估行政不作为",
+      "goal": "已申请履职或保护，机关逾期未答复；申请人",
+      "notFor": [
+        "不把民事不作为包装成行政不作为"
+      ],
+      "deliverables": [
+        "已申请履职或保护，机关逾期未答复；申请人"
+      ],
+      "path": "skills/评估行政不作为",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "行政复议与行政诉讼导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估政府信息公开决定",
+      "kind": "atomic",
+      "displayName": "评估政府信息公开决定",
+      "goal": "不予公开、逾期、内容不符；申请人",
+      "notFor": [
+        "不代替依申请公开本身",
+        "国家秘密结论不编造"
+      ],
+      "deliverables": [
+        "不予公开、逾期、内容不符；申请人"
+      ],
+      "path": "skills/评估政府信息公开决定",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "行政复议与行政诉讼导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估征收征用程序救济",
+      "kind": "atomic",
+      "displayName": "评估征收征用程序救济",
+      "goal": "征收决定、补偿决定或未公告未听证；被征收人",
+      "notFor": [
+        "补偿标准实体和安置方案设计转房地产或 C 端征地材料整理",
+        "不测算唯一补偿额"
+      ],
+      "deliverables": [
+        "征收决定、补偿决定或未公告未听证；被征收人"
+      ],
+      "path": "skills/评估征收征用程序救济",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "行政复议与行政诉讼导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估行政协议争议",
+      "kind": "atomic",
+      "displayName": "评估行政协议争议",
+      "goal": "特许、土地房屋征收补偿协议、矿业权等协议履行或单方变更解除；单方",
+      "notFor": [
+        "一般民事合同转合同争议",
+        "不按协议类型各建 Skill"
+      ],
+      "deliverables": [
+        "特许、土地房屋征收补偿协议、矿业权等协议履行或单方变更解除；单方"
+      ],
+      "path": "skills/评估行政协议争议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "行政复议与行政诉讼导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估规范性文件附带审查",
+      "kind": "atomic",
+      "displayName": "评估规范性文件附带审查",
+      "goal": "处罚或决定所依红头文件可能越权；单方",
+      "notFor": [
+        "不审查规章以上立法",
+        "不单独提起抽象诉讼"
+      ],
+      "deliverables": [
+        "处罚或决定所依红头文件可能越权；单方"
+      ],
+      "path": "skills/评估规范性文件附带审查",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "行政复议与行政诉讼导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备行政处罚听证材料",
+      "kind": "atomic",
+      "displayName": "准备行政处罚听证材料",
+      "goal": "已决定或依法应听证，需听证陈述和质证提纲；相对人",
+      "notFor": [
+        "不替代陈述申辩",
+        "较大数额等门槛运行时核验"
+      ],
+      "deliverables": [
+        "已决定或依法应听证，需听证陈述和质证提纲；相对人"
+      ],
+      "path": "skills/准备行政处罚听证材料",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "行政复议与行政诉讼导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对行政调查询问",
+      "kind": "atomic",
+      "displayName": "应对行政调查询问",
+      "goal": "被检查、询问、要求提供材料；相对人",
+      "notFor": [
+        "禁止教唆毁灭证据或妨碍执法",
+        "刑事立案转刑事"
+      ],
+      "deliverables": [
+        "被检查、询问、要求提供材料；相对人"
+      ],
+      "path": "skills/应对行政调查询问",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "行政复议与行政诉讼导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "申请举行听证",
+      "kind": "atomic",
+      "displayName": "申请举行听证",
+      "goal": "告知书载明听证权，需在法定期限提出申请；相对人",
+      "notFor": [
+        "申请本身不是听证材料包"
+      ],
+      "deliverables": [
+        "告知书载明听证权，需在法定期限提出申请；相对人"
+      ],
+      "path": "skills/申请举行听证",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "行政复议与行政诉讼导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对许可吊销或撤销程序",
+      "kind": "atomic",
+      "displayName": "应对许可吊销或撤销程序",
+      "goal": "机关启动撤销、注销、吊销许可；持证人",
+      "notFor": [
+        "不重做许可申请",
+        "不保证保留许可"
+      ],
+      "deliverables": [
+        "机关启动撤销、注销、吊销许可；持证人"
+      ],
+      "path": "skills/应对许可吊销或撤销程序",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "行政复议与行政诉讼导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估行政赔偿路径",
+      "kind": "atomic",
+      "displayName": "评估行政赔偿路径",
+      "goal": "要在一并请求、单独提起或向义务机关申请之间选择；请求人",
+      "notFor": [
+        "不写赔偿起诉状",
+        "刑事赔偿转刑事"
+      ],
+      "deliverables": [
+        "要在一并请求、单独提起或向义务机关申请之间选择；请求人"
+      ],
+      "path": "skills/评估行政赔偿路径",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "行政复议与行政诉讼导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "阅卷并拆解行政案卷",
+      "kind": "atomic",
+      "displayName": "阅卷并拆解行政案卷",
+      "goal": "已取得或可申请查阅处罚／复议卷；单方",
+      "notFor": [
+        "不代替完整证据策略",
+        "被申请人不得事后自行取证"
+      ],
+      "deliverables": [
+        "已取得或可申请查阅处罚／复议卷；单方"
+      ],
+      "path": "skills/阅卷并拆解行政案卷",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "行政复议与行政诉讼导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "保全行政争议证据",
+      "kind": "atomic",
+      "displayName": "保全行政争议证据",
+      "goal": "现场、电子数据、执法记录可能灭失；单方",
+      "notFor": [
+        "不指导偷拍违法或侵入执法场所"
+      ],
+      "deliverables": [
+        "现场、电子数据、执法记录可能灭失；单方"
+      ],
+      "path": "skills/保全行政争议证据",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "行政复议与行政诉讼导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "质证行政机关证据",
+      "kind": "atomic",
+      "displayName": "质证行政机关证据",
+      "goal": "已交换证据或开庭在即，需逐份质证；单方",
+      "notFor": [
+        "不重做鉴定意见"
+      ],
+      "deliverables": [
+        "已交换证据或开庭在即，需逐份质证；单方"
+      ],
+      "path": "skills/质证行政机关证据",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "行政复议与行政诉讼导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "申请法院调取证据",
+      "kind": "atomic",
+      "displayName": "申请法院调取证据",
+      "goal": "关键证据由行政机关或第三人掌握；原告或第三人",
+      "notFor": [
+        "禁止违法调取个人信息"
+      ],
+      "deliverables": [
+        "关键证据由行政机关或第三人掌握；原告或第三人"
+      ],
+      "path": "skills/申请法院调取证据",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "行政复议与行政诉讼导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "规划举证期限与补充证据",
+      "kind": "atomic",
+      "displayName": "规划举证期限与补充证据",
+      "goal": "已立案，需在举证期内完成；单方",
+      "notFor": [
+        "不替代整本案卷或庭审质证"
+      ],
+      "deliverables": [
+        "已立案，需在举证期内完成；单方"
+      ],
+      "path": "skills/规划举证期限与补充证据",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "行政复议与行政诉讼导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备行政案件公证保全",
+      "kind": "atomic",
+      "displayName": "准备行政案件公证保全",
+      "goal": "需公证处固定现状或发送；单方",
+      "notFor": [
+        "不代替鉴定或法院保全"
+      ],
+      "deliverables": [
+        "需公证处固定现状或发送；单方"
+      ],
+      "path": "skills/准备行政案件公证保全",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "行政复议与行政诉讼导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "向赔偿义务机关申请赔偿",
+      "kind": "atomic",
+      "displayName": "向赔偿义务机关申请赔偿",
+      "goal": "已确认违法或拟先行请求赔偿；请求人",
+      "notFor": [
+        "不写赔偿诉讼状",
+        "刑事赔偿转刑事"
+      ],
+      "deliverables": [
+        "已确认违法或拟先行请求赔偿；请求人"
+      ],
+      "path": "skills/向赔偿义务机关申请赔偿",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "行政复议与行政诉讼导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "申请停止执行行政行为",
+      "kind": "atomic",
+      "displayName": "申请停止执行行政行为",
+      "goal": "复议或诉讼期间执行将造成难以弥补损失；申请人／原告",
+      "notFor": [
+        "不保证裁定",
+        "诉讼期间原则上不停止执行"
+      ],
+      "deliverables": [
+        "复议或诉讼期间执行将造成难以弥补损失；申请人／原告"
+      ],
+      "path": "skills/申请停止执行行政行为",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "行政复议与行政诉讼导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "申请政府信息公开",
+      "kind": "atomic",
+      "displayName": "申请政府信息公开",
+      "goal": "需要依申请公开作为后续救济前提；申请人",
+      "notFor": [
+        "不保证公开",
+        "后续复议诉讼另项"
+      ],
+      "deliverables": [
+        "需要依申请公开作为后续救济前提；申请人"
+      ],
+      "path": "skills/申请政府信息公开",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "行政复议与行政诉讼导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "一并提出规范性文件审查",
+      "kind": "atomic",
+      "displayName": "一并提出规范性文件审查",
+      "goal": "复议或诉讼中要对所依规定提出审查；申请人／原告",
+      "notFor": [
+        "不单独起诉抽象文件"
+      ],
+      "deliverables": [
+        "复议或诉讼中要对所依规定提出审查；申请人／原告"
+      ],
+      "path": "skills/一并提出规范性文件审查",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "行政复议与行政诉讼导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "申请复议听证",
+      "kind": "atomic",
+      "displayName": "申请复议听证",
+      "goal": "重大复杂或依法应听证的复议案件；申请人",
+      "notFor": [
+        "不替代复议申请本身"
+      ],
+      "deliverables": [
+        "重大复杂或依法应听证的复议案件；申请人"
+      ],
+      "path": "skills/申请复议听证",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "行政复议与行政诉讼导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备行政诉讼保全申请",
+      "kind": "atomic",
+      "displayName": "准备行政诉讼保全申请",
+      "goal": "已决定申请诉前或诉中保全；申请方",
+      "notFor": [
+        "不保证裁定",
+        "与停止执行不同"
+      ],
+      "deliverables": [
+        "已决定申请诉前或诉中保全；申请方"
+      ],
+      "path": "skills/准备行政诉讼保全申请",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "行政复议与行政诉讼导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "提出行政诉讼管辖异议",
+      "kind": "atomic",
+      "displayName": "提出行政诉讼管辖异议",
+      "goal": "已被起诉，需在法定期限提管辖异议；被告",
+      "notFor": [
+        "与实体答辩分开",
+        "过期停止"
+      ],
+      "deliverables": [
+        "已被起诉，需在法定期限提管辖异议；被告"
+      ],
+      "path": "skills/提出行政诉讼管辖异议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "行政复议与行政诉讼导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "申请暂缓或分期缴纳罚款",
+      "kind": "atomic",
+      "displayName": "申请暂缓或分期缴纳罚款",
+      "goal": "确有经济困难，需申请暂缓或分期；被处罚人",
+      "notFor": [
+        "不把申请写成已获准",
+        "不停止复议起诉期限"
+      ],
+      "deliverables": [
+        "确有经济困难，需申请暂缓或分期；被处罚人"
+      ],
+      "path": "skills/申请暂缓或分期缴纳罚款",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "行政复议与行政诉讼导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "提出送达或公告异议",
+      "kind": "atomic",
+      "displayName": "提出送达或公告异议",
+      "goal": "主张未合法送达或公告不符合条件；相对人",
+      "notFor": [
+        "不编造未收到",
+        "已读不等于送达"
+      ],
+      "deliverables": [
+        "主张未合法送达或公告不符合条件；相对人"
+      ],
+      "path": "skills/提出送达或公告异议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "行政复议与行政诉讼导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "起草行政调解或和解协议",
+      "kind": "atomic",
+      "displayName": "起草行政调解或和解协议",
+      "goal": "条件已谈拢，需可签文本；单方",
+      "notFor": [
+        "不得就处罚合法性本身违法调解"
+      ],
+      "deliverables": [
+        "条件已谈拢，需可签文本；单方"
+      ],
+      "path": "skills/起草行政调解或和解协议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "行政复议与行政诉讼导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估行政诉讼调解范围",
+      "kind": "atomic",
+      "displayName": "评估行政诉讼调解范围",
+      "goal": "法院建议调解，需判断能否调、调什么；单方",
+      "notFor": [
+        "不代替庭审策略"
+      ],
+      "deliverables": [
+        "法院建议调解，需判断能否调、调什么；单方"
+      ],
+      "path": "skills/评估行政诉讼调解范围",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "行政复议与行政诉讼导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "办理协调方案执行力补强",
+      "kind": "atomic",
+      "displayName": "办理协调方案执行力补强",
+      "goal": "需调解书、复议调解或司法确认；单方",
+      "notFor": [
+        "单独谅解无执行力必须明示"
+      ],
+      "deliverables": [
+        "需调解书、复议调解或司法确认；单方"
+      ],
+      "path": "skills/办理协调方案执行力补强",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "行政复议与行政诉讼导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "选择撤销确认违法确认无效或履行请求",
+      "kind": "atomic",
+      "displayName": "选择撤销确认违法确认无效或履行请求",
+      "goal": "已决定走诉讼或复议，需选定请求类型；主张方",
+      "notFor": [
+        "不写完整起诉状",
+        "确认无效与撤销不得混写为同一效果"
+      ],
+      "deliverables": [
+        "已决定走诉讼或复议，需选定请求类型；主张方"
+      ],
+      "path": "skills/选择撤销确认违法确认无效或履行请求",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "行政复议与行政诉讼导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备行政附带民事诉讼",
+      "kind": "atomic",
+      "displayName": "准备行政附带民事诉讼",
+      "goal": "行政行为相关民事争议拟一并解决；原告",
+      "notFor": [
+        "与单独民事起诉不同"
+      ],
+      "deliverables": [
+        "行政行为相关民事争议拟一并解决；原告"
+      ],
+      "path": "skills/准备行政附带民事诉讼",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "行政复议与行政诉讼导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "单独提起行政赔偿诉讼",
+      "kind": "atomic",
+      "displayName": "单独提起行政赔偿诉讼",
+      "goal": "行政行为已被确认违法且义务机关已处理或逾期；请求人",
+      "notFor": [
+        "未确认违法应视为一并提起",
+        "刑事赔偿转刑事"
+      ],
+      "deliverables": [
+        "行政行为已被确认违法且义务机关已处理或逾期；请求人"
+      ],
+      "path": "skills/单独提起行政赔偿诉讼",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "行政复议与行政诉讼导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备行政诉讼庭审",
+      "kind": "atomic",
+      "displayName": "准备行政诉讼庭审",
+      "goal": "已开庭或即将开庭；单方代理",
+      "notFor": [
+        "覆盖复议共同被告庭审",
+        "不代替立案"
+      ],
+      "deliverables": [
+        "已开庭或即将开庭；单方代理"
+      ],
+      "path": "skills/准备行政诉讼庭审",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "行政复议与行政诉讼导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "提起行政诉讼上诉",
+      "kind": "atomic",
+      "displayName": "提起行政诉讼上诉",
+      "goal": "不服未生效裁判；上诉方",
+      "notFor": [
+        "不重做一审"
+      ],
+      "deliverables": [
+        "不服未生效裁判；上诉方"
+      ],
+      "path": "skills/提起行政诉讼上诉",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "行政复议与行政诉讼导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "申请追加或变更被告",
+      "kind": "atomic",
+      "displayName": "申请追加或变更被告",
+      "goal": "漏列复议机关或职权变更；原告",
+      "notFor": [
+        "不同意追加时法院可依职权列共同被告"
+      ],
+      "deliverables": [
+        "漏列复议机关或职权变更；原告"
+      ],
+      "path": "skills/申请追加或变更被告",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "行政复议与行政诉讼导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估撤回复议或起诉风险",
+      "kind": "atomic",
+      "displayName": "评估撤回复议或起诉风险",
+      "goal": "拟撤回，需判断是否还能再申请或再诉；申请人／原告",
+      "notFor": [
+        "不代用户提交撤回"
+      ],
+      "deliverables": [
+        "拟撤回，需判断是否还能再申请或再诉；申请人／原告"
+      ],
+      "path": "skills/评估撤回复议或起诉风险",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "行政复议与行政诉讼导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对行政复议被申请",
+      "kind": "atomic",
+      "displayName": "应对行政复议被申请",
+      "goal": "机关收到复议申请需答复；被申请人",
+      "notFor": [
+        "与原告侧复议申请权限不同"
+      ],
+      "deliverables": [
+        "机关收到复议申请需答复；被申请人"
+      ],
+      "path": "skills/应对行政复议被申请",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "行政复议与行政诉讼导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "作为第三人参加行政诉讼",
+      "kind": "atomic",
+      "displayName": "作为第三人参加行政诉讼",
+      "goal": "权利受裁判影响需参加；第三人",
+      "notFor": [
+        "与被告答辩不同"
+      ],
+      "deliverables": [
+        "权利受裁判影响需参加；第三人"
+      ],
+      "path": "skills/作为第三人参加行政诉讼",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "行政复议与行政诉讼导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对行政诉讼二审",
+      "kind": "atomic",
+      "displayName": "应对行政诉讼二审",
+      "goal": "收到上诉状；被上诉方",
+      "notFor": [
+        "不代替主动上诉"
+      ],
+      "deliverables": [
+        "收到上诉状；被上诉方"
+      ],
+      "path": "skills/应对行政诉讼二审",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "行政复议与行政诉讼导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对保全或停止执行裁定",
+      "kind": "atomic",
+      "displayName": "应对保全或停止执行裁定",
+      "goal": "财产或行为已被保全或停止；被申请人",
+      "notFor": [
+        "禁止教唆违反裁定"
+      ],
+      "deliverables": [
+        "财产或行为已被保全或停止；被申请人"
+      ],
+      "path": "skills/应对保全或停止执行裁定",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "行政复议与行政诉讼导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "执行行政诉讼生效裁判",
+      "kind": "atomic",
+      "displayName": "执行行政诉讼生效裁判",
+      "goal": "持判决、调解书未获履行；权利人",
+      "notFor": [
+        "不重审实体"
+      ],
+      "deliverables": [
+        "持判决、调解书未获履行；权利人"
+      ],
+      "path": "skills/执行行政诉讼生效裁判",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "行政复议与行政诉讼导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对行政裁判执行",
+      "kind": "atomic",
+      "displayName": "应对行政裁判执行",
+      "goal": "被执行机关或相对人收到执行；被执行方",
+      "notFor": [
+        "禁止隐匿转移或拒不执行"
+      ],
+      "deliverables": [
+        "被执行机关或相对人收到执行；被执行方"
+      ],
+      "path": "skills/应对行政裁判执行",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "行政复议与行政诉讼导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "申请非诉行政执行",
+      "kind": "atomic",
+      "displayName": "申请非诉行政执行",
+      "goal": "行政处罚或决定已生效，相对人不起诉不履行；行政机关",
+      "notFor": [
+        "起诉期限未满不得包装成可执行"
+      ],
+      "deliverables": [
+        "行政处罚或决定已生效，相对人不起诉不履行；行政机关"
+      ],
+      "path": "skills/申请非诉行政执行",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "行政复议与行政诉讼导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "提出非诉执行异议",
+      "kind": "atomic",
+      "displayName": "提出非诉执行异议",
+      "goal": "法院审查非诉执行或已裁定准予；相对人",
+      "notFor": [
+        "与诉讼应诉不同"
+      ],
+      "deliverables": [
+        "法院审查非诉执行或已裁定准予；相对人"
+      ],
+      "path": "skills/提出非诉执行异议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "行政复议与行政诉讼导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "申请履行复议决定",
+      "kind": "atomic",
+      "displayName": "申请履行复议决定",
+      "goal": "被申请人拒不履行复议决定；申请人",
+      "notFor": [
+        "不重开实体复议"
+      ],
+      "deliverables": [
+        "被申请人拒不履行复议决定；申请人"
+      ],
+      "path": "skills/申请履行复议决定",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "行政复议与行政诉讼导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备行政执行和解",
+      "kind": "atomic",
+      "displayName": "准备行政执行和解",
+      "goal": "执行中拟分期或变更履行；单方",
+      "notFor": [
+        "不放弃已生效判项除非明示"
+      ],
+      "deliverables": [
+        "执行中拟分期或变更履行；单方"
+      ],
+      "path": "skills/准备行政执行和解",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "行政复议与行政诉讼导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "分流税务实体争议",
+      "kind": "atomic",
+      "displayName": "分流税务实体争议",
+      "goal": "处理决定、税额核定、纳税担保、税务处罚混在一起；单方",
+      "notFor": [
+        "不作法条税负或稽查实体方案",
+        "整案转税务"
+      ],
+      "deliverables": [
+        "处理决定、税额核定、纳税担保、税务处罚混在一起；单方"
+      ],
+      "path": "skills/分流税务实体争议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "行政复议与行政诉讼导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "分流竞争或环境专项实体",
+      "kind": "atomic",
+      "displayName": "分流竞争或环境专项实体",
+      "goal": "反垄断调查、经营者集中、环评排污许可实体主导；单方",
+      "notFor": [
+        "不设计竞争申报或环境合规体系"
+      ],
+      "deliverables": [
+        "反垄断调查、经营者集中、环评排污许可实体主导；单方"
+      ],
+      "path": "skills/分流竞争或环境专项实体",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "行政复议与行政诉讼导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "分流劳动工伤社保行政事项",
+      "kind": "atomic",
+      "displayName": "分流劳动工伤社保行政事项",
+      "goal": "工伤认定、社保经办、劳动监察决定要救济；单方",
+      "notFor": [
+        "不重做工伤认定实体",
+        "不写劳动仲裁申请"
+      ],
+      "deliverables": [
+        "工伤认定、社保经办、劳动监察决定要救济；单方"
+      ],
+      "path": "skills/分流劳动工伤社保行政事项",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "行政复议与行政诉讼导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    }
+  ],
+  "guideName": "行政复议与行政诉讼导航"
+}

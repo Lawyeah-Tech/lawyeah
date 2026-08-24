@@ -1,0 +1,4 @@
+interface:
+  display_name: "保全协同或仿冒电子证据"
+  short_description: "合法保全协同或仿冒电子证据并列出禁止动作"
+  default_prompt: "使用 $保全协同或仿冒电子证据，合法保全协同或仿冒电子证据并列出禁止动作。"

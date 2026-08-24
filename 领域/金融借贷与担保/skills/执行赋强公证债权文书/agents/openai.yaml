@@ -1,0 +1,4 @@
+interface:
+  display_name: "执行赋强公证债权文书"
+  short_description: "持赋强公证书申请执行证书并准备执行立案"
+  default_prompt: "使用 $执行赋强公证债权文书，在权利人立场下执行中国大陆赋强公证债权文书。"

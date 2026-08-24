@@ -1,0 +1,4 @@
+interface:
+  display_name: "应对行政诉讼二审"
+  short_description: "准备行政诉讼二审答辩和对新证据的意见"
+  default_prompt: "使用 $应对行政诉讼二审，在被上诉方立场下应对中国大陆行政诉讼二审，并检查自身是否仍应上诉。"

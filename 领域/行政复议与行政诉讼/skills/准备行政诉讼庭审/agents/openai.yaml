@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备行政诉讼庭审"
+  short_description: "准备行政诉讼庭审争点、举证质证和代理提纲"
+  default_prompt: "使用 $准备行政诉讼庭审，在单方代理立场下准备中国大陆行政诉讼庭审提纲，覆盖复议共同被告。"

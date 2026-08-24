@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估不公平价格与差别待遇"
+  short_description: "评估不公平价格或差别待遇的竞争法路径和比较基准"
+  default_prompt: "使用 $评估不公平价格与差别待遇，评估不公平价格或差别待遇的竞争法路径和比较基准。"

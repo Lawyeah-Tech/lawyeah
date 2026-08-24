@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估银行理财适当性"
+  short_description: "评估银行理财适当性、告知与亏损因果"
+  default_prompt: "使用 $评估银行理财适当性，在单一立场下评估中国大陆银行理财适当性争议。"

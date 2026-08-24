@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备平台内竞争投诉下架"
+  short_description: "准备电商或应用商店的竞争投诉下架材料"
+  default_prompt: "使用 $准备平台内竞争投诉下架，准备电商或应用商店的竞争投诉下架材料。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备竞争处罚复议诉讼实体材料"
+  short_description: "准备竞争处罚复议或诉讼的实体争点和证据包"
+  default_prompt: "使用 $准备竞争处罚复议诉讼实体材料，准备竞争处罚复议或诉讼的实体争点和证据包。"

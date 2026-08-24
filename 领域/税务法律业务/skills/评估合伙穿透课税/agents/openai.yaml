@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估合伙穿透课税"
+  short_description: "识别合伙或契约安排的纳税主体、所得性质和分配时点"
+  default_prompt: "使用 $评估合伙穿透课税，在单一立场下评估中国大陆合伙或契约型安排的穿透课税。"

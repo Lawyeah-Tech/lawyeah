@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估让与担保"
+  short_description: "识别让与担保并评估清算义务与优先受偿"
+  default_prompt: "使用 $评估让与担保，在单一立场下评估中国大陆让与担保的识别与清算。"

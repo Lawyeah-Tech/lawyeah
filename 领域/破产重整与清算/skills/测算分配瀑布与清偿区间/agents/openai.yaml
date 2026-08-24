@@ -1,0 +1,4 @@
+interface:
+  display_name: "测算分配瀑布与清偿区间"
+  short_description: "分层测算分配瀑布并给出区间，禁止唯一清偿率"
+  default_prompt: "使用 $测算分配瀑布与清偿区间，测算中国大陆破产分配瀑布与清偿区间。"

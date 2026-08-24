@@ -1,0 +1,4 @@
+interface:
+  display_name: "编制职工债权清单"
+  short_description: "调查公示职工债权清单并说明不必申报"
+  default_prompt: "使用 $编制职工债权清单，编制中国大陆破产职工债权清单。"

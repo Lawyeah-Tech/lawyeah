@@ -1,0 +1,4 @@
+interface:
+  display_name: "申请举行听证"
+  short_description: "在法定期限内起草行政处罚听证申请并提示放弃风险"
+  default_prompt: "使用 $申请举行听证，在相对人立场下起草中国大陆行政处罚听证申请，并说明逾期放弃风险。"

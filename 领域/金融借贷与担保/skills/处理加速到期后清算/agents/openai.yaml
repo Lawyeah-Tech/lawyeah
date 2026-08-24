@@ -1,0 +1,4 @@
+interface:
+  display_name: "处理加速到期后清算"
+  short_description: "在加速已作为前提时整理本息费用清算口径"
+  default_prompt: "使用 $处理加速到期后清算，在单一立场下处理中国大陆贷款加速到期后的清算口径。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "测算土地增值税清算"
+  short_description: "列清算项目、扣除和预征差区间，不定唯一清算额"
+  default_prompt: "使用 $测算土地增值税清算，在开发方立场下测算中国大陆土地增值税清算项目和预征差。"

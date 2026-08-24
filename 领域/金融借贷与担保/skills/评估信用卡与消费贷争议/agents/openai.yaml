@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估信用卡与消费贷争议"
+  short_description: "评估信用卡或消费贷账单、息费与盗刷分流"
+  default_prompt: "使用 $评估信用卡与消费贷争议，在单一立场下评估中国大陆信用卡与消费贷争议。"

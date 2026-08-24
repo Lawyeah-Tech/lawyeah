@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估税收优惠适用"
+  short_description: "对照优惠要件、资料和追回风险，不保证享受"
+  default_prompt: "使用 $评估税收优惠适用，在单一立场下评估中国大陆税收优惠适用要件和被追回风险。"

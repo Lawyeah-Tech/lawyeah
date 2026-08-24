@@ -1,0 +1,4 @@
+interface:
+  display_name: "起草行政调解或和解协议"
+  short_description: "起草行政调解或和解协议并划清弃权和执行力"
+  default_prompt: "使用 $起草行政调解或和解协议，在条件已谈拢时起草中国大陆行政调解或和解协议，不得就处罚合法性本身调解。"

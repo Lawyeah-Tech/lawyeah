@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备破产财产变价或整体出让"
+  short_description: "比较网拍与整体出让并形成变价方案要点"
+  default_prompt: "使用 $准备破产财产变价或整体出让，准备中国大陆破产财产变价或整体出让方案要点。"

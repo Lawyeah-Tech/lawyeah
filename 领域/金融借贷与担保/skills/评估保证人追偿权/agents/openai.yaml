@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估保证人追偿权"
+  short_description: "评估保证人代偿后对债务人和共同担保人的追偿"
+  default_prompt: "使用 $评估保证人追偿权，在保证人立场下评估中国大陆保证追偿权的条件与份额。"

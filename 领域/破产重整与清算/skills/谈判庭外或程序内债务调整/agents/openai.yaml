@@ -1,0 +1,4 @@
+interface:
+  display_name: "谈判庭外或程序内债务调整"
+  short_description: "整理减免展期或以股抵债让步表并标明执行力与程序衔接"
+  default_prompt: "使用 $谈判庭外或程序内债务调整，谈判中国大陆庭外或程序内债务调整。"

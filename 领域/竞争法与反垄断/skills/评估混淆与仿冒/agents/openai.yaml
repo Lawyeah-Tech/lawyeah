@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估混淆与仿冒"
+  short_description: "评估混淆仿冒的有一定影响、混淆可能性和救济接口"
+  default_prompt: "使用 $评估混淆与仿冒，评估混淆仿冒的有一定影响、混淆可能性和救济接口。"

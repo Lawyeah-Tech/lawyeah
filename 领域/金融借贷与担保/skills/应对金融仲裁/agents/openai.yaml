@@ -1,0 +1,4 @@
+interface:
+  display_name: "应对金融仲裁"
+  short_description: "应对金融仲裁申请并整理协议与实体抗辩"
+  default_prompt: "使用 $应对金融仲裁，在被申请方立场下应对中国大陆金融仲裁。"

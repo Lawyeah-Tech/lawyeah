@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估破产原因是否成立"
+  short_description: "核验不能清偿、资不抵债或明显缺乏清偿能力并列出反证"
+  default_prompt: "使用 $评估破产原因是否成立，单独核验中国大陆企业破产原因是否成立。"

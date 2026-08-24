@@ -1,0 +1,4 @@
+interface:
+  display_name: "识别融资安排法律性质"
+  short_description: "识别名股实债、售后回租等融资安排的真实法律性质"
+  default_prompt: "使用 $识别融资安排法律性质，在单一立场下识别中国大陆融资安排的法律性质并做规则分流。"

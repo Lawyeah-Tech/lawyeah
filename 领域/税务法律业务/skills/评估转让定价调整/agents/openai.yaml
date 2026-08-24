@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估转让定价调整"
+  short_description: "评估特别纳税调整方法争点、补税滞纳金和协商接口"
+  default_prompt: "使用 $评估转让定价调整，在单一立场下评估已收到的中国大陆特别纳税调整或预约定价。"

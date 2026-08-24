@@ -1,0 +1,4 @@
+interface:
+  display_name: "申请履行复议决定"
+  short_description: "申请责令履行或执行行政复议决定"
+  default_prompt: "使用 $申请履行复议决定，在申请人立场下申请履行中国大陆行政复议决定，不要重开实体复议。"

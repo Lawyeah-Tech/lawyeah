@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估常设机构与境内所得"
+  short_description: "评估机构场所或常设机构构成、归属所得和扣缴接口"
+  default_prompt: "使用 $评估常设机构与境内所得，在单一立场下评估境外主体在中国境内是否构成机构场所或常设机构。"

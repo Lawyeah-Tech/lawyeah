@@ -1,0 +1,4 @@
+interface:
+  display_name: "应对实现担保物权申请"
+  short_description: "应对实现担保物权特别程序申请并整理异议"
+  default_prompt: "使用 $应对实现担保物权申请，在被申请人立场下应对中国大陆实现担保物权申请。"

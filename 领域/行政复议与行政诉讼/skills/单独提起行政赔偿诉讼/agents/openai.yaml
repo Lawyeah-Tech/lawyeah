@@ -1,0 +1,4 @@
+interface:
+  display_name: "单独提起行政赔偿诉讼"
+  short_description: "在确认违法和先行处理后准备单独行政赔偿起诉材料"
+  default_prompt: "使用 $单独提起行政赔偿诉讼，在请求人立场下准备中国大陆单独行政赔偿诉讼材料，先核验确认违法和先行处理。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估抵押质押设立与对抗"
+  short_description: "分层判断抵押质押的合同生效、设立和登记对抗"
+  default_prompt: "使用 $评估抵押质押设立与对抗，在单一立场下评估中国大陆抵押质押的设立与对抗效力。"

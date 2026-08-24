@@ -1,0 +1,4 @@
+interface:
+  display_name: "应对许可吊销或撤销程序"
+  short_description: "应对许可吊销或撤销程序中的权利、听证和信赖利益抗辩"
+  default_prompt: "使用 $应对许可吊销或撤销程序，在持证人立场下应对中国大陆许可吊销或撤销程序，列出程序权利和抗辩。"

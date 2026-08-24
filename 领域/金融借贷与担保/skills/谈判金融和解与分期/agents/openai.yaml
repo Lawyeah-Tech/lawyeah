@@ -1,0 +1,4 @@
+interface:
+  display_name: "谈判金融和解与分期"
+  short_description: "形成底线、让步、弃权范围、担保释放和执行力提示"
+  default_prompt: "使用 $谈判金融和解与分期，在单一立场下设计金融借贷或担保和解方案。"

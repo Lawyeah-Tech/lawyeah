@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估滥用市场支配地位"
+  short_description: "评估滥用市场支配地位的市场接口、行为类型和正当理由"
+  default_prompt: "使用 $评估滥用市场支配地位，评估滥用市场支配地位的市场接口、行为类型和正当理由。"

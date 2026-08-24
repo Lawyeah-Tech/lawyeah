@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估受控外国企业与间接转让"
+  short_description: "评估 CFC 与间接转让中国应税财产的争点和申报口"
+  default_prompt: "使用 $评估受控外国企业与间接转让，在单一立场下评估受控外国企业或间接转让中国应税财产的税务争点。"

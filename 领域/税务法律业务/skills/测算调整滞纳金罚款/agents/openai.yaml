@@ -1,0 +1,4 @@
+interface:
+  display_name: "测算调整滞纳金罚款"
+  short_description: "按假设分项测算补税、滞纳金和罚款区间"
+  default_prompt: "使用 $测算调整滞纳金罚款，按明示假设测算中国大陆税务调整、滞纳金和罚款区间。"

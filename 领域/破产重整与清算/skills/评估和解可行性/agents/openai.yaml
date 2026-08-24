@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估和解可行性"
+  short_description: "比较法定和解与重整清算并标出担保不受约束"
+  default_prompt: "使用 $评估和解可行性，评估中国大陆破产法定和解可行性。"

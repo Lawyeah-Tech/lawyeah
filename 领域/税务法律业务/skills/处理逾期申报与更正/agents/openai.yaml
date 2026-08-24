@@ -1,0 +1,4 @@
+interface:
+  display_name: "处理逾期申报与更正"
+  short_description: "规划更正或补报路径、滞纳金接口，并与立案检查分流"
+  default_prompt: "使用 $处理逾期申报与更正，在单一立场下处理中国大陆逾期申报、更正申报或非正常户解除路径。"

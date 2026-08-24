@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估未到期或然与保证人债权"
+  short_description: "处理未到期、或然、保证人分别申报与追偿预申报"
+  default_prompt: "使用 $评估未到期或然与保证人债权，评估中国大陆破产中的未到期、或然与保证人债权。"

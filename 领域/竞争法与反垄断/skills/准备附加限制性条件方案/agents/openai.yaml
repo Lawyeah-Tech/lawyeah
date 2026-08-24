@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备附加限制性条件方案"
+  short_description: "比较并准备经营者集中附加限制性条件方案"
+  default_prompt: "使用 $准备附加限制性条件方案，比较并准备经营者集中附加限制性条件方案。"

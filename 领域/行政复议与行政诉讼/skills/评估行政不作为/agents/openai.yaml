@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估行政不作为"
+  short_description: "评估行政不作为的职责、期限、催告和复议前置"
+  default_prompt: "使用 $评估行政不作为，在申请人立场下评估中国大陆行政不作为是否成立，并判断复议前置是否命中。"

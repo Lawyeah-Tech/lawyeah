@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备公证送达或证据保全公证"
+  short_description: "准备行政争议中的公证送达或证据保全公证事项和材料"
+  default_prompt: "使用 $准备行政案件公证保全，在单一立场下准备中国大陆行政争议的公证事项、材料和询问提纲。"

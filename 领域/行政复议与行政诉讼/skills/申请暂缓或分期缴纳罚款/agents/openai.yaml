@@ -1,0 +1,4 @@
+interface:
+  display_name: "申请暂缓或分期缴纳罚款"
+  short_description: "起草暂缓或分期缴纳罚款申请并明示不停止救济期限"
+  default_prompt: "使用 $申请暂缓或分期缴纳罚款，在被处罚人立场下申请暂缓或分期缴纳中国大陆行政罚款，不要写成已经获准。"

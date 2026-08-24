@@ -1,0 +1,4 @@
+interface:
+  display_name: "应对税收强制执行"
+  short_description: "应对税收强制扣缴或拍卖的程序抗辩和救济，禁止拒执"
+  default_prompt: "使用 $应对税收强制执行，在被执行方立场下应对中国大陆税收强制执行决定或即将扣缴拍卖。"

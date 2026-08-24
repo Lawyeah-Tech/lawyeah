@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估保理真实性与通知"
+  short_description: "评估保理基础交易真实性、通知和第768条顺位"
+  default_prompt: "使用 $评估保理真实性与通知，在单一立场下评估中国大陆保理真实性与通知顺位。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备重整计划草案"
+  short_description: "按法定必要记载准备重整计划草案并标明监督期"
+  default_prompt: "使用 $准备重整计划草案，准备中国大陆重整计划草案。"

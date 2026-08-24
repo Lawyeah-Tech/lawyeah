@@ -1,0 +1,4 @@
+interface:
+  display_name: "申请政府信息公开"
+  short_description: "起草政府信息公开申请并提示答复期限和后续救济"
+  default_prompt: "使用 $申请政府信息公开，在申请人立场下起草中国大陆政府信息公开申请，不要保证公开。"

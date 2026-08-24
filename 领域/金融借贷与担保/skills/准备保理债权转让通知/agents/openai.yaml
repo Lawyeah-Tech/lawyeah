@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备保理债权转让通知"
+  short_description: "准备向应收账款债务人发出的保理转让通知"
+  default_prompt: "使用 $准备保理债权转让通知，在保理人或债权人立场下准备中国大陆保理债权转让通知。"

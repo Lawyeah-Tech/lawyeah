@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估商业诋毁"
+  short_description: "评估商业诋毁的信息真伪、传播主体和损害"
+  default_prompt: "使用 $评估商业诋毁，评估商业诋毁的信息真伪、传播主体和损害。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估抵押变更涂销争议"
+  short_description: "评估抵押应否变更、涂销或继续登记"
+  default_prompt: "使用 $评估抵押变更涂销争议，在单一立场下评估中国大陆抵押变更或涂销争议。"

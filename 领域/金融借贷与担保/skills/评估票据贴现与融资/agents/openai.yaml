@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估票据贴现与融资"
+  short_description: "分层评估票据贴现融资中的票据关系与原因关系"
+  default_prompt: "使用 $评估票据贴现与融资，在单一立场下评估中国大陆票据贴现与融资争议。"

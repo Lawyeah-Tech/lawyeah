@@ -1,0 +1,4 @@
+interface:
+  display_name: "保全行政争议证据"
+  short_description: "规划行政争议证据的合法保全步骤并列出禁止动作"
+  default_prompt: "使用 $保全行政争议证据，在单一立场下规划中国大陆行政争议证据保全，区分公证和法院保全，不要指导违法取证。"

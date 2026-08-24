@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备未依法申报自我报告"
+  short_description: "准备未依法申报或违法实施集中的自我报告材料"
+  default_prompt: "使用 $准备未依法申报自我报告，准备未依法申报或违法实施集中的自我报告材料。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "谈判补税整改方案"
+  short_description: "形成补税、分期和免罚协商的底线与弃权风险"
+  default_prompt: "使用 $谈判补税整改方案，设计中国大陆税务补税整改谈判方案。"

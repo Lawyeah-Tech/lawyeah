@@ -1,0 +1,4 @@
+interface:
+  display_name: "执行金融生效文书"
+  short_description: "持金融生效文书准备执行申请与财产线索"
+  default_prompt: "使用 $执行金融生效文书，在权利人立场下申请执行中国大陆金融生效文书。"

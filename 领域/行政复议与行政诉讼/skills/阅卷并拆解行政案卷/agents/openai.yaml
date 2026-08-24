@@ -1,0 +1,4 @@
+interface:
+  display_name: "阅卷并拆解行政案卷"
+  short_description: "拆解行政案卷目录、缺失和事后补证红旗"
+  default_prompt: "使用 $阅卷并拆解行政案卷，在单一立场下阅卷并拆解中国大陆行政处罚或复议案卷，标出缺失和事后补证。"

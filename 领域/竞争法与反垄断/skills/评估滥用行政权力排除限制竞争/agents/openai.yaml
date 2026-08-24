@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估滥用行政权力排除限制竞争"
+  short_description: "评估滥用行政权力排除限制竞争及与公平竞争审查的交叉"
+  default_prompt: "使用 $评估滥用行政权力排除限制竞争，评估滥用行政权力排除限制竞争及与公平竞争审查的交叉。"

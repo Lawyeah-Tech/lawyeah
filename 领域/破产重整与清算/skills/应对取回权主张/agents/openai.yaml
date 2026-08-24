@@ -1,0 +1,4 @@
+interface:
+  display_name: "应对取回权主张"
+  short_description: "抗辩取回权并处理添附、代偿和争议物处分"
+  default_prompt: "使用 $应对取回权主张，应对中国大陆破产取回权主张。"

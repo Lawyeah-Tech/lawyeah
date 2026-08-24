@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备取回权主张"
+  short_description: "主张特定物取回并处理代偿与申报交叉"
+  default_prompt: "使用 $准备取回权主张，准备中国大陆破产取回权主张。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "对重整计划提出异议"
+  short_description: "从反对组角度提出重整计划不公平或不可行的异议"
+  default_prompt: "使用 $对重整计划提出异议，对中国大陆重整计划提出异议。"

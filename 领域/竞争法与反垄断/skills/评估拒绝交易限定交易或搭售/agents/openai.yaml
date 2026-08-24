@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估拒绝交易、限定交易或搭售"
+  short_description: "评估拒绝交易、限定交易或搭售及正当理由"
+  default_prompt: "使用 $评估拒绝交易限定交易或搭售，评估拒绝交易、限定交易或搭售及正当理由。"

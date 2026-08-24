@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备竞争法案件庭审"
+  short_description: "准备竞争法案件庭审争点、质证和代理提纲"
+  default_prompt: "使用 $准备竞争法案件庭审，准备竞争法案件庭审争点、质证和代理提纲。"

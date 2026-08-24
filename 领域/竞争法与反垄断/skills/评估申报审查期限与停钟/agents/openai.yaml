@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估申报审查期限与停钟"
+  short_description: "核验经营者集中审查期限、停钟和交割窗口"
+  default_prompt: "使用 $评估申报审查期限与停钟，核验经营者集中审查期限、停钟和交割窗口。"

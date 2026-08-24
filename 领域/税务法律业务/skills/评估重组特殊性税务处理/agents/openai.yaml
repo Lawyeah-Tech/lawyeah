@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估重组特殊性税务处理"
+  short_description: "对照特殊重组要件、递延条件和失败后一般性处理后果"
+  default_prompt: "使用 $评估重组特殊性税务处理，在单一立场下评估中国大陆重组是否具备特殊性税务处理条件。"

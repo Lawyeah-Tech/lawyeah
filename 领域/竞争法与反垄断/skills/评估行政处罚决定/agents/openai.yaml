@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估行政处罚决定"
+  short_description: "评估竞争处罚决定的履行、期限和救济接口"
+  default_prompt: "使用 $评估行政处罚决定，评估竞争处罚决定的履行、期限和救济接口。"

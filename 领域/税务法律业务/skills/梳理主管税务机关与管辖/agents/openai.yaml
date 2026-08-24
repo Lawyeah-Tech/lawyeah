@@ -1,0 +1,4 @@
+interface:
+  display_name: "梳理主管税务机关与管辖"
+  short_description: "梳理作出机关、所属局和复议机关候选，不选法院"
+  default_prompt: "使用 $梳理主管税务机关与管辖，在单一立场下梳理中国大陆主管税务机关、稽查局和复议机关候选。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备破产衍生诉讼庭审"
+  short_description: "为破产衍生诉讼整理争点、质证和询问提纲"
+  default_prompt: "使用 $准备破产衍生诉讼庭审，准备中国大陆破产衍生诉讼庭审。"

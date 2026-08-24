@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估财产保全必要性"
+  short_description: "评估是否以及何时申请财产保全"
+  default_prompt: "使用 $评估金融财产保全必要性，在单一立场下评估中国大陆金融争议财产保全的必要性。"

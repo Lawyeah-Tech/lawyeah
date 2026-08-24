@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估进项抵扣能否成立"
+  short_description: "对照增值税法扣税凭证、不得抵扣和转出时点，不定必然抵扣"
+  default_prompt: "使用 $评估进项抵扣能否成立，在一般纳税人立场下评估中国大陆进项抵扣能否成立。"

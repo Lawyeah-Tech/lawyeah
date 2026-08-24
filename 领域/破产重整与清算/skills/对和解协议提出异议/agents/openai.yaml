@@ -1,0 +1,4 @@
+interface:
+  display_name: "对和解协议提出异议"
+  short_description: "针对欺诈或不公的和解协议提出不予认可事由"
+  default_prompt: "使用 $对和解协议提出异议，对中国大陆破产和解协议提出异议。"

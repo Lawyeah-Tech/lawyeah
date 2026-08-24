@@ -1,0 +1,4 @@
+interface:
+  display_name: "应对破产债权确认之诉"
+  short_description: "形成破产债权确认之诉的答辩与性质抗辩"
+  default_prompt: "使用 $应对破产债权确认之诉，准备中国大陆破产债权确认之诉答辩。"

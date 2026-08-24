@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估宣告破产条件"
+  short_description: "区分受理与宣告并判断转换窗口是否关闭"
+  default_prompt: "使用 $评估宣告破产条件，评估中国大陆宣告破产条件。"

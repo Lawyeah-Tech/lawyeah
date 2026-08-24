@@ -1,0 +1,4 @@
+interface:
+  display_name: "提出送达或公告异议"
+  short_description: "提出行政文书送达或公告异议并处理证据冲突"
+  default_prompt: "使用 $提出送达或公告异议，在相对人立场下提出中国大陆行政文书送达或公告异议，不要编造未收到。"

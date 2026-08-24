@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估时效与保证期间"
+  short_description: "分类型核验诉讼时效、保证期间和约定催告期"
+  default_prompt: "使用 $评估时效与保证期间，在单一立场下分类型核验中国大陆金融借贷的时效与保证期间。"

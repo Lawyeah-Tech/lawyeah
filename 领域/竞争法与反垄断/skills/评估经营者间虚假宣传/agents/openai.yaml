@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估经营者间虚假宣传"
+  short_description: "评估伤害竞争者的虚假宣传和虚假交易"
+  default_prompt: "使用 $评估经营者间虚假宣传，评估伤害竞争者的虚假宣传和虚假交易。"

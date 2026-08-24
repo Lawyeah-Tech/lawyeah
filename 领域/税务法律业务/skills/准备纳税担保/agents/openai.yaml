@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备纳税担保"
+  short_description: "准备纳税担保方式和发送前材料，不保证机关确认"
+  default_prompt: "使用 $准备纳税担保，在纳税人或担保人立场下准备中国大陆纳税担保材料。"

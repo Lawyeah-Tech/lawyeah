@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估行政协议争议"
+  short_description: "判断行政协议定性、行政或民事路径及无效违约分流"
+  default_prompt: "使用 $评估行政协议争议，在单一立场下评估中国大陆行政协议争议的路径和请求分流。"

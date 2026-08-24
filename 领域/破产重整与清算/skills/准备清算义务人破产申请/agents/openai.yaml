@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备清算义务人破产申请"
+  short_description: "形成清算义务人强制破产清算的发送前申请包"
+  default_prompt: "使用 $准备清算义务人破产申请，准备中国大陆清算义务人破产申请发送前材料。"

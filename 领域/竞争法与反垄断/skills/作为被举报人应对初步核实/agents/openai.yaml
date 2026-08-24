@@ -1,0 +1,4 @@
+interface:
+  display_name: "作为被举报人应对初步核实"
+  short_description: "作为被举报人应对尚未立案的初步核实或约谈"
+  default_prompt: "使用 $作为被举报人应对初步核实，作为被举报人应对尚未立案的初步核实或约谈。"

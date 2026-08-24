@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估金融争议管辖与仲裁"
+  short_description: "评估金融借贷担保应走法院、仲裁还是专门管辖"
+  default_prompt: "使用 $评估金融争议管辖与仲裁，在单一立场下评估中国大陆金融争议的管辖与仲裁协议。"

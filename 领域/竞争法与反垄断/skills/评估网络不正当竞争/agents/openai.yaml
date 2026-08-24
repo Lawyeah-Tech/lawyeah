@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估网络不正当竞争"
+  short_description: "评估流量劫持、恶意不兼容等网络不正当竞争"
+  default_prompt: "使用 $评估网络不正当竞争，评估流量劫持、恶意不兼容等网络不正当竞争。"

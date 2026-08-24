@@ -1,0 +1,4 @@
+interface:
+  display_name: "应对纳税评估约谈"
+  short_description: "准备纳税评估约谈要点和升级检查红旗，不定评估结论"
+  default_prompt: "使用 $应对纳税评估约谈，在被评估方立场下应对中国大陆纳税评估约谈或提示提醒。"

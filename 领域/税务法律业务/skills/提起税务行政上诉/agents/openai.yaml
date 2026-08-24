@@ -1,0 +1,4 @@
+interface:
+  display_name: "提起税务行政上诉"
+  short_description: "准备未生效税务行政判决或裁定的上诉范围和期限"
+  default_prompt: "使用 $提起税务行政上诉，在上诉方立场下准备中国大陆税务行政诉讼上诉要点。"

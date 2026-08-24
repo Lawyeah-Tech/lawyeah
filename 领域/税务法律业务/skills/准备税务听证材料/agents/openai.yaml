@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备税务听证材料"
+  short_description: "在法定期限内形成税务行政处罚听证申请和提纲"
+  default_prompt: "使用 $准备税务听证材料，准备中国大陆税务行政处罚听证申请发送前材料。"

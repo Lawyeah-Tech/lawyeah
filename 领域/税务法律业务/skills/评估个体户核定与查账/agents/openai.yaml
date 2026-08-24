@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估个体户核定与查账"
+  short_description: "评估个体户征收方式、定额偏离和建账义务"
+  default_prompt: "使用 $评估个体户核定与查账，在经营者立场下评估中国大陆个体户核定或查账征收争点。"

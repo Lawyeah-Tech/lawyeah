@@ -1,0 +1,4 @@
+interface:
+  display_name: "盘点债务人财产与权利负担"
+  short_description: "盘点破产财产、共有冲突、负担和追收接口"
+  default_prompt: "使用 $盘点债务人财产与权利负担，盘点中国大陆债务人破产财产与权利负担。"

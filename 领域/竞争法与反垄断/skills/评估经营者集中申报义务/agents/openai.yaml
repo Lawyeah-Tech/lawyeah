@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估经营者集中申报义务"
+  short_description: "判断是否构成集中、是否达到申报标准以及批准前能否实施"
+  default_prompt: "使用 $评估经营者集中申报义务，评估该交易是否必须向中国反垄断执法机构申报以及交割是否被禁止。"

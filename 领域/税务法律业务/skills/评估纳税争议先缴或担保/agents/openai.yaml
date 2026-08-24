@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估纳税争议先缴或担保"
+  short_description: "判断征税行为救济是否须先缴清税款或提供担保"
+  default_prompt: "使用 $评估纳税争议先缴或担保，判断中国大陆纳税争议能否、应否先缴或提供担保后再复议。"

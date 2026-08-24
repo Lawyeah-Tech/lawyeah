@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估行政许可决定"
+  short_description: "评估行政许可不予、撤回、撤销或吊销的程序与信赖利益"
+  default_prompt: "使用 $评估行政许可决定，在相对人立场下评估中国大陆行政许可决定的程序争点和信赖利益接口。"

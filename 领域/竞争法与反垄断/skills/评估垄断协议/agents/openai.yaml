@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估垄断协议"
+  short_description: "评估垄断协议或协同行为的要件、分流和豁免接口"
+  default_prompt: "使用 $评估垄断协议，评估垄断协议或协同行为的要件、分流和豁免接口。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "测算出口退税风险额"
+  short_description: "测算出口退税追回区间和函调缺口，不定骗税成立"
+  default_prompt: "使用 $测算出口退税风险额，在单一立场下测算中国大陆出口退税被疑骗税或函调异常的风险额接口。"

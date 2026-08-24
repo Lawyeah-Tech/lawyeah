@@ -1,0 +1,4 @@
+interface:
+  display_name: "申请复议听证"
+  short_description: "起草行政复议听证申请、参加人和焦点"
+  default_prompt: "使用 $申请复议听证，在申请人立场下申请中国大陆行政复议听证，不要替代复议申请本身。"

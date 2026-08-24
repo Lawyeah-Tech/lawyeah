@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备执行和解"
+  short_description: "准备行政执行和解要点并安排违约后恢复执行"
+  default_prompt: "使用 $准备行政执行和解，在单一立场下准备中国大陆行政诉讼执行和解，除非明示不要放弃已生效判项。"

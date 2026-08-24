@@ -1,0 +1,4 @@
+interface:
+  display_name: "保全账簿与电子数据"
+  short_description: "给出账簿和电子数据的只读备份步骤与禁止动作"
+  default_prompt: "使用 $保全账簿与电子数据，在单一立场下保全可能灭失或已被调取的中国大陆账簿和电子数据。"

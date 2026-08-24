@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估豁免或安全港"
+  short_description: "评估垄断协议豁免或安全港主张及举证责任"
+  default_prompt: "使用 $评估豁免或安全港，评估垄断协议豁免或安全港主张及举证责任。"

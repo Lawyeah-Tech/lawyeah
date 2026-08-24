@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估破产案件管辖"
+  short_description: "列住所地、集中管辖和关联管辖待核连结点"
+  default_prompt: "使用 $评估破产案件管辖，评估中国大陆破产案件管辖连结点。"

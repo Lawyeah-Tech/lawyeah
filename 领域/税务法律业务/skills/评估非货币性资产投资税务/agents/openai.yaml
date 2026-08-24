@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估非货币性资产投资税务"
+  short_description: "列出非货币出资的视同转让、递延条件和评估接口"
+  default_prompt: "使用 $评估非货币性资产投资税务，在单一立场下评估中国大陆非货币性资产投资的税务递延和分期条件。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估融资租赁性质与取回"
+  short_description: "评估是否构成融资租赁及取回条件"
+  default_prompt: "使用 $评估融资租赁性质与取回，在单一立场下评估中国大陆融资租赁性质与取回条件。"

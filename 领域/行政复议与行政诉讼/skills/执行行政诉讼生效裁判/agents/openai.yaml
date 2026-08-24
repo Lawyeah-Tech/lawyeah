@@ -1,0 +1,4 @@
+interface:
+  display_name: "执行行政诉讼生效裁判"
+  short_description: "申请执行行政诉讼生效裁判并列出机关拒不履行的升级措施"
+  default_prompt: "使用 $执行行政诉讼生效裁判，在权利人立场下申请执行中国大陆行政诉讼生效裁判，不要重审实体。"

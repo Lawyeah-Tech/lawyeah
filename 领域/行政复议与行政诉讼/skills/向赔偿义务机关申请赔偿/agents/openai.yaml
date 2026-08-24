@@ -1,0 +1,4 @@
+interface:
+  display_name: "向赔偿义务机关申请赔偿"
+  short_description: "起草向行政赔偿义务机关提出的申请和项目清单"
+  default_prompt: "使用 $向赔偿义务机关申请赔偿，在请求人立场下起草向中国大陆行政赔偿义务机关提出的赔偿申请。"

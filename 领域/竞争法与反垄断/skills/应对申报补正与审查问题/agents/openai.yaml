@@ -1,0 +1,4 @@
+interface:
+  display_name: "应对申报补正与审查问题"
+  short_description: "逐问答复经营者集中审查补正和问题清单"
+  default_prompt: "使用 $应对申报补正与审查问题，逐问答复经营者集中审查补正和问题清单。"

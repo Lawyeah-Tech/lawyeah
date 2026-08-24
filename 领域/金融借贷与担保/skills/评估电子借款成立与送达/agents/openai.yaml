@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估电子借款成立与送达"
+  short_description: "评估电子签约成立、认证强度与送达举证"
+  default_prompt: "使用 $评估电子借款成立与送达，在单一立场下评估中国大陆电子借款的成立与送达争点。"

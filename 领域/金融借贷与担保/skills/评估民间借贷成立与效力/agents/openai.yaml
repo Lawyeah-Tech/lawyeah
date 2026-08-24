@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估民间借贷成立与效力"
+  short_description: "分层判断民间借贷是否成立、本金是否交付及效力红旗"
+  default_prompt: "使用 $评估民间借贷成立与效力，在单一立场下评估中国大陆民间借贷的成立、交付与效力争点。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估最高额保证"
+  short_description: "评估最高额保证的债权确定、余额范围和期间起算"
+  default_prompt: "使用 $评估最高额保证，在单一立场下评估中国大陆最高额保证的决算与期间。"

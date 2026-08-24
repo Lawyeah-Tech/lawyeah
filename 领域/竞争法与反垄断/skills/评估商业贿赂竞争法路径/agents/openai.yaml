@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估商业贿赂竞争法路径"
+  short_description: "评估商业贿赂的竞争法路径、账簿和相对方身份"
+  default_prompt: "使用 $评估商业贿赂竞争法路径，评估商业贿赂的竞争法路径、账簿和相对方身份。"

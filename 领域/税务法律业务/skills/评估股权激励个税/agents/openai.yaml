@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估股权激励个税"
+  short_description: "拆分股权激励所得项目、递延条件和扣缴接口"
+  default_prompt: "使用 $评估股权激励个税，在企业或个人单一立场下评估中国大陆股权激励的个人所得税。"

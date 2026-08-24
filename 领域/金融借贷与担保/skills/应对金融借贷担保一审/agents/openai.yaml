@@ -1,0 +1,4 @@
+interface:
+  display_name: "应对金融借贷担保一审"
+  short_description: "形成首次应诉答辩包，含保证期间和时效抗辩"
+  default_prompt: "使用 $应对金融借贷担保一审，准备中国大陆金融借贷或担保纠纷一审答辩。"

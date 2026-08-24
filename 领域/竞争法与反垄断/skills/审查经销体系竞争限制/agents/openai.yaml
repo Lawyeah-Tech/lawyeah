@@ -1,0 +1,4 @@
+interface:
+  display_name: "审查经销体系竞争限制"
+  short_description: "审查经销政策的竞争限制并标出须停须改项"
+  default_prompt: "使用 $审查经销体系竞争限制，审查经销政策的竞争限制并标出须停须改项。"

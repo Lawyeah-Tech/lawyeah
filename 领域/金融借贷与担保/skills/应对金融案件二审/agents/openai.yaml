@@ -1,0 +1,4 @@
+interface:
+  display_name: "应对金融案件二审"
+  short_description: "针对金融案件上诉状准备二审答辩"
+  default_prompt: "使用 $应对金融案件二审，在被上诉方立场下应对中国大陆金融案件二审。"

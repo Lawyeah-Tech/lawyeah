@@ -1,0 +1,4 @@
+interface:
+  display_name: "起草竞争争议和解协议"
+  short_description: "起草已成争的竞争争议和解协议及弃权边界"
+  default_prompt: "使用 $起草竞争争议和解协议，起草已成争的竞争争议和解协议及弃权边界。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "应对税收保全"
+  short_description: "核验税收保全条件、解除担保和救济入口，禁止转移隐匿"
+  default_prompt: "使用 $应对税收保全，在被保全方立场下应对中国大陆税收保全措施。"

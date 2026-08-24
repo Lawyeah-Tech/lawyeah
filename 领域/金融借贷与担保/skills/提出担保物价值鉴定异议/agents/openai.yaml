@@ -1,0 +1,4 @@
+interface:
+  display_name: "提出担保物价值鉴定异议"
+  short_description: "对担保物价值鉴定提出补充或重新鉴定异议"
+  default_prompt: "使用 $提出担保物价值鉴定异议，在单一立场下对担保物价值鉴定提出异议。"

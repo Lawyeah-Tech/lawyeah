@@ -1,0 +1,4 @@
+interface:
+  display_name: "审查协会章程与行业自律文件"
+  short_description: "审查协会章程和自律文件中的竞争风险条款"
+  default_prompt: "使用 $审查协会章程与行业自律文件，审查协会章程和自律文件中的竞争风险条款。"

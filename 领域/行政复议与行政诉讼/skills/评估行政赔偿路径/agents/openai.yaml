@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估行政赔偿路径"
+  short_description: "在一并请求、单独起诉和向义务机关申请之间选择赔偿路径"
+  default_prompt: "使用 $评估行政赔偿路径，在请求人立场下评估中国大陆行政赔偿应走一并请求、单独诉讼还是向义务机关申请。"

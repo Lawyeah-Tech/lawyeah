@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备破产财产追回与保全接口"
+  short_description: "识别财产流失红旗并给出追回与程序内保全接口"
+  default_prompt: "使用 $准备破产财产追回与保全接口，处理中国大陆破产财产追回与保全接口。"

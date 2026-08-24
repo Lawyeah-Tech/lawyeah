@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估公平竞争审查"
+  short_description: "评估政策措施是否应作公平竞争审查及不得出台风险"
+  default_prompt: "使用 $评估公平竞争审查，评估政策措施是否应作公平竞争审查及不得出台风险。"

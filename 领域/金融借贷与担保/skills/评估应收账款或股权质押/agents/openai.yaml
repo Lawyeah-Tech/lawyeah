@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估应收账款或股权质押"
+  short_description: "评估应收账款或股权质押的设立、通知和处分效力"
+  default_prompt: "使用 $评估应收账款或股权质押，在单一立场下评估中国大陆应收账款或股权质押争议。"

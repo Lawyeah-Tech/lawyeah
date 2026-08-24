@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估公司对外担保决议"
+  short_description: "评估公司对外担保决议与相对人善意审查"
+  default_prompt: "使用 $评估公司对外担保决议，在单一立场下评估中国大陆公司对外担保是否对公司发生效力。"

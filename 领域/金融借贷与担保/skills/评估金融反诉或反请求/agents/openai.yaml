@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估是否反诉或反请求"
+  short_description: "评估金融案件是否提起反诉或仲裁反请求"
+  default_prompt: "使用 $评估金融反诉或反请求，在被请求方立场下评估是否对中国大陆金融本诉提起反诉。"

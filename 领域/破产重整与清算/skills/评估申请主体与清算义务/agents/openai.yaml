@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估申请主体与清算义务"
+  short_description: "判断谁有权或必须申请破产并列出材料门槛"
+  default_prompt: "使用 $评估申请主体与清算义务，评估中国大陆破产申请主体与清算义务。"

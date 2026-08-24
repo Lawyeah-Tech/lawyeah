@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估金融债权转让"
+  short_description: "评估贷款债权转让对债务人和保证人的效力"
+  default_prompt: "使用 $评估金融债权转让，在单一立场下评估中国大陆金融债权转让的通知、抗辩与保证效果。"

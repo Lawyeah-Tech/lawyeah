@@ -1,0 +1,4 @@
+interface:
+  display_name: "提出非诉执行异议"
+  short_description: "对非诉行政执行提出异议或审查意见并抓住明显违法争点"
+  default_prompt: "使用 $提出非诉执行异议，在相对人立场下对中国大陆非诉行政执行提出异议，不要把它写成普通诉讼应诉。"

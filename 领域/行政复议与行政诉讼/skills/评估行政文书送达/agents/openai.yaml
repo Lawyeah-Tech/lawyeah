@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估行政文书送达"
+  short_description: "评估行政文书是否合法送达以及期限应否起算"
+  default_prompt: "使用 $评估行政文书送达，在单一立场下评估中国大陆行政文书送达是否成立、公告是否合法，以及期限是否起算。"

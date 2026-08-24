@@ -1,0 +1,4 @@
+interface:
+  display_name: "提起金融案件上诉"
+  short_description: "对未生效金融裁判准备上诉状与理由"
+  default_prompt: "使用 $提起金融案件上诉，在上诉方立场下提起中国大陆金融案件上诉。"

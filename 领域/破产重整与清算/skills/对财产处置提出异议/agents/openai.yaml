@@ -1,0 +1,4 @@
+interface:
+  display_name: "对财产处置提出异议"
+  short_description: "针对贱卖或程序违法提出处置异议并评估能否暂停"
+  default_prompt: "使用 $对财产处置提出异议，对中国大陆破产财产处置提出异议。"

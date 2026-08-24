@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备金融案件庭审"
+  short_description: "准备金融诉讼或仲裁开庭提纲"
+  default_prompt: "使用 $准备金融案件庭审，在单一代理立场下准备中国大陆金融案件庭审。"

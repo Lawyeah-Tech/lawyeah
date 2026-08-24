@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备经营者集中申报"
+  short_description: "形成可复核、不代提交的经营者集中申报包和实施禁止提示"
+  default_prompt: "使用 $准备经营者集中申报，准备向中国反垄断执法机构提交的经营者集中申报材料。"

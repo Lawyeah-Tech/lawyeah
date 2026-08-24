@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估关联企业实质合并"
+  short_description: "对照混同事实、合并利弊和个别债权人受损情景"
+  default_prompt: "使用 $评估关联企业实质合并，评估中国大陆关联企业实质合并破产。"

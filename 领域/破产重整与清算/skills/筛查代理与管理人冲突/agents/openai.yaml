@@ -1,0 +1,4 @@
+interface:
+  display_name: "筛查代理与管理人冲突"
+  short_description: "筛查破产代理或管理人利害关系并给出隔离或辞任"
+  default_prompt: "使用 $筛查代理与管理人冲突，筛查中国大陆破产代理或管理人利益冲突。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "应对行政复议被申请"
+  short_description: "准备行政复议被申请人答复、原卷证据和不得事后取证红旗"
+  default_prompt: "使用 $应对行政复议被申请，在被申请人立场下准备中国大陆行政复议答复，不要事后自行取证。"

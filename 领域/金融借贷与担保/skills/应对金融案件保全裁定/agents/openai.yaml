@@ -1,0 +1,4 @@
+interface:
+  display_name: "应对保全裁定"
+  short_description: "对财产保全裁定准备复议或担保置换"
+  default_prompt: "使用 $应对金融案件保全裁定，在被保全方立场下应对中国大陆金融案件保全裁定。"

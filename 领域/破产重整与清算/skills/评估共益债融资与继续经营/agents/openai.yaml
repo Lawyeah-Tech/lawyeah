@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估共益债融资与继续经营"
+  short_description: "判断新借款或继续经营能否构成共益债务及许可风险"
+  default_prompt: "使用 $评估共益债融资与继续经营，评估中国大陆破产共益债融资与继续经营。"

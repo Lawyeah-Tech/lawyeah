@@ -1,0 +1,4 @@
+interface:
+  display_name: "分流商业秘密与竞争法交叉"
+  short_description: "分流商业秘密权利基础与竞争秩序主张，避免双份主成果"
+  default_prompt: "使用 $分流商业秘密与竞争法交叉，分流商业秘密权利基础与竞争秩序主张，避免双份主成果。"

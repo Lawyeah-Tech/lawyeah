@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备检查陈述申辩"
+  short_description: "形成发送前的税务检查或处罚陈述申辩稿"
+  default_prompt: "使用 $准备检查陈述申辩，起草中国大陆税务检查陈述申辩发送前稿。"
