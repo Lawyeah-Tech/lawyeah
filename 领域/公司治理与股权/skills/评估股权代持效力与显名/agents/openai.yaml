@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估股权代持效力与显名"
+  short_description: "评估代持合同效力、投资权益和显名条件"
+  default_prompt: "使用 $评估股权代持效力与显名，在单一立场下评估中国大陆股权代持效力与显名。"

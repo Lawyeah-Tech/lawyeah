@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估侵权人不明路径"
+  short_description: "在肇事逃逸或侵权人不明时规划救助基金、可能加害人和查明接口"
+  default_prompt: "使用 $评估侵权人不明路径，在权利人立场下评估肇事逃逸、高空抛物或侵权人暂时不明时的民事路径。"

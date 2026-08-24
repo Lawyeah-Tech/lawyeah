@@ -1,0 +1,4 @@
+interface:
+  display_name: "提起利润分配之诉"
+  short_description: "准备利润分配之诉的决议依据和执行请求"
+  default_prompt: "使用 $提起利润分配之诉，在股东立场下提起中国大陆利润分配之诉。"

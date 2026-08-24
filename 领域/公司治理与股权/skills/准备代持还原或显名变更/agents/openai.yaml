@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备代持还原或显名变更"
+  short_description: "准备代持还原或显名的同意、名册和登记文件"
+  default_prompt: "使用 $准备代持还原或显名变更，在实际出资人或名义股东立场下准备中国大陆代持还原或显名变更。"

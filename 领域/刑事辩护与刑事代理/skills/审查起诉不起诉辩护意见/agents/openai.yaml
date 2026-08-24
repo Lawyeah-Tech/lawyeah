@@ -1,0 +1,4 @@
+interface:
+  display_name: "审查起诉不起诉辩护意见"
+  short_description: "围绕法定酌定或证据不足形成不起诉专项辩护意见"
+  default_prompt: "使用 $审查起诉不起诉辩护意见，在审查起诉阶段围绕法定、酌定或证据不足情形形成不起诉专项辩护意见。"

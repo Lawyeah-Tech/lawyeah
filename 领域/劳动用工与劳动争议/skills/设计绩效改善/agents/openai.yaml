@@ -1,0 +1,4 @@
+interface:
+  display_name: "设计绩效改善"
+  short_description: "形成绩效改善方案、文件和证据计划"
+  default_prompt: "使用 $设计绩效改善，对绩效或能力不足人员设计改善方案、文件和证据计划，不要预设解除。"

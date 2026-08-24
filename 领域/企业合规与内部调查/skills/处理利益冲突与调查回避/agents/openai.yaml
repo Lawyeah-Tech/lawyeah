@@ -1,0 +1,4 @@
+interface:
+  display_name: "处理利益冲突与调查回避"
+  short_description: "列出回避名单、替代调查主体和失效风险"
+  default_prompt: "使用 $处理利益冲突与调查回避，在单一公司立场下处理调查利益冲突与回避，不因老板要求省略回避。"

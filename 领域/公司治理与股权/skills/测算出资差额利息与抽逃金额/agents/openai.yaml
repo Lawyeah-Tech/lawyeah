@@ -1,0 +1,4 @@
+interface:
+  display_name: "测算出资差额、利息与抽逃金额"
+  short_description: "分项测算出资差额、利息和抽逃金额并标互斥"
+  default_prompt: "使用 $测算出资差额利息与抽逃金额，在单一立场下测算中国大陆出资差额、利息与抽逃金额。"

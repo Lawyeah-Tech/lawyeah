@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估自甘风险与公平分担"
+  short_description: "判断自甘风险是否成立，并标公平责任接口"
+  default_prompt: "使用 $评估自甘风险与公平分担，在单一立场下评估文体活动自甘风险是否成立以及公平分担接口。"

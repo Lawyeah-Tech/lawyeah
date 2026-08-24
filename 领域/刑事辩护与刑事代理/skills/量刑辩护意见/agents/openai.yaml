@@ -1,0 +1,4 @@
+interface:
+  display_name: "量刑辩护意见"
+  short_description: "就法定酌定情节、基准刑和适用刑罚形成量刑意见"
+  default_prompt: "使用 $量刑辩护意见，在责任边界明确后，就法定酌定情节、基准刑和适用刑罚形成量刑意见。"

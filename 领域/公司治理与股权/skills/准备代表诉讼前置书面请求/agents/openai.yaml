@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备代表诉讼前置书面请求"
+  short_description: "起草向监事会或董事会发出的代表诉讼前置书面请求"
+  default_prompt: "使用 $准备代表诉讼前置书面请求，在股东立场下准备中国大陆代表诉讼前置书面请求。"

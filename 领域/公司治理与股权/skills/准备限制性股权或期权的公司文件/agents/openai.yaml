@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备限制性股权或期权的公司文件"
+  short_description: "准备激励相关公司决议、授予文件和名册安排"
+  default_prompt: "使用 $准备限制性股权或期权的公司文件，在公司立场下准备中国大陆限制性股权或期权的公司文件。"

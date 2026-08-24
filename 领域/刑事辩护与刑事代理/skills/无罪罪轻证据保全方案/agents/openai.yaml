@@ -1,0 +1,4 @@
+interface:
+  display_name: "无罪罪轻证据保全方案"
+  short_description: "就可能灭失的无罪罪轻材料形成保全和调取方案"
+  default_prompt: "使用 $无罪罪轻证据保全方案，就侦查阶段可能灭失的无罪或罪轻材料，形成合法保全和调取方案。"

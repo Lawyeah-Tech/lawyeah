@@ -1,0 +1,4 @@
+interface:
+  display_name: "确定调查授权、范围与独立"
+  short_description: "形成授权书要点、范围、禁止事项和汇报线"
+  default_prompt: "使用 $确定调查授权范围与独立，在单一公司立场下确定内部调查的书面授权、范围、回避与汇报线。"

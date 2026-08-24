@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估股东会董事会决议效力"
+  short_description: "区分决议不成立、无效或可撤销，不写诉状"
+  default_prompt: "使用 $评估股东会董事会决议效力，评估中国大陆公司决议效力，不提起诉讼。"

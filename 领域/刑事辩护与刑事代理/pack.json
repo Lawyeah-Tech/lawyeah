@@ -1,0 +1,1667 @@
+{
+  "schemaVersion": 2,
+  "id": "conduct-criminal-defense",
+  "displayName": "刑事辩护与刑事代理",
+  "description": "处理中国大陆刑事接案、紧急响应、会见、强制措施、审查起诉、控告、被害人代理、上诉和立案监督的多 Skill 领域包。",
+  "version": "1.0.0",
+  "license": "Apache-2.0",
+  "jurisdiction": "CN-mainland",
+  "contentModel": "multi-skill-progressive-disclosure",
+  "reinstallStrategy": "replace",
+  "scope": {
+    "purpose": "支持被追诉方、被害方及其代理人在已核验角色和程序状态下形成相互独立、可复核的刑事法律专业成果。",
+    "inScope": [
+      "刑事委托资格、授权和利益冲突筛查",
+      "传唤拘留搜查等紧急响应与首次在押会见",
+      "取保候审、审查逮捕和审查起诉阶段专项辩护",
+      "刑事阅卷和证据体系审查",
+      "认罪认罚决策评估和未生效刑事裁判上诉评估",
+      "刑事控告、审查起诉阶段被害人代理和不立案救济"
+    ],
+    "outOfScope": [
+      "未进入当前安装包的刑事案件总体评估、庭审辩护、申诉、执行和特别程序成果",
+      "以企业制度预防整改为目标的综合合规项目",
+      "行政处罚、劳动处分、一般侵权赔偿和民商事争议解决",
+      "境外当地刑事法、引渡司法协助和跨法域监管专项成果",
+      "医学鉴定、电子数据鉴定、会计审计和资产评估等技术结论"
+    ],
+    "primaryDeliverables": [
+      "接案授权冲突筛查和刑事紧急行动方案",
+      "首次在押会见、取保候审和审查逮捕成果",
+      "阅卷证据矩阵、不起诉辩护和认罪认罚决策意见",
+      "刑事控告评估、控告材料和不立案救济材料",
+      "被害人审查起诉代理意见和刑事上诉评估"
+    ]
+  },
+  "guideSkill": "刑事辩护与刑事代理导航",
+  "mcp": {
+    "contractRange": "0.0"
+  },
+  "skills": [
+    {
+      "id": "刑事辩护与刑事代理导航",
+      "kind": "guide",
+      "displayName": "刑事辩护与刑事代理导航",
+      "goal": "说明领域包的能力、边界和当前原子 Skill 全貌",
+      "notFor": [
+        "直接完成具体刑事法律成果"
+      ],
+      "deliverables": [
+        "领域能力定位结果"
+      ],
+      "path": "skills/刑事辩护与刑事代理导航",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "刑事判决或裁定上诉评估",
+          "审查起诉阶段被害人代理意见",
+          "取保候审申请",
+          "刑事紧急响应方案",
+          "刑事阅卷与证据体系审查",
+          "首次在押会见与权利处置",
+          "审查起诉不起诉辩护意见",
+          "不予立案或逾期未立案救济",
+          "审查逮捕辩护意见",
+          "审查起诉认罪认罚决策评估",
+          "刑事控告材料包",
+          "刑事接案资格与冲突筛查",
+          "刑事控告可行性评估",
+          "当前阶段刑事辩护案件评估",
+          "刑辩律师执业权利救济",
+          "侦查阶段辩护意见",
+          "羁押必要性审查申请",
+          "侦查违法申诉控告",
+          "无罪罪轻证据保全方案",
+          "侦查撤案辩护意见",
+          "刑事辩护调查取证方案",
+          "刑事证据收集调取申请",
+          "审查起诉阶段正式非法证据排除申请",
+          "法院阶段正式非法证据排除申请",
+          "审查起诉量刑建议沟通与具结核验意见",
+          "罪名与刑事责任辩护意见",
+          "量刑辩护意见",
+          "刑事庭前辩护方案",
+          "证人鉴定人出庭与询问方案",
+          "刑事庭审举证质证方案",
+          "一审庭审主张整合与庭后书面意见",
+          "刑事上诉与二审代理意见",
+          "死刑复核辩护",
+          "法院生效刑事裁判申诉审查材料",
+          "公诉案件被害人当前阶段参与路线评估",
+          "刑事一审被害人代理",
+          "被害人一审判决抗诉请求",
+          "刑事自诉可行性评估",
+          "刑事自诉起诉材料包",
+          "刑事附带民事请求评估",
+          "刑事附带民事起诉材料包",
+          "未成年人审查起诉专项辩护意见",
+          "侦查阶段非法取证线索保全与监督材料",
+          "附带民事部分上诉评估",
+          "侦查查封扣押冻结异议",
+          "被害人追缴退赔返还主张",
+          "已立案撤案监督救济",
+          "被害人不服不起诉上级检察院申诉材料",
+          "不起诉复查后被害人直接起诉材料",
+          "被告侧刑事和解赔偿提案",
+          "被害人侧刑事和解赔偿决策意见",
+          "单位犯罪被追诉单位专项辩护意见",
+          "单位犯罪责任人员专项辩护意见",
+          "被害人代理证据收集调取申请",
+          "被害人代理证人鉴定人出庭与询问方案",
+          "被害人代理庭审举证质证方案"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "刑事接案资格与冲突筛查",
+      "kind": "atomic",
+      "displayName": "刑事接案资格与冲突筛查",
+      "goal": "在实质刑事工作前形成客户、委托资格、授权、同案关联和利益冲突结论",
+      "notFor": [
+        "替代具体案件实体意见",
+        "在授权或冲突不明时启动实质代理"
+      ],
+      "deliverables": [
+        "客户委托人与授权图",
+        "同案关联案与利益冲突结论",
+        "可接受范围或拒绝转介结论"
+      ],
+      "path": "skills/刑事接案资格与冲突筛查",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "刑事辩护与刑事代理导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": [
+        {
+          "id": "law-source-verification",
+          "purpose": "核验会改变委托资格、授权范围或冲突结论的现行规则",
+          "capability": "search_law",
+          "level": "required",
+          "unavailableBehavior": "不拒绝执行、不中断主流程；不形成依赖规则的接受结论，只输出已核验事实、缺口和停止事项。"
+        },
+        {
+          "id": "practice-reference",
+          "purpose": "在记录组织或实务风险存在分歧时补充去标识化实践视角",
+          "capability": "search_practiced",
+          "level": "optional",
+          "unavailableBehavior": "继续完成不依赖实践补充的基础筛查并标注未使用该增强"
+        }
+      ]
+    },
+    {
+      "id": "刑事紧急响应方案",
+      "kind": "atomic",
+      "displayName": "刑事紧急响应方案",
+      "goal": "确认传唤、拘留、搜查或失联后的程序状态并形成首轮权利保护和期限行动方案",
+      "notFor": [
+        "在卷宗齐备后形成完整实体辩护意见",
+        "替代实际会见"
+      ],
+      "deliverables": [
+        "程序状态表",
+        "紧急行动与材料清单",
+        "风险和停止条件"
+      ],
+      "path": "skills/刑事紧急响应方案",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "刑事辩护与刑事代理导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": [
+        {
+          "id": "law-source-verification",
+          "purpose": "核验当前法域的程序权利、机关路径和期限规则",
+          "capability": "search_law",
+          "level": "required",
+          "unavailableBehavior": "不拒绝执行、不中断主流程；不输出确定法律结论、期限或机关路径，仅保留安全分流、事实缺口和停止事项。"
+        },
+        {
+          "id": "practice-reference",
+          "purpose": "补充去标识化紧急响应实践视角",
+          "capability": "search_practiced",
+          "level": "optional",
+          "unavailableBehavior": "继续完成不依赖实践补充的安全分流和事实核验"
+        }
+      ]
+    },
+    {
+      "id": "首次在押会见与权利处置",
+      "kind": "atomic",
+      "displayName": "首次在押会见与权利处置",
+      "goal": "为首次会见在押犯罪嫌疑人或被告人形成会见方案、核验记录和会后权利处置清单",
+      "notFor": [
+        "指导串供或传递违规信息",
+        "替代完整卷宗审查"
+      ],
+      "deliverables": [
+        "会见提纲",
+        "事实与程序核验记录",
+        "会后处置清单"
+      ],
+      "path": "skills/首次在押会见与权利处置",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "刑事辩护与刑事代理导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": [
+        {
+          "id": "law-source-verification",
+          "purpose": "核验会见资格、程序权利和会后处置规则",
+          "capability": "search_law",
+          "level": "required",
+          "unavailableBehavior": "不拒绝执行、不中断主流程；不形成依赖规则的权利处置意见，仅输出会见事实核验框架和停止事项。"
+        },
+        {
+          "id": "practice-reference",
+          "purpose": "补充去标识化首次会见记录组织视角",
+          "capability": "search_practiced",
+          "level": "optional",
+          "unavailableBehavior": "继续按自包含方法形成基础会见准备成果"
+        }
+      ]
+    },
+    {
+      "id": "取保候审申请",
+      "kind": "atomic",
+      "displayName": "取保候审申请",
+      "goal": "针对确定阶段和决定机关评估取保条件并形成取保候审申请及证明材料包",
+      "notFor": [
+        "逮捕后羁押必要性专项审查",
+        "承诺机关批准取保"
+      ],
+      "deliverables": [
+        "取保条件评估",
+        "取保申请书",
+        "保证与社会危险性材料目录"
+      ],
+      "path": "skills/取保候审申请",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "刑事辩护与刑事代理导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": [
+        {
+          "id": "law-source-verification",
+          "purpose": "核验取保条件、申请主体、决定机关和期限规则",
+          "capability": "search_law",
+          "level": "required",
+          "unavailableBehavior": "不拒绝执行、不中断主流程；不形成取保法律结论或申请正文，仅输出事实材料索引、缺口和停止事项。"
+        },
+        {
+          "id": "practice-reference",
+          "purpose": "补充去标识化取保申请实践视角",
+          "capability": "search_practiced",
+          "level": "optional",
+          "unavailableBehavior": "继续完成不依赖实践补充的基础成果"
+        },
+        {
+          "id": "template-reference",
+          "purpose": "核对取保申请文书结构",
+          "capability": "search_template",
+          "level": "optional",
+          "unavailableBehavior": "按 Skill 自包含输出合同形成草案结构"
+        }
+      ]
+    },
+    {
+      "id": "审查逮捕辩护意见",
+      "kind": "atomic",
+      "displayName": "审查逮捕辩护意见",
+      "goal": "在检察机关审查逮捕节点形成不批准逮捕或替代措施的事实、法律和社会危险性意见",
+      "notFor": [
+        "逮捕后羁押必要性审查",
+        "一般取保申请"
+      ],
+      "deliverables": [
+        "审查逮捕意见",
+        "社会危险性反证目录",
+        "听取意见要点"
+      ],
+      "path": "skills/审查逮捕辩护意见",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "刑事辩护与刑事代理导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": [
+        {
+          "id": "law-source-verification",
+          "purpose": "核验审查逮捕规则、权限、条件和期限",
+          "capability": "search_law",
+          "level": "required",
+          "unavailableBehavior": "不拒绝执行、不中断主流程；不形成依赖规则的辩护结论，仅输出事实矩阵、材料缺口和停止事项。"
+        },
+        {
+          "id": "practice-reference",
+          "purpose": "补充去标识化审查逮捕实践视角",
+          "capability": "search_practiced",
+          "level": "optional",
+          "unavailableBehavior": "继续完成不依赖实践补充的基础成果"
+        },
+        {
+          "id": "fact-similar-case",
+          "purpose": "按去标识化完整事实链检索相似案例",
+          "capability": "search_case_by_fact",
+          "level": "optional",
+          "unavailableBehavior": "不使用类案增强，不影响基础证据和法源分析"
+        },
+        {
+          "id": "filtered-case",
+          "purpose": "按明确筛选条件检索相似案例",
+          "capability": "search_case_by_filter",
+          "level": "optional",
+          "unavailableBehavior": "不使用筛选类案增强，不影响基础证据和法源分析"
+        },
+        {
+          "id": "case-detail",
+          "purpose": "核对已确认案例的完整内容",
+          "capability": "get_case_detail",
+          "level": "optional",
+          "unavailableBehavior": "不引用无法核对全文的案例"
+        },
+        {
+          "id": "template-reference",
+          "purpose": "核对审查逮捕意见文书结构",
+          "capability": "search_template",
+          "level": "optional",
+          "unavailableBehavior": "按 Skill 自包含输出合同形成意见结构"
+        }
+      ]
+    },
+    {
+      "id": "刑事阅卷与证据体系审查",
+      "kind": "atomic",
+      "displayName": "刑事阅卷与证据体系审查",
+      "goal": "对依法取得的案卷建立可回链的证据矩阵、证明体系、矛盾缺口和后续核证清单",
+      "notFor": [
+        "直接形成最终定罪量刑意见",
+        "在无权阅卷阶段假设完整案卷"
+      ],
+      "deliverables": [
+        "卷宗索引",
+        "证据矩阵",
+        "证明体系与矛盾缺口表",
+        "后续核证清单"
+      ],
+      "path": "skills/刑事阅卷与证据体系审查",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "刑事辩护与刑事代理导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": [
+        {
+          "id": "law-source-verification",
+          "purpose": "核验影响证据审查和程序动作的现行规则",
+          "capability": "search_law",
+          "level": "required",
+          "unavailableBehavior": "不拒绝执行、不中断主流程；只形成非法律事实索引和证据链缺口，不输出法律结论或程序建议。"
+        },
+        {
+          "id": "fact-similar-case",
+          "purpose": "按去标识化事实链检索可供对照的案例",
+          "capability": "search_case_by_fact",
+          "level": "optional",
+          "unavailableBehavior": "不使用类案增强，继续完成卷宗和证据矩阵"
+        },
+        {
+          "id": "case-detail",
+          "purpose": "核对已确认案例的完整内容",
+          "capability": "get_case_detail",
+          "level": "optional",
+          "unavailableBehavior": "不引用无法核对全文的案例"
+        }
+      ]
+    },
+    {
+      "id": "审查起诉不起诉辩护意见",
+      "kind": "atomic",
+      "displayName": "审查起诉不起诉辩护意见",
+      "goal": "在审查起诉阶段围绕法定、酌定或证据不足情形形成不起诉专项辩护意见",
+      "notFor": [
+        "侦查阶段撤案意见",
+        "被害人不服不起诉救济"
+      ],
+      "deliverables": [
+        "不起诉路径评估",
+        "不起诉辩护意见",
+        "证据与情节附件目录"
+      ],
+      "path": "skills/审查起诉不起诉辩护意见",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "刑事辩护与刑事代理导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": [
+        {
+          "id": "law-source-verification",
+          "purpose": "核验不起诉类型、证据标准、程序权利和期限规则",
+          "capability": "search_law",
+          "level": "required",
+          "unavailableBehavior": "不拒绝执行、不中断主流程；不形成不起诉法律结论或意见正文，仅输出事实证据缺口和停止事项。"
+        },
+        {
+          "id": "fact-similar-case",
+          "purpose": "按去标识化事实链检索相似案例",
+          "capability": "search_case_by_fact",
+          "level": "optional",
+          "unavailableBehavior": "不使用类案增强，不影响基础证据和法源分析"
+        },
+        {
+          "id": "template-reference",
+          "purpose": "核对不起诉辩护意见文书结构",
+          "capability": "search_template",
+          "level": "optional",
+          "unavailableBehavior": "按 Skill 自包含输出合同形成意见结构"
+        }
+      ]
+    },
+    {
+      "id": "审查起诉认罪认罚决策评估",
+      "kind": "atomic",
+      "displayName": "审查起诉认罪认罚决策评估",
+      "goal": "在审查起诉拟具结前核验证据、自愿性、法律帮助、量刑建议和程序条件并形成决策意见",
+      "notFor": [
+        "以认罪换取确定结果的承诺",
+        "未成年人速裁程序建议"
+      ],
+      "deliverables": [
+        "证据标准与自愿性核验表",
+        "意见期与见证录像条件核验",
+        "具结反悔或程序转换决策意见"
+      ],
+      "path": "skills/审查起诉认罪认罚决策评估",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "刑事辩护与刑事代理导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": [
+        {
+          "id": "law-source-verification",
+          "purpose": "核验认罪认罚的证据标准、自愿性、量刑建议和程序条件",
+          "capability": "search_law",
+          "level": "required",
+          "unavailableBehavior": "不拒绝执行、不中断主流程；不形成具结或程序选择法律结论，仅输出事实缺口、风险和停止事项。"
+        },
+        {
+          "id": "practice-reference",
+          "purpose": "补充去标识化认罪认罚实践视角",
+          "capability": "search_practiced",
+          "level": "optional",
+          "unavailableBehavior": "继续完成不依赖实践补充的基础核验"
+        },
+        {
+          "id": "template-reference",
+          "purpose": "核对相关文书和核验表结构",
+          "capability": "search_template",
+          "level": "optional",
+          "unavailableBehavior": "按 Skill 自包含输出合同形成结构化成果"
+        }
+      ]
+    },
+    {
+      "id": "刑事控告可行性评估",
+      "kind": "atomic",
+      "displayName": "刑事控告可行性评估",
+      "goal": "从被害事实、刑民行政边界、管辖、证据和追诉风险形成是否及如何控告的决策意见",
+      "notFor": [
+        "承诺公安司法机关立案",
+        "直接起草完整控告材料包"
+      ],
+      "deliverables": [
+        "刑事可追诉性矩阵",
+        "管辖与证据缺口",
+        "控告路径及风险意见"
+      ],
+      "path": "skills/刑事控告可行性评估",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "刑事辩护与刑事代理导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": [
+        {
+          "id": "law-source-verification",
+          "purpose": "核验刑事可追诉性、刑民行政边界和管辖规则",
+          "capability": "search_law",
+          "level": "required",
+          "unavailableBehavior": "不拒绝执行、不中断主流程；不形成刑事定性、管辖或控告路径法律结论，仅输出事实证据缺口和停止事项。"
+        },
+        {
+          "id": "fact-similar-case",
+          "purpose": "按去标识化事实链检索相似案例",
+          "capability": "search_case_by_fact",
+          "level": "optional",
+          "unavailableBehavior": "不使用类案增强，不影响基础事实和法源分析"
+        },
+        {
+          "id": "filtered-case",
+          "purpose": "按明确条件检索相似案例",
+          "capability": "search_case_by_filter",
+          "level": "optional",
+          "unavailableBehavior": "不使用筛选类案增强，不影响基础事实和法源分析"
+        }
+      ]
+    },
+    {
+      "id": "刑事控告材料包",
+      "kind": "atomic",
+      "displayName": "刑事控告材料包",
+      "goal": "在控告路径确定后形成事实链、法律定性、证据目录和可提交的刑事控告材料",
+      "notFor": [
+        "把民商事纠纷无依据包装为犯罪",
+        "替代不立案后的监督救济"
+      ],
+      "deliverables": [
+        "刑事控告书",
+        "证据与线索目录",
+        "提交和留痕清单"
+      ],
+      "path": "skills/刑事控告材料包",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "刑事辩护与刑事代理导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": [
+        {
+          "id": "law-source-verification",
+          "purpose": "核验控告主体、刑事定性、管辖和提交路径规则",
+          "capability": "search_law",
+          "level": "required",
+          "unavailableBehavior": "不拒绝执行、不中断主流程；不形成控告法律结论或可提交正文，仅输出事实链、证据目录缺口和停止事项。"
+        },
+        {
+          "id": "template-reference",
+          "purpose": "核对刑事控告文书结构",
+          "capability": "search_template",
+          "level": "optional",
+          "unavailableBehavior": "按 Skill 自包含输出合同形成文书结构"
+        },
+        {
+          "id": "fact-similar-case",
+          "purpose": "按去标识化事实链检索相似案例",
+          "capability": "search_case_by_fact",
+          "level": "optional",
+          "unavailableBehavior": "不使用类案增强，不影响基础事实和法源分析"
+        }
+      ]
+    },
+    {
+      "id": "审查起诉阶段被害人代理意见",
+      "kind": "atomic",
+      "displayName": "审查起诉阶段被害人代理意见",
+      "goal": "在审查起诉阶段为被害人形成事实证据、罪名责任、追赃退赔和量刑方面的代理意见",
+      "notFor": [
+        "被告人不起诉辩护",
+        "不服不起诉决定后的申诉"
+      ],
+      "deliverables": [
+        "被害人代理争点表",
+        "审查起诉代理意见",
+        "证据和损失附件目录"
+      ],
+      "path": "skills/审查起诉阶段被害人代理意见",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "刑事辩护与刑事代理导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": [
+        {
+          "id": "law-source-verification",
+          "purpose": "核验被害人程序权利、罪名责任、追赃退赔和量刑规则",
+          "capability": "search_law",
+          "level": "required",
+          "unavailableBehavior": "不拒绝执行、不中断主流程；不形成依赖规则的代理结论或意见正文，仅输出事实证据缺口和停止事项。"
+        },
+        {
+          "id": "fact-similar-case",
+          "purpose": "按去标识化事实链检索相似案例",
+          "capability": "search_case_by_fact",
+          "level": "optional",
+          "unavailableBehavior": "不使用类案增强，不影响基础事实和法源分析"
+        },
+        {
+          "id": "template-reference",
+          "purpose": "核对被害人代理意见文书结构",
+          "capability": "search_template",
+          "level": "optional",
+          "unavailableBehavior": "按 Skill 自包含输出合同形成意见结构"
+        }
+      ]
+    },
+    {
+      "id": "刑事判决或裁定上诉评估",
+      "kind": "atomic",
+      "displayName": "刑事判决或裁定上诉评估",
+      "goal": "针对被告人或自诉人收到的未生效刑事判决、裁定形成刑事上诉范围、期限和风险评估",
+      "notFor": [
+        "附带民事部分上诉",
+        "被害人请求检察抗诉"
+      ],
+      "deliverables": [
+        "裁判生效性与送达日核验",
+        "刑事上诉争点与期限表",
+        "上诉或不提起上诉意见"
+      ],
+      "path": "skills/刑事判决或裁定上诉评估",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "刑事辩护与刑事代理导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": [
+        {
+          "id": "law-source-verification",
+          "purpose": "核验裁判生效、上诉主体、范围、期限和风险规则",
+          "capability": "search_law",
+          "level": "required",
+          "unavailableBehavior": "不拒绝执行、不中断主流程；不计算上诉期限或形成上诉法律意见，仅输出裁判文书和送达事实缺口。"
+        },
+        {
+          "id": "template-reference",
+          "purpose": "核对刑事上诉评估和文书结构",
+          "capability": "search_template",
+          "level": "optional",
+          "unavailableBehavior": "按 Skill 自包含输出合同形成评估结构"
+        },
+        {
+          "id": "fact-similar-case",
+          "purpose": "按去标识化事实链检索相似案例",
+          "capability": "search_case_by_fact",
+          "level": "optional",
+          "unavailableBehavior": "不使用类案增强，不影响基础裁判和法源分析"
+        }
+      ]
+    },
+    {
+      "id": "不予立案或逾期未立案救济",
+      "kind": "atomic",
+      "displayName": "不予立案或逾期未立案救济",
+      "goal": "针对公安机关不予立案或受案后逾期未作决定选择复议复核或检察立案监督材料",
+      "notFor": [
+        "已立案后的撤案监督",
+        "初次刑事控告"
+      ],
+      "deliverables": [
+        "受案不予立案或逾期状态文书",
+        "送达日与期限核验",
+        "复议复核或立案监督材料"
+      ],
+      "path": "skills/不予立案或逾期未立案救济",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "刑事辩护与刑事代理导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": [
+        {
+          "id": "law-source-verification",
+          "purpose": "核验受案状态、复议复核、检察监督和期限规则",
+          "capability": "search_law",
+          "level": "required",
+          "unavailableBehavior": "不拒绝执行、不中断主流程；不计算期限或形成救济路径法律结论，仅输出状态文书缺口和停止事项。"
+        },
+        {
+          "id": "template-reference",
+          "purpose": "核对不立案救济文书结构",
+          "capability": "search_template",
+          "level": "optional",
+          "unavailableBehavior": "按 Skill 自包含输出合同形成材料结构"
+        },
+        {
+          "id": "fact-similar-case",
+          "purpose": "按去标识化事实链检索相似案例",
+          "capability": "search_case_by_fact",
+          "level": "optional",
+          "unavailableBehavior": "不使用类案增强，不影响基础程序和法源分析"
+        }
+      ]
+    },
+    {
+      "id": "当前阶段刑事辩护案件评估",
+      "kind": "atomic",
+      "displayName": "当前阶段刑事辩护案件评估",
+      "goal": "在已确认单一客户立场和当前程序阶段后，形成受材料范围限制的案件评估与下一步选择意见。",
+      "notFor": [
+        "接案授权或利益冲突筛查",
+        "完整实体辩护意见"
+      ],
+      "deliverables": [
+        "在已确认单一客户立场和当前程序阶段后，形成受材料范围限制的案件评估与下一步选择意见。"
+      ],
+      "path": "skills/当前阶段刑事辩护案件评估",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "刑事辩护与刑事代理导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "刑辩律师执业权利救济",
+      "kind": "atomic",
+      "displayName": "刑辩律师执业权利救济",
+      "goal": "在会见、阅卷、调查取证或庭审履职受阻时，形成可提交的律师执业权利救济方案与材料。",
+      "notFor": [
+        "处理一般律师执业纪律争议",
+        "为当事人形成实体辩护意见"
+      ],
+      "deliverables": [
+        "在会见、阅卷、调查取证或庭审履职受阻时，形成可提交的律师执业权利救济方案与材料。"
+      ],
+      "path": "skills/刑辩律师执业权利救济",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "刑事辩护与刑事代理导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "侦查阶段辩护意见",
+      "kind": "atomic",
+      "displayName": "侦查阶段辩护意见",
+      "goal": "在侦查终结前围绕现有事实、责任和程序问题形成提交侦查机关的阶段性辩护意见。",
+      "notFor": [
+        "审查逮捕专项意见",
+        "审查起诉后的不起诉意见"
+      ],
+      "deliverables": [
+        "在侦查终结前围绕现有事实、责任和程序问题形成提交侦查机关的阶段性辩护意见。"
+      ],
+      "path": "skills/侦查阶段辩护意见",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "刑事辩护与刑事代理导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "羁押必要性审查申请",
+      "kind": "atomic",
+      "displayName": "羁押必要性审查申请",
+      "goal": "在逮捕后基于案件进展和继续羁押因素形成羁押必要性审查申请与支持材料。",
+      "notFor": [
+        "审查逮捕前意见",
+        "一般取保申请的机械改名"
+      ],
+      "deliverables": [
+        "在逮捕后基于案件进展和继续羁押因素形成羁押必要性审查申请与支持材料。"
+      ],
+      "path": "skills/羁押必要性审查申请",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "刑事辩护与刑事代理导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "侦查违法申诉控告",
+      "kind": "atomic",
+      "displayName": "侦查违法申诉控告",
+      "goal": "对刑讯逼供、超期羁押、违法搜查扣押或其他侦查违法形成申诉、控告和监督材料。",
+      "notFor": [
+        "直接替代非法证据排除申请",
+        "国家赔偿完整专项成果"
+      ],
+      "deliverables": [
+        "对刑讯逼供、超期羁押、违法搜查扣押或其他侦查违法形成申诉、控告和监督材料。"
+      ],
+      "path": "skills/侦查违法申诉控告",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "刑事辩护与刑事代理导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "无罪罪轻证据保全方案",
+      "kind": "atomic",
+      "displayName": "无罪罪轻证据保全方案",
+      "goal": "在侦查阶段识别可能灭失的无罪罪轻材料并形成合法收集、保全和申请调取方案。",
+      "notFor": [
+        "违法接触证人或获取数据",
+        "审查起诉后的完整卷宗分析"
+      ],
+      "deliverables": [
+        "在侦查阶段识别可能灭失的无罪罪轻材料并形成合法收集、保全和申请调取方案。"
+      ],
+      "path": "skills/无罪罪轻证据保全方案",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "刑事辩护与刑事代理导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "侦查撤案辩护意见",
+      "kind": "atomic",
+      "displayName": "侦查撤案辩护意见",
+      "goal": "在侦查阶段针对不应追究刑事责任或缺乏追诉基础的情形形成撤销案件专项意见。",
+      "notFor": [
+        "审查起诉阶段不起诉意见",
+        "一般案件评估"
+      ],
+      "deliverables": [
+        "在侦查阶段针对不应追究刑事责任或缺乏追诉基础的情形形成撤销案件专项意见。"
+      ],
+      "path": "skills/侦查撤案辩护意见",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "刑事辩护与刑事代理导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "刑事辩护调查取证方案",
+      "kind": "atomic",
+      "displayName": "刑事辩护调查取证方案",
+      "goal": "基于争点和现有证据缺口形成律师自行调查、申请调取和风险控制方案。",
+      "notFor": [
+        "直接实施调查或联系证人",
+        "替代案卷证据审查"
+      ],
+      "deliverables": [
+        "基于争点和现有证据缺口形成律师自行调查、申请调取和风险控制方案。"
+      ],
+      "path": "skills/刑事辩护调查取证方案",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "刑事辩护与刑事代理导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "刑事证据收集调取申请",
+      "kind": "atomic",
+      "displayName": "刑事证据收集调取申请",
+      "goal": "对律师无法自行取得且与案件有关的材料形成向检察院或法院提交的收集调取申请。",
+      "notFor": [
+        "自行违法取得受限材料",
+        "无具体证据线索的泛化申请"
+      ],
+      "deliverables": [
+        "对律师无法自行取得且与案件有关的材料形成向检察院或法院提交的收集调取申请。"
+      ],
+      "path": "skills/刑事证据收集调取申请",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "刑事辩护与刑事代理导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "审查起诉阶段正式非法证据排除申请",
+      "kind": "atomic",
+      "displayName": "审查起诉阶段正式非法证据排除申请",
+      "goal": "在审查起诉阶段，就具体非法取证线索与材料形成向承办人民检察院提交的正式排除申请和调查核实请求。",
+      "notFor": [
+        "侦查阶段线索保全与监督材料",
+        "法院阶段正式非法证据排除申请",
+        "一般关联性或证明力质证"
+      ],
+      "deliverables": [
+        "在审查起诉阶段，就具体非法取证线索与材料形成向承办人民检察院提交的正式排除申请和调查核实请求。"
+      ],
+      "path": "skills/审查起诉阶段正式非法证据排除申请",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "刑事辩护与刑事代理导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "法院阶段正式非法证据排除申请",
+      "kind": "atomic",
+      "displayName": "法院阶段正式非法证据排除申请",
+      "goal": "在人民法院受理案件后，就具体非法取证线索与材料形成向受理法院提交的正式排除申请、调查核实与法庭质证方案。",
+      "notFor": [
+        "侦查阶段线索保全与监督材料",
+        "审查起诉阶段正式非法证据排除申请",
+        "一般关联性或证明力质证"
+      ],
+      "deliverables": [
+        "在人民法院受理案件后，就具体非法取证线索与材料形成向受理法院提交的正式排除申请、调查核实与法庭质证方案。"
+      ],
+      "path": "skills/法院阶段正式非法证据排除申请",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "刑事辩护与刑事代理导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "审查起诉量刑建议沟通与具结核验意见",
+      "kind": "atomic",
+      "displayName": "审查起诉量刑建议沟通与具结核验意见",
+      "goal": "在已选择认罪认罚路径的审查起诉阶段，就检察机关量刑建议沟通、具结程序与异议记录形成专项意见。",
+      "notFor": [
+        "私法化交易式量刑谈判",
+        "庭审阶段量刑调整代理"
+      ],
+      "deliverables": [
+        "在已选择认罪认罚路径的审查起诉阶段，就检察机关量刑建议沟通、具结程序与异议记录形成专项意见。"
+      ],
+      "path": "skills/审查起诉量刑建议沟通与具结核验意见",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "刑事辩护与刑事代理导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "罪名与刑事责任辩护意见",
+      "kind": "atomic",
+      "displayName": "罪名与刑事责任辩护意见",
+      "goal": "围绕指控事实、构成要件、责任形态和排除责任事由形成实体辩护意见。",
+      "notFor": [
+        "仅形成量刑情节意见",
+        "按罪名机械生成结论"
+      ],
+      "deliverables": [
+        "围绕指控事实、构成要件、责任形态和排除责任事由形成实体辩护意见。"
+      ],
+      "path": "skills/罪名与刑事责任辩护意见",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "刑事辩护与刑事代理导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "量刑辩护意见",
+      "kind": "atomic",
+      "displayName": "量刑辩护意见",
+      "goal": "在责任问题边界明确后，对法定酌定情节、基准刑、从宽从重因素和适用刑罚形成量刑意见。",
+      "notFor": [
+        "替代罪名与责任辩护",
+        "承诺具体刑期"
+      ],
+      "deliverables": [
+        "在责任问题边界明确后，对法定酌定情节、基准刑、从宽从重因素和适用刑罚形成量刑意见。"
+      ],
+      "path": "skills/量刑辩护意见",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "刑事辩护与刑事代理导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "刑事庭前辩护方案",
+      "kind": "atomic",
+      "displayName": "刑事庭前辩护方案",
+      "goal": "在开庭前整合争点、程序申请、证据出示和庭审行动，形成可执行的庭前辩护方案。",
+      "notFor": [
+        "替代完整一审辩护意见",
+        "把所有专项申请强制组合"
+      ],
+      "deliverables": [
+        "在开庭前整合争点、程序申请、证据出示和庭审行动，形成可执行的庭前辩护方案。"
+      ],
+      "path": "skills/刑事庭前辩护方案",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "刑事辩护与刑事代理导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "证人鉴定人出庭与询问方案",
+      "kind": "atomic",
+      "displayName": "证人鉴定人出庭与询问方案",
+      "goal": "针对关键言词或鉴定证据形成出庭申请、询问提纲和证明力挑战方案。",
+      "notFor": [
+        "违法接触或影响证人",
+        "替代完整庭审辩护"
+      ],
+      "deliverables": [
+        "针对关键言词或鉴定证据形成出庭申请、询问提纲和证明力挑战方案。"
+      ],
+      "path": "skills/证人鉴定人出庭与询问方案",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "刑事辩护与刑事代理导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "刑事庭审举证质证方案",
+      "kind": "atomic",
+      "displayName": "刑事庭审举证质证方案",
+      "goal": "围绕拟在法庭调查中出示的证据形成逐项举证、质证和证明体系攻防方案。",
+      "notFor": [
+        "替代非法证据排除专项程序",
+        "替代完整实体辩护"
+      ],
+      "deliverables": [
+        "围绕拟在法庭调查中出示的证据形成逐项举证、质证和证明体系攻防方案。"
+      ],
+      "path": "skills/刑事庭审举证质证方案",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "刑事辩护与刑事代理导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "一审庭审主张整合与庭后书面意见",
+      "kind": "atomic",
+      "displayName": "一审庭审主张整合与庭后书面意见",
+      "goal": "在未受托完整一审全程代理时，围绕已确定的一审争点整合庭审主张并形成庭后书面意见。",
+      "notFor": [
+        "完整一审辩护全程包",
+        "替代庭前取证、排非、实体或量刑专项成果"
+      ],
+      "deliverables": [
+        "在未受托完整一审全程代理时，围绕已确定的一审争点整合庭审主张并形成庭后书面意见。"
+      ],
+      "path": "skills/一审庭审主张整合与庭后书面意见",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "刑事辩护与刑事代理导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "刑事上诉与二审代理意见",
+      "kind": "atomic",
+      "displayName": "刑事上诉与二审代理意见",
+      "goal": "在刑事上诉已经提出或有效委托的二审程序中，为单一客户立场形成二审争点与代理意见。",
+      "notFor": [
+        "附带民事部分上诉",
+        "死刑复核或生效裁判监督"
+      ],
+      "deliverables": [
+        "在刑事上诉已经提出或有效委托的二审程序中，为单一客户立场形成二审争点与代理意见。"
+      ],
+      "path": "skills/刑事上诉与二审代理意见",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "刑事辩护与刑事代理导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "死刑复核辩护",
+      "kind": "atomic",
+      "displayName": "死刑复核辩护",
+      "goal": "在死刑复核程序中形成事实证据、法律适用、量刑和程序方面的专项辩护意见。",
+      "notFor": [
+        "一般二审上诉",
+        "承诺复核结果"
+      ],
+      "deliverables": [
+        "在死刑复核程序中形成事实证据、法律适用、量刑和程序方面的专项辩护意见。"
+      ],
+      "path": "skills/死刑复核辩护",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "刑事辩护与刑事代理导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "法院生效刑事裁判申诉审查材料",
+      "kind": "atomic",
+      "displayName": "法院生效刑事裁判申诉审查材料",
+      "goal": "针对已生效刑事裁判，为单一申诉人向法院形成申诉事由、证据与审查材料。",
+      "notFor": [
+        "向检察机关申请监督",
+        "未生效裁判的上诉"
+      ],
+      "deliverables": [
+        "针对已生效刑事裁判，为单一申诉人向法院形成申诉事由、证据与审查材料。"
+      ],
+      "path": "skills/法院生效刑事裁判申诉审查材料",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "刑事辩护与刑事代理导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "公诉案件被害人当前阶段参与路线评估",
+      "kind": "atomic",
+      "displayName": "公诉案件被害人当前阶段参与路线评估",
+      "goal": "在确认案件当前阶段后，为被害人形成该阶段的知情、参与和安全路径选择，不替代阶段代理或诉讼文书。",
+      "notFor": [
+        "审查起诉代理意见",
+        "一审代理、附带民事或不起诉救济"
+      ],
+      "deliverables": [
+        "在确认案件当前阶段后，为被害人形成该阶段的知情、参与和安全路径选择，不替代阶段代理或诉讼文书。"
+      ],
+      "path": "skills/公诉案件被害人当前阶段参与路线评估",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "刑事辩护与刑事代理导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "刑事一审被害人代理",
+      "kind": "atomic",
+      "displayName": "刑事一审被害人代理",
+      "goal": "为公诉案件被害人在一审形成庭前申请、举证质证、事实责任和量刑代理意见。",
+      "notFor": [
+        "被告人辩护",
+        "刑事附带民事请求的完整起诉成果"
+      ],
+      "deliverables": [
+        "为公诉案件被害人在一审形成庭前申请、举证质证、事实责任和量刑代理意见。"
+      ],
+      "path": "skills/刑事一审被害人代理",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "刑事辩护与刑事代理导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "被害人一审判决抗诉请求",
+      "kind": "atomic",
+      "displayName": "被害人一审判决抗诉请求",
+      "goal": "在收到一审判决后5日内，为被害人形成请求人民检察院抗诉的争点、期限和证据材料。",
+      "notFor": [
+        "被告人刑事上诉",
+        "自诉人上诉",
+        "生效裁判的一般刑事申诉"
+      ],
+      "deliverables": [
+        "在收到一审判决后5日内，为被害人形成请求人民检察院抗诉的争点、期限和证据材料。"
+      ],
+      "path": "skills/被害人一审判决抗诉请求",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "刑事辩护与刑事代理导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "刑事自诉可行性评估",
+      "kind": "atomic",
+      "displayName": "刑事自诉可行性评估",
+      "goal": "判断案件是否属于法定自诉范围并形成管辖、证据、请求和公诉分流意见。",
+      "notFor": [
+        "一般刑事控告评估",
+        "直接起草自诉状"
+      ],
+      "deliverables": [
+        "判断案件是否属于法定自诉范围并形成管辖、证据、请求和公诉分流意见。"
+      ],
+      "path": "skills/刑事自诉可行性评估",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "刑事辩护与刑事代理导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "刑事自诉起诉材料包",
+      "kind": "atomic",
+      "displayName": "刑事自诉起诉材料包",
+      "goal": "在自诉入口成立后形成刑事自诉状、请求、证明犯罪事实的证据目录和提交材料。",
+      "notFor": [
+        "公安机关管辖案件的一般控告",
+        "替代自诉可行性评估"
+      ],
+      "deliverables": [
+        "在自诉入口成立后形成刑事自诉状、请求、证明犯罪事实的证据目录和提交材料。"
+      ],
+      "path": "skills/刑事自诉起诉材料包",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "刑事辩护与刑事代理导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "刑事附带民事请求评估",
+      "kind": "atomic",
+      "displayName": "刑事附带民事请求评估",
+      "goal": "判断主体、损失、请求范围、责任人、时点和独立民事分流，形成附带民事诉讼决策意见。",
+      "notFor": [
+        "完整一般人身损害赔偿诉讼",
+        "直接起草附带民事起诉状"
+      ],
+      "deliverables": [
+        "判断主体、损失、请求范围、责任人、时点和独立民事分流，形成附带民事诉讼决策意见。"
+      ],
+      "path": "skills/刑事附带民事请求评估",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "刑事辩护与刑事代理导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "刑事附带民事起诉材料包",
+      "kind": "atomic",
+      "displayName": "刑事附带民事起诉材料包",
+      "goal": "在附带民事入口成立后形成起诉状、请求计算、责任主体和证据材料包。",
+      "notFor": [
+        "一般民事侵权完整起诉",
+        "被告侧附带民事抗辩"
+      ],
+      "deliverables": [
+        "在附带民事入口成立后形成起诉状、请求计算、责任主体和证据材料包。"
+      ],
+      "path": "skills/刑事附带民事起诉材料包",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "刑事辩护与刑事代理导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "未成年人审查起诉专项辩护意见",
+      "kind": "atomic",
+      "displayName": "未成年人审查起诉专项辩护意见",
+      "goal": "在审查起诉阶段为未成年犯罪嫌疑人就适龄、社会调查、附条件不起诉和教育挽救形成专项辩护意见。",
+      "notFor": [
+        "覆盖侦查至二审的未成年人全流程代理",
+        "成年人一般辩护"
+      ],
+      "deliverables": [
+        "在审查起诉阶段为未成年犯罪嫌疑人就适龄、社会调查、附条件不起诉和教育挽救形成专项辩护意见。"
+      ],
+      "path": "skills/未成年人审查起诉专项辩护意见",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "刑事辩护与刑事代理导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "侦查阶段非法取证线索保全与监督材料",
+      "kind": "atomic",
+      "displayName": "侦查阶段非法取证线索保全与监督材料",
+      "goal": "在侦查阶段仅就待核验的非法取证线索、讯问记录和同步录音录像缺失形成保全与监督材料。",
+      "notFor": [
+        "正式非法证据排除申请",
+        "一般侦查违法监督"
+      ],
+      "deliverables": [
+        "在侦查阶段仅就待核验的非法取证线索、讯问记录和同步录音录像缺失形成保全与监督材料。"
+      ],
+      "path": "skills/侦查阶段非法取证线索保全与监督材料",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "刑事辩护与刑事代理导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "附带民事部分上诉评估",
+      "kind": "atomic",
+      "displayName": "附带民事部分上诉评估",
+      "goal": "针对附带民事当事人收到的一审裁判，仅就附带民事部分形成上诉范围、期限和材料评估。",
+      "notFor": [
+        "挑战刑事定罪量刑的上诉",
+        "被害人抗诉请求"
+      ],
+      "deliverables": [
+        "针对附带民事当事人收到的一审裁判，仅就附带民事部分形成上诉范围、期限和材料评估。"
+      ],
+      "path": "skills/附带民事部分上诉评估",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "刑事辩护与刑事代理导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "侦查查封扣押冻结异议",
+      "kind": "atomic",
+      "displayName": "侦查查封扣押冻结异议",
+      "goal": "针对侦查阶段具体查封、扣押或冻结措施，为单一财产权利人形成权属与程序异议材料。",
+      "notFor": [
+        "裁判后财产执行异议",
+        "违法所得没收程序代理"
+      ],
+      "deliverables": [
+        "针对侦查阶段具体查封、扣押或冻结措施，为单一财产权利人形成权属与程序异议材料。"
+      ],
+      "path": "skills/侦查查封扣押冻结异议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "刑事辩护与刑事代理导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "被害人追缴退赔返还主张",
+      "kind": "atomic",
+      "displayName": "被害人追缴退赔返还主张",
+      "goal": "在审查起诉或一审中，为被害人就已识别涉案财物形成追缴、退赔或返还主张。",
+      "notFor": [
+        "第三方权属异议",
+        "附带民事完整起诉材料"
+      ],
+      "deliverables": [
+        "在审查起诉或一审中，为被害人就已识别涉案财物形成追缴、退赔或返还主张。"
+      ],
+      "path": "skills/被害人追缴退赔返还主张",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "刑事辩护与刑事代理导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "已立案撤案监督救济",
+      "kind": "atomic",
+      "displayName": "已立案撤案监督救济",
+      "goal": "针对公安机关已立案后撤销案件的具体决定，为控告方形成检察监督路径与材料。",
+      "notFor": [
+        "不予立案或逾期未立案救济",
+        "初次刑事控告"
+      ],
+      "deliverables": [
+        "针对公安机关已立案后撤销案件的具体决定，为控告方形成检察监督路径与材料。"
+      ],
+      "path": "skills/已立案撤案监督救济",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "刑事辩护与刑事代理导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "被害人不服不起诉上级检察院申诉材料",
+      "kind": "atomic",
+      "displayName": "被害人不服不起诉上级检察院申诉材料",
+      "goal": "在收到不起诉决定后7日内，为被害人向上一级检察院形成申诉、期限和材料。",
+      "notFor": [
+        "作出决定机关的复议",
+        "直接向法院起诉材料"
+      ],
+      "deliverables": [
+        "在收到不起诉决定后7日内，为被害人向上一级检察院形成申诉、期限和材料。"
+      ],
+      "path": "skills/被害人不服不起诉上级检察院申诉材料",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "刑事辩护与刑事代理导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "不起诉复查后被害人直接起诉材料",
+      "kind": "atomic",
+      "displayName": "不起诉复查后被害人直接起诉材料",
+      "goal": "在上级检察院维持不起诉且法定直接起诉条件具备时，为被害人形成向法院提交的材料。",
+      "notFor": [
+        "上级检察院申诉材料",
+        "普通刑事控告材料"
+      ],
+      "deliverables": [
+        "在上级检察院维持不起诉且法定直接起诉条件具备时，为被害人形成向法院提交的材料。"
+      ],
+      "path": "skills/不起诉复查后被害人直接起诉材料",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "刑事辩护与刑事代理导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "被告侧刑事和解赔偿提案",
+      "kind": "atomic",
+      "displayName": "被告侧刑事和解赔偿提案",
+      "goal": "为被告一方在合法自愿前提下形成赔偿、退赔、谅解或刑事和解的单方提案与履行方案。",
+      "notFor": [
+        "被害人赔偿或谅解决策",
+        "承诺撤案不起诉或从轻结果"
+      ],
+      "deliverables": [
+        "为被告一方在合法自愿前提下形成赔偿、退赔、谅解或刑事和解的单方提案与履行方案。"
+      ],
+      "path": "skills/被告侧刑事和解赔偿提案",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "刑事辩护与刑事代理导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "被害人侧刑事和解赔偿决策意见",
+      "kind": "atomic",
+      "displayName": "被害人侧刑事和解赔偿决策意见",
+      "goal": "为被害人一方在合法自愿前提下形成是否接受赔偿、退赔、谅解或刑事和解的决策意见。",
+      "notFor": [
+        "被告侧赔偿提案",
+        "以威胁利诱取得谅解"
+      ],
+      "deliverables": [
+        "为被害人一方在合法自愿前提下形成是否接受赔偿、退赔、谅解或刑事和解的决策意见。"
+      ],
+      "path": "skills/被害人侧刑事和解赔偿决策意见",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "刑事辩护与刑事代理导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "单位犯罪被追诉单位专项辩护意见",
+      "kind": "atomic",
+      "displayName": "单位犯罪被追诉单位专项辩护意见",
+      "goal": "在冲突筛查通过后，为被追诉单位及其诉讼代表就单位意志、主体资格与单位责任形成专项辩护意见。",
+      "notFor": [
+        "责任人员个人辩护",
+        "涉案财物第三方权属救济"
+      ],
+      "deliverables": [
+        "在冲突筛查通过后，为被追诉单位及其诉讼代表就单位意志、主体资格与单位责任形成专项辩护意见。"
+      ],
+      "path": "skills/单位犯罪被追诉单位专项辩护意见",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "刑事辩护与刑事代理导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "单位犯罪责任人员专项辩护意见",
+      "kind": "atomic",
+      "displayName": "单位犯罪责任人员专项辩护意见",
+      "goal": "在冲突筛查通过后，为单位犯罪案件中的单一责任人员就个人职责、主观要素与责任分配形成专项辩护意见。",
+      "notFor": [
+        "被追诉单位辩护",
+        "涉案财物第三方权属救济"
+      ],
+      "deliverables": [
+        "在冲突筛查通过后，为单位犯罪案件中的单一责任人员就个人职责、主观要素与责任分配形成专项辩护意见。"
+      ],
+      "path": "skills/单位犯罪责任人员专项辩护意见",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "刑事辩护与刑事代理导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "被害人代理证据收集调取申请",
+      "kind": "atomic",
+      "displayName": "被害人代理证据收集调取申请",
+      "goal": "为被害人代理一方就具体线索形成向检察机关或法院提交的证据收集调取申请。",
+      "notFor": [
+        "被告侧证据调取申请",
+        "无具体线索的泛化调查请求"
+      ],
+      "deliverables": [
+        "为被害人代理一方就具体线索形成向检察机关或法院提交的证据收集调取申请。"
+      ],
+      "path": "skills/被害人代理证据收集调取申请",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "刑事辩护与刑事代理导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "被害人代理证人鉴定人出庭与询问方案",
+      "kind": "atomic",
+      "displayName": "被害人代理证人鉴定人出庭与询问方案",
+      "goal": "为被害人代理一方就关键言词或鉴定证据形成出庭申请与询问方案。",
+      "notFor": [
+        "被告侧证人鉴定人方案",
+        "违法接触或影响证人"
+      ],
+      "deliverables": [
+        "为被害人代理一方就关键言词或鉴定证据形成出庭申请与询问方案。"
+      ],
+      "path": "skills/被害人代理证人鉴定人出庭与询问方案",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "刑事辩护与刑事代理导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "被害人代理庭审举证质证方案",
+      "kind": "atomic",
+      "displayName": "被害人代理庭审举证质证方案",
+      "goal": "为被害人代理一方围绕拟在法庭调查中出示的证据形成逐项举证质证方案。",
+      "notFor": [
+        "被告侧庭审质证方案",
+        "替代非法证据排除专项程序"
+      ],
+      "deliverables": [
+        "为被害人代理一方围绕拟在法庭调查中出示的证据形成逐项举证质证方案。"
+      ],
+      "path": "skills/被害人代理庭审举证质证方案",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "刑事辩护与刑事代理导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    }
+  ],
+  "guideName": "刑事辩护与刑事代理导航"
+}

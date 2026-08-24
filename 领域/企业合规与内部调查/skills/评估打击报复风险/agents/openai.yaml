@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估打击报复风险"
+  short_description: "判断举报后不利人事或合同动作是否构成报复迹象"
+  default_prompt: "使用 $评估打击报复风险，在公司或举报人代理的单一立场下评估打击报复风险，不写解除决定。"

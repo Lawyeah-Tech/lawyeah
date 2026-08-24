@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备减资通知与债权人保护"
+  short_description: "准备减资通知、公告和债权人清偿或担保安排"
+  default_prompt: "使用 $准备减资通知与债权人保护，在公司立场下准备中国大陆减资通知与债权人保护安排。"

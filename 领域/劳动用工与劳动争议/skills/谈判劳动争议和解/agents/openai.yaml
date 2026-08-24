@@ -1,0 +1,4 @@
+interface:
+  display_name: "谈判劳动争议和解"
+  short_description: "形成劳动争议谈判策略和和解协议"
+  default_prompt: "使用 $谈判劳动争议和解，劳动争议已形成，请按我方立场准备谈判策略和和解协议。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估死亡赔偿权利人与分配"
+  short_description: "确定死亡赔偿近亲属范围、请求分配和丧葬支出人"
+  default_prompt: "使用 $评估死亡赔偿权利人与分配，在权利人或抗辩方立场下评估人身损害死亡赔偿的权利人范围和分配。"

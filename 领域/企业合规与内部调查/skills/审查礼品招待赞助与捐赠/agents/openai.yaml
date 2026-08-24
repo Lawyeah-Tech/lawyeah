@@ -1,0 +1,4 @@
+interface:
+  display_name: "审查礼品、招待、赞助与捐赠"
+  short_description: "对单笔或一批给出允许禁止待核及入账利益冲突表"
+  default_prompt: "使用 $审查礼品招待赞助与捐赠，在单一公司立场下审查单笔或一批礼品、招待、赞助或捐赠。"

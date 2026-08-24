@@ -1,0 +1,4 @@
+interface:
+  display_name: "设计反商业贿赂与礼品招待制度"
+  short_description: "给出禁止批准记录稽核框架、审批阈值和例外"
+  default_prompt: "使用 $设计反商业贿赂与礼品招待制度，在单一公司立场下设计反商业贿赂与礼品招待制度框架。"

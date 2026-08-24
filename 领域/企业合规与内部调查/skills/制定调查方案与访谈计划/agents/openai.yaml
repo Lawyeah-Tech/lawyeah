@@ -1,0 +1,4 @@
+interface:
+  display_name: "制定调查方案与访谈计划"
+  short_description: "给出步骤优先级、访谈顺序和禁止动作"
+  default_prompt: "使用 $制定调查方案与访谈计划，在调查受托方单一立场下制定调查方案与访谈计划，不实施访谈、不违法取证。"

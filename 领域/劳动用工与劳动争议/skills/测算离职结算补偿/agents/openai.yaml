@@ -1,0 +1,4 @@
+interface:
+  display_name: "测算离职结算补偿"
+  short_description: "形成可复核离职款项测算表"
+  default_prompt: "使用 $测算离职结算补偿，测算解除终止下的补偿、赔偿、奖金及结算，输出可复核测算表。"

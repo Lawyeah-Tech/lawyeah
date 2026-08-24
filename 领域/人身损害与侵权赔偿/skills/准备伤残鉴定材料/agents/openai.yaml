@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备伤残鉴定材料"
+  short_description: "形成伤残或三期鉴定事项、检材、机构分流和发送前申请稿"
+  default_prompt: "使用 $准备伤残鉴定材料，准备中国大陆人身损害伤残鉴定申请材料。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "规划裁员安置"
+  short_description: "形成裁员安置的人员、成本、程序和批量文件方案"
+  default_prompt: "使用 $规划裁员安置，企业拟批量减员或重组，请形成人员选择、成本、程序和批量文件方案。"

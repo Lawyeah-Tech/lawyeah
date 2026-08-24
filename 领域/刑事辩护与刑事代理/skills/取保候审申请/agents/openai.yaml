@@ -1,0 +1,4 @@
+interface:
+  display_name: "取保候审申请"
+  short_description: "评估取保条件并形成可提交的取保候审申请及证明材料包"
+  default_prompt: "使用 $取保候审申请，针对已确定的阶段和决定机关，评估取保条件并形成可提交的取保候审申请材料。"

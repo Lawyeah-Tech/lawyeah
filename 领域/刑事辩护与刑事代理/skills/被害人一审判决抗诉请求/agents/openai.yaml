@@ -1,0 +1,4 @@
+interface:
+  display_name: "被害人一审判决抗诉请求"
+  short_description: "在五日内形成被害人请求检察院抗诉的争点和材料"
+  default_prompt: "使用 $被害人一审判决抗诉请求，在收到一审判决后五日内，为被害人形成请求检察院抗诉的争点、期限和材料。"

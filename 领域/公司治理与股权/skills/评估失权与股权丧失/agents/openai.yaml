@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估失权与股权丧失"
+  short_description: "评估失权条件、董事会决议和三十日异议路径"
+  default_prompt: "使用 $评估失权与股权丧失，在公司或被催缴股东立场下评估中国大陆股权失权与异议。"

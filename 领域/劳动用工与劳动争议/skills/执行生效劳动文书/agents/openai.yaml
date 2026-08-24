@@ -1,0 +1,4 @@
+interface:
+  display_name: "执行生效劳动文书"
+  short_description: "形成生效劳动文书的执行申请和财产线索包"
+  default_prompt: "使用 $执行生效劳动文书，持生效劳动裁决、判决或调解文书且对方未履行，请准备执行申请和财产线索包。"

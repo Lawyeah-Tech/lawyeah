@@ -1,0 +1,4 @@
+interface:
+  display_name: "刑辩律师执业权利救济"
+  short_description: "在会见阅卷调查或庭审受阻时形成执业权利救济材料"
+  default_prompt: "使用 $刑辩律师执业权利救济，在会见、阅卷、调查或庭审履职受阻时，形成可提交的律师执业权利救济材料。"

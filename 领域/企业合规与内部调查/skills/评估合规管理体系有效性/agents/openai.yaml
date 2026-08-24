@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估合规管理体系有效性"
+  short_description: "按组织政策执行监测整改五维判断已有体系是否真正运转"
+  default_prompt: "使用 $评估合规管理体系有效性，在单一公司立场下评估中国大陆企业已有合规管理体系是否有效运转。"

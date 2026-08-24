@@ -1,0 +1,4 @@
+interface:
+  display_name: "测算工伤待遇"
+  short_description: "形成工伤待遇测算表和材料缺口"
+  default_prompt: "使用 $测算工伤待遇，已有认定或鉴定等前置材料，请分项目分主体测算工伤待遇。"

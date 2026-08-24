@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估调解方案与效力"
+  short_description: "评估法院、人民调解或保险调解方案的效力与反悔窗口"
+  default_prompt: "使用 $评估人身调解方案与效力，在单一立场下评估人身损害调解方案的利弊、法律效力和反悔窗口。"

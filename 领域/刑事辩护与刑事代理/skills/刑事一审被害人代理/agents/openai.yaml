@@ -1,0 +1,4 @@
+interface:
+  display_name: "刑事一审被害人代理"
+  short_description: "为公诉被害人形成一审庭前申请和事实量刑代理意见"
+  default_prompt: "使用 $刑事一审被害人代理，为公诉案件被害人形成一审庭前申请、询问提纲和事实责任量刑代理意见。"

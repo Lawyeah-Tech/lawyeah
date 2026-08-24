@@ -1,0 +1,4 @@
+interface:
+  display_name: "当前阶段刑事辩护案件评估"
+  short_description: "在已确认立场和阶段后形成受材料限制的案件评估"
+  default_prompt: "使用 $当前阶段刑事辩护案件评估，在已确认单一被追诉方客户和当前阶段后，形成受材料范围限制的案件评估。"

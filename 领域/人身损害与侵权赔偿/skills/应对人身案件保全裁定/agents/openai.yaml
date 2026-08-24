@@ -1,0 +1,4 @@
+interface:
+  display_name: "应对保全裁定"
+  short_description: "应对人身损害保全裁定，准备复议或担保置换"
+  default_prompt: "使用 $应对人身案件保全裁定，在被保全方立场下应对人身损害案件的保全裁定，准备复议或担保置换方案。"

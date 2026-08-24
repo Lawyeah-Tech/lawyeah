@@ -1,0 +1,4 @@
+interface:
+  display_name: "提起查阅权诉讼"
+  short_description: "准备查阅权诉讼的起诉材料、范围和保密安排"
+  default_prompt: "使用 $提起查阅权诉讼，在股东立场下提起中国大陆股东查阅权诉讼。"

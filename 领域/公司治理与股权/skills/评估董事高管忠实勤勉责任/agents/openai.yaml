@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估董事高管忠实勤勉责任"
+  short_description: "评估董事高管忠实勤勉、自我交易、机会和竞业责任"
+  default_prompt: "使用 $评估董事高管忠实勤勉责任，在单一立场下评估中国大陆董事高管忠实勤勉责任。"

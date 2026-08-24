@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备股权价值或非货币出资鉴定"
+  short_description: "准备股权价值或非货币出资鉴定的事项、检材和申请稿"
+  default_prompt: "使用 $准备股权价值或非货币出资鉴定，在单一立场下准备中国大陆股权价值或非货币出资鉴定。"

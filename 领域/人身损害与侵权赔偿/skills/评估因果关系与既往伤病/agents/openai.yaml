@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估因果关系与既往伤病"
+  short_description: "判断既往伤病、介入因素与法律因果关系并分流鉴定"
+  default_prompt: "使用 $评估因果关系与既往伤病，在单一立场下评估人身损害中的因果关系、既往伤病和参与度接口。"

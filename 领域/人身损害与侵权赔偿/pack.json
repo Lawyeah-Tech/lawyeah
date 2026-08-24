@@ -1,0 +1,1666 @@
+{
+  "schemaVersion": 2,
+  "id": "handle-personal-injury",
+  "displayName": "人身损害与侵权赔偿",
+  "description": "处理中国大陆人身权益受损后的侵权责任评估、主体与保险覆盖、管辖时效、索赔通知、伤残鉴定材料、赔偿测算、证据、和解和一审两造的多 Skill 领域包。",
+  "version": "1.0.0",
+  "license": "Apache-2.0",
+  "jurisdiction": "CN-mainland",
+  "contentModel": "multi-skill-progressive-disclosure",
+  "reinstallStrategy": "replace",
+  "scope": {
+    "purpose": "处理人身权益受损后的侵权责任、损害项目、因果关系和赔偿实现。",
+    "inScope": [
+      "交通事故和一般人身侵权",
+      "产品或场所致人损害",
+      "工伤与第三人侵权竞合",
+      "伤残、损失和赔偿项目计算"
+    ],
+    "outOfScope": [
+      "工伤认定和劳动待遇申请本身",
+      "医疗机构诊疗行为主导的医疗损害鉴定",
+      "海上运输和船舶事故专门责任"
+    ],
+    "primaryDeliverables": [
+      "侵权责任评估",
+      "赔偿项目与金额测算",
+      "证据和鉴定方案",
+      "人身损害诉讼调解成果"
+    ]
+  },
+  "guideSkill": "人身损害与侵权赔偿导航",
+  "mcp": {
+    "contractRange": "0.0"
+  },
+  "skills": [
+    {
+      "id": "人身损害与侵权赔偿导航",
+      "kind": "guide",
+      "displayName": "人身损害与侵权赔偿导航",
+      "goal": "说明领域包的能力、边界和当前原子 Skill 全貌",
+      "notFor": [
+        "直接完成具体法律业务成果"
+      ],
+      "deliverables": [
+        "领域能力定位结果"
+      ],
+      "path": "skills/人身损害与侵权赔偿导航",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "准备伤残鉴定材料",
+          "评估人身侵权责任",
+          "应对人身损害一审",
+          "评估人身损害诉讼时效",
+          "评估责任主体与保险覆盖",
+          "建立人身损害证据案卷",
+          "谈判人身损害和解",
+          "测算人身损害赔偿",
+          "提起人身损害一审",
+          "准备侵权索赔通知",
+          "评估人身损害管辖",
+          "评估工伤与第三人侵权竞合",
+          "选择人身损害违约侵权竞合路径",
+          "评估过错与原因力",
+          "评估共同侵权与连带按份",
+          "评估用人者责任",
+          "评估提供劳务受害",
+          "评估自甘风险与公平分担",
+          "评估未成年或无行为能力受害人代理",
+          "提出人身案件管辖异议",
+          "评估道路交通事故责任与保险先行",
+          "评估铁路航空等非海事承运人人身损害",
+          "评估场所安全保障义务",
+          "评估产品致人损害",
+          "评估饲养动物致害",
+          "评估物件脱落坠落与高空抛物",
+          "评估施工地面地下设施致害",
+          "评估高度危险作业致害",
+          "评估教育机构责任",
+          "评估打架伤害民事路径",
+          "评估侵权人不明路径",
+          "提出伤残鉴定异议或重新鉴定",
+          "评估因果关系与既往伤病",
+          "评估伤残等级争议",
+          "评估死亡赔偿权利人与分配",
+          "评估精神损害赔偿",
+          "评估后续治疗费另行主张",
+          "准备监控保存通知",
+          "准备交强险商业险索赔材料",
+          "应对保险拒赔减赔",
+          "申请道路救助基金或垫付",
+          "复核交通事故认定",
+          "设计人身案件通知送达",
+          "保全现场监控与电子证据",
+          "评估证据或财产保全必要性",
+          "准备财产或证据保全申请",
+          "应对人身案件保全裁定",
+          "申请先予执行医疗费",
+          "申请人身案件调查令或取证",
+          "准备人身案件公证保全",
+          "起草人身损害和解协议",
+          "审查保险一次性了结弃权",
+          "办理人身和解执行力补强",
+          "评估人身调解方案与效力",
+          "选择诉讼调解或保险先行",
+          "直接起诉保险公司",
+          "追加变更责任主体",
+          "评估刑附民与另行起诉",
+          "准备人身损害庭审",
+          "提起人身损害上诉",
+          "准备后续治疗费另诉",
+          "评估反诉或抵销",
+          "应对人身损害二审",
+          "保险公司应对直接索赔",
+          "应对保险代位求偿",
+          "执行人身损害生效文书",
+          "应对人身损害执行",
+          "准备人身执行和解",
+          "分流刑民交叉",
+          "评估产品惩罚性赔偿"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估人身侵权责任",
+      "kind": "atomic",
+      "displayName": "评估人身侵权责任",
+      "goal": "在单方无冲突立场下形成可决策的人身侵权责任总图",
+      "notFor": [
+        "发送版索赔函",
+        "鉴定申请终稿",
+        "精算终稿",
+        "诉状或答辩",
+        "工伤认定待遇",
+        "医疗损害鉴定"
+      ],
+      "deliverables": [
+        "在单方无冲突立场下形成可决策的人身侵权责任总图"
+      ],
+      "path": "skills/评估人身侵权责任",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "人身损害与侵权赔偿导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估责任主体与保险覆盖",
+      "kind": "atomic",
+      "displayName": "评估责任主体与保险覆盖",
+      "goal": "判断谁可能承担责任以及交强险商业三者如何覆盖",
+      "notFor": [
+        "总体归责终局",
+        "保险拒赔终稿",
+        "工伤用人单位待遇"
+      ],
+      "deliverables": [
+        "判断谁可能承担责任以及交强险商业三者如何覆盖"
+      ],
+      "path": "skills/评估责任主体与保险覆盖",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "人身损害与侵权赔偿导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估人身损害诉讼时效",
+      "kind": "atomic",
+      "displayName": "评估人身损害诉讼时效",
+      "goal": "分列时效起算情景、中断中止和二十年，不给唯一截止日",
+      "notFor": [
+        "管辖连结点终局",
+        "管辖异议书终稿",
+        "完整立案包",
+        "用三年时效去算鉴定异议期"
+      ],
+      "deliverables": [
+        "分列时效起算情景、中断中止和二十年，不给唯一截止日"
+      ],
+      "path": "skills/评估人身损害诉讼时效",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "人身损害与侵权赔偿导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备侵权索赔通知",
+      "kind": "atomic",
+      "displayName": "准备侵权索赔通知",
+      "goal": "形成发送前索赔通知、项目表和送达留痕",
+      "notFor": [
+        "精算终稿",
+        "起诉状",
+        "把发送写成对方已认责"
+      ],
+      "deliverables": [
+        "形成发送前索赔通知、项目表和送达留痕"
+      ],
+      "path": "skills/准备侵权索赔通知",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "人身损害与侵权赔偿导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备伤残鉴定材料",
+      "kind": "atomic",
+      "displayName": "准备伤残鉴定材料",
+      "goal": "形成鉴定事项、检材、机构分流和发送前申请稿",
+      "notFor": [
+        "预测伤残等级",
+        "医疗损害鉴定",
+        "劳动能力鉴定"
+      ],
+      "deliverables": [
+        "形成鉴定事项、检材、机构分流和发送前申请稿"
+      ],
+      "path": "skills/准备伤残鉴定材料",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "人身损害与侵权赔偿导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "测算人身损害赔偿",
+      "kind": "atomic",
+      "displayName": "测算人身损害赔偿",
+      "goal": "形成可复核的分项测算，不认定责任已成立，不输出唯一必得总额",
+      "notFor": [
+        "定性总图",
+        "工伤待遇测算",
+        "把未知写成零"
+      ],
+      "deliverables": [
+        "形成可复核的分项测算，不认定责任已成立，不输出唯一必得总额"
+      ],
+      "path": "skills/测算人身损害赔偿",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "人身损害与侵权赔偿导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "建立人身损害证据案卷",
+      "kind": "atomic",
+      "displayName": "建立人身损害证据案卷",
+      "goal": "形成要件、举证责任、材料与合法补证矩阵",
+      "notFor": [
+        "策略总图",
+        "诉状",
+        "违法取证方案"
+      ],
+      "deliverables": [
+        "形成要件、举证责任、材料与合法补证矩阵"
+      ],
+      "path": "skills/建立人身损害证据案卷",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "人身损害与侵权赔偿导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "谈判人身损害和解",
+      "kind": "atomic",
+      "displayName": "谈判人身损害和解",
+      "goal": "形成底线、让步、弃权范围和执行力提示",
+      "notFor": [
+        "已谈拢的和解协议正文",
+        "覆盖未知伤残的概括弃权",
+        "答辩状"
+      ],
+      "deliverables": [
+        "形成底线、让步、弃权范围和执行力提示"
+      ],
+      "path": "skills/谈判人身损害和解",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "人身损害与侵权赔偿导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "提起人身损害一审",
+      "kind": "atomic",
+      "displayName": "提起人身损害一审",
+      "goal": "形成可提交的一审起诉包",
+      "notFor": [
+        "代提交",
+        "工伤待遇之诉",
+        "医疗损害主轴",
+        "海事专属"
+      ],
+      "deliverables": [
+        "形成可提交的一审起诉包"
+      ],
+      "path": "skills/提起人身损害一审",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "人身损害与侵权赔偿导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对人身损害一审",
+      "kind": "atomic",
+      "displayName": "应对人身损害一审",
+      "goal": "形成首次应诉答辩包",
+      "notFor": [
+        "劳动应诉",
+        "医疗损害应诉",
+        "主动起诉",
+        "只要管辖异议终稿且无实体"
+      ],
+      "deliverables": [
+        "形成首次应诉答辩包"
+      ],
+      "path": "skills/应对人身损害一审",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "人身损害与侵权赔偿导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估人身损害管辖",
+      "kind": "atomic",
+      "displayName": "评估人身损害管辖",
+      "goal": "单独委托核验侵权行为地、被告住所地、级别或专属；单方",
+      "notFor": [
+        "不代写管辖异议书",
+        "不与时效混算截止日"
+      ],
+      "deliverables": [
+        "单独委托核验侵权行为地、被告住所地、级别或专属；单方"
+      ],
+      "path": "skills/评估人身损害管辖",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "人身损害与侵权赔偿导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估工伤与第三人侵权竞合",
+      "kind": "atomic",
+      "displayName": "评估工伤与第三人侵权竞合",
+      "goal": "工作中或上下班因第三人受伤，需比较两套成果；单方",
+      "notFor": [
+        "不办理工伤认定、劳动能力鉴定或工伤待遇",
+        "该三段转劳动"
+      ],
+      "deliverables": [
+        "工作中或上下班因第三人受伤，需比较两套成果；单方"
+      ],
+      "path": "skills/评估工伤与第三人侵权竞合",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "人身损害与侵权赔偿导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "选择人身损害违约侵权竞合路径",
+      "kind": "atomic",
+      "displayName": "选择人身损害违约侵权竞合路径",
+      "goal": "同一事实可主张客运、服务或产品违约与侵权；单方",
+      "notFor": [
+        "人身伤害主轴留本领域",
+        "未成争改合同转审查（搁置）",
+        "不双份重复索赔"
+      ],
+      "deliverables": [
+        "同一事实可主张客运、服务或产品违约与侵权；单方"
+      ],
+      "path": "skills/选择人身损害违约侵权竞合路径",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "人身损害与侵权赔偿导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估过错与原因力",
+      "kind": "atomic",
+      "displayName": "评估过错与原因力",
+      "goal": "对方主张受害人过错、第三人原因或自甘风险；单方",
+      "notFor": [
+        "不输出唯一责任比例",
+        "不替代总体评估"
+      ],
+      "deliverables": [
+        "对方主张受害人过错、第三人原因或自甘风险；单方"
+      ],
+      "path": "skills/评估过错与原因力",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "人身损害与侵权赔偿导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估共同侵权与连带按份",
+      "kind": "atomic",
+      "displayName": "评估共同侵权与连带按份",
+      "goal": "共同实施、教唆帮助、共同危险或分别侵权；单方",
+      "notFor": [
+        "不把补充责任写成连带"
+      ],
+      "deliverables": [
+        "共同实施、教唆帮助、共同危险或分别侵权；单方"
+      ],
+      "path": "skills/评估共同侵权与连带按份",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "人身损害与侵权赔偿导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估用人者责任",
+      "kind": "atomic",
+      "displayName": "评估用人者责任",
+      "goal": "执行工作任务致害或工作人员受害涉及单位；单方",
+      "notFor": [
+        "劳动关系认定和工伤待遇转劳动",
+        "提供劳务受害另项"
+      ],
+      "deliverables": [
+        "执行工作任务致害或工作人员受害涉及单位；单方"
+      ],
+      "path": "skills/评估用人者责任",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "人身损害与侵权赔偿导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估提供劳务受害",
+      "kind": "atomic",
+      "displayName": "评估提供劳务受害",
+      "goal": "个人之间劳务或无偿帮工受害；单方",
+      "notFor": [
+        "依法应参加工伤统筹的劳动者转劳动",
+        "不办工伤认定"
+      ],
+      "deliverables": [
+        "个人之间劳务或无偿帮工受害；单方"
+      ],
+      "path": "skills/评估提供劳务受害",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "人身损害与侵权赔偿导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估自甘风险与公平分担",
+      "kind": "atomic",
+      "displayName": "评估自甘风险与公平分担",
+      "goal": "文体活动固有风险或均无过错需公平分担；单方",
+      "notFor": [
+        "不把自愿参加写成当然免责"
+      ],
+      "deliverables": [
+        "文体活动固有风险或均无过错需公平分担；单方"
+      ],
+      "path": "skills/评估自甘风险与公平分担",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "人身损害与侵权赔偿导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估未成年或无行为能力受害人代理",
+      "kind": "atomic",
+      "displayName": "评估未成年或无行为能力受害人代理",
+      "goal": "受害人为未成年人或无/限制行为能力人；监护人或代理人",
+      "notFor": [
+        "家事监护变更转婚家",
+        "教育机构责任另项"
+      ],
+      "deliverables": [
+        "受害人为未成年人或无/限制行为能力人；监护人或代理人"
+      ],
+      "path": "skills/评估未成年或无行为能力受害人代理",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "人身损害与侵权赔偿导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "提出人身案件管辖异议",
+      "kind": "atomic",
+      "displayName": "提出人身案件管辖异议",
+      "goal": "已被起诉，需在法定期限提管辖异议；被请求方",
+      "notFor": [
+        "与实体答辩分开",
+        "过期停止"
+      ],
+      "deliverables": [
+        "已被起诉，需在法定期限提管辖异议；被请求方"
+      ],
+      "path": "skills/提出人身案件管辖异议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "人身损害与侵权赔偿导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估道路交通事故责任与保险先行",
+      "kind": "atomic",
+      "displayName": "评估道路交通事故责任与保险先行",
+      "goal": "机动车道路交通事故需单独判断民事赔偿与交强险/商业三者顺序；单方",
+      "notFor": [
+        "不替代总体评估或精算",
+        "不办交警认定本身",
+        "铁路航空走承运人专项",
+        "海事转海事"
+      ],
+      "deliverables": [
+        "机动车道路交通事故需单独判断民事赔偿与交强险/商业三者顺序；单方"
+      ],
+      "path": "skills/评估道路交通事故责任与保险先行",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "人身损害与侵权赔偿导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估铁路航空等非海事承运人人身损害",
+      "kind": "atomic",
+      "displayName": "评估铁路航空等非海事承运人人身损害",
+      "goal": "旅客或第三人在铁路、航空等非海上运输中受伤；单方",
+      "notFor": [
+        "不按航班车次各建 Skill",
+        "海事船舶转海事",
+        "道路交强险走交通专项"
+      ],
+      "deliverables": [
+        "旅客或第三人在铁路、航空等非海上运输中受伤；单方"
+      ],
+      "path": "skills/评估铁路航空等非海事承运人人身损害",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "人身损害与侵权赔偿导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估场所安全保障义务",
+      "kind": "atomic",
+      "displayName": "评估场所安全保障义务",
+      "goal": "经营或公共场所、群众性活动致害；单方",
+      "notFor": [
+        "不得仅因发生损害推定场所过错",
+        "不把旧解释第六条当现行",
+        "C 端场所摔伤只分流"
+      ],
+      "deliverables": [
+        "经营或公共场所、群众性活动致害；单方"
+      ],
+      "path": "skills/评估场所安全保障义务",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "人身损害与侵权赔偿导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估产品致人损害",
+      "kind": "atomic",
+      "displayName": "评估产品致人损害",
+      "goal": "缺陷产品致人身损害；权利人或生产者销售者",
+      "notFor": [
+        "纯合同质量争议转合同争议",
+        "药品器械监管主轴转医疗"
+      ],
+      "deliverables": [
+        "缺陷产品致人身损害；权利人或生产者销售者"
+      ],
+      "path": "skills/评估产品致人损害",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "人身损害与侵权赔偿导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估饲养动物致害",
+      "kind": "atomic",
+      "displayName": "评估饲养动物致害",
+      "goal": "饲养或管理动物致伤；单方",
+      "notFor": [
+        "野生动物致害行政补偿另转"
+      ],
+      "deliverables": [
+        "饲养或管理动物致伤；单方"
+      ],
+      "path": "skills/评估饲养动物致害",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "人身损害与侵权赔偿导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估物件脱落坠落与高空抛物",
+      "kind": "atomic",
+      "displayName": "评估物件脱落坠落与高空抛物",
+      "goal": "建筑物搁置物、抛掷物或坠落物致害；单方",
+      "notFor": [
+        "不推定全体业主连带",
+        "高空抛物刑责转刑事"
+      ],
+      "deliverables": [
+        "建筑物搁置物、抛掷物或坠落物致害；单方"
+      ],
+      "path": "skills/评估物件脱落坠落与高空抛物",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "人身损害与侵权赔偿导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估施工地面地下设施致害",
+      "kind": "atomic",
+      "displayName": "评估施工地面地下设施致害",
+      "goal": "施工、地面施工、地下设施致人身损害；单方",
+      "notFor": [
+        "工程价款工期质量造价鉴定转建设工程",
+        "不办工伤"
+      ],
+      "deliverables": [
+        "施工、地面施工、地下设施致人身损害；单方"
+      ],
+      "path": "skills/评估施工地面地下设施致害",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "人身损害与侵权赔偿导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估高度危险作业致害",
+      "kind": "atomic",
+      "displayName": "评估高度危险作业致害",
+      "goal": "高度危险作业、高速轨道、高压、民用核设施等；单方",
+      "notFor": [
+        "环境生态修复转环境能源",
+        "海事转海事"
+      ],
+      "deliverables": [
+        "高度危险作业、高速轨道、高压、民用核设施等；单方"
+      ],
+      "path": "skills/评估高度危险作业致害",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "人身损害与侵权赔偿导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估教育机构责任",
+      "kind": "atomic",
+      "displayName": "评估教育机构责任",
+      "goal": "无/限制行为能力人在幼儿园学校受到人身损害；单方",
+      "notFor": [
+        "校园纪律处分不是本成果",
+        "监护变更转婚家"
+      ],
+      "deliverables": [
+        "无/限制行为能力人在幼儿园学校受到人身损害；单方"
+      ],
+      "path": "skills/评估教育机构责任",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "人身损害与侵权赔偿导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估打架伤害民事路径",
+      "kind": "atomic",
+      "displayName": "评估打架伤害民事路径",
+      "goal": "互殴或被打，需民事请求与刑民分流；单方",
+      "notFor": [
+        "不定罪",
+        "刑事控告辩护转刑事"
+      ],
+      "deliverables": [
+        "互殴或被打，需民事请求与刑民分流；单方"
+      ],
+      "path": "skills/评估打架伤害民事路径",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "人身损害与侵权赔偿导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估侵权人不明路径",
+      "kind": "atomic",
+      "displayName": "评估侵权人不明路径",
+      "goal": "肇事逃逸、高空抛物人或侵权人暂时不明；权利人",
+      "notFor": [
+        "不编造被告",
+        "不保证找到侵权人"
+      ],
+      "deliverables": [
+        "肇事逃逸、高空抛物人或侵权人暂时不明；权利人"
+      ],
+      "path": "skills/评估侵权人不明路径",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "人身损害与侵权赔偿导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "提出伤残鉴定异议或重新鉴定",
+      "kind": "atomic",
+      "displayName": "提出伤残鉴定异议或重新鉴定",
+      "goal": "鉴定意见作出后不服；单方",
+      "notFor": [
+        "不重做鉴定意见",
+        "不改鉴定机构内部方法"
+      ],
+      "deliverables": [
+        "鉴定意见作出后不服；单方"
+      ],
+      "path": "skills/提出伤残鉴定异议或重新鉴定",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "人身损害与侵权赔偿导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估因果关系与既往伤病",
+      "kind": "atomic",
+      "displayName": "评估因果关系与既往伤病",
+      "goal": "对方主张既往伤病、自身疾病或介入因素；单方",
+      "notFor": [
+        "不作医学诊断",
+        "诊疗过错主轴转医疗"
+      ],
+      "deliverables": [
+        "对方主张既往伤病、自身疾病或介入因素；单方"
+      ],
+      "path": "skills/评估因果关系与既往伤病",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "人身损害与侵权赔偿导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估伤残等级争议",
+      "kind": "atomic",
+      "displayName": "评估伤残等级争议",
+      "goal": "双方鉴定冲突或标准适用争议；单方",
+      "notFor": [
+        "不自行定级"
+      ],
+      "deliverables": [
+        "双方鉴定冲突或标准适用争议；单方"
+      ],
+      "path": "skills/评估伤残等级争议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "人身损害与侵权赔偿导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估死亡赔偿权利人与分配",
+      "kind": "atomic",
+      "displayName": "评估死亡赔偿权利人与分配",
+      "goal": "受害人死亡，近亲属范围或分配有争议；权利人或抗辩方",
+      "notFor": [
+        "继承析产转婚家",
+        "不办遗产管理"
+      ],
+      "deliverables": [
+        "受害人死亡，近亲属范围或分配有争议；权利人或抗辩方"
+      ],
+      "path": "skills/评估死亡赔偿权利人与分配",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "人身损害与侵权赔偿导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估精神损害赔偿",
+      "kind": "atomic",
+      "displayName": "评估精神损害赔偿",
+      "goal": "单独判断严重精神损害或交强险优先赔精神损害；单方",
+      "notFor": [
+        "不编造唯一抚慰金额",
+        "不替代总测算"
+      ],
+      "deliverables": [
+        "单独判断严重精神损害或交强险优先赔精神损害；单方"
+      ],
+      "path": "skills/评估精神损害赔偿",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "人身损害与侵权赔偿导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估后续治疗费另行主张",
+      "kind": "atomic",
+      "displayName": "评估后续治疗费另行主张",
+      "goal": "一次性赔偿后仍需后续手术或康复；权利人",
+      "notFor": [
+        "不把未知后续费写成已发生零"
+      ],
+      "deliverables": [
+        "一次性赔偿后仍需后续手术或康复；权利人"
+      ],
+      "path": "skills/评估后续治疗费另行主张",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "人身损害与侵权赔偿导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备监控保存通知",
+      "kind": "atomic",
+      "displayName": "准备监控保存通知",
+      "goal": "监控、巡检或后台记录可能覆盖；单方",
+      "notFor": [
+        "不等于法院保全",
+        "不指导侵入系统"
+      ],
+      "deliverables": [
+        "监控、巡检或后台记录可能覆盖；单方"
+      ],
+      "path": "skills/准备监控保存通知",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "人身损害与侵权赔偿导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备交强险商业险索赔材料",
+      "kind": "atomic",
+      "displayName": "准备交强险商业险索赔材料",
+      "goal": "向承保交强险或商业三者的保险人索赔；权利人或被保险人",
+      "notFor": [
+        "C 端保险理赔只分流",
+        "拒赔争议另项",
+        "不保证赔付"
+      ],
+      "deliverables": [
+        "向承保交强险或商业三者的保险人索赔；权利人或被保险人"
+      ],
+      "path": "skills/准备交强险商业险索赔材料",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "人身损害与侵权赔偿导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对保险拒赔减赔",
+      "kind": "atomic",
+      "displayName": "应对保险拒赔减赔",
+      "goal": "保险人拒赔、减赔或定损争议；被保险人或受害方",
+      "notFor": [
+        "不重写保险产品",
+        "纯财产车损可转保险相邻"
+      ],
+      "deliverables": [
+        "保险人拒赔、减赔或定损争议；被保险人或受害方"
+      ],
+      "path": "skills/应对保险拒赔减赔",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "人身损害与侵权赔偿导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "申请道路救助基金或垫付",
+      "kind": "atomic",
+      "displayName": "申请道路救助基金或垫付",
+      "goal": "抢救费用垫付或逃逸未知名；权利人",
+      "notFor": [
+        "不保证拨付",
+        "不替代侵权诉讼"
+      ],
+      "deliverables": [
+        "抢救费用垫付或逃逸未知名；权利人"
+      ],
+      "path": "skills/申请道路救助基金或垫付",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "人身损害与侵权赔偿导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "复核交通事故认定",
+      "kind": "atomic",
+      "displayName": "复核交通事故认定",
+      "goal": "对事故认定书事实或责任不服；单方",
+      "notFor": [
+        "不重写交警结论为民事终局",
+        "行政诉讼转行政"
+      ],
+      "deliverables": [
+        "对事故认定书事实或责任不服；单方"
+      ],
+      "path": "skills/复核交通事故认定",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "人身损害与侵权赔偿导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "设计人身案件通知送达",
+      "kind": "atomic",
+      "displayName": "设计人身案件通知送达",
+      "goal": "发函前需单独设计送达渠道和到达证据；单方",
+      "notFor": [
+        "不写通知实体内容"
+      ],
+      "deliverables": [
+        "发函前需单独设计送达渠道和到达证据；单方"
+      ],
+      "path": "skills/设计人身案件通知送达",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "人身损害与侵权赔偿导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "保全现场监控与电子证据",
+      "kind": "atomic",
+      "displayName": "保全现场监控与电子证据",
+      "goal": "现场、监控、聊天、行车记录仪可能灭失；单方",
+      "notFor": [
+        "不指导违法取证",
+        "工程现场造价转工程"
+      ],
+      "deliverables": [
+        "现场、监控、聊天、行车记录仪可能灭失；单方"
+      ],
+      "path": "skills/保全现场监控与电子证据",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "人身损害与侵权赔偿导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估证据或财产保全必要性",
+      "kind": "atomic",
+      "displayName": "评估证据或财产保全必要性",
+      "goal": "担心转移财产或证据灭失，尚未决定申请；单方",
+      "notFor": [
+        "不代写申请",
+        "先予执行另项"
+      ],
+      "deliverables": [
+        "担心转移财产或证据灭失，尚未决定申请；单方"
+      ],
+      "path": "skills/评估证据或财产保全必要性",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "人身损害与侵权赔偿导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备财产或证据保全申请",
+      "kind": "atomic",
+      "displayName": "准备财产或证据保全申请",
+      "goal": "已决定申请诉前或诉中保全；申请方",
+      "notFor": [
+        "不保证裁定",
+        "与先予执行不同"
+      ],
+      "deliverables": [
+        "已决定申请诉前或诉中保全；申请方"
+      ],
+      "path": "skills/准备财产或证据保全申请",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "人身损害与侵权赔偿导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对人身案件保全裁定",
+      "kind": "atomic",
+      "displayName": "应对人身案件保全裁定",
+      "goal": "财产或证据已被保全；被保全方",
+      "notFor": [
+        "不提供转移隐匿财产方案"
+      ],
+      "deliverables": [
+        "财产或证据已被保全；被保全方"
+      ],
+      "path": "skills/应对人身案件保全裁定",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "人身损害与侵权赔偿导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "申请先予执行医疗费",
+      "kind": "atomic",
+      "displayName": "申请先予执行医疗费",
+      "goal": "情况紧急需先行给付医疗费或生活费；申请方",
+      "notFor": [
+        "与保全不同",
+        "不保证裁定"
+      ],
+      "deliverables": [
+        "情况紧急需先行给付医疗费或生活费；申请方"
+      ],
+      "path": "skills/申请先予执行医疗费",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "人身损害与侵权赔偿导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "申请人身案件调查令或取证",
+      "kind": "atomic",
+      "displayName": "申请人身案件调查令或取证",
+      "goal": "监控、病历、保险或登记由第三方掌握；单方",
+      "notFor": [
+        "禁止违法调取个人信息"
+      ],
+      "deliverables": [
+        "监控、病历、保险或登记由第三方掌握；单方"
+      ],
+      "path": "skills/申请人身案件调查令或取证",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "人身损害与侵权赔偿导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备人身案件公证保全",
+      "kind": "atomic",
+      "displayName": "准备人身案件公证保全",
+      "goal": "需公证处固定发送或现状；单方",
+      "notFor": [
+        "不代替鉴定"
+      ],
+      "deliverables": [
+        "需公证处固定发送或现状；单方"
+      ],
+      "path": "skills/准备人身案件公证保全",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "人身损害与侵权赔偿导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "起草人身损害和解协议",
+      "kind": "atomic",
+      "displayName": "起草人身损害和解协议",
+      "goal": "条件已谈拢，需可签协议；单方",
+      "notFor": [
+        "与保险一次性了结弃权审查不同",
+        "司法确认另项"
+      ],
+      "deliverables": [
+        "条件已谈拢，需可签协议；单方"
+      ],
+      "path": "skills/起草人身损害和解协议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "人身损害与侵权赔偿导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "审查保险一次性了结弃权",
+      "kind": "atomic",
+      "displayName": "审查保险一次性了结弃权",
+      "goal": "保险人拿出结案协议或权益转让；权利人或被保险人",
+      "notFor": [
+        "不指导倒签或隐瞒伤情骗保"
+      ],
+      "deliverables": [
+        "保险人拿出结案协议或权益转让；权利人或被保险人"
+      ],
+      "path": "skills/审查保险一次性了结弃权",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "人身损害与侵权赔偿导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "办理人身和解执行力补强",
+      "kind": "atomic",
+      "displayName": "办理人身和解执行力补强",
+      "goal": "需司法确认、诉讼调解书或公证赋强；单方",
+      "notFor": [
+        "单独和解无执行力必须明示"
+      ],
+      "deliverables": [
+        "需司法确认、诉讼调解书或公证赋强；单方"
+      ],
+      "path": "skills/办理人身和解执行力补强",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "人身损害与侵权赔偿导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估人身调解方案与效力",
+      "kind": "atomic",
+      "displayName": "评估人身调解方案与效力",
+      "goal": "法院/人民调解或保险公司调解；单方",
+      "notFor": [
+        "不代替庭审策略"
+      ],
+      "deliverables": [
+        "法院/人民调解或保险公司调解；单方"
+      ],
+      "path": "skills/评估人身调解方案与效力",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "人身损害与侵权赔偿导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "选择诉讼调解或保险先行",
+      "kind": "atomic",
+      "displayName": "选择诉讼调解或保险先行",
+      "goal": "需比较保险理赔、调解、起诉、先予执行；主张方",
+      "notFor": [
+        "不写完整申请书"
+      ],
+      "deliverables": [
+        "需比较保险理赔、调解、起诉、先予执行；主张方"
+      ],
+      "path": "skills/选择诉讼调解或保险先行",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "人身损害与侵权赔偿导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "直接起诉保险公司",
+      "kind": "atomic",
+      "displayName": "直接起诉保险公司",
+      "goal": "同时或单独起诉交强险/商业三者保险人；原告",
+      "notFor": [
+        "与只诉侵权人不同",
+        "不保证在限额内全额"
+      ],
+      "deliverables": [
+        "同时或单独起诉交强险/商业三者保险人；原告"
+      ],
+      "path": "skills/直接起诉保险公司",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "人身损害与侵权赔偿导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "追加变更责任主体",
+      "kind": "atomic",
+      "displayName": "追加变更责任主体",
+      "goal": "立案后发现应追加用人者、场所、保险人；原告",
+      "notFor": [
+        "不重做整份起诉状除非必要"
+      ],
+      "deliverables": [
+        "立案后发现应追加用人者、场所、保险人；原告"
+      ],
+      "path": "skills/追加变更责任主体",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "人身损害与侵权赔偿导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估刑附民与另行起诉",
+      "kind": "atomic",
+      "displayName": "评估刑附民与另行起诉",
+      "goal": "同一伤害进入刑事程序，需选附带民事或另行民事；权利人",
+      "notFor": [
+        "不定罪",
+        "刑事程序权利转刑事"
+      ],
+      "deliverables": [
+        "同一伤害进入刑事程序，需选附带民事或另行民事；权利人"
+      ],
+      "path": "skills/评估刑附民与另行起诉",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "人身损害与侵权赔偿导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备人身损害庭审",
+      "kind": "atomic",
+      "displayName": "准备人身损害庭审",
+      "goal": "已开庭或即将开庭；单方代理",
+      "notFor": [
+        "不代替立案或仅和解"
+      ],
+      "deliverables": [
+        "已开庭或即将开庭；单方代理"
+      ],
+      "path": "skills/准备人身损害庭审",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "人身损害与侵权赔偿导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "提起人身损害上诉",
+      "kind": "atomic",
+      "displayName": "提起人身损害上诉",
+      "goal": "不服未生效裁判；上诉方",
+      "notFor": [
+        "不重做一审"
+      ],
+      "deliverables": [
+        "不服未生效裁判；上诉方"
+      ],
+      "path": "skills/提起人身损害上诉",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "人身损害与侵权赔偿导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备后续治疗费另诉",
+      "kind": "atomic",
+      "displayName": "准备后续治疗费另诉",
+      "goal": "前案未覆盖的后续治疗或新鉴定；权利人",
+      "notFor": [
+        "与评估后续治疗不同"
+      ],
+      "deliverables": [
+        "前案未覆盖的后续治疗或新鉴定；权利人"
+      ],
+      "path": "skills/准备后续治疗费另诉",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "人身损害与侵权赔偿导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估反诉或抵销",
+      "kind": "atomic",
+      "displayName": "评估反诉或抵销",
+      "goal": "被告拟主张互殴反请求或已付款抵销；被请求方",
+      "notFor": [
+        "不自动生成反诉状终稿"
+      ],
+      "deliverables": [
+        "被告拟主张互殴反请求或已付款抵销；被请求方"
+      ],
+      "path": "skills/评估反诉或抵销",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "人身损害与侵权赔偿导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对人身损害二审",
+      "kind": "atomic",
+      "displayName": "应对人身损害二审",
+      "goal": "收到上诉状；被上诉方",
+      "notFor": [
+        "不代替主动上诉"
+      ],
+      "deliverables": [
+        "收到上诉状；被上诉方"
+      ],
+      "path": "skills/应对人身损害二审",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "人身损害与侵权赔偿导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "保险公司应对直接索赔",
+      "kind": "atomic",
+      "displayName": "保险公司应对直接索赔",
+      "goal": "交强险或商业三者保险人被直接起诉；保险人",
+      "notFor": [
+        "不代替投保人实体侵权抗辩全部"
+      ],
+      "deliverables": [
+        "交强险或商业三者保险人被直接起诉；保险人"
+      ],
+      "path": "skills/保险公司应对直接索赔",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "人身损害与侵权赔偿导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对保险代位求偿",
+      "kind": "atomic",
+      "displayName": "应对保险代位求偿",
+      "goal": "保险人已赔付后向第三人追偿，或受害方被追索医疗费；单方",
+      "notFor": [
+        "工伤基金追偿医疗费与民事代位分列"
+      ],
+      "deliverables": [
+        "保险人已赔付后向第三人追偿，或受害方被追索医疗费；单方"
+      ],
+      "path": "skills/应对保险代位求偿",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "人身损害与侵权赔偿导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "执行人身损害生效文书",
+      "kind": "atomic",
+      "displayName": "执行人身损害生效文书",
+      "goal": "持判决、调解书未获履行；权利人",
+      "notFor": [
+        "不重审实体",
+        "工伤待遇执行转劳动"
+      ],
+      "deliverables": [
+        "持判决、调解书未获履行；权利人"
+      ],
+      "path": "skills/执行人身损害生效文书",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "人身损害与侵权赔偿导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对人身损害执行",
+      "kind": "atomic",
+      "displayName": "应对人身损害执行",
+      "goal": "被执行人收到执行；被执行方",
+      "notFor": [
+        "禁止隐匿转移"
+      ],
+      "deliverables": [
+        "被执行人收到执行；被执行方"
+      ],
+      "path": "skills/应对人身损害执行",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "人身损害与侵权赔偿导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备人身执行和解",
+      "kind": "atomic",
+      "displayName": "准备人身执行和解",
+      "goal": "执行中拟分期或以物抵债；单方",
+      "notFor": [
+        "不放弃已生效债权除非明示"
+      ],
+      "deliverables": [
+        "执行中拟分期或以物抵债；单方"
+      ],
+      "path": "skills/准备人身执行和解",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "人身损害与侵权赔偿导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "分流刑民交叉",
+      "kind": "atomic",
+      "displayName": "分流刑民交叉",
+      "goal": "出现故意伤害、交通肇事、逃逸；单方",
+      "notFor": [
+        "不定罪",
+        "刑事成果转刑事领域"
+      ],
+      "deliverables": [
+        "出现故意伤害、交通肇事、逃逸；单方"
+      ],
+      "path": "skills/分流刑民交叉",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "人身损害与侵权赔偿导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估产品惩罚性赔偿",
+      "kind": "atomic",
+      "displayName": "评估产品惩罚性赔偿",
+      "goal": "明知产品存在缺陷仍生产销售致死亡或健康严重损害；权利人",
+      "notFor": [
+        "消费者三倍价金路径与人身惩罚性分列"
+      ],
+      "deliverables": [
+        "明知产品存在缺陷仍生产销售致死亡或健康严重损害；权利人"
+      ],
+      "path": "skills/评估产品惩罚性赔偿",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "人身损害与侵权赔偿导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    }
+  ],
+  "guideName": "人身损害与侵权赔偿导航"
+}

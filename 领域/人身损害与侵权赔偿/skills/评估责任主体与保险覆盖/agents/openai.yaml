@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估责任主体与保险覆盖"
+  short_description: "列出可能赔偿义务人、责任形态和交强险商业三者接口"
+  default_prompt: "使用 $评估责任主体与保险覆盖，在单一立场下评估中国大陆人身损害的责任主体与保险覆盖。"

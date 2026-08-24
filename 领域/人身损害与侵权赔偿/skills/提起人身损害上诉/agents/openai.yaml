@@ -1,0 +1,4 @@
+interface:
+  display_name: "提起人身损害上诉"
+  short_description: "在期限内准备人身损害上诉状、范围和理由"
+  default_prompt: "使用 $提起人身损害上诉，在上诉方立场下对尚未生效的人身损害裁判准备上诉状、范围、期限和理由。"

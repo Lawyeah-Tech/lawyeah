@@ -1,0 +1,4 @@
+interface:
+  display_name: "制定突击检查现场预案"
+  short_description: "预先设定现场角色、证件核验、封存配合和禁止动作"
+  default_prompt: "使用 $制定突击检查现场预案，在单一公司立场下制定尚未被查时的突击检查现场预案，不教销毁或藏匿。"

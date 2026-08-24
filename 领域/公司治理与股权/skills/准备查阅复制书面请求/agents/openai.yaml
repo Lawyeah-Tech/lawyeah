@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备查阅复制书面请求"
+  short_description: "起草说明目的和范围的发送前查阅书面请求"
+  default_prompt: "使用 $准备查阅复制书面请求，在股东立场下准备中国大陆查阅复制书面请求。"

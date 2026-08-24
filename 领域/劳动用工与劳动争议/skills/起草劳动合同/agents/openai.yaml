@@ -1,0 +1,4 @@
+interface:
+  display_name: "起草劳动合同"
+  short_description: "核验用工条件与强制规则并形成可签或受限的劳动合同文件包"
+  default_prompt: "使用 $起草劳动合同 核验主体、用工条件、规则和文件冲突，并起草劳动合同及适用附件。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估刑附民与另行起诉"
+  short_description: "比较刑事附带民事与另行提起民事的范围和停止项"
+  default_prompt: "使用 $评估刑附民与另行起诉，在权利人立场下比较同一伤害下刑事附带民事与另行民事诉讼的路径和赔偿范围。"

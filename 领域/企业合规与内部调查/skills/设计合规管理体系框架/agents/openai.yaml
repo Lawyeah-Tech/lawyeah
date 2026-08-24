@@ -1,0 +1,4 @@
+interface:
+  display_name: "设计合规管理体系框架"
+  short_description: "给出预防发现应对整改闭环的组织政策流程监测资源框架"
+  default_prompt: "使用 $设计合规管理体系框架，在单一公司立场下设计中国大陆企业合规管理体系框架，不写劳动规章全文。"

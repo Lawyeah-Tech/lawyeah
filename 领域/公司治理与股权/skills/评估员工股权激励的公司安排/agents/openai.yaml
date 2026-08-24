@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估员工股权激励的公司安排"
+  short_description: "比较股权、期权或持股平台的公司侧结构与治理影响"
+  default_prompt: "使用 $评估员工股权激励的公司安排，在公司立场下评估中国大陆员工股权激励的公司安排。"

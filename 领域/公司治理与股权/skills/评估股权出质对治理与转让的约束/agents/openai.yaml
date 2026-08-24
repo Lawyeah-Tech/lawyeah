@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估股权出质对治理与转让的约束"
+  short_description: "评估股权出质对表决、分红、转让和实现后治理的影响"
+  default_prompt: "使用 $评估股权出质对治理与转让的约束，在单一立场下评估中国大陆股权出质对治理与转让的约束。"

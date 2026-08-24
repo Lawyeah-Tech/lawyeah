@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备公司设立文件与登记"
+  short_description: "形成设立章程、出资安排和登记核验清单"
+  default_prompt: "使用 $准备公司设立文件与登记，在设立方立场下准备中国大陆公司设立文件与登记核验清单。"

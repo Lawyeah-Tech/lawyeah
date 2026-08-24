@@ -1,0 +1,4 @@
+interface:
+  display_name: "应对股权冻结或行为保全"
+  short_description: "准备对股权冻结或行为保全的复议、异议和担保置换"
+  default_prompt: "使用 $应对股权冻结或行为保全，在被保全方立场下应对中国大陆股权冻结或行为保全。"

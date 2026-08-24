@@ -1,0 +1,4 @@
+interface:
+  display_name: "审查招聘流程"
+  short_description: "形成招聘合规意见和修改清单"
+  default_prompt: "使用 $审查招聘流程，审查招聘信息、筛选、背景调查或录用撤回，输出合规意见和修改清单。"

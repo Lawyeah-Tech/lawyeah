@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备民事追偿诉讼材料"
+  short_description: "整理请求、管辖接口、证据目录及与调查报告的衔接"
+  default_prompt: "使用 $准备民事追偿诉讼材料，在单一公司立场下准备对责任人或不法得利人的民事追偿诉讼材料，不写刑事控告。"

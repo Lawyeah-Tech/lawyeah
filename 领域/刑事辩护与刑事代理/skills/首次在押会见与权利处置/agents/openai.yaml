@@ -1,0 +1,4 @@
+interface:
+  display_name: "首次在押会见与权利处置"
+  short_description: "形成首次在押会见提纲、核验记录和会后处置清单"
+  default_prompt: "使用 $首次在押会见与权利处置，为首次会见在押犯罪嫌疑人或被告人形成会见提纲、核验记录和会后处置清单。"

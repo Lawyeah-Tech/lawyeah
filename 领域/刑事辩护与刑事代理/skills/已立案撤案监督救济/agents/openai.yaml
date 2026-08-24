@@ -1,0 +1,4 @@
+interface:
+  display_name: "已立案撤案监督救济"
+  short_description: "就立案后撤案形成控告方检察监督路径和材料"
+  default_prompt: "使用 $已立案撤案监督救济，针对公安机关立案后又撤案的决定，为控告方形成检察监督路径和材料。"

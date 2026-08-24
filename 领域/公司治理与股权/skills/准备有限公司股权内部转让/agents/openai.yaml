@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备有限公司股权内部转让"
+  short_description: "形成优先购买书面通知、转让文件和名册登记接口"
+  default_prompt: "使用 $准备有限公司股权内部转让，准备中国大陆有限公司股权转让的优先购买通知与变更接口。"

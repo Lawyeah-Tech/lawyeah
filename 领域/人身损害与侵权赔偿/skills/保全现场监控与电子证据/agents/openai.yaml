@@ -1,0 +1,4 @@
+interface:
+  display_name: "保全现场监控与电子证据"
+  short_description: "规划现场、监控、聊天和行车记录仪的合法保全步骤"
+  default_prompt: "使用 $保全现场监控与电子证据，在单一立场下规划人身损害现场、监控和电子证据的合法保全步骤。"

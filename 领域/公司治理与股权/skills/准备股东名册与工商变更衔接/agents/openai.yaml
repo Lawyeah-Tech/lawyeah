@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备股东名册与工商变更衔接"
+  short_description: "准备股东名册记载请求和工商变更衔接"
+  default_prompt: "使用 $准备股东名册与工商变更衔接，在权利人立场下准备中国大陆股东名册记载与变更登记请求。"

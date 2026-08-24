@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估董监高合规职责缺口"
+  short_description: "对照忠实勤勉与合规决策痕迹判断治理层履职缺口"
+  default_prompt: "使用 $评估董监高合规职责缺口，在单一治理层或公司立场下评估董监高合规职责缺口。"

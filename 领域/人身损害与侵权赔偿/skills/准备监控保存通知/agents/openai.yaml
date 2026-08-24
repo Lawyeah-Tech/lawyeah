@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备监控保存通知"
+  short_description: "在监控可能覆盖前准备保存通知和送达设计"
+  default_prompt: "使用 $准备监控保存通知，在单一立场下准备人身损害相关监控或后台记录的保存通知和送达设计。"

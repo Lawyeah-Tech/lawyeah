@@ -1,0 +1,4 @@
+interface:
+  display_name: "设计催缴、召集、优先购买通知送达"
+  short_description: "设计催缴、召集或优先购买通知的渠道、回证和失败升级"
+  default_prompt: "使用 $设计催缴召集优先购买通知送达，在单一立场下设计中国大陆公司治理通知的送达与回证。"

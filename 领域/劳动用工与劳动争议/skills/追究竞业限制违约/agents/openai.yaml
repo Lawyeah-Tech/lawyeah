@@ -1,0 +1,4 @@
+interface:
+  display_name: "追究竞业限制违约"
+  short_description: "形成竞业违约有效性、履行、行为和请求证据方案"
+  default_prompt: "使用 $追究竞业限制违约，单位发现竞争行为，请评估有效性、履行、行为和请求证据方案。"

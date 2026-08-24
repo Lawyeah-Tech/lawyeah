@@ -1,0 +1,4 @@
+interface:
+  display_name: "选择公司类型与机关结构"
+  short_description: "比较有限／股份和董事会／监事／审计委员会并列出章程必载"
+  default_prompt: "使用 $选择公司类型与机关结构，在单一立场下比较中国大陆公司类型与机关结构。"

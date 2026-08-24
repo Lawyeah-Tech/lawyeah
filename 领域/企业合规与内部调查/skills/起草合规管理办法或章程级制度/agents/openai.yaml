@@ -1,0 +1,4 @@
+interface:
+  display_name: "起草合规管理办法或章程级制度"
+  short_description: "形成可审议的合规基本制度发送前稿及生效条件"
+  default_prompt: "使用 $起草合规管理办法或章程级制度，在单一公司立场下起草可审议的合规管理办法或章程级制度发送前稿。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估后续治疗费另行主张"
+  short_description: "判断一次性赔偿后后续治疗费能否另行主张"
+  default_prompt: "使用 $评估后续治疗费另行主张，在权利人立场下评估一次性赔偿后后续治疗费另行主张的条件和既判力边界。"

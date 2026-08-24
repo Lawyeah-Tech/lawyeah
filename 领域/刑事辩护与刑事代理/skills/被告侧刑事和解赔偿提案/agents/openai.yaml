@@ -1,0 +1,4 @@
+interface:
+  display_name: "被告侧刑事和解赔偿提案"
+  short_description: "形成被追诉方合法自愿的赔偿谅解或和解提案"
+  default_prompt: "使用 $被告侧刑事和解赔偿提案，在合法自愿前提下，为被追诉方形成赔偿、退赔、谅解或和解提案。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "起草股东和解或退出协议"
+  short_description: "起草已谈拢条件的股东退出或和解协议"
+  default_prompt: "使用 $起草股东和解或退出协议，在单一立场下起草中国大陆股东和解或退出协议。"

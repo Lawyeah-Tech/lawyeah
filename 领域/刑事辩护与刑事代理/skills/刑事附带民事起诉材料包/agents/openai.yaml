@@ -1,0 +1,4 @@
+interface:
+  display_name: "刑事附带民事起诉材料包"
+  short_description: "形成可提交的附带民事起诉状、计算和证据材料包"
+  default_prompt: "使用 $刑事附带民事起诉材料包，在附带民事入口成立后，形成可提交的起诉状、损失计算和证据材料。"

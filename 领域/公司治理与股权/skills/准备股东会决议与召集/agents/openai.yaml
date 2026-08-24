@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备股东会决议与召集"
+  short_description: "形成发送前召集通知和可签署决议或书面决定"
+  default_prompt: "使用 $准备股东会决议与召集，准备中国大陆公司股东会召集通知与决议草稿。"

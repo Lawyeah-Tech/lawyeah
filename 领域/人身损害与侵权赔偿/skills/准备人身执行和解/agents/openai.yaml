@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备执行和解"
+  short_description: "准备执行中的分期或以物抵债要点及违约恢复执行风险"
+  default_prompt: "使用 $准备人身执行和解，在单一立场下准备人身损害执行和解的分期或以物抵债要点，并提示违约恢复执行。"

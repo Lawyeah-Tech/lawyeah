@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备第三方尽职调查工作底稿"
+  short_description: "形成高风险第三方的问题清单、材料、访谈和结论状态"
+  default_prompt: "使用 $准备第三方尽职调查工作底稿，在单一公司立场下准备高风险第三方廉洁尽职调查工作底稿。"

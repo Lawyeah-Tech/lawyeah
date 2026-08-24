@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估人身损害管辖"
+  short_description: "核验侵权行为地、被告住所地、专属和仲裁红旗，不代写异议书"
+  default_prompt: "使用 $评估人身损害管辖，在单一立场下评估中国大陆人身损害案件的管辖连结点和专属或仲裁红旗。"

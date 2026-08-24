@@ -1,0 +1,1317 @@
+{
+  "schemaVersion": 2,
+  "id": "handle-labor-employment",
+  "displayName": "劳动用工与劳动争议",
+  "description": "处理中国大陆劳动关系建立、履行、变更、解除、工伤响应和争议评估的多 Skill 领域包。",
+  "version": "1.0.0",
+  "license": "Apache-2.0",
+  "jurisdiction": "CN-mainland",
+  "contentModel": "multi-skill-progressive-disclosure",
+  "reinstallStrategy": "replace",
+  "scope": {
+    "purpose": "支持用人单位、劳动者及其代理人完成相互独立、可验收的劳动法律专业成果。",
+    "inScope": [
+      "劳动关系和用工责任主体",
+      "劳动合同和规章制度",
+      "薪酬工时休假审计与测算",
+      "双方个体退出评估与单位解除实施",
+      "职工工伤初期行动",
+      "劳动争议总体评估"
+    ],
+    "outOfScope": [
+      "第三人侵权损害赔偿",
+      "一般商业合同",
+      "企业级综合合规与数据治理",
+      "行政复议诉讼通用代理",
+      "境外当地劳动法",
+      "刑事责任和工程合同争议"
+    ],
+    "primaryDeliverables": [
+      "主体关系与责任识别意见",
+      "劳动合同和规章制度实施包",
+      "薪酬工时休假审计及测算",
+      "个体退出评估和解除终止实施包",
+      "工伤初期行动方案",
+      "劳动争议评估矩阵"
+    ]
+  },
+  "guideSkill": "劳动用工与劳动争议导航",
+  "mcp": {
+    "contractRange": "0.0"
+  },
+  "skills": [
+    {
+      "id": "劳动用工与劳动争议导航",
+      "kind": "guide",
+      "displayName": "劳动用工与劳动争议导航",
+      "goal": "说明领域包的能力、边界和当前原子 Skill 全貌",
+      "notFor": [
+        "直接完成具体法律业务成果"
+      ],
+      "deliverables": [
+        "领域能力定位结果"
+      ],
+      "path": "skills/劳动用工与劳动争议导航",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "识别劳动关系与责任主体",
+          "建立劳动规章制度",
+          "审计薪酬工时休假",
+          "起草劳动合同",
+          "测算工资工时休假权益",
+          "评估单位个体退出",
+          "评估劳动者退出应对",
+          "实施单位解除终止",
+          "评估劳动争议",
+          "规划职工工伤初期行动",
+          "综合用工合规审计",
+          "设计用工模式",
+          "审查招聘流程",
+          "准备录用入职包",
+          "审查劳动合同",
+          "评估劳动合同续订",
+          "实施劳动条件变更",
+          "测算离职结算补偿",
+          "规划社会保险整改",
+          "规划住房公积金整改",
+          "准备社保补缴征缴申请",
+          "准备住房公积金追缴申请",
+          "评估社保待遇损失",
+          "评估特殊保护员工行动",
+          "设计绩效改善",
+          "调查工作场所投诉",
+          "决定劳动纪律处分",
+          "准备协商解除",
+          "规划裁员安置",
+          "设计竞业限制安排",
+          "追究竞业限制违约",
+          "挑战竞业限制",
+          "开展劳动专项尽调",
+          "实施员工转移",
+          "协调单位工伤事故响应",
+          "单位申请工伤认定",
+          "职工申请工伤认定",
+          "应对工伤认定调查",
+          "测算工伤待遇",
+          "评估工伤行政救济实体问题",
+          "准备工伤待遇请求",
+          "分流劳动行政救济",
+          "评估劳动者在职权利",
+          "建立劳动争议证据案卷",
+          "谈判劳动争议和解",
+          "提起劳动仲裁",
+          "应对劳动仲裁",
+          "准备劳动仲裁庭审",
+          "提起劳动争议一审",
+          "应对劳动争议一审",
+          "提起劳动争议上诉",
+          "应对劳动争议二审",
+          "单位申请撤销终局裁决",
+          "执行生效劳动文书",
+          "应对劳动执行"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "识别劳动关系与责任主体",
+      "kind": "atomic",
+      "displayName": "识别劳动关系与责任主体",
+      "goal": "基于既有用工事实形成主体关系图和责任主体识别意见",
+      "notFor": [
+        "欠付金额计算",
+        "仲裁诉讼方案",
+        "工伤认定结论"
+      ],
+      "deliverables": [
+        "主体关系图",
+        "责任主体识别意见"
+      ],
+      "path": "skills/识别劳动关系与责任主体",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "劳动用工与劳动争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "起草劳动合同",
+      "kind": "atomic",
+      "displayName": "起草劳动合同",
+      "goal": "为中国大陆实际用工形成可签署劳动合同及必需附件",
+      "notFor": [
+        "一般商业合同",
+        "既有合同争议评估"
+      ],
+      "deliverables": [
+        "劳动合同定稿",
+        "必需附件和签署清单"
+      ],
+      "path": "skills/起草劳动合同",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "劳动用工与劳动争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "建立劳动规章制度",
+      "kind": "atomic",
+      "displayName": "建立劳动规章制度",
+      "goal": "形成劳动规章制度文本及民主、公示和实施材料",
+      "notFor": [
+        "个案处分决定",
+        "综合企业合规体系"
+      ],
+      "deliverables": [
+        "制度文本",
+        "民主公示实施包"
+      ],
+      "path": "skills/建立劳动规章制度",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "劳动用工与劳动争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "审计薪酬工时休假",
+      "kind": "atomic",
+      "displayName": "审计薪酬工时休假",
+      "goal": "审计用人单位工资、工时和休假合规并形成补救方案",
+      "notFor": [
+        "单个劳动者最终权益主张",
+        "离职补偿测算"
+      ],
+      "deliverables": [
+        "专项审计表",
+        "差额和补救方案"
+      ],
+      "path": "skills/审计薪酬工时休假",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "劳动用工与劳动争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "测算工资工时休假权益",
+      "kind": "atomic",
+      "displayName": "测算工资工时休假权益",
+      "goal": "形成个人工资、工时和休假权益的可复核测算",
+      "notFor": [
+        "离职补偿",
+        "工伤待遇",
+        "诉讼请求整体设计"
+      ],
+      "deliverables": [
+        "可复核待遇测算表",
+        "参数缺口"
+      ],
+      "path": "skills/测算工资工时休假权益",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "劳动用工与劳动争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估单位个体退出",
+      "kind": "atomic",
+      "displayName": "评估单位个体退出",
+      "goal": "为用人单位比较个体退出路径、成本、证据和停止条件",
+      "notFor": [
+        "正式实施解除终止",
+        "批量裁员"
+      ],
+      "deliverables": [
+        "退出方案矩阵",
+        "证据缺口和停止条件"
+      ],
+      "path": "skills/评估单位个体退出",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "劳动用工与劳动争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估劳动者退出应对",
+      "kind": "atomic",
+      "displayName": "评估劳动者退出应对",
+      "goal": "为劳动者形成辞职、被迫离职或协商退出的行动方案",
+      "notFor": [
+        "仲裁申请",
+        "完整权益金额测算"
+      ],
+      "deliverables": [
+        "退出行动方案",
+        "通知、证据、权益和谈判建议"
+      ],
+      "path": "skills/评估劳动者退出应对",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "劳动用工与劳动争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "实施单位解除终止",
+      "kind": "atomic",
+      "displayName": "实施单位解除终止",
+      "goal": "在单位已作出决定后形成解除终止实施包",
+      "notFor": [
+        "退出路径前置比较",
+        "批量裁员方案"
+      ],
+      "deliverables": [
+        "通知工会和送达材料",
+        "结算交接和证据实施包"
+      ],
+      "path": "skills/实施单位解除终止",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "劳动用工与劳动争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "规划职工工伤初期行动",
+      "kind": "atomic",
+      "displayName": "规划职工工伤初期行动",
+      "goal": "为职工疑似工伤形成初期期限、证据、通知和保障行动方案",
+      "notFor": [
+        "工伤认定结论",
+        "劳动能力鉴定",
+        "工伤待遇测算"
+      ],
+      "deliverables": [
+        "工伤初期行动方案",
+        "证据和期限清单"
+      ],
+      "path": "skills/规划职工工伤初期行动",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "劳动用工与劳动争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估劳动争议",
+      "kind": "atomic",
+      "displayName": "评估劳动争议",
+      "goal": "在仲裁诉讼或和解前形成劳动争议总体评估",
+      "notFor": [
+        "仲裁诉讼立案文书",
+        "庭审代理",
+        "执行材料"
+      ],
+      "deliverables": [
+        "请求抗辩矩阵",
+        "程序、金额区间和关键缺口"
+      ],
+      "path": "skills/评估劳动争议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "劳动用工与劳动争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "综合用工合规审计",
+      "kind": "atomic",
+      "displayName": "综合用工合规审计",
+      "goal": "企业要求检查限定组织、期间和样本；管理方",
+      "notFor": [
+        "不重写全部制度",
+        "区别于交易尽调和专项薪酬审计"
+      ],
+      "deliverables": [
+        "企业要求检查限定组织、期间和样本；管理方"
+      ],
+      "path": "skills/综合用工合规审计",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "劳动用工与劳动争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "设计用工模式",
+      "kind": "atomic",
+      "displayName": "设计用工模式",
+      "goal": "实施前比较直营、派遣、外包、平台等；管理方",
+      "notFor": [
+        "不判断既有事实关系或起草一般商业外包合同"
+      ],
+      "deliverables": [
+        "实施前比较直营、派遣、外包、平台等；管理方"
+      ],
+      "path": "skills/设计用工模式",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "劳动用工与劳动争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "审查招聘流程",
+      "kind": "atomic",
+      "displayName": "审查招聘流程",
+      "goal": "审查招聘信息、筛选、背景调查、录用条件或撤回；管理方",
+      "notFor": [
+        "完整个人信息影响评估转数据领域",
+        "不生成全套入职文件"
+      ],
+      "deliverables": [
+        "审查招聘信息、筛选、背景调查、录用条件或撤回；管理方"
+      ],
+      "path": "skills/审查招聘流程",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "劳动用工与劳动争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备录用入职包",
+      "kind": "atomic",
+      "displayName": "准备录用入职包",
+      "goal": "已决定录用，需要 offer、入职表单及签署留痕；管理方",
+      "notFor": [
+        "完整劳动合同另行起草",
+        "与招聘流程审查、劳动者接受决策不同"
+      ],
+      "deliverables": [
+        "已决定录用，需要 offer、入职表单及签署留痕；管理方"
+      ],
+      "path": "skills/准备录用入职包",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "劳动用工与劳动争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "审查劳动合同",
+      "kind": "atomic",
+      "displayName": "审查劳动合同",
+      "goal": "对现有合同或模板审查并修改；明确单方立场",
+      "notFor": [
+        "不处理已发生履行争议",
+        "不扩张为一般合同审查"
+      ],
+      "deliverables": [
+        "对现有合同或模板审查并修改；明确单方立场"
+      ],
+      "path": "skills/审查劳动合同",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "劳动用工与劳动争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估劳动合同续订",
+      "kind": "atomic",
+      "displayName": "评估劳动合同续订",
+      "goal": "合同期满，需要决定续订、不续订或无固定期限安排；管理方",
+      "notFor": [
+        "不处理在职调岗调薪或单方解除"
+      ],
+      "deliverables": [
+        "合同期满，需要决定续订、不续订或无固定期限安排；管理方"
+      ],
+      "path": "skills/评估劳动合同续订",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "劳动用工与劳动争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "实施劳动条件变更",
+      "kind": "atomic",
+      "displayName": "实施劳动条件变更",
+      "goal": "调岗、调薪、地点、借调或派驻需要落地；管理方",
+      "notFor": [
+        "续订、绩效改善、批量转移和退出另行处理"
+      ],
+      "deliverables": [
+        "调岗、调薪、地点、借调或派驻需要落地；管理方"
+      ],
+      "path": "skills/实施劳动条件变更",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "劳动用工与劳动争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "测算离职结算补偿",
+      "kind": "atomic",
+      "displayName": "测算离职结算补偿",
+      "goal": "测算解除终止下的补偿、赔偿、奖金及结算；任一方",
+      "notFor": [
+        "不判断退出路径是否合法",
+        "工伤待遇另行测算"
+      ],
+      "deliverables": [
+        "测算解除终止下的补偿、赔偿、奖金及结算；任一方"
+      ],
+      "path": "skills/测算离职结算补偿",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "劳动用工与劳动争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "规划社会保险整改",
+      "kind": "atomic",
+      "displayName": "规划社会保险整改",
+      "goal": "企业审计社保漏缴、低基数、异地参保和补救；管理方",
+      "notFor": [
+        "不处理住房公积金",
+        "不代办缴费或形成行政复议诉讼文书"
+      ],
+      "deliverables": [
+        "企业审计社保漏缴、低基数、异地参保和补救；管理方"
+      ],
+      "path": "skills/规划社会保险整改",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "劳动用工与劳动争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "规划住房公积金整改",
+      "kind": "atomic",
+      "displayName": "规划住房公积金整改",
+      "goal": "企业审计公积金未缴少缴和补救；管理方",
+      "notFor": [
+        "劳动者追缴申请和中心处理决定另行",
+        "不处理社保或行政复议诉讼文书"
+      ],
+      "deliverables": [
+        "企业审计公积金未缴少缴和补救；管理方"
+      ],
+      "path": "skills/规划住房公积金整改",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "劳动用工与劳动争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备社保补缴征缴申请",
+      "kind": "atomic",
+      "displayName": "准备社保补缴征缴申请",
+      "goal": "劳动者要求主管机关追缴未缴少缴社保；劳动者",
+      "notFor": [
+        "不把纯补缴包装为劳动仲裁请求"
+      ],
+      "deliverables": [
+        "劳动者要求主管机关追缴未缴少缴社保；劳动者"
+      ],
+      "path": "skills/准备社保补缴征缴申请",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "劳动用工与劳动争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备住房公积金追缴申请",
+      "kind": "atomic",
+      "displayName": "准备住房公积金追缴申请",
+      "goal": "劳动者要求住房公积金管理中心处理单位未缴少缴；劳动者",
+      "notFor": [
+        "不混入社保征缴或劳动仲裁请求",
+        "不代用户实际提交"
+      ],
+      "deliverables": [
+        "劳动者要求住房公积金管理中心处理单位未缴少缴；劳动者"
+      ],
+      "path": "skills/准备住房公积金追缴申请",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "劳动用工与劳动争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估社保待遇损失",
+      "kind": "atomic",
+      "displayName": "评估社保待遇损失",
+      "goal": "无法补办且已发生待遇损失，拟向单位主张；劳动者",
+      "notFor": [
+        "能补办时不得替换为损失请求"
+      ],
+      "deliverables": [
+        "无法补办且已发生待遇损失，拟向单位主张；劳动者"
+      ],
+      "path": "skills/评估社保待遇损失",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "劳动用工与劳动争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估特殊保护员工行动",
+      "kind": "atomic",
+      "displayName": "评估特殊保护员工行动",
+      "goal": "对孕产哺乳、医疗期、残疾、未成年或职业禁忌人员拟采取措施；管理方",
+      "notFor": [
+        "不作医学或职业危害技术结论"
+      ],
+      "deliverables": [
+        "对孕产哺乳、医疗期、残疾、未成年或职业禁忌人员拟采取措施；管理方"
+      ],
+      "path": "skills/评估特殊保护员工行动",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "劳动用工与劳动争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "设计绩效改善",
+      "kind": "atomic",
+      "displayName": "设计绩效改善",
+      "goal": "对绩效或能力不足人员实施改善；管理方",
+      "notFor": [
+        "不预设解除",
+        "与违纪处分不同"
+      ],
+      "deliverables": [
+        "对绩效或能力不足人员实施改善；管理方"
+      ],
+      "path": "skills/设计绩效改善",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "劳动用工与劳动争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "调查工作场所投诉",
+      "kind": "atomic",
+      "displayName": "调查工作场所投诉",
+      "goal": "性骚扰、举报、报复、利益冲突或违纪需要调查；受托调查方",
+      "notFor": [
+        "不直接作刑事定性或最终处分",
+        "企业级舞弊转合规"
+      ],
+      "deliverables": [
+        "性骚扰、举报、报复、利益冲突或违纪需要调查；受托调查方"
+      ],
+      "path": "skills/调查工作场所投诉",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "劳动用工与劳动争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "决定劳动纪律处分",
+      "kind": "atomic",
+      "displayName": "决定劳动纪律处分",
+      "goal": "已有调查材料，需要决定处分或不处分；管理方",
+      "notFor": [
+        "不重新开展完整调查",
+        "不得补造事实"
+      ],
+      "deliverables": [
+        "已有调查材料，需要决定处分或不处分；管理方"
+      ],
+      "path": "skills/决定劳动纪律处分",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "劳动用工与劳动争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备协商解除",
+      "kind": "atomic",
+      "displayName": "准备协商解除",
+      "goal": "已选择协商，需要谈判和协议；明确单方代理",
+      "notFor": [
+        "已形成诉讼争议的和解与本项区分"
+      ],
+      "deliverables": [
+        "已选择协商，需要谈判和协议；明确单方代理"
+      ],
+      "path": "skills/准备协商解除",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "劳动用工与劳动争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "规划裁员安置",
+      "kind": "atomic",
+      "displayName": "规划裁员安置",
+      "goal": "企业拟批量减员或重组；管理方",
+      "notFor": [
+        "不按多人个体解除复制",
+        "交易统筹转并购"
+      ],
+      "deliverables": [
+        "企业拟批量减员或重组；管理方"
+      ],
+      "path": "skills/规划裁员安置",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "劳动用工与劳动争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "设计竞业限制安排",
+      "kind": "atomic",
+      "displayName": "设计竞业限制安排",
+      "goal": "企业筛选对象并设计范围、期限、补偿和协议；管理方",
+      "notFor": [
+        "不处理已发生违约或商业秘密侵权"
+      ],
+      "deliverables": [
+        "企业筛选对象并设计范围、期限、补偿和协议；管理方"
+      ],
+      "path": "skills/设计竞业限制安排",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "劳动用工与劳动争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "追究竞业限制违约",
+      "kind": "atomic",
+      "displayName": "追究竞业限制违约",
+      "goal": "单位发现竞争行为，需要启动、解除或追责；单位",
+      "notFor": [
+        "商业秘密侵权转知识产权",
+        "与劳动者挑战分开"
+      ],
+      "deliverables": [
+        "单位发现竞争行为，需要启动、解除或追责；单位"
+      ],
+      "path": "skills/追究竞业限制违约",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "劳动用工与劳动争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "挑战竞业限制",
+      "kind": "atomic",
+      "displayName": "挑战竞业限制",
+      "goal": "劳动者要求缩小、解除限制或主张补偿；劳动者",
+      "notFor": [
+        "不处理商业秘密侵权抗辩"
+      ],
+      "deliverables": [
+        "劳动者要求缩小、解除限制或主张补偿；劳动者"
+      ],
+      "path": "skills/挑战竞业限制",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "劳动用工与劳动争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "开展劳动专项尽调",
+      "kind": "atomic",
+      "displayName": "开展劳动专项尽调",
+      "goal": "交易或上市需要识别目标用工负债；明确委托方",
+      "notFor": [
+        "不统筹交易结构、交易文件或交割"
+      ],
+      "deliverables": [
+        "交易或上市需要识别目标用工负债；明确委托方"
+      ],
+      "path": "skills/开展劳动专项尽调",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "劳动用工与劳动争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "实施员工转移",
+      "kind": "atomic",
+      "displayName": "实施员工转移",
+      "goal": "并购、主体变更或集团调整需要转移员工；管理方",
+      "notFor": [
+        "不决定交易结构",
+        "与裁员和个体调岗不同"
+      ],
+      "deliverables": [
+        "并购、主体变更或集团调整需要转移员工；管理方"
+      ],
+      "path": "skills/实施员工转移",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "劳动用工与劳动争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "协调单位工伤事故响应",
+      "kind": "atomic",
+      "displayName": "协调单位工伤事故响应",
+      "goal": "事故刚发生，需要单位报告、救治和证据行动；单位",
+      "notFor": [
+        "不作工伤、医学或事故技术结论"
+      ],
+      "deliverables": [
+        "事故刚发生，需要单位报告、救治和证据行动；单位"
+      ],
+      "path": "skills/协调单位工伤事故响应",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "劳动用工与劳动争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "单位申请工伤认定",
+      "kind": "atomic",
+      "displayName": "单位申请工伤认定",
+      "goal": "单位准备提出申请；单位申请方",
+      "notFor": [
+        "与职工申请分开，因期限和材料权限不同"
+      ],
+      "deliverables": [
+        "单位准备提出申请；单位申请方"
+      ],
+      "path": "skills/单位申请工伤认定",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "劳动用工与劳动争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "职工申请工伤认定",
+      "kind": "atomic",
+      "displayName": "职工申请工伤认定",
+      "goal": "职工、近亲属或工会自行申请；申请方",
+      "notFor": [
+        "不处理第三人侵权赔偿"
+      ],
+      "deliverables": [
+        "职工、近亲属或工会自行申请；申请方"
+      ],
+      "path": "skills/职工申请工伤认定",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "劳动用工与劳动争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对工伤认定调查",
+      "kind": "atomic",
+      "displayName": "应对工伤认定调查",
+      "goal": "单位收到举证或调查通知；单位被动",
+      "notFor": [
+        "不起草行政复议诉讼文书"
+      ],
+      "deliverables": [
+        "单位收到举证或调查通知；单位被动"
+      ],
+      "path": "skills/应对工伤认定调查",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "劳动用工与劳动争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "测算工伤待遇",
+      "kind": "atomic",
+      "displayName": "测算工伤待遇",
+      "goal": "已有必要前置材料，需要分项目分主体测算；任一方",
+      "notFor": [
+        "第三人侵权赔偿转人身损害"
+      ],
+      "deliverables": [
+        "已有必要前置材料，需要分项目分主体测算；任一方"
+      ],
+      "path": "skills/测算工伤待遇",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "劳动用工与劳动争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估工伤行政救济实体问题",
+      "kind": "atomic",
+      "displayName": "评估工伤行政救济实体问题",
+      "goal": "对认定或不予认定决定不服；任一方",
+      "notFor": [
+        "行政复议诉讼文书转行政领域"
+      ],
+      "deliverables": [
+        "对认定或不予认定决定不服；任一方"
+      ],
+      "path": "skills/评估工伤行政救济实体问题",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "劳动用工与劳动争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备工伤待遇请求",
+      "kind": "atomic",
+      "displayName": "准备工伤待遇请求",
+      "goal": "已有认定鉴定但待遇未支付；职工方",
+      "notFor": [
+        "程序立案文书仍由对应程序 Skill 完成"
+      ],
+      "deliverables": [
+        "已有认定鉴定但待遇未支付；职工方"
+      ],
+      "path": "skills/准备工伤待遇请求",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "劳动用工与劳动争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "分流劳动行政救济",
+      "kind": "atomic",
+      "displayName": "分流劳动行政救济",
+      "goal": "工伤、社保或监察决定需要判断救济入口；任一方",
+      "notFor": [
+        "行政复议诉讼文书和代理转行政领域"
+      ],
+      "deliverables": [
+        "工伤、社保或监察决定需要判断救济入口；任一方"
+      ],
+      "path": "skills/分流劳动行政救济",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "劳动用工与劳动争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估劳动者在职权利",
+      "kind": "atomic",
+      "displayName": "评估劳动者在职权利",
+      "goal": "劳动者仍在职且争议尚未形成，需要诊断管理措施影响并决定沟通、留证或观察；劳动者",
+      "notFor": [
+        "纯合同审阅、纯金额测算、退出选择、投诉调查或已形成争议分别路由"
+      ],
+      "deliverables": [
+        "劳动者仍在职且争议尚未形成，需要诊断管理措施影响并决定沟通、留证或观察；劳动者"
+      ],
+      "path": "skills/评估劳动者在职权利",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "劳动用工与劳动争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "建立劳动争议证据案卷",
+      "kind": "atomic",
+      "displayName": "建立劳动争议证据案卷",
+      "goal": "单独委托盘点举证责任、现有证据和补证；明确单方立场",
+      "notFor": [
+        "不替代争议总体策略或程序文书"
+      ],
+      "deliverables": [
+        "单独委托盘点举证责任、现有证据和补证；明确单方立场"
+      ],
+      "path": "skills/建立劳动争议证据案卷",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "劳动用工与劳动争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "谈判劳动争议和解",
+      "kind": "atomic",
+      "displayName": "谈判劳动争议和解",
+      "goal": "已形成争议，需要底线、条款和协议；明确单方立场",
+      "notFor": [
+        "与未争议的协商解除区分"
+      ],
+      "deliverables": [
+        "已形成争议，需要底线、条款和协议；明确单方立场"
+      ],
+      "path": "skills/谈判劳动争议和解",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "劳动用工与劳动争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "提起劳动仲裁",
+      "kind": "atomic",
+      "displayName": "提起劳动仲裁",
+      "goal": "主动申请方准备仲裁立案材料",
+      "notFor": [
+        "不含完整庭审代理",
+        "与答辩互斥"
+      ],
+      "deliverables": [
+        "主动申请方准备仲裁立案材料"
+      ],
+      "path": "skills/提起劳动仲裁",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "劳动用工与劳动争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对劳动仲裁",
+      "kind": "atomic",
+      "displayName": "应对劳动仲裁",
+      "goal": "被申请方收到申请或通知，准备答辩提交",
+      "notFor": [
+        "不含完整庭审代理",
+        "与申请方输出和权限不同"
+      ],
+      "deliverables": [
+        "被申请方收到申请或通知，准备答辩提交"
+      ],
+      "path": "skills/应对劳动仲裁",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "劳动用工与劳动争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备劳动仲裁庭审",
+      "kind": "atomic",
+      "displayName": "准备劳动仲裁庭审",
+      "goal": "已进入开庭阶段，需要基于双方材料完成一次庭审准备；明确单方代理",
+      "notFor": [
+        "不代替立案、答辩、仅补证、裁决后救济或庭外和解"
+      ],
+      "deliverables": [
+        "已进入开庭阶段，需要基于双方材料完成一次庭审准备；明确单方代理"
+      ],
+      "path": "skills/准备劳动仲裁庭审",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "劳动用工与劳动争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "提起劳动争议一审",
+      "kind": "atomic",
+      "displayName": "提起劳动争议一审",
+      "goal": "仲裁后具备起诉路径的一方；原告",
+      "notFor": [
+        "不适用于单位撤销终局裁决"
+      ],
+      "deliverables": [
+        "仲裁后具备起诉路径的一方；原告"
+      ],
+      "path": "skills/提起劳动争议一审",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "劳动用工与劳动争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对劳动争议一审",
+      "kind": "atomic",
+      "displayName": "应对劳动争议一审",
+      "goal": "收到起诉材料；被告或互诉方",
+      "notFor": [
+        "与仲裁答辩和主动起诉不同"
+      ],
+      "deliverables": [
+        "收到起诉材料；被告或互诉方"
+      ],
+      "path": "skills/应对劳动争议一审",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "劳动用工与劳动争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "提起劳动争议上诉",
+      "kind": "atomic",
+      "displayName": "提起劳动争议上诉",
+      "goal": "不服一审裁判；上诉方",
+      "notFor": [
+        "不重做完整一审",
+        "与被上诉方互斥"
+      ],
+      "deliverables": [
+        "不服一审裁判；上诉方"
+      ],
+      "path": "skills/提起劳动争议上诉",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "劳动用工与劳动争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对劳动争议二审",
+      "kind": "atomic",
+      "displayName": "应对劳动争议二审",
+      "goal": "收到上诉材料；被上诉方",
+      "notFor": [
+        "不代替主动上诉"
+      ],
+      "deliverables": [
+        "收到上诉材料；被上诉方"
+      ],
+      "path": "skills/应对劳动争议二审",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "劳动用工与劳动争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "单位申请撤销终局裁决",
+      "kind": "atomic",
+      "displayName": "单位申请撤销终局裁决",
+      "goal": "单位不服一裁终局裁决",
+      "notFor": [
+        "不按普通一审起诉处理",
+        "与劳动者一审起诉互斥"
+      ],
+      "deliverables": [
+        "单位不服一裁终局裁决"
+      ],
+      "path": "skills/单位申请撤销终局裁决",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "劳动用工与劳动争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "执行生效劳动文书",
+      "kind": "atomic",
+      "displayName": "执行生效劳动文书",
+      "goal": "权利人持生效裁决、判决或调解文书且未履行",
+      "notFor": [
+        "不重新处理实体争议"
+      ],
+      "deliverables": [
+        "权利人持生效裁决、判决或调解文书且未履行"
+      ],
+      "path": "skills/执行生效劳动文书",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "劳动用工与劳动争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对劳动执行",
+      "kind": "atomic",
+      "displayName": "应对劳动执行",
+      "goal": "被执行人收到执行材料",
+      "notFor": [
+        "不提供隐匿转移财产方案"
+      ],
+      "deliverables": [
+        "被执行人收到执行材料"
+      ],
+      "path": "skills/应对劳动执行",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "劳动用工与劳动争议导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    }
+  ],
+  "guideName": "劳动用工与劳动争议导航"
+}

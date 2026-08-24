@@ -1,0 +1,4 @@
+interface:
+  display_name: "测算舞弊损失与追偿"
+  short_description: "形成侵占回扣多付的分项测算，不给唯一必得总额"
+  default_prompt: "使用 $测算舞弊损失与追偿，测算企业内部舞弊损失与追偿区间。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备住房公积金追缴申请"
+  short_description: "形成公积金追缴申请和证据材料包"
+  default_prompt: "使用 $准备住房公积金追缴申请，劳动者要求住房公积金管理中心处理单位未缴少缴，请准备申请和证据包。"

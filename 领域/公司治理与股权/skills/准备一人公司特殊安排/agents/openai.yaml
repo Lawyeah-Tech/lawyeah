@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备一人公司特殊安排"
+  short_description: "安排一人公司财产独立、书面决定和举证责任接口"
+  default_prompt: "使用 $准备一人公司特殊安排，在单一立场下准备中国大陆一人公司的财产独立与书面决定安排。"

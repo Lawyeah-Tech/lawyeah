@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估表决权拘束与一致行动"
+  short_description: "评估股东协议或一致行动对本次表决的对内对外效力"
+  default_prompt: "使用 $评估表决权拘束与一致行动，在单一立场下评估中国大陆表决权拘束与一致行动。"

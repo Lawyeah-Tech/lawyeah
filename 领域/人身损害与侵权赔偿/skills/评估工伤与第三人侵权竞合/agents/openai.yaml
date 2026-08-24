@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估工伤与第三人侵权竞合"
+  short_description: "比较第三人侵权与工伤两套成果，医疗费禁止双赔"
+  default_prompt: "使用 $评估工伤与第三人侵权竞合，在单一立场下评估工作中或上下班因第三人受伤时的民事与工伤竞合分账。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "分流刑民交叉"
+  short_description: "在故意伤害、交通肇事或逃逸出现时划分刑民边界"
+  default_prompt: "使用 $分流刑民交叉，在单一立场下对出现故意伤害、交通肇事或逃逸的人身损害事项做刑民分流。"

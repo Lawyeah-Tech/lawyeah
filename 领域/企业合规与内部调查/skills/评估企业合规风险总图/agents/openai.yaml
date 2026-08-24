@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估企业合规风险总图"
+  short_description: "形成企业级预防发现调查整改的风险、分流和决策矩阵"
+  default_prompt: "使用 $评估企业合规风险总图，在单一立场下评估中国大陆企业合规风险总图。"

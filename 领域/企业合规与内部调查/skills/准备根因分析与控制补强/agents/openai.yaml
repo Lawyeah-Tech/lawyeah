@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备根因分析与控制补强"
+  short_description: "找出控制失效而非只处分人，并给出补强动作"
+  default_prompt: "使用 $准备根因分析与控制补强，在单一公司立场下对单件事件做根因分析与控制补强，不把根因写成员工品德。"

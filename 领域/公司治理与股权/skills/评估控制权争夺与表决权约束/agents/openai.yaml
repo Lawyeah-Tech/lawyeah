@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估控制权争夺与表决权约束"
+  short_description: "评估表决权来源、一致行动和合法的控制权路径"
+  default_prompt: "使用 $评估控制权争夺与表决权约束，在单一立场下评估中国大陆公司控制权争夺与表决权约束。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "提起公司治理案件上诉"
+  short_description: "准备公司治理案件上诉状、范围和期限核验"
+  default_prompt: "使用 $提起公司治理案件上诉，在上诉方立场下提起中国大陆公司治理案件上诉。"

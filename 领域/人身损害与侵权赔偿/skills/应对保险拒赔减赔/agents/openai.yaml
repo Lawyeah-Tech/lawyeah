@@ -1,0 +1,4 @@
+interface:
+  display_name: "应对保险拒赔减赔"
+  short_description: "拆解交强险或商业三者拒赔减赔理由并规划复效或诉讼"
+  default_prompt: "使用 $应对保险拒赔减赔，在被保险人或受害方立场下拆解人身损害保险拒赔或减赔理由并规划下一步。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "设计通知送达与到达证明"
+  short_description: "单独设计人身损害通知的送达渠道和到达证据"
+  default_prompt: "使用 $设计人身案件通知送达，在单一立场下为人身损害相关通知设计送达渠道、回证和失败升级，不写通知正文。"

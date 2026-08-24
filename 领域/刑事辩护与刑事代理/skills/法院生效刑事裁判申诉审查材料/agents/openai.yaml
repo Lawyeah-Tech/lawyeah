@@ -1,0 +1,4 @@
+interface:
+  display_name: "法院生效刑事裁判申诉审查材料"
+  short_description: "就生效刑事裁判形成向法院申诉审查的材料"
+  default_prompt: "使用 $法院生效刑事裁判申诉审查材料，就已经生效的刑事裁判，形成向法院申诉审查的事由和材料。"

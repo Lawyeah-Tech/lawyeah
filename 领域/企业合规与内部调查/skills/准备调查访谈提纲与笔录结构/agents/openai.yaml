@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备调查访谈提纲与笔录结构"
+  short_description: "给出告知事项、提纲、笔录结构和双人在场规则"
+  default_prompt: "使用 $准备调查访谈提纲与笔录结构，在调查受托方单一立场下准备知情人或被调查人访谈提纲与笔录结构。"

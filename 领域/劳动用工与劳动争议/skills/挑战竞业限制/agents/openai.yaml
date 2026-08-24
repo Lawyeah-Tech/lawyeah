@@ -1,0 +1,4 @@
+interface:
+  display_name: "挑战竞业限制"
+  short_description: "形成竞业条款效力、就业边界和应对方案"
+  default_prompt: "使用 $挑战竞业限制，劳动者要求缩小、解除竞业限制或主张补偿，请给出效力和应对方案。"

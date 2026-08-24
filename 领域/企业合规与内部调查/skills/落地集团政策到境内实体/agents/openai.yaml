@@ -1,0 +1,4 @@
+interface:
+  display_name: "落地集团政策到境内实体"
+  short_description: "列出冲突条款、强制本地规则、保留与删除清单"
+  default_prompt: "使用 $落地集团政策到境内实体，在单一境内实体立场下把集团或境外模板落地为中国大陆可执行政策。"

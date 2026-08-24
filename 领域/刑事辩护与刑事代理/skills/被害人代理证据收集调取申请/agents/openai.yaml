@@ -1,0 +1,4 @@
+interface:
+  display_name: "被害人代理证据收集调取申请"
+  short_description: "为被害方就具体线索形成向检察院或法院的调取申请"
+  default_prompt: "使用 $被害人代理证据收集调取申请，根据被害方已掌握的具体线索，形成向检察院或法院的证据调取申请。"

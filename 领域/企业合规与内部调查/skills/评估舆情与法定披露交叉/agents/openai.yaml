@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估舆情与法定披露交叉"
+  short_description: "标出披露触发点、口径分层和停止项"
+  default_prompt: "使用 $评估舆情与法定披露交叉，在单一公司立场下评估调查或检查可能触发的公告、客户通知或舆情交叉，不写公告正文。"

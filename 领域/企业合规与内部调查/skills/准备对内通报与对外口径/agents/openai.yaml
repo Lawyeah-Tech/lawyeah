@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备对内通报与对外口径"
+  short_description: "形成分层口径、禁止披露项和法定披露接口"
+  default_prompt: "使用 $准备对内通报与对外口径，在单一公司立场下准备调查后的对内通报与对外有限口径，不写上市公司公告正文。"

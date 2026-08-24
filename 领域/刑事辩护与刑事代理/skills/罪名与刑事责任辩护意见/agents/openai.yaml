@@ -1,0 +1,4 @@
+interface:
+  display_name: "罪名与刑事责任辩护意见"
+  short_description: "就指控事实、构成要件和责任形成实体辩护意见"
+  default_prompt: "使用 $罪名与刑事责任辩护意见，就指控事实、构成要件、责任形式和排除责任事由形成实体辩护意见。"

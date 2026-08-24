@@ -1,0 +1,4 @@
+interface:
+  display_name: "测算利润分配与股权回购对价"
+  short_description: "形成可复核的分配或回购分项测算，不认定请求已成立"
+  default_prompt: "使用 $测算利润分配与股权回购对价，测算中国大陆公司可分配利润或股权回购对价区间。"

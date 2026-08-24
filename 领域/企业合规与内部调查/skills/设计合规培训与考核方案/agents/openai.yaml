@@ -1,0 +1,4 @@
+interface:
+  display_name: "设计合规培训与考核方案"
+  short_description: "按岗位风险设计对象场景考核记录及无效培训红旗"
+  default_prompt: "使用 $设计合规培训与考核方案，在单一公司立场下设计针对岗位风险的合规培训与考核方案。"

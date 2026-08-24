@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估人身损害诉讼时效"
+  short_description: "分列时效起算情景、中断中止和二十年，不给唯一截止日"
+  default_prompt: "使用 $评估人身损害诉讼时效，核验中国大陆人身损害民事赔偿的诉讼时效情景。"

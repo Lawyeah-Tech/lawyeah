@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估召集主持表决程序瑕疵"
+  short_description: "核验召集、主持和表决程序并判断是否轻微"
+  default_prompt: "使用 $评估召集主持表决程序瑕疵，在单一立场下评估中国大陆股东会或董事会会议程序瑕疵。"

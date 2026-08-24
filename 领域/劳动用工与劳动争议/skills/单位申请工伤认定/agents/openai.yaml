@@ -1,0 +1,4 @@
+interface:
+  display_name: "单位申请工伤认定"
+  short_description: "形成单位侧工伤认定申请材料包"
+  default_prompt: "使用 $单位申请工伤认定，单位准备提出工伤认定申请，请形成申请材料包。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估国企合规管理办法差距"
+  short_description: "对照国资合规办法列出治理职责举报调查整改缺口"
+  default_prompt: "使用 $评估国企合规管理办法差距，在单一公司立场下对照国资合规管理办法评估央企或地方国企差距。"

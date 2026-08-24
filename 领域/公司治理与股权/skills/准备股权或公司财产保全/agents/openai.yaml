@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备股权或公司财产保全"
+  short_description: "准备冻结股权或行为保全的申请、担保和线索"
+  default_prompt: "使用 $准备股权或公司财产保全，在申请方立场下准备中国大陆股权或公司财产保全。"

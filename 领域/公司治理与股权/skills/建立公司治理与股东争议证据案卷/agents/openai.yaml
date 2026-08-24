@@ -1,0 +1,4 @@
+interface:
+  display_name: "建立公司治理与股东争议证据案卷"
+  short_description: "形成要件、举证责任、材料与合法补证矩阵"
+  default_prompt: "使用 $建立公司治理与股东争议证据案卷，整理中国大陆公司治理或股东争议的合法证据矩阵。"

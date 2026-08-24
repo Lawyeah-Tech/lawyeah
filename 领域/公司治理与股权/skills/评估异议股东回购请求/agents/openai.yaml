@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估异议股东回购请求"
+  short_description: "评估异议回购情形、六十／九十日和合理价格接口"
+  default_prompt: "使用 $评估异议股东回购请求，在异议股东立场下评估中国大陆异议股东回购请求。"

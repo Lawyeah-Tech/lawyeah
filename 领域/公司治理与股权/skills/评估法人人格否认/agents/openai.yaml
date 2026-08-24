@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估法人人格否认"
+  short_description: "评估纵向滥用、横向混同和一人公司财产独立举证责任"
+  default_prompt: "使用 $评估法人人格否认，在债权人或股东立场下评估中国大陆法人人格否认。"

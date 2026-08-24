@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估利益冲突与关联交易廉洁面"
+  short_description: "识别冲突并给出披露回避和交易接口"
+  default_prompt: "使用 $评估利益冲突与关联交易廉洁面，在单一公司立场下评估员工高管或第三方与公司的利益冲突及关联交易廉洁面。"

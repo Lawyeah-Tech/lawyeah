@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估行业叠加义务并分流"
+  short_description: "在数据竞争劳动医药金融税务信号并存时判定主成果归属"
+  default_prompt: "使用 $评估行业叠加义务并分流，在单一公司立场下评估行业叠加义务并给出本领域保留段与转出清单。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "侦查撤案辩护意见"
+  short_description: "就不应追诉或缺乏基础的情形形成侦查撤案专项意见"
+  default_prompt: "使用 $侦查撤案辩护意见，在侦查阶段就不应追究刑事责任或缺乏追诉基础的情形，形成撤销案件专项意见。"

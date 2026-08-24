@@ -1,0 +1,4 @@
+interface:
+  display_name: "设计用工模式"
+  short_description: "比较用工模式并给出责任配置和落地方案"
+  default_prompt: "使用 $设计用工模式，在实施前比较直营、派遣、外包或平台等用工模式，输出责任配置和落地方案。"

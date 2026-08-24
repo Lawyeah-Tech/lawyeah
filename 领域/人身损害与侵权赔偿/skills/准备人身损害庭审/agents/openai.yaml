@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备人身损害庭审"
+  short_description: "准备人身损害庭审争点、举证质证和鉴定人询问提纲"
+  default_prompt: "使用 $准备人身损害庭审，在单方代理立场下准备人身损害案件的庭审争点、举证质证和鉴定到庭提纲。"

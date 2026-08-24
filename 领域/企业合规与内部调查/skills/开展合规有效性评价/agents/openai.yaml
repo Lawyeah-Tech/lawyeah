@@ -1,0 +1,4 @@
+interface:
+  display_name: "开展合规有效性评价"
+  short_description: "给出评价指标、抽样、缺陷分级和补强建议"
+  default_prompt: "使用 $开展合规有效性评价，在单一公司立场下开展可抽样复核的合规有效性评价。"

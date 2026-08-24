@@ -1,0 +1,4 @@
+interface:
+  display_name: "公司治理与股权导航"
+  short_description: "了解公司治理与股权领域包的 P0 与 P1 能力边界，并定位适用的原子技能"
+  default_prompt: "使用 $公司治理与股权导航 根据我的立场、阶段和预期成果定位合适的公司治理与股权原子技能。"

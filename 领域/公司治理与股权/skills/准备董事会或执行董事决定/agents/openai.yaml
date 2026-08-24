@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备董事会或执行董事决定"
+  short_description: "准备董事会或一名董事的召集、回避和决议草稿"
+  default_prompt: "使用 $准备董事会或执行董事决定，在公司机关立场下准备中国大陆董事会或执行董事决定。"

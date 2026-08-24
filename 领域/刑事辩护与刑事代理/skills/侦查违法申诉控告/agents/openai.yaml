@@ -1,0 +1,4 @@
+interface:
+  display_name: "侦查违法申诉控告"
+  short_description: "就侦查违法线索形成申诉、控告和监督材料"
+  default_prompt: "使用 $侦查违法申诉控告，根据刑讯逼供、超期羁押或违法搜查等线索，形成申诉控告和监督材料。"

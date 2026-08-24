@@ -1,0 +1,4 @@
+interface:
+  display_name: "提起股东权利诉讼"
+  short_description: "形成可提交的股东权利一审起诉包"
+  default_prompt: "使用 $提起股东权利诉讼，准备中国大陆股东权利或公司治理纠纷的一审起诉包。"

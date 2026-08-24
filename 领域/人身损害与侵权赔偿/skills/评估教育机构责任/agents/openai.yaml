@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估教育机构责任"
+  short_description: "判断幼儿园学校对无或限制行为能力人受害的责任"
+  default_prompt: "使用 $评估教育机构责任，在单一立场下评估无或限制民事行为能力人在幼儿园或学校受到人身损害的教育机构责任。"

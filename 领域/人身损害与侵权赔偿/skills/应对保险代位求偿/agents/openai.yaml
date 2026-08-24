@@ -1,0 +1,4 @@
+interface:
+  display_name: "应对保险代位求偿"
+  short_description: "判断保险代位范围、重复受偿和可提出的抗辩"
+  default_prompt: "使用 $应对保险代位求偿，在单一立场下评估人身损害中的保险代位求偿范围、重复受偿和抗辩。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备后续治疗费另诉"
+  short_description: "为前案未覆盖的后续治疗或新鉴定准备另诉材料"
+  default_prompt: "使用 $准备后续治疗费另诉，在权利人立场下准备人身损害后续治疗费或新鉴定事项的另诉材料和既判力对照。"

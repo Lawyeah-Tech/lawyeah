@@ -1,0 +1,4 @@
+interface:
+  display_name: "提起决议不成立、无效或撤销之诉"
+  short_description: "准备决议不成立、无效或撤销之诉的起诉材料"
+  default_prompt: "使用 $提起决议不成立无效或撤销之诉，在原告立场下提起中国大陆公司决议不成立、无效或撤销之诉。"

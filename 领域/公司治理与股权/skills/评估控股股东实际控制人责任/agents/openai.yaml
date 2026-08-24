@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估控股股东实际控制人责任"
+  short_description: "评估控股股东实际控制人滥权、执行事务和指示连带"
+  default_prompt: "使用 $评估控股股东实际控制人责任，在中小股东或公司立场下评估中国大陆控股股东实际控制人责任。"

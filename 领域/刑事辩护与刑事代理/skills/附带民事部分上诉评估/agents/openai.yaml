@@ -1,0 +1,4 @@
+interface:
+  display_name: "附带民事部分上诉评估"
+  short_description: "仅就附带民事部分形成上诉范围、期限和材料评估"
+  default_prompt: "使用 $附带民事部分上诉评估，仅就一审判决中的附带民事部分，评估上诉范围、期限和材料。"

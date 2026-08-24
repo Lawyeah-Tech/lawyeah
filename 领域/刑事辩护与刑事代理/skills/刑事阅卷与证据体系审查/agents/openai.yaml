@@ -1,0 +1,4 @@
+interface:
+  display_name: "刑事阅卷与证据体系审查"
+  short_description: "就已依法取得的案卷建立可回链证据矩阵和缺口清单"
+  default_prompt: "使用 $刑事阅卷与证据体系审查，对已依法取得的案卷建立可回链的证据矩阵、证明体系和后续核证清单。"

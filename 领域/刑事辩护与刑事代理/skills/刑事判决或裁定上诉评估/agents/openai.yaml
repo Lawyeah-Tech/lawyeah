@@ -1,0 +1,4 @@
+interface:
+  display_name: "刑事判决或裁定上诉评估"
+  short_description: "就未生效刑事裁判形成上诉范围、期限和风险评估"
+  default_prompt: "使用 $刑事判决或裁定上诉评估，针对刚收到的未生效刑事判决或裁定，评估上诉范围、期限和风险。"

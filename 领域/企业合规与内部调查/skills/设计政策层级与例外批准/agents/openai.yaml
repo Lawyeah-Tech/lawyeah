@@ -1,0 +1,4 @@
+interface:
+  display_name: "设计政策层级与例外批准"
+  short_description: "给出效力层级、冲突规则、例外审批和留痕"
+  default_prompt: "使用 $设计政策层级与例外批准，在单一公司立场下设计合规政策效力层级与例外批准机制。"

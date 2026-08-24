@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备内部增资与认缴调整"
+  short_description: "准备内部增资方案、优先认缴通知和登记接口"
+  default_prompt: "使用 $准备内部增资与认缴调整，在公司或股东立场下准备中国大陆内部增资与认缴调整文件。"

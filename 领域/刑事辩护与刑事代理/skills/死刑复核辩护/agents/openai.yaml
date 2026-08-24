@@ -1,0 +1,4 @@
+interface:
+  display_name: "死刑复核辩护"
+  short_description: "就死刑复核形成事实证据法律和程序专项辩护意见"
+  default_prompt: "使用 $死刑复核辩护，在死刑复核阶段就事实、证据、法律、量刑和程序形成专项辩护意见。"

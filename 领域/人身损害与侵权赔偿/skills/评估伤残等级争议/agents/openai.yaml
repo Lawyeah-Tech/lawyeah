@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估伤残等级争议"
+  short_description: "比较冲突鉴定的标准、检材和程序瑕疵，不自行定级"
+  default_prompt: "使用 $评估伤残等级争议，在单一立场下评估人身损害伤残等级争议的标准和重新鉴定分流。"

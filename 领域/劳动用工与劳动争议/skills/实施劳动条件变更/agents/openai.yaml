@@ -1,0 +1,4 @@
+interface:
+  display_name: "实施劳动条件变更"
+  short_description: "形成劳动条件变更方案和签署实施清单"
+  default_prompt: "使用 $实施劳动条件变更，需要落地调岗、调薪、地点或借调，请形成变更方案和签署实施清单。"

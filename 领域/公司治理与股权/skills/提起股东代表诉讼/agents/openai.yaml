@@ -1,0 +1,4 @@
+interface:
+  display_name: "提起股东代表诉讼"
+  short_description: "准备利益归公司的股东代表诉讼起诉材料"
+  default_prompt: "使用 $提起股东代表诉讼，在股东立场下提起中国大陆股东代表诉讼。"

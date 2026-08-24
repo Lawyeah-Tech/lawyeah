@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估账簿记录与虚假报销"
+  short_description: "判断报销咨询费市场费是否掩盖利益输送并列出补证"
+  default_prompt: "使用 $评估账簿记录与虚假报销，在单一公司立场下评估账簿完整性与虚假报销红旗，不作税务处理决定。"

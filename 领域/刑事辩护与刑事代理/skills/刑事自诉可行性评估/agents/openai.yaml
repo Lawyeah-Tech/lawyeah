@@ -1,0 +1,4 @@
+interface:
+  display_name: "刑事自诉可行性评估"
+  short_description: "判断是否属于法定自诉并形成管辖证据和分流意见"
+  default_prompt: "使用 $刑事自诉可行性评估，判断本案是否属于法定自诉范围，并形成管辖、证据和分流意见。"

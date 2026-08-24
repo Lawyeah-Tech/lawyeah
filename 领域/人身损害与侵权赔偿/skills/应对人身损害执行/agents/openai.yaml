@@ -1,0 +1,4 @@
+interface:
+  display_name: "应对人身损害执行"
+  short_description: "被执行人提出适格执行异议或安排履行，禁止隐匿财产"
+  default_prompt: "使用 $应对人身损害执行，在被执行方立场下应对人身损害案件执行，准备适格异议或履行安排。"

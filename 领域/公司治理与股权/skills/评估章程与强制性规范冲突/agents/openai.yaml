@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估章程与强制性规范冲突"
+  short_description: "对照章程条款与强制性规范并给出修订分流"
+  default_prompt: "使用 $评估章程与强制性规范冲突，在单一立场下评估中国大陆公司章程与强制性规范的冲突。"

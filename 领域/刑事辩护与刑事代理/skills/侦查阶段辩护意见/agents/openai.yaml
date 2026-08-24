@@ -1,0 +1,4 @@
+interface:
+  display_name: "侦查阶段辩护意见"
+  short_description: "向侦查机关提交阶段性事实责任和程序辩护意见"
+  default_prompt: "使用 $侦查阶段辩护意见，在侦查终结前就现有事实、责任和程序问题形成提交侦查机关的辩护意见。"

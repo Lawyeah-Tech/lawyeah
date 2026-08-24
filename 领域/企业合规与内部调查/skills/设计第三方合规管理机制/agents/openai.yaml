@@ -1,0 +1,4 @@
+interface:
+  display_name: "设计第三方合规管理机制"
+  short_description: "给出经销商代理中介供应商的分级准入合同接口监测退出"
+  default_prompt: "使用 $设计第三方合规管理机制，在单一公司立场下设计第三方廉洁合规管理机制，不写完整交易合同。"

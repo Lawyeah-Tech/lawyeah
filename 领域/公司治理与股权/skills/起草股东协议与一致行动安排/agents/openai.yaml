@@ -1,0 +1,4 @@
+interface:
+  display_name: "起草股东协议与一致行动安排"
+  short_description: "起草公司内部股东协议和一致行动安排"
+  default_prompt: "使用 $起草股东协议与一致行动安排，在单一立场下起草中国大陆股东协议与一致行动安排。"

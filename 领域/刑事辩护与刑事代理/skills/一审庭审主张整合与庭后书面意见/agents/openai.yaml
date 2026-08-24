@@ -1,0 +1,4 @@
+interface:
+  display_name: "一审庭审主张整合与庭后书面意见"
+  short_description: "把已明确的一审争点整合为庭审主张和庭后书面意见"
+  default_prompt: "使用 $一审庭审主张整合与庭后书面意见，把已经明确的一审争点整合为庭审主张和庭后书面意见。"

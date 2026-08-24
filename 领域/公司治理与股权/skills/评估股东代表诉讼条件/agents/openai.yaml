@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估股东代表诉讼条件"
+  short_description: "评估代表诉讼持股、书面请求、三十日和紧急例外"
+  default_prompt: "使用 $评估股东代表诉讼条件，在股东立场下评估中国大陆股东代表诉讼条件。"

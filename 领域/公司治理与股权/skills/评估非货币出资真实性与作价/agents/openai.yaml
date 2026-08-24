@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估非货币出资真实性与作价"
+  short_description: "评估非货币出资的可出资性、权属转移和作价争点"
+  default_prompt: "使用 $评估非货币出资真实性与作价，在单一立场下评估中国大陆非货币出资真实性与作价。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "刑事自诉起诉材料包"
+  short_description: "形成可提交的自诉状、请求、证据目录和立案材料"
+  default_prompt: "使用 $刑事自诉起诉材料包，在自诉入口成立后，形成可提交的自诉状、请求、证据目录和立案材料。"

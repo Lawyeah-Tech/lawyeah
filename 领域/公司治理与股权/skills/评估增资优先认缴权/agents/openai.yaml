@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估增资优先认缴权"
+  short_description: "评估增资优先认缴条件、通知放弃和稀释后果"
+  default_prompt: "使用 $评估增资优先认缴权，在股东立场下评估中国大陆增资优先认缴权。"

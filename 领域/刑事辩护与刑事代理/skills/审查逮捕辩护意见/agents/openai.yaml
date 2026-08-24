@@ -1,0 +1,4 @@
+interface:
+  display_name: "审查逮捕辩护意见"
+  short_description: "在批捕审查期间形成可提交的审查逮捕辩护意见"
+  default_prompt: "使用 $审查逮捕辩护意见，在公安机关提请批捕、检察院审查期间，形成可提交的审查逮捕辩护意见。"

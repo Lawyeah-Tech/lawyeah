@@ -1,0 +1,4 @@
+interface:
+  display_name: "追加变更责任主体"
+  short_description: "立案后准备追加用人者、场所或保险人等责任主体"
+  default_prompt: "使用 $追加变更责任主体，在原告立场下准备人身损害案件立案后追加或变更责任主体的申请和新主体事实。"

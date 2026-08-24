@@ -1,0 +1,4 @@
+interface:
+  display_name: "提出鉴定异议或重新鉴定"
+  short_description: "针对已出具的鉴定意见整理异议点和重新鉴定材料"
+  default_prompt: "使用 $提出伤残鉴定异议或重新鉴定，在单一立场下针对人身损害鉴定意见整理异议点并准备补充或重新鉴定材料。"

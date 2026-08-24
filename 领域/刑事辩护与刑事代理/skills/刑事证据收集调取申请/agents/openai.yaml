@@ -1,0 +1,4 @@
+interface:
+  display_name: "刑事证据收集调取申请"
+  short_description: "就律师无法自行取得的材料形成向检察院或法院的调取申请"
+  default_prompt: "使用 $刑事证据收集调取申请，就律师无法自行取得的具体材料，形成向检察院或法院的收集调取申请。"

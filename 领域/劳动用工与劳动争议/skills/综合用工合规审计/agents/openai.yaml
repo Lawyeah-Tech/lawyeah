@@ -1,0 +1,4 @@
+interface:
+  display_name: "综合用工合规审计"
+  short_description: "形成限定范围的用工合规差距表和整改路线图"
+  default_prompt: "使用 $综合用工合规审计，对限定组织和样本做综合用工合规审计，输出差距表、风险分级和整改路线图。"

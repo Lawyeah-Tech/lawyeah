@@ -1,0 +1,4 @@
+interface:
+  display_name: "刑事接案资格与冲突筛查"
+  short_description: "核验委托路径、授权与冲突并形成接案范围结论"
+  default_prompt: "使用 $刑事接案资格与冲突筛查，在开展实体工作前核验客户、委托路径、授权和冲突，形成接案范围结论。"

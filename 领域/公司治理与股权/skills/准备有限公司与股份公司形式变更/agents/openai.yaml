@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备有限公司与股份公司形式变更"
+  short_description: "准备有限与股份公司形式变更的决议和登记接口"
+  default_prompt: "使用 $准备有限公司与股份公司形式变更，在单一立场下准备中国大陆公司形式变更文件与登记衔接。"

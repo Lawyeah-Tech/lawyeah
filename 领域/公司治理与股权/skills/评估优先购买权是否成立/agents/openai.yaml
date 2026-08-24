@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估优先购买权是否成立"
+  short_description: "判断书面通知、同等条件和三十日放弃是否成立"
+  default_prompt: "使用 $评估优先购买权是否成立，在主张或抗辩立场下评估中国大陆有限公司股权优先购买权。"

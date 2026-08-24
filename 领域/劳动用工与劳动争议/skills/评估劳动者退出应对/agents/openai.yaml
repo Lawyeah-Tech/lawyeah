@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估劳动者退出应对"
+  short_description: "形成劳动者退出决策、合法证据、通知沟通、谈判与时序方案"
+  default_prompt: "使用 $评估劳动者退出应对，请评估劳动者退出或应对方案，并给出合法留证、通知沟通、谈判与时序。"

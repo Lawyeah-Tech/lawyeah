@@ -1,0 +1,4 @@
+interface:
+  display_name: "选择违约与侵权竞合路径"
+  short_description: "比较客运服务或产品违约与侵权的时效管辖和赔偿范围"
+  default_prompt: "使用 $选择人身损害违约侵权竞合路径，在单一立场下比较同一人身损害事实下的违约与侵权请求权选择。"

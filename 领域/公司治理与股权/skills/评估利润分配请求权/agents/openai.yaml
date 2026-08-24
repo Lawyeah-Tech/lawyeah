@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估利润分配请求权"
+  short_description: "评估分配条件、六个月执行和违法分配返还"
+  default_prompt: "使用 $评估利润分配请求权，在股东立场下评估中国大陆利润分配请求权。"

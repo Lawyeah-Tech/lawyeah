@@ -1,0 +1,4 @@
+interface:
+  display_name: "评估股东对公司债务的补充清偿责任"
+  short_description: "区分未出资、抽逃、加速与人格否认并划定责任范围"
+  default_prompt: "使用 $评估股东对公司债务的补充清偿责任，在单一立场下评估股东对公司债务的补充清偿责任。"

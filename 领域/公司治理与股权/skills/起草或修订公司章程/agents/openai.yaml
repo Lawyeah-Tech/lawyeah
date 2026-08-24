@@ -1,0 +1,4 @@
+interface:
+  display_name: "起草或修订公司章程"
+  short_description: "起草可签署章程或修正案并对照强制规范"
+  default_prompt: "使用 $起草或修订公司章程，在单一立场下起草或修订中国大陆公司章程。"

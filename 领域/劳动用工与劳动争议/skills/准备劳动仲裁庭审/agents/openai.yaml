@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备劳动仲裁庭审"
+  short_description: "形成劳动仲裁一次庭审的争点、举证质证和提纲包"
+  default_prompt: "使用 $准备劳动仲裁庭审，劳动仲裁已进入开庭阶段，请基于双方材料完成一次庭审准备。"

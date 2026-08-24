@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备证照印章管控与交接"
+  short_description: "准备证照印章的合法保管权源、交接清单和保全接口"
+  default_prompt: "使用 $准备证照印章管控与交接，在单一立场下准备中国大陆公司证照印章合法管控与交接。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备交强险商业险索赔材料"
+  short_description: "整理交强险或商业三者索赔材料包和分项限额接口"
+  default_prompt: "使用 $准备交强险商业险索赔材料，在权利人或被保险人立场下准备交强险或商业三者的索赔材料包。"

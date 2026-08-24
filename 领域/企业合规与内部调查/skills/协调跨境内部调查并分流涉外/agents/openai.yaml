@@ -1,0 +1,4 @@
+interface:
+  display_name: "协调跨境内部调查并分流涉外"
+  short_description: "划分境内可做段、冲突点及涉外与数据转出"
+  default_prompt: "使用 $协调跨境内部调查并分流涉外，在单一公司立场下协调跨境内部调查的境内可做段并分流涉外与数据。"

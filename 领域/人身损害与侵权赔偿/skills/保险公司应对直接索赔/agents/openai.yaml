@@ -1,0 +1,4 @@
+interface:
+  display_name: "保险公司应对直接索赔"
+  short_description: "保险人应对直接索赔的限额、免责和追偿抗辩"
+  default_prompt: "使用 $保险公司应对直接索赔，在交强险或商业三者保险人立场下应对被直接起诉的人身损害索赔。"

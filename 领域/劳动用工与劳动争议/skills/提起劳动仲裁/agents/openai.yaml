@@ -1,0 +1,4 @@
+interface:
+  display_name: "提起劳动仲裁"
+  short_description: "形成劳动仲裁立案申请包"
+  default_prompt: "使用 $提起劳动仲裁，请作为申请方准备劳动仲裁立案申请包。"

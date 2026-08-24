@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备证据保全与禁毁通知"
+  short_description: "形成对内发送前的持有、禁毁和留痕设计"
+  default_prompt: "使用 $准备证据保全与禁毁通知，准备企业内部证据保全与禁毁通知。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备催缴出资通知"
+  short_description: "起草不少于六十日宽限期的发送前催缴书"
+  default_prompt: "使用 $准备催缴出资通知，在公司机关立场下准备中国大陆催缴出资通知。"

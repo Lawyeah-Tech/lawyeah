@@ -1,0 +1,4 @@
+interface:
+  display_name: "审查起诉认罪认罚决策评估"
+  short_description: "核验认罪认罚条件并形成是否具结的决策意见"
+  default_prompt: "使用 $审查起诉认罪认罚决策评估，在审查起诉拟具结前核验认罪认罚条件，形成是否具结的决策意见。"

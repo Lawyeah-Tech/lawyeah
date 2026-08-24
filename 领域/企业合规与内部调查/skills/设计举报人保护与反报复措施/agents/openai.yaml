@@ -1,0 +1,4 @@
+interface:
+  display_name: "设计举报人保护与反报复措施"
+  short_description: "给出保护方案、知悉范围和报复监测点"
+  default_prompt: "使用 $设计举报人保护与反报复措施，在单一公司立场下设计举报人或证人的保护与反报复措施，不作出劳动处分。"

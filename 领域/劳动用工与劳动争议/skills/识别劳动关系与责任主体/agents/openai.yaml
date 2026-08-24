@@ -1,0 +1,4 @@
+interface:
+  display_name: "识别劳动关系与责任主体"
+  short_description: "基于既有用工事实识别劳动关系、替代关系及各类责任主体归属"
+  default_prompt: "使用 $识别劳动关系与责任主体 基于既有实际用工事实识别主体、关系与责任主体归属。"

@@ -1,0 +1,1432 @@
+{
+  "schemaVersion": 2,
+  "id": "manage-corporate-compliance",
+  "displayName": "企业合规与内部调查",
+  "description": "处理中国大陆企业合规体系、内部调查、反商业贿赂、监管检查应对、整改和涉案企业合规材料的多 Skill 领域包。",
+  "version": "1.0.0",
+  "license": "Apache-2.0",
+  "jurisdiction": "CN-mainland",
+  "contentModel": "multi-skill-progressive-disclosure",
+  "reinstallStrategy": "replace",
+  "scope": {
+    "purpose": "建设企业合规治理体系，开展内部调查、舞弊处置、反商业贿赂和重大合规风险响应。",
+    "inScope": [
+      "企业合规体系和制度",
+      "内部举报与舞弊调查",
+      "反商业贿赂和第三方合规",
+      "合规危机处置与整改"
+    ],
+    "outOfScope": [
+      "具体刑事案件辩护",
+      "日常劳动用工专项治理",
+      "个人信息、数据和网络安全专项体系",
+      "竞争法专项评估"
+    ],
+    "primaryDeliverables": [
+      "合规体系与制度",
+      "内部调查报告",
+      "风险处置和整改方案",
+      "合规培训与评估成果"
+    ]
+  },
+  "guideSkill": "企业合规与内部调查导航",
+  "mcp": {
+    "contractRange": "0.0"
+  },
+  "skills": [
+    {
+      "id": "企业合规与内部调查导航",
+      "kind": "guide",
+      "displayName": "企业合规与内部调查导航",
+      "goal": "说明领域包的能力、边界和当前原子 Skill 全貌",
+      "notFor": [
+        "直接完成具体法律业务成果"
+      ],
+      "deliverables": [
+        "领域能力定位结果"
+      ],
+      "path": "skills/企业合规与内部调查导航",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "评估是否启动内部调查",
+          "准备涉案企业合规整改与验收",
+          "应对监管检查或突击检查",
+          "评估企业合规风险总图",
+          "准备合规整改方案",
+          "建立内部调查证据案卷",
+          "形成内部调查报告",
+          "准备主动披露或自查报告",
+          "准备证据保全与禁毁通知",
+          "测算舞弊损失与追偿",
+          "评估合规管理体系有效性",
+          "建立合规义务与责任主体地图",
+          "评估董监高合规职责缺口",
+          "评估国企合规管理办法差距",
+          "评估集团与子公司合规穿透",
+          "评估行业叠加义务并分流",
+          "评估上市公司廉洁与内控交叉",
+          "准备董事会合规汇报材料",
+          "设计合规管理体系框架",
+          "起草合规管理办法或章程级制度",
+          "配置合规机构与三道防线",
+          "设计政策层级与例外批准",
+          "设计合规培训与考核方案",
+          "开展合规有效性评价",
+          "落地集团政策到境内实体",
+          "建设内部举报渠道与受理规则",
+          "评估单件举报可查性",
+          "设计举报人保护与反报复措施",
+          "评估打击报复风险",
+          "确定调查授权范围与独立",
+          "制定调查方案与访谈计划",
+          "合法收集书证电子证与财务痕迹",
+          "准备调查访谈提纲与笔录结构",
+          "评估律师工作产品与保密边界",
+          "评估调查后处置路径",
+          "准备对内通报与对外口径",
+          "处理利益冲突与调查回避",
+          "评估反商业贿赂风险点",
+          "设计反商业贿赂与礼品招待制度",
+          "审查礼品招待赞助与捐赠",
+          "评估利益冲突与关联交易廉洁面",
+          "评估回扣账外暗中与资金链路",
+          "梳理公职人员接触点与审批",
+          "评估账簿记录与虚假报销",
+          "评估销售激励与渠道返点廉洁风险",
+          "设计第三方合规管理机制",
+          "筛查经销商代理中介廉洁风险",
+          "准备第三方尽职调查工作底稿",
+          "准备中止或终止高风险第三方合作通知",
+          "评估中间人费用与资金链路",
+          "制定突击检查现场预案",
+          "设置合规监管人或独立监察",
+          "准备向监管提交材料与特权日志",
+          "谈判民事追偿与返还方案",
+          "准备民事追偿诉讼材料",
+          "准备根因分析与控制补强",
+          "跟踪整改验收与复发监测",
+          "评估舆情与法定披露交叉",
+          "协调跨境内部调查并分流涉外",
+          "评估内部账户冻结与资金保全"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估企业合规风险总图",
+      "kind": "atomic",
+      "displayName": "评估企业合规风险总图",
+      "goal": "在单方无冲突立场下形成可决策的企业级合规风险总图",
+      "notFor": [
+        "调查报告终稿",
+        "整改验收包",
+        "刑事辩护或劳动处分",
+        "数据或竞争专项体系"
+      ],
+      "deliverables": [
+        "在单方无冲突立场下形成可决策的企业级合规风险总图"
+      ],
+      "path": "skills/评估企业合规风险总图",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "企业合规与内部调查导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估是否启动内部调查",
+      "kind": "atomic",
+      "displayName": "评估是否启动内部调查",
+      "goal": "判断是否立案调查、由谁查、查到哪，不发通知、不出报告",
+      "notFor": [
+        "发送版持有通知",
+        "调查报告",
+        "职场违纪主轴",
+        "刑事立案材料"
+      ],
+      "deliverables": [
+        "判断是否立案调查、由谁查、查到哪，不发通知、不出报告"
+      ],
+      "path": "skills/评估是否启动内部调查",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "企业合规与内部调查导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备证据保全与禁毁通知",
+      "kind": "atomic",
+      "displayName": "准备证据保全与禁毁通知",
+      "goal": "形成对内发送前的持有、禁毁和范围说明",
+      "notFor": [
+        "调查结论",
+        "指导删除或隐匿",
+        "向监管主动披露"
+      ],
+      "deliverables": [
+        "形成对内发送前的持有、禁毁和范围说明"
+      ],
+      "path": "skills/准备证据保全与禁毁通知",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "企业合规与内部调查导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备主动披露或自查报告",
+      "kind": "atomic",
+      "displayName": "准备主动披露或自查报告",
+      "goal": "形成向主管或监管机关提交前的自查披露稿和不可逆提示",
+      "notFor": [
+        "刑事自首材料",
+        "检察合规验收包",
+        "把发送写成已获宽大"
+      ],
+      "deliverables": [
+        "形成向主管或监管机关提交前的自查披露稿和不可逆提示"
+      ],
+      "path": "skills/准备主动披露或自查报告",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "企业合规与内部调查导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "建立内部调查证据案卷",
+      "kind": "atomic",
+      "displayName": "建立内部调查证据案卷",
+      "goal": "形成要件、材料、合法取得与补证矩阵",
+      "notFor": [
+        "调查结论终稿",
+        "诉状",
+        "违法取证方案"
+      ],
+      "deliverables": [
+        "形成要件、材料、合法取得与补证矩阵"
+      ],
+      "path": "skills/建立内部调查证据案卷",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "企业合规与内部调查导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "测算舞弊损失与追偿",
+      "kind": "atomic",
+      "displayName": "测算舞弊损失与追偿",
+      "goal": "形成可复核的分项测算，不认定犯罪或唯一必得总额",
+      "notFor": [
+        "定性总图",
+        "刑事数额认定",
+        "劳动经济补偿精算"
+      ],
+      "deliverables": [
+        "形成可复核的分项测算，不认定犯罪或唯一必得总额"
+      ],
+      "path": "skills/测算舞弊损失与追偿",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "企业合规与内部调查导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "形成内部调查报告",
+      "kind": "atomic",
+      "displayName": "形成内部调查报告",
+      "goal": "形成可回链的事实认定、判断状态和处置接口",
+      "notFor": [
+        "定罪",
+        "解除劳动合同决定",
+        "发送版披露函"
+      ],
+      "deliverables": [
+        "形成可回链的事实认定、判断状态和处置接口"
+      ],
+      "path": "skills/形成内部调查报告",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "企业合规与内部调查导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备合规整改方案",
+      "kind": "atomic",
+      "displayName": "准备合规整改方案",
+      "goal": "形成根因接口、整改动作、责任人和验收点",
+      "notFor": [
+        "检察合规第三方验收包",
+        "劳动处分决定",
+        "把计划写成已完成"
+      ],
+      "deliverables": [
+        "形成根因接口、整改动作、责任人和验收点"
+      ],
+      "path": "skills/准备合规整改方案",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "企业合规与内部调查导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对监管检查或突击检查",
+      "kind": "atomic",
+      "displayName": "应对监管检查或突击检查",
+      "goal": "形成现场纪律、权限核验、材料口径和后续接口",
+      "notFor": [
+        "阻挠合法检查",
+        "复议诉讼文书",
+        "税务稽查实体"
+      ],
+      "deliverables": [
+        "形成现场纪律、权限核验、材料口径和后续接口"
+      ],
+      "path": "skills/应对监管检查或突击检查",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "企业合规与内部调查导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备涉案企业合规整改与验收",
+      "kind": "atomic",
+      "displayName": "准备涉案企业合规整改与验收",
+      "goal": "形成检察合规计划、整改证据和验收材料接口",
+      "notFor": [
+        "个人刑事辩护",
+        "保证不起诉",
+        "普通内部整改终稿"
+      ],
+      "deliverables": [
+        "形成检察合规计划、整改证据和验收材料接口"
+      ],
+      "path": "skills/准备涉案企业合规整改与验收",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "企业合规与内部调查导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估合规管理体系有效性",
+      "kind": "atomic",
+      "displayName": "评估合规管理体系有效性",
+      "goal": "已有制度，要判断是否有效运转而非再出总图；公司方",
+      "notFor": [
+        "不重写全部制度",
+        "不替代单件调查"
+      ],
+      "deliverables": [
+        "已有制度，要判断是否有效运转而非再出总图；公司方"
+      ],
+      "path": "skills/评估合规管理体系有效性",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "企业合规与内部调查导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "建立合规义务与责任主体地图",
+      "kind": "atomic",
+      "displayName": "建立合规义务与责任主体地图",
+      "goal": "需把法定义务、监管要求、内部政策与责任岗位对齐；公司方",
+      "notFor": [
+        "不判断某次违规已成立",
+        "行业专项义务只留接口"
+      ],
+      "deliverables": [
+        "需把法定义务、监管要求、内部政策与责任岗位对齐；公司方"
+      ],
+      "path": "skills/建立合规义务与责任主体地图",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "企业合规与内部调查导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估董监高合规职责缺口",
+      "kind": "atomic",
+      "displayName": "评估董监高合规职责缺口",
+      "goal": "董事会/经理层履职被问责或要补履职痕迹；治理层",
+      "notFor": [
+        "不写股东会决议或股权方案",
+        "公司治理机关文件转公司治理"
+      ],
+      "deliverables": [
+        "董事会/经理层履职被问责或要补履职痕迹；治理层"
+      ],
+      "path": "skills/评估董监高合规职责缺口",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "企业合规与内部调查导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估国企合规管理办法差距",
+      "kind": "atomic",
+      "displayName": "评估国企合规管理办法差距",
+      "goal": "央企或地方国企需对照国资合规办法补体系；公司方",
+      "notFor": [
+        "不对民营企业硬套国资办法",
+        "金融机构专项办法转金融"
+      ],
+      "deliverables": [
+        "央企或地方国企需对照国资合规办法补体系；公司方"
+      ],
+      "path": "skills/评估国企合规管理办法差距",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "企业合规与内部调查导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估集团与子公司合规穿透",
+      "kind": "atomic",
+      "displayName": "评估集团与子公司合规穿透",
+      "goal": "集团要看子公司能否被总部机制覆盖；集团方",
+      "notFor": [
+        "不设计股权控制",
+        "境外当地法转涉外"
+      ],
+      "deliverables": [
+        "集团要看子公司能否被总部机制覆盖；集团方"
+      ],
+      "path": "skills/评估集团与子公司合规穿透",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "企业合规与内部调查导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估行业叠加义务并分流",
+      "kind": "atomic",
+      "displayName": "评估行业叠加义务并分流",
+      "goal": "同时出现数据、竞争、劳动、医药、金融、税务信号；公司方",
+      "notFor": [
+        "不代做专项实体结论"
+      ],
+      "deliverables": [
+        "同时出现数据、竞争、劳动、医药、金融、税务信号；公司方"
+      ],
+      "path": "skills/评估行业叠加义务并分流",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "企业合规与内部调查导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估上市公司廉洁与内控交叉",
+      "kind": "atomic",
+      "displayName": "评估上市公司廉洁与内控交叉",
+      "goal": "上市主体出现廉洁、关联方或内控失效红旗；公司方",
+      "notFor": [
+        "不写法定信息披露正文",
+        "证券披露专项转公司/证券交叉"
+      ],
+      "deliverables": [
+        "上市主体出现廉洁、关联方或内控失效红旗；公司方"
+      ],
+      "path": "skills/评估上市公司廉洁与内控交叉",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "企业合规与内部调查导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备董事会合规汇报材料",
+      "kind": "atomic",
+      "displayName": "准备董事会合规汇报材料",
+      "goal": "需向董事会或股东书面汇报合规状态；治理层",
+      "notFor": [
+        "不代替年度审计报告",
+        "不隐瞒已发现红旗"
+      ],
+      "deliverables": [
+        "需向董事会或股东书面汇报合规状态；治理层"
+      ],
+      "path": "skills/准备董事会合规汇报材料",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "企业合规与内部调查导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "设计合规管理体系框架",
+      "kind": "atomic",
+      "displayName": "设计合规管理体系框架",
+      "goal": "要从零或重构预防—发现—应对—整改闭环；公司方",
+      "notFor": [
+        "不写劳动规章全文",
+        "不建设数据或竞争专项体系"
+      ],
+      "deliverables": [
+        "要从零或重构预防—发现—应对—整改闭环；公司方"
+      ],
+      "path": "skills/设计合规管理体系框架",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "企业合规与内部调查导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "起草合规管理办法或章程级制度",
+      "kind": "atomic",
+      "displayName": "起草合规管理办法或章程级制度",
+      "goal": "需要可审议的合规基本制度文本；公司方",
+      "notFor": [
+        "未成争的交易合同审查起草搁置",
+        "劳动规章转劳动"
+      ],
+      "deliverables": [
+        "需要可审议的合规基本制度文本；公司方"
+      ],
+      "path": "skills/起草合规管理办法或章程级制度",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "企业合规与内部调查导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "配置合规机构与三道防线",
+      "kind": "atomic",
+      "displayName": "配置合规机构与三道防线",
+      "goal": "要设合规负责人、部门、业务管理员和报告线；公司方",
+      "notFor": [
+        "不任免董监高",
+        "不写劳动合同"
+      ],
+      "deliverables": [
+        "要设合规负责人、部门、业务管理员和报告线；公司方"
+      ],
+      "path": "skills/配置合规机构与三道防线",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "企业合规与内部调查导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "设计政策层级与例外批准",
+      "kind": "atomic",
+      "displayName": "设计政策层级与例外批准",
+      "goal": "政策打架或例外口子失控；公司方",
+      "notFor": [
+        "不审查单份商业合同"
+      ],
+      "deliverables": [
+        "政策打架或例外口子失控；公司方"
+      ],
+      "path": "skills/设计政策层级与例外批准",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "企业合规与内部调查导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "设计合规培训与考核方案",
+      "kind": "atomic",
+      "displayName": "设计合规培训与考核方案",
+      "goal": "要针对岗位风险做培训而非通识课；公司方",
+      "notFor": [
+        "不保证“培训即可免责”"
+      ],
+      "deliverables": [
+        "要针对岗位风险做培训而非通识课；公司方"
+      ],
+      "path": "skills/设计合规培训与考核方案",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "企业合规与内部调查导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "开展合规有效性评价",
+      "kind": "atomic",
+      "displayName": "开展合规有效性评价",
+      "goal": "董事会或监管要求评价机制是否有效；公司方",
+      "notFor": [
+        "不替代财务审计或专项数据评估"
+      ],
+      "deliverables": [
+        "董事会或监管要求评价机制是否有效；公司方"
+      ],
+      "path": "skills/开展合规有效性评价",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "企业合规与内部调查导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "落地集团政策到境内实体",
+      "kind": "atomic",
+      "displayName": "落地集团政策到境内实体",
+      "goal": "境外或集团模板要落到中国大陆主体；境内实体",
+      "notFor": [
+        "境外当地劳动法或出口管制转出"
+      ],
+      "deliverables": [
+        "境外或集团模板要落到中国大陆主体；境内实体"
+      ],
+      "path": "skills/落地集团政策到境内实体",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "企业合规与内部调查导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "建设内部举报渠道与受理规则",
+      "kind": "atomic",
+      "displayName": "建设内部举报渠道与受理规则",
+      "goal": "要建热线、邮箱、平台和分办规则；公司方",
+      "notFor": [
+        "不调查具体线索",
+        "员工申诉机制转劳动"
+      ],
+      "deliverables": [
+        "要建热线、邮箱、平台和分办规则；公司方"
+      ],
+      "path": "skills/建设内部举报渠道与受理规则",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "企业合规与内部调查导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估单件举报可查性",
+      "kind": "atomic",
+      "displayName": "评估单件举报可查性",
+      "goal": "已收到实名或匿名举报，决定是否立案；公司方",
+      "notFor": [
+        "不直接出调查结论",
+        "性骚扰等职场专项转劳动"
+      ],
+      "deliverables": [
+        "已收到实名或匿名举报，决定是否立案；公司方"
+      ],
+      "path": "skills/评估单件举报可查性",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "企业合规与内部调查导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "设计举报人保护与反报复措施",
+      "kind": "atomic",
+      "displayName": "设计举报人保护与反报复措施",
+      "goal": "举报人或证人面临调岗、停薪、曝光风险；公司方",
+      "notFor": [
+        "不作出劳动处分",
+        "报复争议劳动程序转劳动"
+      ],
+      "deliverables": [
+        "举报人或证人面临调岗、停薪、曝光风险；公司方"
+      ],
+      "path": "skills/设计举报人保护与反报复措施",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "企业合规与内部调查导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估打击报复风险",
+      "kind": "atomic",
+      "displayName": "评估打击报复风险",
+      "goal": "举报后出现不利人事或合同动作；公司或举报人代理",
+      "notFor": [
+        "不写解除劳动合同决定"
+      ],
+      "deliverables": [
+        "举报后出现不利人事或合同动作；公司或举报人代理"
+      ],
+      "path": "skills/评估打击报复风险",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "企业合规与内部调查导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "确定调查授权范围与独立",
+      "kind": "atomic",
+      "displayName": "确定调查授权范围与独立",
+      "goal": "已决定要查，需书面授权和回避；公司方",
+      "notFor": [
+        "不扩大到与线索无关的全员监控"
+      ],
+      "deliverables": [
+        "已决定要查，需书面授权和回避；公司方"
+      ],
+      "path": "skills/确定调查授权范围与独立",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "企业合规与内部调查导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "制定调查方案与访谈计划",
+      "kind": "atomic",
+      "displayName": "制定调查方案与访谈计划",
+      "goal": "需单独规划步骤、顺序和证人保护；调查受托方",
+      "notFor": [
+        "不实施访谈",
+        "不违法取证"
+      ],
+      "deliverables": [
+        "需单独规划步骤、顺序和证人保护；调查受托方"
+      ],
+      "path": "skills/制定调查方案与访谈计划",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "企业合规与内部调查导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "合法收集书证电子证与财务痕迹",
+      "kind": "atomic",
+      "displayName": "合法收集书证电子证与财务痕迹",
+      "goal": "要按合法权限取回邮件、财务和合同痕迹；调查受托方",
+      "notFor": [
+        "禁止入侵系统、秘密录音方案、购买黑客服务"
+      ],
+      "deliverables": [
+        "要按合法权限取回邮件、财务和合同痕迹；调查受托方"
+      ],
+      "path": "skills/合法收集书证电子证与财务痕迹",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "企业合规与内部调查导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备调查访谈提纲与笔录结构",
+      "kind": "atomic",
+      "displayName": "准备调查访谈提纲与笔录结构",
+      "goal": "要问知情人和被调查人，需提纲和记录规则；调查受托方",
+      "notFor": [
+        "不强迫自证其罪口径",
+        "已刑事立案转刑事"
+      ],
+      "deliverables": [
+        "要问知情人和被调查人，需提纲和记录规则；调查受托方"
+      ],
+      "path": "skills/准备调查访谈提纲与笔录结构",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "企业合规与内部调查导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估律师工作产品与保密边界",
+      "kind": "atomic",
+      "displayName": "评估律师工作产品与保密边界",
+      "goal": "内外部律师材料可能对外提交或被调取；公司方",
+      "notFor": [
+        "不虚构中国法下的美国式特权",
+        "数据出境转数据领域"
+      ],
+      "deliverables": [
+        "内外部律师材料可能对外提交或被调取；公司方"
+      ],
+      "path": "skills/评估律师工作产品与保密边界",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "企业合规与内部调查导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估调查后处置路径",
+      "kind": "atomic",
+      "displayName": "评估调查后处置路径",
+      "goal": "事实大致清楚，要在民事、劳动、监管、刑事之间分流；公司方",
+      "notFor": [
+        "不写刑事控告或劳动解除文书"
+      ],
+      "deliverables": [
+        "事实大致清楚，要在民事、劳动、监管、刑事之间分流；公司方"
+      ],
+      "path": "skills/评估调查后处置路径",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "企业合规与内部调查导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备对内通报与对外口径",
+      "kind": "atomic",
+      "displayName": "准备对内通报与对外口径",
+      "goal": "需向董事会、员工、交易对方或媒体给有限口径；公司方",
+      "notFor": [
+        "不写上市公司公告正文"
+      ],
+      "deliverables": [
+        "需向董事会、员工、交易对方或媒体给有限口径；公司方"
+      ],
+      "path": "skills/准备对内通报与对外口径",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "企业合规与内部调查导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "处理利益冲突与调查回避",
+      "kind": "atomic",
+      "displayName": "处理利益冲突与调查回避",
+      "goal": "被调查人是高管、亲属或业务赞助人；公司方",
+      "notFor": [
+        "不因“老板要求”省略回避"
+      ],
+      "deliverables": [
+        "被调查人是高管、亲属或业务赞助人；公司方"
+      ],
+      "path": "skills/处理利益冲突与调查回避",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "企业合规与内部调查导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估反商业贿赂风险点",
+      "kind": "atomic",
+      "displayName": "评估反商业贿赂风险点",
+      "goal": "销售、采购、项目或公职接触面需要廉洁风险图；公司方",
+      "notFor": [
+        "不做法条意义上的垄断或不正当竞争专项评估"
+      ],
+      "deliverables": [
+        "销售、采购、项目或公职接触面需要廉洁风险图；公司方"
+      ],
+      "path": "skills/评估反商业贿赂风险点",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "企业合规与内部调查导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "设计反商业贿赂与礼品招待制度",
+      "kind": "atomic",
+      "displayName": "设计反商业贿赂与礼品招待制度",
+      "goal": "要建禁止、批准、记录和稽核机制；公司方",
+      "notFor": [
+        "不审查竞争协议",
+        "医药回扣行业细则转医疗"
+      ],
+      "deliverables": [
+        "要建禁止、批准、记录和稽核机制；公司方"
+      ],
+      "path": "skills/设计反商业贿赂与礼品招待制度",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "企业合规与内部调查导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "审查礼品招待赞助与捐赠",
+      "kind": "atomic",
+      "displayName": "审查礼品招待赞助与捐赠",
+      "goal": "单笔或一批礼品赞助捐赠待批或已发生；公司方",
+      "notFor": [
+        "不保证“小额即合法”",
+        "慈善专项税负转税务"
+      ],
+      "deliverables": [
+        "单笔或一批礼品赞助捐赠待批或已发生；公司方"
+      ],
+      "path": "skills/审查礼品招待赞助与捐赠",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "企业合规与内部调查导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估利益冲突与关联交易廉洁面",
+      "kind": "atomic",
+      "displayName": "评估利益冲突与关联交易廉洁面",
+      "goal": "员工、高管或第三方与公司利益冲突；公司方",
+      "notFor": [
+        "不写关联交易股东大会决议",
+        "公司治理转出"
+      ],
+      "deliverables": [
+        "员工、高管或第三方与公司利益冲突；公司方"
+      ],
+      "path": "skills/评估利益冲突与关联交易廉洁面",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "企业合规与内部调查导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估回扣账外暗中与资金链路",
+      "kind": "atomic",
+      "displayName": "评估回扣账外暗中与资金链路",
+      "goal": "怀疑折扣、佣金、账外款；公司方",
+      "notFor": [
+        "不定行贿罪",
+        "不把折扣一律写成回扣"
+      ],
+      "deliverables": [
+        "怀疑折扣、佣金、账外款；公司方"
+      ],
+      "path": "skills/评估回扣账外暗中与资金链路",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "企业合规与内部调查导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "梳理公职人员接触点与审批",
+      "kind": "atomic",
+      "displayName": "梳理公职人员接触点与审批",
+      "goal": "招标、许可、执法、国企采购接触公职人员；公司方",
+      "notFor": [
+        "监察对象身份判断不足则字段停止",
+        "不辩护职务犯罪"
+      ],
+      "deliverables": [
+        "招标、许可、执法、国企采购接触公职人员；公司方"
+      ],
+      "path": "skills/梳理公职人员接触点与审批",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "企业合规与内部调查导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估账簿记录与虚假报销",
+      "kind": "atomic",
+      "displayName": "评估账簿记录与虚假报销",
+      "goal": "报销、咨询费、市场费可能掩盖利益输送；公司方",
+      "notFor": [
+        "不作出税务处理决定",
+        "税务稽查转税务"
+      ],
+      "deliverables": [
+        "报销、咨询费、市场费可能掩盖利益输送；公司方"
+      ],
+      "path": "skills/评估账簿记录与虚假报销",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "企业合规与内部调查导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估销售激励与渠道返点廉洁风险",
+      "kind": "atomic",
+      "displayName": "评估销售激励与渠道返点廉洁风险",
+      "goal": "返点、销售奖、渠道激励被质疑买业务；公司方",
+      "notFor": [
+        "不设计薪酬制度劳动效果",
+        "劳动薪酬转劳动"
+      ],
+      "deliverables": [
+        "返点、销售奖、渠道激励被质疑买业务；公司方"
+      ],
+      "path": "skills/评估销售激励与渠道返点廉洁风险",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "企业合规与内部调查导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "设计第三方合规管理机制",
+      "kind": "atomic",
+      "displayName": "设计第三方合规管理机制",
+      "goal": "经销商、代理、中介、供应商需纳入廉洁管理；公司方",
+      "notFor": [
+        "不写完整交易合同（审查起草搁置）",
+        "C 端供应商清单只分流"
+      ],
+      "deliverables": [
+        "经销商、代理、中介、供应商需纳入廉洁管理；公司方"
+      ],
+      "path": "skills/设计第三方合规管理机制",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "企业合规与内部调查导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "筛查经销商代理中介廉洁风险",
+      "kind": "atomic",
+      "displayName": "筛查经销商代理中介廉洁风险",
+      "goal": "单个或一批第三方要做廉洁筛查；公司方",
+      "notFor": [
+        "不做信用报告买卖或违法背景调查"
+      ],
+      "deliverables": [
+        "单个或一批第三方要做廉洁筛查；公司方"
+      ],
+      "path": "skills/筛查经销商代理中介廉洁风险",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "企业合规与内部调查导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备第三方尽职调查工作底稿",
+      "kind": "atomic",
+      "displayName": "准备第三方尽职调查工作底稿",
+      "goal": "高风险第三方需可复核底稿；公司方",
+      "notFor": [
+        "不替代投资并购交易尽调整体"
+      ],
+      "deliverables": [
+        "高风险第三方需可复核底稿；公司方"
+      ],
+      "path": "skills/准备第三方尽职调查工作底稿",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "企业合规与内部调查导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备中止或终止高风险第三方合作通知",
+      "kind": "atomic",
+      "displayName": "准备中止或终止高风险第三方合作通知",
+      "goal": "已决定暂停付款或终止合作，需发送前通知；公司方",
+      "notFor": [
+        "解除权实体判断不足则停止终稿",
+        "合同争议专项可转介"
+      ],
+      "deliverables": [
+        "已决定暂停付款或终止合作，需发送前通知；公司方"
+      ],
+      "path": "skills/准备中止或终止高风险第三方合作通知",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "企业合规与内部调查导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估中间人费用与资金链路",
+      "kind": "atomic",
+      "displayName": "评估中间人费用与资金链路",
+      "goal": "咨询费、佣金、成功费去向不清；公司方",
+      "notFor": [
+        "不把正常佣金写成贿赂"
+      ],
+      "deliverables": [
+        "咨询费、佣金、成功费去向不清；公司方"
+      ],
+      "path": "skills/评估中间人费用与资金链路",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "企业合规与内部调查导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "制定突击检查现场预案",
+      "kind": "atomic",
+      "displayName": "制定突击检查现场预案",
+      "goal": "尚未被查，要预先演练权限、接待和证据保护；公司方",
+      "notFor": [
+        "不教销毁材料或拖延藏匿"
+      ],
+      "deliverables": [
+        "尚未被查，要预先演练权限、接待和证据保护；公司方"
+      ],
+      "path": "skills/制定突击检查现场预案",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "企业合规与内部调查导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "设置合规监管人或独立监察",
+      "kind": "atomic",
+      "displayName": "设置合规监管人或独立监察",
+      "goal": "监管、协议或董事会要求独立监督整改；公司方",
+      "notFor": [
+        "不保证监管认可"
+      ],
+      "deliverables": [
+        "监管、协议或董事会要求独立监督整改；公司方"
+      ],
+      "path": "skills/设置合规监管人或独立监察",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "企业合规与内部调查导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备向监管提交材料与特权日志",
+      "kind": "atomic",
+      "displayName": "准备向监管提交材料与特权日志",
+      "goal": "检查后要交卷，需区分可交、应扣、待核；公司方",
+      "notFor": [
+        "不伪造补充材料",
+        "数据出境转数据领域"
+      ],
+      "deliverables": [
+        "检查后要交卷，需区分可交、应扣、待核；公司方"
+      ],
+      "path": "skills/准备向监管提交材料与特权日志",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "企业合规与内部调查导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "谈判民事追偿与返还方案",
+      "kind": "atomic",
+      "displayName": "谈判民事追偿与返还方案",
+      "goal": "仍可与责任人或第三方谈返还；公司方",
+      "notFor": [
+        "不写已谈拢协议终稿",
+        "劳动经济补偿转劳动"
+      ],
+      "deliverables": [
+        "仍可与责任人或第三方谈返还；公司方"
+      ],
+      "path": "skills/谈判民事追偿与返还方案",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "企业合规与内部调查导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备民事追偿诉讼材料",
+      "kind": "atomic",
+      "displayName": "准备民事追偿诉讼材料",
+      "goal": "已决定对责任人或不法得利人起诉；公司方",
+      "notFor": [
+        "合同给付主轴可转合同争议",
+        "不写刑事控告"
+      ],
+      "deliverables": [
+        "已决定对责任人或不法得利人起诉；公司方"
+      ],
+      "path": "skills/准备民事追偿诉讼材料",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "企业合规与内部调查导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备根因分析与控制补强",
+      "kind": "atomic",
+      "displayName": "准备根因分析与控制补强",
+      "goal": "单件事件后要找控制失效而非只处分人；公司方",
+      "notFor": [
+        "不把根因写成“员工品德”一句话"
+      ],
+      "deliverables": [
+        "单件事件后要找控制失效而非只处分人；公司方"
+      ],
+      "path": "skills/准备根因分析与控制补强",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "企业合规与内部调查导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "跟踪整改验收与复发监测",
+      "kind": "atomic",
+      "displayName": "跟踪整改验收与复发监测",
+      "goal": "整改已布置，要看是否真的闭合；公司方",
+      "notFor": [
+        "不把计划写成已完成"
+      ],
+      "deliverables": [
+        "整改已布置，要看是否真的闭合；公司方"
+      ],
+      "path": "skills/跟踪整改验收与复发监测",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "企业合规与内部调查导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估舆情与法定披露交叉",
+      "kind": "atomic",
+      "displayName": "评估舆情与法定披露交叉",
+      "goal": "调查或检查可能触发公告、客户通知或舆情；公司方",
+      "notFor": [
+        "不写公告正文",
+        "证券披露转出"
+      ],
+      "deliverables": [
+        "调查或检查可能触发公告、客户通知或舆情；公司方"
+      ],
+      "path": "skills/评估舆情与法定披露交叉",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "企业合规与内部调查导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "协调跨境内部调查并分流涉外",
+      "kind": "atomic",
+      "displayName": "协调跨境内部调查并分流涉外",
+      "goal": "证据、证人或监管在境外或外国法并行；公司方",
+      "notFor": [
+        "不给出境传输方案",
+        "出口管制与制裁转涉外"
+      ],
+      "deliverables": [
+        "证据、证人或监管在境外或外国法并行；公司方"
+      ],
+      "path": "skills/协调跨境内部调查并分流涉外",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "企业合规与内部调查导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估内部账户冻结与资金保全",
+      "kind": "atomic",
+      "displayName": "评估内部账户冻结与资金保全",
+      "goal": "担心涉案资金被转走，需内部止付或保全；公司方",
+      "notFor": [
+        "不指导擅自划走个人账户",
+        "不替代法院保全"
+      ],
+      "deliverables": [
+        "担心涉案资金被转走，需内部止付或保全；公司方"
+      ],
+      "path": "skills/评估内部账户冻结与资金保全",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "企业合规与内部调查导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    }
+  ],
+  "guideName": "企业合规与内部调查导航"
+}

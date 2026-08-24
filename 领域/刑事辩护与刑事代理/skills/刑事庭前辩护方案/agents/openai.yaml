@@ -1,0 +1,4 @@
+interface:
+  display_name: "刑事庭前辩护方案"
+  short_description: "开庭前整合争点、申请、举证和庭审行动方案"
+  default_prompt: "使用 $刑事庭前辩护方案，在开庭前把争点、程序申请、举证质证和庭审行动整合成可执行方案。"

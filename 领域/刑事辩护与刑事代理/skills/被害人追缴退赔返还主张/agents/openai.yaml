@@ -1,0 +1,4 @@
+interface:
+  display_name: "被害人追缴退赔返还主张"
+  short_description: "就已识别涉案财物形成追缴、退赔或返还主张"
+  default_prompt: "使用 $被害人追缴退赔返还主张，就已识别的涉案财物，为被害人形成追缴、退赔或返还主张。"

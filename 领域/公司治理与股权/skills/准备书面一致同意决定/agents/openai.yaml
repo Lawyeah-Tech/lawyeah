@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备书面一致同意决定"
+  short_description: "准备全体股东书面一致同意决定并核验签署"
+  default_prompt: "使用 $准备书面一致同意决定，在全体股东路径下准备中国大陆公司书面一致同意决定。"

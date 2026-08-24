@@ -1,0 +1,4 @@
+interface:
+  display_name: "应对人身损害二审"
+  short_description: "针对人身损害上诉状准备二审答辩和补充证据意见"
+  default_prompt: "使用 $应对人身损害二审，在被上诉方立场下应对人身损害二审，准备答辩和补充证据意见。"

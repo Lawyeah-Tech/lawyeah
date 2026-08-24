@@ -1,0 +1,4 @@
+interface:
+  display_name: "提起司法解散之诉"
+  short_description: "准备百分之十表决权股东的司法解散起诉材料"
+  default_prompt: "使用 $提起司法解散之诉，在符合条件的股东立场下提起中国大陆司法解散之诉。"

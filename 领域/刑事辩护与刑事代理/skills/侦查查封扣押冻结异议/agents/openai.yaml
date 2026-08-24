@@ -1,0 +1,4 @@
+interface:
+  display_name: "侦查查封扣押冻结异议"
+  short_description: "就侦查查封扣押冻结形成权属与程序异议材料"
+  default_prompt: "使用 $侦查查封扣押冻结异议，针对侦查阶段的具体查封、扣押或冻结，形成权属和程序异议材料。"

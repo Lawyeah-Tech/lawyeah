@@ -1,0 +1,4 @@
+interface:
+  display_name: "羁押必要性审查申请"
+  short_description: "逮捕后形成羁押必要性审查申请与支持材料"
+  default_prompt: "使用 $羁押必要性审查申请，在逮捕后根据案件进展和继续羁押因素，形成羁押必要性审查申请。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备协商解除"
+  short_description: "形成协商解除谈判方案、协议和履行清单"
+  default_prompt: "使用 $准备协商解除，已选择协商解除，请准备谈判方案、协议和履行清单。"

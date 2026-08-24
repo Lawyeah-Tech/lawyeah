@@ -1,0 +1,4 @@
+interface:
+  display_name: "刑事庭审举证质证方案"
+  short_description: "形成被追诉方逐项举证质证和证明体系攻防方案"
+  default_prompt: "使用 $刑事庭审举证质证方案，为被追诉方就拟出示证据形成逐项举证、质证和证明体系攻防方案。"

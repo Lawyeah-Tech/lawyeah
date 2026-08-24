@@ -1,0 +1,4 @@
+interface:
+  display_name: "建设内部举报渠道与受理规则"
+  short_description: "设计热线邮箱平台的受理保密和利益冲突回避"
+  default_prompt: "使用 $建设内部举报渠道与受理规则，在单一公司立场下建设内部举报渠道与受理规则，不调查具体线索。"

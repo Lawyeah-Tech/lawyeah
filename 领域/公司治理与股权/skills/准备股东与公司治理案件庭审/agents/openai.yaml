@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备股东与公司治理案件庭审"
+  short_description: "准备公司治理案件的争点、举证质证和代理提纲"
+  default_prompt: "使用 $准备股东与公司治理案件庭审，在单方代理立场下准备中国大陆股东与公司治理案件庭审。"

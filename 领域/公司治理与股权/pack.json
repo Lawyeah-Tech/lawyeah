@@ -1,0 +1,1603 @@
+{
+  "schemaVersion": 2,
+  "id": "handle-corporate-equity",
+  "displayName": "公司治理与股权",
+  "description": "处理中国大陆公司组织、治理、股东权利和股权安排的评估、决议、转让、测算、证据、谈判和一审两造的多 Skill 领域包。",
+  "version": "1.0.0",
+  "license": "Apache-2.0",
+  "jurisdiction": "CN-mainland",
+  "contentModel": "multi-skill-progressive-disclosure",
+  "reinstallStrategy": "replace",
+  "scope": {
+    "purpose": "处理公司组织、治理、股东权利和股权安排，支持企业设立、运营和股东关系治理。",
+    "inScope": [
+      "公司设立与章程",
+      "股东会、董事会和治理机制",
+      "股权设计、转让与激励基础安排",
+      "股东权利、控制权和公司僵局争议"
+    ],
+    "outOfScope": [
+      "以收购、投资或交割为核心的交易项目",
+      "夫妻财产或继承中的股权分配",
+      "企业日常综合合规体系建设"
+    ],
+    "primaryDeliverables": [
+      "章程及治理文件",
+      "股权结构方案",
+      "公司决议文件",
+      "股东争议处理意见"
+    ]
+  },
+  "guideSkill": "公司治理与股权导航",
+  "mcp": {
+    "contractRange": "0.0"
+  },
+  "skills": [
+    {
+      "id": "公司治理与股权导航",
+      "kind": "guide",
+      "displayName": "公司治理与股权导航",
+      "goal": "说明领域包的能力、边界和当前原子 Skill 全貌",
+      "notFor": [
+        "直接完成具体法律业务成果"
+      ],
+      "deliverables": [
+        "领域能力定位结果"
+      ],
+      "path": "skills/公司治理与股权导航",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "评估出资瑕疵催缴与加速到期",
+          "应对股东权利诉讼",
+          "建立公司治理与股东争议证据案卷",
+          "准备股东会决议与召集",
+          "评估股东会董事会决议效力",
+          "谈判股东退出与僵局安排",
+          "提起股东权利诉讼",
+          "评估公司治理与股东关系",
+          "测算利润分配与股权回购对价",
+          "准备有限公司股权内部转让",
+          "选择公司类型与机关结构",
+          "准备公司设立文件与登记",
+          "起草或修订公司章程",
+          "评估章程与强制性规范冲突",
+          "准备有限公司与股份公司形式变更",
+          "准备一人公司特殊安排",
+          "准备催缴出资通知",
+          "评估非货币出资真实性与作价",
+          "准备内部增资与认缴调整",
+          "准备减资通知与债权人保护",
+          "评估失权与股权丧失",
+          "评估股东对公司债务的补充清偿责任",
+          "准备认缴期限调整与实缴整改",
+          "准备董事会或执行董事决定",
+          "准备监事会或审计委员会履职文件",
+          "提起决议不成立无效或撤销之诉",
+          "评估召集主持表决程序瑕疵",
+          "准备书面一致同意决定",
+          "评估董事高管忠实勤勉责任",
+          "准备董事高管任免与登记",
+          "评估关联交易与回避表决",
+          "梳理股权结构与控制权",
+          "评估优先购买权是否成立",
+          "准备股东名册与工商变更衔接",
+          "评估股权代持效力与显名",
+          "准备代持还原或显名变更",
+          "评估员工股权激励的公司安排",
+          "准备限制性股权或期权的公司文件",
+          "评估股权出质对治理与转让的约束",
+          "评估股东知情查阅权",
+          "准备查阅复制书面请求",
+          "提起查阅权诉讼",
+          "评估利润分配请求权",
+          "提起利润分配之诉",
+          "评估异议股东回购请求",
+          "评估股东代表诉讼条件",
+          "准备代表诉讼前置书面请求",
+          "提起股东代表诉讼",
+          "评估增资优先认缴权",
+          "评估控制权争夺与表决权约束",
+          "评估表决权拘束与一致行动",
+          "评估公司僵局",
+          "提起司法解散之诉",
+          "评估法人人格否认",
+          "评估控股股东实际控制人责任",
+          "准备证照印章管控与交接",
+          "测算出资差额利息与抽逃金额",
+          "设计催缴召集优先购买通知送达",
+          "保全公司账簿印章与电子治理记录",
+          "准备股权价值或非货币出资鉴定",
+          "起草股东和解或退出协议",
+          "起草股东协议与一致行动安排",
+          "谈判章程与治理重置",
+          "准备股东与公司治理案件庭审",
+          "提起公司治理案件上诉",
+          "评估股东争议管辖与仲裁条款",
+          "准备股权或公司财产保全",
+          "应对股权冻结或行为保全"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估公司治理与股东关系",
+      "kind": "atomic",
+      "displayName": "评估公司治理与股东关系",
+      "goal": "在单方无冲突立场下形成可决策的公司治理与股东关系总图",
+      "notFor": [
+        "发送版催缴或失权通知",
+        "可提交决议或诉状",
+        "投并购交割",
+        "婚家股权分配"
+      ],
+      "deliverables": [
+        "在单方无冲突立场下形成可决策的公司治理与股东关系总图"
+      ],
+      "path": "skills/评估公司治理与股东关系",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "公司治理与股权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估出资瑕疵催缴与加速到期",
+      "kind": "atomic",
+      "displayName": "评估出资瑕疵催缴与加速到期",
+      "goal": "判断未缴、不实、抽逃或加速到期路径，不发函",
+      "notFor": [
+        "发送版催缴或失权通知",
+        "出资差额精算终稿",
+        "股东责任诉讼终稿"
+      ],
+      "deliverables": [
+        "判断未缴、不实、抽逃或加速到期路径，不发函"
+      ],
+      "path": "skills/评估出资瑕疵催缴与加速到期",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "公司治理与股权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估股东会董事会决议效力",
+      "kind": "atomic",
+      "displayName": "评估股东会董事会决议效力",
+      "goal": "区分决议不成立、无效或可撤销，不写诉状",
+      "notFor": [
+        "发送版召集通知",
+        "可提交撤销之诉诉状",
+        "把轻微瑕疵写成当然撤销"
+      ],
+      "deliverables": [
+        "区分决议不成立、无效或可撤销，不写诉状"
+      ],
+      "path": "skills/评估股东会董事会决议效力",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "公司治理与股权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备股东会决议与召集",
+      "kind": "atomic",
+      "displayName": "准备股东会决议与召集",
+      "goal": "形成发送前召集通知和可签署决议或书面决定",
+      "notFor": [
+        "已作出决议的效力终局",
+        "董事会决议终稿",
+        "把草稿写成已经通过"
+      ],
+      "deliverables": [
+        "形成发送前召集通知和可签署决议或书面决定"
+      ],
+      "path": "skills/准备股东会决议与召集",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "公司治理与股权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备有限公司股权内部转让",
+      "kind": "atomic",
+      "displayName": "准备有限公司股权内部转让",
+      "goal": "形成优先购买书面通知、转让文件和名册登记接口",
+      "notFor": [
+        "投并购交割主轴",
+        "婚家分割过户",
+        "把签署协议写成已取得股东资格"
+      ],
+      "deliverables": [
+        "形成优先购买书面通知、转让文件和名册登记接口"
+      ],
+      "path": "skills/准备有限公司股权内部转让",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "公司治理与股权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "测算利润分配与股权回购对价",
+      "kind": "atomic",
+      "displayName": "测算利润分配与股权回购对价",
+      "goal": "形成可复核的分配或回购分项测算，不认定请求已成立",
+      "notFor": [
+        "定性总图",
+        "出资差额精算",
+        "唯一必得价格"
+      ],
+      "deliverables": [
+        "形成可复核的分配或回购分项测算，不认定请求已成立"
+      ],
+      "path": "skills/测算利润分配与股权回购对价",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "公司治理与股权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "建立公司治理与股东争议证据案卷",
+      "kind": "atomic",
+      "displayName": "建立公司治理与股东争议证据案卷",
+      "goal": "形成要件、举证责任、材料与合法补证矩阵",
+      "notFor": [
+        "策略总图",
+        "诉状",
+        "抢夺账簿印章或违法取证方案"
+      ],
+      "deliverables": [
+        "形成要件、举证责任、材料与合法补证矩阵"
+      ],
+      "path": "skills/建立公司治理与股东争议证据案卷",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "公司治理与股权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "谈判股东退出与僵局安排",
+      "kind": "atomic",
+      "displayName": "谈判股东退出与僵局安排",
+      "goal": "形成底线、让步、章证照安排、弃权范围和执行力提示",
+      "notFor": [
+        "已谈拢的退出协议正文",
+        "司法解散诉状",
+        "投并购交割清单"
+      ],
+      "deliverables": [
+        "形成底线、让步、章证照安排、弃权范围和执行力提示"
+      ],
+      "path": "skills/谈判股东退出与僵局安排",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "公司治理与股权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "提起股东权利诉讼",
+      "kind": "atomic",
+      "displayName": "提起股东权利诉讼",
+      "goal": "形成可提交的股东权利一审起诉包",
+      "notFor": [
+        "有效仲裁未排除",
+        "代提交",
+        "劳动或破产专属"
+      ],
+      "deliverables": [
+        "形成可提交的股东权利一审起诉包"
+      ],
+      "path": "skills/提起股东权利诉讼",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "公司治理与股权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对股东权利诉讼",
+      "kind": "atomic",
+      "displayName": "应对股东权利诉讼",
+      "goal": "形成首次应诉答辩包",
+      "notFor": [
+        "劳动应诉",
+        "主动起诉",
+        "只要管辖异议终稿且无实体"
+      ],
+      "deliverables": [
+        "形成首次应诉答辩包"
+      ],
+      "path": "skills/应对股东权利诉讼",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "公司治理与股权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "选择公司类型与机关结构",
+      "kind": "atomic",
+      "displayName": "选择公司类型与机关结构",
+      "goal": "设立或改制前比较有限／股份、董事会／一名董事、监事会／审计委员会；单方",
+      "notFor": [
+        "不代替设立登记包",
+        "上市公司发行转投资并购／证券监管"
+      ],
+      "deliverables": [
+        "设立或改制前比较有限／股份、董事会／一名董事、监事会／审计委员会；单方"
+      ],
+      "path": "skills/选择公司类型与机关结构",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "公司治理与股权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备公司设立文件与登记",
+      "kind": "atomic",
+      "displayName": "准备公司设立文件与登记",
+      "goal": "已选定类型，需章程签署、股东出资与登记材料；设立方",
+      "notFor": [
+        "不代提交",
+        "外商投资准入许可转涉外",
+        "不写一般商业合同"
+      ],
+      "deliverables": [
+        "已选定类型，需章程签署、股东出资与登记材料；设立方"
+      ],
+      "path": "skills/准备公司设立文件与登记",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "公司治理与股权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "起草或修订公司章程",
+      "kind": "atomic",
+      "displayName": "起草或修订公司章程",
+      "goal": "设立或已成立公司需可签署章程或修正案；单方",
+      "notFor": [
+        "一般交易合同审查起草本窗搁置",
+        "不代替股东会决议原子"
+      ],
+      "deliverables": [
+        "设立或已成立公司需可签署章程或修正案；单方"
+      ],
+      "path": "skills/起草或修订公司章程",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "公司治理与股权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估章程与强制性规范冲突",
+      "kind": "atomic",
+      "displayName": "评估章程与强制性规范冲突",
+      "goal": "章程表决、转让、任期、出资条款被质疑；单方",
+      "notFor": [
+        "不直接改写成新章程",
+        "决议效力另项"
+      ],
+      "deliverables": [
+        "章程表决、转让、任期、出资条款被质疑；单方"
+      ],
+      "path": "skills/评估章程与强制性规范冲突",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "公司治理与股权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备有限公司与股份公司形式变更",
+      "kind": "atomic",
+      "displayName": "准备有限公司与股份公司形式变更",
+      "goal": "已决定变更公司形式，需内部决议与登记衔接；单方",
+      "notFor": [
+        "以发行上市或交割为目标转投资并购"
+      ],
+      "deliverables": [
+        "已决定变更公司形式，需内部决议与登记衔接；单方"
+      ],
+      "path": "skills/准备有限公司与股份公司形式变更",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "公司治理与股权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备一人公司特殊安排",
+      "kind": "atomic",
+      "displayName": "准备一人公司特殊安排",
+      "goal": "一人公司设立、财产独立或股东责任风险需单独安排；单方",
+      "notFor": [
+        "不替代人格否认评估终局",
+        "不处理夫妻共同财产定性（婚家）"
+      ],
+      "deliverables": [
+        "一人公司设立、财产独立或股东责任风险需单独安排；单方"
+      ],
+      "path": "skills/准备一人公司特殊安排",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "公司治理与股权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备催缴出资通知",
+      "kind": "atomic",
+      "displayName": "准备催缴出资通知",
+      "goal": "已支持书面催缴，需发送前催缴书和宽限期；公司机关",
+      "notFor": [
+        "失权通知另项",
+        "催缴未闭合不得写出失权终稿"
+      ],
+      "deliverables": [
+        "已支持书面催缴，需发送前催缴书和宽限期；公司机关"
+      ],
+      "path": "skills/准备催缴出资通知",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "公司治理与股权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估非货币出资真实性与作价",
+      "kind": "atomic",
+      "displayName": "评估非货币出资真实性与作价",
+      "goal": "实物、知识产权、股权、债权出资真实性或显著低价；单方",
+      "notFor": [
+        "不预测鉴定意见",
+        "知识产权权属争议转知识产权"
+      ],
+      "deliverables": [
+        "实物、知识产权、股权、债权出资真实性或显著低价；单方"
+      ],
+      "path": "skills/评估非货币出资真实性与作价",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "公司治理与股权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备内部增资与认缴调整",
+      "kind": "atomic",
+      "displayName": "准备内部增资与认缴调整",
+      "goal": "已决定增资或调整认缴，需内部文件与优先认缴；公司／股东",
+      "notFor": [
+        "以外部融资交割为主转投资并购"
+      ],
+      "deliverables": [
+        "已决定增资或调整认缴，需内部文件与优先认缴；公司／股东"
+      ],
+      "path": "skills/准备内部增资与认缴调整",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "公司治理与股权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备减资通知与债权人保护",
+      "kind": "atomic",
+      "displayName": "准备减资通知与债权人保护",
+      "goal": "已决定减资，需通知公告和偿债或担保安排；公司",
+      "notFor": [
+        "破产清算转破产",
+        "违法减资责任另评"
+      ],
+      "deliverables": [
+        "已决定减资，需通知公告和偿债或担保安排；公司"
+      ],
+      "path": "skills/准备减资通知与债权人保护",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "公司治理与股权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估失权与股权丧失",
+      "kind": "atomic",
+      "displayName": "评估失权与股权丧失",
+      "goal": "宽限期届满拟发失权通知或已收到失权通知；公司或被催缴股东",
+      "notFor": [
+        "不把催缴书写成已失权",
+        "旧解释股东会除名与新法董事会失权分账"
+      ],
+      "deliverables": [
+        "宽限期届满拟发失权通知或已收到失权通知；公司或被催缴股东"
+      ],
+      "path": "skills/评估失权与股权丧失",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "公司治理与股权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估股东对公司债务的补充清偿责任",
+      "kind": "atomic",
+      "displayName": "评估股东对公司债务的补充清偿责任",
+      "goal": "债权人或公司要股东在未出资本息、抽逃或人格否认下负责；单方",
+      "notFor": [
+        "C 端股东责任评估只分流",
+        "破产债权申报转破产"
+      ],
+      "deliverables": [
+        "债权人或公司要股东在未出资本息、抽逃或人格否认下负责；单方"
+      ],
+      "path": "skills/评估股东对公司债务的补充清偿责任",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "公司治理与股权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备认缴期限调整与实缴整改",
+      "kind": "atomic",
+      "displayName": "准备认缴期限调整与实缴整改",
+      "goal": "存量公司需调至五年内或异常认缴被登记机关要求调整；公司",
+      "notFor": [
+        "不代替出资瑕疵实体评估",
+        "税务申报转税务"
+      ],
+      "deliverables": [
+        "存量公司需调至五年内或异常认缴被登记机关要求调整；公司"
+      ],
+      "path": "skills/准备认缴期限调整与实缴整改",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "公司治理与股权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备董事会或执行董事决定",
+      "kind": "atomic",
+      "displayName": "准备董事会或执行董事决定",
+      "goal": "需董事会／一名董事作出经营或催缴失权等决定；公司机关",
+      "notFor": [
+        "不代替股东会法定职权",
+        "关联交易专项另评"
+      ],
+      "deliverables": [
+        "需董事会／一名董事作出经营或催缴失权等决定；公司机关"
+      ],
+      "path": "skills/准备董事会或执行董事决定",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "公司治理与股权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备监事会或审计委员会履职文件",
+      "kind": "atomic",
+      "displayName": "准备监事会或审计委员会履职文件",
+      "goal": "需监事会或审计委员会检查、召集或代表诉讼前置答复；机关",
+      "notFor": [
+        "不代替董事责任实体评估"
+      ],
+      "deliverables": [
+        "需监事会或审计委员会检查、召集或代表诉讼前置答复；机关"
+      ],
+      "path": "skills/准备监事会或审计委员会履职文件",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "公司治理与股权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "提起决议不成立无效或撤销之诉",
+      "kind": "atomic",
+      "displayName": "提起决议不成立无效或撤销之诉",
+      "goal": "已决定起诉公司决议；股东／董事／监事",
+      "notFor": [
+        "与总体股东诉讼包不同：本项只做决议之诉"
+      ],
+      "deliverables": [
+        "已决定起诉公司决议；股东／董事／监事"
+      ],
+      "path": "skills/提起决议不成立无效或撤销之诉",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "公司治理与股权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估召集主持表决程序瑕疵",
+      "kind": "atomic",
+      "displayName": "评估召集主持表决程序瑕疵",
+      "goal": "单独委托核验通知期、主持、表决权数；单方",
+      "notFor": [
+        "不替代效力三项分类终局"
+      ],
+      "deliverables": [
+        "单独委托核验通知期、主持、表决权数；单方"
+      ],
+      "path": "skills/评估召集主持表决程序瑕疵",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "公司治理与股权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备书面一致同意决定",
+      "kind": "atomic",
+      "displayName": "准备书面一致同意决定",
+      "goal": "全体股东拟不召开会议直接决定；全体股东",
+      "notFor": [
+        "缺一名股东不得包装成已召开会议"
+      ],
+      "deliverables": [
+        "全体股东拟不召开会议直接决定；全体股东"
+      ],
+      "path": "skills/准备书面一致同意决定",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "公司治理与股权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估董事高管忠实勤勉责任",
+      "kind": "atomic",
+      "displayName": "评估董事高管忠实勤勉责任",
+      "goal": "自我交易、公司机会、竞业或执行职务致损；公司／股东／董事",
+      "notFor": [
+        "高管劳动合同解除转劳动",
+        "刑责转刑事"
+      ],
+      "deliverables": [
+        "自我交易、公司机会、竞业或执行职务致损；公司／股东／董事"
+      ],
+      "path": "skills/评估董事高管忠实勤勉责任",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "公司治理与股权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备董事高管任免与登记",
+      "kind": "atomic",
+      "displayName": "准备董事高管任免与登记",
+      "goal": "已决定任免法定代表人、董事或高管；公司",
+      "notFor": [
+        "不处理劳动解除补偿"
+      ],
+      "deliverables": [
+        "已决定任免法定代表人、董事或高管；公司"
+      ],
+      "path": "skills/准备董事高管任免与登记",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "公司治理与股权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估关联交易与回避表决",
+      "kind": "atomic",
+      "displayName": "评估关联交易与回避表决",
+      "goal": "董事、控股股东或实际控制人关联交易被质疑；单方",
+      "notFor": [
+        "综合合规调查转企业合规",
+        "不写代表诉讼终稿"
+      ],
+      "deliverables": [
+        "董事、控股股东或实际控制人关联交易被质疑；单方"
+      ],
+      "path": "skills/评估关联交易与回避表决",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "公司治理与股权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "梳理股权结构与控制权",
+      "kind": "atomic",
+      "displayName": "梳理股权结构与控制权",
+      "goal": "需单独画出认缴实缴、表决、一致行动和控制人；单方",
+      "notFor": [
+        "不判断转让效力或代持显名终局"
+      ],
+      "deliverables": [
+        "需单独画出认缴实缴、表决、一致行动和控制人；单方"
+      ],
+      "path": "skills/梳理股权结构与控制权",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "公司治理与股权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估优先购买权是否成立",
+      "kind": "atomic",
+      "displayName": "评估优先购买权是否成立",
+      "goal": "对外转让未通知或同等条件有争议；主张或抗辩方",
+      "notFor": [
+        "不写转让协议终稿"
+      ],
+      "deliverables": [
+        "对外转让未通知或同等条件有争议；主张或抗辩方"
+      ],
+      "path": "skills/评估优先购买权是否成立",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "公司治理与股权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备股东名册与工商变更衔接",
+      "kind": "atomic",
+      "displayName": "准备股东名册与工商变更衔接",
+      "goal": "已发生转让、继承或增资，公司拒不记载或变更；权利人",
+      "notFor": [
+        "继承权属本身转婚家"
+      ],
+      "deliverables": [
+        "已发生转让、继承或增资，公司拒不记载或变更；权利人"
+      ],
+      "path": "skills/准备股东名册与工商变更衔接",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "公司治理与股权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估股权代持效力与显名",
+      "kind": "atomic",
+      "displayName": "评估股权代持效力与显名",
+      "goal": "隐名／名义股东争投资权益或显名；单方",
+      "notFor": [
+        "C 端代持退出只分流",
+        "上市公司股份代持另标监管红旗"
+      ],
+      "deliverables": [
+        "隐名／名义股东争投资权益或显名；单方"
+      ],
+      "path": "skills/评估股权代持效力与显名",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "公司治理与股权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备代持还原或显名变更",
+      "kind": "atomic",
+      "displayName": "准备代持还原或显名变更",
+      "goal": "已决定还原或显名，需内部同意与登记；实际出资人或名义股东",
+      "notFor": [
+        "不重判代持是否有效"
+      ],
+      "deliverables": [
+        "已决定还原或显名，需内部同意与登记；实际出资人或名义股东"
+      ],
+      "path": "skills/准备代持还原或显名变更",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "公司治理与股权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估员工股权激励的公司安排",
+      "kind": "atomic",
+      "displayName": "评估员工股权激励的公司安排",
+      "goal": "拟用股权、期权或持股平台做激励，需公司侧结构；公司",
+      "notFor": [
+        "劳动身份、劳动合同和离职劳动后果转劳动",
+        "税负转税务"
+      ],
+      "deliverables": [
+        "拟用股权、期权或持股平台做激励，需公司侧结构；公司"
+      ],
+      "path": "skills/评估员工股权激励的公司安排",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "公司治理与股权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备限制性股权或期权的公司文件",
+      "kind": "atomic",
+      "displayName": "准备限制性股权或期权的公司文件",
+      "goal": "已选定公司侧激励工具，需决议、授予和名册安排；公司",
+      "notFor": [
+        "不写劳动合同或个税方案"
+      ],
+      "deliverables": [
+        "已选定公司侧激励工具，需决议、授予和名册安排；公司"
+      ],
+      "path": "skills/准备限制性股权或期权的公司文件",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "公司治理与股权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估股权出质对治理与转让的约束",
+      "kind": "atomic",
+      "displayName": "评估股权出质对治理与转让的约束",
+      "goal": "股权已出质或拟出质，影响表决、分红或转让；单方",
+      "notFor": [
+        "担保合同主轴转金融"
+      ],
+      "deliverables": [
+        "股权已出质或拟出质，影响表决、分红或转让；单方"
+      ],
+      "path": "skills/评估股权出质对治理与转让的约束",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "公司治理与股权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估股东知情查阅权",
+      "kind": "atomic",
+      "displayName": "评估股东知情查阅权",
+      "goal": "拟查阅或公司拟拒绝，需判断范围与不正当目的；股东或公司",
+      "notFor": [
+        "不代写起诉状",
+        "会计凭证范围须核验现行法"
+      ],
+      "deliverables": [
+        "拟查阅或公司拟拒绝，需判断范围与不正当目的；股东或公司"
+      ],
+      "path": "skills/评估股东知情查阅权",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "公司治理与股权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备查阅复制书面请求",
+      "kind": "atomic",
+      "displayName": "准备查阅复制书面请求",
+      "goal": "已决定行使查阅，需书面说明目的；股东",
+      "notFor": [
+        "不把请求写成公司已同意",
+        "十五日未满不写已违法拒绝"
+      ],
+      "deliverables": [
+        "已决定行使查阅，需书面说明目的；股东"
+      ],
+      "path": "skills/准备查阅复制书面请求",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "公司治理与股权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "提起查阅权诉讼",
+      "kind": "atomic",
+      "displayName": "提起查阅权诉讼",
+      "goal": "公司拒绝或逾期不答复，已决定起诉；股东",
+      "notFor": [
+        "与概括股东诉讼不同"
+      ],
+      "deliverables": [
+        "公司拒绝或逾期不答复，已决定起诉；股东"
+      ],
+      "path": "skills/提起查阅权诉讼",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "公司治理与股权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估利润分配请求权",
+      "kind": "atomic",
+      "displayName": "评估利润分配请求权",
+      "goal": "公司盈利不分或决议后不执行；股东",
+      "notFor": [
+        "不输出唯一可分数额"
+      ],
+      "deliverables": [
+        "公司盈利不分或决议后不执行；股东"
+      ],
+      "path": "skills/评估利润分配请求权",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "公司治理与股权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "提起利润分配之诉",
+      "kind": "atomic",
+      "displayName": "提起利润分配之诉",
+      "goal": "已有分配决议不执行，或符合起诉条件；股东",
+      "notFor": [
+        "无决议时不得包装成已确定债权"
+      ],
+      "deliverables": [
+        "已有分配决议不执行，或符合起诉条件；股东"
+      ],
+      "path": "skills/提起利润分配之诉",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "公司治理与股权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估异议股东回购请求",
+      "kind": "atomic",
+      "displayName": "评估异议股东回购请求",
+      "goal": "对合并分立主要财产、五年盈利不分等投反对票，或控股股东滥权；异议股东",
+      "notFor": [
+        "不输出唯一收购价",
+        "股份公司另核第一百六十一条"
+      ],
+      "deliverables": [
+        "对合并分立主要财产、五年盈利不分等投反对票，或控股股东滥权；异议股东"
+      ],
+      "path": "skills/评估异议股东回购请求",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "公司治理与股权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估股东代表诉讼条件",
+      "kind": "atomic",
+      "displayName": "评估股东代表诉讼条件",
+      "goal": "董监高或他人损害公司，股东拟代位起诉；股东",
+      "notFor": [
+        "不写起诉状",
+        "直接损害股东走第一百九十条"
+      ],
+      "deliverables": [
+        "董监高或他人损害公司，股东拟代位起诉；股东"
+      ],
+      "path": "skills/评估股东代表诉讼条件",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "公司治理与股权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备代表诉讼前置书面请求",
+      "kind": "atomic",
+      "displayName": "准备代表诉讼前置书面请求",
+      "goal": "已支持先请求监事会或董事会起诉；股东",
+      "notFor": [
+        "紧急情形可标直接起诉接口，不在本项出诉状"
+      ],
+      "deliverables": [
+        "已支持先请求监事会或董事会起诉；股东"
+      ],
+      "path": "skills/准备代表诉讼前置书面请求",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "公司治理与股权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "提起股东代表诉讼",
+      "kind": "atomic",
+      "displayName": "提起股东代表诉讼",
+      "goal": "前置已闭合或情况紧急，已决定以自己名义为公司起诉；股东",
+      "notFor": [
+        "与股东直接诉讼、公司自行起诉不同"
+      ],
+      "deliverables": [
+        "前置已闭合或情况紧急，已决定以自己名义为公司起诉；股东"
+      ],
+      "path": "skills/提起股东代表诉讼",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "公司治理与股权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估增资优先认缴权",
+      "kind": "atomic",
+      "displayName": "评估增资优先认缴权",
+      "goal": "增资未给现有股东优先认缴或比例争议；股东",
+      "notFor": [
+        "外部融资交易文件转投资并购"
+      ],
+      "deliverables": [
+        "增资未给现有股东优先认缴或比例争议；股东"
+      ],
+      "path": "skills/评估增资优先认缴权",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "公司治理与股权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估控制权争夺与表决权约束",
+      "kind": "atomic",
+      "displayName": "评估控制权争夺与表决权约束",
+      "goal": "争董事席位、法定代表人或表决权归属；单方",
+      "notFor": [
+        "不指导抢夺印章证照"
+      ],
+      "deliverables": [
+        "争董事席位、法定代表人或表决权归属；单方"
+      ],
+      "path": "skills/评估控制权争夺与表决权约束",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "公司治理与股权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估表决权拘束与一致行动",
+      "kind": "atomic",
+      "displayName": "评估表决权拘束与一致行动",
+      "goal": "股东协议或一致行动是否约束本次表决；单方",
+      "notFor": [
+        "未成立公司的投资协议审查本窗搁置"
+      ],
+      "deliverables": [
+        "股东协议或一致行动是否约束本次表决；单方"
+      ],
+      "path": "skills/评估表决权拘束与一致行动",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "公司治理与股权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估公司僵局",
+      "kind": "atomic",
+      "displayName": "评估公司僵局",
+      "goal": "机关失灵或两派无法形成有效决议；单方",
+      "notFor": [
+        "不直接写解散诉状",
+        "盈利不等于无僵局"
+      ],
+      "deliverables": [
+        "机关失灵或两派无法形成有效决议；单方"
+      ],
+      "path": "skills/评估公司僵局",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "公司治理与股权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "提起司法解散之诉",
+      "kind": "atomic",
+      "displayName": "提起司法解散之诉",
+      "goal": "持有百分之十以上表决权且已决定请求解散；股东",
+      "notFor": [
+        "破产申请转破产",
+        "解散判决效力及于全体股东"
+      ],
+      "deliverables": [
+        "持有百分之十以上表决权且已决定请求解散；股东"
+      ],
+      "path": "skills/提起司法解散之诉",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "公司治理与股权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估法人人格否认",
+      "kind": "atomic",
+      "displayName": "评估法人人格否认",
+      "goal": "债权人主张股东或姐妹公司连带；债权人或股东",
+      "notFor": [
+        "C 端股东责任只分流",
+        "不给胜诉率"
+      ],
+      "deliverables": [
+        "债权人主张股东或姐妹公司连带；债权人或股东"
+      ],
+      "path": "skills/评估法人人格否认",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "公司治理与股权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估控股股东实际控制人责任",
+      "kind": "atomic",
+      "displayName": "评估控股股东实际控制人责任",
+      "goal": "滥权、指示董事或执行公司事务致损；中小股东或公司",
+      "notFor": [
+        "不代替代表诉讼或回购评估终局"
+      ],
+      "deliverables": [
+        "滥权、指示董事或执行公司事务致损；中小股东或公司"
+      ],
+      "path": "skills/评估控股股东实际控制人责任",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "公司治理与股权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备证照印章管控与交接",
+      "kind": "atomic",
+      "displayName": "准备证照印章管控与交接",
+      "goal": "僵局或法定代表人变更后争章证照；单方",
+      "notFor": [
+        "禁止教唆抢夺、隐匿或私刻"
+      ],
+      "deliverables": [
+        "僵局或法定代表人变更后争章证照；单方"
+      ],
+      "path": "skills/准备证照印章管控与交接",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "公司治理与股权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "测算出资差额利息与抽逃金额",
+      "kind": "atomic",
+      "displayName": "测算出资差额利息与抽逃金额",
+      "goal": "需未出资本息或抽逃返还数字；单方",
+      "notFor": [
+        "不认定瑕疵已成立",
+        "不输出唯一必得总额"
+      ],
+      "deliverables": [
+        "需未出资本息或抽逃返还数字；单方"
+      ],
+      "path": "skills/测算出资差额利息与抽逃金额",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "公司治理与股权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "设计催缴召集优先购买通知送达",
+      "kind": "atomic",
+      "displayName": "设计催缴召集优先购买通知送达",
+      "goal": "发通知前需单独设计渠道和到达证据；单方",
+      "notFor": [
+        "不写通知实体内容"
+      ],
+      "deliverables": [
+        "发通知前需单独设计渠道和到达证据；单方"
+      ],
+      "path": "skills/设计催缴召集优先购买通知送达",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "公司治理与股权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "保全公司账簿印章与电子治理记录",
+      "kind": "atomic",
+      "displayName": "保全公司账簿印章与电子治理记录",
+      "goal": "账簿、决议、电子邮箱或印章可能灭失；单方",
+      "notFor": [
+        "不指导抢夺或违法侵入系统"
+      ],
+      "deliverables": [
+        "账簿、决议、电子邮箱或印章可能灭失；单方"
+      ],
+      "path": "skills/保全公司账簿印章与电子治理记录",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "公司治理与股权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备股权价值或非货币出资鉴定",
+      "kind": "atomic",
+      "displayName": "准备股权价值或非货币出资鉴定",
+      "goal": "回购、转让或出资不实需鉴定事项；单方",
+      "notFor": [
+        "不预测鉴定意见"
+      ],
+      "deliverables": [
+        "回购、转让或出资不实需鉴定事项；单方"
+      ],
+      "path": "skills/准备股权价值或非货币出资鉴定",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "公司治理与股权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "起草股东和解或退出协议",
+      "kind": "atomic",
+      "displayName": "起草股东和解或退出协议",
+      "goal": "条件已谈拢，需可签退出／和解协议；单方",
+      "notFor": [
+        "与未争议的投资协议不同",
+        "司法确认另项"
+      ],
+      "deliverables": [
+        "条件已谈拢，需可签退出／和解协议；单方"
+      ],
+      "path": "skills/起草股东和解或退出协议",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "公司治理与股权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "起草股东协议与一致行动安排",
+      "kind": "atomic",
+      "displayName": "起草股东协议与一致行动安排",
+      "goal": "公司内部权力配置需股东协议，不是外部交易交割；单方",
+      "notFor": [
+        "以收购交割为目标的交易文件转投资并购",
+        "一般合同起草本窗搁置"
+      ],
+      "deliverables": [
+        "公司内部权力配置需股东协议，不是外部交易交割；单方"
+      ],
+      "path": "skills/起草股东协议与一致行动安排",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "公司治理与股权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "谈判章程与治理重置",
+      "kind": "atomic",
+      "displayName": "谈判章程与治理重置",
+      "goal": "僵局未解散，拟改表决、董事席位或退出机制；单方",
+      "notFor": [
+        "不直接输出已通过的章程修正案终稿"
+      ],
+      "deliverables": [
+        "僵局未解散，拟改表决、董事席位或退出机制；单方"
+      ],
+      "path": "skills/谈判章程与治理重置",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "公司治理与股权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备股东与公司治理案件庭审",
+      "kind": "atomic",
+      "displayName": "准备股东与公司治理案件庭审",
+      "goal": "诉讼或仲裁即将开庭；单方代理",
+      "notFor": [
+        "不代替立案或仅和解"
+      ],
+      "deliverables": [
+        "诉讼或仲裁即将开庭；单方代理"
+      ],
+      "path": "skills/准备股东与公司治理案件庭审",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "公司治理与股权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "提起公司治理案件上诉",
+      "kind": "atomic",
+      "displayName": "提起公司治理案件上诉",
+      "goal": "不服未生效裁判；上诉方",
+      "notFor": [
+        "不重做一审"
+      ],
+      "deliverables": [
+        "不服未生效裁判；上诉方"
+      ],
+      "path": "skills/提起公司治理案件上诉",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "公司治理与股权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "评估股东争议管辖与仲裁条款",
+      "kind": "atomic",
+      "displayName": "评估股东争议管辖与仲裁条款",
+      "goal": "要选法院还是仲裁，或章程／股东协议有仲裁条款；单方",
+      "notFor": [
+        "不代写完整立案包"
+      ],
+      "deliverables": [
+        "要选法院还是仲裁，或章程／股东协议有仲裁条款；单方"
+      ],
+      "path": "skills/评估股东争议管辖与仲裁条款",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "公司治理与股权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "准备股权或公司财产保全",
+      "kind": "atomic",
+      "displayName": "准备股权或公司财产保全",
+      "goal": "已决定申请冻结股权、账户或行为保全；申请方",
+      "notFor": [
+        "不保证裁定",
+        "禁止隐匿转移"
+      ],
+      "deliverables": [
+        "已决定申请冻结股权、账户或行为保全；申请方"
+      ],
+      "path": "skills/准备股权或公司财产保全",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "公司治理与股权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    },
+    {
+      "id": "应对股权冻结或行为保全",
+      "kind": "atomic",
+      "displayName": "应对股权冻结或行为保全",
+      "goal": "股权或章证照已被保全；被保全方",
+      "notFor": [
+        "禁止转移隐匿或违反裁定"
+      ],
+      "deliverables": [
+        "股权或章证照已被保全；被保全方"
+      ],
+      "path": "skills/应对股权冻结或行为保全",
+      "relations": {
+        "depends-on": [],
+        "related-to": [
+          "公司治理与股权导航"
+        ],
+        "excludes": []
+      },
+      "mcpDecisionNodes": []
+    }
+  ],
+  "guideName": "公司治理与股权导航"
+}

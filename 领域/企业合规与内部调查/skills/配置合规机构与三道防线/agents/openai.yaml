@@ -1,0 +1,4 @@
+interface:
+  display_name: "配置合规机构与三道防线"
+  short_description: "给出职责矩阵、利益冲突隔离和授权边界"
+  default_prompt: "使用 $配置合规机构与三道防线，在单一公司立场下配置合规负责人、部门、业务管理员和报告线。"

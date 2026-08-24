@@ -1,0 +1,4 @@
+interface:
+  display_name: "梳理股权结构与控制权"
+  short_description: "画出认缴实缴、表决权、一致行动和实际控制人"
+  default_prompt: "使用 $梳理股权结构与控制权，在单一立场下梳理中国大陆公司股权结构与控制权。"
