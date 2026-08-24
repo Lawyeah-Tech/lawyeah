@@ -376,6 +376,13 @@
           "unavailableBehavior": "继续事实、收件人和正文结构；中断效力和责任结论字段停止"
         },
         {
+          "id": "verify-law-detail",
+          "purpose": "已有真实 regulation_id 时核验将改变中断或收件人结论的条文正文",
+          "capability": "get_law_detail",
+          "level": "optional",
+          "unavailableBehavior": "不得编造 regulation_id；该规则字段保持待核"
+        },
+        {
           "id": "borrow-notice-template",
           "purpose": "只借鉴通知栏目结构，不把范本当现行法",
           "capability": "search_template",
