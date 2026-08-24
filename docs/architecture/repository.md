@@ -28,7 +28,6 @@ docs/     架构与历史领域说明
 领域/<中文领域名>/
 ├── README.md
 ├── LICENSE
-├── NOTICE
 ├── pack.json
 └── skills/
     ├── <中文入口>/

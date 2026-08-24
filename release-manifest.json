@@ -4,8 +4,7 @@
     "pack.json"
   ],
   "rootInclude": [
-    "LICENSE",
-    "NOTICE"
+    "LICENSE"
   ],
   "include": [
     "pack.json",

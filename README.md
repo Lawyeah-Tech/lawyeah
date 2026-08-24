@@ -87,7 +87,6 @@
 领域/房地产与物业/
   README.md
   LICENSE
-  NOTICE
   pack.json
   skills/
     房地产与物业导航/
