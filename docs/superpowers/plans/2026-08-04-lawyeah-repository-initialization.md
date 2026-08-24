@@ -1,5 +1,7 @@
 # Lawyeah Repository Initialization Implementation Plan
 
+> 历史实施计划（2026-08-04）。不代表当前公开仓库：律师安装目录是 `领域/` 和 `合同/`，已无 `tests/`、`tooling/` 和发布工作流。
+
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
 **Goal:** Initialize the public Lawyeah monorepo with a validated 22-domain catalog, progressive-disclosure pack template, static release packaging contract, and repository governance.

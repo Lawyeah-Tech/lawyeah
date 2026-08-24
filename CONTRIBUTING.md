@@ -6,11 +6,12 @@
 - 不新增跨领域运行时 Skill，不用共享正文替代领域专业化。
 - 不提交用户材料、凭证、访问令牌、原始检索记录或内部蒸馏证据。
 - 只引用项目工具目录中已经稳定命名的 MCP 或宿主工具，不写入端点、凭证、内部字段或未经确认的参数。
+- 只改 `领域/` 或 `合同/` 下的中文包。不要往 `packs/` 加内容，不要提交 `research/`。
 
 ## Skill Pack 要求
 
 - 公开仓库的目录路径使用中文：办案包在 `领域/`，合同包在 `合同/`。`pack.json` 的 `id` 可保留英文，供程序使用。
-- 每个领域包必须包含一个能力导航 Skill；进入 `active` 前还必须包含至少一个原子 Skill。
+- 每个包必须包含一个能力导航 Skill 和至少一个原子 Skill。
 - 每个 Skill 独占 `skills/<中文名>/` 目录，YAML `name` 与目录名一致。
 - 每个 Skill 必须包含 `agents/openai.yaml`；顶层只允许 `SKILL.md`、`agents/`、`references/`、`scripts/` 和 `assets/`。
 - 每个 `SKILL.md` 的 YAML frontmatter 只包含 `name` 和 `description`。
@@ -20,16 +21,15 @@
 - `depends-on` 必须说明所需的具体业务成果，不能把其他 Skill 当作知识库。
 - 法律文书模板放在所属原子 Skill 的 `assets/templates/`。
 - MCP 或宿主工具按具体判断节点条件引用，并说明业务用途、最小逻辑输入、结果使用和不可用行为；Skill 开发与发布不要求实际 MCP 注册、联调或真实调用。
-- `pack.json` 必须符合 `schemas/pack.schema.json`。
-- 只有完成专业内容和评测后，领域状态才能从 `planned` 改为 `active`。
+- 公开包不分专业版 / 升级版，正文不要再按商品规格分流。
 
 ## 领域边界
 
 - 原子 Skill 以用户主要目标和最终专业成果确定唯一主要领域。
 - 相似 Skill 可以在不同领域独立发展，但不得共享运行时文件或版本。
-- 公开边界结论更新到 `catalog/domains.json` 和 `docs/architecture/domain-boundaries.md`。
+- 公开边界结论更新到 `docs/architecture/domain-boundaries.md`；安装清单以 `领域/` 和 `合同/` 的 README 为准。
 - 完整推导、信源、正反例和评测记录保存在被忽略的 `research/`，不得提交。
-- 不得把 `research/`、`evals/`、`tests/`、研发 Retrieval 地址、私有库标识或本地绝对路径复制进任何运行时 Skill；发布构建会阻断此类内容。
+- 不得把 `research/`、`evals/`、研发 Retrieval 地址、私有库标识或本地绝对路径复制进任何运行时 Skill。
 
 ## 专家评审质量门
 
@@ -41,18 +41,8 @@
 - 检索记录、少数意见、隐藏评测和修订证据保存在被忽略的 `research/`，不得进入发布 Skill。
 - 真实数据不是 Skill 开发或发布的必需验收材料；使用构造、合成、组合和对抗场景验证方法、边界、输出与安全合同，并由当前专家组独立评审收口。
 - 领域共用研究形成内部研发基线，原子 Skill 只补充特有判断；运行时仍须自包含，不引用内部基线。
-- 每个原子 Skill 只维护一份权威候选，Pack 内容由构建生成，不手工同步候选镜像。
 - 修订先做变更影响分级；只有核心合同变化才要求原子级全量回归，局部变化执行定向回归和领域公共回归。
 
-## 提交前验证
+## 提交前
 
-```bash
-python3 -m unittest discover -s tests -v
-python3 tooling/validate_repository.py --root .
-```
-
-开发 `planned` 领域包时，还必须显式校验该包：
-
-```bash
-python3 tooling/validate_repository.py --root . --pack <domain-id>
-```
+确认改动落在对应中文包内，路径、YAML `name` 和 `pack.json` 清单一致，且未带入凭证、案件材料或 `research/`。本仓库已不再附带 `tests/` 和 `tooling/` 校验脚本。
