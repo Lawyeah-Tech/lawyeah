@@ -9,9 +9,9 @@
 
 ## Skill Pack 要求
 
-- 所有运行时路径使用英文 ASCII；目录和稳定 ID 使用小写字母、数字和连字符。
+- 公开仓库的目录路径使用中文：办案包在 `领域/`，合同包在 `合同/`。`pack.json` 的 `id` 可保留英文，供程序使用。
 - 每个领域包必须包含一个能力导航 Skill；进入 `active` 前还必须包含至少一个原子 Skill。
-- 每个 Skill 独占 `skills/<skill-id>/` 目录，名称以 `lawyeah-` 开头，且 YAML `name` 与目录完全一致。
+- 每个 Skill 独占 `skills/<中文名>/` 目录，YAML `name` 与目录名一致。
 - 每个 Skill 必须包含 `agents/openai.yaml`；顶层只允许 `SKILL.md`、`agents/`、`references/`、`scripts/` 和 `assets/`。
 - 每个 `SKILL.md` 的 YAML frontmatter 只包含 `name` 和 `description`。
 - 原子 Skill 必须对应完整用户目标和可验收成果，不得把检索、读取材料或单个流程步骤拆成 Skill。

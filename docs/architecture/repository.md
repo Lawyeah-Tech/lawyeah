@@ -2,18 +2,16 @@
 
 ## 分层
 
-Lawyeah 使用一个公开源码仓库管理 22 个法律业务领域包。领域包是安装、版本、卸载和评测单元；原子 Skill 是包内独立触发的专业能力单元。
+Lawyeah 公开源码仓库按律师查找用中文目录组织：`领域/` 放 21 个办案包，`合同/` 放 11 个审查与起草包。每个包是安装和卸载单位，不再区分专业版 / 升级版。原子 Skill 是包内独立触发的专业能力单元。
 
 ```text
-catalog → 领域边界、组合包和渠道目录
-packs → 自包含领域包
-schemas → 可执行契约
-templates → 研发脚手架
-tooling + tests → 源码质量与发布边界
-static release archive → 用户实际安装内容
+领域/     21 个办案领域（中文目录）
+合同/     11 个合同审查与起草包（中文目录）
+catalog/  机器可读清单（迁移期仍保留）
+docs/     架构说明
 ```
 
-私有研究、原始检索结果、边界评测和内部证据链保存在受 Git 忽略的 `research/`。公开 Skill 只包含已经完成蒸馏、能够直接指导任务的方法与资源。
+`packs/` 是旧英文路径，迁完即删。私有研究、原始检索和内部证据在 gitignore 的 `research/`，不进入公开仓库。
 
 ## 领域包系统
 
@@ -24,19 +22,22 @@ static release archive → 用户实际安装内容
 3. 一个 `pack.json`：记录包级范围、Skill 清单、关系和 MCP 判断节点依赖。
 
 ```text
-packs/<domain-id>/
+领域/<中文领域名>/
+├── README.md
+├── LICENSE
+├── NOTICE
 ├── pack.json
 └── skills/
-    ├── lawyeah-<domain>-guide/
+    ├── <中文入口>/
     │   ├── SKILL.md
     │   └── agents/openai.yaml
-    └── lawyeah-<domain>-<task>/
+    └── <中文原子>/
         ├── SKILL.md
         ├── agents/openai.yaml
-        ├── references/
-        ├── scripts/
-        └── assets/templates/
+        └── references/
 ```
+
+合同包同样放在 `合同/<中文套件名>/`。
 
 能力导航 Skill 默认只在用户需要了解包的全貌、确认边界或定位能力时使用；具体请求可以直接触发原子 Skill。导航 Skill 不承担具体法律成果，也不成为强制总控入口。
 
@@ -70,7 +71,7 @@ Skill 之间只使用三类关系：
 
 每个 Skill 使用 Agent Skills 的三级渐进披露：名称和描述用于发现，`SKILL.md` 在触发后加载，`references/`、`scripts/` 和 `assets/` 按需使用。每个 Skill 必须提供 `agents/openai.yaml`；Skill 顶层只允许 `SKILL.md`、`agents/`、`references/`、`scripts/` 和 `assets/`。
 
-运行时路径全部使用英文 ASCII。每个 Skill 只能引用自身目录内的文件，不通过 `../` 跨 Skill 读取资源。法律文书格式资产放在所属原子 Skill 的 `assets/templates/`；仓库根目录 `templates/` 只用于研发脚手架，不进入安装包。
+公开仓库目录使用中文。每个 Skill 只能引用自身目录内的文件，不通过 `../` 跨 Skill 读取资源。法律文书格式资产放在所属原子 Skill 的 `assets/templates/`。
 
 ## `pack.json` 事实源
 
