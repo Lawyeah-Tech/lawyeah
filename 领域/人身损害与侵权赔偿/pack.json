@@ -127,27 +127,84 @@
       "id": "评估人身侵权责任",
       "kind": "atomic",
       "displayName": "评估人身侵权责任",
-      "goal": "在单方无冲突立场下形成可决策的人身侵权责任总图",
+      "goal": "在单方无冲突立场下形成人身侵权路径总图、请求抗辩接口和转介清单",
       "notFor": [
         "发送版索赔函",
         "鉴定申请终稿",
         "精算终稿",
         "诉状或答辩",
+        "选定管辖法院",
+        "唯一时效截止日",
+        "交强险分账终稿",
         "工伤认定待遇",
         "医疗损害鉴定"
       ],
       "deliverables": [
-        "在单方无冲突立场下形成可决策的人身侵权责任总图"
+        "人身侵权路径总图、请求抗辩接口和转介清单"
       ],
       "path": "skills/评估人身侵权责任",
       "relations": {
         "depends-on": [],
         "related-to": [
-          "人身损害与侵权赔偿导航"
+          "人身损害与侵权赔偿导航",
+          "评估责任主体与保险覆盖",
+          "评估人身损害诉讼时效",
+          "评估人身损害管辖",
+          "测算人身损害赔偿",
+          "准备伤残鉴定材料",
+          "准备侵权索赔通知",
+          "评估道路交通事故责任与保险先行",
+          "评估工伤与第三人侵权竞合",
+          "评估共同侵权与连带按份",
+          "评估高度危险作业致害",
+          "评估教育机构责任",
+          "评估自甘风险与公平分担",
+          "审查保险一次性了结弃权",
+          "评估用人者责任",
+          "评估提供劳务受害",
+          "评估铁路航空等非海事承运人人身损害",
+          "评估因果关系与既往伤病",
+          "评估死亡赔偿权利人与分配",
+          "评估后续治疗费另行主张",
+          "申请先予执行医疗费",
+          "复核交通事故认定",
+          "直接起诉保险公司",
+          "分流刑民交叉",
+          "评估侵权人不明路径",
+          "评估未成年或无行为能力受害人代理"
         ],
         "excludes": []
       },
-      "mcpDecisionNodes": []
+      "mcpDecisionNodes": [
+        {
+          "id": "verify-tort-rules",
+          "purpose": "核验归责、赔偿项目、时效、管辖、交强险顺序、未投保和工伤竞合的现行规则",
+          "capability": "search_law",
+          "level": "required",
+          "unavailableBehavior": "继续事实、主体名称变体、程序文书状态和问题清单；请求抗辩法律结论、期限、管辖入口和保险限额字段停止"
+        },
+        {
+          "id": "verify-law-detail",
+          "purpose": "已有真实 regulation_id 时核验将改变路径、期限或限额的条文正文",
+          "capability": "get_law_detail",
+          "level": "optional",
+          "unavailableBehavior": "不得编造 regulation_id；该规则字段保持待核，不把检索摘要条号写成已核验 L#"
+        },
+        {
+          "id": "verify-practice-paths",
+          "purpose": "发现鉴定闸、弃权、举证倒置和路径反例",
+          "capability": "search_practiced",
+          "level": "recommended",
+          "unavailableBehavior": "继续内置方法；不把无实务检索写成不存在该路径"
+        },
+        {
+          "id": "compare-fact-cases",
+          "purpose": "特殊事实比较类案差异与翻转条件",
+          "capability": "search_case_by_fact",
+          "level": "optional",
+          "unavailableBehavior": "不编造案号；不把无类案写成请求不成立"
+        }
+      ]
     },
     {
       "id": "评估责任主体与保险覆盖",
