@@ -1,4 +1,0 @@
-interface:
-  display_name: "实施单位解除终止"
-  short_description: "实施单位已选定的个体解除终止路径，形成权限、通知、工会、送达、结算和证据包"
-  default_prompt: "Use $lawyeah-labor-implement-employer-termination to implement a selected mainland China employer termination path."

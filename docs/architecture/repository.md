@@ -12,9 +12,9 @@ Lawyeah 公开源码仓库按律师查找用中文目录组织：`领域/` 放 2
 docs/     架构与历史领域说明
 ```
 
-不要从 `packs/` 安装。那是迁库前的英文路径，多数仍是历史 P0 口径，待删除。`catalog/`、`schemas/`、`release-manifest.json` 是迁移期留下的机器可读清单，不是律师安装入口。私有研究、原始检索和内部证据在 gitignore 的 `research/`，不进入公开仓库。
+`catalog/`、`schemas/`、`release-manifest.json` 是机器可读清单，不是律师安装入口。私有研究、原始检索和内部证据在 gitignore 的 `research/`，不进入公开仓库。
 
-本仓库不再包含 `tests/`、`tooling/`、`templates/` 和 GitHub Actions 发布工作流。商品 ZIP、网盘发货和图形安装器是另一条渠道，不在本仓库。
+本仓库不包含 `tests/`、`tooling/`、`templates/` 和 GitHub Actions 发布工作流。
 
 ## 领域包系统
 

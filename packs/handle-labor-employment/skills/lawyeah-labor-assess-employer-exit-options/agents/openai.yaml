@@ -1,4 +1,0 @@
-interface:
-  display_name: "评估单位个体退出"
-  short_description: "比较单位针对个体劳动者的退出路径、证据、程序、成本和停止条件"
-  default_prompt: "Use $lawyeah-labor-assess-employer-exit-options to assess individual worker exit options for a mainland China employer."

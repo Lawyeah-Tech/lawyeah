@@ -1,4 +1,0 @@
-interface:
-  display_name: "监护资格撤销与变更方案"
-  short_description: "针对怠于履职、侵害、冲突或监护能力变化形成撤销、变更和临时保护材料。"
-  default_prompt: "使用 $lawyeah-family-remove-or-replace-guardian，针对怠于履职、侵害、冲突或监护能力变化形成撤销、变更和临时保护材料。"

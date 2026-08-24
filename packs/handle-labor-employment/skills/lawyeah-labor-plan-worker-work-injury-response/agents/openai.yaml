@@ -1,4 +1,0 @@
-interface:
-  display_name: "规划职工工伤初期行动"
-  short_description: "规划职工工伤初期医疗保障、证据保存、角色权限与程序时钟行动"
-  default_prompt: "Use $lawyeah-labor-plan-worker-work-injury-response to plan an initial worker work-injury response in mainland China."

@@ -1,4 +1,0 @@
-interface:
-  display_name: "离婚路径与请求评估"
-  short_description: "在单一当事人立场下形成协议登记或诉讼路径、请求范围、风险和行动顺序。"
-  default_prompt: "使用 $lawyeah-family-assess-divorce-route-and-claims，在单一当事人立场下形成协议登记或诉讼路径、请求范围、风险和行动顺序。"

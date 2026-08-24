@@ -1,4 +1,0 @@
-interface:
-  display_name: "家庭暴力紧急安全方案"
-  short_description: "在正在发生或迫近的家庭暴力风险下优先形成撤离、报警、医疗、儿童老人安全、证据保护和法律分流方案。"
-  default_prompt: "使用 $lawyeah-family-plan-domestic-violence-safety，在正在发生或迫近的家庭暴力风险下优先形成撤离、报警、医疗、儿童老人安全、证据保护和法律分流方案。"

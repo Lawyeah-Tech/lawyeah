@@ -1,4 +1,0 @@
-interface:
-  display_name: "审查逮捕辩护意见"
-  short_description: "在审查逮捕阶段形成可复核的辩护意见正文、风险反证目录与听取意见要点"
-  default_prompt: "使用 $lawyeah-criminal-prepare-arrest-review-opinion 形成审查逮捕辩护意见包。"

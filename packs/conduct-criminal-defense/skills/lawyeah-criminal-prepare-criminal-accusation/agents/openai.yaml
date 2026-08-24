@@ -1,4 +1,0 @@
-interface:
-  display_name: "刑事控告材料包"
-  short_description: "在控告路径确定后形成事实链、法律定性、证据目录和可提交的刑事控告材料。"
-  default_prompt: "使用 $lawyeah-criminal-prepare-criminal-accusation，按其输入、方法、停止条件和输出合同形成独立成果。"

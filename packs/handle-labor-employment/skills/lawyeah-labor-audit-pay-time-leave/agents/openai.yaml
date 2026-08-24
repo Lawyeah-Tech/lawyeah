@@ -1,4 +1,0 @@
-interface:
-  display_name: "审计薪酬工时休假"
-  short_description: "审计单位薪酬、工时和休假执行，形成样本差额、风险分级、整改与复测成果包"
-  default_prompt: "Use $lawyeah-labor-audit-pay-time-leave to audit mainland China pay, working time, and leave compliance."

@@ -1,4 +1,0 @@
-interface:
-  display_name: "抚养费请求与调整材料"
-  short_description: "针对首次请求、增加、减少或追索抚养费形成测算、证据和诉讼材料。"
-  default_prompt: "使用 $lawyeah-family-handle-child-support-claim，针对首次请求、增加、减少或追索抚养费形成测算、证据和诉讼材料。"

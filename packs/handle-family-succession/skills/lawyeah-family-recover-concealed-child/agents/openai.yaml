@@ -1,4 +1,0 @@
-interface:
-  display_name: "抢夺藏匿未成年子女紧急处置"
-  short_description: "针对抢夺、藏匿、拒绝交接或失联风险形成安全核验、证据固定和紧急救济方案。"
-  default_prompt: "使用 $lawyeah-family-recover-concealed-child，针对抢夺、藏匿、拒绝交接或失联风险形成安全核验、证据固定和紧急救济方案。"

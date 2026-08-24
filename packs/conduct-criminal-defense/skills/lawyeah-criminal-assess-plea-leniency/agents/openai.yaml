@@ -1,4 +1,0 @@
-interface:
-  display_name: "审查起诉认罪认罚决策评估"
-  short_description: "在审查起诉拟具结前核验认罪认罚的证据标准、自愿真实性、法律帮助、量刑建议、意见期及录音录像条件，形成是否具结的决策意见。"
-  default_prompt: "使用 $lawyeah-criminal-assess-plea-leniency，按其输入、方法、停止条件和输出合同形成独立成果。"
