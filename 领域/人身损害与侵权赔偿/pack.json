@@ -389,21 +389,45 @@
       "goal": "形成鉴定事项、检材、机构分流和发送前申请稿",
       "notFor": [
         "预测伤残等级",
+        "治疗未稳定启动评残",
         "医疗损害鉴定",
-        "劳动能力鉴定"
+        "劳动能力鉴定",
+        "代提交或指定唯一机构"
       ],
       "deliverables": [
-        "形成鉴定事项、检材、机构分流和发送前申请稿"
+        "鉴定闸结论、事项表、检材清单和发送前申请草案"
       ],
       "path": "skills/准备伤残鉴定材料",
       "relations": {
         "depends-on": [],
         "related-to": [
-          "人身损害与侵权赔偿导航"
+          "人身损害与侵权赔偿导航",
+          "评估人身侵权责任",
+          "测算人身损害赔偿",
+          "提出伤残鉴定异议或重新鉴定",
+          "评估因果关系与既往伤病",
+          "评估工伤与第三人侵权竞合",
+          "提起人身损害一审",
+          "准备侵权索赔通知"
         ],
         "excludes": []
       },
-      "mcpDecisionNodes": []
+      "mcpDecisionNodes": [
+        {
+          "id": "verify-appraisal-procedure",
+          "purpose": "核验鉴定程序、重新鉴定条件和民事致残标准适用",
+          "capability": "search_law",
+          "level": "required",
+          "unavailableBehavior": "继续检材编目和闸门判断；标准选择、重新鉴定条件和法律效果字段停止"
+        },
+        {
+          "id": "borrow-application-template",
+          "purpose": "只借鉴申请书栏目，不把范本当现行标准",
+          "capability": "search_template",
+          "level": "optional",
+          "unavailableBehavior": "继续按方法节点写栏目；不编造法定格式"
+        }
+      ]
     },
     {
       "id": "测算人身损害赔偿",
