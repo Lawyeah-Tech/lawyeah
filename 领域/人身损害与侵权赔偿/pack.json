@@ -210,24 +210,69 @@
       "id": "评估责任主体与保险覆盖",
       "kind": "atomic",
       "displayName": "评估责任主体与保险覆盖",
-      "goal": "判断谁可能承担责任以及交强险商业三者如何覆盖",
+      "goal": "列出可能赔偿义务人、关系假设和交强险能否进入",
       "notFor": [
         "总体归责终局",
+        "交强险分账终稿",
+        "连带按份展开终稿",
         "保险拒赔终稿",
+        "诉状",
+        "唯一被告名单",
+        "限额内必得额",
         "工伤用人单位待遇"
       ],
       "deliverables": [
-        "判断谁可能承担责任以及交强险商业三者如何覆盖"
+        "责任主体名称变体、关系假设、保险能否进入和应当共同被告红旗"
       ],
       "path": "skills/评估责任主体与保险覆盖",
       "relations": {
         "depends-on": [],
         "related-to": [
-          "人身损害与侵权赔偿导航"
+          "人身损害与侵权赔偿导航",
+          "评估人身侵权责任",
+          "评估道路交通事故责任与保险先行",
+          "评估共同侵权与连带按份",
+          "评估用人者责任",
+          "评估提供劳务受害",
+          "评估场所安全保障义务",
+          "评估教育机构责任",
+          "评估产品致人损害",
+          "评估高度危险作业致害",
+          "评估侵权人不明路径",
+          "申请道路救助基金或垫付",
+          "直接起诉保险公司",
+          "应对保险拒赔减赔",
+          "提起人身损害一审",
+          "追加变更责任主体",
+          "评估工伤与第三人侵权竞合",
+          "审查保险一次性了结弃权",
+          "评估未成年或无行为能力受害人代理"
         ],
         "excludes": []
       },
-      "mcpDecisionNodes": []
+      "mcpDecisionNodes": [
+        {
+          "id": "verify-subject-rules",
+          "purpose": "核验用人者与派遣、场所补充执行顺序、1209至1215、未投保形态、交强险共同被告和本车人员除外",
+          "capability": "search_law",
+          "level": "required",
+          "unavailableBehavior": "继续名称变体编目；责任形态、保险人诉讼地位和法律限额字段停止"
+        },
+        {
+          "id": "verify-law-detail",
+          "purpose": "已有真实 regulation_id 时核验将改变主体或保险接口的条文正文",
+          "capability": "get_law_detail",
+          "level": "optional",
+          "unavailableBehavior": "不得编造 regulation_id；该规则字段保持待核"
+        },
+        {
+          "id": "verify-joinder-paths",
+          "purpose": "发现追加路径、挂靠、开门杀和弃权风险",
+          "capability": "search_practiced",
+          "level": "recommended",
+          "unavailableBehavior": "继续内置方法；不把无实务检索写成不存在该主体"
+        }
+      ]
     },
     {
       "id": "评估人身损害诉讼时效",
