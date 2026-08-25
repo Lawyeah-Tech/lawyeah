@@ -97,4 +97,4 @@ description: 中国大陆企业需要对内发出持有或禁毁通知以固定�
 
 ## 交付
 
-严格按 [输出合同](references/output-contract.md) 交付。发送闸未打开时不得交付发送前终稿或「已保全」。节点 0 整案转出或整体停止时不得填满十节实体。边界见 [路由](references/routing.md)。
+严格按 [输出合同](references/output-contract.md) 交付。发送闸关闭或不关窗信号仍交十节；第 6 节不出可发送正文。节点 0 整案转出只交第 1、2、10 节。整体停止只交第 1、10 节。发送闸未打开时不得交付发送前终稿或「已保全」。边界见 [路由](references/routing.md)。
