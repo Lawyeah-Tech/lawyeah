@@ -3098,11 +3098,11 @@
           "unavailableBehavior": "继续内置方法；已通报／已披露／免责结论字段停止，不把无实务检索写成必须公告或已经通报"
         },
         {
-          "id": "compare-disclosed-facts-not-draft",
-          "purpose": "只对照已披露事实与拟设口径句的差异；未检索到公告不等于无需披露或已披露覆盖；不得把公告原文改写成可发送稿；本窗仍不出公告正文",
-          "capability": "search_announcement",
-          "level": "recommended",
-          "unavailableBehavior": "继续MS#编目；已披露冲突字段停止；不得因无公告检索拒跑，不得写成无需披露或已公告覆盖"
+          "id": "borrow-comms-template",
+          "purpose": "只借内部通报、情况说明、媒体答问栏目；工商／法院／监管询问笔录、法定临时公告、公安告知书、不予调查处理告知书不得升格已发送或法定公告；公告比对属评估舆情与法定披露交叉，本窗不用公告检索写正文",
+          "capability": "search_template",
+          "level": "optional",
+          "unavailableBehavior": "继续CM#编目；不得因无范本拒跑；不得把栏目填满升格已发送、已生效或法定公告"
         }
       ]
     },
