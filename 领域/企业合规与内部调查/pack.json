@@ -3185,11 +3185,11 @@
           "unavailableBehavior": "继续内置方法；已回避／已独立结论字段停止，不把无实务检索写成已回避或换下属即独立"
         },
         {
-          "id": "borrow-recusal-template",
-          "purpose": "只借回避声明、利益冲突披露栏目；律师利益冲突查证函、无利益冲突声明只借栏目；刑事诉讼法回避决定书、检察回避决定、授权书、处分决定、公告不得升格内部已回避或已独立",
-          "capability": "search_template",
-          "level": "optional",
-          "unavailableBehavior": "继续AV#编目；不得因无范本拒跑；不得把栏目填满升格已回避、已生效或已独立"
+          "id": "compare-recusal-fact-cases",
+          "purpose": "只比较事实差异与翻转条件：董事会关联董事表决回避不等于调查组已回避；换下属查领导不等于独立；外部所拿被调查人预算不等于独立；口述没关系不等于已回避；宣布回避仍看材料不等于回避成立；污染风险不等于案卷已作废。不写成必然已独立、必然应排除全卷或必须上报",
+          "capability": "search_case_by_fact",
+          "level": "recommended",
+          "unavailableBehavior": "继续AV#编目；不编造案号；已回避／已独立结论字段停止；不得因无类案拒跑，不得把无类案写成已独立或必须省略回避"
         }
       ]
     },
