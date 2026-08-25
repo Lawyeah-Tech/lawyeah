@@ -1,0 +1,4 @@
+interface:
+  display_name: "律页法律技能"
+  short_description: "分流到领域或合同整包；本窗不出法律意见或文书终稿"
+  default_prompt: "使用 $lawyeah-legal-skills，按用户目标分流到 Lawyeah 公开仓库中的一个中文整包（领域/ 或 合同/）。只做发现和安装指引，不写诉状、意见或合同终稿。法域限中国大陆。"

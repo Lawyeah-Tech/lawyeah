@@ -9,10 +9,12 @@ Lawyeah 公开源码仓库按律师查找用中文目录组织：`领域/` 放 2
 ```text
 领域/     21 个办案领域（中文目录，完整包）
 合同/     11 个合同审查与起草包（中文目录，完整包）
-docs/     架构与历史领域说明
+skills/   Agent / 爬虫发现入口（不是办案包）
+docs/     架构、安装与历史领域说明
+SKILLS.md 英文 id 与中文目录对照
 ```
 
-`catalog/`、`schemas/`、`release-manifest.json` 是机器可读清单，不是律师安装入口。私有研究、原始检索和内部证据在 gitignore 的 `research/`，不进入公开仓库。
+律师安装入口仍是 `领域/` 和 `合同/` 下的整包。`skills/lawyeah-legal-skills` 只做分流发现。`catalog/`、`schemas/`、`release-manifest.json` 是机器可读清单，不是律师安装入口。私有研究、原始检索和内部证据在 gitignore 的 `research/`，不进入公开仓库。
 
 本仓库不包含 `tests/`、`tooling/`、`templates/` 和 GitHub Actions 发布工作流。
 
