@@ -3100,9 +3100,9 @@
         {
           "id": "compare-disclosed-facts-not-draft",
           "purpose": "只对照已披露事实与拟设口径句的差异；未检索到公告不等于无需披露或已披露覆盖；不得把公告原文改写成可发送稿；本窗仍不出公告正文",
-          "capability": "search_template",
+          "capability": "search_announcement",
           "level": "recommended",
-          "unavailableBehavior": "继续CM#编目；已披露冲突字段停止；不得因无公告检索拒跑，不得写成无需披露或已公告覆盖"
+          "unavailableBehavior": "继续MS#编目；已披露冲突字段停止；不得因无公告检索拒跑，不得写成无需披露或已公告覆盖"
         }
       ]
     },
